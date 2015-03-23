@@ -1,0 +1,9 @@
+.sass-cache
+*.gem
+*.swp
+*~
+.DS_Store
+coverage
+/_site
+tmp/*
+/vendor
