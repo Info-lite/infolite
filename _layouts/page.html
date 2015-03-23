@@ -1,14 +1,24 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="container">
+   <div class="page-header"><h1>{{ page.title }}</h1></div>
+    <div class="post">
+        <div class="panel panel-primary">
+            <div class="panel-heading">本講の目的</div>
+            <div class="panel-body">
+                <ul>
+                    {% for purpose in page.purposes %}
+                    <li>{{ purpose }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+        <div id="toc"></div>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+        <hr />
 
+        {{ content }}
+    </div>
 </div>
