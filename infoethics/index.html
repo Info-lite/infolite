@@ -1,21 +1,31 @@
 ---
-layout: index
+layout: player
 title: 情報倫理講習会
 date: 2015/03/19
 robots: noindex,nofollow
 ---
 
+<script>
+flowplayer.conf = {
+  embed: false,
+  splash: true,
+  ratio: 9/16,
+};
+</script>
+
 <a href="./rinrikosyu.ppt">情報倫理講習会スライド</a>
 
-<script src="{{ "/js/flowplayer.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<a href="./video_2009.mp4" id="player" class="player" style="display:block;width:640px;height:360px;margin:10px auto"></a>
+<div class="flowplayer is-splash" style="max-width:640px;">
+   <video>
+      <source type="video/webm" src="./video_2009.webm">
+      <source type="video/mp4" src="./video_2009.mp4">
+   </video>
+</div>
+
 <div class="text">
     <p>映像が表示されない場合は，下記項目を確認してください。</p>
     <ul>
-        <li>Adobe&copy; FlashPlayer が必要となります。インストールされていることを確認してください。</li>
-        <li>Firefox の場合、アドレスバー左の盾アイコンをクリックし一時的に保護を無効にしてください。</li>
         <li>回線などの環境により閲覧しにくい場合があります。</li>
         <li>情報基礎教室での閲覧の場合はチューターにお問い合わせください。</li>
     </ul>
 </div>
-<script>flowplayer("player", "./flowplayer-3.2.18.swf", {clip: {autoPlay: false}});</script>
