@@ -1,31 +1,40 @@
 ---
 layout: player
 title: 情報倫理講習会
-date: 2015/03/19
-robots: noindex,nofollow
+flowplayer_conf:
+    embed: false
 ---
 
-<script>
-flowplayer.conf = {
-  embed: false,
-  splash: true,
-  ratio: 9/16,
-};
-</script>
-
-<a href="./rinrikosyu.ppt">情報倫理講習会スライド</a>
-
-<div class="flowplayer is-splash" style="max-width:640px;">
-   <video>
-      <source type="video/webm" src="./video_2009.webm">
-      <source type="video/mp4" src="./video_2009.mp4">
-   </video>
+<div class="row">
+    <div class="col-sm-12 col-md-8">
+        <div class="flowplayer is-splash color-light img-responsive" style="max-width:640px;">
+            <video>
+            <source type="video/webm" src="./video_2009.webm">
+            <source type="video/mp4" src="./video_2009.mp4">
+            </video>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <h4>資料</h4>
+        <ul>
+            <li><a href="./rinrikosyu.ppt">情報倫理講習会スライド</a></li>
+        </ul>
+    </div>
 </div>
-
-<div class="text">
-    <p>映像が表示されない場合は，下記項目を確認してください。</p>
-    <ul>
-        <li>回線などの環境により閲覧しにくい場合があります。</li>
-        <li>情報基礎教室での閲覧の場合はチューターにお問い合わせください。</li>
-    </ul>
+<hr />
+<div class="row">
+    <a class="collasped" data-toggle="collapse" href="#videoTips" aria-expanded="false" aria-controls="videoTips">
+        <i class="fa fa-info-circle fa-lg"></i>
+        映像が表示されないときは
+    </a>
+    <div class="collapse" id="videoTips">
+        <div class="well">
+            <p>映像が表示されない場合は，下記項目を確認してください。</p>
+            <ul>
+                <li>回線などの環境により閲覧しにくい場合があります</li>
+                <li>InternetExplorer9 以前のバージョンでは再生できないことがあります</li>
+                <li>情報基礎教室での閲覧の場合はチューターにお問い合わせください</li>
+            </ul>
+        </div>
+    </div>
 </div>

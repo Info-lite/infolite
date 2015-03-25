@@ -8,12 +8,13 @@ title: 授業用コンテンツ
 
 * [情報リテラシー実践1](./1/)
 * [情報リテラシー実践1A](./1a/)
+* [情報リテラシー実践2A](/2014/2a/)
+* [情報リテラシー実践2B](/2014/2b/)
 
 eラーニング
 -----------
 
 * [kibaco](https://kibaco.tmu.ac.jp/portal?f=infolit)
-* [kibaco 学生用マニュアル](http://www.comp.tmu.ac.jp/e-learning/download/mannual/kibaco_student_20150311.pdf)
 * レディネス調査実施学生用マニュアル
 
 情報倫理講習会
