@@ -7,5 +7,10 @@
         {{ content }}
         {% include footer.html %}
         {% include script.html %}
+        {% if page.flowplayer_conf %}
+        <script>
+            flowplayer.conf = {{ page.flowplayer_conf | jsonify }};
+        </script>
+        {% endif %}
     </body>
 </html>
