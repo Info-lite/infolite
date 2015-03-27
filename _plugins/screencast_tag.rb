@@ -27,7 +27,7 @@ module Jekyll
       s += %|<div class="modal-dialog"><div class="modal-content">\n|
       s += %|<div class="modal-header">\n|
       s += %|<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\n|
-      s += %|<h4 class="modal-title" id="#{@file_name}ModalLabel">#{@description}</h4>\n|
+      s += %|<span class="modal-title" id="#{@file_name}ModalLabel">#{@description}</span>\n|
       s += %|</div>\n|
       s += %|<div class="modal-body">\n|
       s += %|<div class="flowplayer is-splash color-light img-responsive" style="max-width:640px;">\n|

@@ -23,6 +23,9 @@
         var headers = tmpArray.join(',');
 
         $( headers, this ).each(function(){
+            if (this.id === "") {
+                return true;
+            }
             this.id = "chapter" + counter;
             var level = this.nodeName.substr(1, 1) - ( startLevel - 1 );
 
