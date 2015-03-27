@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: '/lit' # the subpath of your site, e.g. /blog/
 url: 'https://infolit.uec.tmu.ac.jp' # the base hostname & protocol for your site
 screenshot_dir: './pic'
+screencast_dir: './mov'
 
 # Build settings
 markdown: redcarpet

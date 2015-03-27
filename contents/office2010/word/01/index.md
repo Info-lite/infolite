@@ -1,9 +1,12 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2015-03-23 16:26:30 +0900
+date: 2015-03-27 09:50:37 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
+flowplayer_conf:
+    embed: false
+    ratio: 0.75
 ---
 
 
@@ -187,6 +190,8 @@ Wordの画面での表示の仕方を設定します。
 ------------
 
 ### 文字のフォント、サイズ、スタイル設定
+
+{% screencast fontsize "文字のサイズ設定" %}
 
 まず、文書の文字の大きさを整えます。
 
