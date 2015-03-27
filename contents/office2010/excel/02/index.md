@@ -1,9 +1,12 @@
 ---
 layout: page
 title: 表計算ソフトによるデータ処理 （２）
-date: 2015-03-27 10:01:41 +0900
+date: 2015-03-27 14:35:44 +0900
 purposes:
     - Microsoft Excelを用いたグラフ作成方法の習得
+flowplayer_conf:
+    embed: false
+    ratio: 0.75
 ---
 
 
