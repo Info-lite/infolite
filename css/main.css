@@ -84,12 +84,13 @@ h2 {
     padding-left: 10px;
     border-left: 4px solid #3f4e63;
     border-bottom: 1px solid #3f4e63;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 h3 {
     color: #3f4e63;
     padding-left: 10px;
     border-left: 4px solid #3f4e63;
+    margin-top: 20px;
 }
 h4 {
     color: #3f4e63;
@@ -108,6 +109,10 @@ dl dd {
 
 div.thumbnail .img-responsive {
     max-height: 480px;
+}
+
+div.container > div.thumbnail {
+    margin-bottom: 30px;
 }
 
 #page-top{
