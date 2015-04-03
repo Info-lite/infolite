@@ -15,7 +15,7 @@ eラーニング
 -----------
 
 * [kibaco](https://kibaco.tmu.ac.jp/portal?f=infolit)
-* レディネス調査実施学生用マニュアル
+* [レディネス調査実施マニュアル (学生用)](./readiness/student.html)
 
 情報倫理講習会
 --------------
