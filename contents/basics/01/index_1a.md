@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 情報基礎教室の使い方と授業ガイダンス
-date: 2015-04-03 13:55:42 +0900
+date: 2015-04-08 12:43:58 +0900
 purposes:
     - 情報倫理について学ぶ
     - 情報基礎教室の使い方を学ぶ
@@ -87,7 +87,7 @@ purposes:
 -   Microsoft Word 2010 （ワープロソフト）
 -   Microsoft Excel 2010 （表計算ソフト）
 -   Microsoft PowerPoint 2010 （プレゼンテーションソフト）
--   Microsoft InternetExplorer 9.0 （ブラウザ）
+-   Microsoft InternetExplorer 10 （ブラウザ）
 -   メモ帳 （テキストエディタ）
 -   Type Trainer （タイピング練習ソフト）
 
