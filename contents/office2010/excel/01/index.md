@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
-date: 2015-05-28 12:37:57 +0900
+date: 2015-05-28 12:44:14 +0900
 purposes:
     - Microsoft Excelを用いた表計算ソフト利用の基本の習得
 flowplayer_conf:
@@ -475,7 +475,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 ![](pic/linesetting1.png)
 
-![](pic/linesetting2.png)
+![](pic/fontwindow.png)
 
 &#9313; [ホーム]リボン内の[フォント]パネルでも選択可能です。
 
@@ -493,7 +493,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 &#9313; [塗りつぶし]を選択します。ここでセルの背景の設定が出来ます。
 
-![](pic/linesetting2.png)
+![](pic/cellcolor.png)
 
 &#9314; [ホーム]リボン内の[フォント]パネルでも指定することができます。
 
