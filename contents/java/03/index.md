@@ -28,7 +28,7 @@ purposes:
 以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 Name.java
-![](Name.png)
+![](./pic/Name.png)
 
 実行すると、以下のようになります。
 
@@ -53,7 +53,7 @@ Name.java
 次に、数値の入力をしてみましょう。
 
 Calc.java
-![](Calc.png)
+![](./pic/Calc.png)
 
 入力できたら、コンパイルして実行してみましょう。
 ここでは、「5」と「7」を入力しました。
@@ -78,7 +78,7 @@ Calc.java
 * 9行目 int a = Integer.parseInt(str1);
 文字列を、整数型（int型）に変換。
 
-![](calcjava.png)
+![](./pic/calcjava.png)
 
 ここの内容をきちんと理解するには、Java言語のことを深くまで理解する必要があります。もう少し詳しく知りたい場合は、以下を参照してください。
 <div id="ref"><a href="calcjava.html" target="_blank">Calc.javaの解説</a></div>
@@ -89,7 +89,7 @@ Calc.java
 次のようなプログラムを考えてみましょう。前のソースコードを少し改良しただけです。
 
 Calc2.java
-![](Calc2x.png)
+![](./pic/Calc2x.png)
 
 このプログラムは、入力した２つの値の商を求めるプログラムです。いろいろな値を入れて計算してみましょう。
 
@@ -109,7 +109,7 @@ Calc2.java
 それでは、以下のようにプログラムを改良してみましょう。
 
 Calc2.java
-![](Calc2-02x.png)
+![](./pic/Calc2-02x.png)
 
 変数a,b,ansをdouble型で宣言するよう変更しました。このdouble型は、小数を含む計算する場合に用いられる変数型です。
 よって、先ほどのように5と2を入力すると、2.5という答えが返ってきます。
@@ -117,7 +117,7 @@ Calc2.java
 次に、以下のように改良してみましょう。
 
 Calc2.java
-![](Calc2-03x.png)
+![](./pic/Calc2-03x.png)
 
 変数bをint型にし、他の変数a,ansはdouble型です。intは整数を扱う場合に用いる変数型です。
 この場合も、2.5という答えが返ってきます。
@@ -135,7 +135,7 @@ double > float > long > int > short > byte
 では、次のように改良してみましょう。
 
 Calc2.java
-![](Calc2-04x.png)
+![](./pic/Calc2-04x.png)
 
 今度は、変数ansに代入する式に、 (double) が付け加わっています。この場合も、5と2を入力すると、2.5が表示されます。
 この(double)を**キャスト演算子**といい、**強制的に型変換を行う**ことができます。

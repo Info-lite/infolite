@@ -18,7 +18,7 @@ purposes:
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 Sum1.java
-![](Sum.png)
+![](./pic/Sum.png)
 
 実行すると、以下のように表示されます。
 
@@ -48,7 +48,7 @@ while (x<3) {
 }
 ~~~~
 
-![](while.png)
+![](./pic/while.png)
 
 <div id="ref"><a href="../04/index.html#1-2" target="_blank">比較演算子</a></div>
 
@@ -56,7 +56,7 @@ while (x<3) {
 では、次のように改良してみましょう。
 
 Sum1.java
-![](Sum-02x.png)
+![](./pic/Sum-02x.png)
 
 実行すると、以下のようになります。
 
@@ -103,7 +103,7 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
 
 Kurikaeshi1.java
-![](Kurikaeshi.png)
+![](./pic/Kurikaeshi.png)
 
 実行すると、以下のようになります。
 
@@ -133,13 +133,13 @@ for(i=0; i<3; i=i+1) {
 }
 ~~~~
 
-![](for.png)
+![](./pic/for.png)
 
 ### プログラムの改良
 では、次のようにプログラムを改良してみましょう。
 
 Kurikaeshi1.java
-![](Kurikaeshi-02x.png)
+![](./pic/Kurikaeshi-02x.png)
 
 まず、for文の中のみで使う変数は、上のように宣言することができます。
 また、インクリメント演算子というものもあります。

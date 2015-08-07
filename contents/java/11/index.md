@@ -23,7 +23,7 @@ htmlファイルは自分で作成してください。
 
 Keisanap.java
 
-![](Keisanap_java_2014.png)
+![](./pic/Keisanap_java_2014.png)
 
 
 左の2つのテキストボックスに数字を入力しボタンをクリックすると、その和が表示されます。
@@ -36,7 +36,7 @@ Keisanap.java
 以下のソースコードを入力・実行し、マウスをいろいろと操作してみましょう。
 
 Mouse.java
-![](Mouse_java_2014.png)
+![](./pic/Mouse_java_2014.png)
 
 
 
@@ -54,7 +54,7 @@ awtには他にもいろいろなものが用意されています。
 ソースコードを打ち込み、実行してみましょう。
 
 Move.java
-![](Move_java_2014.png)
+![](./pic/Move_java_2014.png)
 
 
 

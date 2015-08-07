@@ -15,8 +15,8 @@ purposes:
 ### フォームを新規に作成する
 
 1. "サークル名簿"を選択しておき、[作成]タブ - [フォーム] - [フォーム]をクリックします。
-![](autoform1.png)
-![](autoform2.png)
+![](./pic/autoform1.png)
+![](./pic/autoform2.png)
 
 
 2. このようにフォームが作られました。上書き保存を押して、"会員情報"で保存しましょう。
@@ -25,7 +25,7 @@ purposes:
 ### フォームウィザードでフォームを作成する
 
 1. [フォーム] - [フォームウィザード]を押します。
-![](formwizard1.png)
+![](./pic/formwizard1.png)
 
 2. テーブル/クエリを[テーブル：サークル名簿]を選択 - 以下のフィールドを選択可能なフィールドから選択したフィールドへと移します。
     -   氏名
@@ -40,17 +40,17 @@ purposes:
     -   退会
 
 3. [次へ]を押します。
-![](formwizard2.png)
+![](./pic/formwizard2.png)
 
 4. "単票形式"にチェックをつけたまま、[次へ]を押します。
-![](formwizard3.png)
+![](./pic/formwizard3.png)
 
 5. 好きなスタイルを選択し[次へ]を押します。
-![](formwizard4.png)
+![](./pic/formwizard4.png)
 
 6. "会員入力"と入力し、"フォームを開いてデータを入力する"を選択して、[完了]を押します。
-![](formwizard5.png)
-![](formwizard6.png)
+![](./pic/formwizard5.png)
+![](./pic/formwizard6.png)
 
 このようにフォームが作成されました。
 
@@ -58,46 +58,46 @@ purposes:
 ### コントロールの配置とサイズ変更
 
 1. "会員入力"を開き、"デザインビュー"に切り替えます。
-![](controldesign1.png)
-![](controldesign2.png)
+![](./pic/controldesign1.png)
+![](./pic/controldesign2.png)
 
 
 2. 背景の境界線をメモリの17付近まで広げます。
-![](controldesign3.png)
+![](./pic/controldesign3.png)
 
 3. "氏名"フィールドの右端をメモリの8付近まで縮めます。
-![](controldesign4.png)
+![](./pic/controldesign4.png)
 
 4. その他の項目も同様に縮めます。
-![](controldesign5.png)
+![](./pic/controldesign5.png)
 
 5. "自宅TEL"から"退会"までを選択し、右上に移動します。
-![](controldesign6.png)
+![](./pic/controldesign6.png)
 
 6. "市町村区"のテキストボックスを選択し、右に広げます。
-![](controldesign7.png)
+![](./pic/controldesign7.png)
 
 
 ### コントロールの追加
 
 1. [デザインビュー]に切り替えます。
 2. [フォームデザインツール] - [デザイン] - [コントロール] - [ラベル]をクリック - "フォーム ヘッダー"のセクション内で任意の範囲を選択し、コントロールを追加します。
-![](control1.png)
+![](./pic/control1.png)
 
 3. コントロール内に"サークル名簿への入力"と入力 - [Enter]キーを押して、確定します。
-![](control2.png)
+![](./pic/control2.png)
 
 4. もう一度、"サークル名簿への入力"のコントロールをアクティブにします - "プロパティシート"の[書式]タブにある"フォントサイズ"を"10"に変更 - コントロールの領域を適当に調節します。
-![](control3.png)
+![](./pic/control3.png)
 
 5. フォームビューに戻り、上書き保存してください。
 
 
 ### フォームで新しいレコードを入力
 
-1. レコードの![](newrecord.png)
+1. レコードの![](./pic/newrecord.png)
 を押します。
-![](new1.png)
+![](./pic/new1.png)
 
 2. 以下のデータを入力してください。
     -   氏名：朝倉紗希
@@ -106,10 +106,10 @@ purposes:
     -   自宅TEL：03-5837-0000
     -   学年ＩＤ：2
     -   学部コース：都市教養学部都市教養学科数理科学コース
-![](new2.png)
+![](./pic/new2.png)
 
 3. 閉じて、サークル名簿を開きます。
-![](new3.png)
+![](./pic/new3.png)
 
 ---
 

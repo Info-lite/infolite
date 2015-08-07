@@ -36,7 +36,7 @@ public class Hello {
 javac Hello.java
 ~~~~
 
-![](hello01.png)
+![](./pic/hello01.png)
 
 うまくできたら、次は以下のように入力します。
 
@@ -44,13 +44,13 @@ javac Hello.java
 java Hello
 ~~~~
 
-![](hello02.png)
+![](./pic/hello02.png)
 
 うまくいくと、以下のように表示されます。
 
 Hello
 
-![](hello03.png)
+![](./pic/hello03.png)
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
@@ -82,7 +82,7 @@ Java言語を実行するための環境のこと。これを各環境に移植�
 * インタプリタ
 ソースコードを逐次機械語に翻訳しながら実行するソフトウェアのこと。
 
-![](java.png)
+![](./pic/java.png)
 
 
 Hello.javaの解説 - コンパイルから実行まで

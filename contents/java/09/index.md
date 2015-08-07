@@ -24,14 +24,14 @@ Javaアプレットとは、Webブラウザなどに埋め込まれて実行さ�
 まず、以下のようなソースコードを打ち込み、コンパイルしてみましょう。
 
 Helloap.java
-![](Helloap_java_2014.png)
+![](./pic/Helloap_java_2014.png)
 
 
 
 次に、以下のようなhtmlファイルを作成します。
 
 Helloap.html
-![](Helloap.html.png)
+![](./pic/Helloap.html.png)
 
 
 
@@ -71,7 +71,7 @@ public class Helloap extends Applet
 追加できたら、上と同様にコンパイルして実行しましょう。
 
 Helloap.java
-![](Helloapv2_java_2014.png)
+![](./pic/Helloapv2_java_2014.png)
 
 
 
@@ -108,7 +108,7 @@ Oracle Technology Network for Java Developers（英語）
 
 アプレット内の座標とは、ウィンド左上を原点とし、右をx軸の正の向き、下をy軸の正の向きとしたものです。
 
-![](2b9_appletwindow.png)
+![](./pic/2b9_appletwindow.png)
 
 ### 色を変える
 
@@ -118,7 +118,7 @@ Oracle Technology Network for Java Developers（英語）
 追加できたら、上と同様にコンパイルして実行しましょう。
 
 Helloap.java
-![](Helloapv3.java.png)
+![](./pic/Helloapv3.java.png)
 
 
 
@@ -158,11 +158,11 @@ Oracle Technology Network for Java Developers（英語）
 
 市松模様を描きましょう。クラス名は「Ichimatsu」とします。
 
-![](2b9_Ichimatsu.png)
+![](./pic/2b9_Ichimatsu.png)
 
 ### 問題２
 
 
 drawLineを用いて、以下のような模様を書いてみましょう。クラス名は「Colorap」とします。
 
-![](2b9_Colorap.png)
+![](./pic/2b9_Colorap.png)

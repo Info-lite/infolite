@@ -18,13 +18,13 @@ purposes:
 ## デザインビューでクエリを作成する
 
 ### 1. [作成]タブ - [クエリ] - [クエリデザイン]を押します。
-![](newquery1.png)
+![](./pic/newquery1.png)
 ### 2. テーブルから"サークル名簿"を選択 - [追加]を押します。
-![](newquery2.png)
+![](./pic/newquery2.png)
 ### 3. クエリ デザイン ウィンドウにテーブルが追加されました。[閉じる]を押します。
-![](newquery3.png)
+![](./pic/newquery3.png)
 ### 4. "サークル名簿"の"会員ＩＤ"をダブルクリックします。すると、フィールドに会員ＩＤが追加されます。
-![](newquery4.png)
+![](./pic/newquery4.png)
 ### 5. 同様に以下を追加します。
 
     -   氏名
@@ -33,13 +33,13 @@ purposes:
     -   学部コース
     -   退会
 
-![](newquery5.png)
-### 6. ![](databaseview.png)（[表示]）もしくは![](action.png)（[実行]）を押します。
-![](newquery6.png)
-![](newquery7.png)
-### 7. ![](quicksave.png)を押して、"入会日と所属"という名前でクエリを保存します。
-![](newquery8.png)
-![](newquery9.png)
+![](./pic/newquery5.png)
+### 6. ![](./pic/databaseview.png)（[表示]）もしくは![](./pic/action.png)（[実行]）を押します。
+![](./pic/newquery6.png)
+![](./pic/newquery7.png)
+### 7. ![](./pic/quicksave.png)を押して、"入会日と所属"という名前でクエリを保存します。
+![](./pic/newquery8.png)
+![](./pic/newquery9.png)
 
 このようにして、"入会年月日"と"学部コース"、"退会"情報に特化したクエリを作ることができました。
 
@@ -48,9 +48,9 @@ purposes:
 
 ### 1. "デザインビュー"に切り替えます。
 ### 2. "シメイ"フィールドの並べ替えをクリック - "昇順"を選択します。
-![](sortname1.png)
-### 3. ![](databaseview.png)もしくは![](action.png)実行を押し表示を切り替え、上書き保存します。
-![](sortname2.png)
+![](./pic/sortname1.png)
+### 3. ![](./pic/databaseview.png)もしくは![](./pic/action.png)実行を押し表示を切り替え、上書き保存します。
+![](./pic/sortname2.png)
 
 "シメイ"の昇順、すなわちアイウエオ順に並べ替えられました。
 
@@ -59,18 +59,18 @@ purposes:
 
 ### 1. [作成]タブ - [クエリ] - [クエリデザイン]を押します。
 ### 2. テーブルから"サークル名簿"を選択 - [追加]を押します。
-![](abstract1.png)
+![](./pic/abstract1.png)
 ### 3. フィールドリストのタイトルバーである"サークル名簿"をダブルクリックします。すると、サークル名簿内の全てのフィールドが選択状態になります。
 ### 4. 選択したもの全てをデザイングリッドにドラッグアンドドロップします。
-![](abstract2.png)
-![](abstract3.png)
+![](./pic/abstract2.png)
+![](./pic/abstract3.png)
 ### 5. "シメイ"フィールドを選択 - キーボードの[Delete]キーを押して削除します。
-![](abstract4.png)
+![](./pic/abstract4.png)
 ### 6. 同様に"自宅TEL"フィールドも削除します。
 ### 7. "都道府県"フィールドの抽出条件に"東京都"と入力 - [Enter]キーを押します。
-![](abstract5.png)
-### 8. ![](databaseview.png)もしくは![](action.png)を押します。
-![](abstract6.png)
+![](./pic/abstract5.png)
+### 8. ![](./pic/databaseview.png)もしくは![](./pic/action.png)を押します。
+![](./pic/abstract6.png)
 
 これで、東京都の会員だけが抽出されました。"東京都会員"と入力して、保存します。
 
@@ -79,9 +79,9 @@ purposes:
 
 ### 1. "デザインビュー"に切り替えます。
 ### 2. "都道府県"フィールドの「または」に"神奈川県"と入力 - [Enter]キーを押します。
-![](or1.png)
-### 3. ![](databaseview.png)もしくは![](action.png)を押します。
-![](or2.png)
+![](./pic/or1.png)
+### 3. ![](./pic/databaseview.png)もしくは![](./pic/action.png)を押します。
+![](./pic/or2.png)
 
 これで、東京都と神奈川県の会員だけが抽出されました。
 
@@ -91,9 +91,9 @@ purposes:
 ### 1. "デザインビュー"に切り替えます。
 ### 2. "都道府県"フィールドの「または」に入力されている"神奈川県"を選択 - [Del]キーを押して、削除します。
 ### 3. "退会"フィールドの抽出条件に半角で"yes"と入力 - [Enter]キーを押します。
-![](and1.png)
-### 4. ![](databaseview.png)もしくは![](action.png)を押します。
-![](and2.png)
+![](./pic/and1.png)
+### 4. ![](./pic/databaseview.png)もしくは![](./pic/action.png)を押します。
+![](./pic/and2.png)
 
 これで、東京都でかつ退会した会員だけが抽出されました。
 
@@ -105,10 +105,10 @@ purposes:
 ### 1. "デザインビュー"に切り替えます。
 ### 2. "都道府県"フィールドの抽出条件に入力されている"東京都"を削除 - "退会"フィールドの抽出条件に入力されている"Yes"を削除します。
 ### 3. "学部コース"フィールドの抽出条件に"都市教養学部*"と入力 - [Enter]キーを押します。
-![](wildcard1.png)
-![](wildcard2.png)
-### 4. ![](databaseview.png)もしくは![](action.png)を押します。
-![](wildcard3.png)
+![](./pic/wildcard1.png)
+![](./pic/wildcard2.png)
+### 4. ![](./pic/databaseview.png)もしくは![](./pic/action.png)を押します。
+![](./pic/wildcard3.png)
 
 これで、都市教養学部の会員だけが抽出されました。
 
@@ -118,14 +118,14 @@ purposes:
 ### 1. "デザインビュー"に切り替えます。
 ### 2. "学部コース"フィールドの抽出条件に入力してある"Like"都市教養学部*""を削除します。
 ### 3. "入会年月日"フィールドの抽出条件に半角で"Between #2007/1/1# And #2007/12/31#"と入力 - [Enter]キーを押します。
-![](between1.png)
-![](between2.png)
-### 4. ![](databaseview.png)もしくは![](action.png)を押します。
-![](between3.png)
+![](./pic/between1.png)
+![](./pic/between2.png)
+### 4. ![](./pic/databaseview.png)もしくは![](./pic/action.png)を押します。
+![](./pic/between3.png)
 
 これで、2007 年 1 月 1 日から 2007 年 12 月 31 日までに入会した会員だけが抽出されました。[ファイル]タブ - [オブジェクトに名前を付けて保存]を押し、"2007年入会会員"という名前で保存します。
-![](between4.png)
-![](between5.png)
+![](./pic/between4.png)
+![](./pic/between5.png)
 
 課題 1
 --------------

@@ -19,12 +19,12 @@ purposes:
 次のようなプログラムを実行してみましょう。
 
 Botan.java
-![](Botan_java_2014.png)
+![](./pic/Botan_java_2014.png)
 
 
 
 Botan.html
-![](Botan.html.png)
+![](./pic/Botan.html.png)
 
 
 
@@ -78,7 +78,7 @@ repaint()は、もう一度paint()を呼び出し再描画するコマンドで�
 htmlファイルは上の例を参考に自分で作成してみましょう。
 
 Botan2.java
-![](Botan2_java_2014.png)
+![](./pic/Botan2_java_2014.png)
 
 
 

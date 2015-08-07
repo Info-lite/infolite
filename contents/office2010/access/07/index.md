@@ -17,12 +17,12 @@ purposes:
 ### 多側テーブルでの外部キーの入力の制限
 
 多側テーブルの外部キーフィールドに、一側テーブルに存在しないデータを入力することはできません。
-![](explainchain1.png)
+![](./pic/explainchain1.png)
 
 ### 一側テーブルでの主キーの更新・削除の制限
 
 一側テーブルの主キーと多側テーブルの外部キーに同じデータが存在しており、それらが結びついている場合、一側テーブルの主キーフィールドを更新・削除することはできません。
-![](explainchain2.png)
+![](./pic/explainchain2.png)
 
 前回から引き続いて、"pencil.accdb"を使用します。開いてください。
 
@@ -30,25 +30,25 @@ purposes:
 ## 参照整合性を設定する
 
 ### 1. [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]を押します。
-![](refintegrity1.png)
+![](./pic/refintegrity1.png)
 ### 2. 適当な結合線をダブルクリックします。
-![](refintegrity2.png)
+![](./pic/refintegrity2.png)
 ### 3. "参照整合性"にチェック - [OK]を押します。
-![](refintegrity3.png)
-![](refintegrity4.png)
+![](./pic/refintegrity3.png)
+![](./pic/refintegrity4.png)
 ### 一側テーブルに"1"とつき、多側テーブルに"∞"がつきます。
 ### 4. 同様に全ての結合線に関して、"参照整合性"にチェックを入れます。
-![](refintegrity5.png)
+![](./pic/refintegrity5.png)
 
 
 多側テーブルでの外部キーの入力の制限を確認する
 --------------
 ### 1."受注明細"を開きます。
-![](orderdetails1.png)
+![](./pic/orderdetails1.png)
 ### 2. 先頭のレコードの"商品コード"フィールドの値を"S-500"に変更します。
-![](orderdetails2.png)
-### 3. ![更新](quicksave.png)を押します。
-![](orderdetails3.png)
+![](./pic/orderdetails2.png)
+### 3. ![更新](./pic/quicksave.png)を押します。
+![](./pic/orderdetails3.png)
 ### 4. "商品マスター"テーブルに"S-500"がないので、エラーがおきました。
 ### 5. [OK]をクリック - [Esc]キーを押して、閉じます。
 
@@ -56,20 +56,20 @@ purposes:
 一側テーブルでの主キーの更新の制限を確認する
 --------------
 ### 1. "商品マスター"を開きます。
-![](goods1.png)
+![](./pic/goods1.png)
 ### 2. 先頭のレコードの"商品コード"フィールドの値を"V-500"に変更します。
-![](goods2.png)
-### 3. ![更新](quicksave.png)を押します。
-![](goods3.png)
+![](./pic/goods2.png)
+### 3. ![更新](./pic/quicksave.png)を押します。
+![](./pic/goods3.png)
 ### 4. "受注明細"テーブルで"B-500"を使用しているので、エラーがおきました。
 ### 5. [OK]をクリック - [Esc]キーを押します。
 
 一側テーブルでの主キーの削除の制限を確認する
 
 先頭のレコードを削除します。先頭のレコードを選択し、右クリック - [レコードの削除]をクリックします。
-![](delgoods1.png)
+![](./pic/delgoods1.png)
 "受注明細"テーブルで"B-500"を使用しているので、エラーが起きました。
-![](delgoods2.png)
+![](./pic/delgoods2.png)
 [OK]をクリックします。
 
 上に戻る
@@ -79,32 +79,32 @@ purposes:
 参照整合性に加えて、連鎖更新、連鎖を設定すると、データの整合性を維持したままデータの更新や削除を行うことができます。
 
 連鎖更新
-![](explainchain3.png)
+![](./pic/explainchain3.png)
 連鎖削除
-![](explainchain4.png)
+![](./pic/explainchain4.png)
 連鎖更新と連鎖削除を設定する
 
 [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]を押します。
-![](chain1.png)
+![](./pic/chain1.png)
 適当な結合線をダブルクリックします。
-![](chain2.png)
+![](./pic/chain2.png)
 "フィールドの連鎖更新"と"レコードの連鎖削除"にチェック - [OK]を押します。
-![](chain3.png)
+![](./pic/chain3.png)
 全ての結合線に関して、"フィールドの連鎖更新"と"レコードの連鎖削除"にチェックを付けます。
-![](chain4.png)
+![](./pic/chain4.png)
 
 連鎖更新を確認する
 
 オブジェクトの中の[テーブル]を選択 - "受注明細"を開きます。
 2 件目と 5 件目のレコードの"商品コード"フィールドの値が"B-500"であることを確認してください。
-![](chainrefinteg1.png)
+![](./pic/chainrefinteg1.png)
 次に"商品マスター"を開きます。
-![](chainrefinteg2.png)
+![](./pic/chainrefinteg2.png)
 "商品コード"の"B-500"を"V-500"に変更します。
-![](chainrefinteg3.png)
-![更新](quicksave.png)を押します。
+![](./pic/chainrefinteg3.png)
+![更新](./pic/quicksave.png)を押します。
 "受注明細"の 2 件目と 5 件目のレコードの"商品コード"フィールドの値が"V-500"に変わったことを確認します。
-![](chainrefinteg4.png)
+![](./pic/chainrefinteg4.png)
 
 これで連鎖更新を確認することができました。 
 
@@ -112,23 +112,23 @@ purposes:
 
 "受注明細"を開きます。
 2 件目と 5 件目のレコードの"V-500"であることを確認します。
-![](delrefinteg1.png)
+![](./pic/delrefinteg1.png)
 一番下までスクロールした後に、レコードが 90 件表示されていることを確認します。
-![](delrefinteg2.png)
+![](./pic/delrefinteg2.png)
 "受注明細"を閉じます。
 次に"商品マスター"を開きます。
-![](delrefinteg3.png)
+![](./pic/delrefinteg3.png)
 "商品コード"フィールドの値が"V-500"のレコードを削除します。
-![](delrefinteg4.png)
+![](./pic/delrefinteg4.png)
 [はい]を押します。
-![](delrefinteg5.png)
-![](delrefinteg6.png)
+![](./pic/delrefinteg5.png)
+![](./pic/delrefinteg6.png)
 "商品マスター"を閉じます。
 もう一度"受注明細"を開きます。
 元の 2 件目と 5 件目のレコードだった"V-500"が削除されていることを確認します。
-![](delrefinteg7.png)
+![](./pic/delrefinteg7.png)
 一番下までスクロールした後に、レコードが 88 件表示されていることを確認します。
-![](delrefinteg8.png)
+![](./pic/delrefinteg8.png)
 閉じます。
 
 上に戻る
