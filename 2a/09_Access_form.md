@@ -48,7 +48,7 @@
         <h3>フォームウィザードでフォームを作成する</h3>
         <div class="text">
             <ol>
-                <li>[フォーム] - [フォームウィザード]を押します。</li>
+                <li>[フォーム] - [フォームウィザード]をクリックします。</li>
                 <div class="img"><img src="pic/formwizard1.png"></div>
                 <li>テーブル/クエリを[テーブル：サークル名簿]を選択 - 以下のフィールドを選択可能なフィールドから選択したフィールドへと移します。</li>
                 <ul>
@@ -63,13 +63,13 @@
                     <li>学部コース</li>
                     <li>退会</li>
                 </ul>
-                <li>[次へ]を押します。</li>
+                <li>[次へ]をクリックします。</li>
                 <div class="img"><img src="pic/formwizard2.png"></div>
-                <li>"単票形式"にチェックをつけたまま、[次へ]を押します。</li>
+                <li>"単票形式"にチェックをつけたまま、[次へ]をクリックします。</li>
                 <div class="img"><img src="pic/formwizard3.png"></div>
-                <li>好きなスタイルを選択し[次へ]を押します。</li>
+                <li>好きなスタイルを選択し[次へ]をクリックします。</li>
                 <div class="img"><img src="pic/formwizard4.png"></div>
-                <li>"会員入力"と入力し、"フォームを開いてデータを入力する"を選択して、[完了]を押します。</li>
+                <li>"会員入力"と入力し、"フォームを開いてデータを入力する"を選択して、[完了]をクリックします。</li>
                 <div class="img"><img src="pic/formwizard5.png"></div>
                 <div class="img"><img src="pic/formwizard6.png"></div>
                 <p>このようにフォームが作成されました。</p>
@@ -109,7 +109,7 @@
         <h3>フォームで新しいレコードを入力</h3>
         <div class="text">
             <ol>
-                <li>レコードの<img src="../buttonpic/newrecord.png" alt="新規レコード"align=absmiddle>を押します。</li>
+                <li>レコードの<img src="../buttonpic/newrecord.png" alt="新規レコード"align=absmiddle>をクリックします。</li>
                 <div class="img"><img src="pic/new1.png"></div>
                 <li>以下のデータを入力してください。</li>
                 <ul>
@@ -125,7 +125,6 @@
                 <div class="img"><img src="pic/new3.png"></div>
             </ol>
         </div>
-        <div class="navi"><a href="#">上に戻る</a></div>
         <h2><a name="1-2"></a>課題 1</h2>
         <div class="text">
             <p>"congress"の"会員名簿"テーブルを基に次の指示に従ってフォームを作成してください。</p>
@@ -145,7 +144,6 @@
                 <li>フォームを上書き保存し、"会員入力"フォームを閉じます。</li>
             </ol>
         </div>
-        <div class="navi"><a href="#">上に戻る</a></div>
         <div class="footer">作成者：首都大学東京 大学教育センター 情報教育担当</div>
     </body>
 </html>
