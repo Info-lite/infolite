@@ -72,7 +72,6 @@
                 </ol>
             </ul>
         </div>
-        <div class="navi"><a href="#">上に戻る</a></div>
         <h2><a name="1-2"></a>Microsoft Accessの基本操作</h2>
         <h3><a name="3-2"></a>ウィンドウ構成</h3>
         <div class="text">
@@ -119,7 +118,7 @@
     <h3>Microsoft Accessの起動</h3>
     <div class="text">
         <ol>
-            <li>[スタート] - [プログラム] - [Microsoft Office] - [Microsoft Office Access]をクリックします。</li>
+            <li>[スタート] - [すべてのプログラム] - [Microsoft Office] - [Microsoft Office Access]をクリックします。</li>
         </ol>
         <p>起動画面</p>
         <div class="img"><img src="pic/home.png"></div>
@@ -204,7 +203,6 @@
             <div class="img"><img src="pic/readjoin5.png"></div>
         </ol>
     </div>
-    <div class="navi"><a href="#">上に戻る</a></div>
     <h2><a name="1-3"></a>データベースの作成</h2>
     <h3>新しいデータベースの作成</h3>
     <div class="text">
@@ -367,7 +365,6 @@
                 <p>このように元々作られていたAccessのテーブルをインポートし、クエリを用いて関連づけをすることができます。</p>
             </ol>
         </div>
-        <div class="navi"><a href="#">上に戻る</a></div>
         <h2><a name="1-4"></a>課題 1</h2>
         <div class="text">
             <p>学会の入会日リストを管理するデータベースを作成し、"会員名簿"テーブルを作成します。テーブルのデータはExcelファイルからインポートします。以下の指示に従って、作成してください。</p>
@@ -411,7 +408,6 @@
                 <li>"会員管理"データベースにaccessファイル"membertype.accdb"データベースの"会員タイプ"テーブルをインポートしてください。</li>
             </ol>
         </div>
-        <div class="navi"><a href="#">上に戻る</a></div>
         <div class="footer">作成者：首都大学東京 大学教育センター 情報教育担当</div>
     </body>
 </html>
