@@ -139,7 +139,7 @@
     </div>
     <h3>ナビゲーションウィンドウの操作</h3>
     <div class="text">
-        <p>Access2010では、ウィンドウ左に表示される"ナビゲーション ウィンドウ"を使って
+        <p>Access2013では、ウィンドウ左に表示される"ナビゲーション ウィンドウ"を使って
         テーブルやフォームなどの一覧を表示させることができます。</p>
         <ol>カテゴライズの方法とフィルタの設定がここで行えます。
             <div class="img"><img src="pic/navi1.png"></div>
@@ -157,7 +157,7 @@
             <div class="img"><img src="pic/readlist3.png"></div>
             <div class="img"><img src="pic/readlist4.png"></div>
             <li>デザインビューに切り替わりました。デザインビューは、テーブル以外にもあり、レイアウトの変更やフィールドの設定変更などを行うことができます。</li>
-            <li>[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/databaseview.png" alt="データベースビュー" align="absmiddle">（[データベース ビュー]）をクリックすると、元に戻ります。</li>
+            <li>[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/databaseview.png" alt="データシートビュー" align="absmiddle">（[データシート ビュー]）をクリックすると、元に戻ります。</li>
             <div class="img"><img src="pic/readlist5.png"></div>
         </ol>
     </div>
@@ -171,7 +171,7 @@
             <li>[ホーム]タブ - [表示] - <img src="../buttonpic/layoutview.png" alt="レイアウトビュー" align="absmiddle">の<img src="../buttonpic/underview.png"align="absmiddle">（[表示]）の部分をクリックして、[デザインビュー]をクリックします。</li>
             <div class="img"><img src="pic/readinfo3.png"></div>
             <div class="img"><img src="pic/readinfo4.png"></div>
-            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/formview.png" alt="データベースビュー" align="absmiddle">（[データベースビュー]）をクリックすると、元に戻ります。</li>
+            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/formview.png" alt="データシートビュー" align="absmiddle">（[データシートビュー]）をクリックすると、元に戻ります。</li>
             <div class="img"><img src="pic/readinfo5.png"></div>
         </ol>
     </div>
@@ -185,7 +185,7 @@
             <li>[ホーム]タブ - [表示] - <img src="../buttonpic/designview.png" alt="デザインビュー" align="absmiddle">（[デザイン ビュー]）をクリックしてデザインビューに切り替えます。</li>
             <div class="img"><img src="pic/readcourse3.png"></div>
             <div class="img"><img src="pic/readcourse4.png"></div>
-            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/databaseview.png" alt="データベースビュー" align="absmiddle">（[データベース ビュー]もしくは[実行]）をクリックすると、元に戻ります。</li>
+            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/databaseview.png" alt="データシートビュー" align="absmiddle">（[データシート ビュー]もしくは[実行]）をクリックすると、元に戻ります。</li>
             <div class="img"><img src="pic/readcourse5.png"></div>
         </ol>
     </div>
@@ -199,7 +199,7 @@
             <li>[ホーム]タブ - [表示] - <img src="../buttonpic/layoutview.png" alt="データベースビュー" align="absmiddle">の<img src="../buttonpic/underview.png"align="absmiddle">（[表示]）の部分をクリックして、[デザイン ビュー]に切り替えます。</li>
             <div class="img"><img src="pic/readjoin3.png"></div>
             <div class="img"><img src="pic/readjoin4.png"></div>
-            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/reportview.png" alt="データベースビュー" align="absmiddle">（[データベース ビュー]）をクリックすると、元に戻ります。</li>
+            <li>デザインビューに切り替わりました。[ホーム]タブ（もしくは[デザイン]タブ） - [表示] - <img src="../buttonpic/reportview.png" alt="データシートビュー" align="absmiddle">（[データシート ビュー]）をクリックすると、元に戻ります。</li>
             <div class="img"><img src="pic/readjoin5.png"></div>
         </ol>
     </div>
@@ -219,13 +219,13 @@
     <div class="text">
         <p>既にテーブルが開かれているのでこれを編集していきます。</p>
         <ol>
-            <li>まず、デザインビューに切り替えます。[ホーム]タブ - [表示] - [データベース ビュー]をクリックしてデザインビューに切り替えます。</li>
+            <li>まず、デザインビューに切り替えます。[ホーム]タブ - [表示] - [データシート ビュー]をクリックしてデザインビューに切り替えます。</li>
             <li>名前を付けて保存ウィンドウが表示されるので"サークル名簿"と入力し、[OK]をクリックします。</li>
             <div class="img"><img src="pic/field1.png"></div>
             <div class="img"><img src="pic/field2.png"></div>
             <li>フィールド名の項目に以下の１１個の要素を入力していきます。</li>
             <ul>
-                <li>会員ID（すでに「ID」と入力されている部分を「会員ID」に変更する。）</li>
+                <li>会員ID（すでに「ID」と入力されている部分を「会員ID」に変更します。）</li>
                 <li>氏名</li>
                 <li>シメイ</li>
                 <li>郵便番号</li>
@@ -243,12 +243,12 @@
         <h3>ふりがなウィザードでプロパティを設定</h3>
         <div class="text">
             <ol>
-                <li>"氏名"をクリック - フィールドプロパティのふりがなの項目をクリックします。横に表示された[…]というボタンを押します。</li>
+                <li>"氏名"をクリック - フィールドプロパティのふりがなの項目をクリックします。横に表示された[…]というボタンをクリックします。</li>
                 <div class="img"><img src="pic/furigana1.png"></div>
                 <li>警告が出るのでテーブルを保存します。</li>
                 <div class="img"><img src="pic/furigana2.png"></div>
                 <li>ふりがなウィザードの"既存のフィールドを使用する"にチェックを入れ、[シメイ]を選択します。</li>
-                <li>さらにふりがなの文字種に[全角カタカナ]を選択し、[完了]を押します。</li>
+                <li>さらにふりがなの文字種に[全角カタカナ]を選択し、[完了]をクリックします。</li>
                 <div class="img"><img src="pic/furigana3.png"></div>
                 <li>フィールドのプロパティを変更します。[OK]をクリックします。</li>
                 <div class="img"><img src="pic/furigana4.png"></div>
@@ -258,9 +258,9 @@
         <h3>住所入力支援ウィザードでプロパティを設定</h3>
         <div class="text">
             <ol>
-                <li>"郵便番号"をクリック - フィールドプロパティの住所入力支援の項目をクリックします。横に表示された[…]を押します。</li>
+                <li>"郵便番号"をクリック - フィールドプロパティの住所入力支援の項目をクリックします。横に表示された[…]をクリックします。</li>
                 <div class="img"><img src="pic/zipcode1.png"></div>
-                <li>住所入力支援ウィザードの郵便番号に[郵便番号]を選択 - [次へ]を押します。</li>
+                <li>住所入力支援ウィザードの郵便番号に[郵便番号]を選択 - [次へ]をクリックします。</li>
                 <div class="img"><img src="pic/zipcode2.png"></div>
                 <li>住所の構成の中から"都道府県と住所の 2 分割"にチェック - 都道府県に[都道府県]を選択 - 住所に[市区町村]を選択 - [次へ]を押します。</li>
                 <div class="img"><img src="pic/zipcode3.png"></div>
@@ -292,13 +292,13 @@
             <ol>
                 <li>"入会年月日"の右横にある"テキスト型"を"日付/時刻型"に変更します。</li>
                 <div class="img"><img src="pic/join1.png"></div>
-                <li>"入会年月日"をクリック - 定型入力の項目をクリック - 横に表示された[…]を押します。</li>
+                <li>"入会年月日"をクリック - 定型入力の項目をクリック - 横に表示された[…]をクリックします。</li>
                 <div class="img"><img src="pic/join2.png"></div>
                 <li>警告が出るのでテーブルを保存します。</li>
                 <div class="img"><img src="pic/join3.png"></div>
-                <li>定型入力名の中の[日付（S）]を選択 - [次へ]を押します。</li>
+                <li>定型入力名の中の[日付（S）]を選択 - [次へ]をクリックします。</li>
                 <div class="img"><img src="pic/join4.png"></div>
-                <li>さらに、[次へ] - [完了]を押します。</li>
+                <li>さらに、[次へ] - [完了]をクリックします。</li>
                 <div class="img"><img src="pic/join5.png"></div>
                 <div class="img"><img src="pic/join6.png"></div>
                 <p>これで、"入会年月日"に入力したとき、年/月/日の形で入力されるようになりました。</p>
@@ -316,7 +316,7 @@
         <h3>データの入力</h3>
         <div class="text">
             <ol>
-                <li>[ホーム]タブ - [表示] - <img src="../buttonpic/databaseview.png" alt="データベースビュー" align="absmiddle">（[データベース ビュー]）をクリックして、データシートビューに戻ります。以下のデータを入力してみてください。
+                <li>[ホーム]タブ - [表示] - <img src="../buttonpic/databaseview.png" alt="データシートビュー" align="absmiddle">（[データシート ビュー]）をクリックして、データシートビューに戻ります。以下のデータを入力してください。
                 <ul>
                     <li>氏名：山本伊平（ヤマモト イヘイ）</li>
                     <li>郵便番号：221-0023</li>
@@ -336,14 +336,14 @@
                 <li>まず、サークル名簿を開いていたら、閉じます。</li>
                 <li>[外部データ]タブ - [インポート] - <img src="../buttonpic/excelimport.png" align="absmiddle">をクリックします。</li>
                 <div class="img"><img src="pic/excelimport1.png"></div>
-                <li>[参照]ボタンを押し、先ほどダウンロードした"Clist.xls"を選択します。</li>
+                <li>[参照]ボタンをクリックし、先ほどダウンロードした"Clist.xls"を選択します。</li>
                 <li>"レコードのコピーを次のテーブルに追加する"にチェックを入れ、"サークル名簿"を選択し、[OK]を押します。</li>
                 <div class="img"><img src="pic/excelimport2.png"></div>
                 <li>[次へ]をクリックします。</li>
                 <div class="img"><img src="pic/excelimport3.png"></div>
-                <li>[完了]を押します。</li>
+                <li>[完了]をクリックします。</li>
                 <div class="img"><img src="pic/excelimport4.png"></div>
-                <li>[閉じる]を押してインポートを完了します。</li>
+                <li>[閉じる]をクリックしてインポートを完了します。</li>
                 <div class="img"><img src="pic/excelimport5.png"></div>
                 <p>このようにExcelのファイル内に保存されているデータをAccessにインポートすることができます。</p>
                 <div class="img"><img src="pic/excelimport6.png"></div>
@@ -354,11 +354,11 @@
             <ol>
                 <li>[外部データ]タブ - [インポート] - <img src="../buttonpic/accessimport.png" align="absmiddle">をクリックします。</li>
                 <div class="img"><img src="pic/accessimport1.png"></div>
-                <li>[参照]ボタンを押し、先ほどダウンロードした"gradetype.accdb"を選択し、[OK]を押します。</li>
+                <li>[参照]ボタンを押し、先ほどダウンロードした"gradetype.accdb"を選択し、[OK]をクリックします。</li>
                 <div class="img"><img src="pic/accessimport2.png"></div>
-                <li>"月会費"を選択 - [OK]を押します。</li>
+                <li>"月会費"を選択 - [OK]をクリックします。</li>
                 <div class="img"><img src="pic/accessimport3.png"></div>
-                <li>[閉じる]を押してインポートを完了します。</li>
+                <li>[閉じる]をクリックしてインポートを完了します。</li>
                 <div class="img"><img src="pic/accessimport4.png"></div>
                 <p>月会費</p>
                 <div class="img"><img src="pic/accessimport5.png"></div>
