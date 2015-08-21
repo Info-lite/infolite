@@ -17,5 +17,5 @@ permalink: /2a/
 -   [クエリ](/lit/contents/office2013/access/04/index.html)
 -   [リレーションシップ（１）](/lit/contents/office2013/access/05/index.html)
 -   [リレーションシップ（２）](/lit/contents/office2013/access/06/index.html)
--   [リレーションシップ（３）](/lit/contents/office2009/access/07/index.html)
+-   [リレーションシップ（３）](/lit/contents/office2013/access/07/index.html)
 
