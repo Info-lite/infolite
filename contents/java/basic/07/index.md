@@ -28,11 +28,13 @@ purposes:
 **様々な変数の使い方**
 
 <span class="label label-info">参考資料</span> [四則演算と変数](../basic/02/index.md)
+
 <span class="label label-info">参考資料</span> [配列](../basic/06/index.md)
 
 **様々な演算子の使い方**
 
 <span class="label label-info">参考資料</span> [四則演算と変数](../basic/02/index.md)
+
 <span class="label label-info">参考資料</span> [条件分岐](../basic/04/index.md)
 
 **キーボードから値を入力したい**
