@@ -11,47 +11,39 @@ purposes:
 
 **課題を行う前に**
 --------------
+
 ### ポイントの復習
 
-
 分からなくなったときに参照すべき箇所を挙げておきます。必要に応じて参照してください。
+
 **条件によって動作を変えたい**
 
-* if文（１）
-* if文（２）
-* if文（３）
-* switch文
+<span class="label label-info">参考資料</span> [条件分岐](../basic/04/index.md)
 
 **同じ動作を繰り返したい**
 
-* while文
-* for文
+<span class="label label-info">参考資料</span> [繰り返し](../basic/05/index.md)
 
 **様々な変数の使い方**
 
-* 変数宣言
-* 基本データ型
-* 配列の宣言と生成（１）
-* 配列の宣言と生成（２）
-* 配列の宣言と生成（３）
+<span class="label label-info">参考資料</span> [四則演算と変数](../basic/02/index.md)
+
+<span class="label label-info">参考資料</span> [配列](../basic/06/index.md)
 
 **様々な演算子の使い方**
 
-* 算術演算子
-* 比較演算子
-* 論理演算子
+<span class="label label-info">参考資料</span> [四則演算と変数](../basic/02/index.md)
+
+<span class="label label-info">参考資料</span> [条件分岐](../basic/04/index.md)
 
 **キーボードから値を入力したい**
 
-* 文字列の入力
-* 数値の入力
-
-
+<span class="label label-info">参考資料</span> [キーボードからの入力と型変換](../basic/03/index.md)
 
 ### 課題
 
-
-自分で好きなプログラムを書いてみましょう。内容やクラス名は特に指定しません。
+自分で好きなプログラムを書いてみましょう。
+内容やクラス名は特に指定しません。
 
 Java言語であれば、何を用いてもかまいません。
 
