@@ -11,79 +11,82 @@ purposes:
 
 
 四則演算
---------------
+----------------------
+
 ### Keisan1.java
 
 まず、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
 コンパイルの方法は、以下を参考にしましょう。
 
-<div id="ref"><a href="javacwin.html" target="_blank">コンパイルと実行（Windows コマンドプロンプト）</a></div>
-<div id="ref"><a href="javacmac.html" target="_blank">コンパイルと実行（Mac ターミナル）</a></div>
-<div id="ref"><a href="eclipse.html" target="_blank">コンパイルと実行（Eclipse）</a></div>
+<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../appendix/javacwin.html)
+
+<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../appendix/javacmac.html)
+
+<span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../appendix/eclipse.html)
 
 Keisan1.java
 ![](./pic/Keisan1.png)
 
 実行すると、以下のような結果が表示されます。
 
-~~~~
-実行結果
-
-3
-~~~~
+    実行結果
+    3
 
 ### 算術演算子
 
 算術演算子には、以下のようなものがあります。
 
-<div id="img">
-<table border=2>
+<table>
+<thead>
 <tr>
-	<th>演算子</th>
-	<th>意味</th>
-	<th>使い方の例</th>
-	<th>結果</th>
+<th>演算子</th>
+<th>意味</th>
+<th>使い方の例</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>和</td>
+<td>5+2</td>
+<td>7</td>
 </tr>
 <tr>
-	<td>+</td>
-	<td>和</td>
-	<td>5+2</td>
-	<td>7</td>
+<td>-</td>
+<td>差</td>
+<td>5-2</td>
+<td>3</td>
 </tr>
 <tr>
-	<td>-</td>
-	<td>差</td>
-	<td>5-2</td>
-	<td>3</td>
+<td>* </td>
+<td>積</td>
+<td>5*2</td>
+<td>10</td>
 </tr>
 <tr>
-	<td>* </td>
-	<td>積</td>
-	<td>5*2</td>
-	<td>10</td>
+<td>/</td>
+<td>商</td>
+<td>5/2</td>
+<td>2</td>
 </tr>
 <tr>
-	<td>/</td>
-	<td>商</td>
-	<td>5/2</td>
-	<td>2</td>
+<td>%</td>
+<td>剰余</td>
+<td>5%2</td>
+<td>1</td>
 </tr>
-<tr>
-	<td>%</td>
-	<td>剰余</td>
-	<td>5%2</td>
-	<td>1</td>
-</tr>
+</tbody>
 </table>
-</div>
 
 演算子には優先順位があります。基本的には、数学の優先順位と同じです。
 
-<div id="ref"><a href="rank.html" target="_blank">演算子の優先順位</a></div>
+<span class="label label-info">参考資料</span> [演算子の優先順位](../appendix/rank.html)
 
 変数と基本データ型
---------------
+----------------------
+
 ### Keisan2.java
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 前の「Keisan1.java」を少し修正しただけです。
@@ -100,30 +103,24 @@ Keisan2.java
 
 変数宣言
 
-~~~~
-データ型 変数名;
-~~~~
+    データ型 変数名;
 
 例えば、上のプログラムの3行目が変数宣言です。
 
 変数宣言の例（１）
 
-~~~~
-int x;
-~~~~
+    int x;
 
 さらに、以下のように宣言と同時に初期値を入力することもできます。
 
 変数宣言の例（２）
 
-~~~~
-int x=3;
-~~~~
+    int x=3;
 
 変数宣言は、プログラムの任意の場所で行えますが、特にプログラム全般で使う変数は**先頭にまとめる**ほうが良いでしょう。
 また、変数名は基本的には自由につけることができますが、「予約語」と呼ばれる単語は使用することができません。
 
-<div id="ref"><a href="reserved.html" target="_blank">Java言語における予約語</a></div>
+<span class="label label-info">参考資料</span> [Java言語における予約語](../appendix/reserved.html)
 
 ### 代入
 4行目の「x=3;」の「=」は、**値の代入**をせよという意味です。記号は同じでも、数学でいう「等号」とは意味が少し違います。
@@ -134,69 +131,72 @@ int x=3;
 ### 基本データ型
 上の例では、整数型「int」を使いました。Javaではこの他にも様々なデータ型を扱うことができます。
 
-<div id="img">
-<table border="2">
+<table>
+<thead>
 <tr>
-	<th>型</th>
-	<th>サイズ</th>
-	<th>内容</th>
-	<th>値の範囲</th>
+<th>型</th>
+<th>サイズ</th>
+<th>内容</th>
+<th>値の範囲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>byte</th>
+<td>1 byte</td>
+<td>整数型</td>
+<td>-128 ～ +127</td>
 </tr>
 <tr>
-	<th>byte</th>
-	<td>1 byte</td>
-	<td>整数型</td>
-	<td>-128 ～ +127</td>
+<th>short</th>
+<td>2 byte</td>
+<td>整数型</td>
+<td>-32768 ～ +32767</td>
 </tr>
 <tr>
-	<th>short</th>
-	<td>2 byte</td>
-	<td>整数型</td>
-	<td>-32768 ～ +32767</td>
+<th>int</th>
+<td>4 byte</td>
+<td>整数型</td>
+<td>-2147483648 ～ +2147483647</td>
 </tr>
 <tr>
-	<th>int</th>
-	<td>4 byte</td>
-	<td>整数型</td>
-	<td>-2147483648 ～ +2147483647</td>
+<th>long</th>
+<td>8 byte</td>
+<td>整数型</td>
+<td>-9223372036854775808 ～ +9223372036854775807</td>
 </tr>
 <tr>
-	<th>long</th>
-	<td>8 byte</td>
-	<td>整数型</td>
-	<td>-9223372036854775808 ～ +9223372036854775807</td>
+<th>char</th>
+<td>2 byte</td>
+<td>文字・整数型</td>
+<td>\u0000 ～ \uFFFF</td>
 </tr>
 <tr>
-	<th>char</th>
-	<td>2 byte</td>
-	<td>文字・整数型</td>
-	<td>\u0000 ～ \uFFFF</td>
+<th>float</th>
+<td>4 byte</td>
+<td>浮動小数点型</td>
+<td>-3.40282347e38 ～ 3.40282347e38</td>
 </tr>
 <tr>
-	<th>float</th>
-	<td>4 byte</td>
-	<td>浮動小数点型</td>
-	<td>-3.40282347e38 ～ 3.40282347e38</td>
+<th>double</th>
+<td>8 byte</td>
+<td>浮動小数点型</td>
+<td>-1.79769313486231570e308 ～ 1.79769313486231570e308</td>
 </tr>
 <tr>
-	<th>double</th>
-	<td>8 byte</td>
-	<td>浮動小数点型</td>
-	<td>-1.79769313486231570e308 ～ 1.79769313486231570e308</td>
+<th>boolean</th>
+<td></td>
+<td>真偽型</td>
+<td>trueもしくはfalse</td>
 </tr>
-<tr>
-	<th>boolean</th>
-	<td></td>
-	<td>真偽型</td>
-	<td>trueもしくはfalse</td>
-</tr>
+</tbody>
 </table>
-</div>
 
 浮動小数点型の「e」は、「（e以前の数）×10の（e以降の数）乗」という意味です。
 
 様々な変数の使い方
---------------
+----------------------
+
 ### Keisan3.java
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
@@ -215,6 +215,6 @@ Keisan3.java
 このように、右辺に「変数」もしくは「変数の入った数式」でも代入できます。
 
 練習問題
---------------
+----------------------
 上のKeisan3.javaを参考にして、他の演算を行うプログラムを作成してみましょう。
 その際、値もいろいろ変えて試してみましょう。
