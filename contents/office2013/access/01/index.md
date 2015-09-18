@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accessの概要とテーブル
-date: 2015-03-23 17:01:14 +0900
+date: 2015-09-18 12:27:31 +0900
 purposes:
     - データベースソフトについて学ぶ
     - Microsoft Accessの基本操作を学ぶ
@@ -16,6 +16,7 @@ Clist.xls
 gradetype.accdb
 congresslist.xls
 membertype.accdb
+
 
 Microsoft Accessについて
 --------------
