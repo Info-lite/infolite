@@ -36,7 +36,7 @@ ActionListenerは、ボタンが押された等のイベントを監視するも
 
     public void init() {
     	bt = new Button("ボタン");		//ボタンクラスのインスタンスの生成
-    	this.add(bt);				//アプレットにボタンを追加する
+    	this.add(bt);				    //アプレットにボタンを追加する
     	bt.addActionListener(this);		//ボタンをリスナーに追加
     }
 
