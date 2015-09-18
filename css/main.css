@@ -74,6 +74,10 @@ code {
     content: '\f1c4';
     color: #d04424;
 }
+.container a[href$=".accdb"]:after {
+    content: '\f0f6';
+    color: #a2383c;
+}
 
 .caption {
     text-align: center;
