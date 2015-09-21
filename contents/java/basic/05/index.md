@@ -17,8 +17,8 @@ purposes:
 
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-Sum1.java
-![](./pic/Sum.png)
+WhileLoopSample.java
+![](./pic/WhileLoopSample.png)
 
 実行すると、以下のように表示されます。
 
@@ -50,8 +50,8 @@ while文
 
 では、次のように改良してみましょう。
 
-Sum1.java
-![](./pic/Sum-02x.png)
+WhileLoopSample.java
+![](./pic/WhileLoopSampleMod1.png)
 
 実行すると、以下のようになります。
 
@@ -95,8 +95,8 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 決まった回数の反復を行う場合、より分かりやすい方法があります。
 まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
 
-Kurikaeshi1.java
-![](./pic/Kurikaeshi.png)
+ForLoopSample.java
+![](./pic/ForLoopSample.png)
 
 実行すると、以下のようになります。
 
@@ -126,8 +126,8 @@ for文
 
 では、次のようにプログラムを改良してみましょう。
 
-Kurikaeshi1.java
-![](./pic/Kurikaeshi-02x.png)
+ForLoopSample.java
+![](./pic/ForLoopSampleMod1.png)
 
 まず、for文の中のみで使う変数は、上のように宣言することができます。
 また、インクリメント演算子というものもあります。
@@ -153,7 +153,7 @@ Kurikaeshi1.java
 ### 問題１
 
 for文もしくはwhile文を用いて、１から入力された値までの和を出力するプログラムを書きましょう。
-クラス名は`Sum_n`とします。
+クラス名は`CalcSum`とします。
 
 実行結果
 
@@ -164,7 +164,7 @@ for文もしくはwhile文を用いて、１から入力された値までの和
 ### 問題２
 
 値を入力すると、その値が素数かどうかを判定するプログラムを書きましょう。
-クラス名は`Prime`とします。
+クラス名は`CalcPrime`とします。
 ここで素数とは、`1と自分自身以外で割り切れない数`のことです。
 
 実行結果（１）
