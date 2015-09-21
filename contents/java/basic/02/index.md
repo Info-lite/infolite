@@ -216,7 +216,7 @@ CalcSample3.java
 さらに、以下のように修正してみましょう。
 
 CalcSample3.java
-![](./pic/CalcSample3mod1.png)
+![](./pic/CalcSample3Mod1.png)
 
 このように、右辺に`変数`もしくは`変数の入った数式`でも代入できます。
 
