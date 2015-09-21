@@ -13,7 +13,7 @@ purposes:
 四則演算
 ----------------------
 
-### Keisan1.java
+### CalcSample1.java
 
 まず、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
@@ -25,8 +25,8 @@ purposes:
 
 <span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../appendix/eclipse.html)
 
-Keisan1.java
-![](./pic/Keisan1.png)
+CalcSample1.java
+![](./pic/CalcSample1.png)
 
 実行すると、以下のような結果が表示されます。
 
@@ -87,13 +87,13 @@ Keisan1.java
 変数と基本データ型
 ----------------------
 
-### Keisan2.java
+### CalcSample2.java
 
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
-前の`Keisan1.java`を少し修正しただけです。
+前の`CalcSample1.java`を少し修正しただけです。
 
-Keisan2.java
-![](./pic/Keisan2.png)
+CalcSample2.java
+![](./pic/CalcSample2.png)
 
 ### 変数とは
 
@@ -201,12 +201,12 @@ Keisan2.java
 様々な変数の使い方
 ----------------------
 
-### Keisan3.java
+### CalcSample3.java
 
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
-Keisan3.java
-![](./pic/Keisan3.png)
+CalcSample3.java
+![](./pic/CalcSample3.png)
 
 4行目を見てみましょう。このように、代入するものは`数式`でも使えます。
 正確には、変数xに`数式の計算結果の値`を代入することになります。
@@ -215,13 +215,13 @@ Keisan3.java
 
 さらに、以下のように修正してみましょう。
 
-Keisan3.java
-![](./pic/Keisan3-2.png)
+CalcSample3.java
+![](./pic/CalcSample3mod1.png)
 
 このように、右辺に`変数`もしくは`変数の入った数式`でも代入できます。
 
 練習問題
 ----------------------
 
-上のKeisan3.javaを参考にして、他の演算を行うプログラムを作成してみましょう。
+上のCalcSample3.javaを参考にして、他の演算を行うプログラムを作成してみましょう。
 その際、値もいろいろ変えて試してみましょう。
