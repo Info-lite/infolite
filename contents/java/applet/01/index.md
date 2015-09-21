@@ -19,18 +19,18 @@ Javaアプレットとは、Webブラウザなどに埋め込まれて実行さ�
 
 まず、以下のようなソースコードを打ち込み、コンパイルしてみましょう。
 
-Helloap.java
-![](./pic/Helloap_java_2014.png)
+HelloApplet.java
+![](./pic/HelloApplet.png)
 
 次に、以下のようなhtmlファイルを作成します。
 
-Helloap.html
-![](./pic/Helloap.html.png)
+HelloApplet.html
+![](./pic/HelloApplet.html.png)
 
 今作成したhtmlファイルを適当なブラウザで開いてみましょう。
 もしくは、以下のようなコマンドを入力してください。
 
-    appletviewer Helloap.html
+    appletviewer HelloApplet.html
 
 すると、画面に`こんにちは`と表示されているはずです。
 
@@ -40,11 +40,11 @@ Helloap.html
 
 4行目を見てみましょう。
 
-    public class Helloap extends Applet
+    public class HelloApplet extends Applet
 
 これは、クラスの`継承`というものです。
 
-詳しくは説明しませんが、Appletというクラスを基にして新たなクラスHelloapを作っている、と思っておいてください。
+詳しくは説明しませんが、Appletというクラスを基にして新たなクラスHelloAppletを作っている、と思っておいてください。
 
 アプレットはブラウザによってインスタンス化されて実行するため、外部から参照可能とするpublic修飾子が必要です。
 
@@ -58,8 +58,8 @@ Helloap.html
 
 追加できたら、上と同様にコンパイルして実行しましょう。
 
-Helloap.java
-![](./pic/Helloapv2_java_2014.png)
+HelloApplet.java
+![](./pic/HelloAppletMod1.png)
 
 文字と共に直線が表示されましたね。
 
@@ -100,8 +100,8 @@ Oracle Technology Network for Java Developers（英語）
 
 追加できたら、上と同様にコンパイルして実行しましょう。
 
-Helloap.java
-![](./pic/Helloapv3.java.png)
+HelloApplet.java
+![](./pic/HelloAppletMod2.png)
 
 このようにして、色を変えることもできます。
 
@@ -135,13 +135,13 @@ Oracle Technology Network for Java Developers（英語）
 ### 問題１
 
 市松模様を描きましょう。
-クラス名は`Ichimatsu`とします。
+クラス名は`DrawCheckedPatternApplet`とします。
 
-![](./pic/2b9_Ichimatsu.png)
+![](./pic/DrawCheckedPatternApplet.png)
 
 ### 問題２
 
 drawLineを用いて、以下のような模様を書いてみましょう。
-クラス名は`Colorap`とします。
+クラス名は`DrawGradationApplet`とします。
 
-![](./pic/2b9_Colorap.png)
+![](./pic/DrawGradationApplet.png)
