@@ -18,9 +18,9 @@ purposes:
 
 htmlファイルは自分で作成してください。
 
-Keisanap.java
+CalcApplet.java
 
-![](./pic/Keisanap_java_2014.png)
+![](./pic/CalcApplet.png)
 
 左の2つのテキストボックスに数字を入力しボタンをクリックすると、その和が表示されます。
 
@@ -30,8 +30,8 @@ Keisanap.java
 
 以下のソースコードを入力・実行し、マウスをいろいろと操作してみましょう。
 
-Mouse.java
-![](./pic/Mouse_java_2014.png)
+MouseApplet.java
+![](./pic/MouseApplet.png)
 
 このように、マウスの動きを捉えるリスナーもあります。
 
@@ -44,8 +44,8 @@ awtには他にもいろいろなものが用意されています。
 
 ソースコードを打ち込み、実行してみましょう。
 
-Move.java
-![](./pic/Move_java_2014.png)
+CountUpApplet.java
+![](./pic/CountUpApplet.png)
 
 練習問題
 --------------
@@ -53,11 +53,11 @@ Move.java
 ### 問題１
 
 半径を入力すると、その大きさの円を書くプログラムを書きましょう。
-クラス名は、`Circle1`とします。
+クラス名は、`DrawCircleApplet`とします。
 
 ### 問題２
 
 上の問題１のプログラムを、クリックした場所を中心とする円を描くプログラムになるように改良しましょう。
-クラス名は、`Circle2`とします。
+クラス名は、`DrawCircleWithClickApplet`とします。
 
 座標は、getX()、getY()で得ることができます。
