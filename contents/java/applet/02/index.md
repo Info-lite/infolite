@@ -15,11 +15,11 @@ purposes:
 
 次のようなプログラムを実行してみましょう。
 
-Botan.java
-![](./pic/Botan_java_2014.png)
+ClickCountApplet.java
+![](./pic/ClickCountApplet.png)
 
-Botan.html
-![](./pic/Botan.html.png)
+ClickCountApplet.html
+![](./pic/ClickCountApplet.html.png)
 
 ボタンを押した回数を表示するだけのプログラムです。
 
@@ -27,12 +27,12 @@ Botan.html
 
 まず、5行目を見てみましょう。
 
-    public class Botan extends Applet implements ActionListener
+    public class ClickCountApplet extends Applet implements ActionListener
 
 これは、インタフェースの実装と呼ばれるものです。
 ActionListenerは、ボタンが押された等のイベントを監視するものです。
 
-次に、クラスBotanにあるメソッドを見てきましょう。
+次に、クラスClickCountAppletにあるメソッドを見てきましょう。
 
     public void init() {
     	bt = new Button("ボタン");		//ボタンクラスのインスタンスの生成
@@ -64,8 +64,8 @@ repaint()は、もう一度paint()を呼び出し再描画するコマンドで�
 
 htmlファイルは上の例を参考に自分で作成してみましょう。
 
-Botan2.java
-![](./pic/Botan2_java_2014.png)
+ChangeColorApplet.java
+![](./pic/ChangeColorApplet.png)
 
 ボタンが複数ある場合、getSource()を用いて、どのボタンが押されたかを認識します。
 
@@ -74,10 +74,10 @@ Botan2.java
 
 ### 問題１
 
-上のBotan.javaに、押すと数を減らすボタンを追加しましょう。
+上のClickCountApplet.javaに、押すと数を減らすボタンを追加しましょう。
 
 ### 問題２
 
 ３つのボタンを作成し、それぞれのボタンを押すと、三角形・四角形・円が表示されるプログラムを書きましょう。
 
-クラス名は`Zukei_select`とします。
+クラス名は`DrawFigureApplet`とします。
