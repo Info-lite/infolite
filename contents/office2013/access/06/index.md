@@ -1,16 +1,22 @@
 ---
 layout: page
 title: リレーションシップ（２）
-date: 2015-09-24 13:22:44 +0900
+date: 2015-09-25 13:07:02 +0900
 purposes:
     - リレーションシップの構造をより詳しく学ぶ
     - データを変更することによって、リレーションシップが働いていることを再確認する
 ---
 
-今回使うファイルです。ダウンロードしてください。
 
--   pencil.accdb
--   paper.accdb
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。
+<ul>
+<li><a href="../assets/pencil.accdb">pencil.accdb</a></li>
+<li><a href="../assets/paper.accdb">paper.accdb</a></li>
+</ul>
+</div>
+</div>
 
 
 リレーションシップ
