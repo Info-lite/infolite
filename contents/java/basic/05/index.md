@@ -41,7 +41,7 @@ while文
 
 ![](./pic/while.png)
 
-<span class="label label-info">参考資料</span> [比較演算子](../04/index.html)
+[比較演算子](../04/index.html)
 
 ### break文
 

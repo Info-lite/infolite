@@ -78,7 +78,7 @@ purposes:
 ここの内容をきちんと理解するには、Java言語のことを深くまで理解する必要があります。
 もう少し詳しく知りたい場合は、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [Calc.javaの解説](../../appendix/calcjava.html)
+<span class="label label-info">参考資料</span> [AdditionSample.javaの解説](../../appendix/addition_sample.html)
 
 
 型変換とキャスト演算子
