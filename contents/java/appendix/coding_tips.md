@@ -69,7 +69,7 @@ date: 2015-03-23 16:14:50 +0900
 <dt>予約語は使用できない</dt>
 <dd>ただし、予約語と他の単語を組み合わせたものは使用できます。</dd>
 
-<span class="label label-info">参考資料</span> [Java言語における予約語](../../appendix/reserved.html)
+<span class="label label-info">参考資料</span> [Java言語における予約語](../../appendix/keyword.html)
 
 ### 分かりやすい変数名をつける
 

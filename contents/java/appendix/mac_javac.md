@@ -14,7 +14,7 @@ Dockから、*ターミナル* を起動します。Dockから見つけられな
 
 ターミナルの詳しい使い方については、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/terminal.html)
+<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/mac_terminal.html)
 
 ### コンパイル
 

@@ -15,7 +15,7 @@ purposes:
 見やすく・分かりやすいソースコードは、単純なミスを防げるだけでなく、プログラムの流れを直感的に捉えやすくなります。
 これは、長いコードになればなるほど重要になってきます。
 
-<span class="label label-info">参考資料</span> [見やすいソースコードの書き方](../../appendix/goodsource.html)
+<span class="label label-info">参考資料</span> [見やすいソースコードの書き方](../../appendix/coding_tips.html)
 
 キーボードからの入力
 --------------------

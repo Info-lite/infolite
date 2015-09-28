@@ -17,9 +17,9 @@ purposes:
 
 コンパイルの方法は、以下を参考にしましょう。
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../../appendix/javacwin.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../../appendix/win_javac.html)
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../../appendix/javacmac.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../../appendix/mac_javac.html)
 
 <span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../../appendix/eclipse.html)
 
@@ -80,7 +80,7 @@ purposes:
 
 演算子には優先順位があります。基本的には、数学の優先順位と同じです。
 
-<span class="label label-info">参考資料</span> [演算子の優先順位](../../appendix/rank.html)
+<span class="label label-info">参考資料</span> [演算子の優先順位](../../appendix/priority_order.html)
 
 変数と基本データ型
 ------------------
@@ -120,7 +120,7 @@ purposes:
 変数宣言は、プログラムの任意の場所で行えますが、特にプログラム全般で使う変数は**先頭にまとめる**ほうが良いでしょう。
 また、変数名は基本的には自由につけることができますが、**予約語** と呼ばれる単語は使用することができません。
 
-<span class="label label-info">参考資料</span> [Java言語における予約語](../../appendix/reserved.html)
+<span class="label label-info">参考資料</span> [Java言語における予約語](../../appendix/keyword.html)
 
 ### 代入
 

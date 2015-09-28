@@ -43,9 +43,9 @@ purposes:
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
-<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/command.html)
+<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/win_cmd_prompt.html)
 
-<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/terminal.html)
+<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/mac_terminal.html)
 
 
 Java言語の基本
@@ -91,7 +91,7 @@ Hello.javaの解説 - コンパイルから実行まで
 
     javac Hello.java
 
-この**javac**が、**コンパイル**するためのコマンドです。
+この `javac` が、**コンパイル**するためのコマンドです。
 これにより、中間コードの `Hello.class` が作成されます。
 
 ### java

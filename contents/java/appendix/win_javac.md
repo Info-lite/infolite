@@ -14,7 +14,7 @@ date: 2015-03-23 16:14:50 +0900
 
 コマンドプロンプトの詳しい使い方については、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/command.html)
+<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/win_cmd_prompt.html)
 
 ### コンパイル
 
