@@ -7,8 +7,6 @@ purposes:
     - 基本データ型の扱い方の理解
 ---
 
-練習で使ったデータは必ず保存するようにしましょう
-
 
 四則演算
 --------
@@ -19,14 +17,14 @@ purposes:
 
 コンパイルの方法は、以下を参考にしましょう。
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../appendix/javacwin.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../../appendix/javacwin.html)
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../appendix/javacmac.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../../appendix/javacmac.html)
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../appendix/eclipse.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../../appendix/eclipse.html)
 
 CalcSample1.java
-![](./pic/CalcSample1.png)
+![](./pic/CalcSample1.java.png)
 
 実行すると、以下のような結果が表示されます。
 
@@ -82,7 +80,7 @@ CalcSample1.java
 
 演算子には優先順位があります。基本的には、数学の優先順位と同じです。
 
-<span class="label label-info">参考資料</span> [演算子の優先順位](../appendix/rank.html)
+<span class="label label-info">参考資料</span> [演算子の優先順位](../../appendix/rank.html)
 
 変数と基本データ型
 ----------------------
@@ -93,7 +91,7 @@ CalcSample1.java
 前の`CalcSample1.java`を少し修正しただけです。
 
 CalcSample2.java
-![](./pic/CalcSample2.png)
+![](./pic/CalcSample2.java.png)
 
 ### 変数とは
 
@@ -122,7 +120,7 @@ CalcSample2.java
 変数宣言は、プログラムの任意の場所で行えますが、特にプログラム全般で使う変数は**先頭にまとめる**ほうが良いでしょう。
 また、変数名は基本的には自由につけることができますが、**予約語** と呼ばれる単語は使用することができません。
 
-<span class="label label-info">参考資料</span> [Java言語における予約語](../appendix/reserved.html)
+<span class="label label-info">参考資料</span> [Java言語における予約語](../../appendix/reserved.html)
 
 ### 代入
 
@@ -207,7 +205,7 @@ CalcSample2.java
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
 CalcSample3.java
-![](./pic/CalcSample3.png)
+![](./pic/CalcSample3.java.png)
 
 4行目を見てみましょう。このように、代入するものは **数式** でも使えます。
 正確には、変数xに **数式の計算結果の値** を代入することになります。
@@ -217,7 +215,7 @@ CalcSample3.java
 さらに、以下のように修正してみましょう。
 
 CalcSample3.java
-![](./pic/CalcSample3Mod1.png)
+![](./pic/CalcSample3.java.Mod1.png)
 
 このように、右辺に **変数** もしくは **変数の入った数式** でも代入できます。
 

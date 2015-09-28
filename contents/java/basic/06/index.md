@@ -101,7 +101,7 @@ for文と配列を組み合わせると、複数個の入力にも対応でき�
 配列のインデックスを２次元・３次元、あるいは多次元にして使うこともできます。
 これについては、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [多次元配列](../appendix/array.html)
+<span class="label label-info">参考資料</span> [多次元配列](../../appendix/array.html)
 
 練習問題
 --------------

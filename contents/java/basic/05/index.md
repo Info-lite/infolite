@@ -18,7 +18,7 @@ purposes:
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 WhileLoopSample.java
-![](./pic/WhileLoopSample.png)
+![](./pic/WhileLoopSample.java.png)
 
 実行すると、以下のように表示されます。
 
@@ -51,7 +51,7 @@ while文
 では、次のように改良してみましょう。
 
 WhileLoopSample.java
-![](./pic/WhileLoopSampleMod1.png)
+![](./pic/WhileLoopSample.java.Mod1.png)
 
 実行すると、以下のようになります。
 
@@ -96,7 +96,7 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
 
 ForLoopSample.java
-![](./pic/ForLoopSample.png)
+![](./pic/ForLoopSample.java.png)
 
 実行すると、以下のようになります。
 
@@ -127,7 +127,7 @@ for文
 では、次のようにプログラムを改良してみましょう。
 
 ForLoopSample.java
-![](./pic/ForLoopSampleMod1.png)
+![](./pic/ForLoopSample.java.Mod1.png)
 
 まず、for文の中のみで使う変数は、上のように宣言することができます。
 また、インクリメント演算子というものもあります。

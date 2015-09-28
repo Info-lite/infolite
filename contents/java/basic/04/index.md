@@ -17,7 +17,7 @@ purposes:
 まず、以下のソースコードを入力し、コンパイルして実行してみましょう。その際、入力する値をいろいろ試してみましょう。
 
 ForkSample.java
-![](./pic/ForkSample.png)
+![](./pic/ForkSample.java.png)
 
 実行結果は、以下のどちらかになります。
 
@@ -121,7 +121,7 @@ if文（１）
 では、前のソースコードに少し付け加えてみましょう。
 
 ForkSample.java
-![](./pic/ForkSampleMod1.png)
+![](./pic/ForkSample.java.Mod1.png)
 
 実行結果は、以下のどちらかになります。
 
@@ -161,7 +161,7 @@ if文（２）
 さらに複数の分岐をさせてみましょう。
 
 ForkSample.java
-![](./pic/ForkSampleMod2.png)
+![](./pic/ForkSample.java.Mod2.png)
 
 1,2,3を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。
 else ifを使うと、さらに分岐を増やすことができます。
@@ -196,7 +196,7 @@ else if文は、いくつでも追加することができます。
 上のソースコードを、以下のように書き直して見ましょう。
 
 SwitchSample.java
-![](./pic/SwitchSample.png)
+![](./pic/SwitchSample.java.png)
 
 前のプログラムと同じ動作をしているはずです。
 

@@ -20,7 +20,7 @@ Javaアプレットとは、Webブラウザなどに埋め込まれて実行さ�
 まず、以下のようなソースコードを打ち込み、コンパイルしてみましょう。
 
 HelloApplet.java
-![](./pic/HelloApplet.png)
+![](./pic/HelloApplet.java.png)
 
 次に、以下のようなhtmlファイルを作成します。
 
@@ -59,7 +59,7 @@ HelloApplet.html
 追加できたら、上と同様にコンパイルして実行しましょう。
 
 HelloApplet.java
-![](./pic/HelloAppletMod1.png)
+![](./pic/HelloApplet.java.Mod1.png)
 
 文字と共に直線が表示されましたね。
 
@@ -92,7 +92,7 @@ Oracle Technology Network for Java Developers（英語）
 <dd>アプレット内の座標とは、ウィンド左上を原点とし、右をx軸の正の向き、下をy軸の正の向きとしたものです。</dd>
 </dl>
 
-![](./pic/2b9_appletwindow.png)
+![](./pic/coordinate.png)
 
 ### 色を変える
 
@@ -101,7 +101,7 @@ Oracle Technology Network for Java Developers（英語）
 追加できたら、上と同様にコンパイルして実行しましょう。
 
 HelloApplet.java
-![](./pic/HelloAppletMod2.png)
+![](./pic/HelloApplet.java.Mod2.png)
 
 このようにして、色を変えることもできます。
 

@@ -16,7 +16,7 @@ purposes:
 次のようなプログラムを実行してみましょう。
 
 ClickCountApplet.java
-![](./pic/ClickCountApplet.png)
+![](./pic/ClickCountApplet.java.png)
 
 ClickCountApplet.html
 ![](./pic/ClickCountApplet.html.png)
@@ -65,7 +65,7 @@ repaint()は、もう一度paint()を呼び出し再描画するコマンドで�
 htmlファイルは上の例を参考に自分で作成してみましょう。
 
 ChangeColorApplet.java
-![](./pic/ChangeColorApplet.png)
+![](./pic/ChangeColorApplet.java.png)
 
 ボタンが複数ある場合、getSource()を用いて、どのボタンが押されたかを認識します。
 

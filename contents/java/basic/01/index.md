@@ -46,9 +46,9 @@ public class Hello {
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
-<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../appendix/command.html)
+<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/command.html)
 
-<span class="label label-info">参考資料</span> [ターミナルの使い方](../appendix/terminal.html)
+<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/terminal.html)
 
 
 Java言語の基本

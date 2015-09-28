@@ -7,26 +7,25 @@ purposes:
     - 演算と変数型の関係の理解
 ---
 
-練習で使ったデータは必ず保存するようにしましょう
 
 見やすいソースコードの書き方
---------------
+----------------------------
 
 見やすい・分かりやすいソースコードを書く癖をつけましょう。
 見やすく・分かりやすいソースコードは、単純なミスを防げるだけでなく、プログラムの流れを直感的に捉えやすくなります。
 これは、長いコードになればなるほど重要になってきます。
 
-<span class="label label-info">参考資料</span> [見やすいソースコードの書き方](../appendix/goodsource.html)
+<span class="label label-info">参考資料</span> [見やすいソースコードの書き方](../../appendix/goodsource.html)
 
 キーボードからの入力
---------------
+--------------------
 
 ### 文字列の入力
 
 以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 Name.java
-![](./pic/Name.png)
+![](./pic/Name.java.png)
 
 実行すると、以下のようになります。
 
@@ -48,7 +47,7 @@ Name.java
 次に、数値の入力をしてみましょう。
 
 AdditionSample.java
-![](./pic/AdditionSample.png)
+![](./pic/AdditionSample.java.png)
 
 入力できたら、コンパイルして実行してみましょう。
 ここでは、`5`と`7`を入力しました。
@@ -79,7 +78,7 @@ AdditionSample.java
 ここの内容をきちんと理解するには、Java言語のことを深くまで理解する必要があります。
 もう少し詳しく知りたい場合は、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [Calc.javaの解説](../appendix/calcjava.html)
+<span class="label label-info">参考資料</span> [Calc.javaの解説](../../appendix/calcjava.html)
 
 型変換とキャスト演算子
 --------------
@@ -89,7 +88,7 @@ AdditionSample.java
 次のようなプログラムを考えてみましょう。前のソースコードを少し改良しただけです。
 
 DivideSample.java
-![](./pic/DivideSample.png)
+![](./pic/DivideSample.java.png)
 
 このプログラムは、入力した２つの値の商を求めるプログラムです。
 いろいろな値を入れて計算してみましょう。
@@ -108,7 +107,7 @@ DivideSample.java
 それでは、以下のようにプログラムを改良してみましょう。
 
 DivideSample.java
-![](./pic/DivideSampleMod1.png)
+![](./pic/DivideSample.java.Mod1.png)
 
 変数a,b,ansをdouble型で宣言するよう変更しました。このdouble型は、小数を含む計算する場合に用いられる変数型です。
 よって、先ほどのように5と2を入力すると、2.5という答えが返ってきます。
@@ -116,7 +115,7 @@ DivideSample.java
 次に、以下のように改良してみましょう。
 
 DivideSample.java
-![](./pic/DivideSampleMod2.png)
+![](./pic/DivideSample.java.Mod2.png)
 
 変数bをint型にし、他の変数a,ansはdouble型です。intは整数を扱う場合に用いる変数型です。
 この場合も、2.5という答えが返ってきます。
@@ -134,7 +133,7 @@ DivideSample.java
 では、次のように改良してみましょう。
 
 DivideSample.java
-![](./pic/DivideSampleMod3.png)
+![](./pic/DivideSample.java.Mod3.png)
 
 今度は、変数ansに代入する式に、 (double) が付け加わっています。
 この場合も、5と2を入力すると、2.5が表示されます。
