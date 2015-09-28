@@ -23,7 +23,7 @@ purposes:
 
 <span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../../appendix/eclipse.html)
 
-CalcSample1.java
+*CalcSample1.java*
 ![](./pic/CalcSample1.java.png)
 
 実行すると、以下のような結果が表示されます。
@@ -83,14 +83,14 @@ CalcSample1.java
 <span class="label label-info">参考資料</span> [演算子の優先順位](../../appendix/rank.html)
 
 変数と基本データ型
-----------------------
+------------------
 
 ### CalcSample2.java
 
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 前の`CalcSample1.java`を少し修正しただけです。
 
-CalcSample2.java
+*CalcSample2.java*
 ![](./pic/CalcSample2.java.png)
 
 ### 変数とは
@@ -204,7 +204,7 @@ CalcSample2.java
 
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
-CalcSample3.java
+*CalcSample3.java*
 ![](./pic/CalcSample3.java.png)
 
 4行目を見てみましょう。このように、代入するものは **数式** でも使えます。
@@ -214,7 +214,7 @@ CalcSample3.java
 
 さらに、以下のように修正してみましょう。
 
-CalcSample3.java
+*CalcSample3.java*
 ![](./pic/CalcSample3.java.Mod1.png)
 
 このように、右辺に **変数** もしくは **変数の入った数式** でも代入できます。
@@ -223,5 +223,5 @@ CalcSample3.java
 練習問題
 --------
 
-上のCalcSample3.javaを参考にして、他の演算を行うプログラムを作成してみましょう。
+上の `CalcSample3.java` を参考にして、他の演算を行うプログラムを作成してみましょう。
 その際、値もいろいろ変えて試してみましょう。

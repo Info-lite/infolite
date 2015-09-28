@@ -14,16 +14,13 @@ purposes:
 
 以下のソースコードを、適当なエディタを用いて入力してみましょう。すべて**半角英数で入力**してください。
 
-<div id="boxtitle">Hello.java</div>
-<div id="box">
-<pre id="text">
-public class Hello {
-	public static void main(String[] args) {
-		System.out.println("Hello");
-	}
-}
-</pre>
-</div>
+*Hello.java*
+
+    public class Hello {
+    	public static void main(String[] args) {
+    		System.out.println("Hello");
+    	}
+    }
 
 ファイル名は、**Hello.java**とし、**マイドキュメント**に保存してください。
 次に、コマンドプロンプト（ターミナル）を起動しましょう。そして、次のように入力します。
@@ -126,7 +123,7 @@ Javaプログラミングでは、このメインメソッドが**必要**です
 
 ### System.out.println()
 
-３行目は、`System.out.println("Hello.");` となっています。
+３行目は、`System.out.println("Hello.")` となっています。
 これは、「ターミナルに文字を出力せよ」という命令です。ですから `java` コマンドで実行すると、ターミナルに "Hello." と表示されます。
 よく使うので覚えておきましょう。
 `ln` を除くと（つまり、`System.out.println()` を `System.out.print()` とすると）改行をしません。
