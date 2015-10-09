@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accessの概要とテーブル
-date: 2015-09-24 13:17:54 +0900
+date: 2015-10-09 15:56:04 +0900
 purposes:
     - データベースソフトについて学ぶ
     - Microsoft Accessの基本操作を学ぶ
@@ -16,7 +16,7 @@ purposes:
 <li><a href="../assets/Clist(fin).accdb">Clist(fin).accdb</a></li>
 <li><a href="../assets/Clist.xls">Clist.xls</a></li>
 <li><a href="../assets/gradetype.accdb">gradetype.accdb</a></li>
-<li><a href="../assets/congresslist.xls">congresslist.xls</a></li>
+<li><a href="../assets/congress.xls">congress.xls</a></li>
 <li><a href="../assets/membertype.accdb">membertype.accdb</a></li>
 </ul>
 </div>
