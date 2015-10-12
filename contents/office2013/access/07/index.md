@@ -65,7 +65,7 @@ purposes:
 
 ![](./pic/orderdetails2.png)
 
-&#9314;. ![](./pic/quicksave.png) ([更新])をクリックします。
+&#9314;. ![](../pic/quicksave.png) ([更新])をクリックします。
 
 ![](./pic/orderdetails3.png)
 
@@ -84,7 +84,7 @@ purposes:
 
 ![](./pic/goods2.png)
 
-&#9314; ![](./pic/quicksave.png)をクリックします。
+&#9314; ![](../pic/quicksave.png)をクリックします。
 
 ![](./pic/goods3.png)
 
@@ -154,7 +154,7 @@ purposes:
 
 ![](./pic/chainrefinteg3.png)
 
-![](./pic/quicksave.png) を押します。
+![](../pic/quicksave.png) を押します。
 
 &#9315; "受注明細"の 2 件目と 5 件目のレコードの"商品コード"フィールドの値が"V-500"に変わったことを確認します。
 
