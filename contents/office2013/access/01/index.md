@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accessの概要とテーブル
-date: 2015-10-09 15:56:04 +0900
+date: 2015-10-15 09:25:21 +0900
 purposes:
     - データベースソフトについて学ぶ
     - Microsoft Accessの基本操作を学ぶ
@@ -14,7 +14,7 @@ purposes:
 今回使うファイルです。ダウンロードしてください。
 <ul>
 <li><a href="../assets/Clist(fin).accdb">Clist(fin).accdb</a></li>
-<li><a href="../assets/Clist.xls">Clist.xls</a></li>
+<li><a href="../assets/Clist.xlsx">Clist.xlsx</a></li>
 <li><a href="../assets/gradetype.accdb">gradetype.accdb</a></li>
 <li><a href="../assets/congress.xls">congress.xls</a></li>
 <li><a href="../assets/membertype.accdb">membertype.accdb</a></li>
@@ -407,7 +407,7 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 ![](./pic/excelimport1.png)
 
-&#9314; [参照]ボタンを押し、先ほどダウンロードした"Clist.xls"を選択します。
+&#9314; [参照]ボタンを押し、先ほどダウンロードした"Clist.xlsx"を選択します。
 
 &#9315; "レコードのコピーを次のテーブルに追加する"にチェックを入れ、"サークル名簿"を選択し、[OK]をクリックします。
 
