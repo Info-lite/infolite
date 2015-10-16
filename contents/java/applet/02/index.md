@@ -1,7 +1,7 @@
 ---
 layout: page
 title: アプレット（２）
-date: 2015-03-23 17:01:14 +0900
+date: 2015-10-16 10:45:51 +0900
 purposes:
     - 基本的な部品やリスナーの使い方の理解
 ---
@@ -17,8 +17,8 @@ purposes:
 *ClickCountApplet.java*
 ![](./pic/ClickCountApplet.java.png)
 
-*ClickCountApplet.html*
-![](./pic/ClickCountApplet.html.png)
+*click_count.html*
+![](./pic/click_count.html.png)
 
 ボタンを押した回数を表示するだけのプログラムです。
 

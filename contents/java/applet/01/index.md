@@ -1,7 +1,7 @@
 ---
 layout: page
 title: アプレット（１）
-date: 2015-03-23 17:01:14 +0900
+date: 2015-10-16 10:45:00 +0900
 purposes:
     - Javaアプレットの基本的な内容の理解
 ---
@@ -23,13 +23,13 @@ Javaアプレットとは、Webブラウザなどに埋め込まれて実行さ�
 
 次に、以下のようなhtmlファイルを作成します。
 
-*HelloApplet.html*
-![](./pic/HelloApplet.html.png)
+*hello.html*
+![](./pic/hello.html.png)
 
 今作成したhtmlファイルを適当なブラウザで開いてみましょう。
 もしくは、以下のようなコマンドを入力してください。
 
-    appletviewer HelloApplet.html
+    appletviewer hello.html
 
 すると、画面に `こんにちは` と表示されているはずです。
 
