@@ -4,16 +4,16 @@ public class Comparing {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("‚P‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼‘ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
-        System.out.println("‚Q‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼’ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str2 = br.readLine();
         int b = Integer.parseInt(str2);
 
-        if (a == b) System.out.println("‚Q‚Â‚Ì”‚Í“™‚µ‚¢‚Å‚·B");
-        else if (a > b) System.out.println(a + "‚Ì‚Ù‚¤‚ª‘å‚«‚¢‚Å‚·B");
-        else System.out.println(b + "‚Ì‚Ù‚¤‚ª‘å‚«‚¢‚Å‚·B");
+        if (a == b) System.out.println("ï¼’ã¤ã®æ•°ã¯ç­‰ã—ã„ã§ã™ã€‚");
+        else if (a > b) System.out.println(a + "ã®ã»ã†ãŒå¤§ãã„ã§ã™ã€‚");
+        else System.out.println(b + "ã®ã»ã†ãŒå¤§ãã„ã§ã™ã€‚");
     }
 }

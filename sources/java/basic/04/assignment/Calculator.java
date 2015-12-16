@@ -4,16 +4,16 @@ public class Calculator {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("‚P‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼‘ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
-        System.out.println("‚Q‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼’ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str2 = br.readLine();
         int b = Integer.parseInt(str2);
 
-        System.out.println("ŒvZ•û–@‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B");
-        System.out.println("‚PF‘«‚µZ@‚QFˆø‚«Z@‚RFŠ|‚¯Z@‚SFŠ„‚èZ");
+        System.out.println("è¨ˆç®—æ–¹æ³•ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚");
+        System.out.println("ï¼‘ï¼šè¶³ã—ç®—ã€€ï¼’ï¼šå¼•ãç®—ã€€ï¼“ï¼šæ›ã‘ç®—ã€€ï¼”ï¼šå‰²ã‚Šç®—");
         String str3 = br.readLine();
         int mode = Integer.parseInt(str3);
 
@@ -24,9 +24,9 @@ public class Calculator {
         } else if (mode == 3) {
             System.out.println(a + " * " + b + " = " + (a * b));
         } else if (mode == 4) {
-            System.out.println(a + " / " + b + " = " + (a / b) + "‚ ‚Ü‚è" + (a % b));
+            System.out.println(a + " / " + b + " = " + (a / b) + "ã‚ã¾ã‚Š" + (a % b));
         } else {
-            System.out.println("ŒvZ•û–@‚É‚Í1‚©‚ç4‚Ü‚Å‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+            System.out.println("è¨ˆç®—æ–¹æ³•ã«ã¯1ã‹ã‚‰4ã¾ã§ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         }
     }
 }

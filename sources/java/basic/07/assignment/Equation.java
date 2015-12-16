@@ -7,8 +7,8 @@ public class Equation {
         int a, b, c;
         double d, ans1, ans2;
 
-        System.out.println("‚QŸ•û’ö® ax^2+bx+c=0 ‚ğ‰ğ‚«‚Ü‚·B");
-        System.out.println("a,b,c‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼’æ¬¡æ–¹ç¨‹å¼ ax^2+bx+c=0 ã‚’è§£ãã¾ã™ã€‚");
+        System.out.println("a,b,cã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         System.out.print("a = ");
         String str = br.readLine();
         a = Integer.parseInt(str);
@@ -26,16 +26,16 @@ public class Equation {
         if (d > 0) {
             ans1 = (-b + Math.sqrt(d)) / (2 * a);
             ans2 = (-b - Math.sqrt(d)) / (2 * a);
-            System.out.println("‰ğ‚ÍA" + ans1 + "‚Æ" + ans2 + "‚Å‚·B");
+            System.out.println("è§£ã¯ã€" + ans1 + "ã¨" + ans2 + "ã§ã™ã€‚");
         } else if (d == 0) {
             ans1 = -b / (2 * a);
-            System.out.println("‰ğ‚ÍA" + ans1 + "‚Å‚·B");
+            System.out.println("è§£ã¯ã€" + ans1 + "ã§ã™ã€‚");
         } else {
-            System.out.println("À”‰ğ‚Í‚ ‚è‚Ü‚¹‚ñB");
+            System.out.println("å®Ÿæ•°è§£ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
             /*
             ans1 = -b/(2*a);
 		    ans2 = Math.sqrt(-d)/(2*a);
-		    System.out.println("‰ğ‚ÍA"+ ans1 +" + "+ ans2 + "i , "+ ans1 +" - "+ ans2 + "i");
+		    System.out.println("è§£ã¯ã€"+ ans1 +" + "+ ans2 + "i , "+ ans1 +" - "+ ans2 + "i");
 		    */
         }
 

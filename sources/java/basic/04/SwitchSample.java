@@ -4,22 +4,22 @@ public class SwitchSample {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
         switch (a) {
             case 1:
-                System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚P‚Å‚·‚ËB");
+                System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼‘ã§ã™ã­ã€‚");
                 break;
             case 2:
-                System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚Q‚Å‚·‚ËB");
+                System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼’ã§ã™ã­ã€‚");
                 break;
             case 3:
-                System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚R‚Å‚·‚ËB");
+                System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼“ã§ã™ã­ã€‚");
                 break;
             default:
-                System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚PA‚QA‚R‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
+                System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼‘ã€ï¼’ã€ï¼“ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
         }
     }
 }

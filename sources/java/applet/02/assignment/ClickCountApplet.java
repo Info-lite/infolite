@@ -8,17 +8,17 @@ public class ClickCountApplet extends Applet implements ActionListener {
     int i = 0;
 
     public void init() {
-        bt1 = new Button("{");
+        bt1 = new Button("ï¼‹");
         this.add(bt1);
         bt1.addActionListener(this);
 
-        bt2 = new Button("|");
+        bt2 = new Button("âˆ’");
         this.add(bt2);
         bt2.addActionListener(this);
     }
 
     public void paint(Graphics g) {
-        g.drawString("ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‰ñ”F" + i, 10, 50);
+        g.drawString("ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸå›æ•°ï¼š" + i, 10, 50);
     }
 
     public void actionPerformed(ActionEvent ae) {

@@ -4,18 +4,18 @@ public class CalcPrime {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
         int i;
         for (i = 2; i < a; i++) {
             if (a % i == 0) {
-                System.out.println(a + "‚Í‘f”‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
+                System.out.println(a + "ã¯ç´ æ•°ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
                 break;
             }
         }
 
-        if (a == i) System.out.println(a + "‚Í‘f”‚Å‚·B");
+        if (a == i) System.out.println(a + "ã¯ç´ æ•°ã§ã™ã€‚");
     }
 }

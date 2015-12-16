@@ -4,14 +4,14 @@ public class Triangle {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("OŠpŒ`‚Ì’ê•Ó‚Æ‚‚³‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+		System.out.println("ä¸‰è§’å½¢ã®åº•è¾ºã¨é«˜ã•ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 		String baseString = br.readLine();
 		int base = Integer.parseInt(baseString);
 
 		String heightString = br.readLine();
 		int height = Integer.parseInt(heightString);
 
-		System.out.println("OŠpŒ`‚Ì–ÊÏ‚ÍA" + (double) base * height / 2 + "‚Å‚·");
+		System.out.println("ä¸‰è§’å½¢ã®é¢ç©ã¯ã€" + (double) base * height / 2 + "ã§ã™");
 	}
 }
 

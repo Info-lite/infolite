@@ -4,14 +4,14 @@ public class ForkSampleMod1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
         if (a == 1) {
-            System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚P‚Å‚·‚ËB");
+            System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼‘ã§ã™ã­ã€‚");
         } else {
-            System.out.println("“ü—Í‚µ‚½‚Ì‚Í‚P‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
+            System.out.println("å…¥åŠ›ã—ãŸã®ã¯ï¼‘ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
         }
     }
 }

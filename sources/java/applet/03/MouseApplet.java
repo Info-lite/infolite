@@ -38,19 +38,19 @@ public class MouseApplet extends Applet implements MouseListener {
     public void paint(Graphics g) {
         switch (mode) {
             case 1:
-                g.drawString("ƒNƒŠƒbƒN‚µ‚Ü‚µ‚½B", 10, 10);
+                g.drawString("ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã—ãŸã€‚", 10, 10);
                 break;
             case 2:
-                g.drawString("ƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Ä‚¢‚Ü‚·B", 10, 10);
+                g.drawString("ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ã„ã¾ã™ã€‚", 10, 10);
                 break;
             case 3:
-                g.drawString("ƒ{ƒ^ƒ“‚ğ—£‚µ‚Ü‚µ‚½B", 10, 10);
+                g.drawString("ãƒœã‚¿ãƒ³ã‚’é›¢ã—ã¾ã—ãŸã€‚", 10, 10);
                 break;
             case 4:
-                g.drawString("ƒEƒBƒ“ƒhƒE“à‚É“ü‚è‚Ü‚µ‚½B", 10, 10);
+                g.drawString("ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å†…ã«å…¥ã‚Šã¾ã—ãŸã€‚", 10, 10);
                 break;
             case 5:
-                g.drawString("ƒEƒBƒ“ƒhƒEŠO‚Å‚·B", 10, 10);
+                g.drawString("ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å¤–ã§ã™ã€‚", 10, 10);
                 break;
         }
     }

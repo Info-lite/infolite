@@ -13,21 +13,21 @@ public class CalcApplet extends Applet implements ActionListener {
         add(box1);
         box1.addActionListener(this);
 
-        lb1 = new Label("Å{");
+        lb1 = new Label("Ôºã");
         add(lb1);
 
         box2 = new TextField("");
         add(box2);
         box2.addActionListener(this);
 
-        lb2 = new Label("ÅÅ");
+        lb2 = new Label("Ôºù");
         add(lb2);
 
         box3 = new TextField("");
         add(box3);
         box3.addActionListener(this);
 
-        bt = new Button("é¿çs");
+        bt = new Button("ÂÆüË°å");
         add(bt);
         bt.addActionListener(this);
     }

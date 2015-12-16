@@ -10,7 +10,7 @@ public class Arrangement {
         a[4] = 85;
 
         for (int i = 0; i < 5; i++) {
-            System.out.println(i + "�Ԗڂ̃f�[�^�́A" + a[i] + "�ł��B");
+            System.out.println(i + "番目のデータは、" + a[i] + "です。");
         }
     }
 }

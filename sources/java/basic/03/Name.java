@@ -4,8 +4,8 @@ public class Name {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("–¼‘O‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("åå‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str = br.readLine();
-        System.out.println("‚ ‚È‚½‚Ì–¼‘O‚ÍA" + str + "‚Å‚·‚ËB");
+        System.out.println("ã‚ãªãŸã®åå‰ã¯ã€" + str + "ã§ã™ã­ã€‚");
     }
 }

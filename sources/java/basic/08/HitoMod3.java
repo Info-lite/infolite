@@ -2,12 +2,12 @@ public class HitoMod3 {
     public static void main(String[] args) {
         Person p1 = new Person();
 
-        p1.name = "ñ“s‘å";
+        p1.name = "é¦–éƒ½å¤§";
         p1.age = 20;
 
         int temp = p1.getage();
 
-        System.out.println("”N—î‚Í" + temp + "Î‚Å‚·B");
+        System.out.println("å¹´é½¢ã¯" + temp + "æ­³ã§ã™ã€‚");
     }
 }
 
@@ -16,8 +16,8 @@ class Person {
     int age;
 
     void show() {
-        System.out.println("–¼‘O‚ÍA" + name + "‚Å‚·B");
-        System.out.println("”N—î‚ÍA" + age + "Î‚Å‚·B");
+        System.out.println("åå‰ã¯ã€" + name + "ã§ã™ã€‚");
+        System.out.println("å¹´é½¢ã¯ã€" + age + "æ­³ã§ã™ã€‚");
     }
 
     int getage() {

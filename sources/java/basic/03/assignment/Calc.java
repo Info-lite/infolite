@@ -4,18 +4,18 @@ public class Calc {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("‚P‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+		System.out.println("ï¼‘ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 		String value1 = br.readLine();
 		int a = Integer.parseInt(value1);
 
-		System.out.println("‚Q‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+		System.out.println("ï¼’ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 		String value2 = br.readLine();
 		int b = Integer.parseInt(value2);
 
 		System.out.println(a + " + " + b + " = " + (a + b));
 		System.out.println(a + " - " + b + " = " + (a - b));
 		System.out.println(a + " * " + b + " = " + (a * b));
-		System.out.println(a + " / " + b + " = " + (a / b) + " ‚ ‚Ü‚è " + (a % b));
+		System.out.println(a + " / " + b + " = " + (a / b) + " ã‚ã¾ã‚Š " + (a % b));
 	}
 }
 

@@ -4,20 +4,20 @@ public class Arrangement2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("‚¢‚­‚Â“ü—Í‚µ‚Ü‚·‚©H");
+        System.out.println("ã„ãã¤å…¥åŠ›ã—ã¾ã™ã‹ï¼Ÿ");
         String str = br.readLine();
         int num = Integer.parseInt(str);
 
         int data[] = new int[num];
 
         for (int i = 0; i < num; i++) {
-            System.out.println((i + 1) + "ŒÂ–Ú‚Ìƒf[ƒ^‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+            System.out.println((i + 1) + "å€‹ç›®ã®ãƒ‡ãƒ¼ã‚¿ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
             str = br.readLine();
             data[i] = Integer.parseInt(str);
         }
 
         for (int i = 0; i < num; i++) {
-            System.out.println((i + 1) + "ŒÂ–Ú‚Ìƒf[ƒ^‚ÍA" + data[i] + "‚Å‚·B");
+            System.out.println((i + 1) + "å€‹ç›®ã®ãƒ‡ãƒ¼ã‚¿ã¯ã€" + data[i] + "ã§ã™ã€‚");
         }
     }
 }

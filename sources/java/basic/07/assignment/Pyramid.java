@@ -4,7 +4,7 @@ public class Pyramid {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str = br.readLine();
         int a = Integer.parseInt(str);
 

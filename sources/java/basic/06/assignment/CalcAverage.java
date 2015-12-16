@@ -4,14 +4,14 @@ public class CalcAverage {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("ƒeƒXƒg‚ÌóŒ±Ò”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ãƒ†ã‚¹ãƒˆã®å—é¨“è€…æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str = br.readLine();
         int num = Integer.parseInt(str);
 
         int x[] = new int[num];
         double average = 0;
 
-        System.out.println("“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         for (int i = 0; i < num; i++) {
             str = br.readLine();
             x[i] = Integer.parseInt(str);
@@ -20,18 +20,18 @@ public class CalcAverage {
 
         average /= num;
 
-        System.out.println("•½‹Ï“_‚Í" + average + "“_‚Å‚·B");
-        System.out.print("•½‹Ï“_ˆÈã‚ÍA");
+        System.out.println("å¹³å‡ç‚¹ã¯" + average + "ç‚¹ã§ã™ã€‚");
+        System.out.print("å¹³å‡ç‚¹ä»¥ä¸Šã¯ã€");
 
         int count = 0;
 
         for (int i = 0; i < num; i++) {
             if (x[i] > average) {
-                System.out.print(x[i] + "“_A");
+                System.out.print(x[i] + "ç‚¹ã€");
                 count++;
             }
         }
-        System.out.println("‚Ì" + count + "l‚Å‚·B");
+        System.out.println("ã®" + count + "äººã§ã™ã€‚");
 
     }
 }

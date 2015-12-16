@@ -4,25 +4,25 @@ public class CalcRank {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("‚ ‚È‚½ˆÈŠO‚Í‰½l‚Å‚·‚©");
+        System.out.println("ã‚ãªãŸä»¥å¤–ã¯ä½•äººã§ã™ã‹");
         String str = br.readLine();
         int num = Integer.parseInt(str);
 
         int count = 1;
         int x[] = new int[num];
 
-        System.out.println("‚ ‚È‚½‚Ì“¾“_‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ã‚ãªãŸã®å¾—ç‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         str = br.readLine();
         int score = Integer.parseInt(str);
 
-        System.out.println("‘¼‚Ìl‚Ì“¾“_‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ä»–ã®äººã®å¾—ç‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         for (int i = 0; i < num; i++) {
             str = br.readLine();
             x[i] = Integer.parseInt(str);
             if (score < x[i]) count++;
         }
 
-        System.out.println("‚ ‚È‚½‚Í‘æ" + count + "ˆÊ‚Å‚·");
+        System.out.println("ã‚ãªãŸã¯ç¬¬" + count + "ä½ã§ã™");
 
     }
 }

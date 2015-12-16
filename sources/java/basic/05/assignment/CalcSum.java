@@ -4,13 +4,13 @@ public class CalcSum {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
         int sum = 0;
         for (int i = 1; i <= a; i++) sum += i;
 
-        System.out.println("1‚©‚ç" + a + "‚Ü‚Å‚Ì˜a‚ÍA" + sum + "‚Å‚·B");
+        System.out.println("1ã‹ã‚‰" + a + "ã¾ã§ã®å’Œã¯ã€" + sum + "ã§ã™ã€‚");
     }
 }

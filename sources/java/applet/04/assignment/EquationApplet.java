@@ -28,25 +28,25 @@ public class EquationApplet extends Applet implements ActionListener {
         add(box3);
         box3.addActionListener(this);
 
-        bt = new Button("‚Ì‰ğ‚ğ‹‚ß‚é");
+        bt = new Button("ã®è§£ã‚’æ±‚ã‚ã‚‹");
         add(bt);
         bt.addActionListener(this);
 
-        lb3 = new Label("‰ğ‚Í");
+        lb3 = new Label("è§£ã¯");
         add(lb3);
 
         boxx1 = new TextField("");
         add(boxx1);
         boxx1.addActionListener(this);
 
-        lb4 = new Label("‚Æ");
+        lb4 = new Label("ã¨");
         add(lb4);
 
         boxx2 = new TextField("");
         add(boxx2);
         boxx2.addActionListener(this);
 
-        lb5 = new Label("‚Å‚·B");
+        lb5 = new Label("ã§ã™ã€‚");
         add(lb5);
     }
 

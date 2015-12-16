@@ -8,11 +8,11 @@ public class ChangeColorApplet extends Applet implements ActionListener {
     boolean flag;
 
     public void init() {
-        bt1 = new Button("Â");
+        bt1 = new Button("é’");
         this.add(bt1);
         bt1.addActionListener(this);
 
-        bt2 = new Button("Ô");
+        bt2 = new Button("èµ¤");
         this.add(bt2);
         bt2.addActionListener(this);
     }
@@ -20,7 +20,7 @@ public class ChangeColorApplet extends Applet implements ActionListener {
     public void paint(Graphics g) {
         if (flag) g.setColor(Color.blue);
         else g.setColor(Color.red);
-        g.drawString("ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚ÆA•¶š‚ÌF‚ª•Ï‚í‚è‚Ü‚·B", 10, 50);
+        g.drawString("ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã¨ã€æ–‡å­—ã®è‰²ãŒå¤‰ã‚ã‚Šã¾ã™ã€‚", 10, 50);
     }
 
     public void actionPerformed(ActionEvent ae) {

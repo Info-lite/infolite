@@ -8,15 +8,15 @@ public class DrawFigureApplet extends Applet implements ActionListener {
     int flag;
 
     public void init() {
-        bt1 = new Button("三角形");
+        bt1 = new Button("荳芽ｧ貞ｽ｢");
         this.add(bt1);
         bt1.addActionListener(this);
 
-        bt2 = new Button("四角形");
+        bt2 = new Button("蝗幄ｧ貞ｽ｢");
         this.add(bt2);
         bt2.addActionListener(this);
 
-        bt3 = new Button("円");
+        bt3 = new Button("蜀�");
         this.add(bt3);
         bt3.addActionListener(this);
     }
@@ -31,7 +31,7 @@ public class DrawFigureApplet extends Applet implements ActionListener {
         } else if (flag == 3) {
             g.drawOval(50, 50, 50, 50);
         } else {
-            g.drawString("ボタンを押してください", 10, 50);
+            g.drawString("繝懊ち繝ｳ繧呈款縺励※縺上□縺輔＞", 10, 50);
         }
     }
 

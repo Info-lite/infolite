@@ -4,16 +4,16 @@ public class DivideSample {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("‚P‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼‘ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str1 = br.readLine();
         int a = Integer.parseInt(str1);
 
-        System.out.println("‚Q‚Â‚ß‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("ï¼’ã¤ã‚ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str2 = br.readLine();
         int b = Integer.parseInt(str2);
 
         int ans = a / b;
 
-        System.out.println(a + "‚í‚é" + b + "‚Í" + ans);
+        System.out.println(a + "ã‚ã‚‹" + b + "ã¯" + ans);
     }
 }

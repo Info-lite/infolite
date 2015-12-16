@@ -6,7 +6,7 @@ public class Zukei {
 
         Circle en = new Circle();
 
-        System.out.println("”¼Œa‚Ì’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+        System.out.println("åŠå¾„ã®å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
         String str = br.readLine();
         int num = Integer.parseInt(str);
 
@@ -14,10 +14,10 @@ public class Zukei {
 
         double temp;
         temp = en.area();
-        System.out.println("–ÊÏ‚ÍA" + temp + "‚Å‚·B");
+        System.out.println("é¢ç©ã¯ã€" + temp + "ã§ã™ã€‚");
 
         temp = en.circuit();
-        System.out.println("‰~ü‚ÍA" + temp + "‚Å‚·B");
+        System.out.println("å††å‘¨ã¯ã€" + temp + "ã§ã™ã€‚");
 
     }
 }
