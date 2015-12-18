@@ -7,11 +7,17 @@ task :preview do
     sh "jekyll serve --watch"
 end
 
-desc "Deploy production"
-task :deploy do
-    sh "jekyll build"
-    sh "rsync -rlptv --delete ./_site/ tmu@infolit.uec.tmu.ac.jp:/srv/www/infolit.uec.tmu.ac.jp/lit"
+#desc "Deploy production"
+#task :deploy do
+#    sh "jekyll build"
+#    sh "rsync -rlczv --delete ./_site/ tmu@infolit.uec.tmu.ac.jp:/srv/www/infolit.uec.tmu.ac.jp/lit"
+#
+#    notifier = Slack::Notifier.new WEBHOOK_URI, channel: 'e-learning', username:'notifier'
+#    notifier.ping "本番反映しました rev.#{`git rev-parse --short HEAD`}", icon_emoji: ":floppy_disk:"
+#end
 
-    notifier = Slack::Notifier.new WEBHOOK_URI, channel: 'e-learning', username:'notifier'
-    notifier.ping "本番反映しました rev.#{`git rev-parse --short HEAD`}", icon_emoji: ":floppy_disk:"
+desc "Deploy staging"
+task :staging do
+    sh "jekyll build"
+    sh "rsync -rlczv --delete ./_site/ tmu@infolit.uec.tmu.ac.jp:/srv/www/infolit.uec.tmu.ac.jp/staging"
 end
