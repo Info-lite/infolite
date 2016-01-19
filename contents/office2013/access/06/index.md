@@ -171,7 +171,7 @@ purposes:
 
 ![](./pic/revisequery1.png)
 
-"顧客名"フィールドが"山本伊平"に変わりました。
+"顧客名"フィールドが"山本浩史"に変わりました。
 
 ![](./pic/revisequery2.png)
 
