@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
 date: 2015-05-28 12:44:14 +0900
@@ -13,9 +13,8 @@ flowplayer_conf:
 Microsoft Excelの起動
 ---------------------
 
-1.  [スタート]をクリックします
+1.  [スタート(windowsマーク)]をクリックします
 1.  [すべてのプログラム] - [Microsoft Office] - [Microsoft Office Excel 2010]をクリックします
-
 
 ブックの作成と保存
 ------------------
@@ -279,7 +278,7 @@ Excelは、セルに入力した際に、それが「数値」なのか「文字
 人口統計表を作成してみましょう。
 最終的に以下の表となるものを作っていきます。元となるデータは[総務省統計局](http://www.stat.go.jp/)からお借りしました。
 
--   [人口推計月報（平成21年3月）](http://www.e-stat.go.jp/SG1/estat/List.do?lid=000001050746)
+-   [人口推計月報（平成28年2月）](http://www.e-stat.go.jp/SG1/estat/Xlsdl.do?sinfid=000031373513)
 
 <div class="thumbnail">
 <img src="pic/populationfinal.png" class="img-responsive" />

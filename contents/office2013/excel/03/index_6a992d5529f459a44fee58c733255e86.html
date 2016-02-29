@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link rel='stylesheet' href='C:\Users\daichi\AppData\Roaming\MarkDownSharpEditor\css\github.css' type='text/css' />
+<style type='text/css'>
+	 ._mk {background-color:#FFFFC8}
+</style>
+<title>index.md</title>
+</head>
+<body>
+<hr />
+<p>layout: page
+title: 表計算ソフトによるデータ処理（３）
+date: 2015-03-23 16:50:50 +0900
+purposes:</p>
+<h2>    - ソートやフィルタの使い方の理解</h2>
+<p>Excelにはデータベースとしての機能もあります。その中の、ソートとフィルタについて説明します。</p>
+<p>以下では、<a href="./population.xls">統計表</a> を用いて説明します。元のデータは、平成22年度の国勢調査です。</p>
+<ul>
+<li><a href="http://www.e-stat.go.jp/SG1/estat/GL02020101.do?method=csvDownload&amp;fileId=000007591144&amp;releaseCount=1">第1表 人口，人口増減（平成17年〜22年），面積及び人口密度</a></li>
+</ul>
+<div class="panel panel-default">
+<div class="panel-body">
+注) 国勢調査令（昭和55年政令第98号）の規定に基づき，調査の対象から除外された次の地域の面積を除いて算出した。
+<ul>
+<li>歯舞群島(99.94km<sup>2</sup>)</li>
+<li>色丹島(253.33km<sup>2</sup>)，国後島(1498.83km<sup>2</sup>)及び択捉島(3184.04km<sup>2</sup>) (属島を含む)</li>
+<li>竹島(0.23km<sup>2</sup>)</li>
+</ul>
+また、一部境界未定のため，総務省統計局において推定した。
+</div>
+</div>
+<h2>ソート</h2>
+<p>データの並び替えを行います。</p>
+<h3>簡易並べ替え</h3>
+<p>並べ替える基準になるセルを選択します。そして[ホーム]リボン - [編集]タブ - [並び替えとフィルタ]をクリックします。
+その後、[昇順]もしくは[降順]をクリックして、並び替えを行います。</p>
+<p><img src="pic/az1.png" /></p>
+<p>&quot;並び替えの前に&quot;ウィンドウが表示されたら、[選択範囲を拡張する]を選択し、[並び替え]を押します。</p>
+<p><img src="pic/az2.png" /></p>
+<p>並び替えが行われました。</p>
+<p><img src="pic/az3.png" /></p>
+<p>文字列以外にも、数値を並び替えることも出来ます。下の例は、&quot;平成22年&quot;を昇順で並び替えたものです。</p>
+<p><img src="pic/az4.png" /></p>
+<h3>通常の並び替え</h3>
+<div class='_mk'><!-- edit --></div>
+<p>さらに複雑な並び替えをする場合、こちらの方法を用います。</p>
+<p>まず、[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [ユーザー設定の並び替え]をクリックします。</p>
+<p><img src="pic/sort1.png" /></p>
+<p>すると、以下のようなウィンドウが開きます。</p>
+<p><img src="pic/sort2.png" /></p>
+<p>ここでは、複数の条件の並べ替えを行うことが出来ます。[レベルの追加]をクリックして、新たに条件キーを追加してみましょう。</p>
+<p><img src="pic/sort3.png" /></p>
+<p>条件キーは上から順番に適用されていきます。
+また、[並び替えオプション]をクリックすると、さらにいろいろなオプションを指定することができます。</p>
+<p><img src="pic/sort4.png" /></p>
+<h2>フィルタ</h2>
+<p>Excelには、フィルタというデータを抽出する機能があります。</p>
+<h3>オートフィルタ</h3>
+<p>まず、表内の適当なセルを選択後、[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [フィルタ]をクリックしましょう。</p>
+<p><img src="pic/filter1.png" /></p>
+<p><img src="pic/filter2.png" /></p>
+<p>このフィルタは[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [フィルタ]を再度押すことで解除することができます。</p>
+<p><strong>フィールド名の行の一部が結合されていたり、同じ名前のフィールドがあるとうまくいかないことがあります。</strong></p>
+<p>各フィールド名に <span><img src="pic/filter.png" /></span> がつきました。クリックしてみましょう。</p>
+<p><img src="pic/filter3.png" /></p>
+<p>出てきたメニューで要素を抽出したり、並び替えを行うことが出来ます。
+ここでは、試しに[数値フィルタ] - [トップテン]をクリックしてみましょう。</p>
+<p><img src="pic/top1.png" /></p>
+<p>&quot;トップテン オートフィルタ&quot;ダイアログが出てきます。各項目を適切に設定して、[OK]をクリックしましょう。</p>
+<p><img src="pic/top2.png" /></p>
+<p>すると、条件にあうレコードのみ表示されます。
+これだけでは見にくいので、さらに降順に並び替えをするとよいでしょう。
+また、元に戻したいときは、&quot;すべて&quot;をクリックします。
+[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [クリア]でもできます。</p>
+<p><img src="pic/top3.png" /></p>
+<p>次に、テキストでの検索を行ってみます。
+[テキストフィルタ] - [指定の値を含む]をクリックしてみましょう。</p>
+<p><img src="pic/textfilter1.png" /></p>
+<p><img src="pic/textfilter2.png" /></p>
+<p>このように、さらに複雑な条件での抽出ができます。
+また、<code>?</code> や <code>*</code> のワイルドカードも使用できます。</p>
+<p><img src="pic/textfilter4.png" /></p>
+<p>上の例では、条件を &quot;を含む&quot; から &quot;と等しい&quot; に変えて、<code>*しま*</code> と入力しました。
+これはさきほどのものと全く同じ意味です。[OK]をクリックします。</p>
+<p><img src="pic/textfilter3.png" /></p>
+<p>すると、県名に &quot;しま&quot; が含まれるもののみ抽出されました。</p>
+<p>さらに、条件を表で指定することもできます。
+まず、以下の表を適当な場所に作成しましょう。
+今回は &quot;K3&quot; と &quot;K4&quot; に入力してみます。</p>
+<p><img src="pic/textfilter7.png" /></p>
+<p>次に、[データ]リボン - [並び替えとフィルタ]タブ - [詳細設定]をクリックします。</p>
+<p><img src="pic/textfilter5.png" /></p>
+<p>[リスト範囲]は既に正しく選択されていることを確認してください。
+[検索条件範囲]に、先ほど作成した表を指定しましょう。</p>
+<p><img src="pic/textfilter6.png" /></p>
+<p>[抽出先]を[選択範囲内]のままにすると、今まで同様、条件に合わない部分が非表示になった表となります。
+[指定した範囲]を選択すると、下の&quot;抽出範囲&quot;がアクティブになります。
+これを使うと、条件にあうレコードのみの新しい表が作成されます。
+&quot;抽出範囲&quot;には、新たに表を作成したい範囲を指定します。</p>
+<p>今回は <code>A55:I55</code> に表を作成してみます。</p>
+<p><img src="pic/textfilter8.png" /></p>
+<p>とても便利な機能です。覚えておきましょう。</p>
+<p>この他にも、ピボットテーブルやVBAといったものもあります。興味がある人は調べてみましょう。</p>
+</body>
+</html>
