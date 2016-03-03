@@ -257,11 +257,11 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9313;  <span><img src="pic/word_point.png" /></span> [箇条書き] の横の下向き三角をクリックします。
 
-![](pic/word01_13point.png)
+![](pic/word01_12point.png)
 
 &#9314; 表示された行頭文字ライブラリの中から好きなものを選ことができます。
 
-![](pic/word01_14point.png)
+![](pic/word01_13point.png)
 
 ライブラリの中にない文字や画像も"新しい行頭文字の定義"を押すことで設定することができます。
 段落番号も箇条書きと同じようにカスタマイズすることができます。
@@ -315,7 +315,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 また、左インデントは [ホーム]リボンの "段落" にある <span><img src="pic/word_indentup.png" /></span> や <span><img src="pic/word_indentdown.png" /></span> でもずらすことができます。
 
 インデントはこの他、段落の詳細設定からより詳しく設定することができます。
-"段落"パネルの右下の <span><img src="pic/word_more.png" /></span> をクリックします。
+[ホーム] リボン - "段落"パネルの右下の <span><img src="pic/word_more.png" /></span> をクリックします。
 
 ![段落](pic/word01_23indent.png)
 
@@ -323,7 +323,8 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 また、ページのレイアウト全体の設定を行うこともできます。[ページレイアウト] リボン - "ページ設定"パネルの右下の <span><img src="pic/word_more.png" /></span> をクリックします。
 
-![ページ設定](pic/word01_2526indent.png)
+![ページ設定](pic/word01_23indent.png)
+![ページ設定](pic/word_layoutwindow.png)
 
 1 ページの行数や文字数などを設定することができます。
 
@@ -335,33 +336,37 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; [挿入] リボン - <span><img src="pic/word_header.png" /></span> [ヘッダー] を押します。
 
-![](pic/word01_27header.png)
+![](pic/word01_24header.png)
 
 &#9313; [空白] を選択します。
 
-![](pic/word01_28header.png)
+![](pic/word01_25header.png)
 
-![](pic/word01_29header.png)
+![](pic/word01_26header.png)
 
 &#9314; ヘッダーに自分の学修番号と氏名を打ち込んでください。
 
-![](pic/word01_30header.png)
+![](pic/word01_27header.png)
 
-これでヘッダー部分に学修番号と氏名が入りました。次にフッターを設定します。
+これでヘッダー部分に学修番号と氏名が入りました。
+ヘッダーやフッターを編集していると、リボンに [ヘッダー/フッター ツール] が表示されます。
+次にフッターを設定します。先ほどと同じ[挿入]リボンからも操作可能ですが、現在表示されている [ヘッダー/フッター ツール] から操作してみることにします。
 
-&#9312; [挿入] リボン - <span><img src="pic/word_footer.png" /></span> [ページ番号] を押します。
+&#9312; [ヘッダー/フッター ツール]  [デザイン] リボン - <span><img src="pic/word_footer.png" /></span> [ページ番号] を押します。
 
-![](pic/word01_31footer.png)
+![](pic/word01_28footer.png)
 
 &#9313; "ページの下部" - "番号のみ2" を選択します。
 
-![](pic/word01_32footer.png)
+![](pic/word01_29footer.png)
 
-![](pic/word01_33footer.png)
+![](pic/word01_30footer.png)
 
 これでフッターにページ数が入りました。
-ヘッダーとフッターにはこの他様々な情報を入れることができます。
+また[ヘッダーとフッターを閉じる] で通常の編集画面に戻ることができます。
+![](pic/word01_31footer.png)
 
+ヘッダーとフッターにはこの他様々な情報を入れることができます。
 これでほぼ完成しました。後は、見やすいように微調整してください。
 
 
