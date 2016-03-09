@@ -1,7 +1,7 @@
 ---
 layout: page
 title: アプレット（１）
-date: 2015-12-15 22:30:14 +0900
+date: 2016-01-22 23:37:19 +0900
 purposes:
     - Javaアプレットの基本的な内容の理解
 ---
@@ -78,7 +78,7 @@ Javaアプレットとは、Webページの一部に埋め込み実行できるJ
 
 <span class="label label-info">参考資料</span> [主なGraphicクラスのメソッド](../../appendix/graphics.html)
 
-<span class="label label-info">参考資料</span> [Graphics (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/index.html?java/awt/Graphics.html)
+<span class="label label-info">参考資料</span> [Graphics (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics.html)
 
 <div class="alert alert-danger" role="alert">
 <p>アプレット内の座標とは、ウィンド左上を原点とし、右をx軸の正の向き、下をy軸の正の向きとしたものです。</p>
@@ -114,7 +114,7 @@ Javaアプレットとは、Webページの一部に埋め込み実行できるJ
 
 （１）の方法で色を指定する場合、以下のようなものが使えます。
 
-<span class="label label-info">参考資料</span> [Color (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/index.html?java/awt/Color.html)
+<span class="label label-info">参考資料</span> [Color (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/Color.html)
 
 
 練習問題

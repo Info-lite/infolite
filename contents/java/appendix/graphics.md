@@ -1,13 +1,13 @@
 ---
 layout: appendix
 title: 主なGraphicsクラスのメソッド
-date: 2015-12-11 06:43:01 +0900
+date: 2016-01-22 23:38:07 +0900
 ---
 
 
 よく使うであろうメソッドを載せておきます。さらに詳しく知りたい場合は、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [Graphics (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/index.html?java/awt/Graphics.html)
+<span class="label label-info">参考資料</span> [Graphics (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/docs/api/java/awt/Graphics.html)
 
 ### 文字列を描画する
 
