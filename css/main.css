@@ -111,6 +111,11 @@ dl dd {
     padding-left: 2em;
 }
 
+img.icon {
+    width: auto;
+    max-height: 48px;
+}
+
 div.thumbnail .img-responsive {
     max-height: 480px;
 }
