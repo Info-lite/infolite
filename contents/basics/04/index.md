@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 情報の活用と情報倫理
-date: 2015-03-23 16:17:48 +0900
+date: 2016-03-10 11:06:50 +0900
 purposes:
     - インターネット環境を利用する際のマナーやモラルを身につける
 ---
@@ -309,6 +309,7 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
 
 -   [レポート試験の提出における不正行為の禁止について](http://www.comp.tmu.ac.jp/tmuner/info/h23/data/report.html)
 
+<span class="label label-info">参考資料</span> [著作権とライセンス](../appendix/copyrights.html)
 
 練習問題
 --------
