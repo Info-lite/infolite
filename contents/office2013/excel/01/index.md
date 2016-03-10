@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
-date: 2015-05-28 12:44:14 +0900
+date: 2016-03-10 13:58:15 +0900
 purposes:
     - Microsoft Excelを用いた表計算ソフト利用の基本の習得
 flowplayer_conf:
@@ -14,7 +14,7 @@ Microsoft Excelの起動
 ---------------------
 
 1.  [スタート(windowsマーク)]をクリックします
-1.  [すべてのプログラム] - [Microsoft Office] - [Microsoft Office Excel 2010]をクリックします
+1.  [すべてのプログラム] - [Microsoft Office] - [Excel 2013]をクリックします
 
 ブックの作成と保存
 ------------------
@@ -49,12 +49,12 @@ Microsoft Excelの起動
 ![名前を付けて保存](pic/officebutton1.png)
 
 <dl>
-<dt>Excel ブック(.xlsx)</dt><dd>Microsoft Office Excel 2007、2010で使用できる形式で保存します。<strong>Excel2003以前とは互換性がないので注意しましょう</strong></dd>
+<dt>Excel ブック(.xlsx)</dt><dd>Excel 2007 以降で利用できる標準形式で保存します。</dd>
 <dt>Excel マクロ有効ブック</dt><dd>Excelで使えるマクロを有効にしたブックです。xml形式で保存されます。</dd>
 <dt>Excel バイナリ ブック</dt><dd>ブックの読み込み、保存をすばやく行えるように最適化した形式で保存します。</dd>
-<dt>Excel 97-2003 ブック(.xls)</dt><dd>Excel97からExcel2003までと完全に互換性のある形式で保存します。</dd>
-<dt>OpenDocument スプレッドシート(.odt)</dt><dd>OpenDocumentという、Office以外のソフトと互換性のある形式で保存します。</dd>
-<dt>PDF または XPS(.doc)</dt><dd>PDFやXPS形式で保存します。</dd>
+<dt>Excel 97-2003 ブック(.xls)</dt><dd>Microsoft Excel 97 から Excel 2003 までで標準利用されていた形式で保存します。</dd>
+<dt>OpenDocument スプレッドシート(.ods)</dt><dd>Microsoft Office 以外のオフィス製品でも利用できる、オフィススイートの共通形式で保存します。</dd>
+<dt>PDF(.pdf)</dt><dd>PDF形式で保存します。Excel がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
 
 <div class="alert alert-warning" role="alert">
@@ -77,8 +77,8 @@ Microsoft Excelの起動
 あるいは、ウィンドウ右上の閉じるボタンをクリックします。
 
 
-Microsoft Office Excel 2010の概要
----------------------------------
+Microsoft Excel 2013の概要
+--------------------------
 
 ### このアプリケーションで何ができるか?
 

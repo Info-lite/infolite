@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accessの概要とテーブル
-date: 2015-10-15 11:46:37 +0900
+date: 2016-03-10 13:46:45 +0900
 purposes:
     - データベースソフトについて学ぶ
     - Microsoft Accessの基本操作を学ぶ
@@ -105,7 +105,7 @@ Microsoft Accessの基本操作
 
 ### Microsoft Accessの起動
 
-[スタート] - [すべてのプログラム] - [Microsoft Office] - [Microsoft Office Access]をクリックします。
+[スタート] - [すべてのプログラム] - [Microsoft Office] - [Access 2013]をクリックします。
 
 ![起動画面](./pic/home.png)
 

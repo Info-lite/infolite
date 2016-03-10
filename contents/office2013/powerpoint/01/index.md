@@ -1,7 +1,7 @@
 ---
 layout: page
 title: プレゼンテーションの概要と実習
-date: 2016-03-10 11:07:47 +0900
+date: 2016-03-10 13:58:36 +0900
 purposes:
     - Microsoft PowerPointを用いたプレゼンテーションスライドの作成法の習得
 ---
@@ -37,7 +37,7 @@ Microsoft PowerPointの起動
 --------------------------
 
 1. [スタート]をクリックします
-1. [すべてのプログラム] - [Microsoft Office] - [Microsoft Office PowerPoint 2013] をクリックします
+1. [すべてのプログラム] - [Microsoft Office] - [PowerPoint 2013] をクリックします
 
 
 プレゼンテーションの作成と保存
@@ -62,20 +62,19 @@ Microsoft PowerPointの起動
 保存形式は[名前を付けて保存]のウィンドウで[ファイルの種類]から選択することもできます。
 
 <dl>
-<dt>プレゼンテーション(.pptx)</dt>
-<dd>Microsoft Office PowerPoint2007以降のバージョンで使用できる形式で保存します。</dd>
-<dd><strong>PowerPoint2003以前とは互換性がないので注意しましょう</strong>。</dd>
+<dt>PowerPoint プレゼンテーション(.pptx)</dt>
+<dd>PowerPoint 2007 以降で利用できる標準形式で保存します。</dd>
 <dt>PowerPoint 97-2003 プレゼンテーション(.ppt)</dt>
-<dd>PowerPoint97からPowerPoint2003までと完全に互換性のある形式で保存します。</dd>
-<dt>OpenDocument プレゼンテーション(.odt)</dt>
-<dd>OpenDocumentという、Office以外のソフトと互換性のある形式で保存します。</dd>
+<dd>Microsoft Power Point 97 から PowerPoint 2003 までで標準利用されていた形式で保存します。</dd>
+<dt>OpenDocument プレゼンテーション(.odp)</dt>
+<dd>Microsoft Office 以外のオフィス製品でも利用できる、オフィススイートの共通形式で保存します。</dd>
 <dt>PowerPoint スライドショー(.ppsx)</dt>
 <dd>作成したプレゼンテーションをスライドショー表示で保存します。</dd>
 <dt>PowerPoint 画像化プレゼンテーション(.pptx)</dt>
 <dd>プレゼンテーションと同じ拡張子ですが、各スライドを画像に変換して保存します。</dd>
+<dt>PDF(.pdf)</dt>
+<dd>PDF形式で保存します。Excel がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
-
-この他にもPDFやXPS形式で保存することができます。
 
 <div class="alert alert-warning" role="alert">
 <strong>情報基礎教室における制約事項</strong>
@@ -97,8 +96,8 @@ Microsoft PowerPointの起動
 あるいは、ウィンドウ右上の閉じるボタンをクリックします。
 
 
-Microsoft Office PowerPoint 2013の概要
---------------------------------------
+Microsoft PowerPoint 2013の概要
+-------------------------------
 
 ### ウィンドウ構成
 

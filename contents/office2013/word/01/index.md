@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2015-03-27 09:50:37 +0900
+date: 2016-03-10 13:54:25 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
 flowplayer_conf:
@@ -14,7 +14,7 @@ Microsoft Wordの起動
 --------------------
 
 1.  [スタート] をクリックします
-1.  [すべてのプログラム] - [Microsoft Office] - [Microsoft Office Word 2010] をクリックします
+1.  [すべてのプログラム] - [Microsoft Office] - [Word 2013] をクリックします
 
 
 文書の作成と保存
@@ -52,10 +52,11 @@ Microsoft Wordの起動
 
 
 <dl>
-<dt>Word 文書(.docx)</dt><dd>Microsoft Office Word 2010以降で使用できる形式で保存します。<strong>Word2003以前とは互換性がないので注意しましょう</strong></dd>
-<dt>Word 97-2003 文書(.doc)</dt><dd>Word97からWord2003までと完全に互換性のある形式で保存します。</dd>
-<dt>OpenDocument テキスト(.odt)</dt><dd>OpenDocumentという、Office以外のソフトと互換性のある形式で保存します。</dd>
+<dt>Word 文書(.docx)</dt><dd>Word 2007 以降で利用できる標準形式で保存します。</dd>
+<dt>Word 97-2003 文書(.doc)</dt><dd>Microsoft Word 97 から Word 2003 までで標準利用されていた形式で保存します。</dd>
+<dt>OpenDocument テキスト(.odt)</dt><dd>Microsoft Office 以外のオフィス製品でも利用できる、オフィススイートの共通形式で保存します。</dd>
 <dt>Word テンプレート</dt><dd>作成した文書の書式設定を保存します。</dd>
+<dt>PDF(.pdf)</dt><dd>PDF形式で保存します。Word がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
 
 <div class="alert alert-warning" role="alert">
@@ -77,10 +78,10 @@ Microsoft Wordの起動
 1.  ウィンドウ右上の閉じるボタンをクリックするとwordが終了します
 
 
-Microsoft Office Word 2013の概要
---------------------------------
+Microsoft Word 2013の概要
+-------------------------
 
-以下の内容は、基本的にMicrosoft Office 2010で共通です。
+以下の内容は、基本的に Microsoft Office 2013 で共通です。
 
 ### ウィンドウ各部の名称
 
