@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2016-03-10 13:54:25 +0900
+date: 2016-03-11 08:59:49 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
 flowplayer_conf:
@@ -60,8 +60,8 @@ Microsoft Wordの起動
 </dl>
 
 <div class="alert alert-warning" role="alert">
-<strong>情報基礎教室における制約事項</strong>
-<p>情報基礎教室では、PDFを印刷すると、システム上の理由で印刷にかなりの時間がかかってしまいます。</p>
+<strong>情報処理教室における制約事項</strong>
+<p>情報処理教室では、PDFを印刷すると、システム上の理由で印刷にかなりの時間がかかってしまいます。</p>
 </div>
 
 #### 既存の文書の変更を保存する
