@@ -61,7 +61,7 @@ date: 2015-03-23 16:36:21 +0900
 
 ### 影効果
 
-<span><img src="pic/word_shadow.png" /></span> [図形の効果] - [影]をクリックします。
+<span><img src="pic/word_figure_effect.png" /></span> [図形の効果] - <span><img src="pic/word_shadow.png" /></span>  [影]をクリックします。
 
 ![影](pic/word02_zukei_12shadow.png)
 
