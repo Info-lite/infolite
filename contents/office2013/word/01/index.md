@@ -1,7 +1,7 @@
-﻿---
+---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2016-03-11 08:59:49 +0900
+date: 2016-03-15 08:40:28 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
 flowplayer_conf:
