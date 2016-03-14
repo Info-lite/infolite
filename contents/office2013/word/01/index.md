@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: ワードプロセッサによる文書編集（１）
 date: 2016-03-11 08:59:49 +0900
@@ -24,8 +24,14 @@ Microsoft Wordの起動
 
 ####  新規作成
 
-1.  ![ファイルタブ](pic/word_fileribbon.png) [ファイル] タブをクリックします
-1.  ![新規作成](pic/word_sinki.png) [新規作成] - ![白紙の文書](pic/word_shinki1.png) [白紙の文書] - [作成] をクリックします
+1. Word を起動すると、スタート画面が表示されます。
+![新規作成](pic/word_shinki.png)
+
+ここで、新規にプレゼンテーションを作成するか、あるいは既存のプレゼンテーションファイルを開くかを選びます。
+
+新規に作成する場合は、右側のサムネイルから利用したいテーマを選ぶことで、そのテーマを適用したファイルが新規作成されます。
+
+また既存ファイルの場合は、Windows エクスプローラーで目的のファイルのあるフォルダに移動し、そのアイコンをダブルクリックで開くこともできます。
 
 #### 既存文書のオープン（改訂、再編集）
 
@@ -69,7 +75,7 @@ Microsoft Wordの起動
 1.  ![ファイルタブ](pic/word_fileribbon.png) [ファイル] タブをクリックします
 1.   [上書き保存] をクリックします
 
-あるいは、クイックアクセスツールバーの <span><img src="pic/word_quicksave.png" /></span> [上書き保存] をクリックします。
+あるいは、クイックアクセスツールバーの <span><img src="../pic/word_quicksave.png" /></span> [上書き保存] をクリックします。
 
 ### Wordの終了
 
@@ -95,11 +101,11 @@ Microsoft Word 2013の概要
 
 初期設定で表示されているアイコンとその機能は以下の通りです。
 
--   ![上書き保存](pic/word_quicksave.png) 上書き保存
--   ![元に戻す](pic/word_quickreturn.png) 元に戻す
--   ![繰り返す](pic/word_quickrepeat.png) 繰り返す
+-   ![上書き保存](../pic/word_quicksave.png) 上書き保存
+-   ![元に戻す](../pic/word_quickreturn.png) 元に戻す
+-   ![繰り返す](../pic/word_quickrepeat.png) 繰り返す
 
-<span><img src="pic/word_quickmore.png" /></span> をクリックすると、表示するアイコンのカスタマイズが行えます。
+<span><img src="../pic/word_quickmore.png" /></span> をクリックすると、表示するアイコンのカスタマイズが行えます。
 
 ### ファイルタブ
 
@@ -163,7 +169,7 @@ Wordの画面での表示の仕方を設定します。
 
 ![リボン 表示](pic/word_ribbon_show.png)
 
-パネルの右下にある <span><img src="pic/word_more.png" /></span> を押すと、より詳しく各項目を設定することができます。
+パネルの右下にある <span><img src="../pic/word_more.png" /></span> を押すと、より詳しく各項目を設定することができます。
 
 ![フォント](pic/word_fontmore.png)
 
@@ -223,7 +229,6 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9313; すると、カーソルの矢印の向きが左上から右上に変わります。その状態で左クリックすると、行全体を選択することができます。
 
-![](pic/word01_05centering.png)
 
 &#9314; [ホーム]リボン の "段落" から <span><img src="pic/word_centering.png" /></span> [中央揃え] を押して、文字を揃えます。
 
@@ -313,16 +318,16 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 ![](pic/word01_22indent.png)
 
 これで随分と見やすくなりました。
-また、左インデントは [ホーム]リボンの "段落" にある <span><img src="pic/word_indentup.png" /></span> や <span><img src="pic/word_indentdown.png" /></span> でもずらすことができます。
+また、左インデントは [ホーム]リボンの "段落" にある <span><img src="../pic/word_indentup.png" /></span> や <span><img src="../pic/word_indentdown.png" /></span> でもずらすことができます。
 
 インデントはこの他、段落の詳細設定からより詳しく設定することができます。
-[ホーム] リボン - "段落"パネルの右下の <span><img src="pic/word_more.png" /></span> をクリックします。
+[ホーム] リボン - "段落"パネルの右下の <span><img src="../pic/word_more.png" /></span> をクリックします。
 
 ![段落](pic/word01_23indent.png)
 
 ![段落](pic/word_indentwindow.png)
 
-また、ページのレイアウト全体の設定を行うこともできます。[ページレイアウト] リボン - "ページ設定"パネルの右下の <span><img src="pic/word_more.png" /></span> をクリックします。
+また、ページのレイアウト全体の設定を行うこともできます。[ページレイアウト] リボン - "ページ設定"パネルの右下の <span><img src="../pic/word_more.png" /></span> をクリックします。
 
 ![ページ設定](pic/word01_23indent.png)
 ![ページ設定](pic/word_layoutwindow.png)
@@ -353,7 +358,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 ヘッダーやフッターを編集していると、リボンに [ヘッダー/フッター ツール] が表示されます。
 次にフッターを設定します。先ほどと同じ[挿入]リボンからも操作可能ですが、現在表示されている [ヘッダー/フッター ツール] から操作してみることにします。
 
-&#9312; [ヘッダー/フッター ツール]  [デザイン] リボン - <span><img src="pic/word_footer.png" /></span> [ページ番号] を押します。
+&#9312; [ヘッダー/フッター ツール]  [デザイン] リボン -  <span><img src="pic/word_footer.png" /></span>--- [ページ番号] を押します。
 
 ![](pic/word01_28footer.png)
 
