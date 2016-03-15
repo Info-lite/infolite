@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（発展例）
-date: 2015-03-23 17:06:11 +0900
+date: 2016-03-15 15:59:27 +0900
 purposes:
     - Microsoft Wordで目次を作成して、文書をより見やすくする
     - 見出しを考えるステップを踏むことによって、文章全体の構成を考えやすくする
@@ -23,7 +23,7 @@ purposes:
 
 アウトラインを付けるために、画面をアウトライン表示にしましょう。[アウトライン]リボンを表示します。
 
-[表示]リボン - <span><img src="pic/word_outline_show.png" /></span> [アウトライン] を押します。
+[表示]リボン - <span><img src="pic/word_outline_show.png" alt="アウトライン" /></span> をクリックします。
 
 ![アウトラインの表示](pic/word03_02outline.png)
 
@@ -85,7 +85,7 @@ purposes:
 
 また、今回は見出しとして、予め用意された文字スタイル"見出し 1"や"見出し 2"を使用しました。文字スタイルを新しく設定することもできます。
 
-[ホーム]リボン - "スタイルパネル"の <span><img src="pic/word_details.png" /></span> - [新しいスタイル]を押します。
+[ホーム]リボン - "スタイルパネル"の <span><img src="pic/word_details.png" /></span> - [新しいスタイル]をクリックします。
 
 ![文字スタイル](pic/word03_11style.png)
 
@@ -97,7 +97,7 @@ purposes:
 
 アウトラインの設定を行います。Wordには予めいくつかのリストスタイルが用意されています。
 
-&#9312; [ホーム]リボン - <span><img src="pic/word_outline.png" /> [アウトライン] を押します。
+&#9312; [ホーム]リボン - <span><img src="pic/word_outline.png" /> [アウトライン] をクリックします。
 
 ![](pic/word03_13outline.png)
 
@@ -113,7 +113,7 @@ purposes:
 
 アウトラインやリストスタイルも新しく設定することができます。
 
-[ホーム]リボン - <span><img src="pic/word_outline.png" /></span> [アウトライン] - [新しいアウトラインの定義]を押します。
+[ホーム]リボン - <span><img src="pic/word_outline.png" alt="アウトライン" /></span> - [新しいアウトラインの定義]をクリックします。
 
 ![アウトライン](pic/word03_16outline.png)
 
@@ -123,7 +123,7 @@ purposes:
 
 #### 新しいリストスタイルの定義
 
-[ホーム]リボン - <span><img src="pic/word_outline.png" /></span> [アウトライン] - [新しいリスト スタイルの定義]を押します。
+[ホーム]リボン - <span><img src="pic/word_outline.png" alt="アウトライン" /></span> - [新しいリスト スタイルの定義]をクリックします。
 
 ![アウトライン](pic/word03_18outline.png)
 
@@ -145,7 +145,7 @@ purposes:
 街の説明の項目に以下の内容を書き足します。
 ![ページ](pic/word03_21page.png)
 
-[挿入]リボン - "ページ" - [ページ区切り]を押します。
+[挿入]リボン - "ページ" - [ページ区切り]をクリックします。
 
 ![ページ](pic/word03_22page.png)
 ページが区切られました。
@@ -157,7 +157,7 @@ purposes:
 
 次に、ページ番号を入れていきます。
 
-&#9312; [挿入]リボン - <span><img src="pic/word_pagenum.png" /></span> [ページ番号] を押します。
+&#9312; [挿入]リボン - <span><img src="pic/word_pagenum.png" alt="ページ番号" /></span> をクリックします。
 
 ![](pic/word03_23page.png)
 
@@ -170,13 +170,13 @@ purposes:
 このページ番号はフッターと同じ扱いになります。
 先頭ページは目次として、ページ数に含めたくないので、先頭ページを"0"ページに設定します。
 
-&#9314; <span><img src="pic/word_pagenum.png" /></span> [ページ番号の挿入] - [ページ番号の書式設定]を押します。
+&#9314; <span><img src="pic/word_pagenum.png" alt="ページ番号" /></span> - [ページ番号の書式設定]をクリックします。
 
 ![](pic/word03_26page.png)
 
 ![](pic/word03_27page.png)
 
-&#9315; 連続番号の"開始番号"にチェック - "0"と入力 - [OK]を押します。
+&#9315; 連続番号の"開始番号"にチェック - `0` と入力 - [OK]をクリックします。
 
 ![](pic/word03_28page.png)
 
@@ -192,7 +192,7 @@ purposes:
 
 これで、"0"ページは消えました。
 
-最後に[デザイン]リボン - [ヘッダーとフッターを閉じる]を押して、元の表示に戻します。
+最後に[デザイン]リボン - [ヘッダーとフッターを閉じる]をクリックして、元の表示に戻します。
 
 ![](pic/word03_32page.png)
 
@@ -204,7 +204,7 @@ purposes:
 
 &#9312; "目次"と入れた行の次の行にカーソルを移動させます。
 
-&#9313; [参考資料]リボン - <span><img src="pic/word_index.png" /></span> [目次] を押します。
+&#9313; [参考資料]リボン - <span><img src="pic/word_index.png" alt="目次" /></span> をクリックします。
 
 ![](pic/word03_33index.png)
 

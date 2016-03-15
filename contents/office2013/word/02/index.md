@@ -1,12 +1,12 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（２）
-date: 2015-03-27 09:54:54 +0900
+date: 2016-03-15 15:57:50 +0900
 purposes:
     - Microsoft Wordでの表や図、図形の扱いの習得
 flowplayer_conf:
-    embed: false
-    ratio: 0.75
+    - embed: false
+    - ratio: 0.75
 ---
 
 
@@ -15,7 +15,7 @@ flowplayer_conf:
 
 ### 初期原稿の入力
 
-例文（講習会のお知らせ）を新規書類として作成しましょう。[完成版](handbill.pdf)はこのようになります。前と同じく、まずは文章のみを打ち込み、その後で書式設定や表の挿入を行います。なお、**◇の記号は箇条書きで設定するので入力する必要はありません**。
+例文（講習会のお知らせ）を新規書類として作成しましょう。[完成版](handbill.pdf)はこのようになります。前と同じく、まずは文章のみを入力し、その後で書式設定や表の挿入を行います。なお、**◇の記号は箇条書きで設定するので入力する必要はありません**。
 
 <span class="label label-info">参考資料</span> [記号・特殊文字と数式](../appendix/sword.html)
 
@@ -55,13 +55,13 @@ flowplayer_conf:
 
 ### 表の概要
 
-#### セル、行、列、m（行）×n（列）表
+#### セル、行、列、m（行）&times; n（列）表
 
 以下の図がセル、行、列の概念を表しています。それぞれ特定のセル、行、列を選択した状態になっています。それぞれの選択の仕方は実習で学びます。
 
 ![](pic/word_col.png)
 
-これらの表は、 4 個の行と 3 個の列からできています。このような表は 4 × 3 表と呼ばれます。この他にも 5 個の行と 2 個の列からできている表は 5 × 2 表、m個の行とn個の列からできている表をm×n表と呼びます。
+これらの表は、 4 個の行と 3 個の列からできています。このような表は 4 &times; 3 表と呼ばれます。この他にも 5 個の行と 2 個の列からできている表は 5 &times; 2 表、m個の行とn個の列からできている表をm&times;n表と呼びます。
 
 #### 表全体の選択
 
@@ -85,7 +85,7 @@ flowplayer_conf:
 
 今回作る表は列ごとに行の数が違うという表です。作り方は数パターンありますが、今回は5 &times; 4表から作成します。なお、以降の操作では表の中のセルを( 4 行目, 4列目)=(4,4)というように座標で表現していきます。
 
-&#9312; [挿入]リボン - <span><img src="pic/word_tablemake.png" /></span> [表] を押します。
+&#9312; [挿入]リボン - <span><img src="pic/word_tablemake.png" alt="表" /></span> をクリックします。
 
 ![](pic/word02_06make.png)
 
@@ -119,11 +119,11 @@ flowplayer_conf:
 
 ![](pic/word02_12division.png)
 
-&#9313; [レイアウト]リボン - <span><img src="pic/word_division.png" /></span> [セルの分割] を押します。
+&#9313; [レイアウト]リボン - <span><img src="pic/word_division.png" alt="セルの分割" /></span> をクリックします。
 
 ![](pic/word02_13division.png)
 
-&#9314; 列数を`2`、行数を`4`と入力 - [OK]を押します。
+&#9314; 列数を`2`、行数を`4`と入力 - [OK]をクリックします。
 
 ![](pic/word02_14division.png)
 
@@ -141,7 +141,7 @@ flowplayer_conf:
 
 ![表](pic/word02_16comb.png)
 
-&#9313; [レイアウト]リボン - <span><img src="pic/word_comb.png" /></span> [セルの結合] を押します。
+&#9313; [レイアウト]リボン - <span><img src="pic/word_comb.png" alt="セルの結合" /></span> をクリックします。
 
 ![表](pic/word02_17comb.png)
 
@@ -155,7 +155,7 @@ flowplayer_conf:
 
 ![表](pic/word02_20word.png)
 
-"初級編"、"中級編"の文字を縦書きにします。通常の文章と同じように選択 - [レイアウト]リボン - <span><img src="pic/word_tate.png" /></span> [文字列の方向] を押します。
+"初級編"、"中級編"の文字を縦書きにします。通常の文章と同じように選択 - [レイアウト]リボン - <span><img src="pic/word_tate.png" alt="文字列の方向" /></span> をクリックします。
 
 ![表](pic/word02_21word.png)
 
@@ -215,11 +215,11 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 ### 直線と矢印の描画
 
-&#9312; [挿入]リボン - <span><img src="pic/word_figure.png" /></span> [図形] を押します。
+&#9312; [挿入]リボン - <span><img src="pic/word_figure.png" alt="図形" /></span> をクリックします。
 
 ![](pic/word02_27figure.png)
 
-&#9313; <span><img src="pic/word_straight.png" /></span> [直線] を押します。
+&#9313; <span><img src="pic/word_straight.png" alt="直線" /></span> をクリックします。
 
 ![](pic/word02_28figure.png)
 
@@ -229,7 +229,7 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 線の色や太さ、線の種類などを変更することができます。
 
-設定を変更したい線を選択 - [書式]リボン - <span><img src="pic/word_figure_custom.png" /></span> [図形の枠線] を押します。
+設定を変更したい線を選択 - [書式]リボン - <span><img src="pic/word_figure_custom.png" alt="図形の枠線" /></span> をクリックします。
 
 ![直線](pic/word02_30figure.png)
 
@@ -237,7 +237,7 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 ![直線](pic/word02_31figure.png)
 
-<span><img src="pic/word_arrow.png" /></span> [矢印] についても直線と同様にして描くことができます。ためしてみましょう。
+<span><img src="pic/word_arrow.png" alt="矢印" /></span> についても直線と同様にして描くことができます。ためしてみましょう。
 
 ### その他の機能
 

@@ -1,14 +1,14 @@
 ---
 layout: appendix
 title: 図形描画についての補足
-date: 2015-03-23 16:36:21 +0900
+date: 2016-03-15 15:58:21 +0900
 ---
 
 
 図形（長方形と楕円）の描画
 --------------------------
 
-[挿入]リボン - <span><img src="pic/word_figure.png" /></span> [図形] - <span><img src="pic/word_square.png" /></span> [四角形] もしくは <span><img src="pic/word_oval.png" /></span> [楕円] を押します。
+[挿入]リボン - <span><img src="pic/word_figure.png" /></span> [図形] - <span><img src="pic/word_square.png" /></span> [四角形] もしくは <span><img src="pic/word_oval.png" /></span> [楕円] をクリックします。
 
 ![図形](pic/word02_zukei_01pic.png)
 
