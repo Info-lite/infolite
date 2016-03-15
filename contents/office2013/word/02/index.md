@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（２）
-date: 2016-03-15 17:17:58 +0900
+date: 2016-03-15 17:43:24 +0900
 purposes:
     - Microsoft Wordでの表や図、図形の扱いの習得
 flowplayer_conf:
@@ -17,7 +17,7 @@ flowplayer_conf:
 
 例文（講習会のお知らせ）を新規書類として作成しましょう。[完成版](handbill.pdf)はこのようになります。前と同じく、まずは文章のみを入力し、その後で書式設定や表の挿入を行います。なお、**◇の記号は箇条書きで設定するので入力する必要はありません**。
 
-<span class="label label-info">参考資料</span> [記号・特殊文字と数式](../appendix/sword.html)
+{% appendix ../appendix/sword.html "記号・特殊文字と数式" %}
 
 まずはここまで完成させましょう。
 
@@ -199,7 +199,7 @@ Microsoft Wordでは、文書に画像などを挿入することができます
 
 この他にも、クリップアートのように元々用意された画像を使うこともできます。
 
-<span class="label label-info">参考資料</span> [図と文字列](../appendix/clip.html)
+{% appendix ../appendix/clip.html "図と文字列" %}
 
 
 図形を描く
@@ -243,7 +243,7 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 Microsoft Wordでは、直線の他にも様々な図形や文字を描くことができます。
 
-<span class="label label-info">参考資料</span> [図形描画](../appendix/zukei.html)
+{% appendix ../appendix/zukei.html "図形描画" %}
 
 
 課題 2

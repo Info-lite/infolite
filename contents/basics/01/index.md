@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 情報処理教室の使い方と授業ガイダンス
-date: 2016-03-11 09:56:53 +0900
+date: 2016-03-15 17:46:09 +0900
 purposes:
     - 情報倫理について学ぶ
     - 情報処理教室の使い方を学ぶ
@@ -167,11 +167,11 @@ purposes:
 1.  "ログオン先"：
     "SPCTMU"となっていることを確認してください。
 
-<span class="label label-info">参考資料</span> [キーボードの操作方法](../appendix/keyboard.html)
+{% appendix ../appendix/keyboard.html "キーボードの操作方法" %}
 
 &#9315; Windowsにログオンすると、このような画面（デスクトップ）になります。左上にあるマイドキュメントのアイコンをダブルクリックして開いてみましょう。
 
-<span class="label label-info">参考資料</span> [マウスの操作方法](../appendix/mouse.html)
+{% appendix ../appendix/mouse.html "マウスの操作方法" %}
 
 ![デスクトップ](./pic/desktop.png)
 
@@ -238,7 +238,7 @@ purposes:
 情報処理教室にはモノクロレーザープリンタが設置されています。
 開放利用時間中に、一人１日20枚に限り資料やレポート課題を印刷することができます。
 
-<span class="label label-info">参考資料</span> [印刷の注意](../appendix/print.html)
+{% appendix ../appendix/print.html "印刷の注意" %}
 
 教材や参考資料の参照方法
 ------------------------
@@ -261,7 +261,7 @@ purposes:
 みなさんがパソコンを利用するとき、文字を入力すること、特に日本語を入力するという機会が非常に多いと思います。ここでは、タイピングの練習をしていきます。
 日本語入力の方法については以下のページを参照してください。
 
-<span class="label label-info">参考資料</span> [日本語入力について](../appendix/japanese.html)
+{% appendix ../appendix/japanese.html "日本語入力について" %}
 
 ### テキストエディタの選択
 

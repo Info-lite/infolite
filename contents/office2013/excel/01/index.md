@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
-date: 2016-03-15 17:15:55 +0900
+date: 2016-03-15 17:38:46 +0900
 purposes:
     - Microsoft Excelを用いた表計算ソフト利用の基本の習得
 flowplayer_conf:
@@ -260,7 +260,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 </tbody>
 </table>
 
-<span class="label label-info">参考資料</span> [主なショートカットキー一覧](../../appendix/shortcuts.html)
+{% appendix ../../appendix/shortcuts.html "主なショートカットキー一覧" %}
 
 #### 複数セルの選択、編集
 
@@ -357,7 +357,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 演算の優先順位は、基本的には通常通りですが、括弧 `()` を用いることもできます。また、これ以外にも多くの関数による演算が可能です。
 
-<span class="label label-info">参考資料</span> [演算子についての補足](../appendix/enzanshi.html)
+{% appendix ../appendix/enzanshi.html "演算子についての補足" %}
 
 ### オートフィルによる自動繰り返し計算
 
@@ -390,7 +390,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 ![](pic/populationfinal.png)
 
-<span class="label label-info">参考資料</span> [Microsoft Excelで使える関数](../appendix/function.html)
+{% appendix ../appendix/function.html "Microsoft Excelで使える関数" %}
 
 ### 保存と終了
 

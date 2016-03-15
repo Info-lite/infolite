@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ネットワークの仕組みと情報検索
-date: 2016-03-11 08:59:30 +0900
+date: 2016-03-15 17:49:01 +0900
 purposes:
     - ネットワークの仕組みを学ぶ
     - 情報検索について学ぶ
@@ -348,7 +348,7 @@ Webではさまざまな人が情報を発信しているため、その情報�
 
 また、ロボット型の検索エンジンの代表であるgoogleには応用的な機能がついています。単位換算や乗換案内など、特定のウェブページを調べる以外の用途にも利用することができます。また、WEB上の検索エンジンでは、簡単な計算を実行したり、英語名から日本語名を調べたりすることもできます。
 
-<span class="label label-info">参考資料</span> [googleの使い方](../appendix/google.html)
+{% appendix ../appendix/google.html "googleの使い方" %}
 
 
 書籍の検索
@@ -405,7 +405,7 @@ Webではさまざまな人が情報を発信しているため、その情報�
 -   [近代デジタルライブラリー](http://kindai.ndl.go.jp/)（国立国会図書館）
 -   [青空文庫](http://www.aozora.gr.jp/)
 
-<span class="label label-info">参考資料</span> [特殊なデータベースの検索例](../appendix/dbsample.html)
+{% appendix ../appendix/dbsample.html "特殊なデータベースの検索例" %}
 
 
 練習問題1

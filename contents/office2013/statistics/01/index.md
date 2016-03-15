@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 統計学についての基礎的知識
-date: 2016-03-15 17:15:05 +0900
+date: 2016-03-15 17:41:14 +0900
 purposes:
     - 統計の基本について知る
     - Excelを用いて簡単な基本統計量を求める
@@ -191,7 +191,7 @@ Excelの分析ツール
 
 [データ分析]が表示されていない場合は以下のページを参考にしてアドインを追加してください。
 
-<span class="label label-info">参考資料</span> [分析ツール](../appendix/addin.html)
+{% appendix ../appendix/addin.html "分析ツール" %}
 
 
 分析ツールを利用した基本統計量の算出

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2016-03-15 17:30:11 +0900
+date: 2016-03-15 17:42:17 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
 flowplayer_conf:
@@ -187,7 +187,7 @@ Wordの画面での表示の仕方を設定します。
 
 また、カーソルを使用したいコマンドの上で静止させると、そのコマンドの説明を見ることができます。
 
-<span class="label label-info">参考資料</span> [主なショートカットキー一覧](../../appendix/shortcuts.html)
+{% appendix ../../appendix/shortcuts.html "主なショートカットキー一覧" %}
 
 
 書類を作る
@@ -347,7 +347,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 1 ページの行数や文字数などを設定することができます。
 
-<span class="label label-info">参考資料</span> [行の間隔を設定する](../appendix/linespace.html)
+{% appendix ../appendix/linespace.html "行の間隔を設定する" %}
 
 ### ヘッダーとフッター
 
