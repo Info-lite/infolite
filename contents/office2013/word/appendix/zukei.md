@@ -1,14 +1,14 @@
 ---
 layout: appendix
 title: 図形描画についての補足
-date: 2016-03-15 15:58:21 +0900
+date: 2016-03-15 17:31:56 +0900
 ---
 
 
 図形（長方形と楕円）の描画
 --------------------------
 
-[挿入]リボン - <span><img src="pic/word_figure.png" /></span> [図形] - <span><img src="pic/word_square.png" /></span> [四角形] もしくは <span><img src="pic/word_oval.png" /></span> [楕円] をクリックします。
+[挿入]リボン - <span><img src="pic/word_figure.png" alt="図形" /></span> - <span><img src="pic/word_square.png" alt="四角形" /></span> もしくは <span><img src="pic/word_oval.png" alt="楕円" /></span> をクリックします。
 
 ![図形](pic/word02_zukei_01pic.png)
 
@@ -41,7 +41,7 @@ date: 2016-03-15 15:58:21 +0900
 
 ### 図形の塗りつぶし
 
-四角形など、線で囲まれている領域がある場合、<span><img src="pic/word_paint.png" /></span> [図形の塗りつぶし] で領域を塗りつぶすことができます。
+四角形など、線で囲まれている領域がある場合、<span><img src="pic/word_paint.png" alt="図形の塗りつぶし" /></span> で領域を塗りつぶすことができます。
 
 ![図形のカスタマイズ](pic/word02_zukei_07custom.png)
 
@@ -61,7 +61,7 @@ date: 2016-03-15 15:58:21 +0900
 
 ### 影効果
 
-<span><img src="pic/word_figure_effect.png" /></span> [図形の効果] - <span><img src="pic/word_shadow.png" /></span>  [影]をクリックします。
+<span><img src="pic/word_figure_effect.png" alt="図形の効果" /></span> - <span><img src="pic/word_shadow.png" /></span>  [影]をクリックします。
 
 ![影](pic/word02_zukei_12shadow.png)
 
@@ -83,7 +83,7 @@ date: 2016-03-15 15:58:21 +0900
 テキストボックスの挿入
 ----------------------
 
-[挿入]リボン - <span><img src="pic/word_textbox.png" /></span> [テキストボックス] - [横書きテキストボックスの描画]をクリックします。
+[挿入]リボン - <span><img src="pic/word_textbox.png" alt="テキストボックス" /></span> - [横書きテキストボックスの描画]をクリックします。
 
 ![テキストボックス](pic/word02_zukei_16textbox.png)
 
@@ -95,7 +95,7 @@ date: 2016-03-15 15:58:21 +0900
 
 ![テキストボックス](pic/word02_zukei_18textbox.png)
 
-図形の <span><img src="pic/word_hukidasi.png" /></span> [吹き出し] も同じように内部に文字を入れることができます。
+図形の <span><img src="pic/word_hukidasi.png" alt="吹き出し" /></span> も同じように内部に文字を入れることができます。
 
 ![テキストボックス](pic/word02_zukei_19textbox.png)
 
@@ -103,11 +103,11 @@ date: 2016-03-15 15:58:21 +0900
 ワードアート
 ------------
 
-[挿入]リボン - <span><img src="pic/word_wordart.png" /></span> [ワードアート] をクリックします。任意のスタイルを選択してください。
+[挿入]リボン - <span><img src="pic/word_wordart.png" alt="ワードアート" /></span> をクリックします。任意のスタイルを選択してください。
 
 ![テキストボックス](pic/word02_zukei_20wordart.png)
 
-「ここに文字を入力」のスペースにワードアートにしたい文字を入力します。
+`ここに文字を入力` という文字列を、ワードアートにしたい文字列に置き換えます。
 
 ![テキストボックス](pic/word02_zukei_21wordart.png)
 
