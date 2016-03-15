@@ -33,10 +33,6 @@ body > .container {
     padding-left: 15px;
 }
 
-code {
-    font-size: 80%;
-}
-
 .container a:before{
     font-family: 'FontAwesome';
     margin: 0 3px;
