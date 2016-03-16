@@ -1,6 +1,5 @@
 $(function() {
     $("table").addClass("table");
-    $("p > img").addClass("img-responsive");
 
     // toc
     $("body").toc({
