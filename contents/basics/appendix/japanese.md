@@ -1,7 +1,7 @@
 ---
 layout: appendix
 title: 日本語入力について
-date: 2016-03-11 09:00:37 +0900
+date: 2016-03-16 10:00:47 +0900
 ---
 
 ここでは、日本語の入力についてをより詳しく解説していきます。
@@ -15,9 +15,8 @@ date: 2016-03-11 09:00:37 +0900
 
 すでに説明してあるマウスやキーボードの操作が重要となります。忘れてしまった人は確認しておいてください。
 
-<span class="label label-info">参考資料</span> [マウスの操作方法](./mouse.html)
-
-<span class="label label-info">参考資料</span> [キーボードの操作方法](./keyboard.html)
+{% appendix ../appendix/keyboard.html "キーボードの操作方法" %}
+{% appendix ../appendix/mouse.html "マウスの操作方法" %}
 
 まずはメモ帳を起動して下さい。起動の仕方を忘れてしまった人は第一講を確認しておきましょう。
 
@@ -27,7 +26,7 @@ date: 2016-03-11 09:00:37 +0900
 
 日本語を入力する際には、マイクロソフト社製の日本語入力システムMicrosoft IME(Microsoft Input Method Editor、以下MS-IME) を利用します。また、同社が出しているMicrosoft Office IME 2007（2007 Microsoft Office Service Pack 1に搭載）も、基本的には使い方は変わりません。
 
-![](pic/IMEtoolbar.png)
+{% screenshot IMEtoolbar.png "" %}
 
 言語バーの、(あ)あるいは( A)と表示されている部分をクリックすると、入力モードを変更することができます。入力モードには、「ひらがな(あ)」、「全角カタカナ(カ)」、「全角英数(Ａ)」、
 「半角カタカナ( ｶ)」、「半角英数( A)」、「直接入力( A)」があります。
@@ -214,7 +213,7 @@ IMEの詳細については [使用条件](http://www.microsoft.com/japan/misc/c
 
 以下の図とその下の表の対応を見てください。
 
-![](pic/IMEtoolbar1.png)
+{% screenshot IMEtoolbar1.png "" %}
 
 <dl>
 <dt>日本語入力方式</dt><dd>MS-IMEかナチュラルインプットの選択</dd>
@@ -234,7 +233,7 @@ IMEの詳細については [使用条件](http://www.microsoft.com/japan/misc/c
 
 そしてツールをクリックすると
 
-![](pic/IMEtoolbar2.png)　&rarr;　![](pic/IMEtoolbar3.png)
+{% screenshot IMEtoolbar3.png "](pic/IMEtoolbar2.png)　&rarr;　![" %}
 
 ### 日本語入力方法の変更
 
@@ -242,6 +241,6 @@ IMEの詳細については [使用条件](http://www.microsoft.com/japan/misc/c
 
 MS-IMEツールバー&rarr;入力方式&rarr;プロパティでダイアログ画面より設定
 
-![](pic/IMEproperty.png)
+{% screenshot IMEproperty.png "" %}
 
 ローマ字入力/かな入力の切替、句読点やスペースの種類など。自分の好みの環境にして下さい。再ログオンが必要になる場合があります。
