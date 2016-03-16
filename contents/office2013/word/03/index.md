@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（発展例）
-date: 2016-03-15 15:59:27 +0900
+date: 2016-03-16 09:53:53 +0900
 purposes:
     - Microsoft Wordで目次を作成して、文書をより見やすくする
     - 見出しを考えるステップを踏むことによって、文章全体の構成を考えやすくする
@@ -15,7 +15,7 @@ purposes:
 
 簡単な目次付きの街の紹介を作ってみましょう。まず最初に以下のような文書を作ってみましょう。
 
-![街自慢](pic/word03_01town.png)
+{% screenshot word03_01town.png "街自慢" %}
 
 `town.docx`という名前で保存してください。
 
@@ -23,11 +23,11 @@ purposes:
 
 アウトラインを付けるために、画面をアウトライン表示にしましょう。[アウトライン]リボンを表示します。
 
-[表示]リボン - <span><img src="pic/word_outline_show.png" alt="アウトライン" /></span> をクリックします。
+[表示]リボン - ![アウトライン](pic/word_outline_show.png) をクリックします。
 
-![アウトラインの表示](pic/word03_02outline.png)
+{% screenshot word03_02outline.png "アウトラインの表示" %}
 
-![アウトライン](pic/word03_03outline.png)
+{% screenshot word03_03outline.png "アウトライン" %}
 
 まだ、文章にアウトラインレベルが付けられていないので、全ての文章が本文になっています。
 
@@ -37,19 +37,19 @@ purposes:
 
 &#9312; まず一番上のレベルになる 9 行目"街の説明"、 10行目"街の名産品・特産品"、 11行目"街の名所・好きな場所"を選択します。
 
-![](pic/word03_04outline.png)
+{% screenshot word03_04outline.png "" %}
 
 &#9313; [ホーム]リボン - "スタイル"パネルの中から"見出し 1"を選択します。
 
-![](pic/word03_05style.png)
+{% screenshot word03_05style.png "" %}
 
 これで以下のように"街の説明"、"街の名産品・特産品"、"街の名所・好きな場所"を"アウトラインレベル 1"に設定することができました。
 
-![](pic/word03_06outline.png)
+{% screenshot word03_06outline.png "" %}
 
 &#9314; 次いで、一つ下のレベルになる 12 行目"有名な場所"、 13行目"景色が綺麗な場所"を選択し、"見出し 2"に設定してください。
 
-![](pic/word03_07outline.png)
+{% screenshot word03_07outline.png "" %}
 
 これで見出しを付けることができました。
 
@@ -58,13 +58,13 @@ purposes:
 アウトラインレベルの変更は、[アウトライン]リボンでも行うことができます。
 [アウトライン]リボン - "アウトラインツール"パネルにポイントされている位置のアウトラインレベルが表示されています。
 
-![アウトライン](pic/word03_08outline.png)
+{% screenshot word03_08outline.png "アウトライン" %}
 
 矢印を押すことによって、その文章のアウトラインレベルを変更することもできます。
 
-![アウトライン](pic/word03_09outline.png)
+{% screenshot word03_09outline.png "アウトライン" %}
 
-![アウトライン](pic/word03_10outline.png)
+{% screenshot word03_10outline.png "アウトライン" %}
 
 このようにして、"景色が綺麗な場所"が"アウトラインレベル 1"になりました。"景色が綺麗な場所"は"街の名所・好きな場所"の下位にあたるため、"アウトラインレベル 2"に戻しておきます。
 
@@ -85,11 +85,11 @@ purposes:
 
 また、今回は見出しとして、予め用意された文字スタイル"見出し 1"や"見出し 2"を使用しました。文字スタイルを新しく設定することもできます。
 
-[ホーム]リボン - "スタイルパネル"の <span><img src="pic/word_details.png" /></span> - [新しいスタイル]をクリックします。
+[ホーム]リボン - "スタイルパネル"の ![](pic/word_details.png) - [新しいスタイル]をクリックします。
 
-![文字スタイル](pic/word03_11style.png)
+{% screenshot word03_11style.png "文字スタイル" %}
 
-![文字スタイル](pic/word03_12style.png)
+{% screenshot word03_12style.png "文字スタイル" %}
 
 新しい文字スタイルを設定し、"スタイル"パネルに加えることができます。
 
@@ -97,15 +97,15 @@ purposes:
 
 アウトラインの設定を行います。Wordには予めいくつかのリストスタイルが用意されています。
 
-&#9312; [ホーム]リボン - <span><img src="pic/word_outline.png" /> [アウトライン] をクリックします。
+&#9312; [ホーム]リボン - ![アウトライン](pic/word_outline.png) をクリックします。
 
-![](pic/word03_13outline.png)
+{% screenshot word03_13outline.png "" %}
 
-![](pic/word03_14outline.png)
+{% screenshot word03_14outline.png "" %}
 
 &#9313; 任意のリストスタイルを選択します。今回は"1 （ア）①"を選択します。
 
-![](pic/word03_15outline.png)
+{% screenshot word03_15outline.png "" %}
 
 それぞれ"見出し 1"と"見出し 2"で連番が付けられ、アウトラインが設定できました。
 
@@ -113,21 +113,21 @@ purposes:
 
 アウトラインやリストスタイルも新しく設定することができます。
 
-[ホーム]リボン - <span><img src="pic/word_outline.png" alt="アウトライン" /></span> - [新しいアウトラインの定義]をクリックします。
+[ホーム]リボン - ![アウトライン](pic/word_outline.png) - [新しいアウトラインの定義]をクリックします。
 
-![アウトライン](pic/word03_16outline.png)
+{% screenshot word03_16outline.png "アウトライン" %}
 
-![アウトライン](pic/word03_17outline.png)
+{% screenshot word03_17outline.png "アウトライン" %}
 
 番号書式や左インデントからの距離などアウトラインの詳細な設定を行うことができます。
 
 #### 新しいリストスタイルの定義
 
-[ホーム]リボン - <span><img src="pic/word_outline.png" alt="アウトライン" /></span> - [新しいリスト スタイルの定義]をクリックします。
+[ホーム]リボン - ![アウトライン](pic/word_outline.png) - [新しいリスト スタイルの定義]をクリックします。
 
-![アウトライン](pic/word03_18outline.png)
+{% screenshot word03_18outline.png "アウトライン" %}
 
-![アウトライン](pic/word03_19outline.png)
+{% screenshot word03_19outline.png "アウトライン" %}
 
 こちらではリストスタイルの詳細な設定を行うことができます。
 
@@ -135,7 +135,7 @@ purposes:
 
 [アウトライン]リボン - [アウトライン表示を閉じる]を押すと、通常の画面に戻ります。
 
-![表示](pic/word03_20outline.png)
+{% screenshot word03_20outline.png "表示" %}
 
 
 ページ番号の付与
@@ -143,11 +143,11 @@ purposes:
 
 まず、各"見出し 1"の項目が1ページずつになるように内容とページ区切りを入れます。
 街の説明の項目に以下の内容を書き足します。
-![ページ](pic/word03_21page.png)
+{% screenshot word03_21page.png "ページ" %}
 
 [挿入]リボン - "ページ" - [ページ区切り]をクリックします。
 
-![ページ](pic/word03_22page.png)
+{% screenshot word03_22page.png "ページ" %}
 ページが区切られました。
 
 同様に、以下の箇所についてページ区切りを挿入します。
@@ -157,44 +157,44 @@ purposes:
 
 次に、ページ番号を入れていきます。
 
-&#9312; [挿入]リボン - <span><img src="pic/word_pagenum.png" alt="ページ番号" /></span> をクリックします。
+&#9312; [挿入]リボン - ![ページ番号](pic/word_pagenum.png) をクリックします。
 
-![](pic/word03_23page.png)
+{% screenshot word03_23page.png "" %}
 
 &#9313; [ページの下部] - [番号のみ 2]を選択し、ページ下部の中央にページ番号が入るようにします。
 
-![](pic/word03_24page.png)
+{% screenshot word03_24page.png "" %}
 
-![](pic/word03_25page.png)
+{% screenshot word03_25page.png "" %}
 
 このページ番号はフッターと同じ扱いになります。
 先頭ページは目次として、ページ数に含めたくないので、先頭ページを"0"ページに設定します。
 
-&#9314; <span><img src="pic/word_pagenum.png" alt="ページ番号" /></span> - [ページ番号の書式設定]をクリックします。
+&#9314; ![ページ番号](pic/word_pagenum.png) - [ページ番号の書式設定]をクリックします。
 
-![](pic/word03_26page.png)
+{% screenshot word03_26page.png "" %}
 
-![](pic/word03_27page.png)
+{% screenshot word03_27page.png "" %}
 
 &#9315; 連続番号の"開始番号"にチェック - `0` と入力 - [OK]をクリックします。
 
-![](pic/word03_28page.png)
+{% screenshot word03_28page.png "" %}
 
-![](pic/word03_29page.png)
+{% screenshot word03_29page.png "" %}
 
 目次となる先頭ページが"0"ページになりました。"0"ページは不要なので、削除します。
 
 &#9316; "先頭ページのみ別指定"にチェックを入れます。
 
-![](pic/word03_30page.png)
+{% screenshot word03_30page.png "" %}
 
-![](pic/word03_31page.png)
+{% screenshot word03_31page.png "" %}
 
 これで、"0"ページは消えました。
 
 最後に[デザイン]リボン - [ヘッダーとフッターを閉じる]をクリックして、元の表示に戻します。
 
-![](pic/word03_32page.png)
+{% screenshot word03_32page.png "" %}
 
 
 目次の作成
@@ -204,47 +204,47 @@ purposes:
 
 &#9312; "目次"と入れた行の次の行にカーソルを移動させます。
 
-&#9313; [参考資料]リボン - <span><img src="pic/word_index.png" alt="目次" /></span> をクリックします。
+&#9313; [参考資料]リボン - ![目次](pic/word_index.png) をクリックします。
 
-![](pic/word03_33index.png)
+{% screenshot word03_33index.png "" %}
 
 &#9314; [自動生成の目次 2]を選択します。
 
-![](pic/word03_34index.png)
+{% screenshot word03_34index.png "" %}
 
-![](pic/word03_35index.png)
+{% screenshot word03_35index.png "" %}
 
 これで目次を入れることができました。
 
 &#9315; "目次"の文字が重複してしまったので、予め書いておいた"目次"の文字を消します。
 
-![](pic/word03_36index.png)
+{% screenshot word03_36index.png "" %}
 
 さらに、目次が入ったことによって、各ページがずれてしまうため、調整します。
 
 &#9316; 目次までを先頭のページとして、"1. 街の説明"を次のページになるよう、[ページ区切り]を入れます。
 
-![](pic/word03_37index.png)
+{% screenshot word03_37index.png "" %}
 
 &#9317; すると、目次に表示されるそれぞれの項目のページ数と、実際にその項目が存在するページ数が一致しなくなります。
 
-![](pic/word03_38index.png)
+{% screenshot word03_38index.png "" %}
 
 &#9318; ここで[目次の更新] - "ページ番号だけを更新する" を押すと、目次のページ番号が自動修正され、実際のページ数を反映したものになります。（目次の文章も変更したい場合には"目次をすべて更新する" を選択します。）
 
-![](pic/word03_39index.png)
-![目次](pic/word03_40index.png)
+{% screenshot word03_39index.png "" %}
+{% screenshot word03_40index.png "目次" %}
 "1. 街の説明"が1ページ目になり、以降のページ数も反映されました。
 
 また、[目次] - [ユーザー設定の目次]を押すと、詳細な設定を行った目次を挿入することができます。
 
-![目次](pic/word03_41index.png)
+{% screenshot word03_41index.png "目次" %}
 
-![目次](pic/word03_42index.png)
+{% screenshot word03_42index.png "目次" %}
 
 また、[Ctrl]を押しながら、目次をクリックすると、その題の位置までジャンプすることができます。
 
-![目次](pic/word03_43index.png)
+{% screenshot word03_43index.png "目次" %}
 
 
 課題 3

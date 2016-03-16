@@ -1,7 +1,7 @@
 ---
 layout: page
 title: プレゼンテーションの概要と実習
-date: 2016-03-15 17:40:47 +0900
+date: 2016-03-16 09:51:47 +0900
 purposes:
     - Microsoft PowerPointを用いたプレゼンテーションスライドの作成法の習得
 ---
@@ -41,7 +41,7 @@ Microsoft PowerPointの起動
 
 PowerPoint を起動すると、スタート画面が表示されます。
 
-![スタート画面](pic/pp_newpresentation.png)
+{% screenshot pp_newpresentation.png "スタート画面" %}
 
 ここで、新規にプレゼンテーションを作成するか、あるいは既存のプレゼンテーションファイルを開くかを選びます。
 
@@ -87,7 +87,7 @@ PowerPoint を起動すると、スタート画面が表示されます。
 1.  ![ファイル タブ](pic/pp_filetab.png) をクリックします
 1.  ![上書き保存](pic/pp_save.png)（[上書き保存]）をクリックします
 
-あるいは、クイックアクセスツールバーの <span><img src="pic/pp_quicksave.png" alt="上書き保存" /></span> をクリックします。
+あるいは、クイックアクセスツールバーの ![上書き保存](pic/pp_quicksave.png) をクリックします。
 
 ### ファイルを閉じる
 
@@ -106,7 +106,7 @@ Microsoft PowerPoint 2013の概要
 
 ### ウィンドウ構成
 
-![](pic/pp_window.png)
+{% screenshot pp_window.png "" %}
 
 メインの領域に表示される白い紙のような部分が、1枚のスライドを表しています。
 ここに文字や図表を配置していきます。
@@ -125,51 +125,51 @@ Microsoft PowerPoint 2013の概要
 
 新しいスライドの追加や文字装飾、図形描画などの処理がまとめられています。
 
-![リボン ホーム](pic/pp_ribbon_home.png)
+{% screenshot pp_ribbon_home.png "リボン ホーム" %}
 
 #### 挿入
 
 表や画像、図、メディアクリップなどを挿入します。
 
-![リボン 挿入](pic/pp_ribbon_insert.png)
+{% screenshot pp_ribbon_insert.png "リボン 挿入" %}
 
 #### デザイン
 
 背景や文字色などをセットにした "テーマ" や、配色パターンのセットである "バリエーション" を使い、デザインを変更します。
 
-![リボン デザイン](pic/pp_ribbon_design.png)
+{% screenshot pp_ribbon_design.png "リボン デザイン" %}
 
 #### 画面切り替え
 
 あるスライドから次のスライドに移動するときに、アニメーション効果をつけることができます。
 
-![リボン 画面切り替え](pic/pp_ribbon_screen.png)
+{% screenshot pp_ribbon_screen.png "リボン 画面切り替え" %}
 
 #### アニメーション
 
 スライド内の要素に対してアニメーションの効果を設定したり、順序・タイミングを調整します。
 
-![リボン アニメーション](pic/pp_ribbon_anime.png)
+{% screenshot pp_ribbon_anime.png "リボン アニメーション" %}
 
 #### スライドショー
 
 スライドショー表示をコントロールします。リハーサルやナレーションの録音なども行えます。
 
-![リボン スライドショー](pic/pp_ribbon_slide.png)
+{% screenshot pp_ribbon_slide.png "リボン スライドショー" %}
 
 #### 校閲
 
 スペルチェックや翻訳、コメントの挿入などできあがったプレゼンテーションファイルに対する校正のメニューです。
 
-![リボン 校閲](pic/pp_ribbon_correct.png)
+{% screenshot pp_ribbon_correct.png "リボン 校閲" %}
 
 #### 表示
 
 PowerPoint の画面での表示方法を設定します。
 
-![リボン 表示](pic/pp_ribbon_show.png)
+{% screenshot pp_ribbon_show.png "リボン 表示" %}
 
-パネルの右下に <span><img src="pic/pp_details.png" alt="追加設定" /></span> ボタンが表示されている場合は、より詳しく各項目を設定することができます。
+パネルの右下に ![追加設定](pic/pp_details.png) ボタンが表示されている場合は、より詳しく各項目を設定することができます。
 
 また、それぞれのボタンにカーソルをポイントすると、その機能の説明を見ることができます。
 
@@ -199,46 +199,46 @@ PowerPoint にはさまざまなテーマが用意されています。
 
 &#9312; [デザイン]リボン - [テーマ]の中から使いたいデザインを選びます。
 
-![](pic/pp01_01theme.png)
+{% screenshot pp01_01theme.png "" %}
 
-テーマの <span><img src="pic/pp_etc.png" alt="その他" /></span> を押すとテーマのデザインの一覧を見ることができます。
+テーマの ![その他](pic/pp_etc.png) を押すとテーマのデザインの一覧を見ることができます。
 
-![](pic/pp01_02theme.png)
+{% screenshot pp01_02theme.png "" %}
 
-![](pic/pp01_03theme.png)
+{% screenshot pp01_03theme.png "" %}
 
 また、デザインの上にカーソルを置くと、現在のファイルにテーマを適用した場合のプレビューを見ることができます。
 
-![](pic/pp01_04theme.png)
+{% screenshot pp01_04theme.png "" %}
 
 さらに、各スライドの文字のフォントやサイズ、色、フッターなどを共通して設定するために、マスタースライドの設定を行います。
 
-&#9313; [表示]リボン - <span><img src="pic/pp_slidemaster.png" alt="スライドマスタ" /></span> をクリックします。
+&#9313; [表示]リボン - ![スライドマスタ](pic/pp_slidemaster.png) をクリックします。
 
-![](pic/pp01_05master.png)
+{% screenshot pp01_05master.png "" %}
 
-![](pic/pp01_06master.png)
+{% screenshot pp01_06master.png "" %}
 
 &#9314; フォントサイズや色、箇条書きのレベルなどを好きな形式に変更します。
 その形式が今後このプレゼンテーションを作成していくに際して、標準の設定となります。
 
-![](pic/pp01_07master.png)
+{% screenshot pp01_07master.png "" %}
 
-&#9315; <span><img src="pic/pp_master_exit.png" alt="マスタ表示を閉じる" /></span> をクリックして、通常表示に戻ります。
+&#9315; ![マスタ表示を閉じる](pic/pp_master_exit.png) をクリックして、通常表示に戻ります。
 
-![](pic/pp01_08master.png)
+{% screenshot pp01_08master.png "" %}
 
-&#9316; [表示]リボン - <span><img src="pic/pp_head_foot.png" alt="ヘッダーとフッター" /></span> をクリックします。
+&#9316; [表示]リボン - ![ヘッダーとフッター](pic/pp_head_foot.png) をクリックします。
 
-![](pic/pp01_09footer.png)
+{% screenshot pp01_09footer.png "" %}
 
 &#9317; 日付/時刻、フッター、(スライド番号)を設定し、[すべてに適用]をクリックします。
 
 **[すべてに適用]を押すと、全てのスライドが、[適用]を押すと選択したスライドのみが、設定されます。**
 
-![](pic/pp01_10footer.png)
+{% screenshot pp01_10footer.png "" %}
 
-![](pic/pp01_11footer.png)
+{% screenshot pp01_11footer.png "" %}
 
 ここでの設定も必須ではありません。多くの項目は、テーマによって最初から設定されています。
 
@@ -248,34 +248,34 @@ PowerPoint にはさまざまなテーマが用意されています。
 一般的に、プレゼンテーションの最初のスライドは「表紙」ですので、PowerPoint では最初の一枚目が自動的に表紙のレイアウトになっています。
 レイアウトの変更も可能です。
 
-[ホーム]リボン - <span><img src="pic/pp_newslide.png" alt="新しいスライド" /></span> から必要なレイアウトのスライドを選択します。
+[ホーム]リボン - ![新しいスライド](pic/pp_newslide.png) から必要なレイアウトのスライドを選択します。
 
-![新しいスライド](pic/pp01_12new.png)
+{% screenshot pp01_12new.png "新しいスライド" %}
 
-![新しいスライド](pic/pp01_13new.png)
+{% screenshot pp01_13new.png "新しいスライド" %}
 
-![新しいスライド](pic/pp01_14new.png)
+{% screenshot pp01_14new.png "新しいスライド" %}
 
 このようにして、話したいことにあわせて、スライドを作っていきます。
 
 間違って作ったスライドや、必要のないスライドを削除したい場合は、左の領域で削除するスライドを右クリックして [スライドの削除] をクリックします。
 
-![スライドの削除](pic/pp01_15delete.png)
+{% screenshot pp01_15delete.png "スライドの削除" %}
 
 ### スライドショー
 
 スライドが完成したら、実際にスライドショーで見てみましょう。
 
-[スライドショー]リボン - "スライドショーの開始"パネルにある <span><img src="pic/pp_start_first.png" alt="最初から" /></span> をクリックします。
+[スライドショー]リボン - "スライドショーの開始"パネルにある ![最初から](pic/pp_start_first.png) をクリックします。
 
-![最初からスライドショー](pic/pp01_16go.png)
+{% screenshot pp01_16go.png "最初からスライドショー" %}
 
-![スライドショー](pic/pp01_17go.png)
+{% screenshot pp01_17go.png "スライドショー" %}
 
 また、複数スライドを作った場合、任意のスライドからスライドショーを始めたいときは、
-[スライドショー]リボン - "スライドショーの開始"パネル - <span><img src="pic/pp_start_now.png" alt="現在のスライドから" /></span> をクリックします。
+[スライドショー]リボン - "スライドショーの開始"パネル - ![現在のスライドから](pic/pp_start_now.png) をクリックします。
 
-![現在のスライドからスライドショー](pic/pp01_18go.png)
+{% screenshot pp01_18go.png "現在のスライドからスライドショー" %}
 
 スライドは、あくまでもプレゼンテーションのための補助的な資料です。
 発表者の話の内容と合っているか、視覚的な効果としてわかりやすいか、意味があるかなどの点をよくチェックしましょう。
@@ -292,26 +292,26 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 ここでは，最初に表示される3つの疑問に対し、それぞれの「答え」として順番に表示させます。
 
-&#9312; [アニメーション]リボン - <span><img src="pic/pp_anime_option.png" alt="アニメーション ウィンドウ" /></span> をクリックします。
+&#9312; [アニメーション]リボン - ![アニメーション ウィンドウ](pic/pp_anime_option.png) をクリックします。
 画面右に "アニメーション ウィンドウ" が現れました。
 
-![](pic/pp01_19anime.png)
+{% screenshot pp01_19anime.png "" %}
 
-![](pic/pp01_20anime.png)
+{% screenshot pp01_20anime.png "" %}
 
 &#9313;  まず、一つめの答えになる"答え＝ 1時間から3時間"を選択します。
 
-![](pic/pp01_21anime.png)
+{% screenshot pp01_21anime.png "" %}
 
 &#9314;  [アニメーション]リボン - [アニメーションの追加] - [開始] - [スライドイン]をクリックします。
 
-![](pic/pp01_22anime.png)
+{% screenshot pp01_22anime.png "" %}
 
-![](pic/pp01_23anime.png)
+{% screenshot pp01_23anime.png "" %}
 
 &#9315;  アニメーションが追加されました。同様に他の二つの答えも設定します。
 
-![](pic/pp01_24anime.png)
+{% screenshot pp01_24anime.png "" %}
 
 これでアニメーションの設定ができました。
 [再生]や[アニメーション]リボン - [プレビュー]を押すと、アニメーションを確認できます。
@@ -321,37 +321,37 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 [効果のオプション]は"アニメーションウィンドウ"でアニメーション横の[▼]からも表示できます。
 
-![](pic/pp01_25anime.png)
+{% screenshot pp01_25anime.png "" %}
 
-![](pic/pp01_26anime.png)
+{% screenshot pp01_26anime.png "" %}
 
 ### ハイパーリンク
 
 3つのWebページを紹介するときに、ハイパーリンクを利用しています。
 
-![NASAのページ](pic/pp01_27link.png)
+{% screenshot pp01_27link.png "NASAのページ" %}
 
 文字にハイパーリンクを設定すると、多くのテーマでは文字色が変わり、下線が表示されます。
 スライドショーでは、ハイパーリンクが設定された文字をクリックすることで、設定されたリンク先のスライドまでジャンプできます。
 
 &#9312; リンクをはりたい "NASAのページ" を選択します。
 
-![](pic/pp01_28link.png)
+{% screenshot pp01_28link.png "" %}
 
-&#9313; [挿入]リボン - <span><img src="pic/pp_link.png" alt="ハイパーリンク" /></span> をクリックします。
+&#9313; [挿入]リボン - ![ハイパーリンク](pic/pp_link.png) をクリックします。
 
-![](pic/pp01_29link.png)
+{% screenshot pp01_29link.png "" %}
 
 &#9314; 7ページ目の "NASAのページ" にリンクをはります。選択をして、[OK] をクリックします。
 
-![](pic/pp01_30link.png)
+{% screenshot pp01_30link.png "" %}
 
 文字色が変わり、下線が付きました。
 スライドショーを実行し、リンクをクリックしてみると、7 ページ目の"NASAのページ"へリンクできていることが確認できます。
 
-![](pic/pp01_31link.png)
+{% screenshot pp01_31link.png "" %}
 
-![](pic/pp01_32link.png)
+{% screenshot pp01_32link.png "" %}
 
 ハイパーリンクでは、ほかのファイルやWebページなどもリンク先として指定することができます。
 例で示したスライドを参考に、さまざまな使い道を考えてみましょう。
@@ -360,20 +360,20 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 プレゼンテーション資料では、イメージを伝えるために画像を利用することもできます。
 
-![NASAのページ](pic/pp01_33art.png)
+{% screenshot pp01_33art.png "NASAのページ" %}
 
 今回は 2 ページ目に、コンピューターの画像を配置します。
 コンピュータ内にファイルとして保存されている画像を利用することもできますが、ここではオンライン画像を検索して挿入します。
 
-![発表の目次](pic/pp01_34art.png)
+{% screenshot pp01_34art.png "発表の目次" %}
 
-&#9312; [挿入]リボン - <span><img src="pic/pp_clipart.png" alt="オンライン画像" /> をクリックします。
+&#9312; [挿入]リボン - ![オンライン画像](pic/pp_clipart.png) をクリックします。
 
-![](pic/pp01_35art.png)
+{% screenshot pp01_35art.png "" %}
 
 &#9313; "Bing イメージ検索" にキーワード `コンピュータ` を入力し、[Enter] キーをクリックします。
 
-![](pic/pp01_36art.png)
+{% screenshot pp01_36art.png "" %}
 
 &#9314; Bing イメージ検索では、標準ではウェブ上のクリエイティブ・コモンズ・ライセンスが明記された画像を検索し、候補として表示します。
 画像をクリックし、下部のリンクをクリックすると出典のウェブページが表示されます。ライセンスを確認し、利用目的にあった画像を探してください。
@@ -382,7 +382,7 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 &#9315; 任意の画像を選択し、挿入します。レイアウトを考えて、好きな場所に移動させてください。
 
-![](pic/pp01_37art.png)
+{% screenshot pp01_37art.png "" %}
 
 
 課題

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（１）
-date: 2016-03-15 17:59:57 +0900
+date: 2016-03-16 09:52:11 +0900
 purposes:
     - Microsoft Wordを用いた文書作成の基本の習得
 flowplayer_conf:
@@ -26,7 +26,7 @@ Microsoft Wordの起動
 
 1. Word を起動すると、スタート画面が表示されます。
 
-![新規作成](pic/word_shinki.png)
+{% screenshot word_shinki.png "新規作成" %}
 
 ここで、新規に文章を作成するか、あるいは既存の文章ファイルを開くかを選びます。
 
@@ -51,11 +51,11 @@ Microsoft Wordの起動
 
 保存形式は[名前を付けて保存]のウィンドウで[ファイルの種類]から選択することができます。
 
-![名前を付けて保存](pic/word_document_file.png)
+{% screenshot word_document_file.png "名前を付けて保存" %}
 
 もしくは [エクスポート] からファイルの種類の変更をすることも可能です。
 
-![エクスポート](pic/word_export.png)
+{% screenshot word_export.png "エクスポート" %}
 
 <dl>
 <dt>Word 文書(.docx)</dt><dd>Word 2007 以降で利用できる標準形式で保存します。</dd>
@@ -75,7 +75,7 @@ Microsoft Wordの起動
 1.  ![ファイル タブ](pic/word_fileribbon.png) をクリックします
 1.   [上書き保存] をクリックします
 
-あるいは、クイックアクセスツールバーの <span><img src="../pic/word_quicksave.png" alt="上書き保存" /></span> をクリックします。
+あるいは、クイックアクセスツールバーの ![上書き保存](../pic/word_quicksave.png) をクリックします。
 
 ### ファイルを閉じる
 
@@ -100,13 +100,13 @@ Microsoft Word 2013の概要
 
 ### ウィンドウ各部の名称
 
-![ウィンドウ各部の名称](pic/word_window.png)
+{% screenshot word_window.png "ウィンドウ各部の名称" %}
 
 ### クイックアクセスツールバー
 
 よく使うコマンドを表示しておくことができます。
 
-![クイックアクセスツールバー](pic/word_quick.png)
+{% screenshot word_quick.png "クイックアクセスツールバー" %}
 
 初期設定で表示されているアイコンとその機能は以下の通りです。
 
@@ -114,13 +114,13 @@ Microsoft Word 2013の概要
 -   ![元に戻す](../pic/word_quickreturn.png) 元に戻す
 -   ![繰り返す](../pic/word_quickrepeat.png) 繰り返す
 
-<span><img src="../pic/word_quickmore.png" /></span> をクリックすると、表示するアイコンをカスタマイズできます。
+![](../pic/word_quickmore.png) をクリックすると、表示するアイコンをカスタマイズできます。
 
 ### ファイルタブ
 
 ファイルタブには、新規文書の作成、既存文章を開く、保存、印刷など文書ファイルを操作するコマンドが並んでいます。
 
-![ファイルタブ](pic/word_filemenu.png)
+{% screenshot word_filemenu.png "ファイルタブ" %}
 
 また、[オプション] で、Word自体のより詳細な設定を行うことができます。
 
@@ -135,55 +135,55 @@ Microsoft Word 2013の概要
 
 主に文字の装飾、切り貼り、編集など文字に関係したコマンドがあります。
 
-![リボン ホーム](pic/word_ribbon_home.png)
+{% screenshot word_ribbon_home.png "リボン ホーム" %}
 
 #### 挿入
 
 表や図、ヘッダーやフッターなどを挿入します。
 
-![リボン 挿入](pic/word_ribbon_insert.png)
+{% screenshot word_ribbon_insert.png "リボン 挿入" %}
 
 #### デザイン
 
 ドキュメント全体のテーマや配色、書式などが設定できます。
 
-![リボン デザイン](pic/word_ribbon_design.png)
+{% screenshot word_ribbon_design.png "リボン デザイン" %}
 
 #### ページレイアウト
 
 ページのレイアウト、見やすさを設定します。
 
-![リボン ページ レイアウト](pic/word_ribbon_page.png)
+{% screenshot word_ribbon_page.png "リボン ページ レイアウト" %}
 
 #### 参考資料
 
 目次や脚注など、文書を補助する資料を挿入します。
 
-![リボン 参考資料](pic/word_ribbon_reference.png)
+{% screenshot word_ribbon_reference.png "リボン 参考資料" %}
 
 #### 差し込み文書
 
 はがきなど、特殊なレイアウトの文書を作ることができます。
 
-![リボン 差し込み文書](pic/word_ribbon_insertsent.png)
+{% screenshot word_ribbon_insertsent.png "リボン 差し込み文書" %}
 
 #### 校閲
 
 スペルチェックや文字カウント、コメントの挿入などできあがった文書を校正したり、また、訂正した部分の比較などを行うことができます。
 
-![リボン 校閲](pic/word_ribbon_correct.png)
+{% screenshot word_ribbon_correct.png "リボン 校閲" %}
 
 #### 表示
 
 Wordの画面での表示の仕方を設定します。
 
-![リボン 表示](pic/word_ribbon_show.png)
+{% screenshot word_ribbon_show.png "リボン 表示" %}
 
-パネルの右下にある <span><img src="../pic/word_more.png" /></span> を押すと、より詳しく各項目を設定することができます。
+パネルの右下にある ![](../pic/word_more.png) を押すと、より詳しく各項目を設定することができます。
 
-![フォント](pic/word_fontmore.png)
+{% screenshot word_fontmore.png "フォント" %}
 
-![フォント](pic/word_fontwindow.png)
+{% screenshot word_fontwindow.png "フォント" %}
 
 また、カーソルを使用したいコマンドの上で静止させると、そのコマンドの説明を見ることができます。
 
@@ -206,7 +206,7 @@ Wordの画面での表示の仕方を設定します。
 
 このような形になっていれば大丈夫です。
 
-![自己紹介](pic/word01_01introduce.png)
+{% screenshot word01_01introduce.png "自己紹介" %}
 
 また、編集内容を失わないためにも、**こまめに保存**する癖をつけるようにしましょう。ファイル名は`introduce.docx`として、授業用のフォルダに保存します。
 
@@ -222,15 +222,15 @@ Wordの画面での表示の仕方を設定します。
 
 &#9312; 最初の行の "自己紹介カード" を選択（ドラッグ）し、フォントサイズを`16`ptに変更します。
 
-![](pic/word01_02font.png)
+{% screenshot word01_02font.png "" %}
 
 &#9313; 同様に、2行目の"氏名"、4行目の"所属"、6行目の"趣味"、10行目の"自己紹介文"を`14`ptにします。
 
-![](pic/word01_03font.png)
+{% screenshot word01_03font.png "" %}
 
 &#9314; さらに3行目の"首都　大"も`12`ptに変更します。
 
-![](pic/word01_04font.png)
+{% screenshot word01_04font.png "" %}
 
 Wordでは、その他にも色々なスタイルに文字を変えることができます。
 
@@ -243,9 +243,9 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 &#9313; すると、カーソルの矢印の向きが左上から右上に変わります。その状態で左クリックすると、行全体を選択することができます。
 
 
-&#9314; [ホーム]リボン の "段落" から <span><img src="pic/word_centering.png" alt="中央揃え" /></span> をクリックして、文字を揃えます。
+&#9314; [ホーム]リボン の "段落" から ![中央揃え](pic/word_centering.png) をクリックして、文字を揃えます。
 
-![](pic/word01_06centering.png)
+{% screenshot word01_06centering.png "" %}
 
 これで、この書類の題名となる"自己紹介カード"が見やすくなりました。
 
@@ -256,13 +256,13 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; "氏名"、"所属"、"趣味"、"自己紹介文"を選択します。複数選択するためには、 [Ctrl] キーを押しながら選択します。
 
-![](pic/word01_07centering.png)
+{% screenshot word01_07centering.png "" %}
 
-&#9313; <span><img src="pic/word_num.png" alt="段落番号" /></span> をクリックします。
+&#9313; ![段落番号](pic/word_num.png) をクリックします。
 
-![](pic/word01_08num.png)
+{% screenshot word01_08num.png "" %}
 
-![](pic/word01_09num.png)
+{% screenshot word01_09num.png "" %}
 
 このように、段落番号をつけることができます。
 同様にして、趣味の内容を箇条書きにしてみましょう。
@@ -270,17 +270,17 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; "読書"、"水泳"、"旅行"を選択します。
 
-![](pic/word01_10point.png)
+{% screenshot word01_10point.png "" %}
 
-![](pic/word01_11point.png)
+{% screenshot word01_11point.png "" %}
 
-&#9313;  <span><img src="pic/word_point.png" alt="箇条書き" /></span> の横の下向き三角をクリックします。
+&#9313;  ![箇条書き](pic/word_point.png) の横の下向き三角をクリックします。
 
-![](pic/word01_12point.png)
+{% screenshot word01_12point.png "" %}
 
 &#9314; 表示された行頭文字ライブラリの中から好きなものを選ことができます。
 
-![](pic/word01_13point.png)
+{% screenshot word01_13point.png "" %}
 
 ライブラリの中にない文字や画像も"新しい行頭文字の定義"を押すことで設定することができます。
 段落番号も箇条書きと同じようにカスタマイズすることができます。
@@ -295,13 +295,13 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 まず、ルーラーが非表示になっている場合、[表示]リボン の "表示" から □ルーラー のチェックボックスにチェックを入れて、ルーラーを表示しましょう。
 
-![ルーラーの表示／非表示](pic/word01_15indent.png)
+{% screenshot word01_15indent.png "ルーラーの表示／非表示" %}
 
-![ルーラーの表示／非表示](pic/word01_16indent.png)
+{% screenshot word01_16indent.png "ルーラーの表示／非表示" %}
 
 インデントにはそれぞれ以下の役割があります。
 
-![ルーラー](pic/word_ruler.png)
+{% screenshot word_ruler.png "ルーラー" %}
 
 -   1 行目のインデント：段落最初の行のインデントの位置
 -   ぶら下げインデント：2行目以降のインデントの位置
@@ -310,40 +310,40 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; 自己紹介文の内容（はじめまして〜）を選択してください。
 
-![](pic/word01_17indent.png)
+{% screenshot word01_17indent.png "" %}
 
 &#9313; 1行目のインデントを1文字分右に動かします。
 
-![](pic/word01_18indent.png)
+{% screenshot word01_18indent.png "" %}
 
-![](pic/word01_19indent.png)
+{% screenshot word01_19indent.png "" %}
 
 自己紹介文の内容の1行目を1字下がりました。次に、各項目の内容を下げます。
 
 &#9312; 以下の画像のように内容となる部分を全て選択してください。
 
-![](pic/word01_20indent.png)
+{% screenshot word01_20indent.png "" %}
 
 &#9313; 左インデントを 2 文字分右に動かします。
 
-![](pic/word01_21indent.png)
+{% screenshot word01_21indent.png "" %}
 
-![](pic/word01_22indent.png)
+{% screenshot word01_22indent.png "" %}
 
 これで随分と見やすくなりました。
-また、左インデントは [ホーム]リボンの "段落" にある <span><img src="../pic/word_indentup.png" /></span> や <span><img src="../pic/word_indentdown.png" /></span> でもずらすことができます。
+また、左インデントは [ホーム]リボンの "段落" にある ![](../pic/word_indentup.png) や ![](../pic/word_indentdown.png) でもずらすことができます。
 
 インデントはこの他、段落の詳細設定からより詳しく設定することができます。
-[ホーム] リボン - "段落"パネルの右下の <span><img src="../pic/word_more.png" /></span> をクリックします。
+[ホーム] リボン - "段落"パネルの右下の ![](../pic/word_more.png) をクリックします。
 
-![段落](pic/word01_23indent.png)
+{% screenshot word01_23indent.png "段落" %}
 
-![段落](pic/word_indentwindow.png)
+{% screenshot word_indentwindow.png "段落" %}
 
-また、ページのレイアウト全体の設定を行うこともできます。[ページレイアウト] リボン - "ページ設定"パネルの右下の <span><img src="../pic/word_more.png" /></span> をクリックします。
+また、ページのレイアウト全体の設定を行うこともできます。[ページレイアウト] リボン - "ページ設定"パネルの右下の ![](../pic/word_more.png) をクリックします。
 
-![ページ設定](pic/word01_23indent.png)
-![ページ設定](pic/word_layoutwindow.png)
+{% screenshot word01_23indent.png "ページ設定" %}
+{% screenshot word_layoutwindow.png "ページ設定" %}
 
 1 ページの行数や文字数などを設定することができます。
 
@@ -353,37 +353,37 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 最後にヘッダーとフッターを設定しましょう。
 
-&#9312; [挿入] リボン - <span><img src="pic/word_header.png" alt="ヘッダー" /></span> をクリックします。
+&#9312; [挿入] リボン - ![ヘッダー](pic/word_header.png) をクリックします。
 
-![](pic/word01_24header.png)
+{% screenshot word01_24header.png "" %}
 
 &#9313; [空白] を選択します。
 
-![](pic/word01_25header.png)
+{% screenshot word01_25header.png "" %}
 
-![](pic/word01_26header.png)
+{% screenshot word01_26header.png "" %}
 
 &#9314; ヘッダーに自分の学修番号と氏名を入力してください。
 
-![](pic/word01_27header.png)
+{% screenshot word01_27header.png "" %}
 
 これでヘッダー部分に学修番号と氏名が設定できました。
 ヘッダーやフッターを編集していると、リボンに [ヘッダー/フッター ツール] が表示されます。
 次にフッターを設定します。先ほどと同じ[挿入]リボンからも操作可能ですが、現在表示されている [ヘッダー/フッター ツール] から操作してみることにします。
 
-&#9312; [ヘッダー/フッター ツール]  [デザイン] リボン -  <span><img src="pic/word_footer.png" alt="ページ番号" /></span> をクリックします。
+&#9312; [ヘッダー/フッター ツール]  [デザイン] リボン -  ![ページ番号](pic/word_footer.png) をクリックします。
 
-![](pic/word01_28footer.png)
+{% screenshot word01_28footer.png "" %}
 
 &#9313; "ページの下部" - "番号のみ2" を選択します。
 
-![](pic/word01_29footer.png)
+{% screenshot word01_29footer.png "" %}
 
-![](pic/word01_30footer.png)
+{% screenshot word01_30footer.png "" %}
 
 これでフッターにページ数が入りました。
 また[ヘッダーとフッターを閉じる] で通常の編集画面に戻ることができます。
-![](pic/word01_31footer.png)
+{% screenshot word01_31footer.png "" %}
 
 ヘッダーとフッターにはこの他様々な情報を入れることができます。
 これでほぼ完成しました。後は、見やすいように微調整してください。

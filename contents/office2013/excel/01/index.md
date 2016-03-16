@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
-date: 2016-03-15 17:38:46 +0900
+date: 2016-03-16 09:56:25 +0900
 purposes:
     - Microsoft Excelを用いた表計算ソフト利用の基本の習得
 flowplayer_conf:
@@ -46,7 +46,7 @@ Microsoft Excelの起動
 
 保存形式は [名前を付けて保存] のウィンドウで [ファイルの種類] から選択することもできます。
 
-![名前を付けて保存](pic/officebutton1.png)
+{% screenshot officebutton1.png "名前を付けて保存" %}
 
 <dl>
 <dt>Excel ブック(.xlsx)</dt><dd>Excel 2007 以降で利用できる標準形式で保存します。</dd>
@@ -67,7 +67,7 @@ Microsoft Excelの起動
 1.  ![ファイルタブ](pic/filebutton.png) をクリックします
 1.  ![上書き保存](pic/save.png) をクリックします
 
-あるいは、クイックアクセスツールバーの <img src="pic/quicksave.png" alt="保存アイコン" /></span> をクリックします。
+あるいは、クイックアクセスツールバーの ![保存](./pic/quicksave.png) をクリックします。
 
 ### Excel の終了
 
@@ -92,13 +92,13 @@ Microsoft Excel 2013の概要
 
 ### ウィンドウ構成
 
-![](pic/excel_window.png)
+{% screenshot excel_window.png "" %}
 
 ### クイックアクセスツールバー
 
 よく使うコマンドを表示しておくことができます。
 
-![クイックアクセスツールバー](pic/quick.png)
+{% screenshot quick.png "クイックアクセスツールバー" %}
 
 初期設定で表示されているアイコンとその機能は以下の通りです。
 
@@ -106,7 +106,7 @@ Microsoft Excel 2013の概要
 -   ![元に戻す](pic/quickreturn.png) [元に戻す]
 -   ![繰り返す](pic/quickrepeat.png) [繰り返す]
 
-<span><img src="pic/quick_more.png" /></span> を押すと、表示するアイコンのカスタマイズができます。
+![](pic/quick_more.png) を押すと、表示するアイコンのカスタマイズができます。
 
 ### リボン
 
@@ -118,49 +118,49 @@ Microsoft Excel 2013の概要
 
 主に文字やセルの装飾、切り貼り、編集などの基本的なコマンドが収納されています。
 
-![リボン ホーム](pic/ribbon1.png)
+{% screenshot ribbon1.png "リボン ホーム" %}
 
 #### 挿入
 
 表や図、グラフ、ヘッダーとフッターなどを挿入します。
 
-![リボン 挿入](pic/ribbon2.png)
+{% screenshot ribbon2.png "リボン 挿入" %}
 
 #### ページレイアウト
 
 ページのレイアウト、見やすさを設定します。
 
-![リボン ページ レイアウト](pic/ribbon3.png)
+{% screenshot ribbon3.png "リボン ページ レイアウト" %}
 
 #### 数式
 
 セルにSUMやAVERAGEなどの関数を挿入したり、ワークシートの分析を行うことができます。
 
-![リボン 数式](pic/ribbon4.png)
+{% screenshot ribbon4.png "リボン 数式" %}
 
 #### データ
 
 データの形式を変換したり、並び替えやフィルタを適用したりと、データを扱う事が出来ます。
 
-![リボン データ](pic/ribbon5.png)
+{% screenshot ribbon5.png "リボン データ" %}
 
 #### 校閲
 
 スペルチェックや文字カウント、コメントの挿入などできあがった文書を校正したり、また、訂正した部分の比較などを行うことができます。
 
-![リボン 校閲](pic/ribbon6.png)
+{% screenshot ribbon6.png "リボン 校閲" %}
 
 #### 表示
 
 excelの画面での表示の仕方を設定します。
 
-![リボン 表示](pic/ribbon7.png)
+{% screenshot ribbon7.png "リボン 表示" %}
 
-パネルの右下にある <span><img src="pic/details.png" /></span> を押すと、より詳しく各項目を設定することができます。
+パネルの右下にある ![](pic/details.png) を押すと、より詳しく各項目を設定することができます。
 
-![フォント](pic/ribbon_details.png)
+{% screenshot ribbon_details.png "フォント" %}
 
-![フォント](pic/fontwindow.png)
+{% screenshot fontwindow.png "フォント" %}
 
 また、カーソルを使用したいコマンドの上で静止させると、そのコマンドの説明を見ることができます。
 
@@ -182,16 +182,16 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 
 複数のワークシートを１つのブックに作成できます。初期設定ではその数は3枚です。
 
-![](pic/worksheet.png)
+{% screenshot worksheet.png "" %}
 
 ワークシートの数は増やせたり減らせたりできます。後で述べる数値処理では行、列の２項目のみでなく他のワークシートのデータとの計算も行えるので、３項目での計算が可能となります。
 
 ### データの入力
 
-![](pic/activecell.png)
+{% screenshot activecell.png "" %}
 
 名前ボックスの右側の行が *データ入力バー* となります。
-まず *取消ボタン* <span><img src="pic/icon_cancel.png" /></span> と *入力ボタン* <span><img src="pic/icon_input.png" /></span> の入った枠があり、その右に現在のアクティブセルの内容(データ)が表示されています。
+まず *取消ボタン* ![キャンセル](pic/icon_cancel.png)" と *入力ボタン* ![入力](pic/icon_input.png) の入った枠があり、その右に現在のアクティブセルの内容(データ)が表示されています。
 
 データを入力するには
 
@@ -204,7 +204,7 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 セルに入力されるデータにはいくつかの形式があります。この形式の違いによって、Excel内での処理も変わるので注意しましょう。
 データの形式を変えるには、"ホーム"リボン内の"数値"パネルを使います。下の画像にあるプルダウンメニューを使って形式を変更できます。
 
-![](pic/panel.png)
+{% screenshot panel.png "" %}
 
 通常、データの形式は"標準"であれば、自動的に適した形式で認識してくれます。特定の形式で入力したい場合は以下のように行います。
 
@@ -215,7 +215,7 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 -   `¥12345` と入力すると記号つき通貨スタイル
 -   `%12.345` と入力するとパーセント表示形式
 
-![](pic/number.png)
+{% screenshot number.png "" %}
 
 #### 日付時刻入力
 
@@ -223,11 +223,11 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 -   `H15.4.14` (H (または S, T, M) の直後に数字をピリオド分かち) で和暦
 -   時刻は `:` で数字を分ける
 
-![](pic/time.png)
+{% screenshot time.png "" %}
 
 #### 文字データの入力
 
-![](pic/word.png)
+{% screenshot word.png "" %}
 
 #### 数値と文字列の見分け方
 
@@ -295,7 +295,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 まず以下のようにデータを入力して後に形式、足りない数値を整えましょう。
 数字のみのところは**半角**で、またデータがセル幅を越えてしまうのも気にしなくて大丈夫です。（あとで修正します）
 
-![](pic/21population1.png)
+{% screenshot 21population1.png "" %}
 
 ### セルの調整
 
@@ -305,15 +305,15 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 
 &#9313; ポインタをその列番号の左端におき、ドラッグして幅調節します。
 
-![](pic/width1.png)
+{% screenshot width1.png "" %}
 
 &#9314; 複数行同時も可能です。[shift]キーを押して複数列をクリックして、どの列でもいいのでドラッグして幅を調節します。
 
-![](pic/width2.png)
+{% screenshot width2.png "" %}
 
 &#9315; 高さも同様に行います。
 
-![](pic/height.png)
+{% screenshot height.png "" %}
 
 今は列A、B、C、Dの幅を90ピクセル程度に拡げておきましょう。
 
@@ -324,27 +324,27 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 
 &#9313; 次に[ホーム]リボン - [配置]パネル内の[セルを結合して中央揃え]をクリックします。
 
-![](pic/cellalloc1.png)
+{% screenshot cellalloc1.png "" %}
 
-&#9314; また、[ホーム]リボン - [配置]パネル内の右下にある<span><img src="pic/details.png" /></span> から詳細に設定することもできます。
+&#9314; また、[ホーム]リボン - [配置]パネル内の右下にある![](pic/details.png) から詳細に設定することもできます。
 
-![](pic/cellalloc2.png)
+{% screenshot cellalloc2.png "" %}
 
 &#9315; 今回は、"縦位置"と"横位置"を中央揃えにし、"セルを結合する"チェックボックスにチェックをします。
 
-![](pic/cellalloc3.png)
+{% screenshot cellalloc3.png "" %}
 
 "B2" から "D2" も同様にセルを結合します。同様にして、縦方向にセルもマージできます。"A2" から "A3" を統合させましょう。
 
 ここまでで以下のようになっているはずです。
 
-![](pic/population1.png)
+{% screenshot population1.png "" %}
 
 ### 数式処理
 
 数式処理はセルの先頭が（半角の）`=` で始まります。これをセルに直接入力、もしくは数式バーから入力します。
 
-![](pic/formula1.png)
+{% screenshot formula1.png "" %}
 
 Excelで用いる主な算術演算子は以下のようなものがあります。
 
@@ -367,11 +367,11 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 たとえば "B4" は `=C4+D4` となるので、"B4" をアクティブセルにして `=C4+D4` と**半角で**入力します。データの先頭が半角で `=` の場合、自動的に数式処理モードになります。
 
-![](pic/population2.png)
+{% screenshot population2.png "" %}
 
 同種の計算を `B5` から `B13` までしてみましょう。そのため `B4` のアクティブセル右下の黒い小さな四角（フィルハンドル）をマウスでポイントします。左ボタンを押した状態でセル囲みの四角を下に `B13` までドラッグします。
 
-![](pic/population3.png)
+{% screenshot population3.png "" %}
 
 このようにして、入力を省略することができます。この機能が**オートフィル**です。
 
@@ -384,11 +384,11 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 続いて男、女の総計(Sum)を "C13"、"D13" に計算していれます。"C13"を選択し、以下に示すような[オート SUM]ボタンをクリックします。
 
-![](pic/population4.png)
+{% screenshot population4.png "" %}
 
 総和が "C13" に自動的にはいります。女のデータも同様に行いましょう。これで男女の総計も計算されます。
 
-![](pic/populationfinal.png)
+{% screenshot populationfinal.png "" %}
 
 {% appendix ../appendix/function.html "Microsoft Excelで使える関数" %}
 
@@ -417,7 +417,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 以下の表を前回作った `rensyu.xlsx` の `Sheet2` に入力しますが、その前にセルの表示形式を設定します。
 
-![](pic/excelint.png)
+{% screenshot excelint.png "" %}
 
 ### セルの表示形式（通貨スタイル）
 
@@ -453,61 +453,61 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 &#9313; "ホーム"リボン内の"セル"パネルの[書式] - [行の高さ]もしくは[書式] - [列の幅]を選択します。
 
-![](pic/cellhight.png)
+{% screenshot cellhight.png "" %}
 
 &#9314; ダイアログに現在の値が表示されます。調整したい値を入力します。
 
 &#9315; "ホーム"リボン内の"配置"パネルで文字の配置を設定します。
 
-![](pic/cellalloc.png)
+{% screenshot cellalloc.png "" %}
 
-![](pic/charalloc.png)
+{% screenshot charalloc.png "" %}
 
 #### 罫線の挿入
 
 行、列の点線を実（点）線で囲みます。
 
-&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある <span><img src="pic/details.png" /></span> をクリックします。
+&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある ![](pic/details.png) をクリックします。
 
-![](pic/linesetting1.png)
+{% screenshot linesetting1.png "" %}
 
 &#9313; 表示されたウィンドウの上部にある[罫線]タブをクリックします。ここで詳細な設定が可能です。
 
-![](pic/linesetting2.png)
+{% screenshot linesetting2.png "" %}
 
 &#9314; [ホーム]リボン内の[フォント]パネルでもある程度設定可能です。
 
-![](pic/linetoolbar.png)
+{% screenshot linetoolbar.png "" %}
 
 #### フォントの変更
 
-&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある <span><img src="pic/details.png" /></span> をクリックします。
+&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある ![](pic/details.png) をクリックします。
 
-![](pic/linesetting1.png)
+{% screenshot linesetting1.png "" %}
 
-![](pic/fontwindow.png)
+{% screenshot fontwindow.png "" %}
 
 &#9313; [ホーム]リボン内の[フォント]パネルでも選択可能です。
 
-![](pic/linetoolbar.png)
+{% screenshot linetoolbar.png "" %}
 
 #### セルの配色
 
-![](pic/cellcolorex.png)
+{% screenshot cellcolorex.png "" %}
 
-![](pic/linecolorex.png)
+{% screenshot linecolorex.png "" %}
 
-&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある<span><img src="pic/details.png" /></span> をクリックします。
+&#9312; [ホーム]リボン内の[フォント]パネル内の右下にある![](pic/details.png) をクリックします。
 
-![](pic/linesetting1.png)
+{% screenshot linesetting1.png "" %}
 
 &#9313; [塗りつぶし]を選択します。ここでセルの背景の設定が出来ます。
 
-![](pic/cellcolor.png)
+{% screenshot cellcolor.png "" %}
 
 &#9314; [ホーム]リボン内の[フォント]パネルでも指定することができます。
 
-![](pic/int6.png)
+{% screenshot int6.png "" %}
 
 #### 印刷範囲
 
@@ -533,7 +533,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 以下は先ほど作った表の印刷プレビューです。印刷範囲は "A1" から "D12" です。表示工夫は何もしていません。
 
-![印刷プレビュー](pic/no7excelint5.gif)
+{% screenshot no7excelint5.gif "印刷プレビュー" %}
 
 これでも十分ですが、さらに工夫した方が見やすくなります。
 
