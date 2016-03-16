@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 記号・特殊文字と数式
 date: 2015-03-23 16:36:08 +0900

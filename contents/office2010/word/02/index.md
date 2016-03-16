@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: ワードプロセッサによる文書編集（２）
 date: 2015-03-27 09:54:54 +0900

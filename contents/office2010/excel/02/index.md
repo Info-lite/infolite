@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 表計算ソフトによるデータ処理 （２）
 date: 2015-03-27 14:35:44 +0900

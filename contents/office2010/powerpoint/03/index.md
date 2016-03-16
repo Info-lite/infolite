@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: プレゼンテーション実演
 date: 2015-03-23 16:59:13 +0900

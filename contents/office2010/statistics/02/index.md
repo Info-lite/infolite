@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 母集団と標本、正規分布とt分布
 date: 2015-06-28 19:06:43 +0900

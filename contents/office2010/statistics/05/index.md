@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 単回帰分析
 date: 2015-03-24 01:24:17 +0900

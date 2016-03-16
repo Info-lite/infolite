@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 課題のヒント
 date: 2015-03-23 17:35:28 +0900
