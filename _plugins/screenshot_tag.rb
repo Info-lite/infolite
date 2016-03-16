@@ -22,7 +22,7 @@ module Jekyll
 
       s = %|<div class="thumbnail">\n|
       s += %|<a href="#{image_src}" data-toggle="lightbox" data-title="#{@description}">|
-      s += %|<img class="lazy img-responsive" data-original="#{image_src}">|
+      s += %|<img class="img-responsive" src="#{image_src}">|
       s += "</a>\n"
       s += %|<div class="caption">#{@description}</div>\n|
       s += "</div>\n"
