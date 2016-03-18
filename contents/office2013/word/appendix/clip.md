@@ -9,17 +9,17 @@ date: 2016-03-15 15:58:09 +0900
 
 &#9312; まず、文書を書きます。数行に渡って、やや多めの文の方がわかりやすいでしょう。
 
-{% screenshot word02_clip_01clip.png "" %}
+{% screenshot word02_clip_01clip.png "文章を書く" %}
 
-&#9313; 任意の場所に図を挿入します。今回はクリップアートを使ってみます。[挿入]リボン - [クリップアート]をクリックします。
+&#9313; 任意の場所に図を挿入します。今回はオンライン画像を使ってみます。[挿入]リボン - [オンライン画像]をクリックします。
 
-{% screenshot word02_clip_02clip.png "" %}
+{% screenshot word02_clip_02clip.png "オンライン画像の説明" %}
 
 &#9314; この文書の場合は、"日の出"などが良いでしょう。適当な図を検索し、張り付けてください。
 
-{% screenshot word02_clip_03clip.png "" %}
+{% screenshot word02_clip_03clip.png "画像の検索" %}
 
-{% screenshot word02_clip_04clip.png "" %}
+{% screenshot word02_clip_04clip.png "画像の選択" %}
 
 &#9315; この画像は"春は曙〜"に対応しているので、1 行目の最初に移動しましょう。
 
