@@ -18,7 +18,7 @@ purposes:
 
 &#9312; [作成]タブ - [レポート] - [レポート ウィザード]をクリックします。
 
-![](./pic/list1.png)
+{% screenshot list1.png "" %}
 
 &#9313; "テーブル/クエリ"から[テーブル：サークル名簿]を選択 - 以下のフィールドを選択可能なフィールドから選択したフィールドに移動します。
 
@@ -28,27 +28,27 @@ purposes:
 
 &#9314; [次へ]をクリックします。
 
-![](./pic/list2.png)
+{% screenshot list2.png "" %}
 
 &#9315; [次へ]をクリックします。
 
-![](./pic/list3.png)
+{% screenshot list3.png "" %}
 
 &#9316; [次へ]をクリックします。
 
-![](./pic/list4.png)
+{% screenshot list4.png "" %}
 
 &#9317; レイアウトの"表形式"にチェックを付けます - [次へ]をクリックします。
 
-![](./pic/list5.png)
+{% screenshot list5.png "" %}
 
 &#9318; `入会日リスト` と入力 - "レポートをプレビューする"にチェック - [完了]をクリックします。
 
 これで、入会日のリストを報告書として作成することができました。
 
-![](./pic/list7.png)
+{% screenshot list7.png "" %}
 
-![](./pic/list8.png)
+{% screenshot list8.png "" %}
 
 
 ### 印刷プレビューを閉じる
@@ -57,7 +57,7 @@ purposes:
 
 [印刷プレビュー]タブ - [プレビューを閉じる] - [印刷プレビューを閉じる]で元の表示に戻すことが可能です。
 
-![](./pic/preview.png)
+{% screenshot preview.png "" %}
 
 
 ### レポートの編集（コントロールのサイズ変更）
@@ -68,11 +68,11 @@ purposes:
 "氏名"ラベルを水平ルーラー（横方向）の目盛りの"7"の直下まで縮めます。
 また、それ以外の部分も適宜調整します。
 
-![](./pic/report1.png)
+{% screenshot report1.png "" %}
 
 &#9314; 上書き保存して、[レポート ビュー]に切り替えます。
 
-![](./pic/report2.png)
+{% screenshot report2.png "" %}
 
 このようにして、"氏名"の領域を適切な長さにすることができました。
 
@@ -83,40 +83,40 @@ purposes:
 
 &#9313; [作成]タブ - [レポート] - [宛名ラベル]をクリックします。
 
-![](./pic/postcard1.png)
+{% screenshot postcard1.png "" %}
 
 &#9314; メーカーから[A-ONE]を選択 - 製品番号[AOne 28175]を選択 - [次へ]をクリックします。
 
-![](./pic/postcard2.png)
+{% screenshot postcard2.png "" %}
 
 &#9315; [次へ]をクリックします。
 
-![](./pic/postcard3.png)
+{% screenshot postcard3.png "" %}
 
 &#9316; ラベルのレイアウトに `〒` と入力します。
 
-![](./pic/postcard4.png)
+{% screenshot postcard4.png "" %}
 
 &#9317; 選択可能なフィールドから[郵便番号]をラベルのレイアウトの"〒"の横に移します。
-![](./pic/postcard5.png)
+{% screenshot postcard5.png "" %}
 
 &#9318; ラベルのレイアウト内で、2 行目にカーソルを移動 - 選択可能なフィールドから[都道府県]と[市区町村]をラベルのレイアウトに移します。
 
-![](./pic/postcard6.png)
+{% screenshot postcard6.png "" %}
 
 &#9319; 同様に、以下の図のようにレイアウトを完成させてください。完成したら、[次へ]をクリックします。
 
-![](./pic/postcard7.png)
+{% screenshot postcard7.png "" %}
 
 &#9320; [次へ]をクリックします。
 
-![](./pic/postcard8.png)
+{% screenshot postcard8.png "" %}
 
 &#9321; レポート名に `宛名ラベル` と入力 - "ラベルのプレビューを見る"にチェック - [完了]をクリックします。
 
-![](./pic/postcard9.png)
+{% screenshot postcard9.png "" %}
 
-![](./pic/postcard10.png)
+{% screenshot postcard10.png "" %}
 
 これで、封筒に貼る宛名を作ることができました。
 
@@ -127,11 +127,11 @@ purposes:
 
 &#9313; 「=Trim([氏名] & "様")」ラベルをクリック - "プロパティ シート" - "書式"タブ - "フォントサイズ"を"12"に設定します。
 
-![](./pic/editpc1.png)
+{% screenshot editpc1.png "" %}
 
 &#9314; "会員ＩＤ"ラベルを選択し、[ホーム]タブ - [表示] - [印刷プレビュー]をクリックします。
 
-![](./pic/editpc4.png)
+{% screenshot editpc4.png "" %}
 
 これを印刷して、張り付ければ、手紙を簡単に出すことができます。
 

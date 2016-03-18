@@ -18,20 +18,20 @@ purposes:
 
 "サークル名簿"を選択しておき、[作成]タブ - [フォーム] - [フォーム]をクリックします。
 
-![](./pic/autoform1.png)
+{% screenshot autoform1.png "" %}
 
-![](./pic/autoform2.png)
+{% screenshot autoform2.png "" %}
 
 このようにフォームが作られました。上書き保存をクリックして、フォーム名に `会員情報` と名前をつけて保存しましょう。
 
-![](./pic/autoform3.png)
+{% screenshot autoform3.png "" %}
 
 
 ### フォームウィザードでフォームを作成する
 
 &#9312; [フォーム] - [フォームウィザード]をクリックします。
 
-![](./pic/formwizard1.png)
+{% screenshot formwizard1.png "" %}
 
 &#9313; テーブル/クエリを[テーブル：サークル名簿]を選択 - 以下のフィールドを選択可能なフィールドから選択したフィールドへと移します。
 
@@ -48,17 +48,17 @@ purposes:
 
 &#9314; [次へ]をクリックします。
 
-![](./pic/formwizard2.png)
+{% screenshot formwizard2.png "" %}
 
 &#9315; "単票形式"にチェックをつけたまま、[次へ]をクリックします。
 
-![](./pic/formwizard3.png)
+{% screenshot formwizard3.png "" %}
 
 &#9316; `会員入力` と入力し、"フォームを開いてデータを入力する"を選択して、[完了]をクリックします。
 
-![](./pic/formwizard5.png)
+{% screenshot formwizard5.png "" %}
 
-![](./pic/formwizard6.png)
+{% screenshot formwizard6.png "" %}
 
 このようにフォームが作成されました。
 
@@ -67,29 +67,29 @@ purposes:
 
 &#9312; "会員入力"を開き、"デザインビュー"に切り替えます。
 
-![](./pic/controldesign1.png)
+{% screenshot controldesign1.png "" %}
 
-![](./pic/controldesign2.png)
+{% screenshot controldesign2.png "" %}
 
 &#9313; 背景の境界線を、上部にある水平ルーラーの17付近まで広げます。
 
-![](./pic/controldesign3.png)
+{% screenshot controldesign3.png "" %}
 
 &#9313; "氏名"フィールドの右端を水平ルーラーの8付近まで縮めます。
 
-![](./pic/controldesign4.png)
+{% screenshot controldesign4.png "" %}
 
 &#9314; その他の項目も同様に縮めます。
 
-![](./pic/controldesign5.png)
+{% screenshot controldesign5.png "" %}
 
 &#9315; "携帯TEL"から"退会"までを選択し、右上に移動します。
 
-![](./pic/controldesign6.png)
+{% screenshot controldesign6.png "" %}
 
 &#9316; "市町村区"のテキストボックスを選択し、右に広げます。
 
-![](./pic/controldesign7.png)
+{% screenshot controldesign7.png "" %}
 
 
 ### コントロールの追加
@@ -98,18 +98,18 @@ purposes:
 
 &#9313; [フォームデザインツール] - [デザイン] - [コントロール] - [ラベル]をクリック - "フォーム ヘッダー"のセクション内で任意の範囲を選択し、ラベルコントロールを追加します。
 
-![](./pic/control1.png)
+{% screenshot control1.png "" %}
 
 &#9314; ラベルコントロール内に"サークル名簿への入力"と入力 - [Enter]キーをクリックして、確定します。
 
-![](./pic/control2.png)
+{% screenshot control2.png "" %}
 
 &#9315; もう一度、"サークル名簿への入力"と入力したラベルコントロールをアクティブにします。
 
 &#9316; "プロパティシート"を開き、[書式]タブの"フォントサイズ"を `10` に変更します。
 またコントロールの大きさを適当に調節します。
 
-![](./pic/control3.png)
+{% screenshot control3.png "" %}
 
 &#9316; フォームビューに戻り、上書き保存してください。
 
@@ -118,7 +118,7 @@ purposes:
 
 &#9312; レコードの <img src="../pic/newrecord.png" /> をクリックします。
 
-![](./pic/new1.png)
+{% screenshot new1.png "" %}
 
 &#9313; 以下のデータを入力してください。
 
@@ -130,11 +130,11 @@ purposes:
 -   学年ＩＤ：2
 -   学部コース：都市教養学部都市教養学科数理科学コース
 
-![](./pic/new2.png)
+{% screenshot new2.png "" %}
 
 &#9314; 会員入力フォームを閉じて、サークル名簿を開きます。
 
-![](./pic/new3.png)
+{% screenshot new3.png "" %}
 
 
 課題

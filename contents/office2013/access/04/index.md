@@ -18,19 +18,19 @@ purposes:
 
 &#9312; [作成]タブ - [クエリ] - [クエリデザイン]をクリックします。
 
-![](./pic/newquery1.png)
+{% screenshot newquery1.png "" %}
 
 &#9313; テーブルから"サークル名簿"を選択 - [追加]をクリックします。
 
-![](./pic/newquery2.png)
+{% screenshot newquery2.png "" %}
 
 &#9314; クエリ デザイン ウィンドウにテーブルが追加されました。[閉じる]をクリックします。
 
-![](./pic/newquery3.png)
+{% screenshot newquery3.png "" %}
 
 &#9315; "サークル名簿"の"会員ＩＤ"をダブルクリックします。すると、フィールドに会員ＩＤが追加されます。
 
-![](./pic/newquery4.png)
+{% screenshot newquery4.png "" %}
 
 &#9316; 同様に以下を追加します。
 
@@ -40,19 +40,19 @@ purposes:
 -   学部コース
 -   退会
 
-![](./pic/newquery5.png)
+{% screenshot newquery5.png "" %}
 
 &#9317; ![](../pic/databaseview.png) （[表示]）もしくは ![](../pic/action.png) （[実行]）をクリックします。
 
-![](./pic/newquery6.png)
+{% screenshot newquery6.png "" %}
 
-![](./pic/newquery7.png)
+{% screenshot newquery7.png "" %}
 
 &#9318; ![](../pic/quicksave.png) をクリックして、"入会日と所属"という名前でクエリを保存します。
 
-![](./pic/newquery8.png)
+{% screenshot newquery8.png "" %}
 
-![](./pic/newquery9.png)
+{% screenshot newquery9.png "" %}
 
 このようにして、"入会年月日"と"学部コース"、"退会"情報に特化したクエリを作ることができました。
 
@@ -63,11 +63,11 @@ purposes:
 
 &#9313; "フリガナ"フィールドの並べ替えをクリック - "昇順"を選択します。
 
-![](./pic/sortname1.png)
+{% screenshot sortname1.png "" %}
 
 &#9314; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックし表示を切り替え、上書き保存します。
 
-![](./pic/sortname2.png)
+{% screenshot sortname2.png "" %}
 
 "フリガナ"の昇順、すなわちアイウエオ順に並べ替えられました。
 
@@ -78,29 +78,29 @@ purposes:
 
 &#9313; テーブルから"サークル名簿"を選択 - [追加]をクリックします。
 
-![](./pic/abstract1.png)
+{% screenshot abstract1.png "" %}
 
 &#9314; フィールドリストのタイトルバーである"サークル名簿"をダブルクリックします。すると、サークル名簿内の全てのフィールドが選択状態になります。
 
 &#9315; 選択したもの全てをデザイングリッドにドラッグアンドドロップします。
 
-![](./pic/abstract2.png)
+{% screenshot abstract2.png "" %}
 
-![](./pic/abstract3.png)
+{% screenshot abstract3.png "" %}
 
 &#9316; "フリガナ"フィールドを選択 - キーボードの[Delete]キーをクリックして削除します。
 
-![](./pic/abstract4.png)
+{% screenshot abstract4.png "" %}
 
 &#9317; 同様に"携帯TEL"フィールドも削除します。
 
 &#9318; "都道府県"フィールドの抽出条件に `東京都` と入力 - [Enter]キーをクリックします。
 
-![](./pic/abstract5.png)
+{% screenshot abstract5.png "" %}
 
 &#9319; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-![](./pic/abstract6.png)
+{% screenshot abstract6.png "" %}
 
 これで、東京都の会員だけが抽出されました。`東京都会員` と入力して、保存します。
 
@@ -111,11 +111,11 @@ purposes:
 
 &#9313; "都道府県"フィールドの「または」に `神奈川県` と入力 - [Enter]キーをクリックします。
 
-![](./pic/or1.png)
+{% screenshot or1.png "" %}
 
 &#9314; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-![](./pic/or2.png)
+{% screenshot or2.png "" %}
 
 これで、東京都と神奈川県の会員だけが抽出されました。
 
@@ -128,11 +128,11 @@ purposes:
 
 &#9314; "退会"フィールドの抽出条件に半角で `yes` と入力 - [Enter]キーをクリックします。
 
-![](./pic/and1.png)
+{% screenshot and1.png "" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-![](./pic/and2.png)
+{% screenshot and2.png "" %}
 
 これで、東京都でかつ退会した会員だけが抽出されました。
 
@@ -147,13 +147,13 @@ purposes:
 
 &#9314; "学部コース"フィールドの抽出条件に `都市教養学部*` と入力 - [Enter]キーをクリックします。
 
-![](./pic/wildcard1.png)
+{% screenshot wildcard1.png "" %}
 
-![](./pic/wildcard2.png)
+{% screenshot wildcard2.png "" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-![](./pic/wildcard3.png)
+{% screenshot wildcard3.png "" %}
 
 これで、都市教養学部の会員だけが抽出されました。
 
@@ -166,19 +166,19 @@ purposes:
 
 &#9314; "入会年月日"フィールドの抽出条件に半角で `Between #2013/1/1# And #2013/12/31#` と入力 - [Enter]キーをクリックします。
 
-![](./pic/between1.png)
+{% screenshot between1.png "" %}
 
-![](./pic/between2.png)
+{% screenshot between2.png "" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-![](./pic/between3.png)
+{% screenshot between3.png "" %}
 
 これで、2013 年 1 月 1 日から 2013 年 12 月 31 日までに入会した会員だけが抽出されました。[ファイル]タブ - [オブジェクトに名前を付けて保存]をクリックし、"2013年入会会員"という名前で保存します。
 
-![](./pic/between4.png)
+{% screenshot between4.png "" %}
 
-![](./pic/between5.png)
+{% screenshot between5.png "" %}
 
 
 課題
