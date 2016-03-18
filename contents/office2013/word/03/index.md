@@ -177,9 +177,7 @@ purposes:
 
 &#9314; ![ページ番号](pic/word_pagenum.png) - [ページ番号の書式設定]をクリックします。
 
-{% screenshot word03_26page.png "" %}
-
-{% screenshot word03_27page.png "" %}
+{% screenshot word03_2627page.png "" %}
 
 &#9315; 連続番号の"開始番号"にチェック - `0` と入力 - [OK]をクリックします。
 
