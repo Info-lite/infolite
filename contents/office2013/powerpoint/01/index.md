@@ -106,7 +106,7 @@ Microsoft PowerPoint 2013の概要
 
 ### ウィンドウ構成
 
-{% screenshot pp_window.png "" %}
+{% screenshot pp_window.png "ウィンドウ構成" %}
 
 メインの領域に表示される白い紙のような部分が、1枚のスライドを表しています。
 ここに文字や図表を配置していきます。
