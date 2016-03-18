@@ -199,46 +199,46 @@ PowerPoint にはさまざまなテーマが用意されています。
 
 &#9312; [デザイン]リボン - [テーマ]の中から使いたいデザインを選びます。
 
-{% screenshot pp01_01theme.png "" %}
+{% screenshot pp01_01theme.png "テーマを選択" %}
 
 テーマの ![その他](pic/pp_etc.png) を押すとテーマのデザインの一覧を見ることができます。
 
-{% screenshot pp01_02theme.png "" %}
+{% screenshot pp01_02theme.png "テーマ一覧を開く" %}
 
-{% screenshot pp01_03theme.png "" %}
+{% screenshot pp01_03theme.png "テーマ一覧" %}
 
 また、デザインの上にカーソルを置くと、現在のファイルにテーマを適用した場合のプレビューを見ることができます。
 
-{% screenshot pp01_04theme.png "" %}
+{% screenshot pp01_04theme.png "テーマのプレビュー" %}
 
 さらに、各スライドの文字のフォントやサイズ、色、フッターなどを共通して設定するために、マスタースライドの設定を行います。
 
 &#9313; [表示]リボン - ![スライドマスタ](pic/pp_slidemaster.png) をクリックします。
 
-{% screenshot pp01_05master.png "" %}
+{% screenshot pp01_05master.png "スライドマスタの説明" %}
 
-{% screenshot pp01_06master.png "" %}
+{% screenshot pp01_06master.png "スライドマスタ" %}
 
 &#9314; フォントサイズや色、箇条書きのレベルなどを好きな形式に変更します。
 その形式が今後このプレゼンテーションを作成していくに際して、標準の設定となります。
 
-{% screenshot pp01_07master.png "" %}
+{% screenshot pp01_07master.png "スライドマスタの設定" %}
 
 &#9315; ![マスタ表示を閉じる](pic/pp_master_exit.png) をクリックして、通常表示に戻ります。
 
-{% screenshot pp01_08master.png "" %}
+{% screenshot pp01_08master.png "マスタ表示を閉じる" %}
 
 &#9316; [表示]リボン - ![ヘッダーとフッター](pic/pp_head_foot.png) をクリックします。
 
-{% screenshot pp01_09footer.png "" %}
+{% screenshot pp01_09footer.png "ヘッダーとフッター" %}
 
 &#9317; 日付/時刻、フッター、(スライド番号)を設定し、[すべてに適用]をクリックします。
 
 **[すべてに適用]を押すと、全てのスライドが、[適用]を押すと選択したスライドのみが、設定されます。**
 
-{% screenshot pp01_10footer.png "" %}
+{% screenshot pp01_10footer.png "ヘッダーとフッターの設定" %}
 
-{% screenshot pp01_11footer.png "" %}
+{% screenshot pp01_11footer.png "ヘッダーとフッターの適用" %}
 
 ここでの設定も必須ではありません。多くの項目は、テーマによって最初から設定されています。
 
@@ -295,23 +295,23 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 &#9312; [アニメーション]リボン - ![アニメーション ウィンドウ](pic/pp_anime_option.png) をクリックします。
 画面右に "アニメーション ウィンドウ" が現れました。
 
-{% screenshot pp01_19anime.png "" %}
+{% screenshot pp01_19anime.png "アニメーション ウィンドウの説明" %}
 
-{% screenshot pp01_20anime.png "" %}
+{% screenshot pp01_20anime.png "アニメーション ウィンドウ" %}
 
 &#9313;  まず、一つめの答えになる"答え＝ 1時間から3時間"を選択します。
 
-{% screenshot pp01_21anime.png "" %}
+{% screenshot pp01_21anime.png "アニメーションをつける範囲を選択" %}
 
 &#9314;  [アニメーション]リボン - [アニメーションの追加] - [開始] - [スライドイン]をクリックします。
 
-{% screenshot pp01_22anime.png "" %}
+{% screenshot pp01_22anime.png "スライドインを選択" %}
 
-{% screenshot pp01_23anime.png "" %}
+{% screenshot pp01_23anime.png "スライドインを追加" %}
 
 &#9315;  アニメーションが追加されました。同様に他の二つの答えも設定します。
 
-{% screenshot pp01_24anime.png "" %}
+{% screenshot pp01_24anime.png "アニメーションの追加" %}
 
 これでアニメーションの設定ができました。
 [再生]や[アニメーション]リボン - [プレビュー]を押すと、アニメーションを確認できます。
@@ -321,9 +321,9 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 [効果のオプション]は"アニメーションウィンドウ"でアニメーション横の[▼]からも表示できます。
 
-{% screenshot pp01_25anime.png "" %}
+{% screenshot pp01_25anime.png "効果のオプションの説明" %}
 
-{% screenshot pp01_26anime.png "" %}
+{% screenshot pp01_26anime.png "効果のオプションの設定" %}
 
 ### ハイパーリンク
 
@@ -336,22 +336,22 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 &#9312; リンクをはりたい "NASAのページ" を選択します。
 
-{% screenshot pp01_28link.png "" %}
+{% screenshot pp01_28link.png "NASAのページを選択" %}
 
 &#9313; [挿入]リボン - ![ハイパーリンク](pic/pp_link.png) をクリックします。
 
-{% screenshot pp01_29link.png "" %}
+{% screenshot pp01_29link.png "ハイパーリンクの説明" %}
 
 &#9314; 7ページ目の "NASAのページ" にリンクをはります。選択をして、[OK] をクリックします。
 
-{% screenshot pp01_30link.png "" %}
+{% screenshot pp01_30link.png "リンクの選択" %}
 
 文字色が変わり、下線が付きました。
 スライドショーを実行し、リンクをクリックしてみると、7 ページ目の"NASAのページ"へリンクできていることが確認できます。
 
-{% screenshot pp01_31link.png "" %}
+{% screenshot pp01_31link.png "NASAのページへのリンク確認" %}
 
-{% screenshot pp01_32link.png "" %}
+{% screenshot pp01_32link.png "NASAのページへのリンク" %}
 
 ハイパーリンクでは、ほかのファイルやWebページなどもリンク先として指定することができます。
 例で示したスライドを参考に、さまざまな使い道を考えてみましょう。
@@ -360,7 +360,7 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 プレゼンテーション資料では、イメージを伝えるために画像を利用することもできます。
 
-{% screenshot pp01_33art.png "NASAのページ" %}
+{% screenshot pp01_33art.png "発表の目次" %}
 
 今回は 2 ページ目に、コンピューターの画像を配置します。
 コンピュータ内にファイルとして保存されている画像を利用することもできますが、ここではオンライン画像を検索して挿入します。
@@ -369,22 +369,22 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 &#9312; [挿入]リボン - [オンライン画像]をクリックします。
 
-{% screenshot pp01_35art.png "" %}
+{% screenshot pp01_35art.png "オンライン画像の説明" %}
 
 &#9313; "Bing イメージ検索" にキーワード `コンピュータ` を入力し、[Enter] キーをクリックします。
 
-{% screenshot pp01_36art.png "" %}
+{% screenshot pp01_36art.png "オンライン画像の検索" %}
 
 &#9314; Bing イメージ検索では、標準ではウェブ上のクリエイティブ・コモンズ・ライセンスが明記された画像を検索し、候補として表示します。
 画像をクリックし、下部のリンクをクリックすると出典のウェブページが表示されます。ライセンスを確認し、利用目的にあった画像を探してください。
 
-{% screenshot pp01_37art.png "" %}
+{% screenshot pp01_37art.png "検索結果" %}
 
 {% appendix ../appendix/copyrights.html "著作権とライセンス" %}
 
 &#9315; 任意の画像を選択し、挿入します。レイアウトを考えて、好きな場所に移動させてください。
 
-{% screenshot pp01_38art.png "" %}
+{% screenshot pp01_38art.png "画像の挿入" %}
 
 
 課題
