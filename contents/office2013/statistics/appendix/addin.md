@@ -12,7 +12,7 @@ date: 2016-03-15 17:09:46 +0900
 
 {% screenshot 01_addin00.png "ファイルを開く" %}
 
-{% screenshot 01_addin01.png "オプションを開く" %}
+{% screenshot 01_addin01.png "オプションを開く「" %}
 
 {% screenshot 01_addin02.png "アドインを選択" %}
 
