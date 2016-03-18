@@ -23,18 +23,18 @@ date: 2016-03-15 15:58:09 +0900
 
 &#9315; この画像は"春は曙〜"に対応しているので、1 行目の最初に移動しましょう。
 
-{% screenshot word02_clip_05clip.png "" %}
+{% screenshot word02_clip_05clip.png "画像の移動" %}
 
-{% screenshot word02_clip_06clip.png "" %}
+{% screenshot word02_clip_06clip.png "画像移動後" %}
 
 すると、画像に続いて、"春は曙〜"と表示されるようになりました。
 しかし、よく見てみると、画像 1 つに対して、1 行が同じ行と判断されているので、随分と無駄なスペースが多くなってしまいました。
 
 &#9316; この無駄を消すために図に対する文字列の折り返し方を設定します。[書式]リボン - [文字列の折り返し]をクリックします。
 
-{% screenshot word02_clip_07clip.png "" %}
+{% screenshot word02_clip_07clip.png "文字の折り返しの説明" %}
 
-{% screenshot word02_clip_08clip.png "" %}
+{% screenshot word02_clip_08clip.png "文字の折り返し一覧" %}
 
 <dl>
 <dt>行内</dt><dd>カーソルのある位置に図が挿入されます。</dd>
@@ -49,21 +49,21 @@ date: 2016-03-15 15:58:09 +0900
 
 &#9317; 初期設定では、図は行内に配置されているので、1つの文字と同じ扱いになっています。[外周]を選択します。
 
-{% screenshot word02_clip_09clip.png "" %}
+{% screenshot word02_clip_09clip.png "文字の折り返し　外周" %}
 
-{% screenshot word02_clip_10clip.png "" %}
+{% screenshot word02_clip_10clip.png "外周を適用" %}
 
 図の外周に文字列が表示されるようになり、無駄なスペースを消すことができました。
 
 &#9318; この他にも、背面に設定すると、文字列の背面に図が表示されます。
 
-{% screenshot word02_clip_11clip.png "" %}
+{% screenshot word02_clip_11clip.png "背面を適用" %}
 
 &#9319; 前面に設定すると、文字列の前面に図が表示されます。
 
-{% screenshot word02_clip_12clip.png "" %}
+{% screenshot word02_clip_12clip.png "前面を適用" %}
 
 臨機応変に必要に応じて使用してみましょう。
 
-{% screenshot word02_clip_13clip.png "" %}
+{% screenshot word02_clip_13clip.png "文字の折り返しを適用" %}
 
