@@ -10,19 +10,19 @@ date: 2016-03-15 17:09:46 +0900
 
 [ファイル] - [オプション] - [アドイン]をクリックします。
 
-![アドインの追加](./pic/01_addin00.png)
+{% screenshot 01_addin00.png "アドインの追加" %}
 
-![アドインの追加](./pic/01_addin01.png)
+{% screenshot 01_addin01.png "アドインの追加" %}
 
-![アドインの追加](./pic/01_addin02.png)
+{% screenshot 01_addin02.png "アドインの追加" %}
 
 [Excelアドイン]を選択し、[設定]をクリックします。
 
-![アドインの追加](./pic/01_addin03.png)
+{% screenshot 01_addin03.png "アドインの追加" %}
 
 [分析ツール]を選択し、[OK]をクリックします。
 
-![アドインの追加](./pic/01_addin04.png)
+{% screenshot 01_addin04.png "アドインの追加" %}
 
 [データ分析]が追加できました。
 
