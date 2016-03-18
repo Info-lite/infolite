@@ -92,7 +92,7 @@ Microsoft Excel 2013の概要
 
 ### ウィンドウ構成
 
-{% screenshot excel_window.png "" %}
+{% screenshot excel_window.png "画面構成" %}
 
 ### クイックアクセスツールバー
 
@@ -182,13 +182,13 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 
 複数のワークシートを１つのブックに作成できます。初期設定ではその数は3枚です。
 
-{% screenshot worksheet.png "" %}
+{% screenshot worksheet.png "ワークシート" %}
 
 ワークシートの数は増やせたり減らせたりできます。後で述べる数値処理では行、列の２項目のみでなく他のワークシートのデータとの計算も行えるので、３項目での計算が可能となります。
 
 ### データの入力
 
-{% screenshot activecell.png "" %}
+{% screenshot activecell.png "アクティブセル" %}
 
 名前ボックスの右側の行が *データ入力バー* となります。
 まず *取消ボタン* ![キャンセル](pic/icon_cancel.png)" と *入力ボタン* ![入力](pic/icon_input.png) の入った枠があり、その右に現在のアクティブセルの内容(データ)が表示されています。
@@ -204,7 +204,7 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 セルに入力されるデータにはいくつかの形式があります。この形式の違いによって、Excel内での処理も変わるので注意しましょう。
 データの形式を変えるには、"ホーム"リボン内の"数値"パネルを使います。下の画像にあるプルダウンメニューを使って形式を変更できます。
 
-{% screenshot panel.png "" %}
+{% screenshot panel.png "数値" %}
 
 通常、データの形式は"標準"であれば、自動的に適した形式で認識してくれます。特定の形式で入力したい場合は以下のように行います。
 
@@ -215,7 +215,7 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 -   `¥12345` と入力すると記号つき通貨スタイル
 -   `%12.345` と入力するとパーセント表示形式
 
-{% screenshot number.png "" %}
+{% screenshot number.png "数値の形式" %}
 
 #### 日付時刻入力
 
@@ -223,11 +223,11 @@ Wordのようなワープロソフトとは違い、縦横細かく仕切られ�
 -   `H15.4.14` (H (または S, T, M) の直後に数字をピリオド分かち) で和暦
 -   時刻は `:` で数字を分ける
 
-{% screenshot time.png "" %}
+{% screenshot time.png "日付入力" %}
 
 #### 文字データの入力
 
-{% screenshot word.png "" %}
+{% screenshot word.png "文字入力" %}
 
 #### 数値と文字列の見分け方
 
@@ -295,7 +295,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 まず以下のようにデータを入力して後に形式、足りない数値を整えましょう。
 数字のみのところは**半角**で、またデータがセル幅を越えてしまうのも気にしなくて大丈夫です。（あとで修正します）
 
-{% screenshot 21population1.png "" %}
+{% screenshot 21population1.png "データ入力のみ" %}
 
 ### セルの調整
 
@@ -305,15 +305,15 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 
 &#9313; ポインタをその列番号の左端におき、ドラッグして幅調節します。
 
-{% screenshot width1.png "" %}
+{% screenshot width1.png "セルの幅の調整" %}
 
 &#9314; 複数行同時も可能です。[shift]キーを押して複数列をクリックして、どの列でもいいのでドラッグして幅を調節します。
 
-{% screenshot width2.png "" %}
+{% screenshot width2.png "複数セルの幅の調整" %}
 
 &#9315; 高さも同様に行います。
 
-{% screenshot height.png "" %}
+{% screenshot height.png "セルの高さの調整" %}
 
 今は列A、B、C、Dの幅を90ピクセル程度に拡げておきましょう。
 
@@ -324,27 +324,27 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 
 &#9313; 次に[ホーム]リボン - [配置]パネル内の[セルを結合して中央揃え]をクリックします。
 
-{% screenshot cellalloc1.png "" %}
+{% screenshot cellalloc1.png "中央揃え（ポップヒント：中央揃え）" %}
 
 &#9314; また、[ホーム]リボン - [配置]パネル内の右下にある![](pic/details.png) から詳細に設定することもできます。
 
-{% screenshot cellalloc2.png "" %}
+{% screenshot cellalloc2.png "書式の詳細設定による配置（ポップヒント：書式設定）" %}
 
 &#9315; 今回は、"縦位置"と"横位置"を中央揃えにし、"セルを結合する"チェックボックスにチェックをします。
 
-{% screenshot cellalloc3.png "" %}
+{% screenshot cellalloc3.png "文字の配置調整" %}
 
 "B2" から "D2" も同様にセルを結合します。同様にして、縦方向にセルもマージできます。"A2" から "A3" を統合させましょう。
 
 ここまでで以下のようになっているはずです。
 
-{% screenshot population1.png "" %}
+{% screenshot population1.png "書式調整の完成" %}
 
 ### 数式処理
 
 数式処理はセルの先頭が（半角の）`=` で始まります。これをセルに直接入力、もしくは数式バーから入力します。
 
-{% screenshot formula1.png "" %}
+{% screenshot formula1.png "数式入力例" %}
 
 Excelで用いる主な算術演算子は以下のようなものがあります。
 
@@ -367,11 +367,11 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 たとえば "B4" は `=C4+D4` となるので、"B4" をアクティブセルにして `=C4+D4` と**半角で**入力します。データの先頭が半角で `=` の場合、自動的に数式処理モードになります。
 
-{% screenshot population2.png "" %}
+{% screenshot population2.png "オートフィル1" %}
 
 同種の計算を `B5` から `B13` までしてみましょう。そのため `B4` のアクティブセル右下の黒い小さな四角（フィルハンドル）をマウスでポイントします。左ボタンを押した状態でセル囲みの四角を下に `B13` までドラッグします。
 
-{% screenshot population3.png "" %}
+{% screenshot population3.png "オートフィル2" %}
 
 このようにして、入力を省略することができます。この機能が**オートフィル**です。
 
@@ -384,11 +384,11 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 続いて男、女の総計(Sum)を "C13"、"D13" に計算していれます。"C13"を選択し、以下に示すような[オート SUM]ボタンをクリックします。
 
-{% screenshot population4.png "" %}
+{% screenshot population4.png "オートSUM（ポップヒント：オートSUM）" %}
 
 総和が "C13" に自動的にはいります。女のデータも同様に行いましょう。これで男女の総計も計算されます。
 
-{% screenshot populationfinal.png "" %}
+{% screenshot populationfinal.png "オートSUMの結果" %}
 
 {% appendix ../appendix/function.html "Microsoft Excelで使える関数" %}
 
@@ -417,7 +417,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 以下の表を前回作った `rensyu.xlsx` の `Sheet2` に入力しますが、その前にセルの表示形式を設定します。
 
-{% screenshot excelint.png "" %}
+{% screenshot excelint.png "整形前の表" %}
 
 ### セルの表示形式（通貨スタイル）
 
@@ -453,15 +453,15 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 &#9313; "ホーム"リボン内の"セル"パネルの[書式] - [行の高さ]もしくは[書式] - [列の幅]を選択します。
 
-{% screenshot cellhight.png "" %}
+{% screenshot cellhight.png "列の幅の設定" %}
 
 &#9314; ダイアログに現在の値が表示されます。調整したい値を入力します。
 
 &#9315; "ホーム"リボン内の"配置"パネルで文字の配置を設定します。
 
-{% screenshot cellalloc.png "" %}
+{% screenshot cellalloc.png "配置パネル" %}
 
-{% screenshot charalloc.png "" %}
+{% screenshot charalloc.png "文字配置の例" %}
 
 #### 罫線の挿入
 
@@ -469,45 +469,45 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 &#9312; [ホーム]リボン内の[フォント]パネル内の右下にある ![](pic/details.png) をクリックします。
 
-{% screenshot linesetting1.png "" %}
+{% screenshot linesetting1.png "フォント設定（ポップヒント：フォント）" %}
 
 &#9313; 表示されたウィンドウの上部にある[罫線]タブをクリックします。ここで詳細な設定が可能です。
 
-{% screenshot linesetting2.png "" %}
+{% screenshot linesetting2.png "書式設定による罫線設定" %}
 
 &#9314; [ホーム]リボン内の[フォント]パネルでもある程度設定可能です。
 
-{% screenshot linetoolbar.png "" %}
+{% screenshot linetoolbar.png "フォントパネルによる簡易的な罫線設定" %}
 
 #### フォントの変更
 
 &#9312; [ホーム]リボン内の[フォント]パネル内の右下にある ![](pic/details.png) をクリックします。
 
-{% screenshot linesetting1.png "" %}
+{% screenshot linesetting1.png "フォント設定（ポップヒント：フォント）" %}
 
-{% screenshot fontwindow.png "" %}
+{% screenshot fontwindow.png "書式設定によるフォント設定" %}
 
 &#9313; [ホーム]リボン内の[フォント]パネルでも選択可能です。
 
-{% screenshot linetoolbar.png "" %}
+{% screenshot linetoolbar.png "フォントパネルによる簡易的なフォント設定" %}
 
 #### セルの配色
 
-{% screenshot cellcolorex.png "" %}
+{% screenshot cellcolorex.png "セルの塗りつぶし例" %}
 
-{% screenshot linecolorex.png "" %}
+{% screenshot linecolorex.png "罫線の配色例" %}
 
 &#9312; [ホーム]リボン内の[フォント]パネル内の右下にある![](pic/details.png) をクリックします。
 
-{% screenshot linesetting1.png "" %}
+{% screenshot linesetting1.png "フォント設定（ポップヒント：フォント）" %}
 
 &#9313; [塗りつぶし]を選択します。ここでセルの背景の設定が出来ます。
 
-{% screenshot cellcolor.png "" %}
+{% screenshot cellcolor.png "書式設定による塗りつぶし設定" %}
 
 &#9314; [ホーム]リボン内の[フォント]パネルでも指定することができます。
 
-{% screenshot int6.png "" %}
+{% screenshot int6.png "フォントパネルによる簡易的な塗りつぶし設定" %}
 
 #### 印刷範囲
 
