@@ -9,9 +9,9 @@ purposes:
 
 Excelにはデータベースとしての機能もあります。その中の、ソートとフィルタについて説明します。
 
-以下では、[統計表](./population.xls) を用いて説明します。元のデータは、平成22年度の国勢調査です。
+以下では、[統計表](./population.xls) を用いて説明します。元のデータは、平成27年度の国勢調査です。
 
--   [第1表 人口，人口増減（平成17年〜22年），面積及び人口密度](http://www.e-stat.go.jp/SG1/estat/GL02020101.do?method=csvDownload&fileId=000007591144&releaseCount=1)
+-   [第1表 人口，人口増減（平成22年〜27年），面積及び人口密度](http://www.e-stat.go.jp/SG1/estat/GL02020101.do?method=csvDownload&fileId=000007591144&releaseCount=1)
 
 <div class="panel panel-default">
 <div class="panel-body">
@@ -36,19 +36,19 @@ Excelにはデータベースとしての機能もあります。その中の、
 並べ替える基準になるセルを選択します。そして[ホーム]リボン - [編集]タブ - [並び替えとフィルタ]をクリックします。
 その後、[昇順]もしくは[降順]をクリックして、並び替えを行います。
 
-{% screenshot az1.png "" %}
+{% screenshot az1.png "並び替えとフィルターを選択" %}
 
 "並び替えの前に"ウィンドウが表示されたら、[選択範囲を拡張する]を選択し、[並び替え]をクリックします。
 
-{% screenshot az2.png "" %}
+{% screenshot az2.png "並び替えの実行" %}
 
 並び替えが行われました。
 
-{% screenshot az3.png "" %}
+{% screenshot az3.png "並び替えの結果" %}
 
 文字列以外にも、数値を並び替えることも出来ます。下の例は、"平成22年"を昇順で並び替えたものです。
 
-{% screenshot az4.png "" %}
+{% screenshot az4.png "並び替え" %}
 
 ### 通常の並び替え
 
@@ -56,20 +56,20 @@ Excelにはデータベースとしての機能もあります。その中の、
 
 まず、[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [ユーザー設定の並び替え]をクリックします。
 
-{% screenshot sort1.png "" %}
+{% screenshot sort1.png "ユーザー設定並び替えを選択" %}
 
 すると、以下のようなウィンドウが開きます。
 
-{% screenshot sort2.png "" %}
+{% screenshot sort2.png "並び替え設定ウィンドウ" %}
 
 ここでは、複数の条件の並べ替えを行うことが出来ます。[レベルの追加]をクリックして、新たに条件キーを追加してみましょう。
 
-{% screenshot sort3.png "" %}
+{% screenshot sort3.png "並び替え条件の追加（レベルの追加）" %}
 
 条件キーは上から順番に適用されていきます。
 また、[並び替えオプション]をクリックすると、さらにいろいろなオプションを指定することができます。
 
-{% screenshot sort4.png "" %}
+{% screenshot sort4.png "条件の詳細設定" %}
 
 
 フィルタ
@@ -81,9 +81,9 @@ Excelには、フィルタというデータを抽出する機能があります
 
 まず、表内の適当なセルを選択後、[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [フィルタ]をクリックしましょう。
 
-{% screenshot filter1.png "" %}
+{% screenshot filter1.png "フィルターを選択" %}
 
-{% screenshot filter2.png "" %}
+{% screenshot filter2.png "フィルター状態" %}
 
 このフィルタは[ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [フィルタ]を再度押すことで解除することができます。
 
@@ -91,40 +91,40 @@ Excelには、フィルタというデータを抽出する機能があります
 
 各フィールド名に ![](pic/filter.png) がつきました。クリックしてみましょう。
 
-{% screenshot filter3.png "" %}
+{% screenshot filter3.png "フィルター設定メニュー" %}
 
 出てきたメニューで要素を抽出したり、並び替えを行うことが出来ます。
 ここでは、試しに[数値フィルタ] - [トップテン]をクリックしてみましょう。
 
-{% screenshot top1.png "" %}
+{% screenshot top1.png "「トップテン」を選択" %}
 
 "トップテン オートフィルタ"ダイアログが出てきます。各項目を適切に設定して、[OK]をクリックしましょう。
 
-{% screenshot top2.png "" %}
+{% screenshot top2.png "トップテンの設定" %}
 
 すると、条件にあうレコードのみ表示されます。
 これだけでは見にくいので、さらに降順に並び替えをするとよいでしょう。
 また、元に戻したいときは、"すべて"をクリックします。
 [ホーム]リボン - [編集]タブ - [並び替えとフィルタ] - [クリア]でもできます。
 
-{% screenshot top3.png "" %}
+{% screenshot top3.png "フィルターの解除" %}
 
 次に、テキストでの検索を行ってみます。
 [テキストフィルタ] - [指定の値を含む]をクリックしてみましょう。
 
-{% screenshot textfilter1.png "" %}
+{% screenshot textfilter1.png "「指定の値を含む」を選択" %}
 
-{% screenshot textfilter2.png "" %}
+{% screenshot textfilter2.png "オートフィルタ―オプションの設定" %}
 
 このように、さらに複雑な条件での抽出ができます。
 また、`?` や `*` のワイルドカードも使用できます。
 
-{% screenshot textfilter4.png "" %}
+{% screenshot textfilter4.png "ワイルドカードの利用" %}
 
 上の例では、条件を "を含む" から "と等しい" に変えて、`*しま*` と入力しました。
 これはさきほどのものと全く同じ意味です。[OK]をクリックします。
 
-{% screenshot textfilter3.png "" %}
+{% screenshot textfilter3.png "「しま」が付く都道府県の抽出" %}
 
 すると、県名に "しま" が含まれるもののみ抽出されました。
 
@@ -132,16 +132,16 @@ Excelには、フィルタというデータを抽出する機能があります
 まず、以下の表を適当な場所に作成しましょう。
 今回は "K3" と "K4" に入力してみます。
 
-{% screenshot textfilter7.png "" %}
+{% screenshot textfilter7.png "条件式" %}
 
 次に、[データ]リボン - [並び替えとフィルタ]タブ - [詳細設定]をクリックします。
 
-{% screenshot textfilter5.png "" %}
+{% screenshot textfilter5.png "並び替えの詳細設定（ポップヒント：詳細設定による複雑な条件指定）" %}
 
 [リスト範囲]は既に正しく選択されていることを確認してください。
 [検索条件範囲]に、先ほど作成した表を指定しましょう。
 
-{% screenshot textfilter6.png "" %}
+{% screenshot textfilter6.png "条件式の指定" %}
 
 [抽出先]を[選択範囲内]のままにすると、今まで同様、条件に合わない部分が非表示になった表となります。
 [指定した範囲]を選択すると、下の"抽出範囲"がアクティブになります。
@@ -150,7 +150,7 @@ Excelには、フィルタというデータを抽出する機能があります
 
 今回は `A55:I55` に表を作成してみます。
 
-{% screenshot textfilter8.png "" %}
+{% screenshot textfilter8.png "条件式によって抽出された表" %}
 
 とても便利な機能です。覚えておきましょう。
 
