@@ -18,31 +18,31 @@ date: 2016-03-15 15:58:15 +0900
 
 その機能を使って講習会のお知らせに郵便記号と電話記号を挿入していきます。初期状態では以下のように入力されているとします。
 
-![講習会のお知らせ](pic/word02_sword_01sword.png)
+{% screenshot word02_sword_01sword.png "講習会のお知らせ" %}
 
 &#9312; [挿入] リボン - [記号と特殊文字] をクリックします。
 
-![](pic/word02_sword_02sword.png)
+{% screenshot word02_sword_02sword.png "" %}
 
 &#9313; 一覧の中から郵便記号を選択します。
 
-![](pic/word02_sword_03sword.png)
+{% screenshot word02_sword_03sword.png "" %}
 
-![](pic/word02_sword_04sword.png)
+{% screenshot word02_sword_04sword.png "" %}
 
 すると、郵便記号が挿入されました。必要な部分を入力した後、電話記号を挿入します。
 
 &#9314; [挿入]リボン - [記号と特殊文字] - [その他の記号]をクリックします。
 
-![](pic/word02_sword_05sword.png)
+{% screenshot word02_sword_05sword.png "" %}
 
-![](pic/word02_sword_06sword.png)
+{% screenshot word02_sword_06sword.png "" %}
 
 &#9315; 種類の中から`文字様記号`を選択します。すると、文字様記号の中に"TEL"のマークが入っているので、選択し挿入します。
 
-![](pic/word02_sword_07sword.png)
+{% screenshot word02_sword_07sword.png "" %}
 
-![](pic/word02_sword_08sword.png)
+{% screenshot word02_sword_08sword.png "" %}
 
 このようにして、郵便記号と電話記号を挿入することができました。Wordを使える環境であれば、同様の操作によって記号・特殊文字を挿入することができます。
 
@@ -56,21 +56,21 @@ Wordでは数式を挿入することもできます。特に理系学生はレ�
 
 &#9312; [挿入]リボン - [数式]をクリックします。
 
-![](pic/word02_sword_09formula.png)
+{% screenshot word02_sword_09formula.png "" %}
 
-![](pic/word02_sword_10formula.png)
+{% screenshot word02_sword_10formula.png "" %}
 
 代表的な数式はすでに用意されています。しかし、新しく数式を作ることもできます。
 
 &#9313; [新しい数式]をクリックします。
 
-![](pic/word02_sword_11formula.png)
+{% screenshot word02_sword_11formula.png "" %}
 
 数式ツールの[デザイン]リボンが開かれました。通常入力とリボンのコマンドを用いて、数式を作成します。
 
-![](pic/word02_sword_12formula.png)
+{% screenshot word02_sword_12formula.png "" %}
 
 &#9314; 最後に、任意の部分をクリックすると、数式が確定します。
 
-![](pic/word02_sword_13formula.png)
+{% screenshot word02_sword_13formula.png "" %}
 

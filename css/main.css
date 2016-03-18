@@ -79,6 +79,20 @@ body > .container {
     text-align: center;
 }
 
+.link {
+    margin-bottom: 1em;
+}
+
+.link .label {
+    font-size: 90%;
+    margin-right: 0.5em;
+}
+
+h1 .label {
+    font-size: 90%;
+    margin-right: 0.5em;
+}
+
 h2 {
     color: #3f4e63;
     padding-left: 10px;

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 課題提出のための実習時間
 date: 2015-03-23 16:52:10 +0900
@@ -27,7 +28,7 @@ purposes:
 
 [seiseki.xls](seiseki.xls) を基に、以下のような成績表を作ってみましょう。
 
-![](pic/seiseki01.png)
+{% screenshot seiseki01.png "" %}
 
 1.  表に以下の項目を追加してください
     -   それぞれの合計得点

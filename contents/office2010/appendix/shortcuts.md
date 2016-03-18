@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 主なショートカットキー一覧
 date: 2015-03-23 16:23:56 +0900

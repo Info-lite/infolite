@@ -1,7 +1,8 @@
 ---
+deprecated: true
 layout: appendix
 title: Microsoft Office systemのファイルについて
-date: 2016-03-11 09:01:01 +0900
+date: 2016-03-16 15:25:59 +0900
 ---
 
 

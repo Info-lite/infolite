@@ -17,17 +17,17 @@ purposes:
 ファイル名は、`frame.html`、`ue.html`、`shita.html` としましょう。
 
 *frame.html*
-![](pic/frame001.png)
+{% screenshot frame001.png "" %}
 
 *ue.html*
-![](pic/ue001.png)
+{% screenshot ue001.png "" %}
 
 *shita.html*
-![](pic/shita001.png)
+{% screenshot shita001.png "" %}
 
 `frame.html` を適当なブラウザで表示させると、以下のようになります。
 
-![](pic/frame_ps001.png)
+{% screenshot frame_ps001.png "" %}
 
 ここで、それぞれのファイルの役割について説明しましょう。
 まず、`frame.html` によって、フレームの配置や大きさ等が指定されています。
@@ -58,10 +58,10 @@ purposes:
 先ほど作成した `frame.html`、`ue.html` を、以下のように修正してみましょう。
 
 *frame.html*
-![](pic/frame002.png)
+{% screenshot frame002.png "" %}
 
 *ue.html*
-![](pic/ue002.png)
+{% screenshot ue002.png "" %}
 
 前と同じように、`frame.html` を適当なブラウザで開いてみましょう。
 上のフレームのリンクをクリックすると、下のフレームに表示されているページが変わるはずです。

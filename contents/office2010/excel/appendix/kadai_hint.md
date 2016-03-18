@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 課題のヒント
 date: 2015-03-23 17:35:28 +0900
@@ -50,7 +51,7 @@ Microsoft Excelには、多くの関数が用意されています。
 
 偏差値は以下のようにして求めます。
 
-![](pic/seiseki03.png)
+{% screenshot seiseki03.png "" %}
 
 &sigma; を **標準偏差** といい、関数 `STDEV.P()` を使うと簡単に求めることが出来ます。
 
@@ -61,7 +62,7 @@ Microsoft Excelには、多くの関数が用意されています。
 
 まず、以下のような図を作りましょう
 
-![](pic/seiseki02.png)
+{% screenshot seiseki02.png "" %}
 
 この関数は、`VLOOKUP(検索値,範囲,列番号,検索の型)`という構造になっています。
 検索値に順位、範囲をこの表とし、列番号に成績の列を指定しましょう。
