@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 「分析ツール」アドイン
 date: 2015-03-23 19:01:58 +0900

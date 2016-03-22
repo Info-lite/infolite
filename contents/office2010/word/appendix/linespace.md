@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 行の間隔を設定する
 date: 2015-03-23 16:24:13 +0900

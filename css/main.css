@@ -33,10 +33,6 @@ body > .container {
     padding-left: 15px;
 }
 
-code {
-    font-size: 80%;
-}
-
 .container a:before{
     font-family: 'FontAwesome';
     margin: 0 3px;
@@ -83,6 +79,20 @@ code {
     text-align: center;
 }
 
+.link {
+    margin-bottom: 1em;
+}
+
+.link .label {
+    font-size: 90%;
+    margin-right: 0.5em;
+}
+
+h1 .label {
+    font-size: 90%;
+    margin-right: 0.5em;
+}
+
 h2 {
     color: #3f4e63;
     padding-left: 10px;
@@ -109,6 +119,11 @@ dl dt {
 }
 dl dd {
     padding-left: 2em;
+}
+
+img.icon {
+    width: auto;
+    max-height: 48px;
 }
 
 div.thumbnail .img-responsive {
