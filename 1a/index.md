@@ -4,7 +4,7 @@ title: 情報リテラシー実践ⅠＡ
 permalink: /1a/
 ---
 
--   [情報基礎教室の使い方と授業ガイダンス](../contents/basics/01/index_1a.html)
+-   [情報処理教室の使い方と授業ガイダンス](../contents/basics/01/index_1a.html)
 -   [コンピュータの基本操作と構造](../contents/basics/02/index.html)
 -   [ネットワークの仕組みと情報検索](../contents/basics/03/index.html)
 -   [情報の活用と情報倫理](../contents/basics/04/index.html)
