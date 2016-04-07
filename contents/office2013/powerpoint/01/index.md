@@ -1,7 +1,7 @@
 ---
 layout: page
 title: プレゼンテーションの概要と実習
-date: 2016-03-16 09:51:47 +0900
+date: 2016-04-07 14:42:44 +0900
 purposes:
     - Microsoft PowerPointを用いたプレゼンテーションスライドの作成法の習得
 ---
@@ -380,7 +380,7 @@ PowerPointでは、プレゼンテーションでの視覚的な効果をより�
 
 {% screenshot pp01_37art.png "検索結果" %}
 
-{% appendix ../appendix/copyrights.html "著作権とライセンス" %}
+{% appendix ../../../basics/appendix/copyrights.html "著作権とライセンス" %}
 
 &#9315; 任意の画像を選択し、挿入します。レイアウトを考えて、好きな場所に移動させてください。
 
