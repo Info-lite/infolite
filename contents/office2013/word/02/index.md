@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: ワードプロセッサによる文書編集（２）
 date: 2016-03-15 17:43:24 +0900
@@ -59,13 +59,13 @@ flowplayer_conf:
 
 以下の図がセル、行、列の概念を表しています。それぞれ特定のセル、行、列を選択した状態になっています。それぞれの選択の仕方は実習で学びます。
 
-{% screenshot word_col.png "" %}
+{% screenshot word_col.png "空白の 4 &times; 3 表 " %}
 
 これらの表は、 4 個の行と 3 個の列からできています。このような表は 4 &times; 3 表と呼ばれます。この他にも 5 個の行と 2 個の列からできている表は 5 &times; 2 表、m個の行とn個の列からできている表を**m&times;n表**と呼びます。
 
 #### 表全体の選択
 
-{% screenshot word_table.png "" %}
+{% screenshot word_table.png "表全体の選択" %}
 
 このように左上のマーカーにカーソルを近づけると、カーソルの形状が変わります。その状態でクリックすると、表全体を選択することができます。また、ドラッグアンドドロップすると、移動させることもできます。
 
@@ -87,17 +87,17 @@ flowplayer_conf:
 
 &#9312; [挿入]リボン - ![表](pic/word_tablemake.png) をクリックします。
 
-{% screenshot word02_06make.png "" %}
+{% screenshot word02_06make.png "表の追加" %}
 
 &#9313; 8 &times; 100 のセルが表示されました。その中から必要なセル数を選択します。縦に 5 つ、横に 4 つ、"表（5 行 &times; 4列）"になるようにカーソルを移動し、クリックします。
 
-{% screenshot word02_07make.png "" %}
+{% screenshot word02_07make.png "表の挿入" %}
 
-{% screenshot word02_08make.png "" %}
+{% screenshot word02_08make.png "5 &times; 4 の表を作成" %}
 
 5 &times; 4 の表が作成されました。
 
-{% screenshot word02_09make.png "" %}
+{% screenshot word02_09make.png "表示結果" %}
 
 ### 表の加工
 
@@ -109,7 +109,7 @@ flowplayer_conf:
 
 まず、加工する必要のないセルに文字を入れていきます。以下のように仕上げてください。3 列目（"テーマ"の列）のセルはそれぞれ 1 行目に改行を入れ、 2 行目には 1文字スペースを入れました。
 
-{% screenshot word02_11division.png "表" %}
+{% screenshot word02_11division.png "内容を入力" %}
 
 #### セルの分割
 
@@ -117,19 +117,19 @@ flowplayer_conf:
 
 &#9312; 該当となるセル(2,1)から(5,1)までを選択します。セルの左上端にカーソルを移動させると、カーソルが黒矢印に変わるので、その状態で左クリックするとセルを選択することができます。
 
-{% screenshot word02_12division.png "" %}
+{% screenshot word02_12division.png "分割するセルを選択" %}
 
 &#9313; [レイアウト]リボン - ![セルの分割](pic/word_division.png) をクリックします。
 
-{% screenshot word02_13division.png "" %}
+{% screenshot word02_13division.png "セルの分割" %}
 
 &#9314; 列数を`2`、行数を`4`と入力 - [OK]をクリックします。
 
-{% screenshot word02_14division.png "" %}
+{% screenshot word02_14division.png "分割の設定" %}
 
 セルを分割することができました。
 
-{% screenshot word02_15division.png "" %}
+{% screenshot word02_15division.png "表示結果" %}
 
 #### セルの結合
 
@@ -139,45 +139,45 @@ flowplayer_conf:
 
 &#9312; 結合すべきセル(2,1)、(3,1)を選択します。
 
-{% screenshot word02_16comb.png "表" %}
+{% screenshot word02_16comb.png "セルの選択" %}
 
 &#9313; [レイアウト]リボン - ![セルの結合](pic/word_comb.png) をクリックします。
 
-{% screenshot word02_17comb.png "表" %}
+{% screenshot word02_17comb.png "セルの結合" %}
 
-{% screenshot word02_18comb.png "表" %}
+{% screenshot word02_18comb.png "表示結果" %}
 
 同様に新 1 列目の 4 - 5 行及び、最終列の 2 - 5 行を結合してください。
 
-{% screenshot word02_19comb.png "表" %}
+{% screenshot word02_19comb.png "セルの結合" %}
 
 加工したセルにそれぞれ文字を入力します。
 
-{% screenshot word02_20word.png "表" %}
+{% screenshot word02_20word.png "内容の入力" %}
 
 "初級編"、"中級編"の文字を縦書きにします。通常の文章と同じように選択 - [レイアウト]リボン - ![文字列の方向](pic/word_tate.png) をクリックします。
 
-{% screenshot word02_21word.png "表" %}
+{% screenshot word02_21word.png "文字列の方向を変更" %}
 
-{% screenshot word02_22word.png "表" %}
+{% screenshot word02_22word.png "縦書きになった文字" %}
 
 #### 列幅の変更
 
 縦の罫線にカーソルをあわせると、カーソルの形が変わるので、その状態でドラッグすると幅を変えることができます。
 
-{% screenshot word02_23wide.png "表" %}
+{% screenshot word02_23wide.png "列幅の変更" %}
 
 #### セル内の文字配置
 
 設定をするセルを選択 - [レイアウト]リボン - "配置"パネルから適当な配置を選びます。
 
-{% screenshot word02_24point.png "セル内の配置" %}
+{% screenshot word02_24point.png "セル内の文字配置" %}
 
-{% screenshot word02_25point.png "セル内の配置" %}
+{% screenshot word02_25point.png "中央揃え" %}
 
 以下のようにします。
 
-{% screenshot word02_03table.png "セル内の配置" %}
+{% screenshot word02_03table.png "セル内の配置変更後" %}
 
 最後に表全体を中央揃えにします。
 表全体を選択 - [ホーム]リボン - "段落"タブから中央揃えを選択することで、文章と同じように設定できます。
@@ -217,11 +217,11 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 &#9312; [挿入]リボン - ![図形](pic/word_figure.png) をクリックします。
 
-{% screenshot word02_27figure.png "" %}
+{% screenshot word02_27figure.png "図形の選択" %}
 
 &#9313; ![直線](pic/word_straight.png) をクリックします。
 
-{% screenshot word02_28figure.png "" %}
+{% screenshot word02_28figure.png "直線を描く" %}
 
 &#9314; 直線を描き始めたい点からドラッグして線を引き、直線を終わらせたい点でドロップします。
 
@@ -231,11 +231,11 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 設定を変更したい線を選択 - [書式]リボン - ![図形の枠線](pic/word_figure_custom.png) をクリックします。
 
-{% screenshot word02_30figure.png "直線" %}
+{% screenshot word02_30figure.png "図形のカスタマイズ" %}
 
 各項目について、設定を行ってください。
 
-{% screenshot word02_31figure.png "直線" %}
+{% screenshot word02_31figure.png "図形の枠線" %}
 
 ![矢印](pic/word_arrow.png) についても直線と同様にして描くことができます。ためしてみましょう。
 

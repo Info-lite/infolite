@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: ワードプロセッサによる文書編集（１）
 date: 2016-03-16 09:52:11 +0900
@@ -222,15 +222,15 @@ Wordの画面での表示の仕方を設定します。
 
 &#9312; 最初の行の "自己紹介カード" を選択（ドラッグ）し、フォントサイズを`16`ptに変更します。
 
-{% screenshot word01_02font.png "" %}
+{% screenshot word01_02font.png "フォントサイズの変更" %}
 
 &#9313; 同様に、2行目の"氏名"、4行目の"所属"、6行目の"趣味"、10行目の"自己紹介文"を`14`ptにします。
 
-{% screenshot word01_03font.png "" %}
+{% screenshot word01_03font.png "フォントサイズの変更" %}
 
 &#9314; さらに3行目の"首都　大"も`12`ptに変更します。
 
-{% screenshot word01_04font.png "" %}
+{% screenshot word01_04font.png "フォントサイズの変更" %}
 
 Wordでは、その他にも色々なスタイルに文字を変えることができます。
 
@@ -245,7 +245,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9314; [ホーム]リボン の "段落" から ![中央揃え](pic/word_centering.png) をクリックして、文字を揃えます。
 
-{% screenshot word01_06centering.png "" %}
+{% screenshot word01_06centering.png "タイトルを中央揃えにする" %}
 
 これで、この書類の題名となる"自己紹介カード"が見やすくなりました。
 
@@ -256,13 +256,13 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; "氏名"、"所属"、"趣味"、"自己紹介文"を選択します。複数選択するためには、 [Ctrl] キーを押しながら選択します。
 
-{% screenshot word01_07centering.png "" %}
+{% screenshot word01_07centering.png "[Ctrl]キーを押しながらの複数行選択" %}
 
 &#9313; ![段落番号](pic/word_num.png) をクリックします。
 
-{% screenshot word01_08num.png "" %}
+{% screenshot word01_08num.png "段落番号の付与" %}
 
-{% screenshot word01_09num.png "" %}
+{% screenshot word01_09num.png "表示結果" %}
 
 このように、段落番号をつけることができます。
 同様にして、趣味の内容を箇条書きにしてみましょう。
@@ -270,17 +270,17 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; "読書"、"水泳"、"旅行"を選択します。
 
-{% screenshot word01_10point.png "" %}
+{% screenshot word01_10point.png "対象行の選択" %}
 
-{% screenshot word01_11point.png "" %}
+{% screenshot word01_11point.png "箇条書きの付与" %}
 
 &#9313;  ![箇条書き](pic/word_point.png) の横の下向き三角をクリックします。
 
-{% screenshot word01_12point.png "" %}
+{% screenshot word01_12point.png "行頭記号の選択" %}
 
 &#9314; 表示された行頭文字ライブラリの中から好きなものを選ことができます。
 
-{% screenshot word01_13point.png "" %}
+{% screenshot word01_13point.png "表示結果" %}
 
 ライブラリの中にない文字や画像も"新しい行頭文字の定義"を押すことで設定することができます。
 段落番号も箇条書きと同じようにカスタマイズすることができます。
@@ -297,8 +297,6 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 {% screenshot word01_15indent.png "ルーラーの表示／非表示" %}
 
-{% screenshot word01_16indent.png "ルーラーの表示／非表示" %}
-
 インデントにはそれぞれ以下の役割があります。
 
 {% screenshot word_ruler.png "ルーラー" %}
@@ -310,25 +308,25 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; 自己紹介文の内容（はじめまして〜）を選択してください。
 
-{% screenshot word01_17indent.png "" %}
+{% screenshot word01_16indent.png "文章の選択" %}
 
 &#9313; 1行目のインデントを1文字分右に動かします。
 
-{% screenshot word01_18indent.png "" %}
+{% screenshot word01_17indent.png "1行目のインデントを1文字分右へ" %}
 
-{% screenshot word01_19indent.png "" %}
+{% screenshot word01_18indent.png "表示結果" %}
 
 自己紹介文の内容の1行目を1字下がりました。次に、各項目の内容を下げます。
 
 &#9312; 以下の画像のように内容となる部分を全て選択してください。
 
-{% screenshot word01_20indent.png "" %}
+{% screenshot word01_19indent.png "[Ctrl]キーを押しながら複数行選択" %}
 
 &#9313; 左インデントを 2 文字分右に動かします。
 
-{% screenshot word01_21indent.png "" %}
+{% screenshot word01_20indent.png "左インデントを2文字分右へ" %}
 
-{% screenshot word01_22indent.png "" %}
+{% screenshot word01_21indent.png "表示結果" %}
 
 これで随分と見やすくなりました。
 また、左インデントは [ホーム]リボンの "段落" にある ![](../pic/word_indentup.png) や ![](../pic/word_indentdown.png) でもずらすことができます。
@@ -336,7 +334,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 インデントはこの他、段落の詳細設定からより詳しく設定することができます。
 [ホーム] リボン - "段落"パネルの右下の ![](../pic/word_more.png) をクリックします。
 
-{% screenshot word01_23indent.png "段落" %}
+{% screenshot word01_22indent.png "段落" %}
 
 {% screenshot word_indentwindow.png "段落" %}
 
@@ -355,17 +353,17 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; [挿入] リボン - ![ヘッダー](pic/word_header.png) をクリックします。
 
-{% screenshot word01_24header.png "" %}
+{% screenshot word01_24header.png "ヘッダーの追加" %}
 
 &#9313; [空白] を選択します。
 
-{% screenshot word01_25header.png "" %}
+{% screenshot word01_25header.png "[空白]を選択" %}
 
-{% screenshot word01_26header.png "" %}
+{% screenshot word01_26header.png "空白のヘッダー" %}
 
 &#9314; ヘッダーに自分の学修番号と氏名を入力してください。
 
-{% screenshot word01_27header.png "" %}
+{% screenshot word01_27header.png "内容の挿入" %}
 
 これでヘッダー部分に学修番号と氏名が設定できました。
 ヘッダーやフッターを編集していると、リボンに [ヘッダー/フッター ツール] が表示されます。
@@ -373,17 +371,17 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 
 &#9312; [ヘッダー/フッター ツール]  [デザイン] リボン -  ![ページ番号](pic/word_footer.png) をクリックします。
 
-{% screenshot word01_28footer.png "" %}
+{% screenshot word01_28footer.png "ページ番号の挿入" %}
 
 &#9313; "ページの下部" - "番号のみ2" を選択します。
 
-{% screenshot word01_29footer.png "" %}
+{% screenshot word01_29footer.png "[番号のみ2]を選択" %}
 
-{% screenshot word01_30footer.png "" %}
+{% screenshot word01_30footer.png "ページ数の入ったフッター" %}
 
 これでフッターにページ数が入りました。
 また[ヘッダーとフッターを閉じる] で通常の編集画面に戻ることができます。
-{% screenshot word01_31footer.png "" %}
+{% screenshot word01_31footer.png "ヘッダーとフッターと閉じる" %}
 
 ヘッダーとフッターにはこの他様々な情報を入れることができます。
 これでほぼ完成しました。後は、見やすいように微調整してください。
