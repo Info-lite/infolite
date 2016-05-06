@@ -1,7 +1,7 @@
 ---
 layout: appendix
 title: googleの使い方
-date: 2015-03-23 16:15:06 +0900
+date: 2016-05-06 15:23:00 +0900
 ---
 
 
@@ -27,7 +27,6 @@ googleの使い方
 
 このほか、特殊な機能や検索方法については、以下のページで説明されています。
 
--   [google 検索の基本](http://www.google.co.jp/support/bin/static.py?page=searchguides.html&ctx=basics)
--   [便利な検索オプション](http://www.google.co.jp/support/bin/static.py?page=searchguides.html&ctx=advanced)
--   [Googleの特殊機能](http://www.google.co.jp/intl/ja/features.html)
+-   [google での検索のコツ](https://support.google.com/websearch/answer/134479)
+-   [検索演算子](https://support.google.com/websearch/answer/2466433)
 
