@@ -74,7 +74,7 @@ PowerPoint を起動すると、スタート画面が表示されます。
 <dt>PowerPoint 画像化プレゼンテーション(.pptx)</dt>
 <dd>プレゼンテーションと同じ拡張子ですが、各スライドを画像に変換して保存します。</dd>
 <dt>PDF(.pdf)</dt>
-<dd>PDF形式で保存します。Excel がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
+<dd>PDF形式で保存します。PowerPoint がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
 
 <div class="alert alert-warning" role="alert">
@@ -228,7 +228,7 @@ PowerPoint にはさまざまなテーマが用意されています。
 
 {% screenshot pp01_08master.png "マスタ表示を閉じる" %}
 
-&#9316; [表示]リボン - ![ヘッダーとフッター](pic/pp_head_foot.png) をクリックします。
+&#9316; [挿入]リボン - ![ヘッダーとフッター](pic/pp_head_foot.png) をクリックします。
 
 {% screenshot pp01_09footer.png "ヘッダーとフッター" %}
 
