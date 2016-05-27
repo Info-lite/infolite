@@ -11,7 +11,7 @@ Excelにはデータベースとしての機能もあります。その中の、
 
 以下では、[統計表](./population.xls) を用いて説明します。元のデータは、平成27年度の国勢調査です。
 
--   [第1表 人口，人口増減（平成22年〜27年），面積及び人口密度](http://www.e-stat.go.jp/SG1/estat/GL02020101.do?method=csvDownload&fileId=000007591144&releaseCount=1)
+-   [第1表 人口，人口増減（平成22年〜27年），面積及び人口密度](http://www.e-stat.go.jp/SG1/estat/GL08020103.do?_csvDownload_&fileId=000007591144&releaseCount=2)
 
 <div class="panel panel-default">
 <div class="panel-body">
