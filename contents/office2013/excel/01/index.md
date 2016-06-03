@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
 date: 2016-03-16 09:56:25 +0900
@@ -338,7 +338,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 
 ここまでで以下のようになっているはずです。
 
-{% screenshot populationfinal.png "書式調整の完成" %}
+{% screenshot population1.png "書式調整の完成" %}
 
 ### 数式処理
 
