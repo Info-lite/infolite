@@ -1,7 +1,7 @@
 ---
 layout: page
 title: アプレット（３）
-date: 2015-03-23 17:01:14 +0900
+date: 2016-01-22 23:36:30 +0900
 purposes:
     - 様々な部品やリスナーの使い方の理解
     - スレッドを用いたアニメーションの理解
@@ -63,4 +63,4 @@ awtには他にもいろいろなものが用意されています。
 
 座標は、`MouseEvent` のインスタンス・メソッド `getX()`, `getY()` で得ることができます。
 
-<span class="label label-info">参考資料</span> [MouseEvent (Java Platform SE 8)](http://docs.oracle.com/javase/jp/8/api/index.html?java/awt/event/MouseEvent.html)
+<span class="label label-info">参考資料</span> [MouseEvent (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseEvent.html)

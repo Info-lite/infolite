@@ -1,7 +1,7 @@
 ---
 layout: appendix
 title: 図と文字列
-date: 2015-03-23 16:35:51 +0900
+date: 2016-03-15 15:58:09 +0900
 ---
 
 
@@ -9,32 +9,32 @@ date: 2015-03-23 16:35:51 +0900
 
 &#9312; まず、文書を書きます。数行に渡って、やや多めの文の方がわかりやすいでしょう。
 
-![](pic/word02_clip_01clip.png)
+{% screenshot word02_clip_01clip.png "文章を書く" %}
 
-&#9313; 任意の場所に図を挿入します。今回はクリップアートを使ってみます。[挿入]リボン - [クリップアート]をクリックします。
+&#9313; 任意の場所に図を挿入します。今回はオンライン画像を使ってみます。[挿入]リボン - [オンライン画像]をクリックします。
 
-![](pic/word02_clip_02clip.png)
+{% screenshot word02_clip_02clip.png "オンライン画像の説明" %}
 
 &#9314; この文書の場合は、"日の出"などが良いでしょう。適当な図を検索し、張り付けてください。
 
-![](pic/word02_clip_03clip.png)
+{% screenshot word02_clip_03clip.png "画像の検索" %}
 
-![](pic/word02_clip_04clip.png)
+{% screenshot word02_clip_04clip.png "画像の選択" %}
 
 &#9315; この画像は"春は曙〜"に対応しているので、1 行目の最初に移動しましょう。
 
-![](pic/word02_clip_05clip.png)
+{% screenshot word02_clip_05clip.png "画像の移動" %}
 
-![](pic/word02_clip_06clip.png)
+{% screenshot word02_clip_06clip.png "画像移動後" %}
 
 すると、画像に続いて、"春は曙〜"と表示されるようになりました。
 しかし、よく見てみると、画像 1 つに対して、1 行が同じ行と判断されているので、随分と無駄なスペースが多くなってしまいました。
 
-&#9316; この無駄を消すために図に対する文字列の折り返し方を設定します。[書式]リボン - [文字列の折り返し]を押します。
+&#9316; この無駄を消すために図に対する文字列の折り返し方を設定します。[書式]リボン - [文字列の折り返し]をクリックします。
 
-![](pic/word02_clip_07clip.png)
+{% screenshot word02_clip_07clip.png "文字の折り返しの説明" %}
 
-![](pic/word02_clip_08clip.png)
+{% screenshot word02_clip_08clip.png "文字の折り返し一覧" %}
 
 <dl>
 <dt>行内</dt><dd>カーソルのある位置に図が挿入されます。</dd>
@@ -49,21 +49,21 @@ date: 2015-03-23 16:35:51 +0900
 
 &#9317; 初期設定では、図は行内に配置されているので、1つの文字と同じ扱いになっています。[外周]を選択します。
 
-![](pic/word02_clip_09clip.png)
+{% screenshot word02_clip_09clip.png "文字の折り返し　外周" %}
 
-![](pic/word02_clip_10clip.png)
+{% screenshot word02_clip_10clip.png "外周を適用" %}
 
 図の外周に文字列が表示されるようになり、無駄なスペースを消すことができました。
 
 &#9318; この他にも、背面に設定すると、文字列の背面に図が表示されます。
 
-![](pic/word02_clip_11clip.png)
+{% screenshot word02_clip_11clip.png "背面を適用" %}
 
 &#9319; 前面に設定すると、文字列の前面に図が表示されます。
 
-![](pic/word02_clip_12clip.png)
+{% screenshot word02_clip_12clip.png "前面を適用" %}
 
 臨機応変に必要に応じて使用してみましょう。
 
-![](pic/word02_clip_13clip.png)
+{% screenshot word02_clip_13clip.png "文字の折り返しを適用" %}
 

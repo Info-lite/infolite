@@ -1,12 +1,12 @@
 ---
 layout: page
 title: ワードプロセッサによる文書編集（２）
-date: 2015-03-27 09:54:54 +0900
+date: 2016-05-26 05:54:43 +0900
 purposes:
     - Microsoft Wordでの表や図、図形の扱いの習得
 flowplayer_conf:
-    embed: false
-    ratio: 0.75
+    - embed: false
+    - ratio: 0.75
 ---
 
 
@@ -15,13 +15,13 @@ flowplayer_conf:
 
 ### 初期原稿の入力
 
-例文（講習会のお知らせ）を新規書類として作成しましょう。[完成版](handbill.pdf)はこのようになります。前と同じく、まずは文章のみを打ち込み、その後で書式設定や表の挿入を行います。なお、**◇の記号は箇条書きで設定するので入力する必要はありません**。
+例文（講習会のお知らせ）を新規書類として作成しましょう。[完成版](handbill.pdf)はこのようになります。前と同じく、まずは文章のみを入力し、その後で書式設定や表の挿入を行います。なお、**◇の記号は箇条書きで設定するので入力する必要はありません**。
 
-<span class="label label-info">参考資料</span> [記号・特殊文字と数式](../appendix/sword.html)
+{% appendix ../appendix/sword.html "記号・特殊文字と数式" %}
 
 まずはここまで完成させましょう。
 
-![講習会のお知らせ](pic/word02_01handbill.png)
+{% screenshot word02_01handbill.png "講習会のお知らせ" %}
 
 `handbill.docx`という名前で保存してください。
 
@@ -33,16 +33,15 @@ flowplayer_conf:
 
 -   文字配置を1行目は"右寄せ"
 -   文字配置を2行目、3行目は"中央揃え"
--   2行目は"ＭＳ　ゴシック"、14pt
--   3行目は"HG創英角ポップ体"、14pt
--   18行目は"ＭＳ　ゴシック"
+-   2行目は"MS ゴシック"、12pt
+-   3行目は"MS ゴシック"、16pt
 -   9行目（"主催〜"）、10行目（"共催〜"）、11行目（"開催期日〜"）、13行目（"会場〜"）、15行目（"募集人員〜"）、16行目（"講習料〜"）は箇条書き
 -   14行目（"〒192-0397〜"）は、左インデントを2字分右にずらす
 -   4行目〜8行目の文章（"高度情報化〜学んでいきます。"）を左インデントを3文字右に、右インデントを3文字左に、1行目インデントを1字下げ
 
 ここまでのできあがりです。
 
-![講習会のお知らせ](pic/word02_02handbill.png)
+{% screenshot word02_02handbill.png "講習会のお知らせ" %}
 
 
 表の作成
@@ -50,23 +49,23 @@ flowplayer_conf:
 
 以下のような表を作り込み、"◇"で始まる箇条書き部分の前に入れましょう。
 
-![表](pic/word02_03table.png)
+{% screenshot word02_03table.png "表" %}
 
 以下の手順で作成していきます。
 
 ### 表の概要
 
-#### セル、行、列、m（行）×n（列）表
+#### セル、行、列、m（行）&times; n（列）表
 
 以下の図がセル、行、列の概念を表しています。それぞれ特定のセル、行、列を選択した状態になっています。それぞれの選択の仕方は実習で学びます。
 
-![](pic/word_col.png)
+{% screenshot word_col.png "空白の 4 &times; 3 表 " %}
 
-これらの表は、 4 個の行と 3 個の列からできています。このような表は 4 × 3 表と呼ばれます。この他にも 5 個の行と 2 個の列からできている表は 5 × 2 表、m個の行とn個の列からできている表をm×n表と呼びます。
+これらの表は、 4 個の行と 3 個の列からできています。このような表は 4 &times; 3 表と呼ばれます。この他にも 5 個の行と 2 個の列からできている表は 5 &times; 2 表、m個の行とn個の列からできている表を**m&times;n表**と呼びます。
 
 #### 表全体の選択
 
-![](pic/word_table.png)
+{% screenshot word_table.png "表全体の選択" %}
 
 このように左上のマーカーにカーソルを近づけると、カーソルの形状が変わります。その状態でクリックすると、表全体を選択することができます。また、ドラッグアンドドロップすると、移動させることもできます。
 
@@ -78,39 +77,39 @@ flowplayer_conf:
 
 10行目"◇主催：首都大学東京"の直前に表を挿入します。空の行を作ってください。直前の行の最後の位置（"〜学んでいきます。"の後）で改行します。また新しくできた行は前の行の左、右インデントの設定を継承しているので、[ホーム] リボン - [段落] の詳細のパネルから通常の設定に戻します。
 
-![インデント](pic/word02_04indent.png)
+{% screenshot word02_04indent.png "インデント" %}
 
-![表挿入位置の指定](pic/word02_05make.png)
+{% screenshot word02_05make.png "表挿入位置の指定" %}
 
 #### 表の作成
 
 今回作る表は列ごとに行の数が違うという表です。作り方は数パターンありますが、今回は5 &times; 4表から作成します。なお、以降の操作では表の中のセルを( 4 行目, 4列目)=(4,4)というように座標で表現していきます。
 
-&#9312; [挿入]リボン - <span><img src="pic/word_tablemake.png" /></span> [表] を押します。
+&#9312; [挿入]リボン - ![表](pic/word_tablemake.png) をクリックします。
 
-![](pic/word02_06make.png)
+{% screenshot word02_06make.png "表の追加" %}
 
-&#9313; 8 &times; 100 のセルが表示されました。その中から必要なセル数を選択します。縦に 5 つ、横に 4 つ、"表（5 行 &times; 4列）"になるようにカーソルを移動し、クリックします。
+&#9313; 8 &times; 10 のセルが表示されました。その中から必要なセル数を選択します。縦に 5 つ、横に 4 つ、"表（5 行 &times; 4列）"になるようにカーソルを移動し、クリックします。
 
-![](pic/word02_07make.png)
+{% screenshot word02_07make.png "表の挿入" %}
 
-![](pic/word02_08make.png)
+{% screenshot word02_08make.png "5 &times; 4 の表を作成" %}
 
 5 &times; 4 の表が作成されました。
 
-![](pic/word02_09make.png)
+{% screenshot word02_09make.png "表示結果" %}
 
 ### 表の加工
 
 以上の操作によって空の表をつくることができました。
 
-![表](pic/word02_10manu.png)
+{% screenshot word02_10manu.png "表" %}
 
 #### セル内文字入力
 
 まず、加工する必要のないセルに文字を入れていきます。以下のように仕上げてください。3 列目（"テーマ"の列）のセルはそれぞれ 1 行目に改行を入れ、 2 行目には 1文字スペースを入れました。
 
-![表](pic/word02_11division.png)
+{% screenshot word02_11division.png "内容を入力" %}
 
 #### セルの分割
 
@@ -118,19 +117,19 @@ flowplayer_conf:
 
 &#9312; 該当となるセル(2,1)から(5,1)までを選択します。セルの左上端にカーソルを移動させると、カーソルが黒矢印に変わるので、その状態で左クリックするとセルを選択することができます。
 
-![](pic/word02_12division.png)
+{% screenshot word02_12division.png "分割するセルを選択" %}
 
-&#9313; [レイアウト]リボン - <span><img src="pic/word_division.png" /></span> [セルの分割] を押します。
+&#9313; [レイアウト]リボン - ![セルの分割](pic/word_division.png) をクリックします。
 
-![](pic/word02_13division.png)
+{% screenshot word02_13division.png "セルの分割" %}
 
-&#9314; 列数を`2`、行数を`4`と入力 - [OK]を押します。
+&#9314; 列数を`2`、行数を`4`と入力 - [OK]をクリックします。
 
-![](pic/word02_14division.png)
+{% screenshot word02_14division.png "分割の設定" %}
 
 セルを分割することができました。
 
-![](pic/word02_15division.png)
+{% screenshot word02_15division.png "表示結果" %}
 
 #### セルの結合
 
@@ -140,47 +139,48 @@ flowplayer_conf:
 
 &#9312; 結合すべきセル(2,1)、(3,1)を選択します。
 
-![表](pic/word02_16comb.png)
+{% screenshot word02_16comb.png "セルの選択" %}
 
-&#9313; [レイアウト]リボン - <span><img src="pic/word_comb.png" /></span> [セルの結合] を押します。
+&#9313; [レイアウト]リボン - ![セルの結合](pic/word_comb.png) をクリックします。
 
-![表](pic/word02_17comb.png)
+{% screenshot word02_17comb.png "セルの結合" %}
 
-![表](pic/word02_18comb.png)
+{% screenshot word02_18comb.png "表示結果" %}
 
 同様に新 1 列目の 4 - 5 行及び、最終列の 2 - 5 行を結合してください。
 
-![表](pic/word02_19comb.png)
+{% screenshot word02_19comb.png "セルの結合" %}
 
 加工したセルにそれぞれ文字を入力します。
 
-![表](pic/word02_20word.png)
+{% screenshot word02_20word.png "内容の入力" %}
 
-"初級編"、"中級編"の文字を縦書きにします。通常の文章と同じように選択 - [レイアウト]リボン - <span><img src="pic/word_tate.png" /></span> [文字列の方向] を押します。
+"初級編"、"中級編"の文字を縦書きにします。通常の文章と同じように選択 - [レイアウト]リボン - ![文字列の方向](pic/word_tate.png) をクリックします。
 
-![表](pic/word02_21word.png)
+{% screenshot word02_21word.png "文字列の方向を変更" %}
 
-![表](pic/word02_22word.png)
+{% screenshot word02_22word.png "縦書きになった文字" %}
 
 #### 列幅の変更
 
 縦の罫線にカーソルをあわせると、カーソルの形が変わるので、その状態でドラッグすると幅を変えることができます。
 
-![表](pic/word02_23wide.png)
+{% screenshot word02_23wide.png "列幅の変更" %}
 
 #### セル内の文字配置
 
 設定をするセルを選択 - [レイアウト]リボン - "配置"パネルから適当な配置を選びます。
 
-![セル内の配置](pic/word02_24point.png)
+{% screenshot word02_24point.png "セル内の文字配置" %}
 
-![セル内の配置](pic/word02_25point.png)
+{% screenshot word02_25point.png "中央揃え" %}
 
 以下のようにします。
 
-![セル内の配置](pic/word02_03table.png)
+{% screenshot word02_03table.png "セル内の配置変更後" %}
 
-最後に表全体を中央揃えにします。表全体を選択することによって、文章と同じように設定できます。
+最後に表全体を中央揃えにします。
+表全体を選択 - [ホーム]リボン - "段落"タブから中央揃えを選択することで、文章と同じように設定できます。
 
 ### 最終仕上がり原稿
 
@@ -199,7 +199,7 @@ Microsoft Wordでは、文書に画像などを挿入することができます
 
 この他にも、クリップアートのように元々用意された画像を使うこともできます。
 
-<span class="label label-info">参考資料</span> [図と文字列](../appendix/clip.html)
+{% appendix ../appendix/clip.html "図と文字列" %}
 
 
 図形を描く
@@ -209,19 +209,19 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 [挿入]リボン - [図形]を押すと、様々な図形が用意されています。
 
-![図形](pic/word02_26figure.png)
+{% screenshot word02_26figure.png "図形" %}
 
 これらの中から選択することによって、簡単に図形を文書の中に描くことができます。
 
 ### 直線と矢印の描画
 
-&#9312; [挿入]リボン - <span><img src="pic/word_figure.png" /></span> [図形] を押します。
+&#9312; [挿入]リボン - ![図形](pic/word_figure.png) をクリックします。
 
-![](pic/word02_27figure.png)
+{% screenshot word02_27figure.png "図形の選択" %}
 
-&#9313; <span><img src="pic/word_straight.png" /></span> [直線] を押します。
+&#9313; ![直線](pic/word_straight.png) をクリックします。
 
-![](pic/word02_28figure.png)
+{% screenshot word02_28figure.png "直線を描く" %}
 
 &#9314; 直線を描き始めたい点からドラッグして線を引き、直線を終わらせたい点でドロップします。
 
@@ -229,21 +229,21 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 線の色や太さ、線の種類などを変更することができます。
 
-設定を変更したい線を選択 - [書式]リボン - <span><img src="pic/word_figure_custom.png" /></span> [図形の枠線] を押します。
+設定を変更したい線を選択 - [書式]リボン - ![図形の枠線](pic/word_figure_custom.png) をクリックします。
 
-![直線](pic/word02_30figure.png)
+{% screenshot word02_30figure.png "図形のカスタマイズ" %}
 
 各項目について、設定を行ってください。
 
-![直線](pic/word02_31figure.png)
+{% screenshot word02_31figure.png "図形の枠線" %}
 
-<span><img src="pic/word_arrow.png" /></span> [矢印] についても直線と同様にして描くことができます。ためしてみましょう。
+![矢印](pic/word_arrow.png) についても直線と同様にして描くことができます。ためしてみましょう。
 
 ### その他の機能
 
 Microsoft Wordでは、直線の他にも様々な図形や文字を描くことができます。
 
-<span class="label label-info">参考資料</span> [図形描画](../appendix/zukei.html)
+{% appendix ../appendix/zukei.html "図形描画" %}
 
 
 課題 2

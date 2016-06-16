@@ -30,11 +30,11 @@ HTMLの書き方（１）
 打ち終わったら、`myhomepage.html` として保存しましょう。
 
 *myhomepage.html*
-![](pic/myhomepage002.png)
+{% screenshot myhomepage002.png "" %}
 
 それでは、今作成したファイルを適当なブラウザで開いてみましょう。
 
-![](pic/myhomepage001.png)
+{% screenshot myhomepage001.png "" %}
 
 HTMLは、**タグ**と呼ばれる目印で文章を構成していきます。
 例えば、`<html>` や `<title>` などがタグです。
@@ -58,7 +58,7 @@ titleタグで囲まれた「はじめてのホームページ作成」という
 
 HTMLには大きく分けて２つの部分から成り立っています。それがheadとbodyです。
 
-![](pic/head-body.png)
+{% screenshot head-body.png "" %}
 
 headは文章のタイトルなど、文章自身の情報を書く部分です。bodyは文章の本体となります。
 
@@ -74,7 +74,7 @@ HTMLの書き方（２）
 
 先ほど作ったファイルを、以下のように編集してみましょう。
 
-![](pic/myhomepage003.png)
+{% screenshot myhomepage003.png "" %}
 
 このようにして、見出しをつけることができます。
 
@@ -100,7 +100,7 @@ HTMLの書き方（２）
 
 先ほど作ったファイルを、以下のように編集してみましょう。
 
-![](pic/myhomepage004.png)
+{% screenshot myhomepage004.png "" %}
 
 このようにして、段落と改行を行うことができます。
 
@@ -125,7 +125,7 @@ HTMLの書き方（２）
 先ほど作ったファイルを、以下のように編集してみましょう。
 
 *myhomepage.html*
-![](pic/myhomepage005.png)
+{% screenshot myhomepage005.png "" %}
 
 このように、箇条書きを行う事も出来ます。
 
@@ -148,7 +148,7 @@ HTMLの書き方（２）
 先ほど作ったファイルを、以下のように編集してみましょう。
 
 *myhomepage.html*
-![](pic/myhomepage006.png)
+{% screenshot myhomepage006.png "" %}
 
 このようにしてハイパーリンクを行うことができます。
 
@@ -162,12 +162,12 @@ HTMLの書き方（２）
 画像を右クリックして「名前を付けて画像を保存」をしておきましょう。
 名前は `img.jpg` としてください。
 
-![](pic/img.jpg)
+{% screenshot img.jpg "" %}
 
 先ほど作ったファイルを、以下のように編集してみましょう。
 
 *myhomepage.html*
-![](pic/myhomepage007.png)
+{% screenshot myhomepage007.png "" %}
 
 このようにして画像を貼りつけることができます。
 

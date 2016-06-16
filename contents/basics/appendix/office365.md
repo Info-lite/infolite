@@ -12,19 +12,19 @@ Office365を初めとして、多くのメーラーでは署名をつけるこ�
 
 &#9312; Office365のトップ画面右上にある歯車のマークから、[オプション] - [設定]を開きます。
 
-![](./pic/signature01.png)
+{% screenshot signature01.png "" %}
 
-![](./pic/signature02.png)
+{% screenshot signature02.png "" %}
 
 &#9313; 署名の欄に必要な情報を打ち込みます。
 
-![](./pic/signature03.png)
+{% screenshot signature03.png "" %}
 
 &#9314; メール作成ウィンドウを開きます。[挿入]から[署名]を選択すると、署名がつきます。
 
-![](./pic/signature04.png)
+{% screenshot signature04.png "" %}
 
-![](./pic/signature05.png)
+{% screenshot signature05.png "" %}
 
 挿入された署名に余分な行間がある場合は，署名がHTMLになってしまっている可能性があります。署名設定で改行する際に
 [Shift] キー を押しながら [Enter] キーを押して改行してください。
@@ -37,10 +37,10 @@ Office365を初めとして、多くのメーラーでは署名をつけるこ�
 
 &#9312;メール作成画面を開きます。[挿入]から[添付ファイル]を選択します。
 
-![](./pic/attach01.png)
+{% screenshot attach01.png "" %}
 
 &#9313;送りたいファイルを選択します。
 
 &#9314;これでファイルが添付されました。この状態でメールを送れば、添付したファイルを相手に送ることができます。
 
-![](./pic/attach02.png)
+{% screenshot attach02.png "" %}
