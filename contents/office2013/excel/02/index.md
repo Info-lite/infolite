@@ -362,27 +362,27 @@ Excelで作成できるグラフには、棒グラフ（ヒストグラム）の
 
 まず、以下のような表を作成しましょう。合計数量と合計金額には数式を入れて求めてみましょう。わからなかったら前回の [数式処理](../01/index.html) を見直しましょう。
 
-{% screenshot graphtype.png "" %}
+{% screenshot graphtype.png "サンプルデータ" %}
 
 #### 折れ線グラフ
 
 複数の系列のデータを比較するときに便利です。
 ここでは、曜日別の売り上げ変化を表しています。
 
-{% screenshot graphtype1.png "" %}
+{% screenshot graphtype1.png "折れ線グラフの場合" %}
 
 #### 円グラフ
 
 全体に対する割合を示すときによく使われます。
 ここでは、合計売り上げ金額の割合を表しています。
 
-{% screenshot graphtype2.png "" %}
+{% screenshot graphtype2.png "円グラフの場合" %}
 
 #### レーダーグラフ
 
 構成要素の偏りなどを見るときに便利な図です。
 
-{% screenshot graphtype3.png "" %}
+{% screenshot graphtype3.png "レーダーグラフの場合" %}
 
 
 第2数値軸を用いた複合グラフの作成
@@ -394,27 +394,27 @@ Excelで作成できるグラフには、棒グラフ（ヒストグラム）の
 
 &#9312; まず、以下の表を作成します。
 
-{% screenshot graphtype5.png "" %}
+{% screenshot graphtype5.png "気温と降水量のデータ" %}
 
 &#9313; 次に、グラフを作成したい領域を選択し、棒グラフを作ります。
 
 &#9314; 次に、グラフの気温の項目を選択（グラフ内の気温のバーをクリック）し、[挿入]リボン - [グラフ]タブ - [折れ線]の中の任意の折れ線を選びます。
 
-{% screenshot graphtype6.png "" %}
+{% screenshot graphtype6.png "グラフの種類の選択" %}
 
 &#9315; さらに、気温の項目を選択したまま、"グラフツール" - [書式]リボン - [現在の選択範囲]タブ - [選択対象の書式設定]をクリックします。
 
 選択対象 `系列"平均気温"` を選択します。
 
-{% screenshot graphtype7.png "" %}
+{% screenshot graphtype7.png "平均気温を選択" %}
 
 &#9316; [系列のオプション]の中の"使用する軸"を[第2軸]にします。
 
-{% screenshot graphtype8.png "" %}
+{% screenshot graphtype8.png "第2軸を設定" %}
 
 これで第二数値軸を設定することができました。
 
-{% screenshot graphtype9.png "" %}
+{% screenshot graphtype9.png "第2軸追加状態" %}
 
 グラフが作成されたら、これまでと同じように編集を加えましょう。
 
