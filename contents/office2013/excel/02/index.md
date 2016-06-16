@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: 表計算ソフトによるデータ処理 （２）
 date: 2016-03-15 17:02:54 +0900
@@ -417,6 +417,8 @@ Excelで作成できるグラフには、棒グラフ（ヒストグラム）の
 {% screenshot graphtype9.png "" %}
 
 グラフが作成されたら、これまでと同じように編集を加えましょう。
+
+{% screenshot graphtypefin.png "グラフの完成例" %}
 
 
 Excelの表・図のWord文書への貼りつけ(ペースト)
