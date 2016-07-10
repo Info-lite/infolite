@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 相関分析
-date: 2016-06-22 15:11:31 +0900
+date: 2016-07-11 01:29:58 +0900
 purposes:
     - 相関分析について学ぶ
     - 相関関係を実際に調べてみる
@@ -172,9 +172,41 @@ purposes:
 また、相関係数の絶対値によって、その相関の強さがわかります。
 
 -   0.7 &le; | *r* | 強い相関あり
+
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_08.png" alt="強い正の相関を示す散布図 (r = 0.826)" class="img-responsive" />
+</div>
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_-08.png" alt="強い負の相関を示す散布図 (r = -0.79)" class="img-responsive" />
+</div>
+</div>
+
 -   0.4 &le; | *r* | &lt; 0.7 中程度の相関あり
+
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_05.png" alt="中程度の正の相関を示す散布図 (r = 0.539)" class="img-responsive" />
+</div>
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_-05.png" alt="中程度の負の相関を示す散布図 (r = -0.60)" class="img-responsive" />
+</div>
+
 -   0.2 &le; | *r* | &lt; 0.4 弱い相関あり
+
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_03.png" alt="弱い正の相関を示す散布図 (r = 0.306)" class="img-responsive" />
+</div>
+</div>
+
 -   | *r* | &lt; 0.2 ほとんど相関なし
+
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<img src="pic/correlation_0.png" alt="ほとんど相関がない散布図 (r = 0.192)" class="img-responsive" />
+</div>
+</div>
 
 ### 練習 2
 
