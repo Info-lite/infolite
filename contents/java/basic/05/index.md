@@ -15,12 +15,12 @@ purposes:
 
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-*WhileLoopSample.java*
+*WhileLoopSample.java*<br>
 ![](./pic/WhileLoopSample.java.png)
 
 実行すると、以下のように表示されます。
 
-実行結果
+*実行結果*
 
     x=0
     x=1
@@ -47,12 +47,12 @@ while文
 
 では、次のように改良してみましょう。
 
-*WhileLoopSample.java*
+*WhileLoopSample.java*<br>
 ![](./pic/WhileLoopSample.java.Mod1.png)
 
 実行すると、以下のようになります。
 
-実行結果
+*実行結果*
 
     x = 0
     x = 1
@@ -93,12 +93,12 @@ break文
 決まった回数の反復を行う場合、より分かりやすい方法があります。
 まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
 
-*ForLoopSample.java*
+*ForLoopSample.java*<br>
 ![](./pic/ForLoopSample.java.png)
 
 実行すると、以下のようになります。
 
-実行結果
+*実行結果*
 
     1回目
     2回目
@@ -123,7 +123,7 @@ for文
 
 では、次のようにプログラムを改良してみましょう。
 
-*ForLoopSample.java*
+*ForLoopSample.java*<br>
 ![](./pic/ForLoopSample.java.Mod1.png)
 
 まず、`for` 文の中のみで使う変数は、上のように宣言することができます。

@@ -16,7 +16,7 @@ purposes:
 前回と同様に、ソースコードを打ち込み、実行してみましょう。
 htmlファイルは自分で作成してください。
 
-*CalcApplet.java*
+*CalcApplet.java*<br>
 ![](./pic/CalcApplet.java.png)
 
 左の2つのテキストボックスに数字を入力しボタンをクリックすると、その和が表示されます。
@@ -27,7 +27,7 @@ htmlファイルは自分で作成してください。
 
 以下のソースコードを入力・実行し、マウスをいろいろと操作してみましょう。
 
-*MouseApplet.java*
+*MouseApplet.java*<br>
 ![](./pic/MouseApplet.java.png)
 
 このように、マウスの動きを捉えるリスナーもあります。
@@ -42,7 +42,7 @@ awtには他にもいろいろなものが用意されています。
 
 ソースコードを打ち込み、実行してみましょう。
 
-*CountUpApplet.java*
+*CountUpApplet.java*<br>
 ![](./pic/CountUpApplet.java.png)
 
 

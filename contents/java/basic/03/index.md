@@ -24,7 +24,7 @@ purposes:
 
 以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-*Name.java*
+*Name.java*<br>
 ![](./pic/Name.java.png)
 
 実行すると、以下のようになります。
@@ -46,7 +46,7 @@ purposes:
 
 次に、数値の入力をしてみましょう。
 
-*AdditionSample.java*
+*AdditionSample.java*<br>
 ![](./pic/AdditionSample.java.png)
 
 入力できたら、コンパイルして実行してみましょう。
@@ -88,7 +88,7 @@ purposes:
 
 次のようなプログラムを考えてみましょう。前のソースコードを少し改良しただけです。
 
-*DivideSample.java*
+*DivideSample.java*<br>
 ![](./pic/DivideSample.java.png)
 
 このプログラムは、入力した２つの値の商を求めるプログラムです。
@@ -107,7 +107,7 @@ purposes:
 もちろんこの答えは正しいのですが、答えを `2.5` と返してほしいときはどうすればよいのでしょうか。
 それでは、以下のようにプログラムを改良してみましょう。
 
-*DivideSample.java*
+*DivideSample.java*<br>
 ![](./pic/DivideSample.java.Mod1.png)
 
 変数`a`, `b`, `ans` を `double` 型で宣言するよう変更しました。この `double` 型は、小数を含む計算する場合に用いられる変数型です。
@@ -123,7 +123,7 @@ purposes:
 
 次に、以下のように改良してみましょう。
 
-*DivideSample.java*
+*DivideSample.java*<br>
 ![](./pic/DivideSample.java.Mod2.png)
 
 変数 `b` を `int` 型にし、他の変数 `a`, `ans` は `double` 型です。`int` は整数を扱う場合に用いる変数型です。
@@ -141,7 +141,7 @@ purposes:
 
 では、次のように改良してみましょう。
 
-*DivideSample.java*
+*DivideSample.java*<br>
 ![](./pic/DivideSample.java.Mod3.png)
 
 今度は、変数 `ans` に代入する式に、 `(double)` が付け加わっています。

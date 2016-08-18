@@ -14,10 +14,10 @@ purposes:
 
 次のようなプログラムを実行してみましょう。
 
-*ClickCountApplet.java*
+*ClickCountApplet.java*<br>
 ![](./pic/ClickCountApplet.java.png)
 
-*click_count.html*
+*click_count.html*<br>
 ![](./pic/click_count.html.png)
 
 ボタンを押した回数を表示するだけのプログラムです。
@@ -60,7 +60,7 @@ purposes:
 それでは、以下のようなプログラムを実行してみましょう。
 htmlファイルは上の例を参考に自分で作成してみましょう。
 
-*ChangeColorApplet.java*
+*ChangeColorApplet.java*<br>
 ![](./pic/ChangeColorApplet.java.png)
 
 ボタンが複数ある場合、`getSource()` を用いて、どのボタンが押されたかを認識します。

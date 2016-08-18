@@ -23,12 +23,13 @@ purposes:
 
 <span class="label label-info">参考資料</span> [コンパイルと実行（Eclipse）](../../appendix/eclipse.html)
 
-*CalcSample1.java*
+*CalcSample1.java*<br>
 ![](./pic/CalcSample1.java.png)
 
 実行すると、以下のような結果が表示されます。
 
-    実行結果
+*実行結果*
+
     3
 
 ### 算術演算子
@@ -90,7 +91,7 @@ purposes:
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 前の`CalcSample1.java`を少し修正しただけです。
 
-*CalcSample2.java*
+*CalcSample2.java*<br>
 ![](./pic/CalcSample2.java.png)
 
 ### 変数とは
@@ -204,7 +205,7 @@ purposes:
 
 次に、以下のソースコードを打ち込み、コンパイルをして実行しましょう。
 
-*CalcSample3.java*
+*CalcSample3.java*<br>
 ![](./pic/CalcSample3.java.png)
 
 4行目を見てみましょう。このように、代入するものは **数式** でも使えます。
@@ -214,7 +215,7 @@ purposes:
 
 さらに、以下のように修正してみましょう。
 
-*CalcSample3.java*
+*CalcSample3.java*<br>
 ![](./pic/CalcSample3.java.Mod1.png)
 
 このように、右辺に **変数** もしくは **変数の入った数式** でも代入できます。
