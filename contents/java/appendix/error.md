@@ -88,7 +88,7 @@ Hello.java:2: エラー: 無効なメソッド宣言です。戻り値の型が�
 
 ## 例：綴りミスその４
 ~~~
-public class Hallo {
+public class Hello {
  public static void main( String[] args ) {
   System.out.printIn("Hello world!");
  }
@@ -259,7 +259,7 @@ Sample.java:8: エラー: 例外IOExceptionは報告されません。スロー�
 ~~~
 ### 解説
 IOExceptionとは、エラーの種類の1つです。予期しない入力などによってプログラムが正しく動作しなくなったとき、IOExceptionというエラーを発生させ**例外処理**を行えるようにするのが、throws IOExceptionの役割です。
-通常のキーボード入力でIOExcptionが発生することはないですが、BufferedReader等は本来キーボードからの入力に限らない処理を行っているため、記述しないとエラーが出ます。
+通常のキーボード入力でIOExcptionが発生することはありませんが、BufferedReader等は本来キーボードからの入力に限らない処理を行っているため、記述しないとエラーが出ます。
 
 ## 例：static
 ~~~
@@ -429,5 +429,5 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 ### 解説
 このエラーは配列の存在しないエリアを参照した際に起こります。
 配列を **new int[4]** で定義すると、配列arrは **arr[0]** から **arr[3]** まで作成されます。
-しかしこの例ではfor文の「int i = 0; i <= 4」により変数iが0から4の値をとるので、6行目のarr[i]が**arr[4]**となる状況が生まれています。
+しかしこの例では「for(int i = 0; i <= 4; i = i + 1)」により変数iが0から4の値をとるので、6行目のarr[i]が**arr[4]**となる状況が生まれています。
 for文で配列を操作するときは、配列のサイズとfor文で変数が変化する範囲をよく見ましょう。
