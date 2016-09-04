@@ -179,7 +179,7 @@ purposes:
 
 {% screenshot revisequery3.png "" %}
 
-"商品名"フィールドが"コピー用紙"に変わりました。
+"商品名"フィールドが"はがき"に変わりました。
 
 {% screenshot revisequery4.png "" %}
 
