@@ -1,7 +1,7 @@
-﻿---
+---
 layout: page
 title: 表計算ソフトによるデータ処理（１）
-date: 2016-06-08 02:17:38 +0900
+date: 2016-09-30 10:02:21 +0900
 purposes:
     - Microsoft Excelを用いた表計算ソフト利用の基本の習得
 flowplayer_conf:

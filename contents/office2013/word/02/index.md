@@ -1,7 +1,7 @@
-﻿---
+---
 layout: page
 title: ワードプロセッサによる文書編集（２）
-date: 2016-05-26 05:54:43 +0900
+date: 2016-09-30 10:02:26 +0900
 purposes:
     - Microsoft Wordでの表や図、図形の扱いの習得
 flowplayer_conf:
