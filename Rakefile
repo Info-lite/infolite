@@ -25,5 +25,5 @@ end
 desc "Deploy staging"
 task :staging do
     sh "jekyll build"
-    sh "rsync -rlczv --delete ./_site/ tmu@infolit.uec.tmu.ac.jp:/srv/www/infolit.uec.tmu.ac.jp/staging"
+    sh "rsync -rlczv --delete ./_site/ /srv/www/infolit.uec.tmu.ac.jp/staging"
 end
