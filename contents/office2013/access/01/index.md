@@ -214,7 +214,7 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 {% screenshot readjoin2.png "" %}
 
-&#9313; [ホーム]リボン - [表示] - ![](./pic/databaseview.png)の（表示）の部分をクリックして、[デザインビュー]に切り替えます。
+&#9313; [ホーム]リボン - [表示] - ![](./pic/layoutview.png)の（表示）の部分をクリックして、[デザインビュー]に切り替えます。
 
 {% screenshot readjoin3.png "" %}
 
