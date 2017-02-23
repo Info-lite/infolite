@@ -1,10 +1,31 @@
-.jekyll-metadata
-.sass-cache
 *.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
 *.swp
 *~
 .DS_Store
-coverage
+
+## Jekyll files:
+.jekyll-metadata
+.sass-cache
 /_site
-tmp/*
-/vendor
+
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
