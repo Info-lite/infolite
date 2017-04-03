@@ -18,6 +18,6 @@ eラーニング
 情報倫理講習会
 --------------
 
-* [情報倫理講習会スライド](./infoethics/infomation_ethics.pdf)
+* 情報倫理講習会資料 [日本語](./infoethics/information_ethics_ja.pdf) [English](./infoethics/information_ethics_en.pdf)
 * [情報倫理講習会ビデオ](./infoethics/)
 
