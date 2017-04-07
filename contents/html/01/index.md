@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML（１）
-date: 2016-09-12 16:13:45 +0900
+date: 2017-04-07 19:18:46 +0900
 purposes:
     - HTMLの基本的な構造や書き方の理解
 ---
@@ -180,3 +180,10 @@ HTMLの書き方（２）
 
 HTMLを用いて、自己紹介のページを作成してみましょう。
 
+参考リンク
+----------
+
+### 学内サイト
+
+-   [TMUNER](http://www.comp.tmu.ac.jp/tmuner/)
+    -   [個人用ホームページ（学内向け）](http://www.comp.tmu.ac.jp/tmuner/www/make001.html)
