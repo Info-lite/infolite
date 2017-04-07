@@ -21,7 +21,7 @@ flowplayer_conf:
 
 次のファイルをダウンロードして、Excelで開いてください。そして、表を完成させてみましょう。
 
--   [いちご狩りファイル(ichigo.xls)](./ichigo.xls)
+-   [いちご狩りファイル(ichigo.xlsx)](./ichigo.xlsx)
 
 {% screenshot itigo.png "いちご狩りファイルの初期状態" %}
 

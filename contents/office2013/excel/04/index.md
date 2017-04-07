@@ -25,7 +25,7 @@ purposes:
 課題：成績表の作成
 ------------
 
-[seiseki.xls](seiseki.xls) を基に、以下のような成績表を作ってみましょう。
+[seiseki.xlsx](seiseki.xlsx) を基に、以下のような成績表を作ってみましょう。
 
 {% screenshot seiseki01.png "成績表" %}
 
