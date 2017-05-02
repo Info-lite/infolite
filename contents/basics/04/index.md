@@ -363,8 +363,8 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
 -   [Yahoo! Japan](http://www.yahoo.co.jp/)
 -   [google](http://www.google.co.jp/)
 -   [All About](http://allabout.co.jp/)
--   [WEB Directory](http://park18.wakwak.com/‾directorys/)
+-   [WEB Directory](http://park18.wakwak.com/~directorys/)
 -   [Bing](http://www.bing.com/)
--   [国民のための情報セキュリティサイト](http://www.soumu.go.jp/joho_tsusin/security/)（総務省）
+-   [国民のための情報セキュリティサイト](http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/)（総務省）
 -   [社団法人 著作権情報センター](http://www.cric.or.jp/index.html)
 
