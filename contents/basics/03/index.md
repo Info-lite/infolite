@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ネットワークの仕組みと情報検索
-date: 2017-04-17 15:29:36 +0900
+date: 2017-05-22 18:34:26 +0900
 purposes:
     - ネットワークの仕組みを学ぶ
     - 情報検索について学ぶ
@@ -478,7 +478,7 @@ Webではさまざまな人が情報を発信しているため、その情報�
 
 -   [Yahoo! Japan](http://www.yahoo.co.jp/)
 -   [google](http://www.google.co.jp/)
--   [WEB Directory](http://park18.wakwak.com/?directorys/)
+-   [WEB Directory](http://park18.wakwak.com/~directorys/)
 -   [Bing](http://www.bing.com/)
 -   [CiNii Books](http://ci.nii.ac.jp/books/)
 -   [NDL-OPAC](https://ndlopac.ndl.go.jp/)
@@ -486,7 +486,7 @@ Webではさまざまな人が情報を発信しているため、その情報�
 -   [近代デジタルライブラリー](http://kindai.ndl.go.jp/)（国立国会図書館）
 -   [青空文庫](http://www.aozora.gr.jp/)
 -   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/index.html)
--   [ToClip for Windows](http://www5f.biglobe.ne.jp/?t-susumu/)
+-   [ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
 -   [Flashタイピング 【寿司打 - SushiDA -】](http://typing.sakura.ne.jp/sushida/)
 -   [e-typing](http://www.e-typing.ne.jp/)
 
