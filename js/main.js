@@ -37,7 +37,7 @@ $(function() {
     });
 
     // environment message
-    if ('localhost:4000' == location.host) {
+    if ('localhost:4000' == location.host || '127.0.0.1:4000' == location.host) {
         $("body").prepend('<div class="alert alert-warning" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>ローカル環境で表示しています</strong></div>');
     } else if ('staging' == location.pathname.split('/')[1]) {
         $("body").prepend('<div class="alert alert-warning" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>検証環境で表示しています</strong></div>');
