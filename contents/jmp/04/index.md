@@ -77,29 +77,29 @@ purposes:
 
 このように列を作成してください。
 
-![](./pic/04_06newline.png)
+{% screenshot 04_06newline.png "[性別]の列を作成" %}
 
-![](./pic/04_07newline.png)
+{% screenshot 04_07newline.png "[意見]の列を作成" %}
 
-![](./pic/04_08input.png)
+{% screenshot 04_08input.png "[性別]列、[意見]列のデータを入力" %}
 
 &#9313; メニュー[分析] - [二変量の関係]をクリックします。
 
-![](./pic/04_09analysis.png)
+{% screenshot 04_09analysis.png "[二変量の関係]をクリック" %}
 
 &#9314; [列の選択]の中にある[性別]をクリック - [X,説明変数]をクリック - [列の選択]の中にある[意見]をクリック - [Y,目的変数]をクリック - [OK]をクリックします。
 
-![](./pic/04_10analysis.png)
+{% screenshot 04_10analysis.png "[性別]を[X,説明変数]、[意見]を[Y,目的変数]に割り当て" %}
 
-![](./pic/04_11analysis.png)
+{% screenshot 04_11analysis.png "二変量の関係 分析結果" %}
 
 &#9314; [▼分割表]の[▼]をクリック - [度数]以外のチェックを外します。
 
-![](./pic/04_12analysis.png)
+{% screenshot 04_12analysis.png "[度数]のみチェック" %}
 
 #### 出力結果
 
-![](./pic/04_13analysis.png)
+{% screenshot 04_13analysis.png "分割表の表示" %}
 
 このようにして分割表を表示することができます。
 
@@ -172,31 +172,31 @@ purposes:
 
 このように列を作成してください。
 
-![](./pic/04_17newline.png)
+{% screenshot 04_17newline.png "[店舗]の列を作成" %}
 
-![](./pic/04_18newline.png)
+{% screenshot 04_18newline.png "[商品]の列を作成" %}
 
-![](./pic/04_19newline.png)
+{% screenshot 04_19newline.png "[売り上げ数]の列を作成" %}
 
-![](./pic/04_20input.png)
+{% screenshot 04_20input.png "データの入力" %}
 
 &#9313; メニュー[分析] - [二変量の関係]をクリックします。
 
-![](./pic/04_21analysis.png)
+{% screenshot 04_21analysis.png "[二変量の関係]をクリック" %}
 
 &#9314; [列の選択]の中にある[店舗]をクリック - [X,説明変数]をクリック - [列の選択]の中にある[商品]をクリック - [Y,目的変数]をクリック - [列の選択]の中にある[売り上げ数]をクリック - [度数]をクリック - [OK]をクリックします。
 
-![](./pic/04_22analysis.png)
+{% screenshot 04_22analysis.png "[店舗]を[X,説明変数]、[商品]を[Y,目的変数]、[売り上げ数]を[度数]に割り当て" %}
 
 &#9315; [▼分割表]の[▼]をクリック - [度数]以外のチェックを外します。
 
-![](./pic/04_23analysis.png)
+{% screenshot 04_23analysis.png "二変量の関係 分析結果" %}
 
-![](./pic/04_24analysis.png)
+{% screenshot 04_24analysis.png "[度数]のみチェック" %}
 
 #### 出力結果
 
-![](./pic/04_25analysis.png)
+{% screenshot 04_25analysis.png "Pearson検定 p値0.1631" %}
 
 p値 = 0.1631 が求まりました。
 p値 = 0.1631 &gt; 有意水準&alpha; = 0.05 であるので、帰無仮説H<sub>0</sub>は棄却されません。
@@ -217,7 +217,7 @@ i&times;j 表の自由度 = df = (i - 1) &times; (j - 1)となります。
 
 練習問題1 が生データに相当します。表 1 の出力結果を見ます。
 
-![](./pic/04_26analysis.png)
+{% screenshot 04_26analysis.png "Pearson検定 p値0.0833" %}
 
 p値 = 0.0833 &gt; 有意水準&alpha; = 0.05 であるので、帰無仮説H<sub>0</sub>（男性と女性の意見は同じである）は棄却できません。
 よって、男性と女性で地域の愛着に違いがあるとはいえません。
@@ -257,25 +257,25 @@ p値 = 0.0833 &gt; 有意水準&alpha; = 0.05 であるので、帰無仮説H<su
 
 このように列を作成してください。
 
-![](./pic/04_28input.png)
+{% screenshot 04_28input.png "データの入力" %}
 
 &#9313; メニュー[分析] - [二変量の関係]をクリックします。
 
-![](./pic/04_29analysis.png)
+{% screenshot 04_29analysis.png "[二変量の関係]をクリック" %}
 
 &#9314; [列の選択]の中にある[店舗]をクリック - [X,説明変数]をクリック - [列の選択]の中にある[商品]をクリック - [Y,目的変数]をクリック - [列の選択]の中にある[売り上げ数]をクリック - [度数]をクリック - [OK]をクリックします。
 
-![](./pic/04_30analysis.png)
+{% screenshot 04_30analysis.png "[店舗]を[X,説明変数]、[商品]を[Y,目的変数]、[売り上げ数]を[度数]に割り当て" %}
 
 &#9315; [▼分割表]の[▼]をクリック - [度数]以外のチェックを外します。
 
-![](./pic/04_31analysis.png)
+{% screenshot 04_31analysis.png "二変量の関係 分析結果" %}
 
-![](./pic/04_32analysis.png)
+{% screenshot 04_32analysis.png "[度数]のみチェック" %}
 
 #### 出力結果
 
-![](./pic/04_33analysis.png)
+{% screenshot 04_33analysis.png "Fisherの正確検定 両側検定 p値<.0001" %}
 
 p値&lt; .0001* が求まりました。&lt; .0001*は0.0001よりも十分に小さいという意味です。
 p値&lt; 0.0001 &lt; 有意水準 &alpha; = 0.05 であるので、帰無仮説H<sub>0</sub>（Ｃ店とＤ店で売り上げ数は同じである）は棄却されます。

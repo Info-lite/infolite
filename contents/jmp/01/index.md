@@ -11,7 +11,7 @@ purposes:
 JMPについて
 -----------
 
-![](./pic/01_01jmp-pro12.1.png)
+{% screenshot 01_01jmp-pro12.1.png "JMPスプラッシュスクリーン" %}
 
 JMP（ジャンプ）は、[SAS Institute](./pic/http://www.sas.com/ja_jp/) が開発したビジュアル探索型データ分析ソフトウェアです。
 
