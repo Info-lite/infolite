@@ -196,7 +196,7 @@ purposes:
 
 #### 出力結果
 
-{% screenshot 04_25analysis.png "Pearson検定 p値0.1631" %}
+{% screenshot 04_25analysis.png "Pearsonカイ二乗検定 p値0.1631" %}
 
 p値 = 0.1631 が求まりました。
 p値 = 0.1631 &gt; 有意水準&alpha; = 0.05 であるので、帰無仮説H<sub>0</sub>は棄却されません。
@@ -217,7 +217,7 @@ i&times;j 表の自由度 = df = (i - 1) &times; (j - 1)となります。
 
 練習問題1 が生データに相当します。表 1 の出力結果を見ます。
 
-{% screenshot 04_26analysis.png "Pearson検定 p値0.0833" %}
+{% screenshot 04_26analysis.png "Pearsonのカイ二乗検定 p値0.0833" %}
 
 p値 = 0.0833 &gt; 有意水準&alpha; = 0.05 であるので、帰無仮説H<sub>0</sub>（男性と女性の意見は同じである）は棄却できません。
 よって、男性と女性で地域の愛着に違いがあるとはいえません。

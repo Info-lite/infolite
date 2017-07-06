@@ -89,7 +89,7 @@ purposes:
 
 #### 出力結果
 
-{% screenshot 05_12analysis.png "Pearson検定 p値<.0001" %}
+{% screenshot 05_12analysis.png "Pearsonのカイ二乗検定 p値<.0001" %}
 
 p値 &lt; 0.0001 が求まりました。p値 &lt; 0.0001 &lt; 有意水準&alpha; = 0.05 なので、帰無仮説H<sub>0</sub>は棄却されます。
 よって、各クラスの修学旅行先の希望の傾向には違いがあるといえます。
