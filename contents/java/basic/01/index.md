@@ -27,19 +27,19 @@ purposes:
 
     javac Hello.java
 
-![](./pic/hello01.png)
+{% screenshot hello01.png "javac Hello.java の入力" %}
 
 うまくできたら、次は以下のように入力します。
 
     java Hello
 
-![](./pic/hello02.png)
+{% screenshot hello02.png "java Hello の入力" %}
 
 うまくいくと、以下のように表示されます。
 
     Hello
 
-![](./pic/hello03.png)
+{% screenshot hello03.png "Hello の出力" %}
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
