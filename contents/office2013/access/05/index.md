@@ -19,14 +19,14 @@ purposes:
 -   "学年ＩＤ"、"学年"、"月会費"に何度も同じデータを入力しなければなりません。
 -   "学年"や"月会費"に変更があると、全部の名称や金額を修正する必要があります。
 
-{% screenshot rs1.png "" %}
+{% screenshot rs1.png "1つのテーブルでの管理例" %}
 
 #### 2つのテーブルに分けて管理する場合
 
 -   何度もデータを入力しなくて良いので、入力ミスが防げます。
 -   "学年"や"月会費"が変更されても、"種類マスター"テーブルでそれぞれ 1 カ所ずつ修正すれば大丈夫です。
 
-{% screenshot rs2.png "" %}
+{% screenshot rs2.png "2つのテーブルでの管理例" %}
 
 前回から引き続いて、"Clist.accdb"を使用します。開いてください。
 
@@ -37,25 +37,25 @@ purposes:
 
 &#9313; [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]をクリックします。
 
-{% screenshot relationship1.png "" %}
+{% screenshot relationship1.png "リレーションシップ アイコンの場所" %}
 
 &#9314; テーブルタブから"サークル名簿"と"月会費"を選択 - [追加]をクリックします。
 
 &#9315; "サークル名簿"と"月会費"がリレーションシップウィンドウに追加されたら、[閉じる]をクリックします。
 
-{% screenshot relationship2.png "" %}
+{% screenshot relationship2.png "テーブルの追加" %}
 
-{% screenshot relationship3.png "" %}
+{% screenshot relationship3.png "テーブル追加後" %}
 
 &#9316; "サークル名簿"の"学年ID"を"月会費"の"学年ID"にドラッグアンドドロップします。
 
-{% screenshot relationship4.png "" %}
+{% screenshot relationship4.png "学年IDのリレーションシップ作成" %}
 
 &#9317; すると、リレーションシップの作成ウィンドウが現れるので、[作成]をクリックします。
 
-{% screenshot relationship5.png "" %}
+{% screenshot relationship5.png "リレーションシップ 作成ウィンドウ" %}
 
-{% screenshot relationship6.png "" %}
+{% screenshot relationship6.png "リレーションシップ作成後" %}
 
 "学年ID"同士が線で繋がりました。これがリレーションシップが作成された証です。上書き保存し、一旦閉じます。
 
@@ -64,11 +64,11 @@ purposes:
 
 &#9312; [作成]タブ - [クエリ] - [クエリデザイン]をクリックします。
 
-{% screenshot rsquery1.png "" %}
+{% screenshot rsquery1.png "クエリデザイン アイコンの場所" %}
 
 &#9313; "サークル名簿"と"月会費"を選択 - [追加]をクリックして、追加した後に[閉じる]をクリックします。
 
-{% screenshot rsquery2.png "" %}
+{% screenshot rsquery2.png "テーブルの追加" %}
 
 先ほど繋いだリレーションシップが表示されています。
 &#9314; 以下のフィールドを"サークル名簿"と"月会費"からそれぞれ追加します。
@@ -81,17 +81,17 @@ purposes:
 -   サークル名簿：退会
 -   月会費：月会費
 
-{% screenshot rsquery3.png "" %}
+{% screenshot rsquery3.png "フィールドの追加" %}
 
 &#9315; ![](../pic/databaseview.png) ([表示])もしくは ![](../pic/action.png) ([実行])をクリックします。
 
-{% screenshot rsquery4.png "" %}
+{% screenshot rsquery4.png "クエリ実行後" %}
 
 &#9316; "朝倉紗希"の"学年ＩＤ"の値を `2` から `1` に変更 - [Enter]をクリックします。
 
-{% screenshot rsquery5.png "" %}
+{% screenshot rsquery5.png "学年IDを`1`に変更" %}
 
-{% screenshot rsquery6.png "" %}
+{% screenshot rsquery6.png "学年ID変更後" %}
 
 "学年"が `学部１年` に変更され、また"月会費"も `&yen;500` に変更されました。
 これはリレーションシップによって、"サークル名簿"の"学年ＩＤ"と"月会費"の"学年ＩＤ"が関連づけられたことによって、
@@ -99,7 +99,7 @@ purposes:
 
 &#9317; "朝倉紗希"の"学年ＩＤ"の値を `1` から `2` に戻します。
 
-{% screenshot rsquery7.png "" %}
+{% screenshot rsquery7.png "学年IDを`2`に変更" %}
 
 &#9318; "会員管理"という名前で[名前を付けて保存]してください。
 
@@ -110,15 +110,15 @@ purposes:
 
 &#9313; "月会費"フィールドの右隣に `請求金額:[月会費]*12` と入力し、[Enter]をクリックします。
 
-{% screenshot calculate1.png "" %}
+{% screenshot calculate1.png "フィールドの追加入力" %}
 
 &#9314; "退会"フィールドの抽出条件に `no` と入力し、[Enter]をクリックします。
 
-{% screenshot calculate2.png "" %}
+{% screenshot calculate2.png "[退会]フィールドの抽出条件に`no`を入力" %}
 
 &#9315; ![](../pic/databaseview.png) ([表示])もしくは ![](../pic/action.png) ([実行])をクリックします。
 
-{% screenshot calculate3.png "" %}
+{% screenshot calculate3.png "クエリ実行後" %}
 
 &#9316; "請求金額"が年額になったことと"退会"していない会員だけが表示されていることを確認してください。
 
@@ -131,7 +131,7 @@ purposes:
 
 &#9312; [作成]タブ - [レポート] - [レポート ウィザード]をクリックします。
 
-{% screenshot group1.png "" %}
+{% screenshot group1.png "レポート ウィザード アイコンの場所" %}
 
 &#9313; "クエリ:請求管理"を指定し、以下のフィールドを選択可能なフィールドから選択したフィールドに移動させてください。
 
@@ -143,77 +143,77 @@ purposes:
 
 &#9314; [次へ]をクリックします。
 
-{% screenshot group2.png "" %}
+{% screenshot group2.png "レポートウィザード フィールド選択" %}
 
 &#9315; "byサークル名簿"を選択 - [次へ]をクリックします。
 
-{% screenshot group3.png "" %}
+{% screenshot group3.png "レポートウィザード 表示方法の指定" %}
 
 &#9316; "学年"を選択 - [＞]をクリックして右側へ移動 - [次へ]をクリックします。
 
-{% screenshot group4.png "" %}
+{% screenshot group4.png "レポートウィザード グループレベルの指定" %}
 
 &#9317; [集計のオプション]をクリックします。
 
-{% screenshot group6.png "" %}
+{% screenshot group6.png "レポートウィザード 集計方法の指定" %}
 
 &#9318; "月会費"と"請求金額"フィールドの"合計"をチェック - "詳細および集計値"を選択 - [OK]をクリックします。
 
-{% screenshot group7.png "" %}
+{% screenshot group7.png "集計のオプション" %}
 
 &#9319; [次へ]をクリックします。
 
-{% screenshot group8.png "" %}
+{% screenshot group8.png "集計のオプション設定後" %}
 
 &#9320; 好きなスタイルを選択 - "縦"を選択 - [次へ]をクリックします。
 
-{% screenshot group9.png "" %}
+{% screenshot group9.png "レポートウィザード 印刷形式の選択" %}
 
 &#9321; `学年別集計` と入力 - "レポートをプレビューする"にチェック - [完了]をクリックします。
 
-{% screenshot group10.png "" %}
+{% screenshot group10.png "レポートウィザード レポート名の入力" %}
 
 このように学年別の集計表ができました。
 
-{% screenshot group11.png "" %}
+{% screenshot group11.png "レポートウィザード 設定完了後" %}
 
 
 ### コントロールプロパティの変更：通貨記号の表示
 
 &#9312; "デザインビュー"に切り替えます。
 
-&#9313; 詳細セクションの"請求金額"、学年フッターセクションの 2つの"=Sum"、レポートフッターセクシションの 2つの"=Sum"の合計 5 箇所を選択します。
+&#9313; 詳細セクションの"請求金額"、学年フッターセクションの 2つの"=Sum"、レポートフッターセクションの 2つの"=Sum"の合計 5 箇所を選択します。
 
-{% screenshot money1.png "" %}
+{% screenshot money1.png "項目の選択" %}
 
 &#9314; "プロパティシート" - [書式]タブ - 書式の[通貨]を選択します。
 
 &#9315; ![](../pic/reportview.png) ([表示])をクリックします。
 
-{% screenshot money2.png "" %}
+{% screenshot money2.png "書式の[通貨]を選択" %}
 
-{% screenshot money3.png "" %}
+{% screenshot money3.png "表示アイコンクリック後" %}
 
 
 ### コントロールの配置とサイズ変更
 
 よく見てみると、"請求金額"の合計の部分の表示がおかしいことに気付きます。最後にここを直してみましょう。
 
-{% screenshot money4.png "" %}
+{% screenshot money4.png "請求金額合計表示" %}
 
 &#9312; デザインビュー"に切り替えます。
 
 &#9313; ページヘッダーセクションと詳細セクションの"月会費"と"請求金額"、学年セクションとレポートフッターセクションの"=Sum"を、後で項目が縦に揃うように移動します。その際、詳細セクションの"氏名"の右側も合わせて縮めます。
 
-{% screenshot money5.png "" %}
+{% screenshot money5.png "セクションの位置調整" %}
 
 &#9314; 詳細セクションの"請求金額"、学年セクションとレポートフッターセクションの右側の"=Sum"を右に少し広げます。
 
-{% screenshot money6.png "" %}
+{% screenshot money6.png "セクションの大きさ調整" %}
 
 &#9315; ![](../pic/reportview.png) ([表示])をクリックします。
 
-{% screenshot money7.png "" %}
+{% screenshot money7.png "表示アイコンクリック後" %}
 
 これで、正しく金額が表示されるようになりました。上書き保存してください。
 

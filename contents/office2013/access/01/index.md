@@ -26,7 +26,7 @@ purposes:
 Microsoft Accessについて
 ------------------------
 
-{% screenshot accesslogo.png "" %}
+{% screenshot accesslogo.png "スプラッシュスクリーン" %}
 
 Microsoft Accessは、Microsoft社が開発したリレーション（関係）型データベースソフトウェアです。
 大量のデータを入力、保存することができ、そのデータを必要に応じた形で表示したり、印刷したりすることができます。
@@ -80,25 +80,25 @@ Microsoft Accessの基本操作
 
 -   ホーム：フォントの設定や並び替え、検索などを行う事が出来ます。
 
-{% screenshot ribbon1.png "" %}
+{% screenshot ribbon1.png "ホームリボン" %}
 
 -   作成：テーブル、フォーム、レポートおよびクエリやマクロはここで作成する事が出来ます。
 
-{% screenshot ribbon2.png "" %}
+{% screenshot ribbon2.png "作成リボン" %}
 
 -   外部データ：他のAccessやExcelなどのデータをインポートしたり、ExcelやPDF形式のファイルにエクスポートしたりできます。
 
-{% screenshot ribbon3.png "" %}
+{% screenshot ribbon3.png "外部データリボン" %}
 
 -   データベース ツール：マクロの設定や、リレーションシップの設定などを行う事が出来ます。
 
-{% screenshot ribbon4.png "" %}
+{% screenshot ribbon4.png "データベース ツール リボン" %}
 
 パネルの右下にある ![](./pic/details.png) をクリックすと、より詳しく各項目を設定することができます。
 
-{% screenshot ribbon_details.png "" %}
+{% screenshot ribbon_details.png "項目詳細設定のアイコン" %}
 
-{% screenshot fontwindow.png "" %}
+{% screenshot fontwindow.png "セルの表示 詳細設定" %}
 
 また、カーソルを使用したいコマンドの上で静止させると、そのコマンドの説明を見ることができます。
 
@@ -114,13 +114,13 @@ Microsoft Accessの基本操作
 
 &#9312; [ファイルメニュー] - [開く]をクリック - 先ほど保存した"Clist(fin)"を選択 - [開く]をクリックします。
 
-{% screenshot open1.png "" %}
+{% screenshot open1.png "開く" %}
 
-{% screenshot open2.png "" %}
+{% screenshot open2.png "セキュリティの警告表示" %}
 
 &#9313; セキュリティの警告が出ているので解除します。[コンテンツの有効化]をクリックします。
 
-{% screenshot security1.png "" %}
+{% screenshot security1.png "セキュリティの警告表示 コンテンツの有効化" %}
 
 
 ### ナビゲーションウィンドウの操作
@@ -129,7 +129,7 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 カテゴライズの方法とフィルタの設定がここで行えます。
 
-{% screenshot navi1.png "" %}
+{% screenshot navi1.png "ナビゲーション ウィンドウ" %}
 
 
 ### テーブルを開く
@@ -141,21 +141,21 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; すべてのAccessオブジェクトから[サークル名簿]を開きます。
 
-{% screenshot readlist1.png "" %}
+{% screenshot readlist1.png "ナビゲーションウィンドウ [サークル名簿]" %}
 
-{% screenshot readlist2.png "" %}
+{% screenshot readlist2.png "[サークル名簿] 内容" %}
 
 &#9313; [ホーム]リボン（もしくは[データシート]リボン） - [表示] - ![](./pic/designview.png)（デザインビュー）をクリックしてデザインビューに切り替えます。
 
-{% screenshot readlist3.png "" %}
+{% screenshot readlist3.png "[表示] デザインビュー アイコンの位置" %}
 
-{% screenshot readlist4.png "" %}
+{% screenshot readlist4.png "デザインビュー" %}
 
 &#9314; デザインビューに切り替わりました。デザインビューは、テーブル以外にもあり、レイアウトの変更やフィールドの設定変更などを行うことができます。
 
 &#9315; [ホーム]リボン（もしくは[デザイン]リボン） - [表示] - ![](./pic/databaseview.png)（データシートビュー）をクリックすると、元に戻ります。
 
-{% screenshot readlist5.png "" %}
+{% screenshot readlist5.png "[表示] データシートビュー アイコンの位置" %}
 
 
 ### フォーム
@@ -165,19 +165,19 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; すべてのAccessオブジェクトから[会員情報]を開きます。
 
-{% screenshot readinfo1.png "" %}
+{% screenshot readinfo1.png "ナビゲーションウィンドウ [会員情報]" %}
 
-{% screenshot readinfo2.png "" %}
+{% screenshot readinfo2.png "[会員情報] 内容" %}
 
 &#9313; [ホーム]リボン - [表示] - ![](./pic/layoutview.png)の（[表示]）の部分をクリックして、[デザインビュー]をクリックします。
 
-{% screenshot readinfo3.png "" %}
+{% screenshot readinfo3.png "[表示] デザインビュー アイコン" %}
 
-{% screenshot readinfo4.png "" %}
+{% screenshot readinfo4.png "デザインビュー" %}
 
 &#9314; デザインビューに切り替わりました。[ホーム]リボン（もしくは[デザイン]リボン） - [表示] - ![](./pic/formview.png)（データシートビュー）をクリックすると、元に戻ります。
 
-{% screenshot readinfo5.png "" %}
+{% screenshot readinfo5.png "[表示] フォームビュー アイコンの位置" %}
 
 
 ### クエリ
@@ -187,20 +187,20 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; すべてのAccessオブジェクトから[入会日と所属]を開きます。
 
-{% screenshot readcourse1.png "" %}
+{% screenshot readcourse1.png "ナビゲーションウィンドウ [入会日と所属]" %}
 
-{% screenshot readcourse2.png "" %}
+{% screenshot readcourse2.png "[入会日と所属] 内容" %}
 
 &#9313; [ホーム]リボン - [表示] - ![](./pic/designview.png)（デザインビュー）をクリックしてデザインビューに切り替えます。
 
-{% screenshot readcourse3.png "" %}
+{% screenshot readcourse3.png "[表示] デザインビュー アイコン" %}
 
-{% screenshot readcourse4.png "" %}
+{% screenshot readcourse4.png "デザインビュー" %}
 
 &#9314; デザインビューに切り替わりました。
 [ホーム]リボン（もしくは[デザイン]リボン） - [表示] - ![](./pic/databaseview.png)（データシートビューもしくは[実行]）をクリックすると、元に戻ります。
 
-{% screenshot readcourse5.png "" %}
+{% screenshot readcourse5.png "[表示] データシートビュー アイコン" %}
 
 
 ### レポート
@@ -210,20 +210,20 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; すべてのAccessオブジェクトのフォームにある[入会日リスト]を開きます。
 
-{% screenshot readjoin1.png "" %}
+{% screenshot readjoin1.png "ナビゲーションウィンドウ [入会日リスト]" %}
 
-{% screenshot readjoin2.png "" %}
+{% screenshot readjoin2.png "[入会日リスト] 内容" %}
 
 &#9313; [ホーム]リボン - [表示] - ![](./pic/layoutview.png)の（表示）の部分をクリックして、[デザインビュー]に切り替えます。
 
-{% screenshot readjoin3.png "" %}
+{% screenshot readjoin3.png "[表示] デザインビュー アイコン" %}
 
-{% screenshot readjoin4.png "" %}
+{% screenshot readjoin4.png "デザインビュー" %}
 
 &#9314; デザインビューに切り替わりました。
 [ホーム]リボン（もしくは[デザイン]リボン） - [表示] - ![](./pic/reportview.png)（[データシートビュー]）をクリックすると、元に戻ります。
 
-{% screenshot readjoin5.png "" %}
+{% screenshot readjoin5.png "[表示] データシートビュー アイコンの位置" %}
 
 
 データベースの作成
@@ -233,13 +233,13 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; [ファイルメニュー] - [新規]をクリックします。
 
-{% screenshot new1.png "" %}
+{% screenshot new1.png "[新規]" %}
 
 &#9313; [空のデスクトップデータベース]を選択し、ファイル名入力欄に `Clist` と入力し[作成]をクリックします。
 
-{% screenshot new2.png "" %}
+{% screenshot new2.png "[空のデスクトップデータベース]" %}
 
-{% screenshot new3.png "" %}
+{% screenshot new3.png "新しいデータベースの作成" %}
 
 &#9314; 新しいデータベースが作成されました。
 
@@ -252,9 +252,9 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9313; 名前を付けて保存ウィンドウが表示されるので `サークル名簿` と入力し、[OK]をクリックします。
 
-{% screenshot field1.png "" %}
+{% screenshot field1.png "名前を付けて保存" %}
 
-{% screenshot field2.png "" %}
+{% screenshot field2.png "保存後" %}
 
 &#9314; フィールド名の項目に以下の 11 個の要素を入力していきます。
 
@@ -270,7 +270,7 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 -   学部コース
 -   退会
 
-{% screenshot field3.png "" %}
+{% screenshot field3.png "入力後" %}
 
 これでフィールド名の入力が終わりました。次に、データを入力する際に便利な機能を各フィールドに付与していきます。
 
@@ -279,21 +279,21 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; "氏名"をクリック - フィールドプロパティのふりがなの項目をクリックします。横に表示された[&hellip;]というボタンをクリックします。
 
-{% screenshot furigana1.png "" %}
+{% screenshot furigana1.png "ふりがなウィザード 起動手順" %}
 
 &#9313; 警告が出るのでテーブルを保存します。
 
-{% screenshot furigana2.png "" %}
+{% screenshot furigana2.png "ふりがなウィザード 警告" %}
 
 &#9314; ふりがなウィザードの"既存のフィールドを使用する"にチェックを入れ、[フリガナ]を選択します。
 
 &#9315; さらにふりがなの文字種に[全角カタカナ]を選択し、[完了]をクリックします。
 
-{% screenshot furigana3.png "" %}
+{% screenshot furigana3.png "ふりがなウィザード 設定内容" %}
 
 &#9316; フィールドのプロパティを変更します。[OK]をクリックします。
 
-{% screenshot furigana4.png "" %}
+{% screenshot furigana4.png "ふりがなウィザード 確認メッセージ" %}
 
 これで、"氏名"のフィールドに入力すると、"フリガナ"のフィールドに全角カタカナでふりがなが入力されるようになりました。
 
@@ -302,25 +302,25 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; "郵便番号"をクリック - フィールドプロパティの住所入力支援の項目をクリックします。横に表示された[&hellip;]をクリックします。
 
-{% screenshot zipcode1.png "" %}
+{% screenshot zipcode1.png "住所入力支援ウィザード 起動手順" %}
 
 &#9313; 住所入力支援ウィザードの郵便番号に[郵便番号]を選択 - [次へ]をクリックします。
 
-{% screenshot zipcode2.png "" %}
+{% screenshot zipcode2.png "郵便番号列の設定" %}
 
 &#9314; 住所の構成の中から"都道府県と住所の 2 分割"にチェック - 都道府県に[都道府県]を選択 - 住所に[市区町村]を選択 - [次へ]をクリックします。
 
-{% screenshot zipcode3.png "" %}
+{% screenshot zipcode3.png "住所の構成設定" %}
 
 "郵便番号"に自分の家の郵便番号を入力してみましょう。"都道府県"と"市区町村"に住所が表示されます。
 
 &#9315; [完了]をクリックします。
 
-{% screenshot zipcode4.png "" %}
+{% screenshot zipcode4.png "動作確認" %}
 
 &#9316; フィールドのプロパティを変更します。[OK]をクリックします。
 
-{% screenshot zipcode5.png "" %}
+{% screenshot zipcode5.png "変更保存" %}
 
 上で試したように、これで"郵便番号"を入力すると、"都道府県"と"市区町村"に住所が入力されるようになりました。
 
@@ -329,14 +329,14 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; "学年ID"をクリック - フィールドサイズを `255` から `5` と入力し直します。
 
-{% screenshot fieldsize.png "" %}
+{% screenshot fieldsize.png "[学年ID]のフィールドサイズを5に修正" %}
 
 
 ### IMEモードの変更
 
 &#9312; "携帯TEL"をクリック - IME 入力モードを[オン]から[オフ]に変更します。
 
-{% screenshot tel1.png "" %}
+{% screenshot tel1.png "[携帯TEL]のIME 入力モードを[オフ]に変更" %}
 
 これで"携帯TEL"に入力しようとしたとき、日本語入力がオフになります。
 
@@ -345,25 +345,25 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; "入会年月日"の右横にある"テキスト型"を"日付/時刻型"に変更します。
 
-{% screenshot join1.png "" %}
+{% screenshot join1.png "[入会年月日]の[テキスト型]を[日付/時刻型]に変更" %}
 
 &#9313; "入会年月日"をクリック - 定型入力の項目をクリック - 横に表示された[&hellip;]をクリックします。
 
-{% screenshot join2.png "" %}
+{% screenshot join2.png "定型入力の設定" %}
 
 &#9314; 警告が出るのでテーブルを保存します。
 
-{% screenshot join3.png "" %}
+{% screenshot join3.png "保存の警告" %}
 
 &#9315; 定型入力名の中の[日付（S）]を選択 - [次へ]をクリックします。
 
-{% screenshot join4.png "" %}
+{% screenshot join4.png "[日付（S）]を選択" %}
 
 &#9316; さらに、[次へ] - [完了]をクリックします。
 
-{% screenshot join5.png "" %}
+{% screenshot join5.png "形式の設定" %}
 
-{% screenshot join6.png "" %}
+{% screenshot join6.png "完了画面" %}
 
 これで、"入会年月日"に入力したとき、年/月/日の形で入力されるようになりました。
 
@@ -372,15 +372,15 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9312; "学年ID"の右横にある"テキスト型"を"数値型"に変更します。
 
-{% screenshot grade1.png "" %}
+{% screenshot grade1.png "[学年ID]の[テキスト型]を[数値型]に変更" %}
 
 &#9313; 次に、"退会"の右横にある"テキスト型"を"Yes/No型"に変更します。
 
-{% screenshot quit1.png "" %}
+{% screenshot quit1.png "[退会]の右横にある[テキスト型]を[Yes/No型]に変更" %}
 
 &#9314; "退会"をクリック - [ルックアップ]タブの"表示コントロール"を"チェックボックス"に変更します。
 
-{% screenshot quit2.png "" %}
+{% screenshot quit2.png "[ルックアップ]タブ [表示コントロール]を[チェックボックス]に変更" %}
 
 
 ### データの入力
@@ -396,7 +396,7 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 -   学年ＩＤ：1
 -   学部コース：都市教養学部都市教養学科生命科学コース
 
-{% screenshot yamamoto1.png "" %}
+{% screenshot yamamoto1.png "データシートビュー" %}
 
 
 ### Excelデータのインポート
@@ -405,52 +405,52 @@ Access2013では、ウィンドウ左に表示される"ナビゲーション �
 
 &#9313; [外部データ]リボン - [インポート] - ![](./pic/excelimport.png)をクリックします。
 
-{% screenshot excelimport1.png "" %}
+{% screenshot excelimport1.png "Excelアイコンの場所" %}
 
 &#9314; [参照]ボタンをクリックし、先ほどダウンロードした"Clist.xlsx"を選択します。
 
 &#9315; "レコードのコピーを次のテーブルに追加する"にチェックを入れ、"サークル名簿"を選択し、[OK]をクリックします。
 
-{% screenshot excelimport2.png "" %}
+{% screenshot excelimport2.png "外部データの取り込み" %}
 
 &#9316; [次へ]をクリックします。
 
-{% screenshot excelimport3.png "" %}
+{% screenshot excelimport3.png "スプレッドシート インポート ウィザード" %}
 
 &#9317; [完了]をクリックします。
 
-{% screenshot excelimport4.png "" %}
+{% screenshot excelimport4.png "完了画面" %}
 
 &#9318; [閉じる]をクリックしてインポートを完了します。
 
-{% screenshot excelimport5.png "" %}
+{% screenshot excelimport5.png "外部データの取り込み 完了画面" %}
 
 このようにExcelのファイル内に保存されているデータをAccessにインポートすることができます。
 
-{% screenshot excelimport6.png "" %}
+{% screenshot excelimport6.png "データシートビュー インポート後" %}
 
 
 ### Accessテーブルのインポート
 
 &#9312; [外部データ]タブ - [インポート] - ![](./pic/accessimport.png)をクリックします。
 
-{% screenshot accessimport1.png "" %}
+{% screenshot accessimport1.png "Accessアイコンの場所" %}
 
 &#9313; [参照]ボタンをクリックし、先ほどダウンロードした"gradetype.accdb"を選択し、[OK]をクリックします。
 
-{% screenshot accessimport2.png "" %}
+{% screenshot accessimport2.png "外部データの取り込み" %}
 
 &#9314; "月会費"を選択 - [OK]をクリックします。
 
-{% screenshot accessimport3.png "" %}
+{% screenshot accessimport3.png "オブジェクトのインポート" %}
 
 &#9315; [閉じる]をクリックしてインポートを完了します。
 
-{% screenshot accessimport4.png "" %}
+{% screenshot accessimport4.png "外部データの取り込み 完了画面" %}
 
 月会費
 
-{% screenshot accessimport5.png "" %}
+{% screenshot accessimport5.png "インポート後" %}
 
 このように元々作られていたAccessのテーブルをインポートし、クエリを用いて関連づけをすることができます。
 

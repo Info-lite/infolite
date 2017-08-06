@@ -18,19 +18,19 @@ purposes:
 
 &#9312; [作成]タブ - [クエリ] - [クエリデザイン]をクリックします。
 
-{% screenshot newquery1.png "" %}
+{% screenshot newquery1.png "クエリデザイン アイコンの場所" %}
 
 &#9313; テーブルから"サークル名簿"を選択 - [追加]をクリックします。
 
-{% screenshot newquery2.png "" %}
+{% screenshot newquery2.png "[サークル名簿]テーブルの追加" %}
 
 &#9314; クエリ デザイン ウィンドウにテーブルが追加されました。[閉じる]をクリックします。
 
-{% screenshot newquery3.png "" %}
+{% screenshot newquery3.png "テーブル追加後" %}
 
 &#9315; "サークル名簿"の"会員ＩＤ"をダブルクリックします。すると、フィールドに会員ＩＤが追加されます。
 
-{% screenshot newquery4.png "" %}
+{% screenshot newquery4.png "フィールドに会員ＩＤを追加" %}
 
 &#9316; 同様に以下を追加します。
 
@@ -40,19 +40,19 @@ purposes:
 -   学部コース
 -   退会
 
-{% screenshot newquery5.png "" %}
+{% screenshot newquery5.png "フィールド追加後" %}
 
 &#9317; ![](../pic/databaseview.png) （[表示]）もしくは ![](../pic/action.png) （[実行]）をクリックします。
 
-{% screenshot newquery6.png "" %}
+{% screenshot newquery6.png "実行アイコンの場所" %}
 
-{% screenshot newquery7.png "" %}
+{% screenshot newquery7.png "クエリ実行後" %}
 
 &#9318; ![](../pic/quicksave.png) をクリックして、"入会日と所属"という名前でクエリを保存します。
 
-{% screenshot newquery8.png "" %}
+{% screenshot newquery8.png "保存アイコンの場所" %}
 
-{% screenshot newquery9.png "" %}
+{% screenshot newquery9.png "クエリ保存後" %}
 
 このようにして、"入会年月日"と"学部コース"、"退会"情報に特化したクエリを作ることができました。
 
@@ -63,11 +63,11 @@ purposes:
 
 &#9313; "フリガナ"フィールドの並べ替えをクリック - "昇順"を選択します。
 
-{% screenshot sortname1.png "" %}
+{% screenshot sortname1.png "[フリガナ]フィールドの並べ替えを[昇順]に設定" %}
 
 &#9314; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックし表示を切り替え、上書き保存します。
 
-{% screenshot sortname2.png "" %}
+{% screenshot sortname2.png "クエリ実行後" %}
 
 "フリガナ"の昇順、すなわちアイウエオ順に並べ替えられました。
 
@@ -78,29 +78,29 @@ purposes:
 
 &#9313; テーブルから"サークル名簿"を選択 - [追加]をクリックします。
 
-{% screenshot abstract1.png "" %}
+{% screenshot abstract1.png "[サークル名簿]テーブルの追加" %}
 
 &#9314; フィールドリストのタイトルバーである"サークル名簿"をダブルクリックします。すると、サークル名簿内の全てのフィールドが選択状態になります。
 
 &#9315; 選択したもの全てをデザイングリッドにドラッグアンドドロップします。
 
-{% screenshot abstract2.png "" %}
+{% screenshot abstract2.png "項目の追加" %}
 
-{% screenshot abstract3.png "" %}
+{% screenshot abstract3.png "追加後" %}
 
 &#9316; "フリガナ"フィールドを選択 - キーボードの[Delete]キーをクリックして削除します。
 
-{% screenshot abstract4.png "" %}
+{% screenshot abstract4.png "[フリガナ]フィールドの削除" %}
 
 &#9317; 同様に"携帯TEL"フィールドも削除します。
 
 &#9318; "都道府県"フィールドの抽出条件に `東京都` と入力 - [Enter]キーをクリックします。
 
-{% screenshot abstract5.png "" %}
+{% screenshot abstract5.png "[都道府県]フィールドの抽出条件に`東京都`を入力" %}
 
 &#9319; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-{% screenshot abstract6.png "" %}
+{% screenshot abstract6.png "クエリ実行後" %}
 
 これで、東京都の会員だけが抽出されました。`東京都会員` と入力して、保存します。
 
@@ -111,11 +111,11 @@ purposes:
 
 &#9313; "都道府県"フィールドの「または」に `神奈川県` と入力 - [Enter]キーをクリックします。
 
-{% screenshot or1.png "" %}
+{% screenshot or1.png "[都道府県]フィールドの「または」に`神奈川県`を入力" %}
 
 &#9314; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-{% screenshot or2.png "" %}
+{% screenshot or2.png "クエリ実行後" %}
 
 これで、東京都と神奈川県の会員だけが抽出されました。
 
@@ -128,11 +128,11 @@ purposes:
 
 &#9314; "退会"フィールドの抽出条件に半角で `yes` と入力 - [Enter]キーをクリックします。
 
-{% screenshot and1.png "" %}
+{% screenshot and1.png "[退会]フィールドの抽出条件に`yes`を入力" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-{% screenshot and2.png "" %}
+{% screenshot and2.png "クエリ実行後" %}
 
 これで、東京都でかつ退会した会員だけが抽出されました。
 
@@ -147,13 +147,13 @@ purposes:
 
 &#9314; "学部コース"フィールドの抽出条件に `都市教養学部*` と入力 - [Enter]キーをクリックします。
 
-{% screenshot wildcard1.png "" %}
+{% screenshot wildcard1.png "[学部コース]フィールドの抽出条件に`都市教養学部*`を入力" %}
 
-{% screenshot wildcard2.png "" %}
+{% screenshot wildcard2.png "入力後" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-{% screenshot wildcard3.png "" %}
+{% screenshot wildcard3.png "クエリ実行後" %}
 
 これで、都市教養学部の会員だけが抽出されました。
 
@@ -166,19 +166,19 @@ purposes:
 
 &#9314; "入会年月日"フィールドの抽出条件に半角で `Between #2013/1/1# And #2013/12/31#` と入力 - [Enter]キーをクリックします。
 
-{% screenshot between1.png "" %}
+{% screenshot between1.png "[入会年月日]フィールドの抽出条件に`Between #2013/1/1# And #2013/12/31#`を入力" %}
 
-{% screenshot between2.png "" %}
+{% screenshot between2.png "入力後" %}
 
 &#9315; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
-{% screenshot between3.png "" %}
+{% screenshot between3.png "クエリ実行後" %}
 
 これで、2013 年 1 月 1 日から 2013 年 12 月 31 日までに入会した会員だけが抽出されました。[ファイル]タブ - [オブジェクトに名前を付けて保存]をクリックし、"2013年入会会員"という名前で保存します。
 
-{% screenshot between4.png "" %}
+{% screenshot between4.png "保存アイコンの場所" %}
 
-{% screenshot between5.png "" %}
+{% screenshot between5.png "名前を付けて保存" %}
 
 
 課題

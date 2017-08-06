@@ -20,14 +20,14 @@ purposes:
 
 多側テーブルの外部キーフィールドに、一側テーブルに存在しないデータを入力することはできません。
 
-{% screenshot explainchain1.png "" %}
+{% screenshot explainchain1.png "外部キー入力制限の例" %}
 
 
 ### 一側テーブルでの主キーの更新・削除の制限
 
 一側テーブルの主キーと多側テーブルの外部キーに同じデータが存在しており、それらが結びついている場合、一側テーブルの主キーフィールドを更新・削除することはできません。
 
-{% screenshot explainchain2.png "" %}
+{% screenshot explainchain2.png "主キー更新・削除制限の例" %}
 
 前回から引き続いて、"pencil.accdb"を使用します。開いてください。
 
@@ -36,38 +36,38 @@ purposes:
 
 &#9312; [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]をクリックします。
 
-{% screenshot refintegrity1.png "" %}
+{% screenshot refintegrity1.png "リレーションシップ アイコンの場所" %}
 
 &#9313; 適当な結合線をダブルクリックします。
 
-{% screenshot refintegrity2.png "" %}
+{% screenshot refintegrity2.png "結合線の選択" %}
 
 &#9314; "参照整合性"にチェック - [OK]をクリックします。
 
-{% screenshot refintegrity3.png "" %}
+{% screenshot refintegrity3.png "[参照整合性]にチェック" %}
 
-{% screenshot refintegrity4.png "" %}
+{% screenshot refintegrity4.png "チェック入力後" %}
 
 一側テーブルに"1"とつき、多側テーブルに"∞"がつきます。
 
 &#9315; 同様に全ての結合線に関して、"参照整合性"にチェックを入れます。
 
-{% screenshot refintegrity5.png "" %}
+{% screenshot refintegrity5.png "全ての結合線に[参照整合性]チェックを入力後" %}
 
 
 ### 多側テーブルでの外部キーの入力の制限を確認する
 
 &#9312; "受注明細"を開きます。
 
-{% screenshot orderdetails1.png "" %}
+{% screenshot orderdetails1.png "受注明細 内容" %}
 
 &#9313; 先頭のレコードの"商品コード"フィールドの値を `S-500` に変更します。
 
-{% screenshot orderdetails2.png "" %}
+{% screenshot orderdetails2.png "[商品コード]フィールドの値を`S-500`に変更" %}
 
 &#9314;. ![](../pic/quicksave.png) ([更新])をクリックします。
 
-{% screenshot orderdetails3.png "" %}
+{% screenshot orderdetails3.png "外部キー入力制限 エラー表示" %}
 
 &#9315; "商品マスター"テーブルに"S-500"がないので、エラーがおきました。
 
@@ -78,15 +78,15 @@ purposes:
 
 &#9312; "商品マスター"を開きます。
 
-{% screenshot goods1.png "" %}
+{% screenshot goods1.png "商品マスター 内容" %}
 
 &#9313; 先頭のレコードの"商品コード"フィールドの値を `V-500` に変更します。
 
-{% screenshot goods2.png "" %}
+{% screenshot goods2.png "[商品コード]フィールドの値を`V-500`に変更" %}
 
 &#9314; ![](../pic/quicksave.png)をクリックします。
 
-{% screenshot goods3.png "" %}
+{% screenshot goods3.png "主キー更新制限 エラー表示" %}
 
 &#9315; "受注明細"テーブルで"B-500"を使用しているので、エラーがおきました。
 
@@ -97,11 +97,11 @@ purposes:
 
 &#9312; 先頭のレコードを削除します。先頭のレコードを選択し、右クリック - [レコードの削除]をクリックします。
 
-{% screenshot delgoods1.png "" %}
+{% screenshot delgoods1.png "レコードの削除 選択" %}
 
 &#9313; "受注明細"テーブルで"B-500"を使用しているので、エラーが起きました。
 
-{% screenshot delgoods2.png "" %}
+{% screenshot delgoods2.png "主キー削除制限 エラー表示" %}
 
 &#9314; [OK]をクリックします。
 
@@ -113,30 +113,30 @@ purposes:
 
 #### 連鎖更新
 
-{% screenshot explainchain3.png "" %}
+{% screenshot explainchain3.png "連鎖更新の例" %}
 
 #### 連鎖削除
 
-{% screenshot explainchain4.png "" %}
+{% screenshot explainchain4.png "連鎖削除の例" %}
 
 
 ### 連鎖更新と連鎖削除を設定する
 
 &#9312; [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]をクリックします。
 
-{% screenshot chain1.png "" %}
+{% screenshot chain1.png "リレーションシップ アイコンの場所" %}
 
 &#9313; 適当な結合線をダブルクリックします。
 
-{% screenshot chain2.png "" %}
+{% screenshot chain2.png "結合線の選択" %}
 
 &#9314; "フィールドの連鎖更新"と"レコードの連鎖削除"にチェック - [OK]をクリックします。
 
-{% screenshot chain3.png "" %}
+{% screenshot chain3.png "[フィールドの連鎖更新]と[レコードの連鎖削除]にチェック" %}
 
 &#9315; 全ての結合線に関して、"フィールドの連鎖更新"と"レコードの連鎖削除"にチェックを付けます。
 
-{% screenshot chain4.png "" %}
+{% screenshot chain4.png "[フィールドの連鎖更新]と[レコードの連鎖削除]にチェック入力後" %}
 
 ### 連鎖更新を確認する
 
@@ -144,21 +144,21 @@ purposes:
 
 2 件目と 5 件目のレコードの"商品コード"フィールドの値が `B-500` であることを確認してください。
 
-{% screenshot chainrefinteg1.png "" %}
+{% screenshot chainrefinteg1.png "[商品コード]フィールドの値確認" %}
 
 &#9313; 次に"商品マスター"を開きます。
 
-{% screenshot chainrefinteg2.png "" %}
+{% screenshot chainrefinteg2.png "ナビゲーションウィンドウ 商品マスター" %}
 
 &#9314; "商品コード"の `B-500` を `V-500` に変更します。
 
-{% screenshot chainrefinteg3.png "" %}
+{% screenshot chainrefinteg3.png "[商品コード]の`B-500`を`V-500`に変更" %}
 
 ![](../pic/quicksave.png) をクリックします。
 
 &#9315; "受注明細"の 2 件目と 5 件目のレコードの"商品コード"フィールドの値が `V-500` に変わったことを確認します。
 
-{% screenshot chainrefinteg4.png "" %}
+{% screenshot chainrefinteg4.png "[受注明細]の[商品コード]フィールド 値変更を確認" %}
 
 これで連鎖更新を確認することができました。
 
@@ -169,27 +169,27 @@ purposes:
 
 2 件目と 5 件目のレコードが `V-500` であることを確認します。
 
-{% screenshot delrefinteg1.png "" %}
+{% screenshot delrefinteg1.png "レコード 値確認" %}
 
 &#9313; 一番下までスクロールした後に、レコードが 90 件表示されていることを確認します。
 
-{% screenshot delrefinteg2.png "" %}
+{% screenshot delrefinteg2.png "レコード件数確認" %}
 
 &#9314; "受注明細"を閉じます。
 
 &#9315; 次に"商品マスター"を開きます。
 
-{% screenshot delrefinteg3.png "" %}
+{% screenshot delrefinteg3.png "商品マスター 内容" %}
 
 &#9316; "商品コード"フィールドの値が `V-500` のレコードを削除します。
 
-{% screenshot delrefinteg4.png "" %}
+{% screenshot delrefinteg4.png "`V-500`のレコードを削除" %}
 
 &#9317; [はい]をクリックします。
 
-{% screenshot delrefinteg5.png "" %}
+{% screenshot delrefinteg5.png "削除確認ウィンドウ" %}
 
-{% screenshot delrefinteg6.png "" %}
+{% screenshot delrefinteg6.png "削除後" %}
 
 &#9318; "商品マスター"を閉じます。
 
@@ -197,11 +197,11 @@ purposes:
 
 &#9320; 元の 2 件目と 5 件目のレコードだった `V-500` が削除されていることを確認します。
 
-{% screenshot delrefinteg7.png "" %}
+{% screenshot delrefinteg7.png "レコード削除確認" %}
 
 &#9321; 一番下までスクロールした後に、レコードが 88 件表示されていることを確認します。
 
-{% screenshot delrefinteg8.png "" %}
+{% screenshot delrefinteg8.png "レコード件数確認" %}
 
 &#9322; 閉じます。
 

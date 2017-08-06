@@ -31,7 +31,7 @@ purposes:
 リレーションシップを形成する際に 1 件のレコードに対し、複数件のレコードを対応させる場合、 1 件のレコードが入力されている方を一側テーブルと言い、複数件のレコードが入力されている方を多側テーブルと言います。
 メインとなる一側テーブルには、主キーを設定します。多側テーブルの同様の情報が入力されたフィールドを外部キーと呼び、主キーと外部キーを一致させることによってリレーションシップを形成します。
 
-{% screenshot key.png "" %}
+{% screenshot key.png "主キーと外部キーの例" %}
 
 ### リレーションシップの種類
 
@@ -45,7 +45,7 @@ purposes:
 
 一側テーブルからの 1 件のレコードと多側テーブルからの 1 件のレコードを組み合わせたリレーションシップです。
 
-{% screenshot 11table.png "" %}
+{% screenshot 11table.png "一対一リレーションシップの例" %}
 
 #### 多対多リレーションシップ
 
@@ -53,7 +53,7 @@ purposes:
 
 一つめの一側テーブルの主キーと多側テーブルの外部キーがリレーションシップされ、さらに別の一側テーブルの主キーと多側テーブルの外部キーがリレーションシップします。
 
-{% screenshot 1t1table.png "" %}
+{% screenshot 1t1table.png "多対多リレーションシップの例" %}
 
 
 ### リレーションシップを作成する
@@ -62,15 +62,15 @@ purposes:
 
 "pencil.accdb"からリレーションシップを作成していきます。
 
-{% screenshot open.png "" %}
+{% screenshot open.png "pencil.accdb 初期状態" %}
 
 &#9312; [データベース ツール]タブ - [リレーションシップ] - [リレーションシップ]をクリックします。
 
-{% screenshot relationship1.png "" %}
+{% screenshot relationship1.png "リレーションシップ アイコンの場所" %}
 
 &#9313; [リレーションシップ ツール] - [デザイン]タブ - [リレーションシップ] - [テーブルの表示]をクリックします。
 
-{% screenshot relationship2.png "" %}
+{% screenshot relationship2.png "テーブルの表示 アイコンの場所" %}
 
 &#9314; "テーブルの表示"ウィンドウから以下のテーブルを選択 - [追加]をクリック - [閉じる]をクリックします。
 
@@ -80,29 +80,29 @@ purposes:
 -   商品マスター
 -   地域
 
-{% screenshot relationship3.png "" %}
+{% screenshot relationship3.png "テーブルの表示ウィンドウ" %}
 
-{% screenshot relationship4.png "" %}
+{% screenshot relationship4.png "テーブル追加後" %}
 
 &#9315; "顧客マスター"テーブルの全てのフィールドリストが見えるようにサイズを拡大します。
 
-{% screenshot relationship5.png "" %}
+{% screenshot relationship5.png "[顧客マスター]テーブルのフィールドリストの拡大" %}
 
 &#9316;. "受注"テーブルのフィールドリストの下に"地域"テーブルのフィールドリストを移動します。
 
-{% screenshot relationship6.png "" %}
+{% screenshot relationship6.png "[地域]テーブルのフィールドリストの移動" %}
 
 &#9317; "顧客マスター"テーブルの"顧客ＩＤ"フィールドを"受注"テーブルの"顧客ＩＤ"フィールドにドラッグアンドドロップします。
 
-{% screenshot relationship7.png "" %}
+{% screenshot relationship7.png "[顧客ID]フィールドをドラッグアンドドロップ" %}
 
 &#9318; [作成]をクリックします。
 
-{% screenshot relationship8.png "" %}
+{% screenshot relationship8.png "リレーションシップ 作成ウィンドウ" %}
 
 &#9319; 結合線を確認してください。
 
-{% screenshot relationship9.png "" %}
+{% screenshot relationship9.png "リレーションシップ作成後" %}
 
 &#9320; 同様に以下のリレーションシップを作成します。
 
@@ -110,7 +110,7 @@ purposes:
 -   "受注明細"テーブルと"商品マスター"テーブル："商品コード"フィールド
 -   "地域"テーブルと"顧客マスター"テーブル："地域コード"フィールド
 
-{% screenshot relationship10.png "" %}
+{% screenshot relationship10.png "各リレーションシップ作成後" %}
 
 &#9321; 上書き保存をして、リレーションシップのウィンドウを閉じます。
 
@@ -121,9 +121,9 @@ purposes:
 
 &#9312; [作成]タブ - [クエリ] - [クエリデザイン]をクリックします。
 
-{% screenshot createquery1.png "" %}
+{% screenshot createquery1.png "クエリデザイン アイコンの場所" %}
 
-{% screenshot createquery2.png "" %}
+{% screenshot createquery2.png "テーブルの表示" %}
 
 &#9313; テーブルタブから以下のテーブルを選択 - [追加]をクリック - [閉じる]をクリックします。
 
@@ -132,19 +132,19 @@ purposes:
 -   受注明細
 -   商品マスター
 
-{% screenshot createquery3.png "" %}
+{% screenshot createquery3.png "テーブルの選択" %}
 
-{% screenshot createquery4.png "" %}
+{% screenshot createquery4.png "テーブル追加後" %}
 
 &#9314; "クエリ1"ウィンドウを最大化し、見やすくします。
 
 &#9315; 結合線を確認します。
 
-{% screenshot createquery5.png "" %}
+{% screenshot createquery5.png "結合線の確認" %}
 
 &#9316; "受注明細"の"受注ＩＤ"をダブルクリックします。
 
-{% screenshot createquery6.png "" %}
+{% screenshot createquery6.png "[受注明細]の[受注ＩＤ]フィールドの追加" %}
 
 &#9317; 同様に以下のテーブルから以下のフィールドを追加してください。
 
@@ -158,9 +158,9 @@ purposes:
 
 &#9318; [クエリツール] - [デザイン]タブ - [結果] - ![](../pic/action.png) ([実行])ボタンをクリックします。
 
-{% screenshot createquery7.png "" %}
+{% screenshot createquery7.png "実行アイコンの場所" %}
 
-{% screenshot createquery8.png "" %}
+{% screenshot createquery8.png "クエリ実行後" %}
 
 &#9319; `Ｑ受注登録` と入力して、名前を付けて保存します。
 
@@ -169,19 +169,19 @@ purposes:
 
 &#9312; "Ｑ受注登録"の一番上のレコードの"顧客ＩＤ"フィールドの値を `1` に変更 - [Enter]キーをクリックします。
 
-{% screenshot revisequery1.png "" %}
+{% screenshot revisequery1.png "[顧客ＩＤ]フィールドの値を`1`に変更" %}
 
 "顧客名"フィールドが"山本浩史"に変わりました。
 
-{% screenshot revisequery2.png "" %}
+{% screenshot revisequery2.png "[顧客ＩＤ]フィールドの値変更後" %}
 
 &#9313; 一番上のレコードの"商品コード"フィールドの値を `K-200` に変更 - [Enter]キーをクリックします。
 
-{% screenshot revisequery3.png "" %}
+{% screenshot revisequery3.png "[商品コード]フィールドの値を`K-200`に変更" %}
 
 "商品名"フィールドが"はがき"に変わりました。
 
-{% screenshot revisequery4.png "" %}
+{% screenshot revisequery4.png "[商品コード]フィールドの値変更後" %}
 
 &#9314; 上書き保存をして、レコードを保存します。
 
@@ -190,15 +190,15 @@ purposes:
 
 &#9312; "デザインビュー"に切り替えます。
 
-{% screenshot calcquery1.png "" %}
+{% screenshot calcquery1.png "デザインビュー アイコンの場所" %}
 
 &#9313; "数量"フィールドの右側に `金額:定価*数量` と入力 - [Enter]キーをクリックし、 [クエリツール] - [デザイン]タブ - [結果] - ![](../pic/action.png) ([実行])をクリックします。
 
-{% screenshot calcquery2.png "" %}
+{% screenshot calcquery2.png "`金額:定価*数量`フィールドの追加入力" %}
 
 &#9314; "金額"フィールドが追加されました。
 
-{% screenshot calcquery3.png "" %}
+{% screenshot calcquery3.png "[金額]フィールド追加後" %}
 
 &#9315; 上書き保存をします。
 
