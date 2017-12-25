@@ -33,7 +33,7 @@ Microsoft PowerPointの起動
 --------------------------
 
 1. [スタート]をクリックします
-1. [すべてのプログラム] - [Microsoft Office] - [PowerPoint 2013] をクリックします
+1. [すべてのプログラム] - [Microsoft Office] - [PowerPoint 2016] をクリックします
 
 
 プレゼンテーションの作成と保存
@@ -99,7 +99,7 @@ PowerPoint を起動すると、スタート画面が表示されます。
 ウィンドウ右上の閉じるボタンをクリックします。
 
 
-Microsoft PowerPoint 2013の概要
+Microsoft PowerPoint 2016の概要
 -------------------------------
 
 ### ウィンドウ構成
