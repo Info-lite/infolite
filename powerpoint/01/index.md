@@ -64,7 +64,7 @@ PowerPoint を起動すると、スタート画面が表示されます。
 <dt>PowerPoint プレゼンテーション(.pptx)</dt>
 <dd>PowerPoint 2007 以降で利用できる標準形式で保存します。</dd>
 <dt>PowerPoint 97-2003 プレゼンテーション(.ppt)</dt>
-<dd>Microsoft Power Point 97 から PowerPoint 2003 までで標準利用されていた形式で保存します。</dd>
+<dd>Microsoft PowerPoint 97 から PowerPoint 2003 までで標準利用されていた形式で保存します。</dd>
 <dt>OpenDocument プレゼンテーション(.odp)</dt>
 <dd>Microsoft Office 以外のオフィス製品でも利用できる、オフィススイートの共通形式で保存します。</dd>
 <dt>PowerPoint スライドショー(.ppsx)</dt>
@@ -175,7 +175,7 @@ PowerPoint の画面での表示方法を設定します。
 プレゼンテーションを作る流れ
 ----------------------------
 
-### スライドの準備(背景のデザインとマスタースライドの設定)
+### スライドの準備(背景のデザインとスライドマスターの設定)
 
 内容を作り始める前に、スライド全体のデザインを考えましょう。
 
@@ -209,22 +209,22 @@ PowerPoint にはさまざまなテーマが用意されています。
 
 {% screenshot pp01_04theme.png "テーマのプレビュー" %}
 
-さらに、各スライドの文字のフォントやサイズ、色、フッターなどを共通して設定するために、マスタースライドの設定を行います。
+さらに、各スライドの文字のフォントやサイズ、色、フッターなどを共通して設定するために、スライドの設定を行います。
 
 &#9313; [表示]リボン - ![スライドマスタ](pic/pp_slidemaster.png) をクリックします。
 
-{% screenshot pp01_05master.png "スライドマスタの説明" %}
+{% screenshot pp01_05master.png "スライドマスターの説明" %}
 
-{% screenshot pp01_06master.png "スライドマスタ" %}
+{% screenshot pp01_06master.png "スライドマスター" %}
 
 &#9314; フォントサイズや色、箇条書きのレベルなどを好きな形式に変更します。
 その形式が今後このプレゼンテーションを作成していくに際して、標準の設定となります。
 
-{% screenshot pp01_07master.png "スライドマスタの設定" %}
+{% screenshot pp01_07master.png "スライドマスターの設定" %}
 
 &#9315; ![マスタ表示を閉じる](pic/pp_master_exit.png) をクリックして、通常表示に戻ります。
 
-{% screenshot pp01_08master.png "マスタ表示を閉じる" %}
+{% screenshot pp01_08master.png "マスター表示を閉じる" %}
 
 &#9316; [挿入]リボン - ![ヘッダーとフッター](pic/pp_head_foot.png) をクリックします。
 
