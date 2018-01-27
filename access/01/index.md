@@ -16,7 +16,7 @@ purposes:
 <li><a href="../assets/Clist(fin).accdb">Clist(fin).accdb</a></li>
 <li><a href="../assets/Clist.xlsx">Clist.xlsx</a></li>
 <li><a href="../assets/gradetype.accdb">gradetype.accdb</a></li>
-<li><a href="../assets/congress.xls">congress.xls</a></li>
+<li><a href="../assets/congress.xlsx">congress.xlsx</a></li>
 <li><a href="../assets/membertype.accdb">membertype.accdb</a></li>
 </ul>
 </div>
