@@ -16,7 +16,7 @@ purposes:
 <li><a href="../assets/Clist(fin).accdb">Clist(fin).accdb</a></li>
 <li><a href="../assets/Clist.xlsx">Clist.xlsx</a></li>
 <li><a href="../assets/gradetype.accdb">gradetype.accdb</a></li>
-<li><a href="../assets/congress.xls">congress.xls</a></li>
+<li><a href="../assets/congress.xlsx">congress.xlsx</a></li>
 <li><a href="../assets/membertype.accdb">membertype.accdb</a></li>
 </ul>
 </div>
@@ -392,9 +392,9 @@ Access2016では、ウィンドウ左に表示される"ナビゲーション �
 -   郵便番号：221-0023
 -   市区町村：横浜市神奈川区宝町5-5-0
 -   携帯TEL：090-5231-0000
--   入会年月日：2015/10/01
+-   入会年月日：2018/09/01
 -   学年ＩＤ：1
--   学部コース：都市教養学部都市教養学科生命科学コース
+-   学部コース：理学部生命科学科
 
 {% screenshot yamamoto1.png "データシートビュー" %}
 
