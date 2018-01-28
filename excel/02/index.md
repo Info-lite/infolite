@@ -233,7 +233,7 @@ flowplayer_conf:
 
 {% screenshot graph7.png "軸ラベルの範囲（参照）" %}
 
-{% screenshot graph7a.png "軸ラベル変更後" %}
+{% screenshot graph7a.png "軸ラベル確認後" %}
 
 これで、グラフの設定が一通り終わりました。
 また、Excelでは自動的にグラフの設定を行ってくれるので、それに合わせた表作りをすれば、さらに簡単に終わらせることもできます。
