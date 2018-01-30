@@ -89,12 +89,12 @@ Microsoft Wordの起動
 ウィンドウ右上の閉じるボタンをクリックします。
 
 
-Microsoft Word 2013の概要
+Microsoft Word 2016の概要
 -------------------------
 
 <div class="alert alert-info" role="alert">
 <strong>Microsoft Office の共通点</strong>
-<p>ウィンドウ各部の名称や基本操作は Microsoft Office 2013 の各製品（Word, Excel, PowerPoint など）で共通です。</p>
+<p>ウィンドウ各部の名称や基本操作は Microsoft Office 2016 の各製品（Word, Excel, PowerPoint など）で共通です。</p>
 </div>
 
 
@@ -306,7 +306,7 @@ Wordでは、その他にも色々なスタイルに文字を変えることが�
 -   左インデント：最初の行と2行目以降のインデント間隔と保ったままでの段落全体の左インデントの位置
 -   右インデント：段落全体の右インデントの位置
 
-&#9312; 自己紹介文の内容（はじめまして?）を選択してください。
+&#9312; 自己紹介文の内容（はじめまして～）を選択してください。
 
 {% screenshot word01_16indent.png "文章の選択" %}
 
