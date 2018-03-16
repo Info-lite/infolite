@@ -66,17 +66,17 @@ purposes:
 -   [コンピュータの基本操作と構造](../02/index.html)
 -   [ネットワークの仕組みと情報検索](../03/index.html)
 -   [情報の活用と情報倫理](../04/index.html)
--   [ワードプロセッサによる文書編集（１）](../../office2013/word/01/index.html)
--   [ワードプロセッサによる文書編集（２）](../../office2013/word/02/index.html)
-    -   [ワードプロセッサによる文書編集（発展例）](../../office2013/word/03/index.html)
-    -   [課題提出のための実習時間](../../office2013/word/04/index.html)
--   [表計算ソフトによるデータ処理（１）](../../office2013/excel/01/index.html)
--   [表計算ソフトによるデータ処理（２）](../../office2013/excel/02/index.html)
--   [表計算ソフトによるデータ処理（３）](../../office2013/excel/03/index.html)
-    -   [課題提出のための実習時間](../../office2013/excel/04/index.html)
--   [プレゼンテーションの概要と実習](../../office2013/powerpoint/01/index.html)
-    -   [課題提出のための実習時間](../../office2013/powerpoint/02/index.html)
--   [プレゼンテーション実演](../../office2013/powerpoint/03/index.html)
+-   [ワードプロセッサによる文書編集（１）](../../office2016/word/01/index.html)
+-   [ワードプロセッサによる文書編集（２）](../../office2016/word/02/index.html)
+    -   [ワードプロセッサによる文書編集（発展例）](../../office2016/word/03/index.html)
+    -   [課題提出のための実習時間](../../office2016/word/04/index.html)
+-   [表計算ソフトによるデータ処理（１）](../../office2016/excel/01/index.html)
+-   [表計算ソフトによるデータ処理（２）](../../office2016/excel/02/index.html)
+-   [表計算ソフトによるデータ処理（３）](../../office2016/excel/03/index.html)
+    -   [課題提出のための実習時間](../../office2016/excel/04/index.html)
+-   [プレゼンテーションの概要と実習](../../office2016/powerpoint/01/index.html)
+    -   [課題提出のための実習時間](../../office2016/powerpoint/02/index.html)
+-   [プレゼンテーション実演](../../office2016/powerpoint/03/index.html)
 -   [HTML（１）](../../html/01/index.html)
 -   [HTML（２）](../../html/02/index.html)
 -   [動画編集（１）](../../moviemaker/01/index.html)
@@ -91,23 +91,21 @@ purposes:
 
 #### Windows環境： １号館320・330・340・350教室
 
--   Windows 7 （オペレーティングシステム）
--   Microsoft Word 2013 （ワープロソフト）
--   Microsoft Excel 2013 （表計算ソフト）
--   Microsoft PowerPoint 2013 （プレゼンテーションソフト）
--   Microsoft InternetExplorer 11 （ブラウザ）
+-   Windows10 （オペレーティングシステム）
+-   Microsoft Word 2016 （ワープロソフト）
+-   Microsoft Excel 2016 （表計算ソフト）
+-   Microsoft PowerPoint 2016 （プレゼンテーションソフト）
+-   Microsoft Edge （ブラウザ）
 -   メモ帳 （テキストエディタ）
--   Type Trainer （タイピング練習ソフト）
 
 #### Mac環境： １号館320教室
 
--   MacOS X （オペレーティングシステム）
--   Microsoft Word 2011 （ワープロソフト）
--   Microsoft Excel 2011 （表計算ソフト）
--   Microsoft PowerPoint 2011 （プレゼンテーションソフト）
--   Safari 6.2.8 （ブラウザ）
+-   macOS High Sierra （オペレーティングシステム）
+-   Microsoft Word 2016 （ワープロソフト）
+-   Microsoft Excel 2016 （表計算ソフト）
+-   Microsoft PowerPoint 2016 （プレゼンテーションソフト）
+-   Safari （ブラウザ）
 -   mi （テキストエディタ）
--   Typist （タイピング練習ソフト）
 
 情報処理教室のシステムと利用方法
 --------------------------------
@@ -115,18 +113,18 @@ purposes:
 情報処理教室のシステムについて、簡単に説明します。
 
 １号館３階にある320室・330室・340室・350室の４つの教室をまとめて「情報処理教室」と呼びます。この教室は、情報リテラシーなどの授業で利用されるほか、授業が行われていない時間帯には自習のために自由に利用することができます。
-また、授業などで情報処理教室が利用できない場合に、自習をするための教室として情報処理施設１階115室があります。
+また、授業などで情報処理教室が利用できない場合に、自習をするための教室として情報処理施設１階に情報処理自習室（115室）があります。
 さらに、パソコンを持ち込んで自習することができる１号館３階の306室や、団体での会議・勉強会等の利用を目的とした305室があります。
 そのほか、ノートパソコンの貸し出しも行っています。
 
 -   [情報処理教室のシステム概要図](http://www.comp.tmu.ac.jp/manual/info/network.pdf)
 
-320室は Mac 環境となっています。設置されているパソコンが mac mini なので、MacOS X が起動します。
+320室は Mac 環境となっています。設置されているパソコンが mac mini なので、macOS が起動します。
 しかし、パラレルスデスクトップにより Windows 環境を利用することができます。
 
 -   [Windows起動・ログオン・ログオフについて](http://www.comp.tmu.ac.jp/tmuner/pc/mac_riyou7.html)（TMUNER内）
 
-330室・340室・350室、および115室・貸出ノートパソコンは Windows 環境となっています。Windows のバージョンは教室によって異なることがありますが、基本操作は同じです。
+330室・340室・350室、および115室・貸出ノートパソコンは Windows 環境となっています。
 
 これらのパソコンごとの違いやインストールされているアプリケーションなど、教室ごとの環境の違いについては [ハードウェア・ソフトウェア構成](http://www.comp.tmu.ac.jp/tmuner/pc/minami_pc.html )を参考にしてください。
 
@@ -146,7 +144,7 @@ purposes:
 ----------------------
 
 教室のパソコンを使用する際には、ログオンして使用できるようにしなければなりません。
-ここでは、Windows 7 環境を使用する際の基本操作、ログオン・ログオフの方法について説明します。Mac 環境の場合は、[Macintosh利用ガイド](http://www.comp.tmu.ac.jp/tmuner/pc/mac_riyou3.html) を参照してください。
+ここでは、Windows10 環境を使用する際の基本操作、ログオン・ログオフの方法について説明します。Mac 環境の場合は、[Macintosh利用ガイド](http://www.comp.tmu.ac.jp/tmuner/pc/mac_riyou3.html) を参照してください。
 
 ### ログオンとログオフ
 
@@ -191,7 +189,7 @@ purposes:
 
 ### 注意
 
-ここでは、Windows環境（Windows7）に基づいて説明しています。教室によって、端末にインストールされているオペレーティングシステムが違い、画面が説明画像と異なる場合がありますので、注意してください。
+ここでは、Windows環境（Windows10）に基づいて説明しています。教室によって、端末にインストールされているオペレーティングシステムが違い、画面が説明画像と異なる場合がありますので、注意してください。
 
 情報処理教室では、"マイドキュメント" のデータは端末ではなくファイルサーバに保存されるような設定になっています。
 そのため、どの端末からログインしてもすべて同じ"マイドキュメント"に繋がり、どの端末からでも前回の続きを行うことができます。
@@ -211,7 +209,7 @@ purposes:
 ### アプリケーションの起動
 
 アプリケーションとは、ある目的のために作られたソフトウェアです。パソコンで作業をする時には、その目的にあったアプリケーションを使用します。
-ここでは、Windows 7環境を使用する際のアプリケーションの起動と終了の方法について説明します。
+ここでは、Windows10環境を使用する際のアプリケーションの起動と終了の方法について説明します。
 ここでは、例として"メモ帳"を使用します。[スタート]ボタンをクリックしてスタートメニューを開き、[すべてのプログラム]-[アクセサリ]とポイントし、[メモ帳]をクリックします。
 
 {% screenshot notepad01.png "すべてのプログラム" %}
@@ -285,15 +283,6 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 <div class="media-body">
 <h5>秀丸</h5>
 <a href="http://hide.maruo.co.jp/">サイトー企画</a>製のシェアウェア。メモ帳よりも高機能なテキストエディタ。
-</div>
-</div>
-<div class="media">
-<div class="media-left">
-<img class="media-object icon" src="./pic/terapadicon.png" />
-</div>
-<div class="media-body">
-<h5>TeraPad</h5>
-<a href="http://www5f.biglobe.ne.jp/~t-susumu/">寺尾 進</a>氏製のフリーウェア。メモ帳よりも高機能なテキストエディタ。
 </div>
 </div>
 
