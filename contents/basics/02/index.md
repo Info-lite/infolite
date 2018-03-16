@@ -573,6 +573,6 @@ Office365では、新規作成メールはHTMLメールとして作成される�
 -   [国民のための情報セキュリティサイト](http://www.soumu.go.jp/joho_tsusin/security/)（総務省）
 -   [HTMLメールはやめよう](http://www.sal.tohoku.ac.jp/‾gothit/nohtmlmail.html) (東北大学・後藤斉先生)
 -   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/index.html)
--   [ToClip for Windows](http://www5f.biglobe.ne.jp/‾t-susumu/)
--   [Flashタイピング 【寿司打 - SushiDA -】](http://typing.sakura.ne.jp/sushida/)
--   [e-typing](http://www.e-typing.ne.jp/)
+-   [P検　無料タイピング練習［インターネット版］](http://www.pken.com/tool/typing.html)
+-   [FUJITSU 実践！タッチタイピング](http://azby.fmworld.net/usage/lesson/keyboard/typing/)
+-   [e-typing](https://www.e-typing.ne.jp/)

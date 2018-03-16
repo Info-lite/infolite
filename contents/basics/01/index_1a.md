@@ -358,6 +358,6 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 
 -   [著作権のひろば](http://cozylaw.com/copy.html)
 -   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
--   [ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
--   [Flashタイピング 【寿司打 - SushiDA -】](http://typing.sakura.ne.jp/sushida/)
--   [e-typing](http://www.e-typing.ne.jp/)
+-   [P検　無料タイピング練習［インターネット版］](http://www.pken.com/tool/typing.html)
+-   [FUJITSU 実践！タッチタイピング](http://azby.fmworld.net/usage/lesson/keyboard/typing/)
+-   [e-typing](https://www.e-typing.ne.jp/)
