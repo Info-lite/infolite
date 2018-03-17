@@ -13,8 +13,6 @@ flowplayer_conf:
 関数、絶対参照と相対参照
 ------------------------
 
-{% screencast function "関数の使い方" %}
-
 **関数**、**絶対参照と相対参照**は、Excelを初めとする表計算ソフトにおいて、とても重要な機能の一つです。
 関数を用いることで、色々な種類の複雑な計算を一瞬で導き出すことができます。
 また、絶対参照と相対参照を行うことによって、無限に続くとも思える数値を入力せずに計算を行うことができます。
@@ -24,6 +22,8 @@ flowplayer_conf:
 -   [いちご狩りファイル(ichigo.xlsx)](./ichigo.xlsx)
 
 {% screenshot itigo.png "いちご狩りファイルの初期状態" %}
+   
+{% screencast function_insert "関数の使い方" %}
 
 ### SUM関数
 
@@ -86,6 +86,8 @@ flowplayer_conf:
 &#9314; [Enter]を押します。すると、平均が出てきました。
 
 {% screenshot average3.png "平均計算結果" %}
+
+{% screencast function "関数の使い方" %}
 
 ### RANK関数
 
