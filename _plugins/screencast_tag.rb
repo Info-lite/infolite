@@ -32,7 +32,6 @@ module Jekyll
       s += %|<div class="modal-body">\n|
       s += %|<div class="flowplayer is-splash color-light img-responsive" style="max-width:640px;">\n|
       s += %|<video>\n|
-      s += %|<source type="video/webm" src="#{video_src}.webm">\n|
       s += %|<source type="video/mp4" src="#{video_src}.mp4">\n|
       s += %|</video>\n|
       s += %|</div>\n|
