@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 演算子についての補足
 date: 2015-03-23 16:47:27 +0900

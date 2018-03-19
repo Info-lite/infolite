@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 図と文字列
 date: 2016-03-15 15:58:09 +0900

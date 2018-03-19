@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: リレーションシップ（２）
 date: 2015-10-15 11:47:04 +0900

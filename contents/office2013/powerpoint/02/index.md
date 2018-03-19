@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 課題提出のための実習時間
 date: 2016-03-11 08:54:03 +0900

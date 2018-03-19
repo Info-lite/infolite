@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 分析ツール
 date: 2017-04-07 19:30:54 +0900

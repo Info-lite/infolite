@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: ２グループの平均のt検定
 date: 2016-09-30 10:02:25 +0900

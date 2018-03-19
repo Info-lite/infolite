@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 統計学についての基礎的知識
 date: 2017-06-21 07:06:40 +0900

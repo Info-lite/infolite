@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 相関分析
 date: 2016-09-30 10:02:25 +0900

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: レポート
 date: 2015-10-15 11:46:49 +0900

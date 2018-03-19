@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: Accessの概要とテーブル
 date: 2016-03-16 09:50:30 +0900

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: プレゼンテーションの概要と実習
 date: 2016-04-07 14:42:44 +0900

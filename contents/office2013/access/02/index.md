@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: フォーム
 date: 2015-10-15 11:46:43 +0900

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: クエリ
 date: 2016-03-10 13:49:00 +0900

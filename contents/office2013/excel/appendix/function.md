@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: Microsoft Excelで使える関数
 date: 2015-03-23 16:47:41 +0900

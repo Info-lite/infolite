@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: appendix
 title: 図形描画についての補足
 date: 2016-03-16 09:55:38 +0900
