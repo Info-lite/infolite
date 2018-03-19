@@ -543,9 +543,7 @@ CUIとは、コマンドライン、つまりは文字のみで表現された�
 
 {% appendix ../appendix/office365.html#chapter2 "ファイルの添付方法" %}
 
-また、メールのなかにはメールマガジンやダイレクトメールなどに多い背景や画像がついた"HTMLメール"と呼ばれる種類のものがあります。HTMLメールは一見華やかですが、伝えたい用件以外の余分なデータがつくことになり、相手が迷惑に感じることもあります。またHTMLメールの場合、メールを開くと同時に添付されていたコンピュータウィルスに感染してしまうケースもあります。危険性の詳細については、下記のウェブサイトを参照してください。
-
--   [HTML メールはやめよう（東北大学・後藤斉先生）](http://www.sal.tohoku.ac.jp/~gothit/nohtmlmail.html)
+また、メールのなかにはメールマガジンやダイレクトメールなどに多い背景や画像がついた"HTMLメール"と呼ばれる種類のものがあります。HTMLメールは一見華やかですが、伝えたい用件以外の余分なデータがつくことになり、相手が迷惑に感じることもあります。またHTMLメールの場合、メールを開くと同時に添付されていたコンピュータウィルスに感染してしまうケースもあります。
 
 Office365では、新規作成メールはHTMLメールとして作成される初期設定になっています。この設定を変更して標準をテキスト形式にするにはこちらの資料の手順を参考に変更してください。
 
@@ -564,15 +562,14 @@ Office365では、新規作成メールはHTMLメールとして作成される�
 ### 学内サイト
 
 -   [TMUNER](http://www.comp.tmu.ac.jp/tmuner/)
-    -   [Windows利用方法](http://www.comp.tmu.ac.jp/tmuner/pc/riyou2.html)
-    -   [Macintosh利用方法](http://www.comp.tmu.ac.jp/tmuner/pc/mac_riyou3.html)
+    -   [Windows利用ガイド](http://www.comp.tmu.ac.jp/tmuner/study/pc/windows/)
+    -   [Mac利用ガイド](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/)
 -   [学生ポータル 利用案内](portal.pdf)
 
 ### 学外サイト
 
 -   [国民のための情報セキュリティサイト](http://www.soumu.go.jp/joho_tsusin/security/)（総務省）
--   [HTMLメールはやめよう](http://www.sal.tohoku.ac.jp/‾gothit/nohtmlmail.html) (東北大学・後藤斉先生)
--   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/index.html)
+-   [秀まるおのホームページ](http://hide.maruo.co.jp/index.html)(サイトー企画)
 -   [P検　無料タイピング練習［インターネット版］](http://www.pken.com/tool/typing.html)
 -   [FUJITSU 実践！タッチタイピング](http://azby.fmworld.net/usage/lesson/keyboard/typing/)
 -   [e-typing](https://www.e-typing.ne.jp/)

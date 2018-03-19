@@ -365,7 +365,6 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 
 ### 学外サイト
 
--   [著作権のひろば](http://cozylaw.com/copy.html)
 -   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
 -   [P検　無料タイピング練習［インターネット版］](http://www.pken.com/tool/typing.html)
 -   [FUJITSU 実践！タッチタイピング](http://azby.fmworld.net/usage/lesson/keyboard/typing/)

@@ -439,9 +439,5 @@ Webではさまざまな人が情報を発信しているため、その情報�
 -   [Webcat plus](http://webcatplus.nii.ac.jp/)
 -   [近代デジタルライブラリー](http://kindai.ndl.go.jp/)（国立国会図書館）
 -   [青空文庫](http://www.aozora.gr.jp/)
--   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/index.html)
--   [ToClip for Windows](http://www5f.biglobe.ne.jp/~t-susumu/)
--   [Flashタイピング 【寿司打 - SushiDA -】](http://typing.sakura.ne.jp/sushida/)
--   [e-typing](http://www.e-typing.ne.jp/)
 
 
