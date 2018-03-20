@@ -21,6 +21,6 @@ permalink: /1/
 -   [プレゼンテーション実演](../contents/office2016/powerpoint/03/index.html)
 -   [HTML（１）](../contents/html/01/index.html)
 -   [HTML（２）](../contents/html/02/index.html)
--   [動画編集（１）](../contents/moviemaker/01/index.html)
--   [動画編集（２）](../contents/moviemaker/02/index.html)
+-   [動画編集（１）](../contents/openshot/01/index.html)
+-   [動画編集（２）](../contents/openshot/02/index.html)
 
