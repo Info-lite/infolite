@@ -30,7 +30,7 @@ module Jekyll
       s += %|<span class="modal-title" id="#{@file_name}ModalLabel">#{@description}</span>\n|
       s += %|</div>\n|
       s += %|<div class="modal-body">\n|
-      s += %|<div class="flowplayer is-splash color-light img-responsive" style="max-width:640px;">\n|
+      s += %|<div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">\n|
       s += %|<video>\n|
       s += %|<source type="video/mp4" src="#{video_src}.mp4">\n|
       s += %|</video>\n|
