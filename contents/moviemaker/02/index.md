@@ -1,4 +1,5 @@
 ---
+deprecated: true
 layout: page
 title: 動画編集（２）
 date: 2015-03-23 17:04:19 +0900

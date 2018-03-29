@@ -79,8 +79,8 @@ purposes:
 -   [プレゼンテーション実演](../../office2016/powerpoint/03/index.html)
 -   [HTML（１）](../../html/01/index.html)
 -   [HTML（２）](../../html/02/index.html)
--   [動画編集（１）](../../moviemaker/01/index.html)
--   [動画編集（２）](../../moviemaker/02/index.html)
+-   [動画編集（１）](../../openshot/01/index.html)
+-   [動画編集（２）](../../openshot/02/index.html)
 
 ### 教材
 
