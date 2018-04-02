@@ -75,11 +75,6 @@ PowerPoint を起動すると、スタート画面が表示されます。
 <dd>PDF形式で保存します。PowerPoint がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
 
-<div class="alert alert-warning" role="alert">
-<strong>情報処理教室における制約事項</strong>
-<p>情報処理教室では、PDFを印刷すると、システム上の理由で印刷にかなりの時間がかかってしまいます。</p>
-</div>
-
 #### 既存の文書の変更を保存する
 
 1.  ![ファイル タブ](pic/pp_filetab.png) をクリックします

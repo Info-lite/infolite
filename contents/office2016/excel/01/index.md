@@ -58,11 +58,6 @@ Microsoft Excelの起動
 <dt>PDF(.pdf)</dt><dd>PDF形式で保存します。Excel がインストールされていない環境でも、PDF に対応するソフトウェアがあれば開くことができます。</dd>
 </dl>
 
-<div class="alert alert-warning" role="alert">
-<strong>情報処理教室における制約事項</strong>
-<p>情報処理教室では、PDFを印刷すると、システム上の理由で印刷にかなりの時間がかかってしまいます。</p>
-</div>
-
 #### 既存のブックの変更を保存する
 
 1.  ![ファイルタブ](pic/filebutton.png) をクリックします
