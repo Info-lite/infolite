@@ -7,7 +7,7 @@ date: 2016-03-15 15:58:30 +0900
 
 文書を書いていると、どうしても文字ばかりで読みにくくなってしまうことがあります。行と行の間、つまり行間隔を調節することによってそのような読みにくさを解消することができます。
 
-&#9312; まず文書を書きます。長めの文章が良いでしょう。今回は、文章は[文化庁 知的財産権について](http://www.bunka.go.jp/chosakuken/chitekizaisanken.html)を参考に作成しました。
+&#9312; まず文書を書きます。長めの文章が良いでしょう。今回は、文章は[文化庁 知的財産権について](http://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chitekizaisanken.html)を参考に作成しました。
 
 {% screenshot word01_linespace_01linespace.png "文章" %}
 
