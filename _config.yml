@@ -16,7 +16,6 @@ redcarpet:
     - 'no_intra_emphasis'
     - 'fenced_code_blocks'
     - 'space_after_headers'
-    - 'superscript'
     - 'tables'
     - 'with_toc_data'
 exclude:
