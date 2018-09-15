@@ -25,7 +25,7 @@ purposes:
 <dt>単回帰分析</dt>
 <dd>$y = a + bx \rightarrow$ $x$から$y$を予測しようとする分析です</dd>
 <dt>重回帰分析</dt>
-<dd>2 次以上は重回帰分析を用いる（今回は省略）</dd>
+<dd>２次以上で用います（今回は省略）</dd>
 <dd>$y = a + bx + cx^2$</dd>
 </dl>
 
