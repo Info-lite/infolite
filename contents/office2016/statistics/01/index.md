@@ -49,7 +49,7 @@ purposes:
 列の変数の算術平均を表します。欠損値以外の合計値を値の数で割った値です。
 
 \begin{align}
-  \bar{x}=\frac{1}{n}\left ( x_1+x_2+...+x_n \right )
+  \bar{x}=\frac{1}{n}\left ( x_1+x_2+_\cdots +x_n \right )
 \end{align}
 
 $n$ は標本の大きさ（サンプルサイズ）、$x_i$ は各標本の値です。  
