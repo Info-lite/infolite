@@ -173,7 +173,7 @@ purposes:
 
 また、相関係数の絶対値によって、その相関の強さがわかります。
 
--   $0.7 \leq |r|$ 強い相関あり
+-   $0.7 \leq |r|$　　強い相関あり
 
 <div class="row">
 <div class="col-sm-6 col-xs-12">
@@ -184,7 +184,7 @@ purposes:
 </div>
 </div>
 
--   $0.4 \leq |r| < 0.7$ 中程度の相関あり
+-   $0.4 \leq |r| < 0.7$　　中程度の相関あり
 
 <div class="row">
 <div class="col-sm-6 col-xs-12">
@@ -193,8 +193,9 @@ purposes:
 <div class="col-sm-6 col-xs-12">
 <img src="pic/correlation_-05.png" alt="中程度の負の相関を示す散布図 ($r$ = -0.60)" class="img-responsive" />
 </div>
+</div>
 
--   $0.2 \leq |r| < 0.4$ 弱い相関あり
+-   $0.2 \leq |r| < 0.4$　　弱い相関あり
 
 <div class="row">
 <div class="col-sm-6 col-xs-12">
@@ -202,7 +203,7 @@ purposes:
 </div>
 </div>
 
--   $|r| < 0.2$ ほとんど相関なし
+-   $|r| < 0.2$　　ほとんど相関なし
 
 <div class="row">
 <div class="col-sm-6 col-xs-12">
@@ -212,11 +213,11 @@ purposes:
 
 ### 練習問題 2
 
-練習問題  1のデータから、相関係数を求めてみましょう。
+練習問題 1のデータから、相関係数を求めてみましょう。
 
 ### Excelの操作
 
-練習問題 1 を継続して使用します。
+練習問題 1を継続して使用します。
 
 男女別に身長と足のサイズの間に相関があるといえるかを求めてみましょう。
 
