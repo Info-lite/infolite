@@ -96,7 +96,7 @@ purposes:
 
 &#9318; "都道府県"フィールドの抽出条件に `東京都` と入力 - [Enter]キーをクリックします。
 
-{% screenshot abstract5.png "[都道府県]フィールドの抽出条件に`東京都`を入力" %}
+{% screenshot abstract5.png "[都道府県]フィールドの抽出条件に <font color="red">東京都</font> を入力" %}
 
 &#9319; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
@@ -111,7 +111,7 @@ purposes:
 
 &#9313; "都道府県"フィールドの「または」に `神奈川県` と入力 - [Enter]キーをクリックします。
 
-{% screenshot or1.png "[都道府県]フィールドの「または」に`神奈川県`を入力" %}
+{% screenshot or1.png "[都道府県]フィールドの「または」に <font color="red">神奈川県</font> を入力" %}
 
 &#9314; ![](../pic/databaseview.png) もしくは ![](../pic/action.png) をクリックします。
 
@@ -147,7 +147,7 @@ purposes:
 
 &#9314; "学部学科コース"フィールドの抽出条件に `理学部*` と入力 - [Enter]キーをクリックします。
 
-{% screenshot wildcard1.png "[学部学科コース]フィールドの抽出条件に`理学部*`を入力" %}
+{% screenshot wildcard1.png "[学部学科コース]フィールドの抽出条件に <font color="red">理学部*</font> を入力" %}
 
 {% screenshot wildcard2.png "入力後" %}
 
@@ -166,7 +166,7 @@ purposes:
 
 &#9314; "入会年月日"フィールドの抽出条件に半角で `Between #2015/1/1# And #2015/12/31#` と入力 - [Enter]キーをクリックします。
 
-{% screenshot between1.png "[入会年月日]フィールドの抽出条件に`Between #2015/1/1# And #2015/12/31#`を入力" %}
+{% screenshot between1.png "[入会年月日]フィールドの抽出条件に <font color="red">Between #2015/1/1# And #2015/12/31#</font> を入力" %}
 
 {% screenshot between2.png "入力後" %}
 

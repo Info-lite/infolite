@@ -68,9 +68,9 @@ purposes:
 
 <dl>
 <dt>8行目 String str1 = br.readLine();</dt>
-<dd>キーボードから入力されたものを、文字列型（`String` 型）として取得。</dd>
+<dd>キーボードから入力されたものを、文字列型（<font color="red">String</font> 型）として取得。</dd>
 <dt>9行目 int a = Integer.parseInt(str1);</dt>
-<dd>文字列を、整数型（`int` 型）に変換。</dd>
+<dd>文字列を、整数型（<font color="red">int</font> 型）に変換。</dd>
 </dl>
 
 ![](./pic/calcjava.png)

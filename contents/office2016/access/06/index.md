@@ -169,7 +169,7 @@ purposes:
 
 &#9312; "Ｑ受注登録"の一番上のレコードの"顧客ＩＤ"フィールドの値を `1` に変更 - [Enter]キーをクリックします。
 
-{% screenshot revisequery1.png "[顧客ＩＤ]フィールドの値を`1`に変更" %}
+{% screenshot revisequery1.png "[顧客ＩＤ]フィールドの値を <font color="red">1</font> に変更" %}
 
 "顧客名"フィールドが"山本浩史"に変わりました。
 
@@ -177,7 +177,7 @@ purposes:
 
 &#9313; 一番上のレコードの"商品コード"フィールドの値を `K-200` に変更 - [Enter]キーをクリックします。
 
-{% screenshot revisequery3.png "[商品コード]フィールドの値を`K-200`に変更" %}
+{% screenshot revisequery3.png "[商品コード]フィールドの値を <font color="red">K-200</font> に変更" %}
 
 "商品名"フィールドが"はがき"に変わりました。
 

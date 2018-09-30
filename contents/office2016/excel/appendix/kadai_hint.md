@@ -50,9 +50,12 @@ Microsoft Excelには、多くの関数が用意されています。
 
 偏差値は以下のようにして求めます。
 
-{% screenshot seiseki03.png "" %}
+> $n$人が試験を受け、それぞれの得点を$x_1, x_2, _\cdots, x_n$、平均点を$\bar{x}$ とすると、
+> \begin{align} 偏差値 = \frac{10 \times (x_i-\bar{x})}{\sigma }+50 \end{align}
+> \begin{align} \sigma = \sqrt{\frac{\sum _{i=1}^n(x_i-\bar{x})^2}{n}} \end{align}
 
-&sigma; を **標準偏差** といい、関数 `STDEV.P()` を使うと簡単に求めることが出来ます。
+
+$\sigma$ を **標準偏差** といい、関数 `STDEV.P()` を使うと簡単に求めることが出来ます。
 
 ### 成績評価
 
