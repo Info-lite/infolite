@@ -22,6 +22,7 @@ purposes:
 
 以下のソースコードを、適当なエディタを用いて入力してみましょう。すべて**半角英数で入力**してください。
 
+
 *Hello.java*
 
     public class Hello {
