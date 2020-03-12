@@ -14,7 +14,7 @@ Microsoft Wordの起動
 --------------------
 
 1.  [スタート] をクリックします
-1.  [すべてのプログラム] - [Microsoft Office] - [Word 2016] をクリックします
+1.  [すべてのプログラム] - [Microsoft Office] - [Word 2019] をクリックします
 
 
 文書の作成と保存
@@ -86,12 +86,12 @@ Microsoft Wordの起動
 ウィンドウ右上の閉じるボタンをクリックします。
 
 
-Microsoft Word 2016の概要
+Microsoft Word 2019の概要
 -------------------------
 
 <div class="alert alert-info" role="alert">
 <strong>Microsoft Office の共通点</strong>
-<p>ウィンドウ各部の名称や基本操作は Microsoft Office 2016 の各製品（Word, Excel, PowerPoint など）で共通です。</p>
+<p>ウィンドウ各部の名称や基本操作は Microsoft Office 2019 の各製品（Word, Excel, PowerPoint など）で共通です。</p>
 </div>
 
 
@@ -225,7 +225,7 @@ Wordの画面での表示の仕方を設定します。
 
 {% screenshot word01_03font.png "フォントサイズの変更" %}
 
-&#9314; さらに3行目の"首都　大"も`12`ptに変更します。
+&#9314; さらに3行目の"都立　大"も`12`ptに変更します。
 
 {% screenshot word01_04font.png "フォントサイズの変更" %}
 
