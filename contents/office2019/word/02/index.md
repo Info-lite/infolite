@@ -245,5 +245,5 @@ MicrosoftWordの図形描写の機能等を用いて、本学構内図を作成�
 
 -   [サンプル 1](word_kadai3_sample1.pdf)
 -   [サンプル 2](word_kadai3_sample2.pdf)
--   [東京都市大学　キャンパス案内](http://www.tmu.ac.jp/university/campus_guide/map.html)
+-   [東京都立大学　キャンパス案内](http://www.tmu.ac.jp/university/campus_guide/map.html)
 
