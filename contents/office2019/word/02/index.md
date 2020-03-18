@@ -227,11 +227,11 @@ Microsoft Wordでは、さまざまな図を描くことができます。
 
 {% screenshot word02_31figure.png "図形の枠線" %}
 
-![矢印](pic/word_arrow.png) についても直線と同様にして描くことができます。ためしてみましょう。
+![矢印](pic/word_arrow.png) についても直線と同様にして描くことができます。試してみましょう。
 
 ### その他の機能
 
-Microsoft Wordでは、直線の他にも様々な図形や文字を描くことができます。
+Microsoft Wordでは、直線の他にも様々な図形や文字を描くことができます。　
 
 {% appendix ../appendix/zukei.html "図形描画" %}
 
