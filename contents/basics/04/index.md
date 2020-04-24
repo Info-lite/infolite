@@ -6,6 +6,7 @@ purposes:
     - インターネット環境を利用する際のマナーやモラルを身につける
 ---
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -34,6 +35,7 @@ purposes:
 </div></p>
         </div>
     </div>
+</div>
 
 <div class="alert alert-info" role="alert">
 <p>第４講で情報倫理を学習した後、受講生は全員、「情リテ情報倫理テスト」に取り組んでください。</p>

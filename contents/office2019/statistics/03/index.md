@@ -7,6 +7,7 @@ purposes:
     - Excelのデータ分析を用いて、2つのグループの母平均の差の検定を行う
 ---
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -35,6 +36,7 @@ purposes:
 </div></p>
         </div>
     </div>
+</div>
 
 母平均の差に関する検定
 ----------------------

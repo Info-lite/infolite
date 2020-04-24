@@ -9,6 +9,7 @@ flowplayer_conf:
     - ratio: 0.75
 ---
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -37,6 +38,7 @@ flowplayer_conf:
 </div></p>
         </div>
     </div>
+</div>
 
 Microsoft Wordの起動
 --------------------

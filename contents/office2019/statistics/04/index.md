@@ -7,6 +7,7 @@ purposes:
     - 相関関係を実際に調べてみる
 ---
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -35,6 +36,7 @@ purposes:
 </div></p>
         </div>
     </div>
+</div>
 
 相関分析
 --------

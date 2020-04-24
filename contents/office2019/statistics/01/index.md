@@ -7,6 +7,7 @@ purposes:
     - Excelを用いて簡単な基本統計量を求める
 ---
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -35,7 +36,7 @@ purposes:
 </div></p>
         </div>
     </div>
-
+</div>
 
 データを数値で表現する方法
 --------------------------

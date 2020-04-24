@@ -20,6 +20,7 @@ purposes:
 <p><strong>前回の授業に欠席した人は、そのままでは大学のシステムを利用できません。</strong>また次回以降の授業にも出席できなくなってしまいます。開放利用中の情報処理教室等でチューターに申し出て「情報倫理講習会」を受講してください。</p>
 </div>
 
+<div class="container">
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -48,6 +49,7 @@ purposes:
 </div></p>
         </div>
     </div>
+</div>
 
 オペレーティングシステムの役割
 ------------------------------
