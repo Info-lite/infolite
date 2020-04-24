@@ -7,6 +7,34 @@ purposes:
     - 情報検索について学ぶ
 ---
 
+    <div class="panel panel-info">
+    <div class="panel-heading">本講に関する学習動画</div>
+        <div class="panel-body">
+            <p>本講の授業内容に関する【説明動画】が1つあります。こちらの動画に加えて、サイドメニューの【動画再生】で公開している【図書館とデータベースの利用方法】も必ず視聴してください。</p>
+            <p><font color="red">注意：大人数が一斉に動画を再生すると動画が再生されないことがあります。時間をずらして視聴してください。</font></p>
+
+<div id="class_movie"></div>
+<p><button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#autosumModal">
+<!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
+<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
+</button>
+<div class="modal fade" id="autosumModal" tabindex="-1" role="dialog" aria-labelledby="autosumModalLabel" aria-hidden="true">
+<div class="modal-dialog"><div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<span class="modal-title" id="autosumModalLabel">授業内容</span>
+</div>
+<div class="modal-body">
+<div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
+<video>
+<source type="video/mp4" src="../../../../../lit/video/03_network.mp4">
+</video>
+</div>
+</div>
+</div></div>
+</div></p>
+        </div>
+    </div>
 
 インターネットの仕組み
 ----------------------
