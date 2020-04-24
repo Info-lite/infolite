@@ -6,7 +6,7 @@ purposes:
     - インターネット環境を利用する際のマナーやモラルを身につける
 ---
 
-<div class="container">
+<div>
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">

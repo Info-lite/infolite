@@ -7,7 +7,7 @@ purposes:
     - Excelを用いて母集団と標本の平均と分散の推定を行う
 ---
 
-<div class="container">
+<div>
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
