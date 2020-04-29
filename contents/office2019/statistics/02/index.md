@@ -5,6 +5,9 @@ date: 2016-09-30 10:02:24 +0900
 purposes:
     - 母集団と標本の定義を学ぶ
     - Excelを用いて母集団と標本の平均と分散の推定を行う
+flowplayer_conf:
+    - embed: false
+    - ratio: 0.75
 ---
 
 <div>

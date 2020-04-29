@@ -5,6 +5,9 @@ date: 2016-09-30 10:02:24 +0900
 purposes:
     - 統計の基本について知る
     - Excelを用いて簡単な基本統計量を求める
+flowplayer_conf:
+    - embed: false
+    - ratio: 0.75
 ---
 
 <div>
