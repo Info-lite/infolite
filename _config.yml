@@ -26,3 +26,4 @@ exclude:
   - 'Gemfile.lock'
   - 'vendor'
   - 'sources'
+  - 'video'
