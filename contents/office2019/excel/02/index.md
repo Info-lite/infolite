@@ -19,16 +19,16 @@ flowplayer_conf:
 
             <div id="class_movie"></div>
             <p>
-                <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#expressions">
+                <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overview">
                     <!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
                     1. 演算子・式・参照・関数について<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
                 </button>
-                <div class="modal fade" id="expressions" tabindex="-1" role="dialog" aria-labelledby="autosumModalLabel" aria-hidden="true">
+                <div class="modal fade" id="overview" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <span class="modal-title" id="autosumModalLabel">授業内容</span>
+                                <span class="modal-title" id="overviewModalLabel">授業内容</span>
                             </div>
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
