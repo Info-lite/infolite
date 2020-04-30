@@ -67,15 +67,15 @@ purposes:
 -   [コンピュータの基本操作と構造](../02/index.html)
 -   [ネットワークの仕組みと情報検索](../03/index.html)
 -   [情報の活用と情報倫理](../04/index.html)
--   [表計算ソフトによるデータ処理（１）](../../office2016/excel/01/index.html)
--   [表計算ソフトによるデータ処理（２）](../../office2016/excel/02/index.html)
--   [表計算ソフトによるデータ処理（３）](../../office2016/excel/03/index.html)
-    -   [課題提出のための実習時間](../../office2016/excel/04/index.html)
--   [統計学についての基礎的知識](../../office2016/statistics/01/index.html)
--   [母集団と標本、正規分布とt分布](../../office2016/statistics/02/index.html)
--   [２グループの平均のt検定](../../office2016/statistics/03/index.html)
--   [相関分析](../../office2016/statistics/04/index.html)
--   [単回帰分析](../../office2016/statistics/05/index.html)
+-   [表計算ソフトによるデータ処理（１）](../../office2019/excel/01/index.html)
+-   [表計算ソフトによるデータ処理（２）](../../office2019/excel/02/index.html)
+-   [表計算ソフトによるデータ処理（３）](../../office2019/excel/03/index.html)
+    -   [課題提出のための実習時間](../../office2019/excel/04/index.html)
+-   [統計学についての基礎的知識](../../office2019/statistics/01/index.html)
+-   [母集団と標本、正規分布とt分布](../../office2019/statistics/02/index.html)
+-   [２グループの平均のt検定](../../office2019/statistics/03/index.html)
+-   [相関分析](../../office2019/statistics/04/index.html)
+-   [単回帰分析](../../office2019/statistics/05/index.html)
 
 ### 教材
 
@@ -87,18 +87,18 @@ purposes:
 #### Windows環境： １号館320・330・340・350教室
 
 -   Windows10 （オペレーティングシステム）
--   Microsoft Word 2016 （ワープロソフト）
--   Microsoft Excel 2016 （表計算ソフト）
--   Microsoft PowerPoint 2016 （プレゼンテーションソフト）
+-   Microsoft Word 2019 （ワープロソフト）
+-   Microsoft Excel 2019 （表計算ソフト）
+-   Microsoft PowerPoint 2019 （プレゼンテーションソフト）
 -   Microsoft Edge （ブラウザ）
 -   メモ帳 （テキストエディタ）
 
 #### Mac環境： １号館320教室
 
 -   macOS High Sierra （オペレーティングシステム）
--   Microsoft Word 2016 （ワープロソフト）
--   Microsoft Excel 2016 （表計算ソフト）
--   Microsoft PowerPoint 2016 （プレゼンテーションソフト）
+-   Microsoft Word 2019 （ワープロソフト）
+-   Microsoft Excel 2019 （表計算ソフト）
+-   Microsoft PowerPoint 2019 （プレゼンテーションソフト）
 -   Safari （ブラウザ）
 -   mi （テキストエディタ）
 
