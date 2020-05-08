@@ -50,16 +50,16 @@ Microsoft Excelの起動
 ------------------
 
 ### ブックの作成
-****
+
 ####  新規作成
 
-1.  「ホーム」または「新規作成」から「空白のブック」をクリックします。
-{% screenshot shinki.png "新規作成" %}
+1.  ![ファイル タブ](pic/filebutton.png) をクリックします
+1.  ![新規作成](pic/sinki.png) - ![新しいブック](pic/white.png) をクリックします
+
 #### 既存ブックのオープン（改訂、再編集）
 
-1.  ![ファイル タブ](pic/filebutton.png) をクリックします。
-1.  {% screenshot open.png "既存ブックのオープン" %}
-「開く」から「参照」をクリックし、目的のブックのあるフォルダに移動します
+1.  ![ファイル タブ](pic/filebutton.png) をクリックします
+1.  ![開く](pic/open.png) - ![参照](pic/sansyo.png) - 目的のブックのあるフォルダに移動します
 1.  目的のファイルのアイコン ![Excel ブック形式ファイル](pic/xlsx.png) をダブルクリック、または選択して開きます
 
 あるいは、目的の文書のあるフォルダに移動し、そのアイコンをダブルクリックします。
@@ -101,7 +101,7 @@ Microsoft Excelの起動
 1.  [閉じる] をクリックします
 
 
-Microsoft Excel 2019の概要
+Microsoft Excel 2016の概要
 --------------------------
 
 ### このアプリケーションで何ができるか?
@@ -303,7 +303,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 人口統計表を作成してみましょう。
 最終的に以下の表となるものを作っていきます。元となるデータは[総務省統計局](http://www.stat.go.jp/)から引用しました。
 
--   [人口推計月報（令和２年2月）](https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031910067&fileKind=0)
+-   [人口推計月報（平成28年2月）](http://www.e-stat.go.jp/SG1/estat/Xlsdl.do?sinfid=000031373513)
 
 <div class="thumbnail">
 <img src="pic/populationfinal.png" class="img-responsive" />
@@ -586,3 +586,4 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 -----
 
 上のコンピュータ室会計報告を工夫して、綺麗で見やすいものにしてください。
+
