@@ -30,12 +30,19 @@ purposes:
 <source type="video/mp4" src="../../../../../lit/video/04_moral.mp4">
 </video>
 </div>
-</div>
+
+<p></div>
 </div></div>
 </div></p>
+<br /><br />
+
+<p><button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#sns_pdf" style="color:#ffffff;">
+<i></i>&nbsp;<a id="sns_pdf" style="color:#ffffff;" href="./sns_trouble.pdf">PDF資料</a>
+</button>
         </div>
     </div>
-</div>
+</div></p>
+
 
 <div class="alert alert-info" role="alert">
 <p>第４講で情報倫理を学習した後、受講生は全員、「情リテ情報倫理テスト」に取り組んでください。</p>
