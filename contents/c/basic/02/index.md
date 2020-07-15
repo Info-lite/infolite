@@ -16,9 +16,9 @@ purposes:
 
 コンパイルの方法は、以下を参考にしましょう。
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](./win_gcc.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../../appendix/win_gcc.html)
 
-<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](./mac_gcc.html)
+<span class="label label-info">参考資料</span> [コンパイルと実行（Mac ターミナル）](../../appendix/mac_gcc.html)
 
 *Keisan1.c*<br>
 ![](./pic/Keisan1.c.png)
