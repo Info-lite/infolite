@@ -11,7 +11,7 @@ purposes:
 
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-*Arrangement.python*<br>
+*Arrangement.py*<br>
 ![](./pic/Arrangement.png)
 
 実行すると、以下のようになります。
@@ -52,7 +52,7 @@ purposes:
 
 では、以下のようなソースコードを入力し、実行してみましょう。
 
-*Arrangement2.python*<br>
+*Arrangement2.py*<br>
 ![](./pic/Arrangement2.png)
 
 実行すると、例えば以下のようになります。

@@ -22,7 +22,7 @@ purposes:
 
 以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-*Name.python*<br>
+*Name.py*<br>
 ![](./pic/Name.python.png)
 
 実行すると、以下のようになります。
@@ -44,7 +44,7 @@ purposes:
 
 次に、数値の入力をしてみましょう。
 
-*Calc.python*<br>
+*Calc.py*<br>
 ![](./pic/Calc.python.png)
 
 入力できたら、コンパイルして実行してみましょう。
