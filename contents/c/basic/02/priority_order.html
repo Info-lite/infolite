@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>演算子の優先順位</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="演算子の優先順位">演算子の優先順位</h2>
+<p>演算子には優先順位があります。おおまかに言うならば、数学での優先順位とほぼ同じです。</p>
+<p>もう少し詳しく言えば、「式 &gt; 単項演算子 &gt; 二項演算子 &gt; 代入演算子」となっていて、さらに二項演算子は、「算術演算子 &gt; 論理演算子 &gt; 比較演算子」となっています。</p>
+<p>正確に順序付けたのが次の表です。</p>
+<table class="table">
+<thead>
+<tr>
+<th>優先順位</th>
+<th>演算子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高い</td>
+<td>[ ], ., (), -&gt;, ++ (後置増分演算子), --(後置減分演算子)</td>
+</tr>
+<tr>
+<td rowspan="14"></td>
+<td>++ (前置増分演算子), -- (前置減分演算子), &amp;, *, + (単項演算子), - (単項演算子), !, ~, sizeof</td>
+</tr>
+<tr>
+<td>キャスト演算子</td>
+</tr>
+<tr>
+<td>\, *, /, %</td>
+</tr>
+<tr>
+<td>+ (二項演算子), - (二項演算子)</td>
+</tr>
+<tr>
+<td>&lt;&lt;, &gt;&gt;, &gt;&gt;&gt;</td>
+</tr>
+<tr>
+<td>&lt;, &lt;=, &gt;=, &gt;</td>
+</tr>
+<tr>
+<td>==, !=</td>
+</tr>
+<tr>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>^</td>
+</tr>
+<tr>
+<td>|</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+</tr>
+<tr>
+<td>||</td>
+</tr>
+<tr>
+<td>?:</td>
+</tr>
+<tr>
+<td>=, +=, -=, *=, /=, %=, &amp;=, ^=, !=, &lt;&lt;=, &gt;&gt;=, &gt;&gt;&gt;=</td>
+</tr>
+<tr>
+<td>低い</td>
+<td>,</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>関数</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3 id="関数の基本的な使い方">関数の基本的な使い方</h3>
+<p>まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。</p>
+<p><em>Function.c</em><br></p>
+<pre><code>#include&lt;stdio.h&gt;
+
+void myprint(){
+    printf("これはmyprintの実行結果です。");
+}
+
+void main(){
+    myprint();
+}
+</code></pre>
+<p>実行すると、以下のようになります。</p>
+<p><em>実行結果</em></p>
+<pre><code>これはmyprintの実行結果です。
+</code></pre>
+<p>複雑な命令を単純化させたい場合や、複数の命令をまとめた名前を付けたい場合、繰り返し同じ処理を実行させたい場合、関数を使うと便利です。</p>
+<p>関数の定義</p>
+<pre><code>返戻値の型 関数名(引数){
+  //プログラム
+}
+</code></pre>
+<h3 id="返戻値の書き方">返戻値の書き方</h3>
+<p>返戻値とは、関数を実行した結果のことです。関数を定義するとき、最初に返戻値の型を記載します。例えば、<code>m</code>個の中から<code>n</code>個を取り出す組み合わせ<code>mCn</code>を計算する関数<code>comb</code>を定義するとしましょう。組み合わせを計算するためには階乗(<code>n!</code>)を3回計算する必要があるので、関数<code>kaijou</code>を定義し、<code>comb</code>の中でそれらの結果を利用しましょう。このように、<code>kaijou</code>のような関数の実行結果を返戻する場合には、関数の最後に<code>return</code>と返戻するものを書き、返戻するものの型を関数定義の最初に書きます。以下に<code>kaijou</code>を利用する<code>comb</code>の例を示します。</p>
+<p><em>Comb.c</em><br></p>
+<pre><code>#include&lt;stdio.h&gt;
+
+int kaijou(int n){
+    int i;
+    int sum = 0;
+    for(i=1;i&lt;=n;i++){
+      sum = sum + i;
+    }
+    return sum
+}
+
+void comb(int m, int n){
+    int v1 = kaijou(m);
+    int v2 = kaijou(n);
+    int v3 = kaijou(m-n);
+    return v1 / (v2*v3);
+}
+</code></pre>
+<p>もし最初のの例の<code>myprint</code>のように、関数の実行結果を利用しない場合、返戻値の型のところには<code>void</code>と書き、関数の最後の<code>return</code>は省略します。</p>
+<h3 id="引数の書き方">引数の書き方</h3>
+<p>引数は、定義している関数を実行する際に必要なものを記載します。例えば、階乗(<code>n!</code>)を計算する関数<code>kaijou</code>を定義するためにはint型の数値<code>n</code>が必要なので、この関数の引数として<code>int n</code>を書きます。引数は0個でも2個以上でも良く、配列・構造体・ポインタも使えます。</p>
+<h3 id="いろいろな引数の書き方">いろいろな引数の書き方</h3>
+<p><em>Argument.c</em><br></p>
+<pre><code>#include&lt;stdio.h&gt;
+
+int add3(int n){
+  return n+3;
+}
+
+float ave(float m, float n){
+  return (m+n)/2.0;
+}
+
+int sum5(int a[5]){
+  return a[0]+a[1]+a[2]+a[3]+a[4];
+}
+
+int* pnt(int* p){
+  return p+1;
+}
+</code></pre>
+<h3 id="プロトタイプ宣言">プロトタイプ宣言</h3>
+<p>C言語はファイルを上から下に向けて順次処理します。複数の関数を定義すると、他の関数を実行するような関数を定義する状況も生じますが、その他の関数をファイルの上方で定義しておく必要があります。このような状況では、記述の順番を変更できると便利になることがあります。C言語は、関数の返戻値の型・関数名・引数のみをファイルの先頭に記載する<strong>プロトタイプ宣言</strong>を行うことによって、ファイルの下方にある関数を実行することができます。以下のプログラムはプロトタイプ宣言を使った例です。</p>
+<p><em>Prototype.c</em><br></p>
+<pre><code>#include&lt;stdio.h&gt;
+int one();
+
+void main(){
+  int x = one();
+  printf("%x=¥d\n",x);
+}
+
+int one(){
+  return 1;
+}
+</code></pre>
+<h2 id="練習問題">練習問題</h2>
+<ol>
+<li>
+<p>2つの数を引数として与えると，その和を返す関数two_sumを定義しましょう．</p>
+</li>
+<li>
+<p>2つの数を引数として与えると，その平均を返す関数two_aveを定義しましょう．</p>
+</li>
+<li>
+<p>2つの数を引数として与えると，大きい方の数を返す関数two_maxを定義しましょう．</p>
+</li>
+<li>
+<p>2つの数を引数として与えると，小さい方の数を返す関数two_minを定義しましょう．</p>
+</li>
+<li>
+<p>3つの数を引数として与えると，それらの和を返す関数three_sumを定義しましょう．</p>
+</li>
+<li>
+<p>3つの数を引数として与えると，それらの平均を返す関数three_aveを定義しましょう．</p>
+</li>
+<li>
+<p>3つの数を引数として与えると，その中から最も大きい数を返す関数three_maxを定義しましょう．</p>
+</li>
+<li>
+<p>3つの数を引数として与えると，その中から最も小さい数を返す関数three_minを定義しましょう．</p>
+</li>
+<li>
+<p>5つの数を引数として与えると，その中から最も大きい数を返す関数five_maxを定義しましょう．</p>
+</li>
+<li>
+<p>5つの数を引数として与えると，その中から最も小さい数を返す関数five_minを定義しましょう．</p>
+</li>
+<li>
+<p>1つの文字を引数として与えると，大文字なら小文字へ，小文字なら大文字を返す関数char_castを定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それら全ての和を返す関数sumを定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それら全ての平均を返す関数aveを定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それらの中から最も大きい数を返す関数maxを定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それらの中から最も小さい数を返す関数minを定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それらを小さい順に並べた配列を返す関数を定義しましょう．</p>
+</li>
+<li>
+<p>配列を引数として与えると，それらを大きい順に並べた配列を返す関数を定義しましょう．</p>
+</li>
+<li>
+<p>1からnまでの総和を，繰り返し処理（while文，for文）を使わず，関数呼び出しだけを使用して求めましょう．</p>
+</li>
+<li>
+<p>与えられた2 つの正の整数n1，n2 の最大公約数を求めるプログラムを作成してください．ユークリッドの互除法を利用して良い．</p>
+</li>
+</ol>
+</div>
+</body>
+
+</html>

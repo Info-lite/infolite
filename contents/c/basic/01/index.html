@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C言語の基礎</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="情報倫理講習会">情報倫理講習会</h2>
+<p>担当教員の指示に従って受講し、終了後は「テスト/アンケート」より、情リテ情報倫理テストを受験してください。</p>
+<ul>
+<li><a href="/lit/infoethics/information_ethics_ja.pdf">情報倫理講習会資料</a></li>
+</ul>
+
+<h2 id="MinGWのインストール">MinGWのインストール</h2>
+<p>350教室を除いた情報処理教室では自身のアカウントにC言語を実行するためのソフトウェアをインストールします。（350教室ではこの作業は不要です）</p>
+<p>以下のファイルをダウンロードし、<strong>マイドキュメント</strong>に保存してください。<br>
+<ul>
+<li><a href="https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/">MinGWインストールファイル</a></li>
+</ul>
+
+<p><a href="https://webkaru.net/clang/mingw-gcc-install/" target="_blank">このサイト</a>を参考に、GCCのインストールを行ってください。</p>
+<p>もしインストールが上手くできない場合、今日の授業では<a href="https://ideone.com" target="_blank">Ideone</a>を使いましょう。MinGWはなるべく次回の授業までにインストールして来てください。インストールできるまではIdeoneを補助的に利用してください。</p>
+
+<h2 id="パスの設定">パスの設定</h2>
+<p>インストールしたMinGWを実行するためには<b>パス</b>の設定を行う必要があります。</p>
+<p>以下のファイルをダウンロードし、<strong>マイドキュメント</strong>に保存してください。<br>
+次に、コマンドプロンプト（ターミナル）を起動しましょう。
+<ul>
+<li><a href="./init.bat">パス設定用ファイル</a></li>
+</ul>
+そして、次のように入力します。</p>
+<pre><code>init
+</code></pre>
+<p><img src="./pic/win_set_path.png" alt=""></p>
+
+<h2 id="最も基本的なプログラム">最も基本的なプログラム</h2>
+<h3 id="hello.c">Hello.c</h3>
+<p>以下のソースコードを、適当なエディタを用いて入力してみましょう。すべて<strong>半角英数で入力</strong>してください。</p>
+<p><em>Hello.c</em></p>
+<pre><code>#include &lt;stdio.h&gt;
+void main() {
+  printf("Hello.\n");
+}
+</code></pre>
+<p>ファイル名は、<strong>Hello.c</strong>とし、<strong>マイドキュメント</strong>に保存してください。<br>
+次に、コマンドプロンプト（ターミナル）を起動しましょう。そして、次のように入力します。</p>
+<pre><code>gcc Hello.c
+</code></pre>
+<p><img src="./pic/hello01_c.png" alt=""></p>
+<p>うまくできたら、次は以下のように入力します。</p>
+<pre><code>a.exe
+</code></pre>
+<p><img src="./pic/hello02_c.png" alt=""></p>
+<p>うまくいくと、以下のように表示されます。</p>
+<pre><code>Hello
+</code></pre>
+<p>コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。</p>
+<p><span class="label label-info">参考資料</span> <a href="../../appendix/win_cmd_prompt.html">コマンドプロンプトの使い方</a></p>
+<p><span class="label label-info">参考資料</span> <a href="../../appendix/mac_terminal.html">ターミナルの使い方</a></p>
+<h2 id="c言語の基本">C言語の基本</h2>
+<h3 id="c言語とは">C言語とは</h3>
+<h3 id="c言語の簡単な仕組み">C言語の簡単な仕組み</h3>
+<p>C言語は、作成したソースコードをコンパイルし、バイトコードを作成するコンパイル型言語です。<br>
+作成されたバイトコードを実行すると作成したプログラムの結果を確認できます。</p>
+<dl>
+<dt>コンパイル</dt>
+<dd>ソースコードを、コンピュータが直接実行可能な機械語に翻訳する操作のこと。
+この操作を行うソフトウェアの事を<strong>コンパイラ</strong>という。</dd>
+<dt>インタプリタ</dt>
+<dd>ソースコードを逐次機械語に翻訳しながら実行するソフトウェアのこと。</dd>
+</dl>
+
+<h2 id="hello.cの解説---コンパイルから実行まで">Hello.cの解説 - コンパイルから実行まで</h2>
+<h3 id="gcc">gcc</h3>
+<p>ソースコードを入力・保存したあと、次のようなコマンドを実行しました。</p>
+<pre><code>gcc Hello.c
+</code></pre>
+<p>この <code>gcc</code> が、<strong>コンパイル</strong>するためのコマンドです。<br>
+これにより、バイトコードの <code>a.exe</code> が作成されます。</p>
+<h3 id="a.exe">a.exe</h3>
+<p>コンパイル後、次のコマンドを実行しました。</p>
+<pre><code>a.exe
+</code></pre>
+<p>これは、コンパイルで作成されたバイトコード <code>a.exe</code> を実行しています。</p>
+<h2 id="hello.cの解説---ソースコード">Hello.cの解説 - ソースコード</h2>
+<h3 id="include">include</h3>
+<p>さて、先ほど作成した <code>Hello.c</code> を見てみましょう。１行目に <code>#include &lt;stdio.h&gt;</code> と書かれています。<br>
+これは、<code>stdio.h</code>という名前の<strong>ヘッダーファイル</strong>を読み込むものです。<br>
+詳しくはプログラムに慣れてから説明しますが、ひとまず<strong>Cプログラムを実行するために必要な命令</strong>と考えてください。<br>
+少し直感的な説明をすると、<code>Hello</code>などの文字を表示するために必要なファイルです。</p>
+<h3 id="main">main()</h3>
+<p>２行目は、<code>void main()</code> となっています。<br>
+この<strong>main</strong>と書かれた部分が<strong>メイン関数</strong>と呼ばれる部分です。<br>
+プログラムを実行すると、この後の中括弧 <code>{ }</code> の中に書かれていることが<strong>必ず実行</strong>されます。<br>
+Cプログラミングでは、このメイン関数が<strong>必要</strong>です。プログラムの最も大事な部分になります。</p>
+<h3 id="printf">printf()</h3>
+<p>３行目は、<code>printf("Hello.\n")</code> となっています。<br>
+これは、「ターミナルに文字を出力せよ」という命令です。ですから <code>./a.exe</code> を実行すると、ターミナルに “Hello.” と表示されます。<br>
+よく使うので覚えておきましょう。<br>
+<code>\n</code> を除くと（つまり、<code>printf("Hello.\n")</code>を<code>printf("Hello.")</code> とすると改行をしません。<br>
+<code>\n</code> を除いたものも実行してみましょう。</p>
+<h2 id="練習問題">練習問題</h2>
+<p><code>printf("Hello\n")</code> を <code>printf("Hello")</code> に書き換え、動作の違いを確認してみましょう。<br>
+また、<code>printf("Hello\n")</code> を参考に、別の文字列を出力させてみましょう。</p>
+</div>
+</body>
+
+</html>
