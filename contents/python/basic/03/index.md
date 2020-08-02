@@ -66,13 +66,15 @@ purposes:
 
 
 <dl>
-<dt>8行目 String str1 = br.readLine();</dt>
-<dd>キーボードから入力されたものを、文字列型（<font color="red">String</font> 型）として取得。</dd>
-<dt>9行目 int a = Integer.parseInt(str1);</dt>
-<dd>文字列を、整数型（<font color="red">int</font> 型）に変換。</dd>
+<dt>3行目 a0 = input() </dt>
+<dd>キーボードから入力されたものを、文字列（<font color="red">String</font> ）として取得。</dd>
+<dt>4行目 a = int(a0)</dt>
+<dd>文字列を、整数（<font color="red">int</font> ）に変換。</dd>
+<dt>10行目 str(a+b)</dt>
+<dd>整数を、文字列に変換。</dd>
 </dl>
 
-![](./pic/calc<?lang>.png)
+![](./pic/calc_py.png)
 
 
 

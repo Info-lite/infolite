@@ -32,7 +32,7 @@ purposes:
     変数名 = []
     
     // 例
-    a = [];
+    a = []
     a.append(1)
     a.append(2)
     a.append(3)
