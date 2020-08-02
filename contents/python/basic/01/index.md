@@ -69,20 +69,20 @@ Python プログラミングは，次のような流れで行います。
 はじめてのプログラミング
 ---
 
-### *hello_world.py*
+### *hello.py*
 
 以下のソースコードを、適当なエディタを用いて入力してみましょう。全て半角英字で入力し，大文字・小文字の区別をします。また，スペースや記号も忘れずに入力してください。
 
-    print("Hello World!")
+    print("Hello")
 
-ファイル名は、**hello_world.py**とし、**マイドキュメント**に保存してください。
+ファイル名は、**hello.py**とし、**マイドキュメント**に保存してください。
 次に、コマンドプロンプト（ターミナル）を起動してください。　
 
 そして，"python" コマンドでインタプリタを起動しプログラムを実行します。
 
-    H:\>python hello_world.py
+    H:\>python hello.py
 
-{% screenshot hello02.png "java Hello の入力" %}
+{% screenshot hello02.png "python Hello の入力" %}
 
 うまくいくと、以下のように表示されます。
 
@@ -94,12 +94,12 @@ Python プログラミングは，次のような流れで行います。
 
 <span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/mac_terminal.html)
 
-### *hello_world.py*の構造
+### *hello.py*の構造
 
 *.py* 拡張子がつけられたファイルは Python ソースコードと呼びます。
 このソースコードを使って，Python プログラムの構造を見ていきます。
 
-    print("Hello World!")
+    print("Hello")
 
 *print()* 関数は丸括弧の中を表示するための命令です。行として表示され文末は改行されます。
 最初のプログラムは関数を 1 つ使うだけのとてもシンプルなものでしたが，
@@ -112,11 +112,11 @@ Python プログラミングは，次のような流れで行います。
 Python では `#`記号から行末まではコメントとして扱われ，インタプリタから見えない、すなわちプログラムの一部として認識されない部分になります。
 
     #
-    # hello_world.py
+    # hello.py
     #
     
-    # This program shows　"Hello World!"
-    print("Hello World!") # -> Hello World!
+    # This program shows　"Hello"
+    print("Hello") # -> Hello
 
 全角文字のトラブルを避けるためにもコメントは英語でつけることを勧めますが，
 あとで見返して意味がわからないコメントは意味が無いので，自信がない場合は無理せず日本語で入力しましょう。
@@ -147,7 +147,7 @@ Python では `#`記号から行末まではコメントとして扱われ，イ
 この >>> という記号は，Python の関数や命令文を実行できる状態になると表示されます。
 続けて，先ほどと同じ print() 関数を入力してみましょう。
 
-    >>> print("Hello World!")
+    >>> print("Hello")
 
 入力後に [Enter] キーを押すと，先ほどと同じように文字列が表示されました。
 このように，シンプルな命令であればファイルを作らずに実行できるのがインタラクティブシェルの特徴です。 
@@ -158,4 +158,4 @@ Python では `#`記号から行末まではコメントとして扱われ，イ
 
 練習
 --------------
-1. hello_world.pyの内容を一部書き換えて、表示される文字列を　Hello Python World! にしてみましょう。
+1. hello.pyの内容を一部書き換えて、表示される文字列を　Hello Python World! にしてみましょう。
