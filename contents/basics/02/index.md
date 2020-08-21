@@ -46,12 +46,10 @@ purposes:
                                     </video>
                                 </div>
                             </div>
-                        </div>
+                        </div></div>
                     </div>
                 </p>
-            </div>
         </div>
-    </div>
     </div>
 </div>
 
