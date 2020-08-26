@@ -17,8 +17,10 @@ purposes:
 
 実行すると、以下のように表示されます。
 
-*WhileLoopSample.py*<br>
-![](./pic/WhileLoopSample.py.png)
+    x = 0
+    while x < 3:
+        print('x = ' + str(x))
+        x = x + 1
 
 実行すると、以下のように表示されます。
 
@@ -51,9 +53,11 @@ while文を使うと、繰り返しを行うことができます。
 
 では、次のように改良してみましょう。
 
-
-*WhileLoopSample2.py*<br>
-![](./pic/WhileLoopSample2.py.Mod1.png)
+    x = 0
+    while True:
+        print('x = ' + str(x))
+        x = x + 1
+        if x == 3: break
 
 実行すると、以下のようになります。
 
@@ -94,8 +98,11 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 
 では、次のようにプログラムを改良してみましょう。
 
-*WhileLoopSample3.pyt*<br>
-![](./pic/WhileLoopSample3.py.Mod1.png)
+    x = 0
+    while True:
+        print('x = ' + str(x))
+        x += 1
+        if x == 3: break
 
 インクリメント演算子というものもあります。
 
@@ -120,10 +127,10 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 ### for文の基本
 
 決まった回数の反復を行う場合、より分かりやすい方法があります。
-まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
+まず、以下のソースコードを打ち込み、実行してみましょう。
 
-*ForLoopSample.py*<br>
-![](./pic/ForLoopSample.py.png)
+    for i in range(3):
+        print(str(i+1) + '回目'))
 
 実行すると、以下のようになります。
 
@@ -146,6 +153,8 @@ for文を使うと、繰り返しを行うことができます。
 
     for i in [1, 2, 3, 4, 5]:
         print(i)
+
+なお、ここでは、オブジェクトは複数のデータを1つにまとめたもの、という意味で使用しています。具体的には[リスト](https://infolit.uec.tmu.ac.jp/lit/contents/python/basic/06/index.html)で学習します。
 
 
 練習問題
