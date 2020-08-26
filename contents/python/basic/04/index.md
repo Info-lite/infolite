@@ -31,6 +31,14 @@ purposes:
 
 *if文（１）*
 
+    if 条件:
+        条件に当てはまった場合に実行する内容
+
+    # 例
+    if a == 1:
+        print('入力したのは1ですね')
+
+
 ### 比較演算子
 比較演算子には、以下のようなものがあります。
 <table>
@@ -97,8 +105,15 @@ purposes:
 ### else
 では、前のソースコードに少し付け加えてみましょう。
 
-*ForkSample.py*<br>
-![](./pic/ForkSample.python.Mod1.png)
+    import sys
+    print('数字を入力してください。')
+    a0 = input()
+    a = int(a0)
+
+    if a == 1:
+        print('入力したのは1ですね。')
+    else:
+        print('入力したのは1ではありません。')
 
 実行結果は、以下のどちらかになります。
 
