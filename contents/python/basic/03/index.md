@@ -22,8 +22,12 @@ purposes:
 
 以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
-*Name.py*<br>
-![](./pic/Name.python.png)
+
+    import sys
+    print('名前を入力してください。')
+    a = input()
+    print(a)
+
 
 実行すると、以下のようになります。
 
@@ -44,10 +48,19 @@ purposes:
 
 次に、数値の入力をしてみましょう。
 
-*Calc.py*<br>
-![](./pic/Calc.python.png)
+    import sys
+    print('1つめの値を入力してください。')
+    a0 = input()
+    a = int(a0)
 
-入力できたら、コンパイルして実行してみましょう。
+    print('2つめの値を入力してください。')
+    b0 = input()
+    b = int(b0)
+
+    ans = a + b
+    print(a0 + 'たす' + b0 + 'は' + str(ans))
+
+入力できたら実行してみましょう。
 ここでは、`5` と `7` を入力しました。
 
 *実行結果*
@@ -75,7 +88,6 @@ purposes:
 </dl>
 
 ![](./pic/calc_py.png)
-
 
 
 練習問題
