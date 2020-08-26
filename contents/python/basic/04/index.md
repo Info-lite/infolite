@@ -140,8 +140,20 @@ elseを使うと、if文の条件に合わなかった場合に実行する内�
 ### elif
 さらに複数の分岐をさせてみましょう。
 
-*ForkSample.py*<br>
-![](./pic/ForkSample.python.Mod2.png)
+    import sys
+    print('数字を入力してください。')
+    a0 = input()
+    a = int(a0)
+
+    if a == 1:
+        print('入力したのは1ですね。')
+    elif a == 2:
+        print('入力したのは2ですね。')
+    elif a == 3:
+        print('入力したのは3ですね。')
+    else:
+        print('入力したのは1ではありません。')
+
 
 1,2,3を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。
 else ifを使うと、さらに分岐を増やすことができます。
