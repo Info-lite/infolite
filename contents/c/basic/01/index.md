@@ -41,15 +41,13 @@ purposes:
 
 うまくできたら、次は以下のように入力します。
 
-    ./a.exe
+    a.exe
 
-{% screenshot hello02_c.png "./a.exe の入力" %}
+{% screenshot hello02_c.png "a.exe の入力" %}
 
 うまくいくと、以下のように表示されます。
 
     Hello
-
-{% screenshot hello03_c.png "Hello の出力" %}
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
