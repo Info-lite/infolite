@@ -10,7 +10,7 @@
 
 1. R
 
-以下のサイトにアクセスする
+配布元であるCRANのサイトに以下のサイトにアクセスする
 
 https://cran.r-project.org/
 
@@ -23,6 +23,10 @@ https://cran.r-project.org/
 のいずれかをダウンロードする
 
 2. R Commander
+
+*以下のサイトの（Rコマンダーのインストール以下）を参考にしてください*
+
+https://personal.hs.hirosaki-u.ac.jp/pteiki/research/yodosha/second.html
 
 ①Rを起動する．
 ②開かれたRの上にあるメニューから[パッケージ]－[パッケージのインストール]と選ぶ．
@@ -38,11 +42,13 @@ https://cran.r-project.org/
 ⑧[無いパッケージをインストールする]というダイアログボックスで，[OK]をクリック．
 ⑨またインストールが始まりますので，少し待ちます．Rコマンダーのインストールが完了すると，新たにRコマンダーの画面が現れる．
 
-*以下のサイトを参照しました*
-
-https://personal.hs.hirosaki-u.ac.jp/pteiki/research/yodosha/second.html
-
 3. RStadio
+
+*以下のサイトを参考にしてください*
+
+https://qiita.com/daifuku_mochi2/items/ad0b398e6affd0688c97
+
+
 
 以下のサイトにアクセス
 
@@ -56,14 +62,8 @@ https://rstudio.com/products/rstudio/download/
 
 
 
-*以下のサイトを参照しました*
-
-https://qiita.com/daifuku_mochi2/items/ad0b398e6affd0688c97
-
 ## 参考にしたサイト
 
 https://personal.hs.hirosaki-u.ac.jp/pteiki/research/yodosha/second.html
-
 http://sgn.sakura.ne.jp/R/Rinstall.html
-
 https://qiita.com/daifuku_mochi2/items/ad0b398e6affd0688c97
