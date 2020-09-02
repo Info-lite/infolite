@@ -1,6 +1,7 @@
 class Person:
-    name = ''
-    age = 0
+    def main(self):
+        self.name = 'なまえ'
+        self.age = 20
 
     def show(self):
         print('名前は、' + self.name + 'です。')
@@ -18,6 +19,5 @@ p1.name = 'なまえ'
 p1.age = 20
 p1.show()
 p1.future_age(5)
-
 
 

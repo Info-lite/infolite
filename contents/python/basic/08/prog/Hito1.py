@@ -1,7 +1,7 @@
 class Person:
     def main(self):
-        name = 'なまえ'
-        age = 20
+        self.name = 'なまえ'
+        self.age = 20
 
     def show(self):
         print('名前は、' + self.name + 'です。')
@@ -9,7 +9,7 @@ class Person:
 
 p1 = Person()
 p1.main()
-
+p1.show()
 
 
 
