@@ -93,7 +93,7 @@ purposes:
 配列のインデックスを２次元・３次元、あるいは多次元にして使うこともできます。
 これについては、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [多次元配列](./multidimensional_array.html)
+<span class="label label-info">参考資料</span> [多次元配列](./multidimensional_c_array.html)
 
 練習問題
 --------
