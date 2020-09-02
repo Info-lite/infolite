@@ -1,6 +1,6 @@
 class Person:
     def main(self):
-        self.name = 'なまえ'
+        self.name = '都立大'
         self.age = 20
         print('名前は、' + self.name + 'です。')
         print('年齢は、' + str(self.age) + '歳です。')

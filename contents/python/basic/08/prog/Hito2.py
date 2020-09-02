@@ -1,6 +1,6 @@
 class Person:
     def main(self):
-        self.name = 'なまえ'
+        self.name = '都立大'
         self.age = 20
 
     def show(self):
