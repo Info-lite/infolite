@@ -55,7 +55,7 @@ purposes:
 では、以下のようなソースコードを入力し、実行してみましょう。
 
 *Arrangement2.py*<br>
-![](./pic/arrangement2.png)
+![](./pic/Arrangement2.png)
 
 実行すると、例えば以下のようになります。
 
