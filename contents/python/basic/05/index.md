@@ -156,6 +156,7 @@ for文を使うと、繰り返しを行うことができます。
 
 なお、ここでは、オブジェクトは複数のデータを1つにまとめたもの、という意味で使用しています。具体的には[リスト](https://infolit.uec.tmu.ac.jp/lit/contents/python/basic/06/index.html)で学習します。
 
+![](./pic/python_for.png)
 
 練習問題
 --------------------
