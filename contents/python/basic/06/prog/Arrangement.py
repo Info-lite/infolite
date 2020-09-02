@@ -7,3 +7,5 @@ a.append(85)
 
 for i in range(5):
     print(i, '番目のデータは、', a[i], 'です。')
+
+

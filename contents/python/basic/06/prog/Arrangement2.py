@@ -13,3 +13,5 @@ for i in range(x):
 
 for i in range(x):
     print(i+1, '番目のデータは、', a[i], 'です。')
+
+
