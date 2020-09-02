@@ -119,7 +119,7 @@ purposes:
 変数宣言は、プログラムの任意の場所で行えますが、特にプログラム全般で使う変数は**先頭にまとめる**ほうが良いでしょう。
 また、変数名は基本的には自由につけることができますが、**予約語** と呼ばれる単語は使用することができません。
 
-<span class="label label-info">参考資料</span> [C言語における予約語](./keyword_c.html)
+<span class="label label-info">参考資料</span> [C言語における予約語](../../appendix/keyword.html)
 
 ### 代入
 

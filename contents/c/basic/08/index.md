@@ -17,6 +17,7 @@ purposes:
 ![](./pic/Structure.png)
 
 実行すると、以下のようになります。
+
     struct oden{
         int age;
         char name[10];
