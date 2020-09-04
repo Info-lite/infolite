@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void tasu(int a, int b){
+void two_sum(int a, int b){
     int c;
     c = a + b;
     printf("%d\n", c);
@@ -12,7 +12,7 @@ int main(void){
     scanf("%d",&a);
     printf("bを入力してください\n");
     scanf("%d",&b);
-    tasu(a, b);
+    two_sum(a, b);
     return 0;
 }
 
