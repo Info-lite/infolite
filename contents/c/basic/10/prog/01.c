@@ -2,7 +2,7 @@
 
 void tasu(int a, int b){
     int c;
-    c = a * b;
+    c = a + b;
     printf("%d\n", c);
 }
 int main(void){
