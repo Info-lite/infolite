@@ -17,7 +17,7 @@ void min_a(int x[], int a){
 }
 int main(void){
     int a;
-    printf("いくつ数字を入力ししますか？\n");
+    printf("いくつ数字を入力しますか？\n");
     scanf("%d",&a);
     int x[a];
     for(int i=0; i<a;i++){
