@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void ave_a(int x[], int a){
-    int c;
+void ave(int x[], int a){
+    int c = 0;
     for(int i = 0;i<a;i++){
         c = c + x[i];
     }
@@ -10,14 +10,14 @@ void ave_a(int x[], int a){
 }
 int main(void){
     int a;
-    printf("いくつ数字を入力ししますか？\n");
+    printf("いくつ数字を入力しますか？\n");
     scanf("%d",&a);
     int x[a];
     for(int i=0; i<a;i++){
         printf("%dつ目の数字を入力してください\n",i+1);
         scanf("%d",&x[i]);
     }
-    ave_a(x,a);
+    ave(x,a);
     return 0;
 }
 
