@@ -3,7 +3,7 @@ int main()
 {
     int i, number ,flag = 0;
 
-    printf("数字を入力してください\n");
+    printf("値を入力してください\n");
     scanf("%d", &number);
 
     for(i=2;i<number;++i) {
