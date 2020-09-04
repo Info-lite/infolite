@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void min_three(double a, double b, double c){
+void three_min(double a, double b, double c){
     double d;
     if(a>=b){
         if(b>=c){
@@ -30,6 +30,6 @@ int main(void){
     scanf("%lf",&b);
     printf("cを入力してください\n");
     scanf("%lf",&c);
-    min_three(a, b, c);
+    three_min(a, b, c);
     return 0;
 }
