@@ -1,0 +1,504 @@
+<h2>Ｌ行Ｍ列分割表の検定</h2>
+<section>
+<div id="purpose">
+<h2>本講の目的</h2>
+<ul>
+ 	<li>Ｌ行Ｍ列分割表の検定を行い、2行2列以上の分割表の検定を学ぶ</li>
+ 	<li>Excelでグラフを作ってみる</li>
+</ul>
+</div>
+</section>
+
+<hr>
+
+<section>
+<div id="toc">
+<h2>目次</h2>
+<ol>
+ 	<li><a href="#section1">Ｌ行Ｍ列分割表の検定</a>
+<ol>
+ 	<li><a href="#section1.1">練習問題1</a></li>
+ 	<li><a href="#section1.2">検定の手順</a></li>
+ 	<li><a href="#section1.3">Excelの操作</a></li>
+ 	<li><a href="#section1.4">結果</a></li>
+ 	<li><a href="#section1.5">論文では</a></li>
+ 	<li><a href="#section1.6">Ｌ行Ｍ列分割表の偏差（残差）のチェック</a></li>
+</ol>
+</li>
+ 	<li><a href="#section2">Ｌ行Ｍ列分割表のグラフ表現</a>
+<ol>
+ 	<li><a href="#section2.1">Excelの操作</a></li>
+</ol>
+</li>
+ 	<li><a href="#section3">課題1</a></li>
+ 	<li><a href="#section4">課題2</a></li>
+</ol>
+</div>
+</section>
+
+<hr>
+
+<section>
+<div id="NB">
+<h2>注意</h2>
+<strong>練習で使ったデータは必ず保存するようにしましょう。</strong>
+
+</div>
+</section>
+
+<hr>
+
+<section>
+<div id="section1">
+<h2>Ｌ行Ｍ列分割表の検定</h2>
+<section>
+<div id="section1.1">
+<h3>練習問題1</h3>
+都内のある学校で、修学旅行先の希望調査を行いました。クラスは、Ａ、Ｂ、Ｃの3クラスあります。調査結果を整理したのが、次の3行4列<a href="../class04/#contingency_table">分割表</a>です。各クラスの希望の傾向は同じといえるでしょうか。検定してください。
+<figure id="table1" style="display:table;"><figcaption style="display:table-caption;text-align:center;">表1：各クラスの修学旅行先の希望数（人）</figcaption><img src="https://infolit.uec.tmu.ac.jp/lit/contents/jmp/05/pic/05_01exQ.png" alt="表1：各クラスの修学旅行先の希望数（人）"></figure>
+</div>
+</section>
+<section>
+<div id="section1.2">
+<h3>検定の手順</h3>
+Ｌ行Ｍ列<a href="../class04/#contingency_table">分割表</a>の検定には、<a href="../class04/#section3">2行2列分割表の検定</a>と同様に<a href="../class04/#pearson_s_chi2-test">ピアソンの$latex \chi^2$検定</a>を用いることができます。
+
+<section>
+<div id="section1.2.1">
+<h4>仮説の設定</h4>
+<ul>
+ 	<li><a href="../class02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：修学旅行先の希望の傾向はクラスによらず同じである</li>
+ 	<li><a href="../class02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：修学旅行先の希望の傾向はクラスによって異なる</li>
+</ul>
+</div>
+</section>
+<section>
+<div id="section1.2.2">
+<h4>有意水準αの設定</h4>
+<a href="../class04/#section1">有意水準</a>α = 0.05とします。
+
+</div>
+</section>
+<section>
+<div id="section1.2.3">
+<h4>検定統計量$latex \chi^2$値の算出</h4>
+今回、<a href="../class02/#test_statistic">検定統計量</a>$latex \chi^2$は以下の数式で求まります。
+$latex \displaystyle \chi^2 = \sum_{i=1}^L \sum_{j=1}^M \frac{{\left( f_{ij} - t_{ij} \right)}^2}{t_{ij}}$
+ここで、$latex f_{ij}$は以下の表のとおり、Ｌ行Ｍ列分割表における$latex i$行$latex j$列の<a href="../class01/#frequency">度数</a>です。一方、$latex t_{ij}$は$latex f_{ij}$に対する<a href="../class04/#theoretical_frequency">期待値</a>で、
+$latex \displaystyle t_{ij} = \frac{l_i m_j}{N}$
+で与えられます。なお、L = 2、M = 2を代入し、展開すると<a href="../class04/#original_chi2">2行2列分割表の場合の式</a>になります。
+<table id="sample_table" style="width:auto;border-collapse:collapse;">
+<caption style="text-align:center;border:none;">Ｌ行Ｍ列分割表</caption>
+<thead>
+<tr>
+<th style="text-align:center;border:1px solid black;"></th>
+<th style="text-align:center;border:1px solid black;">項目B<sub>1</sub></th>
+<th style="text-align:center;border:1px solid black;">項目B<sub>2</sub></th>
+<th style="text-align:center;border:1px solid black;">…</th>
+<th style="text-align:center;border:1px solid black;">項目B<sub>j</sub></th>
+<th style="text-align:center;border:1px solid black;">…</th>
+<th style="text-align:center;border:1px solid black;">項目B<sub>M-1</sub></th>
+<th style="text-align:center;border:1px solid black;">項目B<sub>M</sub></th>
+<th style="text-align:center;border:1px solid black;">計</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th style="text-align:center;border:1px solid black;">項目A<sub>1</sub></th>
+<td style="text-align:center;border:1px solid black;">$latex f_{11}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{12}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{1j}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{1M-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{1M}$</td>
+<td style="text-align:center;border:1px solid black;">$latex l_1$</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">項目A<sub>2</sub></th>
+<td style="text-align:center;border:1px solid black;">$latex f_{21}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{22}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{2j}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{2M-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{2M}$</td>
+<td style="text-align:center;border:1px solid black;">$latex l_2$</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">⋮</th>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋱</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋱</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">項目A<sub>i</sub></th>
+<td style="text-align:center;border:1px solid black;">$latex f_{i1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{i2}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{ij}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{iM-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{iM}$</td>
+<td style="text-align:center;border:1px solid black;">$latex l_i$</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">⋮</th>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋱</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋱</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+<td style="text-align:center;border:1px solid black;">⋮</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">項目A<sub>L-1</sub></th>
+<td style="text-align:center;border:1px solid black;">$latex f_{L-11}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{L-12}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{L-1j}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{L-1M-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{L-1M}$</td>
+<td style="text-align:center;border:1px solid black;">$latex l_{L-1}$</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">項目A<sub>L</sub></th>
+<td style="text-align:center;border:1px solid black;">$latex f_{L1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{L2}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{Lj}$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{LM-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex f_{LM}$</td>
+<td style="text-align:center;border:1px solid black;">$latex l_L$</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th style="text-align:center;border:1px solid black;">計</th>
+<td style="text-align:center;border:1px solid black;">$latex m_1$</td>
+<td style="text-align:center;border:1px solid black;">$latex m_2$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex m_j$</td>
+<td style="text-align:center;border:1px solid black;">…</td>
+<td style="text-align:center;border:1px solid black;">$latex m_{M-1}$</td>
+<td style="text-align:center;border:1px solid black;">$latex m_M$</td>
+<td style="text-align:center;border:1px solid black;">$latex N$</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</section>
+<section>
+<div id="section1.2.4">
+<h4>自由度の算出</h4>
+また、<a href="../class02/#test_statistic">検定統計量</a>$latex \chi^2$は自由度φの$latex \chi^2$分布に従うことがわかっています。自由度φは以下の式で求まります。
+<span id="phi_of_chi2">φ = (L - 1)×(M - 1)</span>
+<a href="../class04/#section4.4">2行2列分割表の場合</a>、<q cite="../class04/#section4.4">検定統計量$latex \chi^2$は自由度1の$latex \chi^2$分布に近似的に従うことがわかっています</q>が、これも<a href="#phi_of_chi2">上式</a>にL = 2、M = 2を代入した結果に一致します。
+
+</div>
+</section>
+<section>
+<div id="section1.2.5">
+<h4>p値の算出</h4>
+<a href="../class04/#section1">有意水準</a>と比較するp値を求めます。<span id="p_of_chi2">p値</span>は、自由度φの$latex \chi^2$分布において、<a href="../class02/#test_statistic">検定統計量</a>$latex \chi^2$値より大きい値が発生する確率です。
+
+</div>
+</section>
+<section>
+<div id="section1.2.6">
+<h4>判定</h4>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/chi2_pdf_dof6.png" alt="自由度6のχ2分布">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">自由度6の$latex \chi^2$分布</figcaption></figure>
+自由度φ = 6の$latex \chi^2$分布はこのようなグラフを描きます。このグラフで、p値を表す面積が<a href="../class04/#section1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="./class02/#null_hypothesis">帰無仮説</a>の棄却を決定します。
+<dl>
+ 	<dt>p値 ≤ 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
+ 	<dt>p値 &gt; 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+</div>
+</section></div>
+</section>
+<section>
+<div id="section1.3">
+<h3>Excelの操作</h3>
+Excelを使って、<a href="#section1.1">練習問題1</a>に取り掛かりましょう。
+<ol style="list-style-type:circled-decimal;">
+ 	<li><a href="#table1">表1</a>のデータをExcelに入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_07input.png" alt="データの入力">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">データの入力</figcaption></figure>
+</li>
+ 	<li>今回は、<a href="../class04/#section2.3">2行2列分割表を作成する操作</a>では<a href="../class04/#contingency_table">分割表</a>をうまく作成できません。そこで、<a href="../class04/#pivot_table">ピボットテーブル</a>機能を使って、分割表を手動で作成します。[挿入]タブをクリックし、「ピボットテーブル」をクリックします。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_08analysis.png" alt="ピボットテーブル">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">ピボットテーブル</figcaption></figure>
+</li>
+ 	<li>「ピボットテーブルの作成」ウィンドウが開いたらOKをクリックし、ピボットテーブル用のシートを作成します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_09analysis.png" alt="ピボットテーブルの作成">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">ピボットテーブルの作成</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_10analysis.png" alt="ピボットテーブル用シート">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">ピボットテーブル用シート</figcaption></figure>
+</li>
+ 	<li>ピボットテーブル用シートの右端の「ピボットテーブルのフィールド」で、クラスをドラッグして行へドロップします。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_11analysis.png" alt="ピボットテーブルのフィールド">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">ピボットテーブルのフィールド</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_12analysis.png" alt="クラスの行へのドラッグドロップ">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">クラスの行へのドラッグドロップ</figcaption></figure>
+</li>
+ 	<li>同様に、修学旅行先を列へ、人数を値へドラッグドロップし、分割表を完成させます。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_13analysis.png" alt="クラスの行へのドラッグドロップ">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">クラスの行へのドラッグドロップ</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_13table.png" alt="分割表の完成">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">分割表の完成</figcaption></figure>
+</li>
+ 	<li>検定のために<a href="../class04/#theoretical_frequency">期待値</a>用の項目を入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_14analysis.png" alt="期待値用の項目">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の項目</figcaption></figure>
+</li>
+ 	<li>期待値用のデータを入力します。
+<ul>
+ 	<li>"B12"：<code>=$F5*B$8/$F$8</code></li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_15analysis.png" alt="期待値用のデータ1">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータ1</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_16analysis.png" alt="期待値用のデータ2">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータ2</figcaption></figure>
+</li>
+ 	<li><a href="../class01/#autofill">オートフィル</a>で他のセルにもデータを入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_17analysis.png" alt="期待値用のデータのオートフィル1">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータのオートフィル1</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_18analysis.png" alt="期待値用のデータのオートフィル2">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータのオートフィル2</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_19analysis.png" alt="期待値用のデータのオートフィル3">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータのオートフィル3</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_20analysis.png" alt="期待値用のデータのオートフィル4">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用のデータのオートフィル4</figcaption></figure>
+</li>
+ 	<li>念のため<a href="../class04/#row_marginal_total">行周辺度数</a>も求めます。
+<ul>
+ 	<li>"F12"：<code>=SUM(B12:E12)</code></li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_21analysis.png" alt="期待値用の行周辺度数1">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の行周辺度数2</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_22analysis.png" alt="期待値用の行周辺度数2">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の行周辺度数2</figcaption></figure>
+</li>
+ 	<li>オートフィルで他のセルにもデータを入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_23analysis.png" alt="期待値用の行周辺度数のオートフィル1">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の行周辺度数のオートフィル1</figcaption></figure>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_24analysis.png" alt="期待値用の行周辺度数のオートフィル2">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の行周辺度数のオートフィル2</figcaption></figure>
+</li>
+ 	<li>同様に<a href="../class04/#column_marginal_total">列周辺度数</a>も求めます。
+<ul>
+ 	<li>"B15"：<code>=SUM(B12:B14)</code></li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_28analysis.png" alt="期待値用の列周辺度数のオートフィル後">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">期待値用の列周辺度数のオートフィル後</figcaption></figure>
+</li>
+ 	<li>検定のために<a href="../class01/#deviation">偏差</a>用の項目を入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_29analysis.png" alt="偏差用の項目">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">偏差用の項目</figcaption></figure>
+</li>
+ 	<li>偏差用のデータを入力します。
+<ul>
+ 	<li>"B19"：<code>=B5-B12</code></li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_32analysis.png" alt="偏差用のデータのオートフィル後">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">偏差用のデータのオートフィル後</figcaption></figure>
+</li>
+ 	<li>平方偏差を期待値で割った調整平方偏差用の項目を入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_33analysis.png" alt="調整平方偏差用の項目">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">調整平方偏差用の項目</figcaption></figure>
+</li>
+ 	<li>調整平方偏差用のデータを入力します。
+<ul>
+ 	<li>"B26"：<code>=B19^2/B12</code></li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_36analysis.png" alt="調整平方偏差用のデータのオートフィル後">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">調整平方偏差用のデータのオートフィル後</figcaption></figure>
+</li>
+ 	<li>検定用の項目を入力し、既知のデータを入力します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_37analysis.png" alt="検定用の項目">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">検定用の項目</figcaption></figure>
+</li>
+ 	<li>検定用のデータを算出するために、以下のように入力します。
+<ul>
+ 	<li>"I3"：<code>=SUM(B26:E28)</code>（検定統計量$latex \chi^2$値）</li>
+ 	<li>"I4"：<code>=(COUNTA(A5:A7)-1)*(COUNTA(B4:E4)-1)</code>（自由度φ）</li>
+ 	<li>"I5"：<code>=CHISQ.DIST.RT(I3,I4)</code>（p値）</li>
+</ul>
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_38analysis.png" alt="検定用のデータ">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">検定用のデータ</figcaption></figure>
+</li>
+</ol>
+なお、<a href="#section1.6">次々項</a>で偏差について考察するために、ここでは偏差用のデータを求め、それに基づいて検定していますが、"I5"セルは<a href="https://support.office.com/ja-jp/article/CHISQ-TEST-関数-2e8a7861-b14a-4985-aa93-fb88de3f260f"><code>CHISQ.TEST</code>関数</a>を使って度数と期待値とから直接<code>=CHISQ.TEST(B5:E7,B12:E14)</code>と求めることも可能です。
+
+</div>
+</section>
+<section>
+<div id="section1.4">
+<h3>結果</h3>
+<a href="#p_of_chi2">p値</a> = 2.51009×10<sup>-09</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_practice1_chi2.png" alt="p値の図示">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">p値の図示</figcaption></figure>
+p値 = 2.51009×10<sup>-09</sup> &lt; <a href="../class04/#section1">有意水準</a>α = 0.05 なので、<a href="../class02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。 よって、修学旅行先の希望の傾向はクラスによって異なるといえます。
+
+</div>
+</section>
+<section>
+<div id="section1.5">
+<h3>論文では</h3>
+論文では以下のような文章になります。
+<blockquote><a href="#table1">表1</a>に関して、$latex \chi^2$検定を行ったところ、有意差が認められた（$latex \chi^2$(6) = 51.35790831, p &lt; .05）。よって、修学旅行先の希望の傾向はクラスによって異なるといえる。</blockquote>
+</div>
+</section>
+<section>
+<div id="section1.6">
+<h3>Ｌ行Ｍ列分割表の偏差（残差）のチェック</h3>
+<a href="../class01/#frequency">度数</a>と<a href="../class04/#theoretical_frequency">期待値</a>との差である<a href="../class01/#deviation">偏差</a>（残差）を見てみましょう。残差の絶対値が大きいところが特徴的であるといえます。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_32analysis.png" alt="偏差（残差）">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">偏差（残差）</figcaption></figure>
+残差を見てみると、Ａクラスは北海道・東北が10.96178344と高く、Ｂクラスは東海・北陸が14.77070064、Ｃクラスは四国・九州が11.80254777とそれぞれ高い数値を出しています。このことから、Ａクラスは北海道・東北、Ｂクラスは東海・北陸、Ｃクラスは四国・九州に行きたいという傾向があることがわかりました。
+
+このような分析を残差分析と呼びます。
+
+</div>
+</section></div>
+</section>
+<section>
+<div id="section2">
+<h2>Ｌ行Ｍ列分割表のグラフ表現</h2>
+<a href="#section1.1">練習問題1</a>のグラフを作成します。
+
+<section>
+<div id="section2.1">
+<h3>Excelの操作</h3>
+<a href="#section1.1">練習問題1</a>のファイルを使います。
+<ol style="list-style-type:circled-decimal;">
+ 	<li>"A4"から"E7"を選択します。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_39analysis1.png" alt="データの選択">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">データの選択</figcaption></figure>
+</li>
+ 	<li>[挿入]タブをクリックし、「おすすめグラフ」をクリックします。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_40analysis.png" alt="おすすめグラフ">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">おすすめグラフ</figcaption></figure>
+</li>
+ 	<li>「グラフの挿入」ウィンドウが開いたらOKボタンをクリックします。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_41analysis.png" alt="グラフの挿入">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">グラフの挿入</figcaption></figure>
+</li>
+ 	<li>希望先のグラフがクラスごとに作成されました。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_42graph.png" alt="グラフの完成">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">グラフの完成</figcaption></figure>
+</li>
+</ol>
+グラフにすることで各項目ごとのパターンの違いを把握できます。ここでも、Ａクラスは北海道・東北、Ｂクラスは東海・北陸、Ｃクラスは四国・九州が多いということがわかりました。
+
+なお、以上の手順はグラフ作成の一般的な方法になっています。<a href="../class04/#pivot_table">ピボットテーブル</a>に対しては、ピボットテーブルのどこかをクリックすることで、下図のように現れる[ピボットテーブル ツール]の[分析]タブの「ピボットグラフ」をクリックする方法があります。それによって、「グラフの挿入」ウィンドウが開き、ピボットテーブルを適切に視覚化したグラフを作成することができます。
+<figure style="display:table;"><img src="https://fujiyoshimasaakitmu.files.wordpress.com/2016/11/05_43analysis.png" alt="ピボットグラフ">
+
+<figcaption style="display:table-caption;caption-side:bottom;text-align:center;">ピボットグラフ</figcaption></figure>
+</div>
+</section></div>
+</section>
+<section>
+<div id="section3">
+<h2>課題1</h2>
+次の表は、ある年とその10年後に同じ小学校で体力測定を行った際の総合評価の結果です。この10年の間に、体力測定結果に違いはあるでしょうか。また、違いがある場合は<a href="#section1.6">残差分析</a>を行い、それに基づいた違いの特徴を述べてください。
+なお、評価は体力測定の各項目を合成した数値による絶対評価で、この10年間に基準の変更はなく、全て同じ項目を用いた結果とします。（表中の数値は人数、評価はＡが最も高い）
+<figure style="display:table;">
+<figcaption style="display:table-caption;text-align:center;">表2：ある年と10年後の体力測定の結果（人）</figcaption><img src="https://infolit.uec.tmu.ac.jp/lit/contents/jmp/05/pic/05_23Q.png" alt="表2：ある年と10年後の体力測定の結果（人）"></figure>
+</div>
+</section>
+<section>
+<div id="section4">
+<h2>課題2</h2>
+Ａ大学にて、パソコンを持っている学生を対象に、自宅でのパソコンの使用に関する調査を行いました。 その結果が次の表です。パソコンの使用頻度が高い学生とそうでない学生には所属学部に傾向の違いがあるのでしょうか。<a href="../class04/#section1">有意水準</a>5％で検定してください。
+<table id="sample_table" style="width:auto;border-collapse:collapse;">
+<caption style="text-align:center;border:none;">表3：Ａ大学のパソコンの使用状況（人）
+
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;border:1px solid black;"></th>
+<th style="text-align:center;border:1px solid black;">使用頻度が高い（人）</th>
+<th style="text-align:center;border:1px solid black;">使用頻度が低い（人）</th>
+<th style="text-align:center;border:1px solid black;">計</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th style="text-align:center;border:1px solid black;">文学部</th>
+<td style="text-align:right;border:1px solid black;">15</td>
+<td style="text-align:right;border:1px solid black;">22</td>
+<td style="text-align:right;border:1px solid black;">37</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">経済学部</th>
+<td style="text-align:right;border:1px solid black;">30</td>
+<td style="text-align:right;border:1px solid black;">36</td>
+<td style="text-align:right;border:1px solid black;">66</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">理工学部</th>
+<td style="text-align:right;border:1px solid black;">60</td>
+<td style="text-align:right;border:1px solid black;">37</td>
+<td style="text-align:right;border:1px solid black;">97</td>
+</tr>
+<tr>
+<th style="text-align:center;border:1px solid black;">計</th>
+<td style="text-align:right;border:1px solid black;">105</td>
+<td style="text-align:right;border:1px solid black;">95</td>
+<td style="text-align:right;border:1px solid black;">200</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<hr>
+
+<footer id="copyright" title="copyright">本教材に掲載する製品名は、一般に各開発メーカの商標、または登録商標です。
+© –2015 <a href="http://www.uec.tmu.ac.jp">首都大学東京大学教育センター</a>情報教育部門・<a href="http://www.liac.tmu.ac.jp">首都大学東京学術情報基盤センター</a>情報メディア教育支援部門，2016，2017 Masaaki FUJIYOSHI.</footer>
