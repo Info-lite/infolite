@@ -1,7 +1,7 @@
 ---
 layout: index
 title: 情報リテラシー実践ⅡA
-permalink: /2a/
+permalink: /2a/2aexcel/
 ---
 
 -   [コンピュータを用いた統計学の基礎知識](/lit/contents/2aexcel/class01/index.html)
