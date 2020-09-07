@@ -412,7 +412,7 @@ CUIとは、コマンドライン、つまりは文字のみで表現された�
 
 ここでは、Windowsのコマンドプロンプトについて説明します。Macの場合は、以下を参考にしてください。
 
-{% appendix ../appendix/terminal.html "ターミナルの使い方" %}
+{% appendix ../../common/appendix/mac_terminal.html "ターミナルの使い方" %}
 
 ### コマンドプロンプトの起動
 
