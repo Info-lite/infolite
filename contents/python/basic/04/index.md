@@ -245,10 +245,7 @@ elif文は、いくつでも追加することができます。
 </li>
 <li><p>絶対値を求めるプログラムを作成しましょう。なお、絶対値は数字の大きさを表します。
 例えば、
-<code>
-    |4| = 4
-    |-4| = 4
-</code>
+<code>|4| = 4</code>, <code>|-4| = 4</code>
 </p>
 </li>
 <li><p>変数gradeの値が、<br>
@@ -266,8 +263,7 @@ elif文は、いくつでも追加することができます。
 <li><p>正の整数をキーボードから3つ入力すると、大きい順に並び替えて出力するプログラムを書きましょう。</p>
 
 <p><em>実行例</em></p>
-<div class="highlight"><pre><code class="language-" data-lang="">
-    値を3つ入力してください
+<div class="highlight"><pre><code class="language-" data-lang="">値を3つ入力してください
     入力1&gt;&gt; 10
     入力2&gt;&gt; 23
     入力3&gt;&gt; 65
