@@ -90,9 +90,9 @@ Python プログラミングは，次のような流れで行います。
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
-<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../appendix/win_cmd_prompt.html)
+<span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../../common/appendix/win_cmd_prompt.html)
 
-<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/mac_terminal.html)
+<span class="label label-info">参考資料</span> [ターミナルの使い方](../../../common/appendix/mac_terminal.html)
 
 ### *hello.py*の構造
 
