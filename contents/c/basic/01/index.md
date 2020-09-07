@@ -82,7 +82,7 @@ init
 
 <span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../../common/appendix/win_cmd_prompt.html)
 
-<span class="label label-info">参考資料</span> [ターミナルの使い方](../../appendix/mac_terminal.html)
+<span class="label label-info">参考資料</span> [ターミナルの使い方](../../../common/appendix/mac_terminal.html)
 
 C言語の基本
 --------------
