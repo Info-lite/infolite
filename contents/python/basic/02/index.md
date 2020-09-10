@@ -37,6 +37,7 @@ purposes:
 
     3
 <!-- 画像にしたい　-->
+{% screenshot adiition01.png "足し算 の出力" %}
 
 ### 算術演算子
 
