@@ -19,6 +19,9 @@ purposes:
     if a == 1:
         print('入力したのは1ですね。')
 
+![](./pic/ForkSample_python.png)
+
+
 実行結果は、以下のどちらかになります。
 
 *実行結果（１）*
@@ -27,10 +30,13 @@ purposes:
     1
     入力したのは１ですね。
 
+{% screenshot ForkSample_python01.png "実行結果（１）" %}
+
 *実行結果（２）*
 
     数字を入力してください。
     2
+{% screenshot ForkSample_python02.png "実行結果（２）" %}
 
 「1」を入力した場合には実行結果（１）となり、それ以外の値を入力した場合は（２）となります。
 ある条件により実行結果を変えたい場合、if文を使います。
@@ -121,6 +127,9 @@ purposes:
     else:
         print('入力したのは1ではありません。')
 
+![](./pic/ForkSample_python_Mod1.png)
+
+
 実行結果は、以下のどちらかになります。
 
 *実行結果（１）*
@@ -129,6 +138,7 @@ purposes:
     1
     入力したのは１ですね。
 
+{% screenshot ForkSample_python_Mod101.png "実行結果（１）" %}
 
 *実行結果（２）*
 
@@ -136,6 +146,7 @@ purposes:
     2
     入力したのは１ではありません。
 
+{% screenshot ForkSample_python_Mod102.png "実行結果（２）" %}
 
 「1」を入力した場合には実行結果（１）となり、それ以外の値を入力した場合は（２）となります。
 elseを使うと、if文の条件に合わなかった場合に実行する内容を書くことが出来ます。
@@ -170,7 +181,9 @@ elseを使うと、if文の条件に合わなかった場合に実行する内�
     elif a == 3:
         print('入力したのは3ですね。')
     else:
-        print('入力したのは1ではありません。')
+        print('入力したのは1,2,3ではありません。')
+
+![](./pic/ForkSample_python_Mod2.png)
 
 
 1,2,3を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。
