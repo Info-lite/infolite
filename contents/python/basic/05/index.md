@@ -15,12 +15,14 @@ purposes:
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 
-実行すると、以下のように表示されます。
+
 
     x = 0
     while x < 3:
         print('x = ' + str(x))
         x = x + 1
+
+{% screenshot WhileLoopSample_python.png "WhileLoopSample" %}
 
 実行すると、以下のように表示されます。
 
@@ -32,6 +34,8 @@ purposes:
 
 
 while文を使うと、繰り返しを行うことができます。
+
+{% screenshot WhileLoopSample_python01.png "実行結果" %}
 
 
 *while文*
@@ -59,6 +63,8 @@ while文を使うと、繰り返しを行うことができます。
         x = x + 1
         if x == 3: break
 
+{% screenshot WhileLoopSample_python_Mod1.png "break文" %}
+
 実行すると、以下のようになります。
 
 *実行結果*
@@ -66,6 +72,8 @@ while文を使うと、繰り返しを行うことができます。
     x=0
     x=1
     x=2
+
+{% screenshot WhileLoopSample_python_Mod101.png "実行結果" %}
 
 前のプログラムと実行結果は同じですが、少し動作が違います。とくに、while文を見てみましょう。
 while文の反復条件が「True」となっており、常に正しい条件となっています。そのため、永遠に反復し続けます。いわゆる無限ループと呼ばれる状態です。しかし、結果を見れば明らかなように、きちんと3回で止まっています。これは、break文によるものです。
@@ -104,6 +112,8 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
         x += 1
         if x == 3: break
 
+{% screenshot WhileLoopSample_python_Mod2.png "入力" 
+
 インクリメント演算子というものもあります。
 
 *インクリメント演算子*
@@ -130,7 +140,9 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
 まず、以下のソースコードを打ち込み、実行してみましょう。
 
     for i in range(3):
-        print(str(i+1) + '回目'))
+        print(str(i+1) + '回目')
+
+{% screenshot ForLoopSample01_python.png "for文" %}
 
 実行すると、以下のようになります。
 
@@ -140,6 +152,7 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
     2回目
     3回目
 
+{% screenshot ForLoopSample01_python01.png "実行結果" %}
 
 for文を使うと、繰り返しを行うことができます。
 
