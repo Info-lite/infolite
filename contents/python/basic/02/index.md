@@ -37,7 +37,7 @@ purposes:
 
     3
 
-{% screenshot ./pic/adiition01.png "足し算 の出力" %}
+{% screenshot addition01.png "足し算 の出力" %}
 
 ### 算術演算子
 
