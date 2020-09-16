@@ -36,8 +36,8 @@ purposes:
 *実行結果*
 
     3
-<!-- 画像にしたい　-->
-{% screenshot adiition01.png "足し算 の出力" %}
+
+{% screenshot addition01.png "足し算 の出力" %}
 
 ### 算術演算子
 
@@ -81,7 +81,7 @@ Python で利用できる主な算術演算子をまとめます。
 *exit()* コマンドでインタラクティブシェルを抜け、このソースコードを実行しましょう。
 
     >>>exit() 
-    >calc_sample_1.py
+    >python calc_sample_1.py
     3
     
 ここでのｘやｙは**変数**と呼ばれます。    

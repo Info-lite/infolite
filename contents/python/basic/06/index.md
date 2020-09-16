@@ -26,7 +26,8 @@ purposes:
     3番目のデータは、55です。
     4番目のデータは、85です。
 
-{% screenshot Arrangement01_python.png "実行結果" %}
+![](./pic/Arrangement01_python.png)
+<!-- {% screenshot Arrangement01_python.png "実行結果" %} -->
 
 変数をたくさん使いたい場合、リストを使うと便利です。
 
@@ -76,7 +77,8 @@ purposes:
     3個目のデータは、47です。
 
 
-{% screenshot Arrangement201_python.png "実行結果" %}
+![](./pic/Arrangement201_python.png)
+<!-- {% screenshot Arrangement201_python.png "実行結果" %} -->
 
 `for` 文とリストを組み合わせると、複数個の入力にも対応できるようになります。
 また、リストの数を変数で与えることもできます。
