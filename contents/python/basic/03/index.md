@@ -33,7 +33,7 @@ purposes:
 
     名前を入力してください。
 
- screenshot Name_python02.png "名前の入力" %}
+{% screenshot Name_python02.png "名前の入力" %}
 
 ここで、キーボードから何か入力し、リターンキーを打ちます。
 この例では、`都立大`と入力しました。
