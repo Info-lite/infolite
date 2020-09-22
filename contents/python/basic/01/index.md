@@ -49,13 +49,12 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
     Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
     インストール後「Anaconda prompt」を開き、
    
-    python -V
+    <code>python -V</code>
 
     とコマンドを入力し、インストールしたバージョンが「Python 3.〇.〇」と表示されればインストール完了の確認ができます。
     また、
-
    
-    conda list
+    <code>conda list</code>
 
     とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
 
