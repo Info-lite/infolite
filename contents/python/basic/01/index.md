@@ -49,12 +49,12 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
     Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
     インストール後「Anaconda prompt」を開き、
    
-    <code>python -V</code>
+    python -V
 
     とコマンドを入力し、インストールしたバージョンが「Python 3.〇.〇」と表示されればインストール完了の確認ができます。
     また、
    
-    <code>conda list</code>
+    conda list
 
     とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
 
@@ -73,21 +73,21 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
 4. 仮想環境の作成
 
-      conda create -n 仮想環境名 python=バージョン 
+    conda create -n 仮想環境名 python=バージョン
       
      と入力して仮想環境を作成し、
       
-      activate 仮想環境名
+    activate 仮想環境名
       
      と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
 
      情報リテラシー実践IIBでは次のようにしましょう。
 
-      conda create -n py38 python=3.8
+    conda create -n py38 python=3.8
  
      と入力して仮想環境を作成し、
       
-      activate py38
+    activate py38
 
 
 仮想環境について知りたい人は
