@@ -62,7 +62,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
    「Anaconda prompt」上で
    
-       conda info -e
+    conda info -e
 
    と入力すると、現在の環境を確認することができます。
 
