@@ -35,7 +35,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
 ### Windows PCへのソフトウェアのインストール
 
-1. [公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロード
+まず、[公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロードします。
 
     上記サイトから「Windows installers」の下にある表の中から自分のパソコンのOSに応じて「64-bit」、「32-bit」のどちらかを選択する。
 
@@ -43,7 +43,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
     Pythonのバージョンは最新のもの（Python3.8）を選びます。
 
-2. Minicondaをインストール
+次にMinicondaをインストールします。
 
     ダウンロードしたインストーラーを開き、セットアップガイドに従いインストールします。
     Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
@@ -58,7 +58,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
     とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
 
-3.　condaのアップデート
+次にcondaのアップデートします。
 
    「Anaconda prompt」上で
    
@@ -71,7 +71,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
    上記サイトを参考に、condaやパッケージのアップデートを行い、仮想環境を作成します。
 
-4. 仮想環境の作成
+次に仮想環境を作成します。
 
     <code>conda create -n 仮想環境名 python=バージョン</code>
       
@@ -95,8 +95,7 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 - [仮想環境](https://www.python.jp/install/windows/venv.html)
 などを参考にしてください。
 
-
-5.　PATHを通す
+最後にPATHを通します。
 
     a. [スタートメニュー]-[Windows システム ツール]-[コントロール パネル]-[システムとセキュリティ]-[システム]-[システムの詳細設定]-[環境変数]を開く
 
@@ -122,7 +121,7 @@ PATHについて知りたい人は
 
 ### MacOS PCへのソフトウェアのインストール
 
-1. [公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロード
+まず、[公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロードします。
 
     上記サイトから「MacOSX installers」の下にある表の中から「Miniconda3 MacOSX 64-bit bash」をダウンロードします。
 
