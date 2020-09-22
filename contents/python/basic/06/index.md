@@ -11,10 +11,21 @@ purposes:
 
 ### リストの基本的な使い方
 
-まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
+まず、以下のソースコードを打ち込み、実行してみましょう。
 
 *Arrangement.py*<br>
-![](./pic/arrangement.png)
+
+
+    a = []
+    a.append(10)
+    a.append(25)
+    a.append(30)
+    a.append(55)
+    a.append(85)
+
+    for i in range(5):
+        print(i, '番目のデータは、', a[i], 'です。')
+
 
 実行すると、以下のようになります。
 
@@ -26,7 +37,7 @@ purposes:
     3番目のデータは、55です。
     4番目のデータは、85です。
 
-![](./pic/Arrangement01_python.png)
+<!--![](./pic/Arrangement01_python.png)-->
 <!-- {% screenshot Arrangement01_python.png "実行結果" %} -->
 
 変数をたくさん使いたい場合、リストを使うと便利です。
@@ -58,7 +69,24 @@ purposes:
 では、以下のようなソースコードを入力し、実行してみましょう。
 
 *Arrangement2.py*<br>
-![](./pic/Arrangement2.png)
+
+    import sys
+
+    print('いくつ入力しますか？')
+    x0 = input()
+    x = int(x0)
+
+    a = []
+    for i in range(x):
+        print(i+1, '個目のデータを入力してください。')
+        y0 = input()
+        y = int(y0)
+        a.append(y)
+
+    for i in range(x):
+        print(i+1, '番目のデータは、', a[i], 'です。')
+
+<!--![](./pic/Arrangement2.png)-->
 
 実行すると、例えば以下のようになります。
 
@@ -77,7 +105,7 @@ purposes:
     3個目のデータは、47です。
 
 
-![](./pic/Arrangement201_python.png)
+<!--![](./pic/Arrangement201_python.png)-->
 <!-- {% screenshot Arrangement201_python.png "実行結果" %} -->
 
 `for` 文とリストを組み合わせると、複数個の入力にも対応できるようになります。
