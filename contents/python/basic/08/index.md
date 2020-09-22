@@ -46,7 +46,6 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 まずは、以下のソースコードを入力し、コンパイルして実行してみましょう。
 
 *Hito.py*<br>
-<!--![](./pic/Hito_2014.png)-->
 
     class Person:
         def main(self):
@@ -101,7 +100,6 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 では、上のプログラムを少し改良してみましょう。
 
 *Hito.py*<br>
-<!--![](./pic/Hitov2_2014.png)-->
 
     class Person:
         def main(self):
@@ -184,8 +182,6 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 では、前のプログラムを以下のように直してみましょう。
 
 *Hito.py*<br>
-<!--![](./pic/Hitov3_2014.png)-->
-<!--![](./pic/Hito03_python.png)-->
 
     class Person:
         def main(self):
@@ -220,7 +216,6 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 さらに、以下のように修正してみましょう。
 
 *Hito.py*<br>
-<!--![](./pic/Hitov4_2014.png)-->
 
     class Person:
         def main(self):
