@@ -19,7 +19,7 @@ purposes:
     if a == 1:
         print('入力したのは1ですね。')
 
-![](./pic/ForkSample_python.png)
+<!--![](./pic/ForkSample_python.png)-->
 
 
 実行結果は、以下のどちらかになります。
@@ -127,7 +127,7 @@ purposes:
     else:
         print('入力したのは1ではありません。')
 
-![](./pic/ForkSample_python_Mod1.png)
+<!--![](./pic/ForkSample_python_Mod1.png)-->
 
 
 実行結果は、以下のどちらかになります。
@@ -183,7 +183,7 @@ elseを使うと、if文の条件に合わなかった場合に実行する内�
     else:
         print('入力したのは1,2,3ではありません。')
 
-![](./pic/ForkSample_python_Mod2.png)
+<!--![](./pic/ForkSample_python_Mod2.png)-->
 
 
 1,2,3を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。

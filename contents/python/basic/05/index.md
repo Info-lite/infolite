@@ -22,7 +22,7 @@ purposes:
         print('x = ' + str(x))
         x = x + 1
 
-{% screenshot WhileLoopSample_python.png "WhileLoopSample" %}
+<!--{% screenshot WhileLoopSample_python.png "WhileLoopSample" %}-->
 
 実行すると、以下のように表示されます。
 
@@ -63,7 +63,7 @@ while文を使うと、繰り返しを行うことができます。
         x = x + 1
         if x == 3: break
 
-{% screenshot WhileLoopSample_python_Mod1.png "break文" %}
+<!--{% screenshot WhileLoopSample_python_Mod1.png "break文" %}-->
 
 実行すると、以下のようになります。
 
@@ -112,7 +112,7 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
         x += 1
         if x == 3: break
 
-{% screenshot WhileLoopSample_python_Mod2.png "入力" 
+<!--{% screenshot WhileLoopSample_python_Mod2.png "入力" %}-->
 
 インクリメント演算子というものもあります。
 
@@ -142,7 +142,7 @@ if文で実行したい命令が1行の場合、{}をつけずに書くことが
     for i in range(3):
         print(str(i+1) + '回目')
 
-{% screenshot ForLoopSample01_python.png "for文" %}
+<!--{% screenshot ForLoopSample01_python.png "for文" %}-->
 
 実行すると、以下のようになります。
 
