@@ -150,7 +150,7 @@ PATHについて知りたい人は
 
      情報リテラシー実践IIBでは次のようにしましょう。
 
-     <code>conda create -n py38 python=3.8<code>
+     <code>conda create -n py38 python=3.8</code>
  
      と入力して仮想環境を作成し、
 
