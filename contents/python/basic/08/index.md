@@ -46,7 +46,17 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 まずは、以下のソースコードを入力し、コンパイルして実行してみましょう。
 
 *Hito.py*<br>
-![](./pic/Hito_2014.png)
+<!--![](./pic/Hito_2014.png)-->
+
+    class Person:
+        def main(self):
+            self.name = '都立大'
+            self.age = 20
+            print('名前は、', self.name, 'です。')
+            print('年齢は、', self.name, '歳です。')
+
+    p1 = Person()
+    p1.main()
 
 実行すると、以下のようになります。
 
@@ -91,7 +101,21 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 では、上のプログラムを少し改良してみましょう。
 
 *Hito.py*<br>
-![](./pic/Hitov2_2014.png)
+<!--![](./pic/Hitov2_2014.png)-->
+
+    class Person:
+        def main(self):
+            self.name = '都立大'
+            self.age = 20
+
+        def show(self):
+            print('名前は、', self.name, 'です。')
+            print('年齢は、', self.name, '歳です。')
+
+    p1 = Person()
+    p1.main()
+    p1.show()
+
 
 実行すると、以下のようになります。
 
@@ -161,13 +185,32 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 
 *Hito.py*<br>
 <!--![](./pic/Hitov3_2014.png)-->
-![](./pic/Hito03_python.png)
+<!--![](./pic/Hito03_python.png)-->
+
+    class Person:
+        def main(self):
+            self.name = '都立大'
+            self.age = 20
+
+        def show(self):
+            print('名前は、', self.name, 'です。')
+            print('年齢は、', self.name, '歳です。')
+
+        def getage(self):
+            return self.age
+
+    p1 = Person()
+    p1.main()
+    temp = p1.getage()
+    print('年齢は、', temp, '歳です。')
+
+
 
 *実行結果*
 
     年齢は20歳です。
 
-![](./pic/Hito04_python.png)
+<!--![](./pic/Hito04_python.png)-->
 
 8行目では、23-25行目のメソッドを呼び出しています。
 そして、そのメソッドでの戻り値 `age` を、`temp` に代入しています。
@@ -177,7 +220,28 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 さらに、以下のように修正してみましょう。
 
 *Hito.py*<br>
-![](./pic/Hitov4_2014.png)
+<!--![](./pic/Hitov4_2014.png)-->
+
+    class Person:
+        def main(self):
+            self.name = '都立大'
+            self.age = 20
+
+        def show(self):
+            print('名前は、', self.name, 'です。')
+            print('年齢は、', self.name, '歳です。')
+
+        def getage(self):
+            return self.age
+
+        def future_age(self, year):
+            print(year, '年後の年齢は、', self.age+year, '歳です。')
+
+    p1 = Person()
+    p1.main()
+    p1.show()
+    p1.future_age(5)
+
 
 *実行結果*
 
