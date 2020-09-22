@@ -49,12 +49,12 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
     Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
     インストール後「Anaconda prompt」を開き、
    
-    python -V
+    <code>python -V</code>
 
     とコマンドを入力し、インストールしたバージョンが「Python 3.〇.〇」と表示されればインストール完了の確認ができます。
     また、
    
-    conda list
+    <code>conda list</code>
 
     とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
 
@@ -73,21 +73,21 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
 4. 仮想環境の作成
 
-    conda create -n 仮想環境名 python=バージョン
+    <code>conda create -n 仮想環境名 python=バージョン</code>
       
      と入力して仮想環境を作成し、
       
-    activate 仮想環境名
+    <code>activate 仮想環境名</code>
       
      と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
 
      情報リテラシー実践IIBでは次のようにしましょう。
 
-    conda create -n py38 python=3.8
+    <code>conda create -n py38 python=3.8</code>
  
      と入力して仮想環境を作成し、
       
-    activate py38
+    <code>activate py38</code>
 
 
 仮想環境について知りたい人は
@@ -133,26 +133,28 @@ PATHについて知りたい人は
 
     Launchpadの中から「ターミナル」を実行し、次のコマンドを入力しましょう。
 
-       cd Downloads
-       bash Miniconda3-latest-MacOSX-x86_64.sh
+    cd Downloads
+    bash Miniconda3-latest-MacOSX-x86_64.sh
 
     途中で何回か「yes|no」のいずれかを入力するように尋ねられるので、全て「yes」を入力します。インストールが完了したらターミナルを再起動しましょう。
 
 3. 仮想環境の作成
 
-      conda create -n 仮想環境名 python=バージョン 
+     <code>conda create -n 仮想環境名 python=バージョン</code>
       
      と入力して仮想環境を作成し、
       
-      activate 仮想環境名
+     <code>conda activate 仮想環境名</code>
       
      と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
 
      情報リテラシー実践IIBでは次のようにしましょう。
 
-      conda create -n py38 python=3.8
+     <code>conda create -n py38 python=3.8<code>
  
      と入力して仮想環境を作成し、
+
+     <code>conda activate py38</code>
 
 仮想環境について知りたい人は
 - [Pythonの仮想環境まとめ](https://blog.codecamp.jp/programming-python-virtual-environment)
