@@ -36,58 +36,54 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 ### Windows PCへのソフトウェアのインストール
 
 まず、[公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロードします。
-
-    上記サイトから「Windows installers」の下にある表の中から自分のパソコンのOSに応じて「64-bit」、「32-bit」のどちらかを選択する。
-
-    自分のパソコンのビット数を調べる方法は[こちら](https://office-hack.com/windows/windows10-bit-check/) を参考にしてください。
-
-    Pythonのバージョンは最新のもの（Python3.8）を選びます。
+上記サイトから「Windows installers」の下にある表の中から自分のパソコンのOSに応じて「64-bit」、「32-bit」のどちらかを選択します。
+自分のパソコンのビット数を調べる方法は[こちら](https://office-hack.com/windows/windows10-bit-check/) を参考にしてください。
+なお、Pythonのバージョンは最新のもの（Python3.8）を選びます。
 
 次にMinicondaをインストールします。
-
-    ダウンロードしたインストーラーを開き、セットアップガイドに従いインストールします。
-    Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
-    インストール後「Anaconda prompt」を開き、
+ダウンロードしたインストーラーを開き、セットアップガイドに従いインストールします。
+Install for:  は　Just Me、インストール先のフォルダを指定してインストールを開始します。
+インストール後「Anaconda prompt」を開き、
    
-    <code>python -V</code>
+    python -V
 
-    とコマンドを入力し、インストールしたバージョンが「Python 3.〇.〇」と表示されればインストール完了の確認ができます。
-    また、
+とコマンドを入力し、インストールしたバージョンが「Python 3.〇.〇」と表示されればインストール完了の確認ができます。
+また、
    
-    <code>conda list</code>
+    conda list
 
-    とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
+とコマンドを入力するとMinicondaでインスト―したパッケージ一覧が確認できます。
 
 次にcondaのアップデートします。
-
-   「Anaconda prompt」上で
+「Anaconda prompt」上で
    
     conda info -e
 
-   と入力すると、現在の環境を確認することができます。
+と入力すると、現在の環境を確認することができます。
+
+condaやパッケージのアップデートは次のサイトを参考にしてください。
 
    - [【初心者向け】Windows環境でPythonをダウンロード・インストールする簡単手順解説](https://kredo.jp/media/howto-download-python-windows/)
    - [Setup Miniconda on Windows 10](https://estuarine.jp/2017/12/setup-miniconda-windows10/)
 
-   上記サイトを参考に、condaやパッケージのアップデートを行い、仮想環境を作成します。
 
 次に仮想環境を作成します。
 
-    <code>conda create -n 仮想環境名 python=バージョン</code>
-      
-     と入力して仮想環境を作成し、
-      
-    <code>activate 仮想環境名</code>
-      
-     と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
+    conda create -n 仮想環境名 python=バージョン
 
-     情報リテラシー実践IIBでは次のようにしましょう。
+と入力して仮想環境を作成し、
 
-    <code>conda create -n py38 python=3.8</code>
+    activate 仮想環境名
+   
+と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
+
+情報リテラシー実践IIBでは次のようにしましょう。
+
+    conda create -n py38 python=3.8
  
-     と入力して仮想環境を作成し、
+と入力して仮想環境を作成し、
       
-    <code>activate py38</code>
+    activate py38
 
 
 仮想環境について知りたい人は
@@ -97,15 +93,13 @@ Pythonでプログラミングを行う場合、OSがWindowsのパソコンを�
 
 最後にPATHを通します。
 
-    a. [スタートメニュー]-[Windows システム ツール]-[コントロール パネル]-[システムとセキュリティ]-[システム]-[システムの詳細設定]-[環境変数]を開く
+1. [スタートメニュー]-[Windows システム ツール]-[コントロール パネル]-[システムとセキュリティ]-[システム]-[システムの詳細設定]-[環境変数]を開く。[スタートメニュー]の検索欄へ「環境変数の編集」と入力しても開くことができます。
 
-        [スタートメニュー]の検索欄へ「環境変数の編集」と入力しても開くことができます。
+2. 変数欄の「Path」を選択し「編集」ボタンをクリック
 
-    b. 変数欄の「Path」を選択し「編集」ボタンをクリック
+3. Minicondaをインストールしたフォルダにpathを通す
 
-    c. Minicondaをインストールしたフォルダにpathを通す
-
-    d.　コマンドプロンプトで開く
+4.　コマンドプロンプトで開く
 
 コマンドプロンプト上で
 
@@ -123,37 +117,35 @@ PATHについて知りたい人は
 
 まず、[公式サイト](https://docs.conda.io/en/latest/miniconda.html)からminicondaのインストーラーをダウンロードします。
 
-    上記サイトから「MacOSX installers」の下にある表の中から「Miniconda3 MacOSX 64-bit bash」をダウンロードします。
+上記サイトから「MacOSX installers」の下にある表の中から「Miniconda3 MacOSX 64-bit bash」をダウンロードします。
 
-    Pythonのバージョンは最新のもの（Python3.8）を選びます。
+Pythonのバージョンは最新のもの（Python3.8）を選びます。
 
 
-2. Terminalの起動
-
-    Launchpadの中から「ターミナル」を実行し、次のコマンドを入力しましょう。
+次にTerminalを起動します。Launchpadの中から「ターミナル」を実行し、次のコマンドを入力しましょう。
 
     cd Downloads
     bash Miniconda3-latest-MacOSX-x86_64.sh
 
-    途中で何回か「yes|no」のいずれかを入力するように尋ねられるので、全て「yes」を入力します。インストールが完了したらターミナルを再起動しましょう。
+途中で何回か「yes|no」のいずれかを入力するように尋ねられるので、全て「yes」を入力します。インストールが完了したらターミナルを再起動しましょう。
 
-3. 仮想環境の作成
+次に仮想環境を作成します。
 
-     <code>conda create -n 仮想環境名 python=バージョン</code>
+    conda create -n 仮想環境名 python=バージョン
       
-     と入力して仮想環境を作成し、
+と入力して仮想環境を作成し、
       
-     <code>conda activate 仮想環境名</code>
+    conda activate 仮想環境名
       
-     と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
+と入力して仮想環境を起動します。環境を元に戻す場合は「deactivate」と入力します。
 
-     情報リテラシー実践IIBでは次のようにしましょう。
+情報リテラシー実践IIBでは次のようにしましょう。
 
-     <code>conda create -n py38 python=3.8</code>
+    conda create -n py38 python=3.8
  
-     と入力して仮想環境を作成し、
+と入力して仮想環境を作成し、
 
-     <code>conda activate py38</code>
+    conda activate py38
 
 仮想環境について知りたい人は
 - [Pythonの仮想環境まとめ](https://blog.codecamp.jp/programming-python-virtual-environment)
