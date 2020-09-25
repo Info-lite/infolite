@@ -31,7 +31,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 [paiza.IO](https://paiza.io/ja)は無料でプログラムをすぐに実行できる環境を提供しているサービスです。
 
 無料でプログラミングをインターネット上でできる同様のサービスとして[ideone](https://ideone.com/)もあります。
-サービスごとに実行できるプログラミング言語が異なりますので、学習したいプログラミング言語に併せてサービスを選んでください。
+サービスごとに実行できるプログラミング言語が異なりますので、学習したいプログラミング言語に合わせてサービスを選んでください。
 
 
 ### ソフトウェアのインストール
@@ -40,20 +40,24 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
     Pleiades  
     https://mergedoc.osdn.jp/  
     上記サイトにアクセスし、最新版の「Eclipse 2020」を選択します。
-    ![Install_1](./pic/Java_1.png)
+
+    {% screenshot Java_1.png "Eclipseのインストール" %}
 
     次に使用しているOSを確かめ、 Java列にある Full Edition をダウンロードします。
-    ![Install_2](./pic/Java_2_Win.png)
+
+    {% screenshot Java_2_Win.png "Eclipseのインストール" %}
 
     ダウンロードしたzipファイルはパスの浅いところに配置します。
     ファイルの展開には7-Zipを用います。zipファイルを右クリックで選択し、7-Zip > ここで展開 
     を選択するとzipファイルが展開できます。
-    ![unzip](./pic/Java_4_Win.png)
+
+    {% screenshot Java_4_Win.png "ファイルの展開" %}
 
     7-Zip  
     https://sevenzip.osdn.jp/  
     上記サイトにアクセスし、自身のパソコンに適したものをダウンロードします。
-    ![Install_3](./pic/Java_5_Win.png)
+
+    {% screenshot Java_5_Win.png "7-Zipのインストール" %}
 
     パス（path）はファイルやフォルダの場所を示す情報です。詳細は
     - [パス（path）とは |「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典](https://wa3.i-3-i.info/word1166.html)
@@ -65,44 +69,57 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
     先ほど展開したpleiadesフォルダ内にあるeclipseフォルダを開き、eclipse.exeを起動します。
 
     Eclipseを起動すると次のようなワークスペース選択画面が表示されます。ワークスペースはEclipseの設定フォルダや、その設定を用いた複数のプロジェクト（プログラム）をまとめたものです。参照からユーザーホーム内の適切なフォルダを指定し、ワークスペースを配置します。
-    ![Eclipse_1](./pic/Java_18_Win.png)
+
+    {% screenshot Java_18_Win.png "ワークスペース選択画面" %}
+
     ワークスペースを指定したら、Eclipseを起動します。
 
     Eclipseが起動すると次の画面が表示されます。
-    ![Eclipse_2](./pic/Java_6_Win.png)
+
+    {% screenshot Java_6_Win.png "Eclipseの画面" %}
 
 3. Eclipseの画面構成
 
     Eclipseの画面は「ビュー」と「エディタ領域」から構成されています。表示されているタブのことをビュー、白紙の領域をエディタ領域といいます。これらの配置などをまとめてパースペクティブと呼びます。
     パースペクティブをJavaプログラミングに適したものにします。
     ウインドウ右上にある ![perspective_1](./pic/Java_11_Win.png)をクリックし、「パースペクティブを開く」ダイアログからJavaを選択し、開くをクリックするとパースペクティブが切り替わります。
-    ![perspective_2](./pic/Java_8_Win.png)
+
+    {% screenshot Java_8_Win.png "パースペクティブを開く" %}
 
     ビューを追加する場合は、ウィンドウ > ビューの表示 から追加したいビューをクリックします。
     削除する場合はそれぞれの削除したいビュータブの上にある×をクリックします。
-    ![perspective_3](./pic/Java_10_Win.png)
+
+    {% screenshot Java_10_Win.png "ビューの追加" %}
 
 ### プロジェクトファイルの作成と実行
 1. プロジェクトの作成
 
     プロジェクトファイルを作成します。ファイル > 新規 > Javaプロジェクト の順にクリックすると新規Javaプロジェクトのダイアログが表示されます。
-    ![JavaProject_1](./pic/Java_12_Win.png)
+
+    {% screenshot Java_12_Win.png "プロジェクトの作成" %}
+
     プロジェクト名に任意の名前を入力して次へをクリックします。「module-info.javaファイルの作成」のチェックを外し、完了をクリックします。
-    ![JavaProject_2](./pic/Java_13_Win.png)
-    ![JavaProject_3](./pic/Java_14_Win.png)
+
+    {% screenshot Java_13_Win.png "プロジェクトの作成" %}
+
+    {% screenshot Java_14_Win.png "プロジェクトの作成" %}
+
     「パッケージ・エクスプローラー」ビューに作成したプロジェクトが表示されます。
 
 2. クラスファイルの作成
 
     作成したプロジェクトファイル内にあるsrcフォルダにJavaのソースコードを作成します。Javaのソースコードはクラスファイルという形式です。srcフォルダを右クリックし、新規 > クラス を選択すると「新規Javaクラス」ダイアログが表示されます。「名前」の部分に任意のクラス名を入力して完了をクリックするとソースコードが入力できるようになります。
-    ![JavaProject_4](./pic/Java_15_Win.png)
-    ![JavaProject_5](./pic/Java_16_Win.png)
+
+    {% screenshot Java_15_Win.png "クラスファイルの作成" %}
+
+    {% screenshot Java_16_Win.png "クラスファイルの作成" %}
 
 3. クラスファイルの実行
 
     ソースコードの入力が完了したら、プログラムを実行します。
     エディタ領域の空白部分かパッケージ・エクスプローラーの実行したいファイル上で右クリックをします。実行 > Javaアプリケーション の順に選択するとコンソールビューに標準出力の結果が表示されます。
-    ![JavaProject_6](./pic/Java_17_Win.png)
+
+    {% screenshot Java_17_Win.png "クラスファイルの実行" %}
 
 ### 参考サイト
   - [Eclipse、はじめの一歩 - インストールから便利な日本語化プラグインの導入まで](https://employment.en-japan.com/engineerhub/entry/2020/03/19/103000)
@@ -226,7 +243,7 @@ Javaプログラミングでは、このメインメソッドが**必要**です
 
 ### System.out.println()
 
-３行目は、`System.out.println("Hello.")` となっています。
+３行目は、`System.out.println("Hello")` となっています。
 これは、「ターミナルに文字を出力せよ」という命令です。ですから `java` コマンドで実行すると、ターミナルに "Hello." と表示されます。
 よく使うので覚えておきましょう。
 `ln` を除くと（つまり、`System.out.println()` を `System.out.print()` とすると）改行をしません。
