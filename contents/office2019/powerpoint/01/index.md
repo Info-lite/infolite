@@ -6,8 +6,7 @@ purposes:
     - Microsoft PowerPointを用いたプレゼンテーションスライドの作成法の習得
 ---
 
-<div class="container">
-    <div>
+<div>
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -92,19 +91,18 @@ purposes:
                 </div>
             <br /><br /><br />
             <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-            <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt1.pdf">1. 定義、意義・目的、PowerPointの概要 PDF資料</a>
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt1.pdf">1. 定義、意義・目的、PowerPointの概要 PDF資料</a>
             </button>
             <br /><br />
             <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-            <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt2.pdf">2. 内容と構成、準備の3段階 PDF資料</a>
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt2.pdf">2. 内容と構成、準備の3段階 PDF資料</a>
             </button>
             <br /><br />
             <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-            <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt3.pdf">3. スライドのデザイン、テーマと諸機能の活用 PDF資料</a>
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt3.pdf">3. スライドのデザイン、テーマと諸機能の活用 PDF資料</a>
             </button>
             </p>
         </div>
-    </div>
     </div>
     </div>
 </div>
