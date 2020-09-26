@@ -7,42 +7,45 @@ purposes:
 ---
 
 <div>
-    <div class="panel panel-info">
+  <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
-        <div class="panel-body">
-            <p>本講の授業内容に関する【説明動画】が1つあります。サイドメニューの【動画再生】で公開している【SNS利用によるトラブルを防ぐために】も必ず視聴してください。</p>
-            <p><font color="red">注意：大人数が一斉に動画を再生すると動画が再生されないことがあります。時間をずらして視聴してください。</font></p>
+    <div class="panel-body">
+      <p>本講の授業内容に関する【説明動画】が1つあります。サイドメニューの【動画再生】で公開している【SNS利用によるトラブルを防ぐために】も必ず視聴してください。</p>
+      <p><font color="red">注意：大人数が一斉に動画を再生すると動画が再生されないことがあります。時間をずらして視聴してください。</font></p>
 
-<div id="class_movie"></div>
-<p><button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overviewModal">
-    <i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
-   </button>
-   <div class="modal fade" id="overviewModal" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel" aria-hidden="true">
-     <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-         <span class="modal-title" id="overviewModalLabel">授業内容</span>
-       </div>
-       <div class="modal-body">
-         <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
-           <video>
-             <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/04_moral.mp4">
-           </video>
+    <div id="class_movie"></div>
+    <p><button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overviewModal">
+         <i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
+       </button>
+       <div class="modal fade" id="overviewModal" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <span class="modal-title" id="overviewModalLabel">授業内容</span>
+         </div>
+         <div class="modal-body">
+           <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
+             <video>
+               <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/04_moral.mp4">
+             </video>
+           </div>
          </div>
        </div>
-     </div>
-     </div>
-   </div>
-</p>
-<br /><br />
+       </div>
+       </div>
+    </p>
+    <br /><br />
 
-<p>
-  <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#sns_pdf" style="color:#ffffff;">
-    <i></i>&nbsp;<a id="sns_pdf" style="color:#ffffff;" href="./sns_trouble.pdf">PDF資料</a>
-  </button>
-</p>
-
+    <p>
+      <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#sns_pdf" style="color:#ffffff;">
+        <i></i>&nbsp;<a id="sns_pdf" style="color:#ffffff;" href="./sns_trouble.pdf">PDF資料</a>
+      </button>
+    </p>
+    </div>
+    </div>
+  </div>
+</div>
 
 <div class="alert alert-info" role="alert">
 <p>第４講で情報倫理を学習した後、受講生は全員、「情リテ情報倫理テスト」に取り組んでください。</p>
