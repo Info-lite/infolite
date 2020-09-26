@@ -9,7 +9,7 @@ flowplayer_conf:
     - ratio: 0.75
 ---
 
-
+<div>
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -67,6 +67,7 @@ flowplayer_conf:
         </div>
     </div>
     </div>
+</div>
 
 
 関数、絶対参照と相対参照
