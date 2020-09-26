@@ -10,8 +10,6 @@ flowplayer_conf:
 ---
 
 
-<div class="container">
-    <div>
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
@@ -42,9 +40,7 @@ flowplayer_conf:
                     </div>
                 </div>
             </p>
-
             <br /><br />
-
             <p>
                 <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#graph">
                     <!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
