@@ -8,6 +8,7 @@ purposes:
 
 <div>
   <div class="panel panel-info">
+
     <div class="panel-heading">本講に関する学習動画</div>
     <div class="panel-body">
       <p>本講の授業内容に関する【説明動画】が1つあります。サイドメニューの【動画再生】で公開している【SNS利用によるトラブルを防ぐために】も必ず視聴してください。</p>
@@ -44,8 +45,6 @@ purposes:
     </p>
     </div>
     </div>
-  </div>
-</div>
 
 <div class="alert alert-info" role="alert">
 <p>第４講で情報倫理を学習した後、受講生は全員、「情リテ情報倫理テスト」に取り組んでください。</p>
