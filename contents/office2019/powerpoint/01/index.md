@@ -10,14 +10,12 @@ purposes:
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
-            <p>本講の授業内容に関する【説明動画】が2つあります。これらの動画に加えて、本講で作成するファイルを完成させるために必要なExcelの機能について詳細に説明している【操作動画】もあります。操作動画は\
-、その機能について説明している箇所で視聴できます。</p>
+            <p>本講の授業内容に関する【説明動画】が2つあります。これらの動画に加えて、本講で作成するファイルを完成させるために必要なExcelの機能について詳細に説明している【操作動画】もあります。操作動画は、その機能について説明している箇所で視聴できます。</p>
             <p><font color="red">注意：大人数が一斉に動画を再生すると動画が再生されないことがあります。時間をずらして視聴してください。</font></p>
 
             <div id="class_movie"></div>
             <p>
                 <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overview1">
-                    <!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
                     1. 定義、意義・目的、PowerPointの概要<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
                 </button>
                 <div class="modal fade" id="overview1" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel1" aria-hidden="true">
@@ -43,7 +41,6 @@ purposes:
 
             <p>
                 <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overview2">
-                    <!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
                     2. 内容と構成、準備の3段階<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
                 </button>
                 <div class="modal fade" id="overview2" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel2" aria-hidden="true">
@@ -69,7 +66,6 @@ purposes:
 
             <p>
                 <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#graph">
-                    <!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#autosumModal">-->
                     3. スライドのデザイン、テーマと諸機能の活用<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;説明動画
                 </button>
                 <div class="modal fade" id="graph" tabindex="-1" role="dialog" aria-labelledby="graphLabel" aria-hidden="true">
@@ -103,7 +99,6 @@ purposes:
             </button>
             </p>
         </div>
-    </div>
     </div>
 </div>
 
