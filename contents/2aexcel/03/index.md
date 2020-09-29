@@ -8,7 +8,6 @@ purposes:
     - Excelを用いて、2つのグループの母平均の差の検定と推定を行う
 ---
 
-[mathjax]
 
 母平均の差に関する検定と推定
 ----------------------------
@@ -63,7 +62,7 @@ purposes:
 
 ここで、$\mu_\text{A}$はＡ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{B}$はＢ組全員のテスト結果を母集団とする母平均です。
 
-なお、後の<a href="#chapter9">検定統計量$t$の算出</a>では、Ａ組の<a href="../02/#sample_mean">標本平均</a>$\bar{x}_\text{A}$とＢ組の標本平均$\bar{x}_\text{B}$との差$\bar{x}_\text{A} - \bar{x}_\text{B}$を<a href="../02/#standardization">標準化</a>して$t$を求めます。そのため、$\mu_\text{A}$と$\mu_\text{B}$とを2つの値として扱うのではなく、$\mu_\text{A}$と$\mu_\text{B}$との差である$\mu_\text{A} - \mu_\text{B}$を<span id="difference">1つの値</span>として扱います。したがって、仮説を
+なお、後の<a href="#chapter9">検定統計量$t$の算出</a>では、Ａ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$とＢ組の標本平均$\overline{x}\_\text{B}$との差$\overline{x}\_\text{A} - \overline{x}\_\text{B}$を<a href="../02/#standardization">標準化</a>して$t$を求めます。そのため、$\mu_\text{A}$と$\mu_\text{B}$とを2つの値として扱うのではなく、$\mu_\text{A}$と$\mu_\text{B}$との差である$\mu_\text{A} - \mu_\text{B}$を<span id="difference">1つの値</span>として扱います。したがって、仮説を
 
 * 帰無仮説H<sub>0</sub>：$\mu_\text{A} - \mu_\text{B} = 0$
 * 対立仮説H<sub>1</sub>：$\mu_\text{A} - \mu_\text{B} \ne 0$
@@ -78,19 +77,19 @@ purposes:
 
 ### 共通分散$V_\text{AB}$の算出
 
-Ａ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{A}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{A}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｂ組の母集団が平均$\mu_\text{B}$、標準偏差$\sigma_\text{B}$の正規分布に従うとすると、<a href="#difference"><q cite="#difference">Ａ組の標本平均$\bar{x}_\text{A}$とＢ組の標本平均$\bar{x}_\text{B}$との差$\bar{x}_\text{A} - \bar{x}_\text{B}$</q></a>は、平均$\mu_\text{A} - \mu_\text{B}$、標準偏差
+Ａ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{A}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{A}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｂ組の母集団が平均$\mu_\text{B}$、標準偏差$\sigma_\text{B}$の正規分布に従うとすると、<a href="#difference"><q cite="#difference">Ａ組の標本平均$\overline{x}\_\text{A}$とＢ組の標本平均$\overline{x}\_\text{B}$との差$\overline{x}\_\text{A} - \overline{x}\_\text{B}$</q></a>は、平均$\mu_\text{A} - \mu_\text{B}$、標準偏差
 $\displaystyle \sqrt{\frac{\sigma_\text{A}^2}{N_\text{A}} + \frac{\sigma_\text{B}^2}{N_\text{B}}}$
 の正規分布に従うことがわかっています。
 ここで、等分散性が成立し（$\sigma_\text{A}^2 = \sigma_\text{B}^2$）、
 かつ、<a href="../02/#null_hypothesis">帰無仮説</a>（$\mu_\text{A} - \mu_\text{B} = 0$）の下では、
-$\displaystyle \bar{x}_\text{A} - \bar{x}_\text{B}$
+$\displaystyle \overline{x}\_\text{A} - \overline{x}\_\text{B}$
 は平均0、分散
 $\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}$
 の正規分布に従うことになります。
 
 なお、$\sigma^2$は$\sigma^2 = \sigma_\text{A}^2 = \sigma_\text{B}^2$であるような値です。
 したがって、検定にあたっては<a href="../02/#standardization">標準化</a>した
-$\displaystyle z = \frac{\bar{x}_\text{A} - \bar{x}_\text{B}}{\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
+$\displaystyle z = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
 を考えることになります。
 
 しかし、$\sigma^2$も$\sigma_\text{A}^2$も$\sigma_\text{B}^2$も未知なので、<a href="../02/#sample">標本</a>から求める<a href="../01/#variance">不偏分散</a>Vで代用することになり、その結果、標準化した値は<a href="../02/#student_s_t-distribution">t分布</a>に従うことになります。さらに、算出できる不偏分散は、Ａ組の標本から求めた不偏分散$V_\text{A}$とＢ組の標本から求めた不偏分散$V_\text{B}$の2つで、必ずしも$V_\text{A} = V_\text{B}$が成立するとは限りません。そこで、$V_\text{A}$と$V_\text{B}$との平均とも言うべき共通分散$V_\text{AB}$を算出することになります。
@@ -99,12 +98,12 @@ $\displaystyle z = \frac{\bar{x}_\text{A} - \bar{x}_\text{B}}{\displaystyle \sqr
 $\displaystyle V_\text{AB} = \frac{S_\text{A} + S_\text{B}}{\phi}$
 
 
-* $\displaystyle S_\text{A} = \sum_{i=1}^{N_\text{A}} {\left( x_{\text{A}i} - \bar{x}_\text{A} \right)}^2$
-* $\displaystyle S_\text{B} = \sum_{j=1}^{N_\text{B}} {\left( x_{\text{B}j} - \bar{x}_\text{B} \right)}^2$
+* $\displaystyle S_\text{A} = \sum_{i=1}^{N_\text{A}} {\left( x_{\text{A}i} - \overline{x}\_\text{A} \right)}^2$
+* $\displaystyle S_\text{B} = \sum_{j=1}^{N_\text{B}} {\left( x_{\text{B}j} - \overline{x}\_\text{B} \right)}^2$
 * $x_{\text{A}i}$：Ａ組の標本の$i$番目の測定値
 * $x_{\text{B}j}$：Ｂ組の標本の$j$番目の測定値
-* $\bar{x}_\text{A}$：Ａ組の標本平均
-* $\bar{x}_\text{B}$：Ｂ組の標本平均
+* $\overline{x}\_\text{A}$：Ａ組の標本平均
+* $\overline{x}\_\text{B}$：Ｂ組の標本平均
 * $\phi = \phi_\text{A} + \phi_\text{B}$：共通分散$V$の自由度
 * $\phi_\text{A} = N_\text{A} - 1$
 * $\phi_\text{B} = N_\text{B} - 1$
@@ -115,8 +114,8 @@ $\displaystyle V_\text{AB} = \frac{S_\text{A} + S_\text{B}}{\phi}$
 ### 検定統計量$t$値の算出
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
-$\displaystyle t = \frac{\bar{x}_\text{A} - \bar{x}_\text{B}}{\sqrt{V_\text{AB} \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
-ここで、$\bar{x}_\text{A}$はＡ組の<a href="../02/#sample_mean">標本平均</a>、$\bar{x}_\text{B}$はＢ組の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$はＡ組の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$はＢ組の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。
+$\displaystyle t = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\sqrt{V_\text{AB} \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
+ここで、$\overline{x}\_\text{A}$はＡ組の<a href="../02/#sample_mean">標本平均</a>、$\overline{x}\_\text{B}$はＢ組の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$はＡ組の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$はＢ組の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。
 
 
 ### p値の算出
@@ -168,7 +167,8 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 <a href="#p_of_t">p値</a> = 0.04132が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-{% screenshot 03_practice1_t.png "t値を用いたp値の図示" %}
+![t値を用いたp値の図示](./pic/03_practice1_t.png )
+![標本平均を用いたp値の図示](./pic/03_practice1_score.png)
 
 設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05であるので、p値 = 0.04132 &lt; 有意水準$\alpha$ = 0.05となり、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、Ａ組とＢ組で点数の母<a href="../01/#mean">平均</a>には差があると判断します。
 
@@ -178,7 +178,7 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 母<a href="../01/#mean">平均</a>の差$\mu_\text{A} - \mu_\text{B}$について<a href="../02/#interval_estimation">区間推定</a>する場合、母平均の差$\mu_\text{A} - \mu_\text{B}$の(1 - $\alpha$) × 100%<a href="../02/#confidence_interval">信頼区間</a>は以下の式で与えられます。
 
-$\displaystyle (\bar{x}_A-\bar{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}<\mu_A-\mu_B<(\bar{x}_A-\bar{x}_B)+t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}$
+$\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}<\mu_A-\mu_B<(\overline{x}_A-\overline{x}_B)+t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}$
 
 ### Excelの操作
 
@@ -200,8 +200,8 @@ $\displaystyle (\bar{x}_A-\bar{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1
 
 Ａ組の母<a href="../01/#mean">平均</a>とＢ組の母平均との差$\mu_\text{A} - \mu_\text{B}$の95%<a href="../02/#confidence_interval">信頼区間</a>は0.813116 &lt; $\mu_\text{A} - \mu_\text{B}$ &lt; 36.21719と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は0.813116、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は36.21719で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![t値を用いた信頼係数の図示](03_practice1_t_interval.png)
-![点数を用いた信頼係数の図示](03_practice1_score_interval.png)
+![t値を用いた信頼係数の図示](./pic/03_practice1_t_interval.png)
+![点数を用いた信頼係数の図示](./pic/03_practice1_score_interval.png)
 
 
 等分散を仮定しないときの2つの母平均の差の検定・推定（対応のないデータ）
@@ -226,7 +226,7 @@ $\displaystyle (\bar{x}_A-\bar{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1
 
 ここで、$\mu_\text{C}$はＣ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{D}$はＤ組全員のテスト結果を母集団とする母平均です。
 
-なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t^*$値の算出（Welchのt検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\bar{x}_\text{C}$とＤ組の標本平均$\bar{x}_\text{C}$との差$\bar{x}_\text{C} - \bar{x}_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
+なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t^*$値の算出（Welchのt検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
 
 * 帰無仮説H<sub>0</sub>：$\mu_\text{C} - \mu_\text{D} = 0$
 * 対立仮説H<sub>1</sub>：$\mu_\text{C} - \mu_\text{D} \ne 0$
@@ -243,19 +243,19 @@ $\displaystyle (\bar{x}_A-\bar{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t^*$値を求めます。
 
-$\displaystyle t_0=\frac{\bar{x}_C-\bar{x}_D}{\sqrt{\frac{V_C}{n_C}+\frac{V_D}{n_D}}}$
+$\displaystyle t_0=\frac{\overline{x}\_C-\overline{x}\_D}{\sqrt{\frac{V_C}{n_C}+\frac{V_D}{n_D}}}$
 
-<a href="#chapter4">等分散を仮定したとき</a>と同様に、Ｃ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{C}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{C}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｄ組の母集団が平均$\mu_\text{D}$、標準偏差$\sigma_\text{D}$の正規分布に従うとすると、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\bar{x}_\text{C}$とＤ組の標本平均$\bar{x}_\text{C}$との差$\bar{x}_\text{C} - \bar{x}_\text{D}$は、平均$\mu_\text{C} - \mu_\text{D}$、標準偏差
+<a href="#chapter4">等分散を仮定したとき</a>と同様に、Ｃ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{C}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{C}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｄ組の母集団が平均$\mu_\text{D}$、標準偏差$\sigma_\text{D}$の正規分布に従うとすると、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は、平均$\mu_\text{C} - \mu_\text{D}$、標準偏差
 
 $\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$
 
-の正規分布に従うことがわかっています。ここで、<a href="../02/#null_hypothesis">帰無仮説</a>の下（$\mu_\text{C} - \mu_\text{D} = 0$）では、$\bar{x}_\text{C} - \bar{x}_\text{D}$は平均0、標準偏差
+の正規分布に従うことがわかっています。ここで、<a href="../02/#null_hypothesis">帰無仮説</a>の下（$\mu_\text{C} - \mu_\text{D} = 0$）では、$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は平均0、標準偏差
 
 $\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$
 
 の正規分布に従うことになり、検定にあたっては<a href="../02/#standardization">標準化</a>した
 
-$$\displaystyle z=\frac{\bar{x}_C-\bar{x}_D}{\sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$$
+$$\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$$
 
 を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t*">上の$t^*$の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchのt検定</a>では、この検定統計量$t^*$が<a href="#chapter22">等価自由度$\phi^*$</a>の<a href="../02/#student_s_t-distribution">t分布</a>に近似的に従うことがわかっています。
 
@@ -322,9 +322,9 @@ Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりま�
 
 <a href="#p_of_t*">p値</a> = 0.02537が求まりました。 よって、p値 = 0.02537 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値を用いたp値の図示](03_practice2_t.png)
+![t値を用いたp値の図示](./pic/03_practice2_t.png)
 
-![標本平均を用いたp値の図示](03_practice2_score.png)
+![標本平均を用いたp値の図示](./pic/03_practice2_score.png)
 
 
 2つの母平均の差の検定（対応のあるデータ）
@@ -366,18 +366,18 @@ Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりま�
 
 <i>d</i><sub><i>i</i><i></i></sub> = <i>x</i><sub>B<i>i</i></sub> - <i>x</i><sub>A<i>i</i></sub>
 
-この式から、各ペアの差を求めます。ここで、<i>x</i><sub>A<i>i</i></sub>は<i>i</i>番目の受講生の前期評定、<i>x</i><sub>B<i>i</i></sub>は同じ受講生の後期評定であり、<i>d</i><sub><i>i</i></sub>は同じ受講生の前期評定と後期評定との差になります。さらに、差<i>d</i><sub><i>i</i></sub>を<a href="../02/#sample">標本</a>として、その<a href="../01/#mean">平均</a>$\bar{d}$と<a href="../01/#variance">不偏分散</a>$V_d$との算出を行います。
+この式から、各ペアの差を求めます。ここで、<i>x</i><sub>A<i>i</i></sub>は<i>i</i>番目の受講生の前期評定、<i>x</i><sub>B<i>i</i></sub>は同じ受講生の後期評定であり、<i>d</i><sub><i>i</i></sub>は同じ受講生の前期評定と後期評定との差になります。さらに、差<i>d</i><sub><i>i</i></sub>を<a href="../02/#sample">標本</a>として、その<a href="../01/#mean">平均</a>$\overline{d}$と<a href="../01/#variance">不偏分散</a>$V_d$との算出を行います。
 
 
 ### 検定統計量$t$値の算出
 
 今回は、以下の式で<a href="../02/#test_statistic">検定統計量</a>$t$値が求まります。
 
-$\displaystyle t = \frac{\bar{d}}{\sqrt{\frac{V_d}{N_d}}}$
+$\displaystyle t = \frac{\overline{d}}{\sqrt{\frac{V_d}{N_d}}}$
 
-ここで、$\bar{d}$はペアごとの差<i>d</i><sub><i>i</i></sub>の<a href="../01/#mean">平均</a>、$V_d$はペアごとの差<i>d</i><sub><i>i</i></sub>の<a href="../01/#variance">不偏分散</a>、$N_d$はペアの<a href="../01/#sample_size">標本の大きさ</a>です。
+ここで、$\overline{d}$はペアごとの差<i>d</i><sub><i>i</i></sub>の<a href="../01/#mean">平均</a>、$V_d$はペアごとの差<i>d</i><sub><i>i</i></sub>の<a href="../01/#variance">不偏分散</a>、$N_d$はペアの<a href="../01/#sample_size">標本の大きさ</a>です。
 
-$\bar{d}$は、平均$\mu_\text{B} - \mu_\text{A}$、<a href="../01/#standard_deviation">標準偏差</a>
+$\overline{d}$は、平均$\mu_\text{B} - \mu_\text{A}$、<a href="../01/#standard_deviation">標準偏差</a>
 $\displaystyle \sqrt{\frac{\sigma_d^2}{N_d}}$
 の<a href="../02/#normal_distribution">正規分布</a>に従うことがわかっています。ここで$\sigma_d^2$は、ある通年授業における大学生の前期評定と後期評定との差を<a href="../02/#population">母集団</a>とする母<a href="../01/#variance">分散</a>です。<a href="../02/#null_hypothesis">帰無仮説</a>（$\mu_\text{B} - \mu_\text{A} = 0$）下では、平均0、標準偏差
 $\displaystyle \sqrt{\frac{\sigma_d^2}{N_d}}$
@@ -438,11 +438,11 @@ Excelを使って、<a href="#chapter28">練習問題3</a>に取り掛かりま�
 
 <a href="#p_of_t_d">p値</a> = 0.007292が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値を用いたp値の図示](03_practice3_t.png)
+![t値を用いたp値の図示](./pic/03_practice3_t.png)
 
-![標本平均を用いたp値の図示](03_practice3_score.png)
+![標本平均を用いたp値の図示](./pic/03_practice3_score.png)
 
-よって、p値 = 0.007292 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。前期の母平均と後期の母平均とには有意差があることがわかり、また、前期の<a href="../02/#sample_mean">標本平均</a>$\bar{x}_\text{A}$ = 62.58333で後期の標本平均$\bar{x}_\text{B}$ = 68.75であることから、後期試験の成績（Ｂ）は、前期試験の成績（Ａ）よりも向上していると判断できます。
+よって、p値 = 0.007292 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。前期の母平均と後期の母平均とには有意差があることがわかり、また、前期の<a href="../02/#sample_mean">標本平均</a>$\overline{x}_\text{A}$ = 62.58333で後期の標本平均$\overline{x}_\text{B}$ = 68.75であることから、後期試験の成績（Ｂ）は、前期試験の成績（Ａ）よりも向上していると判断できます。
 
 
 2つの母平均の差の推定（対応のあるデータ）
@@ -450,7 +450,7 @@ Excelを使って、<a href="#chapter28">練習問題3</a>に取り掛かりま�
 
 母<a href="../01/#mean">平均</a>の差$\mu_\text{B} - \mu_\text{A}$について<a href="../02/#interval_estimation">区間推定</a>する場合、母平均の差$\mu_\text{A} - \mu_\text{B}$の(1 - $\alpha$) 100%<a href="../02/#confidence_interval">信頼区間</a>は以下の式で与えられます。
 
-$\displaystyle \bar{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \mu_\text{B} - \mu_\text{A} &lt; \bar{d} + t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}}$
+$\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \mu_\text{B} - \mu_\text{A} &lt; \overline{d} + t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}}$
 
 
 ### Excelの操作
@@ -471,9 +471,9 @@ $\displaystyle \bar{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \mu_\te
 
 前期評定の母<a href="../01/#mean">平均</a>と後期評定の母平均との差$\mu_\text{B} - \mu_\text{A}$の95%<a href="../02/#confidence_interval">信頼区間</a>は2.032693 &lt; $\mu_\text{B} - \mu_\text{A}$ &lt; 10.30064と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は2.032693、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は10.30064で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![t値を用いた信頼係数の図示](03_practice3_t_interval.png)
+![t値を用いた信頼係数の図示](./pic/03_practice3_t_interval.png)
 
-![点数を用いた信頼係数の図示](03_practice3_score_interval.png)
+![点数を用いた信頼係数の図示](./pic/03_practice3_score_interval.png)
 
 
 課題1
