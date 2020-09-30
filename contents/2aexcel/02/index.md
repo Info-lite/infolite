@@ -217,7 +217,7 @@ Excelを使って、<a href="#chapter13">練習問題2</a>に取り掛かりま�
 
 ### 結果
 
-<a href="#p_of_t">p値</a> = 0.016469 &lt; <a href="../04/#chapter1">有意水準</a>$latex \alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">p値</a> = 0.016469 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![t値を用いたp値の図示](./pic/02_practice2_t.png)
 ![標本平均を用いたp値の図示](./pic/02_practice2_height2.png)
