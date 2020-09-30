@@ -197,7 +197,7 @@ Excelを使って、<a href="#chapter2">練習問題1</a>に取り掛かりま�
 <a href="#p_of_chi2">p値</a> = 2.51009×10<sup>-09</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 
-![p値の図示](05_practice1_chi2.png)
+![p値の図示](./pic/05_practice1_chi2.png)
 
 p値 = 2.51009×10<sup>-09</sup> &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。 よって、修学旅行先の希望の傾向はクラスによって異なるといえます。
 
