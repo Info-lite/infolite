@@ -45,7 +45,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
     {% screenshot Java_2_Win.png "Eclipseのインストール" %}
 
-    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますが、他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。なお、Windows10は標準で解凍機能が用意されていますが、端末によっては解凍できないことがあります。Windows10の標準解凍機能は、解凍したいファイルを右クリックし、「解凍」→「ここに解凍」を選択すると解凍できます。
+    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますが、他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。
 
     まず7-Zipを利用するためにはWebサイト[https://forest.watch.impress.co.jp/library/software/lhaplus/](https://forest.watch.impress.co.jp/library/software/lhaplus/)にアクセスし、自身のパソコンに適したものをダウンロードします。
 
