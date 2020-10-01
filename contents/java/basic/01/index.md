@@ -45,7 +45,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
     {% screenshot Java_2_Win.png "Eclipseのインストール" %}
 
-    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますが、他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。
+    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますので、もし他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。
 
     まず7-Zipを利用するためにはWebサイト[https://forest.watch.impress.co.jp/library/software/lhaplus/](https://forest.watch.impress.co.jp/library/software/lhaplus/)にアクセスし、自身のパソコンに適したものをダウンロードします。
 
