@@ -37,9 +37,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 ### ソフトウェアのインストール
 1. EclipseをPleiadesのサイトからダウンロード
 
-    Pleiades  
-    https://mergedoc.osdn.jp/  
-    上記サイトにアクセスし、最新版の「Eclipse 2020」を選択します。
+    PleiadesのWebサイト[https://mergedoc.osdn.jp/](https://mergedoc.osdn.jp/)にアクセスし、最新版の「Eclipse 2020」を選択します。
 
     {% screenshot Java_1.png "Eclipseのインストール" %}
 
@@ -47,15 +45,17 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
     {% screenshot Java_2_Win.png "Eclipseのインストール" %}
 
-    ダウンロードしたzipファイルになります。このファイルを展開するためには[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますが、他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。
-
-    次zipファイルを右クリックで選択し、7-Zip > ここで展開を選択するとzipファイルが展開できます。
-
-    {% screenshot Java_4_Win.png "ファイルの展開" %}
+    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますが、他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。なお、Windows10は標準で解凍機能が用意されていますが、端末によっては解凍できないことがあります。Windows10の標準解凍機能は、解凍したいファイルを右クリックし、「解凍」→「ここに解凍」を選択すると解凍できます。
 
     まず7-Zipを利用するためにはWebサイト[https://forest.watch.impress.co.jp/library/software/lhaplus/](https://forest.watch.impress.co.jp/library/software/lhaplus/)にアクセスし、自身のパソコンに適したものをダウンロードします。
 
     {% screenshot Java_5_Win.png "7-Zipのインストール" %}
+
+    次に、解凍するzipファイルを右クリックで選択し、「7-Zip」「展開」を選択します。この後、解凍先を確認し、「OK」をクリックするとファイルが解凍されます。
+
+    {% screenshot Java_4_Win.png "ファイルの展開" %}
+
+
 
     パス（path）はファイルやフォルダの場所を示す情報です。詳細は
     - [パス（path）とは |「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典](https://wa3.i-3-i.info/word1166.html)
