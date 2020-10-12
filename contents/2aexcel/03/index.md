@@ -255,7 +255,7 @@ $\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D
 
 の正規分布に従うことになり、検定にあたっては<a href="../02/#standardization">標準化</a>した
 
-$$\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$$
+$\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_C^2}{N_C}+\frac{\sigma_D^2}{N_D}}}$
 
 を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t*">上の$t^*$の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchのt検定</a>では、この検定統計量$t^*$が<a href="#chapter22">等価自由度$\phi^*$</a>の<a href="../02/#student_s_t-distribution">t分布</a>に近似的に従うことがわかっています。
 
