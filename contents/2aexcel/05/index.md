@@ -45,7 +45,9 @@ $
 $
 
 ここで、$ f_{ij}$は以下の表のとおり、Ｌ行Ｍ列分割表における$ i$行$ j$列の<a href="../01/#frequency">度数</a>です。一方、$ t_{ij}$は$ f_{ij}$に対する<a href="../04/#theoretical_frequency">期待値</a>で、
+
 $ \displaystyle t_{ij} = \frac{l_i m_j}{N}$
+
 で与えられます。なお、L = 2、M = 2を代入し、展開すると<a href="../04/#original_chi2">2行2列分割表の場合の式</a>になります。
 
 
