@@ -44,7 +44,11 @@ purposes:
 * $ \displaystyle \overline{x} = \frac{1}{N} \sum_{i = 1}^N x_i$：$ x_i$の<a href="../01/#mean">平均</a>
 * $ \displaystyle \overline{y} = \frac{1}{N} \sum_{i = 1}^N y_i$：$ y_i$の平均
 
-$ i$番目の<a href="../04/#explanatory_variable">説明変数</a>$ x_i$に対する<a href="../04/#target_variable">目的変数</a>$ y_i$とある直線$ y = a + bx$との距離（<a href="#residual">残差</a>）を$ Q_i$で表すと，その二乗値は$Q_{i}^2 = {\\{y_{i} - (a + bx_{i})\\}}^2$で与えられます。この$ Q_i^2$の合計（残差平方和）
+$ i$番目の<a href="../04/#explanatory_variable">説明変数</a>$ x_i$に対する<a href="../04/#target_variable">目的変数</a>$ y_i$とある直線$ y = a + bx$との距離（<a href="#residual">残差</a>）を$ Q_i$で表すと，その二乗値は
+
+$ \displaystyle Q_{i}^2 = {\\{y_{i} - (a + bx_{i})\\}}^2$
+
+で与えられます。この$ Q_i^2$の合計（残差平方和）
 $ \displaystyle \sum_{i = 1}^N Q_i^2$
 を最小にすることによって、2変数$ x$と$ y$との関係を表すのに最も適した回帰式を求めることができる、とする方法を<span id="least_squares_method">最小二乗法</span>（least squares method）と呼びます。最小二乗法で求めた$ a$と$ b$が<a href="#equation_derivation">上式</a>の切片$ a$と回帰係数$ b$になっています。ここで、<span id="estimated_value">説明変数$ x_i$に対して求めた回帰式によって予測した目的変数の値を$\hat{y}\_i = a + bx_i$で表す</span>と、<a href="#intercept">切片を求める式</a>から<span id="same_mean">$ \hat{y}_i$の平均$\displaystyle \frac{1}{N} \sum\_{i = 1}^N \hat{y}\_i$は$\overline{y}$と等しくなる</span>ことがわかります。
 
