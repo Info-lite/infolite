@@ -307,6 +307,7 @@ OKボタンをクリックして散布図に戻ります。
 #### 検定統計量$ t$値の算出
 
 今回は以下の数式で<a href="../02/#test_statistic">検定統計量</a>$ t$値を求められます。
+
 <span id="t_equation">$ \displaystyle t = \frac{r}{\sqrt{\frac{1 - r^2}{N - 2}}}$</span>
 
 この$ t$値は自由度がφ = $ N - 2$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。これは、<a href="#sample_correlation_coefficient">標本相関係数</a>$ r$が平均ρ、標準偏差
