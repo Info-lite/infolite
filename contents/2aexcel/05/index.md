@@ -7,6 +7,14 @@ purposes:
     - Excelでグラフを作ってみる
 ---
 
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。
+<ul>
+<li><a href="5-01.xlsx">5-01.xlsx</a></li>
+</ul>
+</div>
+</div>
 
 Ｌ行Ｍ列分割表の検定
 --------------------
