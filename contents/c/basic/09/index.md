@@ -33,11 +33,11 @@ purposes:
 
 ポインタの宣言と生成
 
-    *データ型 変数名;
+    データ型 *変数名;
     変数名 = &変数;
     
     // 例
-    *int p;
+    int *p;
     p = &x;
 
 
@@ -54,7 +54,7 @@ purposes:
 
     void main(){
       int a[] = {1, 2, 3, 4, 5};
-      *int p;
+      int *p;
       p = &(a[0]);
       printf("%*p=d\n",*p);
     }
@@ -78,7 +78,7 @@ purposes:
 
     void main(){
       int a[] = {1, 2, 3, 4, 5};
-      *int p;
+      int *p;
       p = a;
       printf("%*p=d\n",*p);
     }
@@ -100,11 +100,11 @@ purposes:
     #include<stdio.h>
 
     void main(){
-      *int p1;
-      **int p2;
+      int *p1;
+      int **p2;
       int x;
       x=4;
-      p1 = x;
+      p1 = &x;
       p2 = p1;
       printf("%**p2=d\n",**p2);
     }
@@ -132,7 +132,7 @@ purposes:
     #include<stdlib.h>
 
     void main(){
-      *int p;
+      int *p;
       p = malloc(sizeof(int));
       *p = 4;
       printf("%*p=¥d\n",*p);
