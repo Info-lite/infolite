@@ -135,7 +135,7 @@ purposes:
       int *p;
       p = malloc(sizeof(int));
       *p = 4;
-      printf("%*p=¥d\n",*p);
+      printf("*p=%d\n",*p);
     }
 
 練習問題
