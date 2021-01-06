@@ -22,7 +22,7 @@ purposes:
       int x;
       p=&x;
       x = 2;
-      printf("%*p=d\n",*p);
+      printf("*p=%d\n",*p);
     }
 
 実行すると、以下のようになります。
@@ -56,7 +56,7 @@ purposes:
       int a[] = {1, 2, 3, 4, 5};
       int *p;
       p = &(a[0]);
-      printf("%*p=d\n",*p);
+      printf("*p=%d\n",*p);
     }
 
 実行すると、例えば以下のようになります。
@@ -80,7 +80,7 @@ purposes:
       int a[] = {1, 2, 3, 4, 5};
       int *p;
       p = a;
-      printf("%*p=d\n",*p);
+      printf("*p=%d\n",*p);
     }
 
 実行すると、例えば以下のようになります。
@@ -106,7 +106,7 @@ purposes:
       x=4;
       p1 = &x;
       p2 = p1;
-      printf("%**p2=d\n",**p2);
+      printf("**p2=%d\n",**p2);
     }
 
 実行すると、例えば以下のようになります。
