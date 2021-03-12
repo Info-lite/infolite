@@ -379,7 +379,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 演算の優先順位は、基本的には通常通りですが、括弧 `()` を用いることもできます。また、これ以外にも多くの関数による演算が可能です。
 
-{% appendix ../appendix/enzanshi.html "演算子についての補足" %}
+{% appendix ../../appendix/enzanshi.html "演算子についての補足" %}
 
 ### オートフィルによる自動繰り返し計算
 
@@ -412,7 +412,7 @@ Excelで用いる主な算術演算子は以下のようなものがあります
 
 {% screenshot populationfinal.png "オートSUMの結果" %}
 
-{% appendix ../appendix/function.html "Microsoft Excelで使える関数" %}
+{% appendix ../../appendix/function.html "Microsoft Excelで使える関数" %}
 
 ### 保存と終了
 
