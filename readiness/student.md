@@ -9,7 +9,7 @@ title: レディネス調査回答マニュアル（学生用）
 &#9312; [kibaco](https://kibaco.tmu.ac.jp/) にログインします。
 
 {% screenshot kibaco_login.png "教員・学生を選択" %}
-{% screenshot kibaco_login2.png "kibaco ログイン" %}
+{% screenshot kibaco_login2.png "ユーザID・パスワードを入力" %}
 
 <div class="alert alert-danger" role="alert">
 <p>kibaco のログインに利用するユーザID・パスワードは<strong>教育研究システムアカウント</strong>です。初期パスワードは、入学時に申請した教育研究システムのパスワードが設定されています。</p>
