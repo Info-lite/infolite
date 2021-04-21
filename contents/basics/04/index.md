@@ -38,11 +38,6 @@ purposes:
     </p>
     <br /><br />
 
-    <p>
-      <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#sns_pdf" style="color:#ffffff;">
-        <i></i>&nbsp;<a id="sns_pdf" style="color:#ffffff;" href="./sns_trouble.pdf">PDF資料</a>
-      </button>
-    </p>
     </div>
     </div>
 
