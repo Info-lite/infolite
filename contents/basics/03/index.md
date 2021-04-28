@@ -423,11 +423,11 @@ Webではさまざまな人が情報を発信しているため、その情報�
 冊子版は、図書館本館と学部学科図書室にて受け取ることができます。
 PDF版の閲覧については、学内者限定公開の資料となっています。以下のウェブサイトをご参照いただき、注意事項を確認した上で、kibacoの図書館講習会コースからアクセスしてください。
 
- - [学術情報をオンラインで利用しよう](https://www.lib.tmu.ac.jp/minami-osawa/news/11661.html)
+-   [学術情報をオンラインで利用しよう](https://www.lib.tmu.ac.jp/minami-osawa/news/11661.html)
 
-また、図書館本館の利用については、PDF版の「本館　利用のしおり」が公開されています。
+また、図書館本館の利用については、PDF版の「本館利用のしおり」が公開されています。
 
- - [図書館本館利用のしおり](https://www.lib.tmu.ac.jp/minami-osawa/guide.html)
+-   [図書館本館利用のしおり](https://www.lib.tmu.ac.jp/minami-osawa/guide.html)
 
 
 
