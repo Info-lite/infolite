@@ -43,5 +43,5 @@ purposes:
         -   1: 下位7%
 1. 余裕がある人は、各教科の上位3名の抽出に挑戦してみてください
 
-{% appendix ../appendix/kadai_hint.html "課題のヒント" %}
+{% appendix ../../appendix/kadai_hint.html "課題のヒント" %}
 
