@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: コンピュータの基本操作と構造
