@@ -379,20 +379,20 @@ Hドライブ（マイドキュメント）に保存したファイルは、教�
 ##### kibacoへのファイルアップロード
 1. まず、「資料」を選択します。
 1. アップロード先のフォルダにある [追加] をクリックします。
-{% screenshot make_folder.png "「資料」、「追加」をクリック" %}
+{% screenshot kibaco1.png "「資料」、「追加」をクリック" %}
 1. 「ファイルをアップロード」をクリックします。
-{% screenshot make_folder.png "「ファイルをアップロード」をクリック" %}
+{% screenshot kibaco2.png "「ファイルをアップロード」をクリック" %}
 1. [参照] をクリックします。
-{% screenshot make_folder.png "「参照」をクリック" %}
+{% screenshot kibaco3.png "「参照」をクリック" %}
 1. アップロードするファイルを選択します。
 1. [開く] をクリックします。
-{% screenshot make_folder.png "ファイルを選択して、「開く」をクリック" %}
+{% screenshot kibaco4.png "ファイルを選択して、「開く」をクリック" %}
 1. アップロードするファイルが表示されたら、[ファイルを今すぐアップロード] をクリックします。
    -   複数のファイルをアップロードする場合は、「他のファイルを追加」をクリックし、同様に繰り返し
 ファイルを追加します。
-{% screenshot make_folder.png "「ファイルを今すぐアップロード」をクリック" %}
+{% screenshot kibaco5.png "「ファイルを今すぐアップロード」をクリック" %}
 1. ファイルがアップロードされます。
-{% screenshot make_folder.png "アップロード" %}
+{% screenshot kibaco6.png "アップロード" %}
 
 ##### ファイルの差し替え
 <div class="alert alert-warning" role="alert">
@@ -401,12 +401,12 @@ Hドライブ（マイドキュメント）に保存したファイルは、教�
 1. 「資料」を選択します。
 1. 削除したいファイルの「その他」を選択します。
 1. 「削除」をクリックします。
-{% screenshot make_folder.png "「資料」、「その他」、「削除」をクリック" %}
+{% screenshot kibaco7.png "「資料」、「その他」、「削除」をクリック" %}
 1. [削除] をクリックします。
-{% screenshot make_folder.png "「削除」をクリック" %}
+{% screenshot kibaco8.png "「削除」をクリック" %}
 
 ##### kibacoからのファイルダウンロード
-{% screenshot make_folder.png "「kibacoからのファイルダウンロード」をクリック" %}
+{% screenshot kibaco9.png "「kibacoからのファイルダウンロード」をクリック" %}
 
 コンピュータの仕組み
 --------------------
