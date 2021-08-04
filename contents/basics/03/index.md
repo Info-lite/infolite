@@ -64,7 +64,7 @@ Wide Web）や電子メールなどがあげられます。
 <table>
 <tbody>
 <tr>
-<th>1957年</th><td>アメリカ国防総省の傘下にAdvanced Research Projects Agency （ARPA）が新設される。<br />この<strong>ARPAは、後にインターネットの前身となるARPANETを作る。</strong></td>
+<th>1957年</th><td>アメリカ国防総省の傘下にAdvanced Research Projects Agency （ARPA）が新設されました。<br />この<strong>ARPAは、後にインターネットの前身となるARPANETを作りました。</strong></td>
 </tr><tr>
 <th>1961年</th><td>アメリカの電話中継基地が爆破され、国防総省の回線が一時中断した事で、指揮統制系統の重要性が問われるようになり、 国防総省の下でも<strong>通信システムの研究が本格的に始まりました。</strong></td>
 </tr><tr>
