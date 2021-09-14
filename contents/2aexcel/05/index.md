@@ -11,7 +11,7 @@ purposes:
 <div class="panel-body">
 今回使うファイルです。ダウンロードしてください。
 <ul>
-<li><a href="5-01.xlsx">5-01.xlsx</a></li>
+<li><a href="修学旅行先の希望調査.xlsx">修学旅行先の希望調査.xlsx</a></li>
 </ul>
 </div>
 </div>
