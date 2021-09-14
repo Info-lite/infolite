@@ -11,7 +11,7 @@ purposes:
 <div class="panel-body">
 今回使うファイルです。ダウンロードしてください。
 <ul>
-<li><a href="7-01.xlsx">7-01.xlsx</a></li>
+<li><a href="ある車種における中古車の価格と走行距離.xlsx">ある車種における中古車の価格と走行距離.xlsx</a></li>
 </ul>
 </div>
 </div>
