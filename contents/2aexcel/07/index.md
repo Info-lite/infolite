@@ -9,9 +9,9 @@ purposes:
 
 <div class="panel panel-info">
 <div class="panel-body">
-今回使うファイルです。ダウンロードしてください。
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
 <ul>
-<li><a href="ある車種における中古車の価格と走行距離.xlsx">ある車種における中古車の価格と走行距離.xlsx</a></li>
+<li><a href="07_1.xlsx">ある車種における中古車の価格と走行距離(07_1.xlsx)</a></li>
 </ul>
 </div>
 </div>
@@ -76,7 +76,7 @@ $ \displaystyle \sum_{i = 1}^N Q_i^2$
 
 Excelを用いて<a href="#chapter5">練習問題</a>に取り掛かりましょう。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="07_1.xlsx">ある車種における中古車の価格と走行距離(07_1.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 07_08input.png "データの入力" %}
 
