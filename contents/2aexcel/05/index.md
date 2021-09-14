@@ -9,9 +9,9 @@ purposes:
 
 <div class="panel panel-info">
 <div class="panel-body">
-今回使うファイルです。ダウンロードしてください。
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
 <ul>
-<li><a href="修学旅行先の希望調査.xlsx">修学旅行先の希望調査.xlsx</a></li>
+<li><a href="05_1.xlsx">修学旅行先の希望調査(05_1.xlsx)</a></li>
 </ul>
 </div>
 </div>
@@ -99,7 +99,7 @@ $ \displaystyle t_{ij} = \frac{l_i m_j}{N}$
 
 Excelを使って、<a href="#chapter2">練習問題1</a>に取り掛かりましょう。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="05_1.xlsx">修学旅行先の希望調査(05_1.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 05_07input.png "データの入力" %}
 
