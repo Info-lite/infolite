@@ -11,7 +11,8 @@ purposes:
 <div class="panel-body">
 今回使うファイルです。ダウンロードしてください。
 <ul>
-<li><a href="6-01.xlsx">6-01.xlsx</a></li>
+<li><a href="ある小学校の児童30人の身長、体重.xlsx">ある小学校の児童30人の身長、体重.xlsx</a></li>
+<li><a href="ある小学校の児童30人の身長、体重、性別.xlsx">ある小学校の児童30人の身長、体重、性別.xlsx</a></li>
 </ul>
 </div>
 </div>
