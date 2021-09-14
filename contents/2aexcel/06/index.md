@@ -9,10 +9,11 @@ purposes:
 
 <div class="panel panel-info">
 <div class="panel-body">
-今回使うファイルです。ダウンロードしてください。
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
 <ul>
-<li><a href="ある小学校の児童30人の身長、体重.xlsx">ある小学校の児童30人の身長、体重.xlsx</a></li>
-<li><a href="ある小学校の児童30人の身長、体重、性別.xlsx">ある小学校の児童30人の身長、体重、性別.xlsx</a></li>
+<li><a href="06_1.xlsx">ある小学校の児童30人の身長、体重(06_1.xlsx)</a></li>
+<li><a href="06_2.xlsx">ある小学校の児童30人の身長、体重、性別(06_2.xlsx)</a></li>
+<li><a href="06_3.xlsx">ある小学校の児童30人の英語、国語の成績(06_3.xlsx)</a></li>
 </ul>
 </div>
 </div>
@@ -74,7 +75,7 @@ purposes:
 Excelを用いて<a href="#chapter5">練習問題1</a>に取り掛かりましょう。
 
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="06_1.xlsx">ある小学校の児童30人の身長、体重(06_1.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 06_04input.png "データの入力" %}
 
@@ -178,7 +179,7 @@ $ \displaystyle r = \frac{V_{xy}}{s_x s_y}$
 
 ### Excelの操作
 
-Excelを用いて<a href="#chapter8">練習問題2</a>に取り掛かりましょう。<a href="#chapter5">練習問題1</a>で用いたファイルに追記します。
+Excelを用いて<a href="#chapter8">練習問題2</a>に取り掛かりましょう。<a href="#chapter5">練習問題1</a>で用いたファイルに追記します。すでにデータを追加入力してある　<a href="06_2.xlsx">ある小学校の児童30人の身長、体重、性別(06_2.xlsx)</a>　を利用しても構いません。
 
 &#9312; <a href="#table2">表2</a>の性別データを追加入力します。
 
@@ -341,7 +342,7 @@ $ \displaystyle \sqrt{\frac{1 - r^2}{N - 2}}$
 
 Excelを使って、<a href="#chapter12">練習問題3</a>に取り掛かりましょう。
 
-&#9312; <a href="#table3">表3</a>のデータをExcelに入力します。
+&#9312; <a href="#table3">表3</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="06_3.xlsx">ある小学校の児童30人の英語、国語の成績(06_3.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 06_38input.png "データの入力" %}
 
