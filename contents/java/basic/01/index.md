@@ -13,6 +13,7 @@ purposes:
 担当教員の指示に従って受講し、終了後は「テスト/アンケート」より、情リテ情報倫理テストを受験してください。
 
 *   [情報倫理講習会資料](/lit/infoethics/information_ethics_ja.pdf)
+*   [情報倫理講習会資料(英語版)](/lit/infoethics/information_ethics_en.pdf)
 
 
 Javaを実行できる環境の準備
