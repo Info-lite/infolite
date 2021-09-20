@@ -8,6 +8,16 @@ purposes:
     - Excelを用いて、2つのグループの母平均の差の検定と推定を行う
 ---
 
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
+<ul>
+<li><a href="03_1.xlsx">[練習問題1]ある学校のテスト結果(03_1.xlsx)</a></li>
+<li><a href="03_2.xlsx">[練習問題2]ある学校のテスト結果(03_2.xlsx)</a></li>
+<li><a href="03_3.xlsx">試験の評点(03_3.xlsx)</a></li>
+</ul>
+</div>
+</div>
 
 母平均の差に関する検定と推定
 ----------------------------
@@ -137,7 +147,7 @@ $\displaystyle t = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\sqrt{
 
 Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりましょう。
 
-&#9312; Ａ組のテスト結果とＢ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。
+&#9312; Ａ組のテスト結果とＢ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。すでにデータを入力してある　<a href="03_1.xlsx">[練習問題1]ある学校のテスト結果(03_1.xlsx)</a>　を利用しても構いません。
 
 &#9313; 等分散性の検定を行った結果、等分散性であることがわかったので、<a href="#student_s_t-test">Studentのt検定</a>を行います。
 
@@ -295,7 +305,7 @@ $\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{C}}{N_\text{C}
 
 Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりましょう。
 
-&#9312; Ｃ組のテスト結果とＤ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。
+&#9312; Ｃ組のテスト結果とＤ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。すでにデータを入力してある　<a href="03_2.xlsx">[練習問題2]ある学校のテスト結果(03_2.xlsx)</a>　を利用しても構いません。
 
 &#9313; 等分散性の検定を行った結果、p = 0.011952 ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05となり、等分散性でないことがわかったので、<a href="#welch_s_t-test">Welchのt検定</a>を行います。
 
@@ -403,7 +413,7 @@ $\displaystyle \sqrt{\frac{\sigma_d^2}{N_d}}$
 
 Excelを使って、<a href="#chapter28">練習問題3</a>に取り掛かりましょう。
 
-&#9312; <a href="#table3">表3</a>のデータをExcelに入力します。
+&#9312; <a href="#table3">表3</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="03_3.xlsx">試験の評点(03_3.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 03_31input.png "データの入力" %}
 
