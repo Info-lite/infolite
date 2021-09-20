@@ -7,6 +7,15 @@ purposes:
     - Excelを用いて母平均の検定と推定を行う
 ---
 
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
+<ul>
+<li><a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a></li>
+<li><a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a></li>
+</ul>
+</div>
+</div>
 
 母平均に関する検定と推定
 ------------------------
@@ -102,7 +111,7 @@ $z$は以下の数式で求まります。
 
 ここまで検定の理論について説明してきましたが、Excelを用いて<a href="#chapter3">練習問題1</a>に取り掛かりましょう。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 02_07input.png "データの入力" %}
 
@@ -193,7 +202,7 @@ $ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 
 Excelを使って、<a href="#chapter13">練習問題2</a>に取り掛かりましょう。
 
-&#9312; <a href="#table2">表2</a>のデータをExcelに入力します。
+&#9312; <a href="#table2">表2</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 02_19input.png "データの入力" %}
 
