@@ -7,6 +7,14 @@ purposes:
     - 論文内で使用される表現を使って、課題の結果を考察する
 ---
 
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。
+<ul>
+<li><a href="04_1.xlsx">ある地域の愛着に対する意見(04_1.xlsx)</a></li>
+</ul>
+</div>
+</div>
 
 有意水準について
 ----------------
@@ -75,7 +83,7 @@ purposes:
 
 Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりましょう。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="04_1.xlsx">ある地域の愛着に対する意見(04_1.xlsx)</a>　を利用しても構いません。
 
 {% screenshot 04_08input.png "データの入力" %}
 
