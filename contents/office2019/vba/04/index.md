@@ -32,9 +32,9 @@ purposes:
 For ～ Next文は以下のように用いて、繰り返しを行います。
 
 
-For カウンターとなる変数 = 初期値 To 終了値 Step 加算値  
-繰り返す処理内容  
-Next カウンターとなる変数  
+    For カウンターとなる変数 = 初期値 To 終了値 Step 加算値  
+    繰り返す処理内容  
+    Next カウンターとなる変数  
 
 
 For ～ Next文の特徴は、カウンターとなる変数を用いて、その値に応じて、繰り返しを行うところが特徴である。繰り返し処理内容を実行し終わった後、カウンターとなる変数に加算値を足します。その値が終了値を超えるまで、繰り返します。
@@ -42,12 +42,12 @@ For ～ Next文の特徴は、カウンターとなる変数を用いて、そ�
 フローチャートの内容をFor ～ Next文で記述するとSub ForTestのようになります。
 
 
-Sub ForTest()  
-    Dim i As Integer  
-    For i = 1 To 5 Step 1  
-        MsgBox ("iは" & i & "です。")  
-    Next i  
-End Sub  
+    Sub ForTest()  
+        Dim i As Integer  
+        For i = 1 To 5 Step 1  
+            MsgBox ("iは" & i & "です。")  
+        Next i  
+    End Sub  
 
 
 Sub ForTestを実行すると以下のようになります。
@@ -58,19 +58,19 @@ Sub ForTestを実行すると以下のようになります。
 
 この繰り返し処理を繰り返しを用いずに記述するとSub ForTest2のようになります。
 
-Sub ForTest2()  
-    Dim i As Integer  
-    i = 1  
-    MsgBox ("iは" & i & "です。")  
-    i = i + 1  
-    MsgBox ("iは" & i & "です。")  
-    i = i + 1  
-    MsgBox ("iは" & i & "です。")  
-    i = i + 1  
-    MsgBox ("iは" & i & "です。")   
-    i = i + 1  
-    MsgBox ("iは" & i & "です。")  
-End Sub  
+    Sub ForTest2()  
+        Dim i As Integer  
+        i = 1  
+        MsgBox ("iは" & i & "です。")  
+        i = i + 1  
+        MsgBox ("iは" & i & "です。")  
+        i = i + 1  
+        MsgBox ("iは" & i & "です。")  
+        i = i + 1  
+        MsgBox ("iは" & i & "です。")   
+        i = i + 1  
+        MsgBox ("iは" & i & "です。")  
+    End Sub  
 
 
 ※「i = i + 1」は変数iに前の変数i+1を代入するという意味になり、1ずつ増えていく数式となります。
@@ -88,17 +88,17 @@ Sub ForTestとSub ForTest2は全く同じ結果になります。しかし、繰
 
 For ～ Next文の場合は、例えば、加算値に負の値を指定することもできます。例えば、以下のような書き方をした場合です。
 
-For i = 1 To 5 Step -1  
-繰り返し処理内容  
-Next i  
+    For i = 1 To 5 Step -1  
+    繰り返し処理内容  
+    Next i  
 
 この場合、1は繰り返し処理内容が終わる度に、-1が加算され、iの値は繰り返す度に小さくなっていき、終了値の5を超えることはできません。よって、常に条件を満たし続けて、無限ループしてしまいます。
 
 加算値に負の値を指定する場合は、終了値も初期値よりも小さくならなければ、無限ループしてしまいます。加算値に負の値を指定する場合でも、以下のような場合であれば、無限ループさせずに済みます。
 
-For i = 1 To -5 Step -1  
-繰り返し処理内容  
-Next i  
+    For i = 1 To -5 Step -1  
+    繰り返し処理内容  
+    Next i  
 
 繰り返しの方法は、今回扱ったもの以外にも多くのパターンがあります。条件をどのように満たさなくするか、繰り返しを用いる際は必ず無限ループさせないように設計することが非常に重要となります。
 
@@ -185,25 +185,25 @@ Excelを用いたVBAプログラミングにおいて、繰り返しが最もよ
 
 繰り返し内容としては、Aさんのみの合計点と平均点を計算する場合は、以下のようになります。
 
-sum = sum + ws.Cells(3, 2) + ws.Cells(3, 3) + ws.Cells(3, 4)  
-ws.Cells(3, 5) = sum  
-ws.Cells(3, 6) = sum / 3  
+    sum = sum + ws.Cells(3, 2) + ws.Cells(3, 3) + ws.Cells(3, 4)  
+    ws.Cells(3, 5) = sum  
+    ws.Cells(3, 6) = sum / 3  
 
 Bさんの合計点と平均点を計算する場合は、以下のようになります。
 
-sum = sum + ws.Cells(4, 2) + ws.Cells(4, 3) + ws.Cells(4, 4)  
-ws.Cells(4, 5) = sum  
-ws.Cells(4, 6) = sum / 3  
+    sum = sum + ws.Cells(4, 2) + ws.Cells(4, 3) + ws.Cells(4, 4)  
+    ws.Cells(4, 5) = sum  
+    ws.Cells(4, 6) = sum / 3  
 
 Aさんの処理内容とBさんの処理内容で異なっているところは、Cellsの行番号がAさんの場合は3、Bさんの場合は4であるという点です。Cさん、Dさん、Eさんについても確認しても良いですが、やはり、Cellsの行番号が異なっていることになります。
 
 つまり、繰り返しとして、Cellsの行番号をカウンターとなる変数で変わるようにして繰り返すことによって、繰り返し処理によってAさん～Eさんの合計点と平均点を以下のように計算することができるようになります。
 
-For i = 3 To 7 Step 1  
-    sum = sum + ws.Cells(i, 2) + ws.Cells(i, 3) + ws.Cells(i, 4)  
-    ws.Cells(i, 5) = sum  
-    ws.Cells(i, 6) = sum / 3  
-Next i  
+    For i = 3 To 7 Step 1  
+        sum = sum + ws.Cells(i, 2) + ws.Cells(i, 3) + ws.Cells(i, 4)  
+        ws.Cells(i, 5) = sum  
+        ws.Cells(i, 6) = sum / 3  
+    Next i  
 
 Sub PerformanceTable7を実行すると以下のようになります。
 
@@ -220,20 +220,20 @@ Sub PerformanceTable7を実行すると以下のようになります。
 
 このフローチャートをプログラムに直すとSub DoubleForTestのようになります。
 
-Sub DoubleForTest()  
-    '変数宣言  
-    Dim i As Integer  
-    Dim j As Integer  
-    
-    '行の繰り返し(i)  
-    For i = 3 To 7 Step 1  
-        '列の繰り返し(j)  
-        For j = 1 To 6 Step 1  
-            MsgBox (i & "行目の左から" & j & "番目のセルの値は" & Worksheets("Sheet1").Cells(i, j) & "です。")  
-        Next j  
-        
-    Next i  
-End Sub  
+    Sub DoubleForTest()  
+        '変数宣言  
+        Dim i As Integer  
+        Dim j As Integer  
+
+        '行の繰り返し(i)  
+        For i = 3 To 7 Step 1  
+            '列の繰り返し(j)  
+            For j = 1 To 6 Step 1  
+                MsgBox (i & "行目の左から" & j & "番目のセルの値は" & Worksheets("Sheet1").Cells(i, j) & "です。")  
+            Next j  
+
+        Next i  
+    End Sub  
 
 なお、このプログラムでは、行の繰り返しと列の繰り返しがわかりやすいようにインデントを変え、コメントで補足しています。
 
@@ -267,69 +267,69 @@ Sub DoubleForTestを実行すると以下のようになります。
 
 Sub PerformanceTable7について、この部分の書き換えを行い、二重の繰り返しを採用したプログラムがSub PerformanceTable8です。
 
-Sub PerformanceTable8()  
-    
-    '変数宣言  
-    Dim i As Integer  
-    Dim j As Integer   
-    Dim sum As Integer  
-    Dim ave As Single  
-    
-    'ワークシートの設定  
-    Dim ws As Object  
-    Set ws = Worksheets("Sheet1")  
-    
-    'タイトル  
-    ws.Cells(1, 1) = "成績表"  
-    
-    '成績表ラベル  
-    ws.Cells(2, 1) = "氏名"  
-    ws.Cells(2, 2) = "国語得点"  
-    ws.Cells(2, 3) = "英語得点"  
-    ws.Cells(2, 4) = "数学得点"  
-    ws.Cells(2, 5) = "合計点"  
-    ws.Cells(2, 6) = "平均点"  
-    
-    'Aさんの成績  
-    ws.Cells(3, 1) = "A"  
-    ws.Cells(3, 2) = 90  
-    ws.Cells(3, 3) = 85  
-    ws.Cells(3, 4) = 70  
-    
-    'Bさんの成績  
-    ws.Cells(4, 1) = "B"  
-    ws.Cells(4, 2) = 100  
-    ws.Cells(4, 3) = 60  
-    ws.Cells(4, 4) = 80  
-    
-    'Cさんの成績  
-    ws.Cells(5, 1) = "C"  
-    ws.Cells(5, 2) = 70  
-    ws.Cells(5, 3) = 80  
-    ws.Cells(5, 4) = 90  
-    
-    'Dさんの成績  
-    ws.Cells(6, 1) = "D"  
-    ws.Cells(6, 2) = 90  
-    ws.Cells(6, 3) = 75  
-    ws.Cells(6, 4) = 30  
-    
-    'Eさんの成績  
-    ws.Cells(7, 1) = "E"  
-    ws.Cells(7, 2) = 50  
-    ws.Cells(7, 3) = 65  
-    ws.Cells(7, 4) = 70  
-    
-    '合計点・平均点算出(四則演算・変数・繰り返し)  
-    For i = 3 To 7 Step 1  
-        sum = 0  
-        For j = 2 To 4 Step 1  
-            sum = sum + ws.Cells(i, j)  
-        Next j  
-        ws.Cells(i, 5) = sum  
-        ws.Cells(i, 6) = sum / 3  
-    Next i  
-End Sub  
+    Sub PerformanceTable8()  
+
+        '変数宣言  
+        Dim i As Integer  
+        Dim j As Integer   
+        Dim sum As Integer  
+        Dim ave As Single  
+
+        'ワークシートの設定  
+        Dim ws As Object  
+        Set ws = Worksheets("Sheet1")  
+
+        'タイトル  
+        ws.Cells(1, 1) = "成績表"  
+
+        '成績表ラベル  
+        ws.Cells(2, 1) = "氏名"  
+        ws.Cells(2, 2) = "国語得点"  
+        ws.Cells(2, 3) = "英語得点"  
+        ws.Cells(2, 4) = "数学得点"  
+        ws.Cells(2, 5) = "合計点"  
+        ws.Cells(2, 6) = "平均点"  
+
+        'Aさんの成績  
+        ws.Cells(3, 1) = "A"  
+        ws.Cells(3, 2) = 90  
+        ws.Cells(3, 3) = 85  
+        ws.Cells(3, 4) = 70  
+
+        'Bさんの成績  
+        ws.Cells(4, 1) = "B"  
+        ws.Cells(4, 2) = 100  
+        ws.Cells(4, 3) = 60  
+        ws.Cells(4, 4) = 80  
+
+        'Cさんの成績  
+        ws.Cells(5, 1) = "C"  
+        ws.Cells(5, 2) = 70  
+        ws.Cells(5, 3) = 80  
+        ws.Cells(5, 4) = 90  
+
+        'Dさんの成績  
+        ws.Cells(6, 1) = "D"  
+        ws.Cells(6, 2) = 90  
+        ws.Cells(6, 3) = 75  
+        ws.Cells(6, 4) = 30  
+
+        'Eさんの成績  
+        ws.Cells(7, 1) = "E"  
+        ws.Cells(7, 2) = 50  
+        ws.Cells(7, 3) = 65  
+        ws.Cells(7, 4) = 70  
+
+        '合計点・平均点算出(四則演算・変数・繰り返し)  
+        For i = 3 To 7 Step 1  
+            sum = 0  
+            For j = 2 To 4 Step 1  
+                sum = sum + ws.Cells(i, j)  
+            Next j  
+            ws.Cells(i, 5) = sum  
+            ws.Cells(i, 6) = sum / 3  
+        Next i  
+    End Sub  
 
 Sub PerformanceTable8を実行すると、Sub PerformanceTable7と同じく以下のようになります。
 
