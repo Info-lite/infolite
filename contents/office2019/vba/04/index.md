@@ -115,67 +115,69 @@ Excelを用いたVBAプログラミングにおいて、繰り返しが最もよ
 
 ここでは、Sub PerformanceTable7を用いて、Aさん～Eさんの得点の合計点と平均点をFor ～ Next文を用いて計算してみましょう。
 
-Sub PerformanceTable7()
-    
-    '変数宣言  
-    Dim i As Integer  
-    Dim j As Integer  
-    Dim sum As Integer    
-    Dim ave As Single  
-    
-    'ワークシートの設定  
-    Dim ws As Object  
-    Set ws = Worksheets("Sheet1")  
-    
-    'タイトル  
-    ws.Cells(1, 1) = "成績表"  
-    
-    '成績表ラベル  
-    ws.Cells(2, 1) = "氏名"  
-    ws.Cells(2, 2) = "国語得点"  
-    ws.Cells(2, 3) = "英語得点"  
-    ws.Cells(2, 4) = "数学得点"  
-    ws.Cells(2, 5) = "合計点"  
-    ws.Cells(2, 6) = "平均点"  
-    
-    'Aさんの成績  
-    ws.Cells(3, 1) = "A"  
-    ws.Cells(3, 2) = 90  
-    ws.Cells(3, 3) = 85  
-    ws.Cells(3, 4) = 70  
-    
-    'Bさんの成績  
-    ws.Cells(4, 1) = "B"  
-    ws.Cells(4, 2) = 100  
-    ws.Cells(4, 3) = 60  
-    ws.Cells(4, 4) = 80  
-    
-    'Cさんの成績  
-    ws.Cells(5, 1) = "C"  
-    ws.Cells(5, 2) = 70  
-    ws.Cells(5, 3) = 80  
-    ws.Cells(5, 4) = 90  
-    
-    'Dさんの成績  
-    ws.Cells(6, 1) = "D"  
-    ws.Cells(6, 2) = 90  
-    ws.Cells(6, 3) = 75  
-    ws.Cells(6, 4) = 30  
-    
-    'Eさんの成績  
-    ws.Cells(7, 1) = "E"  
-    ws.Cells(7, 2) = 50  
-    ws.Cells(7, 3) = 65  
-    ws.Cells(7, 4) = 70  
-    
-    '合計点・平均点算出(四則演算・変数・繰り返し)  
-    For i = 3 To 7 Step 1  
-        sum = 0  
-        sum = sum + ws.Cells(i, 2) + ws.Cells(i, 3) + ws.Cells(i, 4)  
-        ws.Cells(i, 5) = sum  
-        ws.Cells(i, 6) = sum / 3  
-    Next i  
-End Sub  
+
+    Sub PerformanceTable7()
+
+        '変数宣言  
+        Dim i As Integer  
+        Dim j As Integer  
+        Dim sum As Integer    
+        Dim ave As Single  
+
+        'ワークシートの設定  
+        Dim ws As Object  
+        Set ws = Worksheets("Sheet1")  
+
+        'タイトル  
+        ws.Cells(1, 1) = "成績表"  
+
+        '成績表ラベル  
+        ws.Cells(2, 1) = "氏名"  
+        ws.Cells(2, 2) = "国語得点"  
+        ws.Cells(2, 3) = "英語得点"  
+        ws.Cells(2, 4) = "数学得点"  
+        ws.Cells(2, 5) = "合計点"  
+        ws.Cells(2, 6) = "平均点"  
+
+        'Aさんの成績  
+        ws.Cells(3, 1) = "A"  
+        ws.Cells(3, 2) = 90  
+        ws.Cells(3, 3) = 85  
+        ws.Cells(3, 4) = 70  
+
+        'Bさんの成績  
+        ws.Cells(4, 1) = "B"  
+        ws.Cells(4, 2) = 100  
+        ws.Cells(4, 3) = 60  
+        ws.Cells(4, 4) = 80  
+
+        'Cさんの成績  
+        ws.Cells(5, 1) = "C"  
+        ws.Cells(5, 2) = 70  
+        ws.Cells(5, 3) = 80  
+        ws.Cells(5, 4) = 90  
+
+        'Dさんの成績  
+        ws.Cells(6, 1) = "D"  
+        ws.Cells(6, 2) = 90  
+        ws.Cells(6, 3) = 75  
+        ws.Cells(6, 4) = 30  
+
+        'Eさんの成績  
+        ws.Cells(7, 1) = "E"  
+        ws.Cells(7, 2) = 50  
+        ws.Cells(7, 3) = 65  
+        ws.Cells(7, 4) = 70  
+
+        '合計点・平均点算出(四則演算・変数・繰り返し)  
+        For i = 3 To 7 Step 1  
+            sum = 0  
+            sum = sum + ws.Cells(i, 2) + ws.Cells(i, 3) + ws.Cells(i, 4)  
+            ws.Cells(i, 5) = sum  
+            ws.Cells(i, 6) = sum / 3  
+        Next i  
+    End Sub  
+
 
 ここで注目すべき点は、For ～ Next文のカウンターとなる変数iをCellsの行番号に入れているところです。成績表において、Aさん～Eさんの国語得点は2列目、英語得点は3列目、数学得点は4列目、合計点は5列目、平均点は6列目と決まっています。Aさん～Eさんで異なるところは、Aさんは3行目、Bさんは4行目、Cさんは5行目、Dさんは6行目、Eさんは7行目となっています。
 
