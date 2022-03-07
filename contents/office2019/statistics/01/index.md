@@ -44,7 +44,7 @@ flowplayer_conf:
 データを数値で表現する方法
 --------------------------
 
-数値化されたデータを得るためには、<span id="universe">対象</span>（universe）がもつ特性である事象に数値（数字や記号）を割り当てる処理、すなわち、<span id="measurement">測定</span>（measurement）が必要になります。例えば、全世界の人間（対象）の性別（特性）を数値で表す場合、性別を測定していることになります。測定は<span id="scale">尺度</span>（scale of measurement）と呼ばれる規則に基づいて実施しますが、測定したい事象に応じて4つの尺度を適切に使う必要があります。
+<a href="#nominal_scale">名義尺度</a>・<a href="#ordinal_scale">順序尺度</a>の場合に求められる統計量には、各<a href="#category">カテゴリー</a>あるいは階級（class）のデータ数（<span id="frequency">度数</span>、frequency）とその度数が全体のデータ数（総度数）に占める割合（<span id="relative_frequency">相対度数</span>、relative frequency）とがあります。<a href="#continuous_scale">連続尺度</a>の場合に求められる主要な<a href="#summary_statistics">基本統計量</a>には、<a href="#quantile">分位数</a>、<a href="#mean">平均値</a>、<a href="#median">中央値</a>、<a href="#mode">最頻値</a>、<a href="#range">範囲</a>、<a href="#variance">分散</a>、<a href="#standard_deviation">標準偏差</a>、<a href="#skewness">歪度</a>、<a href="#kurtosis">尖度</a>などがあります。
 
 ### 尺度の種類
 
@@ -76,102 +76,132 @@ flowplayer_conf:
 ----------------
 
 名義・順序尺度の場合に表示される度数には、各水準の度数と全体に占める割合が表示されます。
-連続尺度の場合に表示される要約統計量には、分位点、4 分位範囲、平均値、中央値、最頻値、範囲、分散、標準偏差、歪度、尖度などが示されます。
+連続尺度の場合に表示される基本統計量には、分位点、4 分位範囲、平均値、中央値、最頻値、範囲、分散、標準偏差、歪度、尖度などが示されます。
 
 それぞれの基本統計量の意味は下記のとおりです。
 
-#### <span id="mean">平均</span>
+#### <span id="missing_value">欠損値（missing value）</span>
 
-列の変数の算術平均を表します。欠損値以外の合計値を値の数で割った値です。
+測定値が得られていない項目がある場合、有効でないことが明らかな値を入力します。Excelでは空白のままにしたり、マイナス記号（-）を入力したりすることが多いようです。
 
-\begin{align}
-  \bar{x}=\frac{1}{n}\left ( x_1+x_2+_\cdots +x_n \right )
-\end{align}
 
-$n$ は標本の大きさ（サンプルサイズ）、$x_i$ は各標本の値です。  
-例えば {1，3，4，6，7} の5個の標本があったとき、平均は $ \left ( 1 + 3 + 4 + 6 + 7 \right ) \div 5 = 4.2 $ です。
+#### <span id="sample_size">標本の大きさ（sample size）$N$</span>
 
-#### $N$
+欠損値以外の測定値の数です。<a href="https://support.office.com/ja-jp/article/COUNTA-関数-7dc98875-d5c1-46f1-9a82-53f3219e2509"><code>COUNTA</code>関数</a>を用いることで、求められます。
 
-欠損値以外の値の数です。
+#### <span id="summation">合計（summation）</span>
 
-#### 分位点（パーセンタイル）
+欠損値以外の測定値の合計値です。
 
-75%の数字は、75パーセンタイルを意味し、その値以下の割合が75%となる数値を表します。
-25および75パーセンタイルは**４分位点**とも言い、どの値までが全体の何パーセントを占めるかの見当をつけるのに用います。
+$\displaystyle \left( x_1 + x_2 + \dots + x_N \right) = \sum_{i = 1}^N x_i$
 
-#### 範囲（レンジ）
+$x_i$は標本の$i$番目の測定値、$N$は<a href="#sample_size">標本の大きさ</a>です。例えば標本に1，3，4，6，7の5個の測定値があったとき、合計は1 + 3 + 4 + 6 + 7 = 21です。
 
-分布の存在する範囲を示します。範囲R = 最大値 - 最小値 で求めることができます。例えば {1，3，4，6，7} であれば範囲$ R = 7 - 1 = 6 $です。
+<a href="https://support.office.com/ja-jp/article/SUM-関数-043e1c7d-7726-4e80-8f32-07b23e057f89"><code>SUM</code>関数</a>を用いることで、求められます。
 
-#### 最大値
+#### <span id="mean">平均（mean）</span>
 
-欠損値を除く列内の最大値です。例えば {1，3，4，6，7} であれば $7$ が最大値です。
+測定値の算術平均を表します。<a href="#summation">合計</a>を<a href="#sample_size">標本の大きさ</a>$N$で割った値です。
 
-#### 最小値
+$\displaystyle \bar{x}=\frac{1}{N}\left ( x_1+x_2+_\cdots+x_N \right )$
 
-欠損値を除く列内の最小値です。例えば {1，3，4，6，7} であれば $1$ が最小値です。
+$N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目の測定値です。例えば1，3，4，6，7であれば、平均は21 ÷ 5 = 4.2です。
 
-#### <span id="median">中央値（メディアン）</span>
+<a href="https://support.office.com/ja-jp/article/AVERAGE-関数-047bac88-d466-426c-a32b-8f33eb960cf6"><code>AVERAGE</code>関数</a>を用いることで、求められます。
 
-50パーセンタイルとも言い、データを並べたときに全体の中央に位置する値です。例えば {1，3，4，6，7} であれば $4$ が中央値です。
+#### <span id="maximum">最大値（maximum）</span>
 
-#### 最頻値（モード）
+欠損値を除く測定値の最大値です。例えば1，3，4，6，7であれば7が最大値です。
 
-データの中で最大の度数を持つ値です。例えば {1，3，4，4，6，7} であれば $4$ の数が最も多いので、 $4$ が最頻値になります。
+<a href="https://support.office.com/ja-jp/article/MAX-関数-e0012414-9ac8-4b34-9a47-73e662c08098"><code>MAX</code>関数</a>を用いることで、求められます。
 
-#### <span id="variance">分散</span>
+#### <span id="minimum">最小値（minimum）</span>
 
-JMPでは不偏分散を指し、<span id="deviation">偏差</span>（各観測値 - 平均）を二乗することで符号を消し、その合計（偏差平方和）を $N - 1$ で割ったものです。
-母集団が未知であることを前提としています。
-一般的に標本の分散を求める場合、 $N$ で割るよりも $N - 1$ で割ったほうが、母分散をよりよく推定できます。
-平均値からのデータの散らばり具合を把握するのに用います。
+欠損値を除く測定値の最小値です。例えば1，3，4，6，7であれば1が最小値です。
 
-\begin{align}
-  V=\frac{1}{n-1}\sum ^{n}_{i=1}{(x_i-\bar{x})}^2
-\end{align}
+<a href="https://support.office.com/ja-jp/article/MIN-関数-61635d12-920f-4ce2-a70f-96f202dcc152"><code>MIN</code>関数</a>を用いることで、求められます。
 
-$n$ は標本の大きさ（サンプルサイズ）、$x_i$ は各標本の値です。  
-例えば {1，3，4，6，7} であれば分散は $ \left \\{ (1-4.2)^2 + (3-4.2)^2 + (4-4.2)^2 + (6-4.2)^2 + (7-4.2)^2 \right \\} \div \left ( 5 - 1 \right ) = 5.7 $ となります。
+#### <span id="range">範囲（レンジ、range）</span>
 
-#### <span id="standard_deviation">標準偏差</span>
+測定値が分布する範囲を示します。範囲R = <a href="#maximum">最大値</a> - <a href="#minimum">最小値</a>で求めることができます。例えば1，3，4，6，7であれば範囲R = 7 - 1 = 6です。
 
-JMPでは分散（不偏分散）の平方根をとった値で、分散同様散らばり具合の尺度になります。偏差の単位と次数が同じです。
+#### <span id="quantile">分位数（quantile）</spam>
 
-\begin{align}
-  s=\sqrt{V}=\sqrt{\frac{1}{n-1}\sum ^{n}_{i=1}{(x_i-\bar{x})^2}}
-\end{align}
+分位点とも呼びます。測定値を大きさの順に並べ、測定値の個数が等しくなるように複数のグループに分割した時のグループ間の境界値のことを言います。どの値までが全体のどれくらいの割合を占めるかの見当をつけるのに用います。特に、100グループに分割する場合は百分位数（パーセンタイル、percentile）、4グループに分割する場合は四分位数（quartile）と呼びます。<span id="1st_quartile">第1四分位数</span>（first quartile）は小さいほうから25%に当たる値、<span id="3rd_quartile">第3四分位数</span>（third quartile）は大きいほうから25%に当たる値になります。四分位数は<a href="https://support.office.com/ja-jp/article/QUARTILE-EXC-関数-5a355b7a-840b-4a01-b0f1-f538c2864cad"><code>QUARTILE.EXC</code>関数</a>を用いることで、求められます。
 
-$n$ は標本の大きさ（サンプルサイズ）、$x_i$ は各標本の値です。  
-例えば {1，3，4，6，7} であれば標準偏差は分散に平方根をとって、2.387&hellip; になります。
+#### <span id="median">中央値（メディアン、median）</span>
 
-#### 歪度
+50パーセンタイル、第2四分位数とも言い、測定値を大きさの順に並べたときに全体の中央に位置する値です。例えば1，3，4，6，7であれば4が中央値です。
 
-データの分布の非対称性を測る尺度です。
+<a href="https://support.office.com/ja-jp/article/MEDIAN-関数-d0916313-4753-414c-8537-ce85bdd967d2"><code>MEDIAN</code>関数</a>を用いることで、求められます。
 
-- 歪度 $= 0$ : 左右対称
-- 歪度 $> 0$ : 右に裾がのびる
-- 歪度 $< 0$ : 左に裾がのびる
+#### <span id="mode">最頻値（モード、mode）</span>
 
-![](./pic/01_04warp.png)
+測定値の中で最大の<a href="#frequency">度数</a>を持つ値です。例えば1，3，4，4，6，7であれば4の数が最も多いので、4が最頻値になります。
 
-#### 尖度
+<a href="https://support.office.com/ja-jp/article/MODE-SNGL-関数-f1267c16-66c6-4386-959f-8fba5f8bb7f8"><code>MODE.SNGL</code>関数</a>を用いることで、求められます。
 
-データの分布の裾の長さを測る尺度です。
+#### <span id="variance">分散（variance）</span>
 
-- 尖度 $= 0$ : 正規分布
-- 尖度 $> 0$ : 正規分布よりも尖っている
-- 尖度 $< 0$ : 正規分布よりも平坦である
+Excelでは不偏分散（unbiaded variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations）$S$）を$N - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
 
-![](./pic/01_05sharp.png)
+$\displaystyle V = \frac{S}{N - 1}$
 
-#### 変動係数
+$\displaystyle S = {\left( x_1 - \bar{x} \right)}^2 + {\left( x_2 - \bar{x} \right)}^2 + \dots + {\left( x_N - \bar{x} \right)}^2 = \sum_{i = 1}^N {\left( x_i - \bar{x} \right)}^2$
 
-標準偏差を平均で割ったもの。平均を考慮した上で散らばり具合を相対的に比較するのに便利な指標です。
+$V$は分散、$N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目の測定値、$\bar{x}$は<a href="#mean">平均</a>です。例えば1，3，4，6，7であれば分散は{(1 - 4.2)<sup>2</sup> + (3 - 4.2)<sup>2</sup> + (4 - 4.2)<sup>2</sup> + (6 - 4.2)<sup>2</sup> + (7 - 4.2)<sup>2</sup>} ÷ (5 - 1) = 5.7となります。<a href="../02/#population">母集団</a>（対象全体に対して測定したデータ、例えば日本人全員の身長など）の平均（母平均）が未知であることを前提としていて、（<a href="../02/#sample">標本</a>）平均$\bar{x}$を用いて母分散を求めるため、自由度$N - 1$で割ります。
 
-#### 欠損値
+<a href="https://support.office.com/ja-jp/article/VAR-S-関数-913633de-136b-449d-813e-65a00b2b990b"><code>VAR.S</code>関数</a>を用いることで、求められます。
 
-データが得られていない項目がある場合、有効でないことが明らかな値を入力します。Excelでは空白のままにしておきます。
+#### <span id="standard_deviation">標準偏差（standard deviation）</span>
+
+Excelでは<a href="#variance">分散</a>（不偏分散）$V$の平方根をとった値で、分散同様散らばり具合の尺度になります。単位と次数とが<a href="#deviation">偏差</a>と同じです。
+
+$s = \sqrt{V} = \sqrt{\frac{1}{n-1}\sum ^{N}_{i=1}{(x_i-\bar{x})^2}}$
+
+$s$は標準偏差です。例えば1，3，4，6，7であれば標準偏差は分散の平方根をとって、2.387467...になります。
+
+<a href="https://support.office.com/ja-jp/article/STDEV-S-関数-7d69cf97-0c1f-4acf-be27-f3e83904cc23"><code>STDEV.S</code>関数</a>を用いることで、求められます。
+
+#### <span id="skewness">歪度（skewness）</span>
+
+測定値の分布の非対称性を測る尺度です。
+
+* 歪度 = 0 : 左右対称
+* 歪度 &gt; 0 : 右に裾がのびる
+* 歪度 &lt; 0 : 左に裾がのびる
+
+![歪度](./pic/01_04warp.png)
+
+<a href="https://support.office.com/ja-jp/article/SKEW-関数-bdf49d86-b1ef-4804-a046-28eaea69c9fa"><code>SKEW</code>関数</a>を用いることで、求められます。
+
+#### <span id="kurtosis">尖度（kurtosis）</span>
+
+測定値の分布の裾の長さを測る尺度です。
+
+* 尖度 = 0 : 正規分布
+* 尖度 &gt; 0 : 正規分布よりも尖っている
+* 尖度 &lt; 0 : 正規分布よりも平坦である
+
+![尖度](./pic/01_05sharp.png)
+
+<a href="https://support.office.com/ja-jp/article/KURT-関数-bc3a265c-5da4-4dcb-b7fd-c237789095ab"><code>KURT</code>関数</a>を用いることで、求められます。
+
+#### <span id="coefficient_of_variation">変動係数（coefficient of variation）</span>
+
+<a href="#standard_deviation">標準偏差</a>を<a href="#mean">平均</a>で割った値で、平均を考慮した上で散らばり具合を相対的に比較するのに便利な指標です。
+
+$s / \bar{x}$
+
+$s$は標準偏差、$\bar{x}$は平均です。
+
+#### <span id="standard_error">標準誤差（standard error）</span>
+
+<a href="#standard_deviation">標準偏差</a>を<a href="#sample_size">標本の大きさ</a>$N$の平方根で割った値で、平均に関する検定や推定で用いられます。<a href="#mean">平均</a>の標準誤差とも呼ばれます。
+
+$s / \sqrt{N}$
+
+$s$は標準偏差、$N$は標本の大きさです。
 
 基本統計量の算出
 ----------------
