@@ -12,6 +12,8 @@
 *.swp
 *~
 .DS_Store
+.ruby-version
+Gemfile.lock
 
 ## Jekyll files:
 .jekyll-metadata
