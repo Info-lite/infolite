@@ -44,7 +44,7 @@ flowplayer_conf:
 データを数値で表現する方法
 --------------------------
 
-<a href="#nominal_scale">名義尺度</a>・<a href="#ordinal_scale">順序尺度</a>の場合に求められる統計量には、各<a href="#category">カテゴリー</a>あるいは階級（class）のデータ数（<span id="frequency">度数</span>、frequency）とその度数が全体のデータ数（総度数）に占める割合（<span id="relative_frequency">相対度数</span>、relative frequency）とがあります。<a href="#continuous_scale">連続尺度</a>の場合に求められる主要な<a href="#summary_statistics">基本統計量</a>には、<a href="#quantile">分位数</a>、<a href="#mean">平均値</a>、<a href="#median">中央値</a>、<a href="#mode">最頻値</a>、<a href="#range">範囲</a>、<a href="#variance">分散</a>、<a href="#standard_deviation">標準偏差</a>、<a href="#skewness">歪度</a>、<a href="#kurtosis">尖度</a>などがあります。
+数値化されたデータを得るためには、<span id="universe">対象</span>（universe）がもつ特性である事象に数値（数字や記号）を割り当てる処理、すなわち、<span id="measurement">測定</span>（measurement）が必要になります。例えば、全世界の人間（対象）の性別（特性）を数値で表す場合、性別を測定していることになります。測定は<span id="scale">尺度</span>（scale of measurement）と呼ばれる規則に基づいて実施しますが、測定したい事象に応じて4つの尺度を適切に使う必要があります。
 
 ### 尺度の種類
 
@@ -75,10 +75,9 @@ flowplayer_conf:
 基本統計量の意味
 ----------------
 
-名義・順序尺度の場合に表示される度数には、各水準の度数と全体に占める割合が表示されます。
-連続尺度の場合に表示される基本統計量には、分位点、4 分位範囲、平均値、中央値、最頻値、範囲、分散、標準偏差、歪度、尖度などが示されます。
+<a href="#nominal_scale">名義尺度</a>・<a href="#ordinal_scale">順序尺度</a>の場合に求められる統計量には、各<a href="#category">カテゴリー</a>あるいは階級（class）のデータ数（<span id="frequency">度数</span>、frequency）とその度数が全体のデータ数（総度数）に占める割合（<span id="relative_frequency">相対度数</span>、relative frequency）とがあります。<a href="#continuous_scale">連続尺度</a>の場合に求められる主要な<a href="#summary_statistics">要約統計量</a>には、<a href="#quantile">分位数</a>、<a href="#mean">平均値</a>、<a href="#median">中央値</a>、<a href="#mode">最頻値</a>、<a href="#range">範囲</a>、<a href="#variance">分散</a>、<a href="#standard_deviation">標準偏差</a>、<a href="#skewness">歪度</a>、<a href="#kurtosis">尖度</a>などがあります。
 
-それぞれの基本統計量の意味は下記のとおりです。
+それぞれの統計量の意味は以下のとおりです。
 
 #### <span id="missing_value">欠損値（missing value）</span>
 
