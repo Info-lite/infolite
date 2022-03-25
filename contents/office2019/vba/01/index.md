@@ -92,11 +92,11 @@ VBEを開きましょう。
 
 ※Sheet1以外のシートを使用する場合は、使用するシート名を選択する。
 
-{% screenshot VEE.png "VEE" %}
+{% screenshot VBE.png "VBE" %}
 
 表示されたウィンドウ内にVBAに基づいたプログラムを記述していくことになります。
 
-{% screenshot VEE_Sheet1.png "VEEのSheet1" %}
+{% screenshot VBE_Sheet1.png "VBEのSheet1" %}
 
 
 ### マクロの記録
