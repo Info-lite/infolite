@@ -15,7 +15,6 @@ permalink: /1_2022/
 -   [母集団と標本、正規分布とt分布](../contents/office2019/statistics/02/index.html)
 -   [２グループの平均のt検定](../contents/office2019/statistics/03/index.html)
 -   [相関分析](../contents/office2019/statistics/04/index.html)
--   [【統計】まとめ](../contents/office2019/statistics/06/index.html)
 -   [VBAプログラミング（１）](../contents/office2019/vba/01/index.html)
 -   [VBAプログラミング（２）](../contents/office2019/vba/02/index.html)
 -   [VBAプログラミング（３）](../contents/office2019/vba/03/index.html)
