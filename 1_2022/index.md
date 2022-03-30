@@ -1,8 +1,10 @@
 ---
 layout: index
-title: 情報リテラシー実践Ⅰ
+title: 情報リテラシー実践Ⅰ(2022年度以降入学生)
 permalink: /1_2022/
 ---
+
+## 授業用コンテンツ
 
 -   [情報処理教室の使い方と授業ガイダンス](../contents/basics/01/index.html)
 -   [コンピュータの基本操作と構造](../contents/basics/02/index.html)
@@ -19,4 +21,14 @@ permalink: /1_2022/
 -   [VBAプログラミング（２）](../contents/office2019/vba/02/index.html)
 -   [VBAプログラミング（３）](../contents/office2019/vba/03/index.html)
 -   [VBAプログラミング（４）](../contents/office2019/vba/04/index.html)
+
+## 自習用コンテンツ
+
+以下の内容は、情報リテラシー実践I(2022年度以降入学生)の授業では扱いませんが、必要に応じて自習のために利用してください。
+
+-   [ワードプロセッサによる文書編集（１）](../contents/office2019/word/01/index.html)
+-   [ワードプロセッサによる文書編集（２）](../contents/office2019/word/02/index.html)
+    -   [ワードプロセッサによる文書編集（発展例）](../contents/office2019/word/03/index.html)
+-   [プレゼンテーションの概要と実習](../contents/office2019/powerpoint/01/index.html)
+-   [プレゼンテーション実演](../contents/office2019/powerpoint/03/index.html)
 

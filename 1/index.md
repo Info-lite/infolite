@@ -1,6 +1,6 @@
 ---
 layout: index
-title: 情報リテラシー実践Ⅰ
+title: 情報リテラシー実践Ⅰ(2021年度以前入学生)
 permalink: /1/
 ---
 
