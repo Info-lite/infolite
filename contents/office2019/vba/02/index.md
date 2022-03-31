@@ -69,7 +69,7 @@ PerformanceTable2をより効率的なソースコードにするため、変数
         
         x = Range(“B3”) + Range(“C3”) + Range(“D3”)
         Range(“E3”) = x
-        y = x/ 3
+        y = x / 3
         Range(“F3”) = y
         
     End Sub
