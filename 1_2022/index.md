@@ -8,8 +8,6 @@ permalink: /1_2022/
 
 -   [情報処理教室の使い方と授業ガイダンス](../contents/basics/01/index.html)
 -   [コンピュータの基本操作と構造](../contents/basics/02/index.html)
--   [ネットワークの仕組みと情報検索](../contents/basics/03/index.html)
--   [情報の活用と情報倫理](../contents/basics/04/index.html)
 -   [表計算ソフトによるデータ処理（１）](../contents/office2019/excel/01/index.html)
 -   [表計算ソフトによるデータ処理（２）](../contents/office2019/excel/02/index.html)
 -   [表計算ソフトによるデータ処理（３）](../contents/office2019/excel/03/index.html)
@@ -26,6 +24,8 @@ permalink: /1_2022/
 
 以下の内容は、情報リテラシー実践I(2022年度以降入学生)の授業では扱いませんが、必要に応じて自習のために利用してください。
 
+-   [ネットワークの仕組みと情報検索](../contents/basics/03/index.html)
+-   [情報の活用と情報倫理](../contents/basics/04/index.html)
 -   [ワードプロセッサによる文書編集（１）](../contents/office2019/word/01/index.html)
 -   [ワードプロセッサによる文書編集（２）](../contents/office2019/word/02/index.html)
     -   [ワードプロセッサによる文書編集（発展例）](../contents/office2019/word/03/index.html)
