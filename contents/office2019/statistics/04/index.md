@@ -31,7 +31,7 @@ flowplayer_conf:
 <div class="modal-body">
 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
 <video>
-<source type="video/mp4" src="../../../../../lit/video/st04_correlation.mp4">
+<source type="video/mp4" src="../../../../../mov/st04_correlation.mp4">
 </video>
 </div>
 </div>
