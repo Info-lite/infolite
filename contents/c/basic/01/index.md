@@ -39,7 +39,7 @@ C言語でプログラミングを行う場合、OSがWindowsのパソコンを�
 
 情報処理教室では、C言語の実行環境として、MinGWとVisual Studioがインストールされています。教室によってインストールされているソフトウェアが異なりますので、詳細はTMUNERを確認してください。
 
-##①MinGWのインストール
+**①MinGWのインストール**
 
 以下のファイルをダウンロードし、**マイドキュメント**に保存してください。  
 
@@ -62,7 +62,7 @@ C言語でプログラミングを行う場合、OSがWindowsのパソコンを�
 init
 ```
 
-##②Visual Studio Communityのインストール
+**②Visual Studio Communityのインストール**
 
 Visual Studioは、Microsoftが開発したシステム開発のためのソフトウェアです。Visual Studioは通常は有償のソフトウェアですが、Microsoftでは無償利用できる[Visual Studio Community](https://visualstudio.microsoft.com/ja/vs/community/)を配布しています。有償版と比べて、利用の条件などの制約がありますが、個人で学習するためには、無償版のVisual Studio Communityで十分足りると考えられます。
 以下のVisual Studio Communityを利用する場合は、以下の参考資料を参考にインストールしてみてください。
@@ -85,11 +85,11 @@ Visual Studioは、Microsoftが開発したシステム開発のためのソフ�
 
 ファイル名は、**Hello.c**とし、**マイドキュメント**に保存してください。
 
-##①オンライン実行環境を利用する場合
+**①オンライン実行環境を利用する場合**
 
 オンライン実行環境で実行する場合は、利用しているオンライン実行環境に**Hello.c**の内容をコピーアンドペーストし、ウェブサイトの指示に従って実行してみましょう。
 
-##②MinGWを利用する場合
+**②MinGWを利用する場合**
 
 MinGWを利用する場合は、コマンドプロンプト（ターミナル）を起動しましょう。
 
@@ -109,7 +109,7 @@ MinGWを利用する場合は、コマンドプロンプト（ターミナル）
 
     Hello
 
-##③Visual Studio または Visual Studio Communityを用いる場合
+**③Visual Studio または Visual Studio Communityを用いる場合**
 
 Visual Studio または Visual Studio Communityを用いる場合は開発者コマンドプロンプト(または、Developer Coommand Prompt for VS)を起動しましょう。
 
