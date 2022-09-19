@@ -25,13 +25,13 @@ Visual Studio Communityのインストールファイルのダウンロードと
 Visual Studio Communityの動作確認
 ----------------
    インストールし、再起動が完了したら、正常にインストールが終わったか、動作を確認しましょう。
-1. [スタート]から”すべてのアプリ” – “Visual Studio 20**” – “Developer Command Prompt for VS 20**”をクリックします。<br />
+1. [スタート]から”すべてのアプリ” – “Visual Studio 20**“ – “Developer Command Prompt for VS 20**”をクリックします。<br />
 ※20**には、Visual Studio Communityのバーションの年が入ります。
 1. Developer Command Prompt for VS 20**が起動したら、”cl”と入力し、[Enter]キーを押してください。
 1. インストールが成功していたら、以下のように表示されます。<br />
 エラーになるようであれば、インストールは失敗していますので、Visual Studio Communityをアンインストールして、インストールをし直しましょう。
 
-  <ins>Developer Command Prompt for VS 20“**“はVisual Studion Community用のコマンドプロンプトになります</ins>。基本的な操作は、通常のコマンドプロンプトと同じように使うことができます。Visual Studioでは、統合開発環境として、エディタや実行環境などが統合した画面も持っていますが、初心者がいきなり利用するには、機能や設定項目等が多く、使い方にも簡単ではありません。初心者は、メモ帳などのエディタとDeveloper Command Prompt for VS 20**を併用して学習するのが良いでしょう。プログラミングに慣れて、システム開発などの高度なプログラミングに興味がわいてきたら、Visual Studioの使い方も学んでみると良いでしょう。
+  <ins>“Developer Command Prompt for VS 20**“はVisual Studion Community用のコマンドプロンプトになります</ins>。基本的な操作は、通常のコマンドプロンプトと同じように使うことができます。Visual Studioでは、統合開発環境として、エディタや実行環境などが統合した画面も持っていますが、初心者がいきなり利用するには、機能や設定項目等が多く、使い方にも簡単ではありません。初心者は、メモ帳などのエディタとDeveloper Command Prompt for VS 20**を併用して学習するのが良いでしょう。プログラミングに慣れて、システム開発などの高度なプログラミングに興味がわいてきたら、Visual Studioの使い方も学んでみると良いでしょう。
 
 
 ### 改行
