@@ -13,55 +13,32 @@ Visual Studio Communityのインストールファイルのダウンロードと
 
 1. [Visual Studio CommunityのWebページ](https://visualstudio.microsoft.com/ja/vs/community/)へアクセスします。
 1. [Visual Studioのダウンロード]をクリックし、任意のフォルダへインストールファイルをダウンロードします。
+{% screenshot VSC01.png %}
 1. ダウンロードしたインストールファイルをダブルクリックします。<br />
 通常、特に変更や指定をしていなければ、”ダウンロード”フォルダにインストールファイルはダウンロードされています。
 1. インストーラが起動したら、[続行]をクリックします。
+{% screenshot VSC02.png %}
+{% screenshot VSC03.png %}
 1. インストーラの準備が整ったら、どの機能をインストールするか選択する画面が開きます。<br />
 ※Visual StudioはC言語のみならず、様々なプログラミング言語を用いてシステムを開発することができます。<br />
 “ワークロード”タブの“C++によるデスクトップ環境”にチェックを入れます。
+{% screenshot VSC04.png %}
 1. [インストール]をクリックします。
+{% screenshot VSC05.png %}
+{% screenshot VSC06.png %}
 1.	インストールが完了したら、再起動を要求されるので、[再開]をクリックし、再起動してください。
+{% screenshot VSC07.png %}
 
 Visual Studio Communityの動作確認
 ----------------
    インストールし、再起動が完了したら、正常にインストールが終わったか、動作を確認しましょう。
 1. [スタート]から”すべてのアプリ” – “Visual Studio 20**“ – “Developer Command Prompt for VS 20**”をクリックします。<br />
 ※20**には、Visual Studio Communityのバーションの年が入ります。
+{% screenshot VSC08.png %}
 1. Developer Command Prompt for VS 20**が起動したら、”cl”と入力し、[Enter]キーを押してください。
+{% screenshot VSC09.png %}
 1. インストールが成功していたら、以下のように表示されます。<br />
 エラーになるようであれば、インストールは失敗していますので、Visual Studio Communityをアンインストールして、インストールをし直しましょう。
+{% screenshot VSC10.png %}
 
   　<ins>**Developer Command Prompt for VS 20\**はVisual Studion Community用のコマンドプロンプト**になります</ins>。基本的な操作は、通常のコマンドプロンプトと同じように使うことができます。Visual Studioでは、統合開発環境として、エディタや実行環境などが統合した画面も持っていますが、初心者がいきなり利用するには、機能や設定項目等が多く、使い方にも簡単ではありません。初心者は、メモ帳などのエディタとDeveloper Command Prompt for VS 20\**を併用して学習するのが良いでしょう。プログラミングに慣れて、システム開発などの高度なプログラミングに興味がわいてきたら、Visual Studioの使い方も学んでみると良いでしょう。
-
-
-### 改行
-
-ここでは、[C言語の基礎](../basic/01/)で扱った `Hello.c` を例に説明します。
-
-まず、以下のソースコードを見てください。
-
-*改行していないプログラム*
-
-
-    #include <stdio.h> void main(){printf("Hello.\n");}
-
-コンパイルして実行すれば、同じ結果を得られます。しかし、とても読みにくく分かりにくいです。
-
-ソースコードでは、単語の途中などを除けば、任意の場所で改行を行うことができます。
-
-
-変数名やクラス名のつけ方
-------------------------
-
-### 必ず守らねばならないルール
-
-<dl>
-<dt>1文字目は、文字でなければならない</t>
-<dd>数字や記号は、1文字目には使用できません。</dd>
-<dt>1文字目以降は、文字か数字でなければならない</dt>
-<dd>記号を変数名に使用することはできません。</dd>
-<dt>予約語は使用できない</dt>
-<dd>ただし、予約語と他の単語を組み合わせたものは使用できます。</dd>
-
-<span class="label label-info">参考資料</span> [C言語における予約語](./keyword.html)
-
