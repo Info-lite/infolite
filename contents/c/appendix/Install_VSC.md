@@ -8,13 +8,11 @@ date: 2015-03-23 16:14:50 +0900
    
  　 Visual Studioは通常有償ですが、Microsoft社では、**無償版のVisual Studio Community**を配布しています。有償版と比べていくつかの制約がありますが、情報リテラシー実践IIBの授業内容を学習する程度であれば、無償版のVisual Studio Communityで十分対応ができます。自習などのためにWindows PCにVisual Studio Communityをインストールする方法を以下では説明します。
 
-ここでは、ソースコードを書く際に気をつけたほうが良いことをいくつか挙げておきます。
-ここに書かれていることはC言語だけではなく、一般のプログラミング言語でも言えることです。ぜひ参考にしてください。
-
-
-インデントと改行
+Visual Studio Communityのインストールファイルのダウンロードとインストール
 ----------------
 
+1. [Visual Studio CommunityのWebページ](https://visualstudio.microsoft.com/ja/vs/community/)へアクセスします。
+2. 
 ### 改行
 
 ここでは、[C言語の基礎](../basic/01/)で扱った `Hello.c` を例に説明します。
