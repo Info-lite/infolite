@@ -157,9 +157,9 @@ purposes:
 </tr>
 <tr>
 <th>int</th>
-<td>2 byte</td>
+<td>4 byte</td>
 <td>整数型</td>
-<td>-32768 ～ +32767</td>
+<td>-2147483648 ～ +2147483647</td>
 </tr>
 <tr>
 <th>long</th>
