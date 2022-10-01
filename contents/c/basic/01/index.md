@@ -67,7 +67,7 @@ init
 Visual Studioは、Microsoftが開発したシステム開発のためのソフトウェアです。Visual Studioは通常は有償のソフトウェアですが、Microsoftでは無償利用できる[Visual Studio Community](https://visualstudio.microsoft.com/ja/vs/community/)を配布しています。有償版と比べて、利用の条件などの制約がありますが、個人で学習するためには、無償版のVisual Studio Communityで十分足りると考えられます。
 以下のVisual Studio Communityを利用する場合は、以下の参考資料を参考にインストールしてみてください。
 
--   [[参考資料]Visual Studio Communityのインストール](https://infolit.uec.tmu.ac.jp/lit/contents/c/appendix/Install_VSC.html)
+-   [[参考資料]Visual Studio Communityのインストール](../../appendix/Install_VSC.html)
 
 最も基本的なプログラム
 ----------------------
@@ -117,13 +117,13 @@ Hello.cを保存したフォルダへ移動し、次のように入力し、[Ent
 
     cl Hello.c
 
-（開発者コマンドプロンプトのcl Hello.cの画像）
+{% screenshot hello03_c.png "cl Hello.c の入力" %}
 
 実行に成功したら、Hello.exeが生成されますので、次は以下のように入力し、[Enter]キーを押します。
 
     Hello.exe
 
-（開発者コマンドプロンプトのHello.exeの実行と実行結果Helloの画像）
+{% screenshot hello04_c.png "Hello.exe の入力" %}
 
 実行に成功したら、以下のように表示されます。
 
@@ -161,7 +161,7 @@ C言語は、作成したソースコードをコンパイルし、バイトコ�
 Hello.cの解説 - コンパイルから実行まで
 -----------------------------------------
 
-### gcc
+### コンパイル(gccやcl)
 
 ソースコードを入力・保存したあと、次のようなコマンドを実行しました。
 
@@ -171,7 +171,7 @@ Hello.cの解説 - コンパイルから実行まで
 以上の `gcc` や `cl` が、**コンパイル**するためのコマンドです。
 これにより、バイトコードの `a.exe` や `Hello.exe` が作成されます。
 
-### a.exe
+### バイトコードの実行
 
 コンパイル後、次のコマンドを実行しました。
 
