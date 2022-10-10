@@ -14,7 +14,7 @@ purposes:
 
 まず、以下のソースコードを入力し、コンパイルして実行してみましょう。その際、入力する値をいろいろ試してみましょう。
 
-![](./pic/ForkSample.c.png"")
+![](./pic/ForkSample.c.png)
 
 実行結果は、以下のどちらかになります。
 
@@ -105,7 +105,7 @@ purposes:
 では、前のソースコードに少し付け加えてみましょう。
 
 *ForkSample.c*<br>
-![](./pic/ForkSample.c.Mod1.png"")
+![](./pic/ForkSample.c.Mod1.png)
 
 実行結果は、以下のどちらかになります。
 
@@ -139,7 +139,7 @@ elseを使うと、if文の条件に合わなかった場合に実行する内�
 さらに複数の分岐をさせてみましょう。
 
 *ForkSample.c*<br>
-![](./pic/ForkSample.c.Mod2.png"")
+![](./pic/ForkSample.c.Mod2.png)
 
 1,2,3を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。
 else ifを使うと、さらに分岐を増やすことができます。
