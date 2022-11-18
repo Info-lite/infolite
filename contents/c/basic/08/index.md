@@ -55,7 +55,7 @@ purposes:
     
     // 例
     struct oden{
-      int age→num;
+      int num;
     };
     
     void main(){
