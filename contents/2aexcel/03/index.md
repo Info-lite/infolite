@@ -236,7 +236,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 
 ここで、$\mu_\text{C}$はＣ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{D}$はＤ組全員のテスト結果を母集団とする母平均です。
 
-なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t^*$値の算出（Welchのt検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
+なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchのt検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
 
 * 帰無仮説H<sub>0</sub>：$\mu_\text{C} - \mu_\text{D} = 0$
 * 対立仮説H<sub>1</sub>：$\mu_\text{C} - \mu_\text{D} \ne 0$
@@ -249,9 +249,9 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
 
 
-### 検定統計量$t^*$値の算出（Welchのt検定）
+### 検定統計量$t$値の算出（Welchのt検定）
 
-以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t^*$値を求めます。
+以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
 
 $\displaystyle t_0=\frac{\overline{x}\_C-\overline{x}\_D}{\sqrt{\frac{V_C}{n_C}+\frac{V_D}{n_D}}}$
 
@@ -267,9 +267,9 @@ $\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D
 
 $\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_C^2}{N_C}+\frac{\sigma_D^2}{N_D}}}$
 
-を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t*">上の
-$t^\*$
-の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchのt検定</a>では、この検定統計量$t^*$が<a href="#chapter22">等価自由度$\phi^*$</a>の<a href="../02/#student_s_t-distribution">t分布</a>に近似的に従うことがわかっています。
+を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t">上の
+$t$
+の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchのt検定</a>では、この検定統計量$t$が<a href="#chapter22"> 等価自由度$\phi^*$ </a>の<a href="../02/#student_s_t-distribution">t分布</a>に近似的に従うことがわかっています。
 
 ### 等価自由度$\phi^*$の算出
 
@@ -288,13 +288,13 @@ $\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{C}}{N_\text{C}
 
 ### p値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率p値を求めます。<span id="p_of_t*">p値</span>は、自由度$\phi^*$の<a href="../02/#student_s_t-distribution">t分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
+<a href="../04/#chapter1">有意水準</a>と比較する確率p値を求めます。<span id="p_of_t">p値</span>は、自由度$\phi^*$の<a href="../02/#student_s_t-distribution">t分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
 
 
 ### 判定
 
 <dl>
- 	<dt><a href="#p_of_t*">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
+ 	<dt><a href="#p_of_t">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
  	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
  	<dt>p値 &gt; 有意水準$\alpha$</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
@@ -325,14 +325,14 @@ Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりま�
 * "N8"：<code>=SQRT(N4/N6+N5/N7)</code>（<a href="../01/#standard_error">標準誤差</a>）
 * "N9"：<code>=STANDARDIZE(N3,N2,N8)</code>（<a href="../02/#standardization">標準化</a>）
 * "N10"：<code>=N8^4/(N4/N6^2*N4/(N6-1)+N5/N7^2*N5/(N7-1))</code>（<a href="#chapter21">等価自由度</a>）
-* "N11"：<code>=T.DIST.2T(ABS(N9),N10)</code>（<a href="#p_of_t*">p値</a>）
+* "N11"：<code>=T.DIST.2T(ABS(N9),N10)</code>（<a href="#p_of_t">p値</a>）
 
 {% screenshot 03_30result.png "検定用のデータ" %}
 
 
 #### 結果
 
-<a href="#p_of_t*">p値</a> = 0.02537が求まりました。 よって、p値 = 0.02537 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">p値</a> = 0.02537が求まりました。 よって、p値 = 0.02537 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![t値を用いたp値の図示](./pic/03_practice2_t.png)
 
