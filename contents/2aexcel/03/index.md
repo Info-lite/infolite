@@ -33,10 +33,10 @@ purposes:
 
 この対応のないデータの場合は、まず、2つの母集団の<a href="../01/#variance">分散</a>（母分散）同士が等しいと仮定できるか確認する、<span id="homogeneity_of_variance_test">等分散性（homogeneity of variance）の検定</span>を行います。その後、母<a href="../01/#mean">平均</a>に関する検定や推定を行いますが、等分散性を仮定できるか否かで用いる検定・推定法が異なります。
 
-- <span id="student_s_t-test">等分散を仮定する（Studentのt検定）</span>
+- <span id="student_s_t-test">等分散を仮定する（Studentの$t$検定）</span>
     - 2つの母平均の差に関する検定
     - 2つの母平均の差の推定
--  <span id="welch_s_t-test">等分散を仮定しない（Welchのt検定）</span>
+-  <span id="welch_s_t-test">等分散を仮定しない（Welchの$t$検定）</span>
     - 2つの母平均の差に関する検定
     - 2つの母平均の差の推定（省略）
 
@@ -102,7 +102,7 @@ $\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}}
 $\displaystyle z = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
 を考えることになります。
 
-しかし、$\sigma^2$も$\sigma_\text{A}^2$も$\sigma_\text{B}^2$も未知なので、<a href="../02/#sample">標本</a>から求める<a href="../01/#variance">不偏分散</a>Vで代用することになり、その結果、標準化した値は<a href="../02/#student_s_t-distribution">t分布</a>に従うことになります。さらに、算出できる不偏分散は、Ａ組の標本から求めた不偏分散$V_\text{A}$とＢ組の標本から求めた不偏分散$V_\text{B}$の2つで、必ずしも$V_\text{A} = V_\text{B}$が成立するとは限りません。そこで、$V_\text{A}$と$V_\text{B}$との平均とも言うべき共通分散$V_\text{AB}$を算出することになります。
+しかし、$\sigma^2$も$\sigma_\text{A}^2$も$\sigma_\text{B}^2$も未知なので、<a href="../02/#sample">標本</a>から求める<a href="../01/#variance">不偏分散</a>Vで代用することになり、その結果、標準化した値は<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことになります。さらに、算出できる不偏分散は、Ａ組の標本から求めた不偏分散$V_\text{A}$とＢ組の標本から求めた不偏分散$V_\text{B}$の2つで、必ずしも$V_\text{A} = V_\text{B}$が成立するとは限りません。そこで、$V_\text{A}$と$V_\text{B}$との平均とも言うべき共通分散$V_\text{AB}$を算出することになります。
 
 共通分散$V_\text{AB}$は、Ａ組の標本の<a href="../01/#sum_of_squared_deviations">偏差平方和</a>$S_\text{A}$とＢ組の標本の偏差平方和$S_\text{B}$との和を、不偏分散$V_\text{A}$の自由度$\phi_\text{A}$と不偏分散$V_\text{B}$の自由度$\phi_\text{B}$との和$\phi$で割る、すなわち、以下の数式で求めることができます。
 $\displaystyle V_\text{AB} = \frac{S_\text{A} + S_\text{B}}{\phi}$
@@ -125,20 +125,20 @@ $\displaystyle V_\text{AB} = \frac{S_\text{A} + S_\text{B}}{\phi}$
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
 $\displaystyle t = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\sqrt{V_\text{AB} \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
-ここで、$\overline{x}\_\text{A}$はＡ組の<a href="../02/#sample_mean">標本平均</a>、$\overline{x}\_\text{B}$はＢ組の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$はＡ組の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$はＢ組の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。
+ここで、$\overline{x}\_\text{A}$はＡ組の<a href="../02/#sample_mean">標本平均</a>、$\overline{x}\_\text{B}$はＢ組の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$はＡ組の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$はＢ組の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことがわかっています。
 
 
-### p値の算出
+### $p$値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率p値を求めます。<span id="p_of_t">p値</span>は、自由度$\phi$の<a href="../02/#student_s_t-distribution">t分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
+<a href="../04/#chapter1">有意水準</a>と比較する確率$p$値を求めます。<span id="p_of_t">$p$値</span>は、自由度$\phi$の<a href="../02/#student_s_t-distribution">$t$分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
 
 
 ### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
  	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
- 	<dt>p値 &gt; 有意水準$\alpha$</dt>
+ 	<dt>$p$値 &gt; 有意水準$\alpha$</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
 
@@ -149,7 +149,7 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 &#9312; Ａ組のテスト結果とＢ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。すでにデータを入力してある　<a href="03_1.xlsx">[練習問題1]ある学校のテスト結果(03_1.xlsx)</a>　を利用しても構いません。
 
-&#9313; 等分散性の検定を行った結果、等分散性であることがわかったので、<a href="#student_s_t-test">Studentのt検定</a>を行います。
+&#9313; 等分散性の検定を行った結果、等分散性であることがわかったので、<a href="#student_s_t-test">Studentの$t$検定</a>を行います。
 
 {% screenshot 03_17input1.png "等分散性の検定の結果" %}
 
@@ -166,7 +166,7 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 * "N6"：<code>=(DEVSQ(A3:A13)+DEVSQ(B3:B11))/N9</code>（共通分散）
 * "N7"：<code>=SQRT(N6*(1/N4+1/N5))</code>（<a href="../01/#standard_error">標準誤差</a>）
 * "N8"：<code>=STANDARDIZE(N3,N2,N7)</code>（<a href="../02/#standardization">標準化</a>）
-* "N10"：<code>=T.DIST.2T(ABS(N8),N9)</code>（<a href="#p_of_t">p値</a>）
+* "N10"：<code>=T.DIST.2T(ABS(N8),N9)</code>（<a href="#p_of_t">$p$値</a>）
 
 {% screenshot 03_22result.png "検定用のデータ" %}
 
@@ -175,12 +175,12 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 #### 結果
 
-<a href="#p_of_t">p値</a> = 0.04132が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">$p$値</a> = 0.04132が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値を用いたp値の図示](./pic/03_practice1_t.png )
-![標本平均を用いたp値の図示](./pic/03_practice1_score.png)
+![$t$値を用いた$p$値の図示](./pic/03_practice1_t.png )
+![標本平均を用いた$p$値の図示](./pic/03_practice1_score.png)
 
-設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05であるので、p値 = 0.04132 &lt; 有意水準$\alpha$ = 0.05となり、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、Ａ組とＢ組で点数の母<a href="../01/#mean">平均</a>には差があると判断します。
+設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05であるので、$p$値 = 0.04132 &lt; 有意水準$\alpha$ = 0.05となり、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、Ａ組とＢ組で点数の母<a href="../01/#mean">平均</a>には差があると判断します。
 
 
 等分散を仮定したときの2つの母平均の差の推定（対応のないデータ）
@@ -210,7 +210,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 
 Ａ組の母<a href="../01/#mean">平均</a>とＢ組の母平均との差$\mu_\text{A} - \mu_\text{B}$の95%<a href="../02/#confidence_interval">信頼区間</a>は0.813116 &lt; $\mu_\text{A} - \mu_\text{B}$ &lt; 36.21719と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は0.813116、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は36.21719で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![t値を用いた信頼係数の図示](./pic/03_practice1_t_interval.png)
+![$t$値を用いた信頼係数の図示](./pic/03_practice1_t_interval.png)
 ![点数を用いた信頼係数の図示](./pic/03_practice1_score_interval.png)
 
 
@@ -236,7 +236,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 
 ここで、$\mu_\text{C}$はＣ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{D}$はＤ組全員のテスト結果を母集団とする母平均です。
 
-なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchのt検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
+なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchの$t$検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
 
 * 帰無仮説H<sub>0</sub>：$\mu_\text{C} - \mu_\text{D} = 0$
 * 対立仮説H<sub>1</sub>：$\mu_\text{C} - \mu_\text{D} \ne 0$
@@ -249,7 +249,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
 
 
-### 検定統計量$t$値の算出（Welchのt検定）
+### 検定統計量$t$値の算出（Welchの$t$検定）
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
 
@@ -269,7 +269,7 @@ $\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_C^2}{N_
 
 を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t">上の
 $t$
-の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchのt検定</a>では、この検定統計量$t$が<a href="#chapter22"> 等価自由度$\phi^*$ </a>の<a href="../02/#student_s_t-distribution">t分布</a>に近似的に従うことがわかっています。
+の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchの$t$検定</a>では、この検定統計量$t$が<a href="#chapter22"> 等価自由度$\phi^*$ </a>の<a href="../02/#student_s_t-distribution">$t$分布</a>に近似的に従うことがわかっています。
 
 ### 等価自由度$\phi^*$の算出
 
@@ -286,17 +286,17 @@ $\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{C}}{N_\text{C}
 * $\phi_\text{D} = N_\text{D} - 1$：Ｄ組の不偏分散の自由度
 
 
-### p値の算出
+### $p$値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率p値を求めます。<span id="p_of_t">p値</span>は、自由度$\phi^*$の<a href="../02/#student_s_t-distribution">t分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
+<a href="../04/#chapter1">有意水準</a>と比較する確率$p$値を求めます。<span id="p_of_t">$p$値</span>は、自由度$\phi^*$の<a href="../02/#student_s_t-distribution">$t$分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
 
 
 ### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
  	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
- 	<dt>p値 &gt; 有意水準$\alpha$</dt>
+ 	<dt>$p$値 &gt; 有意水準$\alpha$</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
 
@@ -307,7 +307,7 @@ Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりま�
 
 &#9312; Ｃ組のテスト結果とＤ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。すでにデータを入力してある　<a href="03_2.xlsx">[練習問題2]ある学校のテスト結果(03_2.xlsx)</a>　を利用しても構いません。
 
-&#9313; 等分散性の検定を行った結果、p = 0.011952 ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05となり、等分散性でないことがわかったので、<a href="#welch_s_t-test">Welchのt検定</a>を行います。
+&#9313; 等分散性の検定を行った結果、$p$ = 0.011952 ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05となり、等分散性でないことがわかったので、<a href="#welch_s_t-test">Welchの$t$検定</a>を行います。
 
 {% screenshot 03_28result.png "等分散性の検定の結果" %}
 
@@ -325,18 +325,18 @@ Excelを使って、<a href="#chapter18">練習問題2</a>に取り掛かりま�
 * "N8"：<code>=SQRT(N4/N6+N5/N7)</code>（<a href="../01/#standard_error">標準誤差</a>）
 * "N9"：<code>=STANDARDIZE(N3,N2,N8)</code>（<a href="../02/#standardization">標準化</a>）
 * "N10"：<code>=N8^4/(N4/N6^2*N4/(N6-1)+N5/N7^2*N5/(N7-1))</code>（<a href="#chapter21">等価自由度</a>）
-* "N11"：<code>=T.DIST.2T(ABS(N9),N10)</code>（<a href="#p_of_t">p値</a>）
+* "N11"：<code>=T.DIST.2T(ABS(N9),N10)</code>（<a href="#p_of_t">$p$値</a>）
 
 {% screenshot 03_30result.png "検定用のデータ" %}
 
 
 #### 結果
 
-<a href="#p_of_t">p値</a> = 0.02537が求まりました。 よって、p値 = 0.02537 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">$p$値</a> = 0.02537が求まりました。 よって、$p$値 = 0.02537 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値を用いたp値の図示](./pic/03_practice2_t.png)
+![$t$値を用いた$p$値の図示](./pic/03_practice2_t.png)
 
-![標本平均を用いたp値の図示](./pic/03_practice2_score.png)
+![標本平均を用いた$p$値の図示](./pic/03_practice2_score.png)
 
 
 2つの母平均の差の検定（対応のあるデータ）
@@ -393,19 +393,19 @@ $\overline{d}$は、平均$\mu_\text{B} - \mu_\text{A}$、<a href="../01/#standa
 $\displaystyle \sqrt{\frac{\sigma_d^2}{N_d}}$
 の<a href="../02/#normal_distribution">正規分布</a>に従うことがわかっています。ここで$\sigma_d^2$は、ある通年授業における大学生の前期評定と後期評定との差を<a href="../02/#population">母集団</a>とする母<a href="../01/#variance">分散</a>です。<a href="../02/#null_hypothesis">帰無仮説</a>（$\mu_\text{B} - \mu_\text{A} = 0$）下では、平均0、標準偏差
 $\displaystyle \sqrt{\frac{\sigma_d^2}{N_d}}$
-の正規分布に従うことになりますが、$\sigma_d^2$は未知です。そこで、代わりに不偏分散$V_d$を用いて、かつ、<a href="../02/#standardization">標準化</a>した$t$を考えると、自由度$\phi_d = N_d - 1$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。
+の正規分布に従うことになりますが、$\sigma_d^2$は未知です。そこで、代わりに不偏分散$V_d$を用いて、かつ、<a href="../02/#standardization">標準化</a>した$t$を考えると、自由度$\phi_d = N_d - 1$の<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことがわかっています。
 
-### p値の算出
+### $p$値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率p値を求めます。 <span id="p_of_t_d">p値</span>は、自由度$\phi_d$の<a href="../02/#student_s_t-distribution">t分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
+<a href="../04/#chapter1">有意水準</a>と比較する確率$p$値を求めます。 <span id="p_of_t_d">$p$値</span>は、自由度$\phi_d$の<a href="../02/#student_s_t-distribution">$t$分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和です。
 
 ### 判定
 
 
 <dl>
- 	<dt><a href="#p_of_t_d">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
+ 	<dt><a href="#p_of_t_d">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>$\alpha$</dt>
  	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
- 	<dt>p値 &gt; 有意水準$\alpha$</dt>
+ 	<dt>$p$値 &gt; 有意水準$\alpha$</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
 
@@ -441,20 +441,20 @@ Excelを使って、<a href="#chapter28">練習問題3</a>に取り掛かりま�
 * "G6"：<code>=SQRT(G5/G3)</code>（<a href="../01/#standard_error">標準誤差</a>）
 * "G7"：<code>=STANDARDIZE(G4,G2,G6)</code>（<a href="../02/#standardization">標準化</a>）
 * "G8"：<code>=G3-1</code>（自由度）
-* "G9"：<code>=T.DIST.2T(ABS(G7),G8)</code>（<a href="#p_of_t_d">p値</a>）
+* "G9"：<code>=T.DIST.2T(ABS(G7),G8)</code>（<a href="#p_of_t_d">$p$値</a>）
 
 {% screenshot 03_37result.png "検定用のデータ" %}
 
 
 #### 結果
 
-<a href="#p_of_t_d">p値</a> = 0.007292が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t_d">$p$値</a> = 0.007292が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値を用いたp値の図示](./pic/03_practice3_t.png)
+![$t$値を用いた$p$値の図示](./pic/03_practice3_t.png)
 
-![標本平均を用いたp値の図示](./pic/03_practice3_score.png)
+![標本平均を用いた$p$値の図示](./pic/03_practice3_score.png)
 
-よって、p値 = 0.007292 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。前期の母平均と後期の母平均とには有意差があることがわかり、また、前期の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$ = 62.58333で後期の標本平均$\overline{x}\_\text{B}$ = 68.75であることから、後期試験の成績（Ｂ）は、前期試験の成績（Ａ）よりも向上していると判断できます。
+よって、$p$値 = 0.007292 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。前期の母平均と後期の母平均とには有意差があることがわかり、また、前期の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$ = 62.58333で後期の標本平均$\overline{x}\_\text{B}$ = 68.75であることから、後期試験の成績（Ｂ）は、前期試験の成績（Ａ）よりも向上していると判断できます。
 
 
 2つの母平均の差の推定（対応のあるデータ）
@@ -483,7 +483,7 @@ $\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \m
 
 前期評定の母<a href="../01/#mean">平均</a>と後期評定の母平均との差$\mu_\text{B} - \mu_\text{A}$の95%<a href="../02/#confidence_interval">信頼区間</a>は2.032693 &lt; $\mu_\text{B} - \mu_\text{A}$ &lt; 10.30064と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は2.032693、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は10.30064で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![t値を用いた信頼係数の図示](./pic/03_practice3_t_interval.png)
+![$t$値を用いた信頼係数の図示](./pic/03_practice3_t_interval.png)
 
 ![点数を用いた信頼係数の図示](./pic/03_practice3_score_interval.png)
 
