@@ -65,7 +65,7 @@ PerformanceTable2をより効率的なソースコードにするため、変数
         
         '変数宣言
         Dim x As Integer
-        Dim y As Single
+        Dim y As Double
         
         x = Range(“B3”) + Range(“C3”) + Range(“D3”)
         Range(“E3”) = x
