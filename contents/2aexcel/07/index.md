@@ -218,7 +218,7 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 
 ![$p$値の図示](./pic/07_practice2_f.png)
 
-$p$値 = 0.010477 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、回帰係数$ b$は予測に役立っていることになります。
+$p$値 = 4.55826 × 10-20 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、回帰係数$ b$は予測に役立っていることになります。
 
 
 ### 論文では
