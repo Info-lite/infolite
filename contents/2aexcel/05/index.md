@@ -49,7 +49,7 @@ purposes:
 今回、<a href="../02/#test_statistic">検定統計量</a>$ \chi^2$は以下の数式で求まります。
 
 $
-\displaystyle \chi^2 = \sum_{i=1}^L\sum_{j=1}^L\frac{( f_{ij} - t_{ij})^2}{t_{ij}}
+\displaystyle \chi^2 = \sum_{i=1}^L\sum_{j=1}^M\frac{( f_{ij} - t_{ij})^2}{t_{ij}}
 $
 
 ここで、$ f_{ij}$は以下の表のとおり、Ｌ行Ｍ列分割表における$ i$行$ j$列の<a href="../01/#frequency">度数</a>です。一方、$ t_{ij}$は$ f_{ij}$に対する<a href="../04/#theoretical_frequency">期待値</a>で、
