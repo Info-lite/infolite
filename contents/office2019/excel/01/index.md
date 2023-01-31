@@ -303,7 +303,7 @@ Excelは、セルに入力した際に、それが**数値**なのか**文字列
 人口統計表を作成してみましょう。
 最終的に以下の表となるものを作っていきます。元となるデータは[総務省統計局](http://www.stat.go.jp/)から引用しました。
 
--   [人口推計月報（平成28年2月）](http://www.e-stat.go.jp/SG1/estat/Xlsdl.do?sinfid=000031373513)
+-   [人口推計 2022年（令和4年）4月報](http://www.stat.go.jp/data/jinsui/pdf/202204.pdf)
 
 <div class="thumbnail">
 <img src="pic/populationfinal.png" class="img-responsive" />
