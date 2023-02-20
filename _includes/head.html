@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 <meta name="viewport" content="width=device-width" />
-<!-- staging環境でのテスト -->
-<link rel="icon" href="/staging/lit/favicon.png" />
+<link rel="icon" href="/lit/favicon.png" />
 {% include stylesheet.html %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
