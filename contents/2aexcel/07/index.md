@@ -165,20 +165,20 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 検定統計量$ F$は<a href="#explained">回帰式で説明できる部分</a>の不偏分散と<a href="#unexplained">説明できない部分</a>の不偏分散との比で、<a href="../02/#null_hypothesis">帰無仮説</a>が成立する場合、$ F$は自由度が(1, $ N - 2$)の<a href="../levene_s_test/#f-distribution">F分布</a>に従うことがわかっています。
 
 
-#### p値の算出
+#### $p$値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率<span id="p_of_F">p値</span>を計算します。p値は、自由度が(1, $ N - 2$)の<a href="../levene_s_test/#f-distribution">F分布</a>において$ F$値より大きい値が発生する確率です。<a href="../02/#null_hypothesis">帰無仮説</a>が成立する場合、$ V_{\hat{y}}$が$ V_Q$より小さくなるため、結果として$ F$値は小さくなり、p値は大きくなります。逆に帰無仮説が成立しない場合は、$ F$値は大きいためp値は小さくなります。
+<a href="../04/#chapter1">有意水準</a>と比較する確率<span id="p_of_F">$p$値</span>を計算します。$p$値は、自由度が(1, $ N - 2$)の<a href="../levene_s_test/#f-distribution">F分布</a>において$ F$値より大きい値が発生する確率です。<a href="../02/#null_hypothesis">帰無仮説</a>が成立する場合、$ V_{\hat{y}}$が$ V_Q$より小さくなるため、結果として$ F$値は小さくなり、$p$値は大きくなります。逆に帰無仮説が成立しない場合は、$ F$値は大きいため$p$値は小さくなります。
 
 
 #### 判定
 
 ![F分布](./pic/f_pdf_2.png)
 
-<a href="../levene_s_test/#f-distribution">F分布</a>はこのようなグラフを描きます。このグラフで<a href="#p_of_F">p値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="../02/#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。なお、図のとおり、自由度によって、このF分布のグラフは変わります。
+<a href="../levene_s_test/#f-distribution">F分布</a>はこのようなグラフを描きます。このグラフで<a href="#p_of_F">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="../02/#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。なお、図のとおり、自由度によって、このF分布のグラフは変わります。
 <dl>
- 	<dt>p値 ≦ 有意水準α</dt>
+ 	<dt>$p$値 ≦ 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
- 	<dt>p値 &gt; 有意水準α</dt>
+ 	<dt>$p$値 &gt; 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
 
@@ -203,7 +203,7 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 * "P3"：<code>=SUMXMY2(A2:A31,M2:M31)</code>（<a href="#residual">残差</a>平方和）
 * "P4"：<code>=COUNTA(A2:A31)-2</code>（残差平方和の自由度）
 * "P5"：<code>=P2/(P3/P4)</code>（<a href="../02/#test_statistic">検定統計量</a>$ F$値）
-* "P6"：<code>=F.DIST.RT(P5,1,P4)</code>（<a href="#p_of_F">p値</a>）
+* "P6"：<code>=F.DIST.RT(P5,1,P4)</code>（<a href="#p_of_F">$p$値</a>）
 
 {% screenshot 07_21analysis1.png "検定用のデータ" %}
 
@@ -214,18 +214,18 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 
 ### 結果
 
-<a href="#p_of_F">p値</a> = 4.55826 × 10<sup>-20</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_F">$p$値</a> = 4.55826 × 10<sup>-20</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![p値の図示](./pic/07_practice2_f.png)
+![$p$値の図示](./pic/07_practice2_f.png)
 
-p値 = 0.010477 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、回帰係数$ b$は予測に役立っていることになります。
+$p$値 = 4.55826 × 10<sup>-20 </sup>&lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、回帰係数$ b$は予測に役立っていることになります。
 
 
 ### 論文では
 
 論文では以下のようになります。
 
-> <a href="#regression_equation">回帰式</a>に関してF検定を行ったところ、有意であった（F(1,28) = 561.4005, p &lt; .05）。よって、回帰式は統計的に意味がある。
+> <a href="#regression_equation">回帰式</a>に関してF検定を行ったところ、有意であった（F(1,28) = 561.4005, $p$ &lt; .05）。よって、回帰式は統計的に意味がある。
 
 
 ### 決定係数

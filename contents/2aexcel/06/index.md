@@ -320,21 +320,21 @@ OKボタンをクリックして散布図に戻ります。
 
 <span id="t_equation">$ \displaystyle t = \frac{r}{\sqrt{\frac{1 - r^2}{N - 2}}}$</span>
 
-この$ t$値は自由度がφ = $ N - 2$の<a href="../02/#student_s_t-distribution">t分布</a>に従うことがわかっています。これは、<a href="#sample_correlation_coefficient">標本相関係数</a>$ r$が平均ρ、標準偏差
+この$ t$値は自由度がφ = $ N - 2$の<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことがわかっています。これは、<a href="#sample_correlation_coefficient">標本相関係数</a>$ r$が平均ρ、標準偏差
 $ \displaystyle \sqrt{\frac{1 - r^2}{N - 2}}$
 の分布に従うと解釈すれば、他の検定同様<a href="../02/#standardization">標準化</a>でき、さらに、<a href="../02/#null_hypothesis">帰無仮説</a>の条件下ではρ = 0なので、<a href="#t_equation">上式</a>のようになると考えることもできます。
 
-#### p値の算出
+#### $p$値の算出
 
-<a href="../04/#chapter1">有意水準</a>と比較する確率<span id="p_of_t">p値</span>を計算します。p値は、自由度φの<a href="../02/#student_s_t-distribution">t分布</a>において、$ -t$未満の値が発生する確率と$ t$より大きい値が発生する確率との和です。
+<a href="../04/#chapter1">有意水準</a>と比較する確率<span id="p_of_t">$p$値</span>を計算します。$p$値は、自由度φの<a href="../02/#student_s_t-distribution">$t$分布</a>において、$ -t$未満の値が発生する確率と$ t$より大きい値が発生する確率との和です。
 
 
 #### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">p値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
  	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
- 	<dt>p値 &gt; 有意水準α</dt>
+ 	<dt>$p$値 &gt; 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
 
@@ -357,7 +357,7 @@ Excelを使って、<a href="#chapter12">練習問題3</a>に取り掛かりま�
 * "E5"：<code>=E4-2</code>（自由度）
 * "E6"：<code>=SQRT((1-E2^2)/E5)</code>（標準誤差）
 * "E7"：<code>=STANDARDIZE(E2,E3,E6)</code>（標準化）
-* "E8"：<code>=T.DIST.2T(E7,E5)</code>（<a href="#p_of_t">p値</a>）
+* "E8"：<code>=T.DIST.2T(E7,E5)</code>（<a href="#p_of_t">$p$値</a>）
 
 {% screenshot 06_40analysis.png "検定用のデータ" %}
 
@@ -368,13 +368,13 @@ Excelを使って、<a href="#chapter12">練習問題3</a>に取り掛かりま�
 
 #### 結果
 
-<a href="#p_of_t">p値</a> = 0.010477が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">$p$値</a> = 0.010477が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![t値によるp値の図示](./pic/06_practice3_t.png)
+![$t$値による$p$値の図示](./pic/06_practice3_t.png)
 
-![rによるp値の図示](./pic/06_practice3_r.png)
+![rによる$p$値の図示](./pic/06_practice3_r.png)
 
-p値 = 0.010477 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。すなわち、国語の点数と英語の点数の間には、<a href="#chapter2">相関関係</a>が存在するということがわかりました。また、<a href="#chapter7">相関係数</a>は 0.460322と中程度の<a href="#positive_correlation">正の相関</a>が認められたので、国語の点数が高ければ英語の点数も高いと判断されました。
+$p$値 = 0.010477 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。すなわち、国語の点数と英語の点数の間には、<a href="#chapter2">相関関係</a>が存在するということがわかりました。また、<a href="#chapter7">相関係数</a>は 0.460322と中程度の<a href="#positive_correlation">正の相関</a>が認められたので、国語の点数が高ければ英語の点数も高いと判断されました。
 
 
 
@@ -388,7 +388,7 @@ p値 = 0.010477 &lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なの�
 
 > ![散布図](./pic/06_42graph.png)
 
-> <a href="#chapter7">相関係数</a> = 0.460322 であり、t検定を行ったところ有意であった（p &lt; .05）。よって、国語の点数が高ければ英語の点数も高いといえる。
+> <a href="#chapter7">相関係数</a> = 0.460322 であり、$t$検定を行ったところ有意であった（$p$ &lt; .05）。よって、国語の点数が高ければ英語の点数も高いといえる。
 
 
 課題

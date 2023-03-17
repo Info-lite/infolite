@@ -6,8 +6,8 @@ permalink: /1_2022/
 
 ## 授業用コンテンツ
 
--   [情報処理教室の使い方と授業ガイダンス](../contents/basics/01/index.html)
--   [コンピュータの基本操作と構造](../contents/basics/02/index_2022.html)
+-   [情報処理教室の使い方](../contents/basics/01/index.html)
+-   [コンピュータの仕組みと基本操作](../contents/basics/02/index_2022.html)
 -   [表計算ソフトによるデータ処理（１）](../contents/office2019/excel/01/index.html)
 -   [表計算ソフトによるデータ処理（２）](../contents/office2019/excel/02/index.html)
 -   [表計算ソフトによるデータ処理（３）](../contents/office2019/excel/03/index.html)
