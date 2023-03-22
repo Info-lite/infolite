@@ -22,9 +22,13 @@ eラーニング
 * [kibaco](https://kibaco.tmu.ac.jp/portal?f=infolit)
 * [レディネス調査回答マニュアル (学生用)](./readiness/student.html)
 
-情報倫理講習会
+情報倫理講習
 --------------
 
-* 情報倫理講習会資料 [日本語](./infoethics/information_ethics_ja.pdf) [English](./infoethics/information_ethics_en.pdf)
-* [情報倫理講習会ビデオ](./infoethics/)
+* 情報倫理講習スライド資料
+    * [日本語版](./infoethics/information_ethics_ja.pdf)
+    * [英語版(English)](./infoethics/information_ethics_en.pdf)
+* 情報倫理講習会ビデオ
+    * [日本語版](https://youtu.be/Es5zyhpHgB8)
+    * [英語版(English)](https://youtu.be/hsgkQ6Le39I)
 
