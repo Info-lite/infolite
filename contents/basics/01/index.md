@@ -18,8 +18,8 @@ purposes:
 -   原則、情報倫理講習の未受講者は、本学の教育研究用情報システムを利用できません。
 -   初回の授業までに、自宅もしくは情報処理教室（開放中の場合に限る）において、受講を完了してください。
 -   初回の授業では、担当教員が情報倫理講習について、（補足の）説明をする場合があります。
--   [情報倫理講習資料(日本語版)](/lit/infoethics/information_ethics_ja.pdf)
--   [情報倫理講習資料(英語版)](/lit/infoethics/information_ethics_en.pdf)
+-   [情報倫理講習スライド資料(日本語版)](/lit/infoethics/information_ethics_ja.pdf)
+-   [情報倫理講習スライド資料(英語版(English))](/lit/infoethics/information_ethics_en.pdf)
 
 授業ガイダンス
 --------------
