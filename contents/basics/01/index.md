@@ -79,7 +79,7 @@ purposes:
 -   [情報処理教室のシステム概要図](http://www.comp.tmu.ac.jp/manual/info/network.pdf)
 
 320室は Mac 環境となっています。設置されているパソコンが Mac mini なので、macOS が起動します。
-しかし、bootcamp により Windows 環境を利用することができます。
+320室でMac環境とWindows環境を切り替える方法については以下のページを確認してください。
 
 -   [Windows起動・サインイン・サインアウトについて](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/mac-riyou7.html)
 
@@ -105,7 +105,10 @@ purposes:
 
 教室のパソコンを使用する際は、サインインをしなければなりません。
 ここでは、Windows10 環境を使用する際の基本操作、サインイン・サインアウトの方法について説明します。
-Mac 環境の場合は、再起動を行い、 Windows を起動してから利用してください。
+Mac 環境の場合は、以下のページの手順でWindows環境に切り替えてください。
+
+-   [Windows起動・サインイン・サインアウトについて](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/mac-riyou7.html)
+
 
 ### サインインとサインアウト
 
