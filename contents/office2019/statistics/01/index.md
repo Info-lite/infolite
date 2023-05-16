@@ -142,23 +142,21 @@ $N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目
 
 #### <span id="variance">分散（variance）</span>
 
-Excelでは不偏分散（unbiaded variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations）$S$）を$N - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
+Excelでは不偏分散（unbiased variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations））を$n - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
 
-$\displaystyle V = \frac{S}{N - 1}$
+$\displaystyle V = \frac{ \sum_{i = 1}^N {\left( x_i - \bar{x} \right)}^2 }{n - 1}$
 
-$\displaystyle S = {\left( x_1 - \bar{x} \right)}^2 + {\left( x_2 - \bar{x} \right)}^2 + \dots + {\left( x_N - \bar{x} \right)}^2 = \sum_{i = 1}^N {\left( x_i - \bar{x} \right)}^2$
-
-$V$は分散、$N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目の測定値、$\bar{x}$は<a href="#mean">平均</a>です。例えば1，3，4，6，7であれば分散は{(1 - 4.2)<sup>2</sup> + (3 - 4.2)<sup>2</sup> + (4 - 4.2)<sup>2</sup> + (6 - 4.2)<sup>2</sup> + (7 - 4.2)<sup>2</sup>} ÷ (5 - 1) = 5.7となります。<a href="../02/#population">母集団</a>（対象全体に対して測定したデータ、例えば日本人全員の身長など）の平均（母平均）が未知であることを前提としていて、（<a href="../02/#sample">標本</a>）平均$\bar{x}$を用いて母分散を求めるため、自由度$N - 1$で割ります。
+$V$は母分散の不偏推定値である不偏分散、$n$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目の測定値、$\bar{x}$は<a href="#mean">平均</a>です。例えば1，3，4，6，7であれば分散は{(1 - 4.2)<sup>2</sup> + (3 - 4.2)<sup>2</sup> + (4 - 4.2)<sup>2</sup> + (6 - 4.2)<sup>2</sup> + (7 - 4.2)<sup>2</sup>} ÷ (5 - 1) = 5.7となります。<a href="../02/#population">母集団</a>（対象全体に対して測定したデータ、例えば日本人全員の身長など）の平均（母平均）が未知であることを前提としていて、（<a href="../02/#sample">標本</a>）平均$\bar{x}$を用いて母分散を求めるため、自由度$n - 1$で割ります。
 
 <a href="https://support.office.com/ja-jp/article/VAR-S-関数-913633de-136b-449d-813e-65a00b2b990b"><code>VAR.S</code>関数</a>を用いることで、求められます。
 
 #### <span id="standard_deviation">標準偏差（standard deviation）</span>
 
-Excelでは<a href="#variance">分散</a>（不偏分散）$V$の平方根をとった値で、分散同様散らばり具合の尺度になります。単位と次数とが<a href="#deviation">偏差</a>と同じです。
+Excelでは不偏分散$V$の平方根をとった値で、分散と同じく散らばり具合の尺度になります。単位と次数とが<a href="#deviation">偏差</a>と同じです。
 
-$s = \sqrt{V} = \sqrt{\frac{1}{n-1}\sum ^{N}_{i=1}{(x_i-\bar{x})^2}}$
+$\hat{\sigma} = \sqrt{V} = \sqrt{\frac{1}{n-1}\sum ^{N}_{i=1}{(x_i-\bar{x})^2}}$
 
-$s$は標準偏差です。例えば1，3，4，6，7であれば標準偏差は分散の平方根をとって、2.387467...になります。
+$\hat{\sigma}$ は母標準偏差の不偏推定値である標準偏差（不偏）です。例えば1，3，4，6，7であれば標準偏差（不偏）は分散の平方根をとって、2.387467...になります。
 
 <a href="https://support.office.com/ja-jp/article/STDEV-S-関数-7d69cf97-0c1f-4acf-be27-f3e83904cc23"><code>STDEV.S</code>関数</a>を用いることで、求められます。
 
