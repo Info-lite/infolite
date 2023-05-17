@@ -234,7 +234,7 @@ flowplayer_conf:
   t = \frac{\bar{x}-\mu_0}{\frac{\hat{\sigma}}{\sqrt{n}}}
 \end{align}
 
-$\bar{x}$は標本平均、$\mu_0$ は母平均、$\hat{\sigma}$ は標本の標準偏差、$n$ は標本の大きさ（サンプルサイズ）です。
+$\bar{x}$は標本平均、$\mu_0$ は母平均、$\hat{\sigma}$ は標準偏差（不偏）、$n$ は標本の大きさ（サンプルサイズ）です。
 
 {% screenshot 03_28t3.png "t分布自由度 3" %}
 
