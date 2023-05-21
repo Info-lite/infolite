@@ -278,10 +278,10 @@ $t$分布はこのようなグラフを描きます。
 母平均 $\mu$ の $(1 - \alpha) \times$100%信頼区間：
 
 \begin{align}
-  \bar{x}-t_{n-1}(\alpha)\frac{s}{\sqrt{n}}<\mu<\bar{x}+t_{n-1}(\alpha)\frac{s}{\sqrt{n}}
+  \bar{x}-t_{n-1}(\alpha)\frac{\hat{\sigma}}{\sqrt{n}}<\mu<\bar{x}+t_{n-1}(\alpha)\frac{\hat{\sigma}}{\sqrt{n}}
 \end{align}
 
-$\bar{x}$は標本平均、$s$ は標本の標準偏差、$n$ は標本の大きさ（サンプルサイズ）、
+$\bar{x}$は標本平均、$\hat{\sigma}$ は標準偏差(不偏)、$n$ は標本の大きさ（サンプルサイズ）、
 $t_{n-1}(\alpha)$ は、自由度 $n-1$ の$t$分布における100$\times \alpha$%点を示します。
 （なお、$t_{n-1}(\alpha)$ は両側確率$\alpha$の$t$の臨界値を示すものとする。）
 
