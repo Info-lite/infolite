@@ -344,7 +344,7 @@ $ b$=20、$ d$=0の場合
 
 {% screenshot fisher_02analysis.png "a、b、c、dとその確率Piについてまとめた表の入力1" %}
 
-&#9314; $ a$は$25 - b$、$d$は$20 - b$なので、<a href="http://infolit.uec.tmu.ac.jp/lit/contents/office2013/excel/01/#chapter17">数式</a>として入力します。なお、25は<code>D$10</code>として、20は<code>C$12</code>として、それぞれ参照することが可能です。同様に、$ c$は30 - $ a$あるいは25 - $ d$で求められます。ここで25は<code>D$11</code>になります。
+&#9314; $ a$は$25 - b$、$d$は$20 - b$なので、<a href="/lit/contents/office2013/excel/01/#chapter17">数式</a>として入力します。なお、25は<code>D$10</code>として、20は<code>C$12</code>として、それぞれ参照することが可能です。同様に、$ c$は30 - $ a$あるいは25 - $ d$で求められます。ここで25は<code>D$11</code>になります。
 
 {% screenshot fisher_03analysis.png "a、b、c、dとその確率Piについてまとめた表の入力2" %}
 
