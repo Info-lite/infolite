@@ -117,7 +117,7 @@ OSの処理速度(bit数)はCPUの処理速度(bit数)よりも小さくなけ�
 
 これらハードウェアの機能をまとめているものが、"オペレーティングシステム（OS）"と呼ばれるソフトウェアです。今回は代表的なオペレーティングシステムである"Windows"を例として、オペレーティングシステムの画面表示と操作方法について説明します。Macの場合は、画面の構成や名称が異なりますので、操作方法については次のリンクを参照してください。
 
--   [Mac利用ガイド](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/) (TMUNER内)
+-   [Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html) (TMUNER内)
 
 Windows環境における説明を進めます。まず、コンピュータにサインインして使用できる状態にしましょう。サインインの方法については前回説明を行ったので、忘れてしまった人は前回の資料を参照してください。
 
@@ -632,9 +632,9 @@ Office365では、新規作成メールはHTMLメールとして作成される�
 
 ### 学内サイト
 
--   [TMUNER](https://www.comp.tmu.ac.jp/tmuner/)
-    -   [Windows利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/windows/)
-    -   [Mac利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/mac/)
+-   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
+    -   [Windows利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/windows.html)
+    -   [Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html)
 
 ### 学外サイト
 

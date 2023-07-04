@@ -76,24 +76,22 @@ purposes:
 また、授業などで情報処理教室が利用できない場合に、自習をするための教室として情報処理施設１階に情報処理自習室（115室）があります。
 さらに、パソコンを持ち込むことができる１号館３階の306室や、団体での会議・勉強会等の利用を目的とした305室があります（ノートパソコンの貸し出しも行っています）。
 
--   [情報処理教室のシステム概要図](http://www.comp.tmu.ac.jp/manual/info/network.pdf)
-
 320室は Mac 環境となっています。設置されているパソコンが Mac mini なので、macOS が起動します。
 320室でMac環境とWindows環境を切り替える方法については以下のページを確認してください。
 
--   [Windows起動・サインイン・サインアウトについて](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/mac-riyou7.html)
+-   [Windows起動・サインイン・サインアウトについて](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac/mac-riyou7.html)
 
 330室・340室・350室、および115室・貸出ノートパソコンは Windows 環境となっています。
 
 これらのパソコンごとの違いやインストールされているアプリケーションなど、教室ごとの環境の違いなどについては、以下のウェブサイトを参考にしてください。
 
--   [TMUNER](https://www.comp.tmu.ac.jp/tmuner/)
-    -   [情報処理教室](https://www.comp.tmu.ac.jp/tmuner/)
-    -   [ハードウェア構成](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei.html)
-    -   [ソフトウェア構成(Win)](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei-win.html)
-    -   [ソフトウェア構成(Mac)](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei-mac.html)
-    -   [Windows利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/windows/)
-    -   [Mac利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/mac/)
+-   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
+    -   [情報処理教室](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc.html)
+    -   [ハードウェア構成](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei.html)
+    -   [ソフトウェア構成(Win)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-win.html)
+    -   [ソフトウェア構成(Mac)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-mac.html)
+    -   [Windows利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/windows.html)
+    -   [Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html)
 
 なお、情報処理教室では、使用している端末だけでなく、オペレーティングシステム（OS）の種類に関係なく同じ作業をすることができます。
 たとえば、Windows 環境で作成してマイドキュメントに保存したデータを Mac 環境から開く、あるいはその逆の操作ができます。
@@ -107,7 +105,7 @@ purposes:
 ここでは、Windows10 環境を使用する際の基本操作、サインイン・サインアウトの方法について説明します。
 Mac 環境の場合は、以下のページの手順でWindows環境に切り替えてください。
 
--   [Windows起動・サインイン・サインアウトについて](http://www.comp.tmu.ac.jp/tmuner/study/pc/mac/mac-riyou7.html)
+-   [Windows起動・サインイン・サインアウトについて](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac/mac-riyou7.html)
 
 
 ### サインインとサインアウト
@@ -205,7 +203,7 @@ Mac 環境の場合は、以下のページの手順でWindows環境に切り替
 情報処理教室に関するウェブページは、学外（たとえば自宅など）からアクセスすることができます。
 また、本学のネットワークやシステムに関するさまざまな情報は、TMUNERに掲載されています。こまめにチェックするようにしてください。
 
--   [TMUNER](https://www.comp.tmu.ac.jp/tmuner/)
+-   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
 
 タイピング練習
 --------------
@@ -293,13 +291,13 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 
 ### 学内サイト
 
--   [TMUNER](https://www.comp.tmu.ac.jp/tmuner/)
-    -   [情報処理教室](https://www.comp.tmu.ac.jp/tmuner/study/pc/)
-    -   [ハードウェア構成](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei.html)
-    -   [ソフトウェア構成(Win)](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei-win.html)
-    -   [ソフトウェア構成(Mac)](https://www.comp.tmu.ac.jp/tmuner/study/pc/kousei-mac.html)
-    -   [Windows利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/windows/)
-    -   [Mac利用ガイド](https://www.comp.tmu.ac.jp/tmuner/study/pc/mac/)
+-   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
+    -   [情報処理教室](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc.html)
+    -   [ハードウェア構成](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei.html)
+    -   [ソフトウェア構成(Win)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-win.html)
+    -   [ソフトウェア構成(Mac)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-mac.html)
+    -   [Windows利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/windows.html)
+    -   [Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html)
 
 ### 学外サイト
 

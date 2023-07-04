@@ -321,8 +321,9 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
     無料ビデオ公開サイトが普及し、誰でも比較的容易に情報発信できるようになりました。自分で制作した番組であっても登場する人物のプライバシーや肖像権、背景にある絵や流れている楽曲等の著作権に注意する必要があります。
     また、被写体になっている人物に公開する許可を得る等の配慮も必要です。もちろん、他人が制作した著作物を無断で動画配信すると著作権の侵害になります。
 
-*   [動画サイト等で情報を発信することへの注意](http://www.comp.tmu.ac.jp/tmuner/rinri/caution.html)
-
+<!--
+*   [動画サイト等で情報を発信することへの注意](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/rinri/caution.html)
+-->
 
 注意事項
 --------
@@ -339,7 +340,9 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
 -   インターネットショッピングでの売買トラブルを回避する
 -   著作権侵害に留意する
 
--   [ネットワークから情報を発信する上での留意事項](http://www.comp.tmu.ac.jp/tmuner/rinri/notice.html)
+<!--
+-   [ネットワークから情報を発信する上での留意事項](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/rinri/notice.html)
+-->
 
 ### 著作権について
 
@@ -351,7 +354,9 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
     -   既に公表された著作物を引用する際には、公正な慣行に合致し、引用の目的上正当な範囲内である必要がある
     -   引用部分を明確にし、出所の明示をする必要がある
 
--   [レポート試験の提出における不正行為の禁止について](http://www.comp.tmu.ac.jp/tmuner/rinri/report.html)
+<!--
+-   [レポート試験の提出における不正行為の禁止について](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/rinri/report.html)
+-->
 
 {% appendix ../appendix/copyrights.html "著作権とライセンス" %}
 
@@ -390,7 +395,7 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
 
 ### 学内サイト
 
--   [TMUNER](http://www.comp.tmu.ac.jp/tmuner/)
+-   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
 
 ### 学外サイト
 
