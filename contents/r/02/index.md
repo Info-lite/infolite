@@ -5,8 +5,6 @@ date: 2020-09-16 16:00:00 +0900
 purposes:
     - Rを用いてグラフを作成する
 ---
-<link href="Rcode.css" rel="stylesheet">
-
 
 Rではコマンドを利用することで、簡単にグラフを作成することができます。
 
