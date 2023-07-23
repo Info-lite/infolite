@@ -1,272 +1,303 @@
 ---
 layout: page
-title: Rによるデータの可視化
+title: 1つの母平均に関する検定と推定
 date: 2020-09-16 16:00:00 +0900
 purposes:
-    - Rを用いてグラフを作成する
+    - 母平均に関する検定および推定を学ぶ
+    - Rを用いて母平均の検定と推定を行う
 ---
 
-Rではコマンドを利用することで、簡単にグラフを作成することができます。
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。（ダウンロード後、ファイルが保護ビューで開かれた場合は、[編集を有効にする]をクリックしてください。）
+<ul>
+<li><a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a></li>
+<li><a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a></li>
+</ul>
+</div>
+</div>
 
-棒グラフ / barplot()
+母平均に関する検定と推定
 ------------------------
 
-東京都公立大学法人の平成28年から令和2年までの5年間の総利益を棒グラフによって可視化してみましょう。  
-（データ：[https://www.houjin-tmu.ac.jp/about/finance/](https://www.houjin-tmu.ac.jp/about/finance/)）
+日頃私たちが得られるデータは、<a href="../01/#universe">対象</a>の特性を**もれなく**<a href="../01/#measurement">測定</a>したデータである<span id="population">母集団</span>（population）そのものではなくて、母集団の中からいくつか抜き出してきたデータである<span id="sample">標本</span>（sample）であることが一般的です。私たちが実際にできることは、その標本をもとに母集団を推測することです。
 
-<table>
-	<tr><td>事業年度</td><td>平成28年</td><td>平成29年</td><td>平成30年</td><td>令和元年</td><td>令和2年</td></tr>
-	<tr><td>総利益（百万円）</td><td>1,148</td><td>604</td><td>553</td><td>277</td><td>2,172</td></tr>
-</table>
-
-棒グラフは`barplot()`で描画できます。
-以下のコードを実行して棒グラフを描画してみましょう。  
-＃から始まる行はコメントですので、入力不要です。
-
-<pre class="Rcode">
-# データの読み込み
-rieki <- c(1148, 604, 553, 277, 2172)
-
-# 棒グラフの作成
-barplot(rieki)
-
-# x軸のラベル
-label <- c("H28", "H29", "H30", "R1", "R2")
-barplot(rieki, name=label)
-</pre>
-
-正しく実行できると以下のようなグラフが出力されます。  
-
-{% screenshot 02_barplot01.jpg "総利益の棒グラフ" %}
-
-以下のようなオプションを指定することで、グラフの見た目を変えることができます。
-
-<table>
-	<tr><td>軸を原点で交差させる</td><td>par(xaxs="i",yaxs="i", xpd=T)</td></tr>
-	<tr><td>グラフの塗りつぶし</td><td>col = "色名"</td></tr>
-	<tr><td>x軸の範囲</td><td>xlim = c(最小値, 最大値)</td></tr>
-	<tr><td>y軸の範囲</td><td>ylim = c(最小値, 最大値)</td></tr>
-	<tr><td>x軸のラベル</td><td>xlab = “x軸の名前”</td></tr>
-	<tr><td>y軸のラベル</td><td>ylab = “y軸の名前”</td></tr>
-</table>
-
-例えば、以下のようなコードでグラフの見た目を整えることができます。
-<pre class="Rcode">
-par(xaxs="r",yaxs="i", xpd=T)
-barplot(rieki, name=label, col="lightblue" ,ylim=c(0,2500), ylab = "総利益（百万円）" ,xlab = "年度")
-</pre>
+![母集団と標本](./pic/02_01data.png)
 
 
-{% screenshot 02_barplot02.jpg "見た目を変更した棒グラフ" %}
+本講では、標本に基づいて算出した<a href="../01/#mean">平均</a>（<span id="sample_mean">標本平均</span>、sample mean）から母集団の平均（母平均）を検定したり、推定したりする方法を学んでいきましょう。
 
 
-CSVファイルからデータを読み込む
+1つの母平均に関する検定（母標準偏差が既知のとき）
 -------------------------------------------------
 
-少ないデータ量であれば1つずつ手で入力することもできますが、データ量が膨大な場合はCSVからデータを読み込むこともできます。  
-2020年10月1日〜2022年9月30日までの2年間の「新型コロナウイルス感染症 新規陽性者数」のデータを取得して、Rで読み込んでみましょう。  
-[newly_confirmed_cases_daily.csv](covid.csv)　【厚生労働省オープンデータを加工】  
-（データ出典：[厚生労働省オープンデータ https://www.mhlw.go.jp/stf/covid-19/open-data.html](https://www.mhlw.go.jp/stf/covid-19/open-data.html)）  
 
-このファイルには日付と都道府県ごとの新規陽性者数が格納されています。
+### 練習問題1
 
-<table>
-	<tr style="background-color: #eeeeee;"><td>Date</td><td>ALL</td><td>Hokkaido</td><td>Aomori</td><td>Iwate</td><td>･･･</td></tr>
-	<tr><td>2020/10/01</td><td>619</td><td>19</td><td>0</td><td>0</td><td>･･･</td></tr>
-	<tr><td>2020/10/02</td><td>537</td><td>15</td><td>1</td><td>0</td><td>･･･</td></tr>
-	<tr><td>2020/10/03</td><td>562</td><td>18</td><td>0</td><td>0</td><td>･･･</td></tr>
-	<tr><td>2020/10/04</td><td>394</td><td>22</td><td>0</td><td>1</td><td>･･･</td></tr>
-</table>
+複数店舗を展開しているあるファストフード店では、注文を受けてから商品を出すまでに<a href="../01/#mean">平均</a>60秒かかっているとします。 そこで、**いくつかの店舗**で**何人か**の新入店員たちに対して同様の時間を計測したところ、以下のデータを得ました。今年の新入店員**全体**では注文を受けてから商品を出すまでに平均60秒かかると判断して良いでしょうか。なお、商品を出すまでの<a href="../01/#standard_deviation">標準偏差</a>の値は10秒で、店舗や店員が代わってもこの値は変わらないものとします。
 
-### 作業ディレクトリへCSVファイルを配置して読み込み
-CSVファイルをRで読み込むために、ダウンロードしたCSVファイルをRの作業ディレクトリにコピーしましょう。
+<span id="table1">表1：新入店員が注文を受けてから商品を出すまでの時間（秒）</span>
 
-CSVファイルを読み込む時には以下のコマンドを用います。
+![表1](./pic/02_02exQ.png)
 
-##### コード
-<pre class="Rcode">
-cov <- read.csv("newly_confirmed_cases_daily.csv", header = TRUE, fileEncoding = "utf8")
-</pre>
 
-<table>
-	<tr><td> <code>header = TRUE</code> </td><td>1行目を見出しにする</td></tr>
-	<tr><td> <code>fileEncoding = "utf8"</code> </td><td>文字コードがUTF-8</td></tr>
-</table>
+### 仮説検定の流れ
 
-`cov` という変数にCSVファイルがデータフレームとして読み込まれました。  
-データが正しく読み込まれているか、以下のコードで確認してみましょう。   
-##### コード
-<pre class="Rcode">
-head(cov)
-</pre>
-##### 結果
-<pre class="Rres">
-       Date ALL Hokkaido Aomori Iwate Miyagi Akita ...
-1 2020/10/1 619       19      0     0      7     0 ...
-2 2020/10/2 537       15      1     0      5     0 ...
-3 2020/10/3 562       18      0     0      7     0 ...
-4 2020/10/4 394       22      0     1      3     5 ...
-5 2020/10/5 269       36      0     0      5     0 ...
-6 2020/10/6 495       12      0     0      8     0 ...
-</pre>
+<a href="#chapter3">練習問題1</a>を例にあげると、<q>今年の新入店員全体は注文を受けてから商品を出すまでに<a href="../01/#mean">平均</a>60秒かかる</q>、すなわち、通常の商品提供平均時間と今年の新入店員たちの商品提供平均時間とが等しい、と判断して良いかを考えるための<span id="hypothesis_testing">仮説検定</span>（hypothesis testing）は、
 
-### データフレームの操作
-`$` を用いてるとデータフレームから列を抽出することができます。  
-読み込んだデータフレームから全国の陽性者数（ALL）の列を取り出してみましょう。  
+&#9312; “通常”の商品提供平均時間と“新入店員”全員の商品提供平均時間とが「等しい」という帰無仮説H<sub>0</sub>と、両者が「等しくない」という対立仮説H<sub>1</sub>とを考えます。
 
-##### コード
-<pre class="Rcode">
-y_all = cov$ALL  #covのALL列を変数y_allに格納
-print(y_all)
-</pre>
-##### 結果
-<pre class="Rres">
- [1]    619    537    562    394    269    495    502    623    594    666
- [11]    431    272    491    550    703    633    611    422    313    475
- [21]    611    609    742    712    486    401    646    724    803    767
- [31]    866    603    480    860    606   1046   1137   1301    934    770
- [41]   1276   1540   1624   1703   1721   1428    949   1685   2173   2382
-</pre>
+&#9313; 平均と<a href="../01/#standard_deviation">標準偏差</a>などから検定統計量$z$を求めます。
 
-### 棒グラフでの可視化
-全国での新規陽性者数の推移を棒グラフで可視化してみましょう。
-##### コード
-<pre class="Rcode">
-barplot(y_all) #y_allはcov$ALLでも可
-</pre>
+&#9314; 求めた検定統計量が起こり得る確率（$p$値）を求めます。
 
-{% screenshot 02_barplot03.jpg "全国での新規陽性者数の推移" %}
+&#9315; 有意水準$\alpha$（アルファ）と$p$値とを比較して、どちらの仮説を採択するか決定します。
+
+の流れになります。
+
+<span id="null_hypothesis">帰無仮説</span>（null hypothesis）は極端に言えば、棄てる前提の、つまり、否定したい仮説のことです。先ほどの流れの説明では練習問題1の帰無仮説として、通常の商品提供平均時間と新入店員全員の商品提供平均時間とが「等しい」と設定されています。この仮説を退けるためには、練習問題1の場合、「等しい」状況において商品提供時間の平均が<a href="#table1">表1</a>に示されたような<span id="60.5">(64 + 61 + 67 + 57 + 62 + 53 + 69 + 49 + 73 + 59 + 67 + 50 + 58 + 62 + 56 + 61) ÷ 16 = 60.5</span>になることは稀である、すなわち、めったに起こらないことを示す必要があります。つまり、その状況が起こり得る確率$p$値が「ある小さな値（有意水準$\alpha$）」以下であることを示す必要があります。これが示されれば帰無仮説は棄却され、主張したい内容である<span id="alternative_hypothesis">対立仮説</span>（alternative hypothesis）が採択されます。ここで、対立仮説は先ほどの流れの説明では「等しくない」と設定されています。一方、$p$値が$\alpha$より大きい場合、練習問題1の「等しい」状況で商品提供時間の平均が60.5になることはよくあることになり、帰無仮説を受容することになります。
+
+### 仮説の設定
+
+ここでは<a href="#chapter3">練習問題1</a>に対して、
+
+* <a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>：$\mu = \mu_0$
+* <a href="#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：$\mu \ne \mu_0$
+
+と設定します。ここで、$\mu$（ミュー）は今年の新入店員全員の商品提供時間の<a href="../01/#mean">平均</a>を表し、$\mu_0$は全店舗・全店員の商品提供時間の平均を表します。すなわち、$\mu$は今年の新入店員全員分の商品提供時間を<a href="#population">母集団</a>とする母平均で未知、その母集団の一部が<a href="#sample">標本</a>で<a href="#table1">表1</a>に示す新入店員何人かの商品提供時間となります。一方、<span id="mu_0">$\mu_0$</span>は全店舗・全店員の商品提供時間を母集団とする母平均となり、その値は<a href="#chapter3">60と既知</a>です。
+
+この帰無仮説は言い換えると、<span id="rewritten_H_0">表1に示す$N$ = 16の商品提供時間は、母平均$\mu_0$が60である母集団、すなわち全店舗・全店員の商品提供時間という母集団からランダムに抽出された標本である</span>と仮定していることになります。
+
+
+### 有意水準$\alpha$の設定
+
+<a href="#null_hypothesis">帰無仮説</a>を棄てるためには、その状況がめったに起こらないことを示す必要がありますが、「めったに」の程度は有意水準（significance level）$\alpha$で表され、その値は経験的に0.05（5%）か0.01（1%）を用います。後者のほうが、より厳しい条件となります。今回の検定では、有意水準$\alpha$ = 0.05とします。詳しくは<a href="../04/#chapter1">有意水準</a>を参照してください。
 
 
 
-ヒストグラム / hist()
+### 検定統計量$z$値の算出（正規分布として考える）
+
+$z$は以下の数式で求まります。
+
+<span id="standardization_equation">$ \displaystyle z = \frac{ \overline{x} - \mu_0}{\frac{\sigma}{\sqrt{N}}}$</span>
+
+ここで、$ \overline{x}$は<a href="#sample_mean">標本平均</a>でその値は<a href="#table1">表1</a>に示されている<a href="#sample">標本</a>から算出可能、$\mu_0$は<a href="#mu_0"><q cite="#mu_0">全店舗・全店員の商品提供時間を母集団とする母平均</q></a>でその値は<a href="#chapter3">60と既知</a>、$\sigma$（シグマ）は全店舗・全店員の商品提供時間を<a href="#population">母集団</a>とする母<a href="../01/#standard_deviation">標準偏差</a>でその値は<a href="#chapter3">10と既知</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>でその値は<a href="#table1">16と既知</a>です。
+
+なお、ここでは、各店舗・各店員の商品提供時間の分布が平均60、標準偏差10の分布である、言い換えると、各店舗・各店員の商品提供時間が平均60、標準偏差10の分布に従うと考えています。<a href="#null_hypothesis">帰無仮説</a>、つまり、<a href="#rewritten_H_0"><q cite="#rewritten_H_0">表1に示す$N$ = 16の商品提供時間は、母平均$\mu_0$が60である母集団、すなわち全店舗・全店員の商品提供時間という母集団からランダムに抽出された標本である</q></a>が成立する場合、標本平均$\overline{x}$は平均$\mu_0$、標準偏差$\sigma / \sqrt{N}$（<a href="../01/#standard_error">標準誤差</a>）の<span id="normal_distribution">正規分布</span>に従うことがわかっています。これに基づいて、標本平均<a href="#60.5">60.5</a>が帰無仮説下で生じ得る確率$p$値を考えることができるようになっています。
+
+ただし、正規分布に従うといっても、正規分布の平均や標準偏差は様々です。そこで、<a href="#standardization_equation">上式</a>のように、平均$\mu_0$、標準偏差$\sigma / \sqrt{N}$の正規分布に従う値$\overline{x}$を、平均0、標準偏差1の<span id="standard_normal_distribution">標準正規分布</span>（standard normal distribution）に従う値に変換する、<span id="standardization">標準化</span>（standardization）と呼ばれる処理が必要となります。標準化によって、平均や標準偏差がそれぞれ異なる正規分布に従うデータも、標準正規分布に従う共通の<span id="test_statistic">検定統計量</span>（test statistic）$z$値へ変換することができ、その結果、問題が変わっても対象が変わっても、帰無仮説が成立する状況下で標本平均がある値（<a href="#chapter3">練習問題1</a>では60.5）になる確率を、検定統計量$z$値が生じ得る確率$p$値として、同じように求めることができるようになっています。
+
+
+
+### $p$値の算出
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$と比較する確率$p$値を算出します。<span id="p_of_z">$p$値</span>は、<a href="#standard_normal_distribution">標準正規分布</a>において$-z$以下の値が発生する確率と$z$以上の値が発生する確率の和です。<a href="#sample">標本</a>の取り方によって<a href="#sample_mean">標本平均</a>$\overline{x}$の値は大きくなったり小さくなったり変動しますが、<a href="#null_hypothesis">帰無仮説</a>の下では$\overline{x}$と$\mu_0$との差は小さいので、<a href="#test_statistic">検定統計量</a>$z$も0に近い値になり、$p$値は大きくなります。逆に、帰無仮説が成立しない場合、$z$は極端に大きいか、極端に小さい（負の数になる）ため、$p$値は小さくなります。
+
+
+### 判定
+
+![標準正規分布](./pic/02_05basis.png)
+
+<a href="#standard_normal_distribution">標準正規分布</a>はこのようなグラフを描きます。このグラフで、<a href="#p_of_z">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。
+<dl>
+ 	<dt>$p$値 ≤&nbsp;有意水準$\alpha$</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 &gt;&nbsp;有意水準$\alpha$</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+
+
+### Excelの操作
+
+ここまで検定の理論について説明してきましたが、Excelを用いて<a href="#chapter3">練習問題1</a>に取り掛かりましょう。
+
+&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a>　を利用しても構いません。
+
+{% screenshot 02_07input.png "データの入力" %}
+
+&#9313; 検定用の項目を入力し、既知のデータを入力します。
+
+{% screenshot 02_08input2.png "検定用の項目" %}
+
+&#9314; 検定用のデータを算出するために、以下のように入力します。
+
+* "D4"：<code>=COUNTA(A2:A17)</code>（<a href="../01/#sample_size">標本の大きさ</a>）
+* "D5"：<code>=AVERAGE(A2:A17)</code>（<a href="#sample_mean">標本平均</a>）
+* "D6"：<code>=D3/SQRT(D4)</code>（<a href="../01/#standard_error">標準誤差</a>）
+* "D7"：<code>=STANDARDIZE(D5,D2,D6)</code>（<a href="#standardization">標準化</a>）
+* "D8"：<code>=(1-NORM.S.DIST(D7,TRUE))*2</code>（<a href="#p_of_z">$p$値</a>）
+
+{% screenshot 02_09input2.png "検定用データ" %}
+
+ここで、<code>STANDARDIZE(</code>$\overline{x}$<code>,</code>$\mu_0$<code>,</code>$\sigma / \sqrt{N}$<code>)</code>は、平均$\mu_0$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma / \sqrt{N}$の<a href="#normal_distribution">正規分布</a>に従う$\overline{x}$を標準化し、$z$を求めます（<a href="https://support.office.com/ja-jp/article/STANDARDIZE-関数-81d66554-2d54-40ec-ba83-6437108ee775"><code>STANDARDIZE</code>関数</a>）。また、<code>NORM.S.DIST(</code>$z$<code>,TRUE)</code>は<a href="#standard_normal_distribution">標準正規分布</a>において$z$<strong>未満</strong>の値が発生する確率を表すので、<code>1-NORM.S.DIST(</code>$z$<code>,TRUE)</code>によって、<a href="#chapter8">標準正規分布において$z$<strong>以上</strong>の値が発生する確率</a>を求めています（<a href="https://support.office.com/ja-jp/article/NORM-S-DIST-関数-1e787282-3832-4520-a9ae-bd2a8d99ba88"><code>NORM.S.DIST</code>関数</a>）。標準正規分布は左右対称な分布なので、<a href="#chapter8">標準正規分布において$-z$以下の値が発生する確率</a>は標準正規分布において$z$以上の値が発生する確率と等しく、したがって<code>(1-NORM.S.DIST(</code>$z$<code>,TRUE))*2</code>で<a href="#p_of_z">$p$値</a>を求めることができます。
+
+なお、"D8"は、<a href="#table1">表1</a>のデータと既知のデータだけを用いて、<code>=2\*MIN(Z.TEST(A2:A17,D2,D3),1-Z.TEST(A2:A17,D2,D3))</code>と求めることもできます。<code>Z.TEST(<var>データ</var>,</code>$\mu_0$<code>,</code>$\sigma$<code>)</code>は標準正規分布において$z$<strong>未満</strong>の値が発生する確率を表し、<code>1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>)</code>は<a href="#chapter8">標準正規分布において$z$<strong>以上</strong>の値が発生する確率</a>を表します（<a href="https://support.office.com/ja-jp/article/Z-TEST-関数-d633d5a3-2031-4614-a016-92180ad82bee"><code>Z.TEST</code>関数</a>）。それらの確率で小さいほうが必要な確率なので、<code>MIN(Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>),1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>))</code>で小さいほうの確率を選択します。標準正規分布は左右対称な分布なので、<a href="#chapter8">標準正規分布において$-z$以下の値が発生する確率</a>は標準正規分布において$z$以上の値が発生する確率と等しく、<code>2*MIN(Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>),1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>))</code>で$p$値を求めることができます。
+
+
+### 結果
+
+<a href="#p_of_z">$p$値</a> = 0.841481が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+
+![z値を用いた$p$値の図示](./pic/02_practice1_z1.png)
+
+![標本平均を用いた$p$値の図示](./pic/02_practice1_time2.png)
+
+設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05です。$p$値 = 0.8415 &gt; 有意水準$\alpha$ = 0.05であるので、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母<a href="../01/#mean">平均</a>は60ではないとは言えません。
+
+
+1つの母平均に関する検定（母標準偏差が未知のとき）
 -------------------------------------------------
-ヒストグラムの描画には`hist()`を利用します。  
-本講では先ほど読み込んだ新型コロナウイルス感染症陽性者数データから、第７波（2022年6月下旬〜9月下旬）のデータを取り出して、ヒストグラムを書いてみましょう。
 
-##### コード
-<pre class="Rcode">
-y_all_peek7th <- cov$ALL[620:730]  #ALL列の620〜730番目のデータを変数に格納
-hist(y_all_peek7th)
-</pre>
-{% screenshot 02_hist01.jpg "第７波での新規陽性者数（全国）のヒストグラム" %}
+### 練習問題2
 
-以下のようなオプションを指定することで、グラフの見た目を整えることができます。
-<table>
-	<tr><td>軸を原点で交差させる</td><td>par(xaxs="i",yaxs="i", xpd=T)</td></tr>
-	<tr><td>グラフの塗りつぶし</td><td>col = "色名"</td></tr>
-	<tr><td>x軸の範囲</td><td>xlim = c(最小値, 最大値)</td></tr>
-	<tr><td>y軸の範囲</td><td>ylim = c(最小値, 最大値)</td></tr>
-	<tr><td>x軸のラベル</td><td>xlab = “x軸の名前”</td></tr>
-	<tr><td>y軸のラベル</td><td>ylab = “y軸の名前”</td></tr>
-	<tr><td>y軸階級の数（階級の幅は整数になるため必ずしも指定した数にはならない）</td><td>breaks = 整数</td></tr>
-</table>
+<a href="http://www.mext.go.jp">文部科学省</a><cite>平成20年度学校保健統計調査</cite>の結果によると、6歳男児の身長は全国<a href="../01/#mean">平均</a>（仮説平均$\mu_0$）が 116.7 cmであることが分かっています。一方、同時期のある地域の6歳男児16名の身長は以下のとおりでした。この地域の6歳男児の身長は全国平均よりも高いと言えるでしょうか。
 
-オプションを指定して、ヒストグラムを描画してみましょう。
-##### コード
-<pre class="Rcode">
-hist(y_all_peek7th, col="white", ylim=c(0,40), main="", xlab="newly confirmed cases (number)")
-</pre>
+<span id="table2">表2：ある地域の6歳男児の身長(cm)</span>
 
-{% screenshot 02_hist02.jpg "第７波での新規陽性者数（全国）のヒストグラム" %}
+![表2](./pic/02_14exQ.png)
+
+### 仮説の設定
+
+* <a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>：$\mu = \mu_0$
+* <a href="#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：$\mu \ne \mu_0$
 
 
-箱ひげ図 / boxplot()
+### 有意水準$\alpha$の設定
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 とします。
+
+
+### 検定統計量$t$値の算出
+
+<a href="#test_statistic">検定統計量</a>$t$は以下の数式で求まります。
+
+$ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
+
+ここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$s$は<a href="#sample">標本</a>の<a href="../01/#standard_deviation">標準偏差</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
+
+今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
+
+
+### $p$値の算出
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$と比較する確率$p$値を計算します。<span id="p_of_t">$p$値</span>は、自由度$\phi$の<a href="#student_s_t-distribution">$t$分布</a>において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率の和です。
+
+### 判定
+
+![$t$分布1](./pic/02_16t3.png)
+
+![$t$分布2](./pic/02_17t100.png)
+
+<a href="#student_s_t-distribution">$t$分布</a>はこのようなグラフを描きます。 このグラフで、<a href="#p_of_t">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の棄却を決定します。なお、図のとおり、<a href="#dof_t">自由度</a>$\phi$によって、この$t$分布のグラフは変わります。
+
+<dl>
+ 	<dt>$p$値 ≤ 有意水準$\alpha$</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 &gt; 有意水準$\alpha$</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+
+
+### Excelの操作
+
+Excelを使って、<a href="#chapter13">練習問題2</a>に取り掛かりましょう。
+
+&#9312; <a href="#table2">表2</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a>　を利用しても構いません。
+
+{% screenshot 02_19input.png "データの入力" %}
+
+&#9313; 検定用の項目を入力し、既知のデータを入力します。
+
+{% screenshot 02_20input2.png "検定用の項目" %}
+
+&#9314; 検定用のデータを算出するために、以下のように入力します。
+
+* "D5"：<code>=STDEV.S(A2:A17)</code>（<a href="../01/#standard_deviation">標準偏差</a>）
+* "D8"：<code>=D3-1</code>（<a href="#dof_t">自由度</a>）
+* "D9"：<code>=T.DIST.2T(D7,D8)</code>（<a href="#p_of_t">$p$値</a>）
+
+<a href="#chapter3">練習問題1</a>を参考に、"D3"は<a href="../01/#sample_size">標本の大きさ</a>を、"D4"は<a href="#sample_mean">標本平均</a>を、"D6"は<a href="../01/#standard_error">標準誤差</a>を、それぞれ求めるように、また、"D7"は標本平均を仮説平均と標準誤差とで<a href="#standardization">標準化</a>するように、それぞれ関数を用いた式を入力してください。
+
+{% screenshot 02_21input2.png "検定用データ" %}
+
+なお、<code>T.DIST.2T(</code>$t$<code>,</code>$\phi$<code>)</code>は、<a href="#p_of_t">自由度$\phi$の$t$分布において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率の和</a>を与えます（<a href="https://support.office.com/ja-jp/article/T-DIST-2T-関数-198e9340-e360-4230-bd21-f52f22ff5c28"><code>T.DIST.2T</code>関数</a>）。
+
+
+
+### 結果
+
+<a href="#p_of_t">$p$値</a> = 0.016469 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+
+![$t$値を用いた$p$値の図示](./pic/02_practice2_t.png)
+![標本平均を用いた$p$値の図示](./pic/02_practice2_height2.png)
+
+なお、帰無仮説でこの地域の母<a href="../01/#mean">平均</a>を116.7と仮定したところ、<a href="#sample_mean">標本平均</a>が118.2063となることは稀だとわかりました。したがって、この地域の母平均が116.7未満の値だと標本平均との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。
+
+
+1つの母平均に関する推定（母標準偏差が未知のとき）
 -------------------------------------------------
-箱ひげ図を描画するには`boxplot()`を利用します。
-ヒストグラムを描画したデータで箱ひげ図を描画してみましょう。
-##### コード
-<pre class="Rcode">
-＃ オプションを指定して箱ひげ図を描画
-boxplot(y_all_peek7th, col="white", ylim=c(0,300000) , xlab="Japan" , ylab="newly confirmed cases (number)")
-</pre>
-{% screenshot 02_boxplot01.jpg "第７波での新規陽性者数（全国）の箱ひげ図" %}
 
-複数のデータを`list()`にまとめることで、一つのグラフに描画することも可能です。
-##### コード
-<pre class="Rcode">
-y_tk_peek7th <- cov$Tokyo[620:730]  #東京都
-y_kanagawa_peek7th <- cov$Kanagawa[620:730]  #神奈川県
-y_saitama_peek7th <- cov$Saitama[620:730]  #埼玉県
+最後に、<a href="#sample">標本</a>に基づいて求めた<a href="#sample_mean">標本平均</a>などの<span id="statistic">統計量</span>（statistic）から母<a href="../01/#mean">平均</a>を推定する方法を学びましょう。
 
-boxplot(list(y_tk_peek7th, y_kanagawa_peek7th, y_saitama_peek7th), names=c("Tokyo", "Kanagawa", "Saitama") , ylab="newly confirmed cases (number)",  col="white")
-</pre>
-{% screenshot 02_boxplot02.jpg "第７波での新規陽性者数の箱ひげ図" %}
+### 区間推定
+
+<span id="interval_estimation">区間推定</span>（interval estimation）は、母<a href="../01/#mean">平均</a>や母<a href="../01/#variance">分散</a>などの<span id="parameter">母数</span>（parameter）を1つの値として推定（点推定）するのではなく区間として推定します。すなわち、推定したい母平均や母分散などを含んでいる範囲はどこからどこまでなのかを考えます。例えば、次式は、体重の母平均の取り得る範囲（<a href="#confidence_interval">信頼区間</a>）を示しています。
+
+57 kg ≤ $\mu$ ≤ 67 kg （<a href="#confidence_coefficient">信頼係数</a>95%） → この式が成立する確率は95%です。
+
+母平均$\mu$の(1 - $\alpha$) ×&nbsp;100%信頼区間：
+
+$\overline{x} - t_\phi (\alpha) \frac{s}{\sqrt{N}} &lt; \mu &lt; \overline{x} + t_\phi (\alpha) \frac{s}{\sqrt{N}}$
+
+ここで、$\overline{x}$は<a href="#sample_mean">標本平均</a>、$s$は標本の<a href="../01/#standard_deviation">標準偏差</a>、$\phi = N - 1$は<a href="#dof_t">自由度</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>、$t_\phi (\alpha)$は自由度$\phi$の<a href="#student_s_t-distribution">$t$分布</a>において$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和が$\alpha$となるような$t$を表します。なお、(1 - $\alpha$) ×&nbsp;100%を<span id="confidence_coefficient">信頼係数</span>（confidence coefficient）と呼び、$t_\phi (\alpha)$を自由度$\phi$の$t$分布における両側確率$\alpha$の$t$の<span id="critical_value">臨界値</span>（critical value）と呼びます。また、$\overline{x} - t_\phi (\alpha) s / \sqrt{N}$を<span id="lower_confidence_limit">下側信頼限界</span>（lower confidence limit）、$\overline{x} + t_\phi (\alpha) s / \sqrt{N}$を<span id="upper_confidence_limit">上側信頼限界</span>（upper confidence limit）と呼び、下側信頼限界から上側信頼限界までの区間を<span id="confidence_interval">信頼区間</span>（confidence interval）と呼びます。
 
 
-散布図 / plot()
--------------------------------------------------
-散布図の描画には`plot()`を利用します。  
-これまでのデータを用いて北海道の新規陽性者数数と沖縄県の新規陽性者数の関係を表す散布図を描画してみましょう。  
+### 練習問題3
 
-<pre class="Rcode">
-plot(cov$Hokkaido, cov$Okinawa)
-</pre>
-{% screenshot 02_plot01.jpg "北海道と沖縄県の新規陽性者数の関係" %}
+<a href="#chapter13">練習問題2</a>のある地域の6歳男児身長の母<a href="../01/#mean">平均</a>の取り得る範囲について、<a href="#confidence_coefficient">信頼係数</a>95％の<a href="#confidence_interval">信頼区間</a>で考えてみましょう。
 
 
-以下のようなオプションを指定することで、グラフの見た目を整えることができます。  
-<table>
-	<tr><td>軸を原点で交差させる</td><td>par(xaxs="i",yaxs="i", xpd=T)</td></tr>
-	<tr><td>プロット（点）の色</td><td>col = "色名"</td></tr>
-	<tr><td>プロット（点）の形</td><td>pch = "整数"</td></tr>
-	<tr><td>プロット（点）の大きさ</td><td>cex = "整数"</td></tr>
-	<tr><td>x軸の範囲</td><td>xlim = c(最小値, 最大値)</td></tr>
-	<tr><td>y軸の範囲</td><td>ylim = c(最小値, 最大値)</td></tr>
-	<tr><td>x軸のラベル</td><td>xlab = “x軸の名前”</td></tr>
-	<tr><td>y軸のラベル</td><td>ylab = “y軸の名前”</td></tr>
-</table>
-  
-プロットの形（pch）は1〜25までの数字を指定でき、以下のような形が用意されています。  
-<pre class="Rcode">
-plot( 0:12, rep(0.8,13), pch=0:12, cex=1, xaxt="n", yaxt="n", xlim=c(-1,13), ylim=c(0,1), xlab="", ylab="" )
-text(0:12, rep(0.9,13), labels=0:12)
-par(new=T)
-plot( 0:12, rep(0.2,13), pch=13:25, cex=1, xaxt="n", yaxt="n", xlim=c(-1,13), ylim=c(0,1), xlab="", ylab="" )
-text(0:12, rep(0.3,13), labels=13:25)
-</pre>
-{% screenshot 02_pch.jpg "プロットの形の種類" %}
+### Excelの操作
 
-オプションをいくつか指定してグラフを描画してみましょう。
-<pre class="Rcode">
-plot(cov$Hokkaido, cov$Okinawa, pch=16, col="gray",  xlab="北海道の新規陽性者数（人）", ylab="沖縄県の新規陽性者数（人）")
-</pre>
-{% screenshot 02_plot02.jpg "北海道と沖縄県の新規陽性者数の関係" %}
+<a href="#chapter13">練習問題2</a>で使ったファイルに追記します。
+
+&#9312; 推定用の項目をF列へ入力し、既知のデータをG列へ入力します。
+
+{% screenshot 02_25input2.png "推定用の項目" %}
+
+&#9313; 推定用のデータを算出するために、以下のように入力します。
+
+* "G3"：<code>=T.INV.2T(1-G2,D8)</code>（<a href="#critical_value">臨界値</a>）
+* "G4"：<code>=D4<strong>-</strong>G3*D6</code>（<a href="#lower_confidence_limit">下側信頼限界</a>）
+* "G5"：<code>=D4<strong>+</strong>G3*D6</code>（<a href="#upper_confidence_limit">上側信頼限界</a>）
+
+{% screenshot 02_26input2.png "推定用データ" %}
+
+なお、<code>T.INV.2T(1-</code>$\alpha$<code>,</code>$\phi$<code>)</code>は臨界値$t_\phi (\alpha)$を求めます（<a href="https://support.office.com/ja-jp/article/T-INV-2T-関数-ce72ea19-ec6c-4be7-bed2-b9baf2264f17"><code>T.INV.2T</code>関数</a>）。
+
+"G4"は<code>=D4-CONFIDENCE.T(1-G2,D5,D3)</code>、"G5"は<code>=D4+CONFIDENCE.T(1-G2,D5,D3)</code>、と求めることもできます（ただし、"G2"の表示形式を「標準」に変えておく必要があります）。<code>CONFIDENCE.T(</code>$\alpha$<code>,</code>$s$<code>,</code>$N$<code>)</code>は$t_\phi (\alpha) s / \sqrt{N}$を与えます（<a href="https://support.office.com/ja-jp/article/CONFIDENCE-T-関数-e8eca395-6c3a-4ba9-9003-79ccc61d3c53"><code>CONFIDENCE.T</code>関数</a>）。
 
 
+### 結果
 
-折れ線グラフ / plot()
--------------------------------------------------
-`plot()`に`type`を指定することで折れ線グラフの描画もできます。  
-棒グラフのセクションのデータを折れ線グラフで描画してみましょう。  
-横軸は１から`y_all`の要素数（`1:length(y_all)`）を指定しています。  
+母<a href="../01/#mean">平均</a>$\mu$の95%<a href="#confidence_interval">信頼区間</a>は117.017 &lt; $\mu$ &lt; 119.3955と求まりました。<a href="#lower_confidence_limit">下側信頼限界</a>$\mu_{\text L}$ = 117.017、<a href="#upper_confidence_limit">上側信頼限界</a>$\mu_{\text U}$ = 119.3955で、下図の塗りつぶされた領域が全体の95%になっています。
 
-<pre class="Rcode">
-plot(1:length(y_all), y_all, type="l")
-</pre>
-{% screenshot 02_plot03.jpg "全国での新規陽性者数の推移" %}
-  <br />
-<pre class="Rcode">
-plot(1:length(y_all), y_all, type="o")
-</pre>
-{% screenshot 02_plot04.jpg "全国での新規陽性者数の推移" %}
+![$t$値を用いた信頼係数の図示](./pic/02_practice3_t.png)
 
-オプションを指定して、見た目を整えると以下のようになります。
-<pre class="Rcode">
-plot(1:length(y_all), y_all, type="o", pch=16, cex=0.5, xlab="日数（日目）", ylab="新規陽性者数（人）")
-</pre>
-{% screenshot 02_plot05.jpg "全国での新規陽性者数の推移" %}
+![身長を用いた信頼係数の図示](./pic/02_practice3_height.png)
 
 
-課題
+課題1
 ------
 
-「[男女100名の身長と体重のデータ](kadai02.csv)」をダウンロードして以下の可視化を行ってみましょう。  
-データ：[男女100名の身長と体重のデータ](kadai02.csv)  
-<br />
-１）男女間での身長のばらつきを可視化する。  
-２）身長と体重の関係を可視化する。
-  
-以下は発展問題です。時間に余裕のある人はチャレンジしてみましょう。  
-３）（２）で作成したグラフを男女で色分けする。
+ある時期のガソリン（レギュラー：1リットル）の全国<a href="../01/#mean">平均</a>価格は126.8円でした。ところが、ある地域ではガソリンの価格がどうも全国平均価格より高いようです。ある地域におけるガソリンの価格のデータを集めると以下のようになりました。さて、ある地域のガソリンの価格は高いと言って良いでしょうか。
 
+126.4円，127.3円，126.9円，127.4円，125.8円，127.2円，127.1円，128.0円
+
+
+課題2
+------
+
+ある地域のある時期の新生児の身長を10人分測ったところ、以下のようになりました。母<a href="../01/#mean">平均</a>を<a href="#confidence_coefficient">信頼係数</a>95%で<a href="#interval_estimation">区間推定</a>してみましょう。
+
+49.1 ㎝，52.4 ㎝，56.1 ㎝，47.7 ㎝，49.8 ㎝，53.2 ㎝，54.6 ㎝，51.5 ㎝，55.9 ㎝，48.4 ㎝
