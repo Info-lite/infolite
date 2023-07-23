@@ -7,15 +7,6 @@ purposes:
     - Rを用いて母平均の検定と推定を行う
 ---
 
-<div class="panel panel-info">
-<div class="panel-body">
-今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。（ダウンロード後、ファイルが保護ビューで開かれた場合は、[編集を有効にする]をクリックしてください。）
-<ul>
-<li><a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a></li>
-<li><a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a></li>
-</ul>
-</div>
-</div>
 
 母平均に関する検定と推定
 ------------------------
@@ -40,6 +31,7 @@ purposes:
 
 ![表1](./pic/02_02exQ.png)
 
+![図](./pic/03_exQ1.jpg)
 
 ### 仮説検定の流れ
 
@@ -55,7 +47,9 @@ purposes:
 
 の流れになります。
 
-<span id="null_hypothesis">帰無仮説</span>（null hypothesis）は極端に言えば、棄てる前提の、つまり、否定したい仮説のことです。先ほどの流れの説明では練習問題1の帰無仮説として、通常の商品提供平均時間と新入店員全員の商品提供平均時間とが「等しい」と設定されています。この仮説を退けるためには、練習問題1の場合、「等しい」状況において商品提供時間の平均が<a href="#table1">表1</a>に示されたような<span id="60.5">(64 + 61 + 67 + 57 + 62 + 53 + 69 + 49 + 73 + 59 + 67 + 50 + 58 + 62 + 56 + 61) ÷ 16 = 60.5</span>になることは稀である、すなわち、めったに起こらないことを示す必要があります。つまり、その状況が起こり得る確率$p$値が「ある小さな値（有意水準$\alpha$）」以下であることを示す必要があります。これが示されれば帰無仮説は棄却され、主張したい内容である<span id="alternative_hypothesis">対立仮説</span>（alternative hypothesis）が採択されます。ここで、対立仮説は先ほどの流れの説明では「等しくない」と設定されています。一方、$p$値が$\alpha$より大きい場合、練習問題1の「等しい」状況で商品提供時間の平均が60.5になることはよくあることになり、帰無仮説を受容することになります。
+<span id="null_hypothesis">帰無仮説</span>（null hypothesis）は極端に言えば、棄てる前提の、つまり、否定したい仮説のことです。先ほどの流れの説明では練習問題1の帰無仮説として、通常の商品提供平均時間と新入店員全員の商品提供平均時間とが「等しい」と設定されています。この仮説を退けるためには、練習問題1の場合、「等しい」状況において新入店員全員の商品提供平均時間が60.5になることは稀である、すなわち、めったに起こらないことを示す必要があります。つまり、その状況が起こり得る確率$p$値が「ある小さな値（有意水準$\alpha$）」以下であることを示す必要があります。
+
+これが示されれば帰無仮説は棄却され、主張したい内容である<span id="alternative_hypothesis">対立仮説</span>（alternative hypothesis）が採択されます。ここで、対立仮説は先ほどの流れの説明では「等しくない」と設定されています。一方、$p$値が$\alpha$より大きい場合、練習問題1の「等しい」状況で商品提供時間の平均が60.5になることはよくあることになり、帰無仮説を受容することになります。
 
 ### 仮説の設定
 
@@ -98,6 +92,9 @@ $z$は以下の数式で求まります。
 
 ![標準正規分布](./pic/02_05basis.png)
 
+![標準正規分布図](./pic/03_practice1.jpg "Rで正規分布を描くには次のコードを実行します。cruve(dnorm(x),-5,5)")
+
+
 <a href="#standard_normal_distribution">標準正規分布</a>はこのようなグラフを描きます。このグラフで、<a href="#p_of_z">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。
 <dl>
  	<dt>$p$値 ≤&nbsp;有意水準$\alpha$</dt>
@@ -107,9 +104,9 @@ $z$は以下の数式で求まります。
 </dl>
 
 
-### Excelの操作
+### Rの操作
 
-ここまで検定の理論について説明してきましたが、Excelを用いて<a href="#chapter3">練習問題1</a>に取り掛かりましょう。
+ここまで検定の理論について説明してきましたが、Rを用いて<a href="#chapter3">練習問題1</a>に取り掛かりましょう。
 
 &#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a>　を利用しても構いません。
 
@@ -175,7 +172,9 @@ $ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 
 ここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$s$は<a href="#sample">標本</a>の<a href="../01/#standard_deviation">標準偏差</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
 
-今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
+今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。
+
+<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
 
 
 ### $p$値の算出
@@ -184,9 +183,12 @@ $ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 
 ### 判定
 
+![$t$分布3](./pic/03_practice2.png)
+
 ![$t$分布1](./pic/02_16t3.png)
 
 ![$t$分布2](./pic/02_17t100.png)
+
 
 <a href="#student_s_t-distribution">$t$分布</a>はこのようなグラフを描きます。 このグラフで、<a href="#p_of_t">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の棄却を決定します。なお、図のとおり、<a href="#dof_t">自由度</a>$\phi$によって、この$t$分布のグラフは変わります。
 
@@ -198,41 +200,78 @@ $ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 </dl>
 
 
-### Excelの操作
+### Rの操作
 
-Excelを使って、<a href="#chapter13">練習問題2</a>に取り掛かりましょう。
+Rを使って、<a href="#chapter13">練習問題2</a>に取り掛かりましょう。
 
-&#9312; <a href="#table2">表2</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_2.xlsx">ある地域の6歳男児の身長(02_2.xlsx)</a>　を利用しても構いません。
+&#9312; <a href="#table2">表2</a>のデータをRに入力します。
 
-{% screenshot 02_19input.png "データの入力" %}
+##### コード
 
-&#9313; 検定用の項目を入力し、既知のデータを入力します。
+<pre class="Rcode">
+# データの読み込み
+height <- c(116.4, 117.2, 119.4, 115.7, 116.4, 118.8, 121.7, 115.9, 115.0, 118.8, 118.3, 121.1, 116.3, 118.6, 122.4, 119.3)
+</pre>
 
-{% screenshot 02_20input2.png "検定用の項目" %}
+<br />
 
-&#9314; 検定用のデータを算出するために、以下のように入力します。
+&#9313; 検定を行います。
 
-* "D5"：<code>=STDEV.S(A2:A17)</code>（<a href="../01/#standard_deviation">標準偏差</a>）
-* "D8"：<code>=D3-1</code>（<a href="#dof_t">自由度</a>）
-* "D9"：<code>=T.DIST.2T(D7,D8)</code>（<a href="#p_of_t">$p$値</a>）
+##### コード
 
-<a href="#chapter3">練習問題1</a>を参考に、"D3"は<a href="../01/#sample_size">標本の大きさ</a>を、"D4"は<a href="#sample_mean">標本平均</a>を、"D6"は<a href="../01/#standard_error">標準誤差</a>を、それぞれ求めるように、また、"D7"は標本平均を仮説平均と標準誤差とで<a href="#standardization">標準化</a>するように、それぞれ関数を用いた式を入力してください。
+<pre class="Rcode">
+# この地域の母平均が116.7と等しいか
+t.test(height, mu=116.7)
+</pre>
 
-{% screenshot 02_21input2.png "検定用データ" %}
+##### 結果
 
-なお、<code>T.DIST.2T(</code>$t$<code>,</code>$\phi$<code>)</code>は、<a href="#p_of_t">自由度$\phi$の$t$分布において、$-t$未満の値が発生する確率と$t$より大きい値が発生する確率の和</a>を与えます（<a href="https://support.office.com/ja-jp/article/T-DIST-2T-関数-198e9340-e360-4230-bd21-f52f22ff5c28"><code>T.DIST.2T</code>関数</a>）。
+<pre class="Rres">
 
+	One Sample t-test
 
+data:  height
+t = 2.6997, df = 15, p-value = 0.01647
+alternative hypothesis: true mean is not equal to 116.7
+95 percent confidence interval:
+ 117.0170 119.3955
+sample estimates:
+mean of x 
+ 118.2062 
+</pre>
+
+* t : $t$値  
+* df : <a href="#dof_t">自由度</a>$\phi$  
+* p-value : <a href="#p_of_t">$p$値</a>  
+* 95 percent confidence interval : 95%<a href="#confidence_interval">信頼区間</a>  
+* mean of X : <a href="#sample_mean">標本平均</a> $ \overline{x}$  
 
 ### 結果
 
-<a href="#p_of_t">$p$値</a> = 0.016469 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+6歳男児の全国平均身長は116.7なので、この地域の母<a href="../01/#mean">平均</a>を116.7と仮定したところ、
+<a href="#p_of_t">$p$値</a> = 0.016469 < <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05となり、
+<a href="#sample_mean">標本平均</a>（ある地域の6歳男児16名の平均身長）が118.2063となることは稀だとわかりました。
+したがって、この地域の母平均が116.7未満の値だと標本平均（118.2063）との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。
+
+よって、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>（  $\mu (この地域の6歳男児の平均身長) =　\mu_0$（6歳男児の全国平均身長））は棄却されます。
+
+その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。
+
+下図の塗りつぶされた領域が全体に対してpの割合になっています。
+
+![pの割合の図](./pic/03_practice3.png)
+
+
+<a href="#p_of_t">$p$値</a> = 0.01647 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![$t$値を用いた$p$値の図示](./pic/02_practice2_t.png)
 ![標本平均を用いた$p$値の図示](./pic/02_practice2_height2.png)
 
 なお、帰無仮説でこの地域の母<a href="../01/#mean">平均</a>を116.7と仮定したところ、<a href="#sample_mean">標本平均</a>が118.2063となることは稀だとわかりました。したがって、この地域の母平均が116.7未満の値だと標本平均との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。
 
+
+* <a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>：$\mu = \mu_0$
+* <a href="#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：$\mu \ne \mu_0$
 
 1つの母平均に関する推定（母標準偏差が未知のとき）
 -------------------------------------------------
