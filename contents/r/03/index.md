@@ -15,6 +15,7 @@ purposes:
 
 ![母集団と標本](./pic/02_01data.png)
 
+{% screenshot 02_01data.png "母集団と標本" %}
 
 本講では、標本に基づいて算出した<a href="../01/#mean">平均</a>（<span id="sample_mean">標本平均</span>、sample mean）から母集団の平均（母平均）を検定したり、推定したりする方法を学んでいきましょう。
 
@@ -22,14 +23,17 @@ purposes:
 1つの母平均に関する検定（母標準偏差が既知のとき）
 -------------------------------------------------
 
-
-### 練習問題1
+### 練習問題1あ
 
 複数店舗を展開しているあるファストフード店では、注文を受けてから商品を出すまでに<a href="../01/#mean">平均</a>60秒かかっているとします。 そこで、**いくつかの店舗**で**何人か**の新入店員たちに対して同様の時間を計測したところ、以下のデータを得ました。今年の新入店員**全体**では注文を受けてから商品を出すまでに平均60秒かかると判断して良いでしょうか。なお、商品を出すまでの<a href="../01/#standard_deviation">標準偏差</a>の値は10秒で、店舗や店員が代わってもこの値は変わらないものとします。
 
 <span id="table1">表1：新入店員が注文を受けてから商品を出すまでの時間（秒）</span>
 
 ![表1](./pic/02_02exQ.png)
+
+{% screenshot 02_02exQ.png "表1：新入店員が注文を受けてから商品を出すまでの時間（秒）" %}
+
+{% screenshot 03_exQ1.jpg %}
 
 ![図](./pic/03_exQ1.jpg)
 
@@ -108,38 +112,49 @@ $z$は以下の数式で求まります。
 
 ここまで検定の理論について説明してきましたが、Rを用いて<a href="#chapter3">練習問題1</a>に取り掛かりましょう。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="02_1.xlsx">新入店員が注文を受けてから商品を出すまでの時間(02_1.xlsx)</a>　を利用しても構いません。
+&#9312; <a href="#table1">表1</a>のデータをRに入力します。
 
-{% screenshot 02_07input.png "データの入力" %}
+##### コード
 
-&#9313; 検定用の項目を入力し、既知のデータを入力します。
+<pre class="Rcode">
+# データの読み込み
+time <- c(64, 61, 67, 57, 62, 53, 69, 49, 73, 59, 67, 50, 58, 62, 56, 61)
+</pre>
 
-{% screenshot 02_08input2.png "検定用の項目" %}
+&#9313; kennteiを行います。
 
-&#9314; 検定用のデータを算出するために、以下のように入力します。
+##### コード
 
-* "D4"：<code>=COUNTA(A2:A17)</code>（<a href="../01/#sample_size">標本の大きさ</a>）
-* "D5"：<code>=AVERAGE(A2:A17)</code>（<a href="#sample_mean">標本平均</a>）
-* "D6"：<code>=D3/SQRT(D4)</code>（<a href="../01/#standard_error">標準誤差</a>）
-* "D7"：<code>=STANDARDIZE(D5,D2,D6)</code>（<a href="#standardization">標準化</a>）
-* "D8"：<code>=(1-NORM.S.DIST(D7,TRUE))*2</code>（<a href="#p_of_z">$p$値</a>）
+<pre class="Rcode">
+# T検定
+t.test(time, mu=60)
+</pre>
 
-{% screenshot 02_09input2.png "検定用データ" %}
+##### 結果
 
-ここで、<code>STANDARDIZE(</code>$\overline{x}$<code>,</code>$\mu_0$<code>,</code>$\sigma / \sqrt{N}$<code>)</code>は、平均$\mu_0$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma / \sqrt{N}$の<a href="#normal_distribution">正規分布</a>に従う$\overline{x}$を標準化し、$z$を求めます（<a href="https://support.office.com/ja-jp/article/STANDARDIZE-関数-81d66554-2d54-40ec-ba83-6437108ee775"><code>STANDARDIZE</code>関数</a>）。また、<code>NORM.S.DIST(</code>$z$<code>,TRUE)</code>は<a href="#standard_normal_distribution">標準正規分布</a>において$z$<strong>未満</strong>の値が発生する確率を表すので、<code>1-NORM.S.DIST(</code>$z$<code>,TRUE)</code>によって、<a href="#chapter8">標準正規分布において$z$<strong>以上</strong>の値が発生する確率</a>を求めています（<a href="https://support.office.com/ja-jp/article/NORM-S-DIST-関数-1e787282-3832-4520-a9ae-bd2a8d99ba88"><code>NORM.S.DIST</code>関数</a>）。標準正規分布は左右対称な分布なので、<a href="#chapter8">標準正規分布において$-z$以下の値が発生する確率</a>は標準正規分布において$z$以上の値が発生する確率と等しく、したがって<code>(1-NORM.S.DIST(</code>$z$<code>,TRUE))*2</code>で<a href="#p_of_z">$p$値</a>を求めることができます。
+<pre class="Rres">
+	One Sample t-test
 
-なお、"D8"は、<a href="#table1">表1</a>のデータと既知のデータだけを用いて、<code>=2\*MIN(Z.TEST(A2:A17,D2,D3),1-Z.TEST(A2:A17,D2,D3))</code>と求めることもできます。<code>Z.TEST(<var>データ</var>,</code>$\mu_0$<code>,</code>$\sigma$<code>)</code>は標準正規分布において$z$<strong>未満</strong>の値が発生する確率を表し、<code>1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>)</code>は<a href="#chapter8">標準正規分布において$z$<strong>以上</strong>の値が発生する確率</a>を表します（<a href="https://support.office.com/ja-jp/article/Z-TEST-関数-d633d5a3-2031-4614-a016-92180ad82bee"><code>Z.TEST</code>関数</a>）。それらの確率で小さいほうが必要な確率なので、<code>MIN(Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>),1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>))</code>で小さいほうの確率を選択します。標準正規分布は左右対称な分布なので、<a href="#chapter8">標準正規分布において$-z$以下の値が発生する確率</a>は標準正規分布において$z$以上の値が発生する確率と等しく、<code>2*MIN(Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>),1-Z.TEST(データ,</code>$\mu_0$<code>,</code>$\sigma$<code>))</code>で$p$値を求めることができます。
+data:  time
+t = 0.29925, df = 15, p-value = 0.7689
+alternative hypothesis: true mean is not equal to 60
+95 percent confidence interval:
+ 56.93871 64.06129
+sample estimates:
+mean of x 
+     60.5 
+</pre>
 
 
 ### 結果
 
-<a href="#p_of_z">$p$値</a> = 0.841481が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_z">$p$値</a> = 0.7689が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![z値を用いた$p$値の図示](./pic/02_practice1_z1.png)
 
 ![標本平均を用いた$p$値の図示](./pic/02_practice1_time2.png)
 
-設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05です。$p$値 = 0.8415 &gt; 有意水準$\alpha$ = 0.05であるので、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母<a href="../01/#mean">平均</a>は60ではないとは言えません。
+設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05です。$p$値 = 0.7689 &gt; 有意水準$\alpha$ = 0.05であるので、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母<a href="../01/#mean">平均</a>は60ではないとは言えません。
 
 
 1つの母平均に関する検定（母標準偏差が未知のとき）
