@@ -9,9 +9,10 @@ purposes:
 
 <div class="panel panel-info">
 <div class="panel-body">
-今回使うファイルです。必要に応じてご利用ください。（ダウンロード後、ファイルが保護ビューで開かれた場合は、[編集を有効にする]をクリックしてください。） 
+今回使うファイルです。必要に応じてご利用ください。文字コードはUTF-8です。
+
 <ul>
-<li><a href="07_1.xlsx">ある車種における中古車の価格と走行距離(07_1.xlsx)</a></li>
+<li><a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a></li>
 </ul>
 </div>
 </div>
@@ -39,7 +40,7 @@ purposes:
 線形単回帰分析では2つの変数の関係は1次式で表され、図示すると直線になります。この、<a href="../04/#explanatory_variable">説明変数</a>の値から<a href="../04/#target_variable">目的変数</a>の値を予測する直線を、<span id="regression_line">単回帰直線</span>（simple regression line）といいます。
 
 
-#### 回帰式の求め方
+### 回帰式の求め方
 
 対になったデータ$ x_i$と$ y_i$（$ i$ = 1, 2, … , $ N$）から<a href="#regression_equation">回帰式</a>$ y = a + bx$を求めるには以下の数式を用います。
 
@@ -63,75 +64,73 @@ $ \displaystyle \sum_{i = 1}^N Q_i^2$
 なお、$ x$と$ y$とをそれぞれ<a href="../02/#standardization">標準化</a>して回帰係数$ b$を求めると，$ b$は<a href="../06/#chapter7">相関係数</a>rと等しくなります。
 
 
-### 練習問題
+### 練習問題1
 
-次のデータは、ある車種における中古車の価格と走行距離について30台分示したものです。走行距離（$ x$）から中古車の価格（$ y$）を予測する<a href="#regression_equation">回帰式</a>を<a href="#chapter3">線形単回帰分析</a>で求めてください。
+次のデータは、あるジェラート屋の1日の売上高と客数、気温のデータです。客数（$ x$）から売上高（$ y$）を予測してください。
 
-<span id="table1">表1：ある車種30台の中古車価格と走行距離</span>
+データ  
+<a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
 
-![表1：ある車種30台の中古車価格と走行距離](./pic/07_06exQ.png)
+<br />
 
+### Rの操作
 
-#### Excelの操作
+Rを用いて<a href="#chapter5">練習問題1</a>に取り掛かりましょう。
 
-Excelを用いて<a href="#chapter5">練習問題</a>に取り掛かりましょう。
+&#9312; データをRに入力します。
 
-&#9312; <a href="#table1">表1</a>のデータをExcelに入力します。すでにデータを入力してある　<a href="07_1.xlsx">ある車種における中古車の価格と走行距離(07_1.xlsx)</a>　を利用しても構いません。
+##### コード
 
-{% screenshot 07_08input.png "データの入力" %}
+<pre class="Rcode">
+# データの読み込み
+data07<- read.csv("07.csv")
+</pre>
+<br />
 
-&#9313; 回帰式導出用の項目を入力します。
+&#9313; 客数（$ x$）から売上高（$ y$）を予測する単回帰分析を実行します。
 
-{% screenshot 07_09analysis.png "回帰式導出用の項目" %}
+##### コード
 
-&#9314; 価格平均と<a href="../01/#deviation">偏差</a>を求め、それぞれの偏差を求めるために、以下のように入力し、"G2"セルと"H2"セルとを選択します。
+<pre class="Rcode">
+# 列の抽出
+uriage = data07$売上高
+kyaku= data07$客数
+#単回帰分析
+lm(uriage ~ kyaku, data<-data07)
+</pre>
 
-* "D2"：<code>=AVERAGE(A2:A31)</code>（<a href="../01/#mean">平均</a>）
-* "E2"：<code>=AVERAGE(B2:B31)</code>（平均）
-* "G2"：<code>=A2-D$2</code>（偏差）
-* "H2"：<code>=B2-E$2</code>（偏差）
+##### 結果
 
-なお、"E2"は"D2"の<a href="../01/#autofill">オートフィル</a>で、"H2"は"G2"のオートフィルで、それぞれ入力することも可能です。
+<pre class="Rres">
+Call:
+lm(formula = uriage ~ kyaku, data = data <- data07)
 
-{% screenshot 07_10analysis.png "平均と偏差" %}
+Coefficients:
+(Intercept)        kyaku  
+   -42014.6        827.2  
+</pre>
+<br />
 
-オートフィルで残りの偏差を求めます。
+回帰式$ y$ = 827.2 - 42014.6$ x$が求まりました。
 
-{% screenshot 07_11analysis.png "偏差のオートフィル" %}
+<br />
 
-&#9315; 回帰式を導出するために、以下のように入力します。
+&#9314; 回帰式を含む散布図を作成します。
 
-* "K1"：<code>=SUMPRODUCT(G2:G31,H2:H31)</code>（偏差積和）
-* "K2"：<code>=SUMSQ(H2:H31)</code>（走行距離の<a href="../01/#sum_of_squared_deviations">偏差平方和</a>）
-* "K3"：<code>=K1/K2</code>（<a href="#regression_coefficient">回帰係数</a>$ b$）
-* "K4"：<code>=D2-K3*E2</code>（<a href="#intercept">切片</a>$ a$）
+##### コード
 
-{% screenshot 07_12analysis.png "回帰式導出" %}
+<pre class="Rcode">
+#散布図の作成
+plot(kyaku,uriage)
+abline(lm(uriage ~ kyaku, data<-data07))
+</pre>
 
-なお、<code>SUMPRODUCT(配列1,配列2)</code>は配列1と配列2との対応する要素の積和を求めます（<a href="https://support.office.com/ja-jp/article/SUMPRODUCT-関数-16753e75-9f68-4874-94ac-4d2145a2fd2e"><code>SUMPRODUCT</code>関数</a>）。<code>SUMSQ(配列)</code>は配列要素の平方和を求めます（<a href="https://support.office.com/ja-jp/article/SUMSQ-関数-e3313c02-51cc-4963-aae6-31442d9ec307"><code>SUMSQ</code>関数</a>）。
+##### 結果
 
-回帰式$ y$ = 110.4715 - 3.31499$ x$が求まりました。
-
-なお、<a href="https://support.office.com/ja-jp/article/DEVSQ-関数-8b739616-8376-4df5-8bd0-cfe0a6caf444"><code>DEVSQ</code>関数</a>を用いて、"K2"を<code>=DEVSQ(B2:B31)</code>と、入力データから直接求めることもできます。また、<a href="https://support.office.com/ja-jp/article/SLOPE-関数-11fb8f97-3117-4813-98aa-61d7e01276b9"><code>SLOPE</code>関数</a>と<a href="https://support.office.com/ja-jp/article/INTERCEPT-関数-2a9b74e2-9d47-4772-b663-3bca70bf63ef"><code>INTERCEPT</code>関数</a>とを用いて、"K3"を<code>=SLOPE(A2:A31,B2:B31)</code>と、"K4"を<code>=INTERCEPT(A2:A31,B2:B31)</code>と、入力データから直接求めることもできます。
-
-また、Excelでは散布図に回帰直線を描くと同時に回帰式を求めることもできます。<a href="../06/#chapter6">ここ</a>を参考におすすめグラフを挿入します。ただし、横軸が中古車価格、縦軸が走行距離になるので、<a href="../06/#chapter9">ここ</a>を参考に「系列の編集」ウィンドウを表示し、「系列 X の値(<u>X</u>):」を<code>=Sheet1!$B$2:$B$31</code>に、「系列 Y の値(<u>Y</u>):」を<code>=Sheet1!$A$2:$A$31</code>に、それぞれ変更します。また、点（マーカー）の間に線が描かれているので、<a href="../06/#chapter9">ここ</a>を参考にデータ系列の書式設定作業ウィンドウを表示し、バケツのアイコンをクリックし、線をクリックし、なしを選択します。ここまで設定した散布図は以下の図のようになります。
-
-{% screenshot 07_13graph.png "散布図の作成" %}
-
-回帰直線を描くために、「+」ボタンをクリックして「近似曲線」をチェックします。
-
-{% screenshot 07_14graph.png "回帰直線の描画" %}
-
-回帰式を求めるために、近似曲線の書式設定作業ウィンドウを表示し、「グラフに数式を表示する」をチェックします。
-
-{% screenshot 07_15graph.png "回帰式の表示" %}
-
-回帰式と回帰直線とを含む散布図ができました。
-
-<span id="scatter_with_regression"></span>
-
-{% screenshot 07_16graph.png "散布図の完成" %}
-
+<pre class="Rres">
+{% screenshot 07_practice_result1.png " " %}
+</pre>
+<br />
 
 ### 回帰式の吟味
 
@@ -172,7 +171,7 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 
 #### 判定
 
-![F分布](./pic/f_pdf_2.png)
+{% screenshot f_pdf_2.png "F分布" %}
 
 <a href="../levene_s_test/#f-distribution">F分布</a>はこのようなグラフを描きます。このグラフで<a href="#p_of_F">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="../02/#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。なお、図のとおり、自由度によって、このF分布のグラフは変わります。
 <dl>
@@ -183,49 +182,49 @@ $ \displaystyle F = \frac{V_{\hat{y}}}{V_Q}$
 </dl>
 
 
-### Excelの操作
+### Rの操作
 
-ここまで検定の理論について説明してきましたが、Excelを用いて検定を行ってみましょう。<a href="#chapter5">練習問題</a>で用いたファイルに追記します。
+ここまで検定の理論について説明してきましたが、Rを用いて検定を行ってみましょう。
 
-&#9312; 検定用の項目を入力し、既知のデータを入力します。
+&#9312; 単回帰分析の実行まで終えていることとして、データの詳細を表示します。
 
-{% screenshot 07_19analysis1.png "検定用の項目" %}
+##### コード
 
-&#9313; 予測値$ \hat{y}_i = a + bx_i$を求めるために、以下のように入力し、"M2"セルを選択して<a href="../01/#autofill">オートフィル</a>で他のセルも入力します。
+<pre class="Rcode">
+#データの詳細を表示
+summary(lm(uriage ~ kyaku, data<-data07))
+</pre>
 
-* "M2"：<code>=K$4+K$3*B2</code>（予測値$ \hat{y}_i$）
+##### 結果
 
-{% screenshot 07_20analysis1.png "予測値" %}
+<pre class="Rres">
+Call:
+lm(formula = uriage ~ kyaku, data = data <- data07)
 
-&#9314; 検定用のデータを算出するため、以下のように入力します。
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-27359.8 -12870.3   -789.6  13432.3  30370.9 
 
-* "P2"：<code>=DEVSQ(M2:M31)</code>（予測値$ \hat{y}$の<a href="../01/#sum_of_squared_deviations">偏差平方和</a>）
-* "P3"：<code>=SUMXMY2(A2:A31,M2:M31)</code>（<a href="#residual">残差</a>平方和）
-* "P4"：<code>=COUNTA(A2:A31)-2</code>（残差平方和の自由度）
-* "P5"：<code>=P2/(P3/P4)</code>（<a href="../02/#test_statistic">検定統計量</a>$ F$値）
-* "P6"：<code>=F.DIST.RT(P5,1,P4)</code>（<a href="#p_of_F">$p$値</a>）
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -42014.6    19846.7  -2.117   0.0436 *  
+kyaku          827.2      108.7   7.609 3.48e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-{% screenshot 07_21analysis1.png "検定用のデータ" %}
-
-<code>SUMXMY2(配列1,配列2)</code>は配列1と配列2の対応する要素の差の平方和を求めます（<a href="https://support.office.com/ja-jp/article/SUMXMY2-関数-9d144ac1-4d79-43de-b524-e2ecee23b299"><code>SUMXMY2</code>関数</a>）。
-
-なお、<a href="https://support.office.com/ja-jp/article/FORECAST-関数-50ca49c9-7b40-4892-94e4-7ad38bbeda99"><code>FORECAST</code>関数</a>を用いて、"M2"を<code>=FORECAST(B2,A$2:A$31,B$2:B$31)</code>と、入力データから直接求めることもできます。
+Residual standard error: 16090 on 27 degrees of freedom
+Multiple R-squared:  0.682,	Adjusted R-squared:  0.6702 
+F-statistic:  57.9 on 1 and 27 DF,  p-value: 3.483e-08
+</pre>
 
 
 ### 結果
 
-<a href="#p_of_F">$p$値</a> = 4.55826 × 10<sup>-20</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_F">$p$値</a> = 3.483 × 10<sup>-08</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![$p$値の図示](./pic/07_practice2_f.png)
 
-$p$値 = 4.55826 × 10<sup>-20 </sup>&lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、回帰係数$ b$は予測に役立っていることになります。
-
-
-### 論文では
-
-論文では以下のようになります。
-
-> <a href="#regression_equation">回帰式</a>に関してF検定を行ったところ、有意であった（F(1,28) = 561.4005, $p$ &lt; .05）。よって、回帰式は統計的に意味がある。
+$p$値 = 3.483 × 10<sup>-08 </sup>&lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、<a href="#regression_equation">回帰式</a>は統計的に有意であると分かります。
 
 
 ### 決定係数
@@ -248,13 +247,93 @@ $ \displaystyle R^2 = \frac{S_{\hat{y}}}{S_y}$
 
 この$ R^2$は決定係数（coefficient of determination）と呼ばれ、0 ≤ $ R^2$ ≤ 1です。予測値$ \hat{y}\_i$の散らばり具合が大きければ$ S\_{\hat{y}}$が大きくなり、$ R^2$は大きくなるので、$ R^2$が1に近ければ予測値の散らばり具合は目的変数$ y$の散らばり具合に近く、説明変数$ x$が目的変数$ y$の変動を説明できていることになります。なお、<a href="#simple_regression_analysis">単回帰分析</a>では決定係数と<a href="../06/#chapter7">相関係数</a>rの二乗値とが等しい、すなわち、$ R^2$ = r<sup>2</sup>です。
 
-Excelで実際に求めてみましょう。
+### Rの操作
 
-* "P9"：<code>=P2/DEVSQ(A2:A31)</code>（決定係数$ R^2$）
+Rで確認してみましょう。単回帰分析を実行し、データの詳細を表示した結果を見ます。
 
-{% screenshot 07_22analysis1.png "決定係数R2" %}
+<pre class="Rres">
+Multiple R-squared:  0.682
+</pre>
 
-$ R^2$ = 0.952494102が求まりました。求めた回帰式はよく説明できていることがわかりました。これは<a href="#scatter_with_regression">散布図</a>で<a href="#regression_line">回帰直線</a>が多くのデータ点と接していることに現れています。
+$ R^2$ = 0.682であると分かりました。
+
+
+重回帰分析
+----------
+
+### 練習問題2
+
+次のデータは、あるジェラート屋の1日の売上高と客数、気温のデータです。<a href="#chapter5">練習問題1</a>と同じデータです。今度は、客数（$ x$<sub>1</sub>）と気温（$ x$<sub>2</sub>）から売上高（$ y$）を予測してください。
+
+データ  
+<a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
+<br />
+
+### Rの操作
+
+Rを用いて<a href="#chapter5">練習問題2</a>に取り掛かりましょう。
+
+&#9312; データをRに入力します。<a href="#chapter5">練習問題1</a>から続けて行う場合は不要です。
+
+##### コード
+
+<pre class="Rcode">
+# データの読み込み
+data07<- read.csv("07.csv")
+</pre>
+<br />
+
+&#9313; 客数（$ x$<sub>1</sub>）と気温（$ x$<sub>2</sub>）から売上高（$ y$）を予測する重回帰分析を実行し、データの詳細を表示します。
+<a href="#chapter5">練習問題1</a>から続けて行う場合は、売上高と客数の列の抽出は不要です。
+
+##### コード
+
+<pre class="Rcode">
+# 列の抽出
+uriage = data07$売上高
+kyaku= data07$客数
+kion= data07$気温
+
+# 重回帰分析
+data07.lm<-lm(uriage ~ kyaku+kion,  data=data07)
+
+#データの詳細を表示
+summary(data07.lm)
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+Call:
+lm(formula = uriage ~ kyaku + kion, data = data07)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-27224.2  -7714.0    545.4  10762.8  21627.8 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -156916.3    45497.6  -3.449  0.00193 **
+kyaku           519.8      148.5   3.499  0.00170 **
+kion           5754.2     2096.7   2.744  0.01084 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 14440 on 26 degrees of freedom
+Multiple R-squared:  0.7534,	Adjusted R-squared:  0.7344 
+F-statistic: 39.72 on 2 and 26 DF,  p-value: 1.247e-08
+</pre>
+<br />
+
+### 共線性の確認
+
+
+
+
+### 結果
+
+
+
 
 
 課題
