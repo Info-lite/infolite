@@ -13,8 +13,6 @@ purposes:
 
 日頃私たちが得られるデータは、<a href="../01/#universe">対象</a>の特性を**もれなく**<a href="../01/#measurement">測定</a>したデータである<span id="population">母集団</span>（population）そのものではなくて、母集団の中からいくつか抜き出してきたデータである<span id="sample">標本</span>（sample）であることが一般的です。私たちが実際にできることは、その標本をもとに母集団を推測することです。
 
-![母集団と標本](./pic/02_01data.png)
-
 {% screenshot 02_01data.png "母集団と標本" %}
 
 本講では、標本に基づいて算出した<a href="../01/#mean">平均</a>（<span id="sample_mean">標本平均</span>、sample mean）から母集団の平均（母平均）を検定したり、推定したりする方法を学んでいきましょう。
@@ -23,19 +21,13 @@ purposes:
 1つの母平均に関する検定（母標準偏差が既知のとき）
 -------------------------------------------------
 
-### 練習問題1あ
+### 練習問題1
 
 複数店舗を展開しているあるファストフード店では、注文を受けてから商品を出すまでに<a href="../01/#mean">平均</a>60秒かかっているとします。 そこで、**いくつかの店舗**で**何人か**の新入店員たちに対して同様の時間を計測したところ、以下のデータを得ました。今年の新入店員**全体**では注文を受けてから商品を出すまでに平均60秒かかると判断して良いでしょうか。なお、商品を出すまでの<a href="../01/#standard_deviation">標準偏差</a>の値は10秒で、店舗や店員が代わってもこの値は変わらないものとします。
 
-<span id="table1">表1：新入店員が注文を受けてから商品を出すまでの時間（秒）</span>
-
-![表1](./pic/02_02exQ.png)
-
 {% screenshot 02_02exQ.png "表1：新入店員が注文を受けてから商品を出すまでの時間（秒）" %}
 
-{% screenshot 03_exQ1.jpg %}
-
-![図](./pic/03_exQ1.jpg)
+{% screenshot 03_exQ1.jpg " " %}
 
 ### 仮説検定の流れ
 
@@ -72,7 +64,6 @@ purposes:
 <a href="#null_hypothesis">帰無仮説</a>を棄てるためには、その状況がめったに起こらないことを示す必要がありますが、「めったに」の程度は有意水準（significance level）$\alpha$で表され、その値は経験的に0.05（5%）か0.01（1%）を用います。後者のほうが、より厳しい条件となります。今回の検定では、有意水準$\alpha$ = 0.05とします。詳しくは<a href="../04/#chapter1">有意水準</a>を参照してください。
 
 
-
 ### 検定統計量$z$値の算出（正規分布として考える）
 
 $z$は以下の数式で求まります。
@@ -86,7 +77,6 @@ $z$は以下の数式で求まります。
 ただし、正規分布に従うといっても、正規分布の平均や標準偏差は様々です。そこで、<a href="#standardization_equation">上式</a>のように、平均$\mu_0$、標準偏差$\sigma / \sqrt{N}$の正規分布に従う値$\overline{x}$を、平均0、標準偏差1の<span id="standard_normal_distribution">標準正規分布</span>（standard normal distribution）に従う値に変換する、<span id="standardization">標準化</span>（standardization）と呼ばれる処理が必要となります。標準化によって、平均や標準偏差がそれぞれ異なる正規分布に従うデータも、標準正規分布に従う共通の<span id="test_statistic">検定統計量</span>（test statistic）$z$値へ変換することができ、その結果、問題が変わっても対象が変わっても、帰無仮説が成立する状況下で標本平均がある値（<a href="#chapter3">練習問題1</a>では60.5）になる確率を、検定統計量$z$値が生じ得る確率$p$値として、同じように求めることができるようになっています。
 
 
-
 ### $p$値の算出
 
 <a href="../04/#chapter1">有意水準</a>$\alpha$と比較する確率$p$値を算出します。<span id="p_of_z">$p$値</span>は、<a href="#standard_normal_distribution">標準正規分布</a>において$-z$以下の値が発生する確率と$z$以上の値が発生する確率の和です。<a href="#sample">標本</a>の取り方によって<a href="#sample_mean">標本平均</a>$\overline{x}$の値は大きくなったり小さくなったり変動しますが、<a href="#null_hypothesis">帰無仮説</a>の下では$\overline{x}$と$\mu_0$との差は小さいので、<a href="#test_statistic">検定統計量</a>$z$も0に近い値になり、$p$値は大きくなります。逆に、帰無仮説が成立しない場合、$z$は極端に大きいか、極端に小さい（負の数になる）ため、$p$値は小さくなります。
@@ -94,10 +84,7 @@ $z$は以下の数式で求まります。
 
 ### 判定
 
-![標準正規分布](./pic/02_05basis.png)
-
-![標準正規分布図](./pic/03_practice1.jpg "Rで正規分布を描くには次のコードを実行します。cruve(dnorm(x),-5,5)")
-
+{% screenshot 03_practice1.jpg "標準正規分布図　Rで正規分布を描くには次のコードを実行します。cruve(dnorm(x),-5,5)" %}
 
 <a href="#standard_normal_distribution">標準正規分布</a>はこのようなグラフを描きます。このグラフで、<a href="#p_of_z">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の受容か棄却かを決定します。
 <dl>
@@ -121,7 +108,7 @@ $z$は以下の数式で求まります。
 time <- c(64, 61, 67, 57, 62, 53, 69, 49, 73, 59, 67, 50, 58, 62, 56, 61)
 </pre>
 
-&#9313; kennteiを行います。
+&#9313; 検定を行います。
 
 ##### コード
 
@@ -145,6 +132,11 @@ mean of x
      60.5 
 </pre>
 
+* t : $t$値  
+* df : <a href="#dof_t">自由度</a>$\phi$  
+* p-value : <a href="#p_of_t">$p$値</a>  
+* 95 percent confidence interval : 95%<a href="#confidence_interval">信頼区間</a>  
+* mean of X : <a href="#sample_mean">標本平均</a> $ \overline{x}$ 
 
 ### 結果
 
@@ -162,11 +154,9 @@ mean of x
 
 ### 練習問題2
 
-<a href="http://www.mext.go.jp">文部科学省</a><cite>平成20年度学校保健統計調査</cite>の結果によると、6歳男児の身長は全国<a href="../01/#mean">平均</a>（仮説平均$\mu_0$）が 116.7 cmであることが分かっています。一方、同時期のある地域の6歳男児16名の身長は以下のとおりでした。この地域の6歳男児の身長は全国平均よりも高いと言えるでしょうか。
+<a href="http://www.mext.go.jp">文部科学省</a><cite>令和3年度学校保健統計調査</cite>の結果によると、6歳男児の身長は全国<a href="../01/#mean">平均</a>$\mu_0$が 116.7 cmであることが分かっています。一方、同時期のある地域の6歳男児16名の身長は以下のとおりでした。この地域の6歳男児の身長は全国平均よりも高いと言えるでしょうか。
 
-<span id="table2">表2：ある地域の6歳男児の身長(cm)</span>
-
-![表2](./pic/02_14exQ.png)
+{% screenshot 02_14exQ.png "表2：ある地域の6歳男児の身長(cm)" %}
 
 ### 仮説の設定
 
@@ -198,12 +188,7 @@ $ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 
 ### 判定
 
-![$t$分布3](./pic/03_practice2.png)
-
-![$t$分布1](./pic/02_16t3.png)
-
-![$t$分布2](./pic/02_17t100.png)
-
+{% screenshot 03_practice2.png "分布" %}
 
 <a href="#student_s_t-distribution">$t$分布</a>はこのようなグラフを描きます。 このグラフで、<a href="#p_of_t">$p$値</a>を表す面積が<a href="../04/#chapter1">有意水準</a>の確率を表す面積より大きいか小さいかで<a href="#null_hypothesis">帰無仮説</a>の棄却を決定します。なお、図のとおり、<a href="#dof_t">自由度</a>$\phi$によって、この$t$分布のグラフは変わります。
 
@@ -235,14 +220,13 @@ height <- c(116.4, 117.2, 119.4, 115.7, 116.4, 118.8, 121.7, 115.9, 115.0, 118.8
 ##### コード
 
 <pre class="Rcode">
-# この地域の母平均が116.7と等しいか
+# t検定
 t.test(height, mu=116.7)
 </pre>
 
 ##### 結果
 
 <pre class="Rres">
-
 	One Sample t-test
 
 data:  height
@@ -266,27 +250,13 @@ mean of x
 6歳男児の全国平均身長は116.7なので、この地域の母<a href="../01/#mean">平均</a>を116.7と仮定したところ、
 <a href="#p_of_t">$p$値</a> = 0.016469 < <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05となり、
 <a href="#sample_mean">標本平均</a>（ある地域の6歳男児16名の平均身長）が118.2063となることは稀だとわかりました。
-したがって、この地域の母平均が116.7未満の値だと標本平均（118.2063）との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。
+したがって、この地域の母平均が116.7未満の値だと標本平均（118.2063）との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。  
+よって、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>（  $\mu$  (この地域の6歳男児の平均身長) =　$\mu_0$（6歳男児の全国平均身長））は棄却されます。
 
-よって、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>（  $\mu (この地域の6歳男児の平均身長) =　\mu_0$（6歳男児の全国平均身長））は棄却されます。
+その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。
+{% screenshot 03_practice3.png "pの割合" %}
 
-下図の塗りつぶされた領域が全体に対してpの割合になっています。
-
-![pの割合の図](./pic/03_practice3.png)
-
-
-<a href="#p_of_t">$p$値</a> = 0.01647 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 であり、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
-
-![$t$値を用いた$p$値の図示](./pic/02_practice2_t.png)
-![標本平均を用いた$p$値の図示](./pic/02_practice2_height2.png)
-
-なお、帰無仮説でこの地域の母<a href="../01/#mean">平均</a>を116.7と仮定したところ、<a href="#sample_mean">標本平均</a>が118.2063となることは稀だとわかりました。したがって、この地域の母平均が116.7未満の値だと標本平均との差が開く一方になり、この地域の母平均を116.7未満とする仮説は棄却されることが明らかです。その結果、この地域の母平均は116.7より高い値であることになり、この地域の6歳男児の身長は全国平均よりも高いと言えることになります。
-
-
-* <a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>：$\mu = \mu_0$
-* <a href="#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：$\mu \ne \mu_0$
 
 1つの母平均に関する推定（母標準偏差が未知のとき）
 -------------------------------------------------
@@ -311,25 +281,9 @@ $\overline{x} - t_\phi (\alpha) \frac{s}{\sqrt{N}} &lt; \mu &lt; \overline{x} + 
 <a href="#chapter13">練習問題2</a>のある地域の6歳男児身長の母<a href="../01/#mean">平均</a>の取り得る範囲について、<a href="#confidence_coefficient">信頼係数</a>95％の<a href="#confidence_interval">信頼区間</a>で考えてみましょう。
 
 
-### Excelの操作
+### Rの操作
 
-<a href="#chapter13">練習問題2</a>で使ったファイルに追記します。
-
-&#9312; 推定用の項目をF列へ入力し、既知のデータをG列へ入力します。
-
-{% screenshot 02_25input2.png "推定用の項目" %}
-
-&#9313; 推定用のデータを算出するために、以下のように入力します。
-
-* "G3"：<code>=T.INV.2T(1-G2,D8)</code>（<a href="#critical_value">臨界値</a>）
-* "G4"：<code>=D4<strong>-</strong>G3*D6</code>（<a href="#lower_confidence_limit">下側信頼限界</a>）
-* "G5"：<code>=D4<strong>+</strong>G3*D6</code>（<a href="#upper_confidence_limit">上側信頼限界</a>）
-
-{% screenshot 02_26input2.png "推定用データ" %}
-
-なお、<code>T.INV.2T(1-</code>$\alpha$<code>,</code>$\phi$<code>)</code>は臨界値$t_\phi (\alpha)$を求めます（<a href="https://support.office.com/ja-jp/article/T-INV-2T-関数-ce72ea19-ec6c-4be7-bed2-b9baf2264f17"><code>T.INV.2T</code>関数</a>）。
-
-"G4"は<code>=D4-CONFIDENCE.T(1-G2,D5,D3)</code>、"G5"は<code>=D4+CONFIDENCE.T(1-G2,D5,D3)</code>、と求めることもできます（ただし、"G2"の表示形式を「標準」に変えておく必要があります）。<code>CONFIDENCE.T(</code>$\alpha$<code>,</code>$s$<code>,</code>$N$<code>)</code>は$t_\phi (\alpha) s / \sqrt{N}$を与えます（<a href="https://support.office.com/ja-jp/article/CONFIDENCE-T-関数-e8eca395-6c3a-4ba9-9003-79ccc61d3c53"><code>CONFIDENCE.T</code>関数</a>）。
+<a href="#chapter13">練習問題2</a>で行った検定の結果を見ます。
 
 
 ### 結果
