@@ -12,7 +12,7 @@ purposes:
 <div class="panel-body">
 今回使うファイルです。ダウンロードしてください。必要に応じてご利用ください。文字コードはUTF-8です。
 <ul>
-<li><a href="04_1.csv">[練習問題1]東京と愛媛のみかん5kgあたりの価格（円）(04_1.csv)</a></li>
+<li><a href="04_1.csv" download>[練習問題1]東京と愛媛のみかん5kgあたりの価格（円）(04_1.csv)</a></li>
 </ul>
 </div>
 </div>
@@ -58,7 +58,7 @@ purposes:
 
 東京と愛媛のみかんの価格について調べたところ、以下のような<a href="../02/#sample">標本</a>が得られました。東京と愛媛ではみかん5kgあたりの価格の<a href="../01/#mean">平均</a>に差があるといえるでしょうか。
 
-　<a href="04_1.csv">[練習問題1]東京と愛媛のみかん5kgあたりの価格（円）(04_1.csv)</a>　
+　<a href="04_1.csv" download>[練習問題1]東京と愛媛のみかん5kgあたりの価格（円）(04_1.csv)</a>　
 
 
 ### 仮説の設定
@@ -121,7 +121,7 @@ $\displaystyle V_\text{AB} = \frac{S_\text{A} + S_\text{B}}{\phi}$
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
 $\displaystyle t = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\sqrt{V_\text{AB} \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}}$
-ここで、$\overline{x}\_\text{A}$は東京の<a href="../02/#sample_mean">標本平均</a>、$\overline{x}\_\text{B}$は愛媛の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$はＡ組の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$はＢ組の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことがわかっています。
+ここで、$\overline{x}\_\text{A}$は東京の<a href="../02/#sample_mean">標本平均</a>、$\overline{x}\_\text{B}$は愛媛の標本平均、$V_\text{AB}$は<a href="chapter8">共通分散</a>、$N_\text{A}$は東京の<a href="../01/#sample_size">標本の大きさ</a>、$N_\text{B}$は愛媛の標本の大きさです。なお、この検定統計量$t$値は自由度$\phi$の<a href="../02/#student_s_t-distribution">$t$分布</a>に従うことがわかっています。
 
 
 ### $p$値の算出
@@ -143,7 +143,7 @@ $\displaystyle t = \frac{\overline{x}\_\text{A} - \overline{x}\_\text{B}}{\sqrt{
 
 Rを使って、<a href="#chapter5">練習問題1</a>に取り掛かりましょう。
 
-&#9312; 東京のみかんの価格と愛媛のみかんの価格との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。すでにデータを入力してある　<a href="04_1.csv">[練習問題1]東京と愛媛のみかん5kgあたりの価格（円）(04_1.csv)</a>　を利用しても構いません。
+&#9312; 東京のみかんの価格と愛媛のみかんの価格との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。
 
 ##### コード
 
@@ -215,7 +215,7 @@ mean of x mean of y
 $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}<\mu_A-\mu_B<(\overline{x}_A-\overline{x}_B)+t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}$
 
 
-<a href="#chapter5">練習問題1</a>のＡ組の母<a href="../01/#mean">平均</a>とＢ組の母平均との差$\mu_\text{A} - \mu_\text{B}$が取り得る範囲について、95%<a href="../02/#confidence_interval">信頼区間</a>で考えてみましょう。
+<a href="#chapter5">練習問題1</a>の東京の母<a href="../01/#mean">平均</a>と愛媛の母平均との差$\mu_\text{A} - \mu_\text{B}$が取り得る範囲について、95%<a href="../02/#confidence_interval">信頼区間</a>で考えてみましょう。
 
 #### 結果
 
@@ -233,22 +233,53 @@ Studentの$t$検定の実行結果から、東京の母<a href="../01/#mean">平
 
 ### 練習問題2
 
-ある学校のＣ組とＤ組のテスト結果について調べたところ、以下のような<a href="../02/#sample">標本</a>が得られました。Ｃ組とＤ組ではクラスの<a href="../01/#mean">平均</a>点に差があるといえるでしょうか。
+ある学校のA組とB組のテスト結果について調べたところ、以下のような<a href="../02/#sample">標本</a>が得られました。A組とB組ではクラスの<a href="../01/#mean">平均</a>点に差があるといえるでしょうか。
 
-{% screenshot 04_practice2_data.png "表2：ある学校のテスト結果（点）" %}
+<br />
+
+表2：ある学校のテスト結果（点）
+<table>
+  
+  <tr>
+    <td>A組</td>
+    <td>27</td>
+    <td>98</td>
+    <td>48</td>
+    <td>74</td>
+    <td>91</td>
+    <td>8</td>
+    <td>88</td>
+    <td>78</td>
+    <td>93</td>
+    <td>30</td>
+    <td>72</td>
+  </tr>
+  <tr>
+    <td>B組</td>
+    <td>32</td>
+    <td>62</td>
+    <td>29</td>
+    <td>45</td>
+    <td>42</td>
+    <td>56</td>
+    <td>21</td>
+    <td>24</td>
+    <td>32</td>
+  </tr>
+</table>
 
 
 ### 仮説の設定
 
-* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：Ｃ組とＤ組では<a href="../01/#mean">平均</a>点に差がない（$\mu_\text{C} = \mu_\text{D}$）
-* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：Ｃ組とＤ組では平均点に差がないとは言えない（$\mu_\text{C} \ne \mu_\text{D}$）
+* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：A組とB組では<a href="../01/#mean">平均</a>点に差がない（$\mu_\text{A} = \mu_\text{B}$）
+* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：A組とB組では平均点に差がないとは言えない（$\mu_\text{A} \ne \mu_\text{B}$）
 
-ここで、$\mu_\text{C}$はＣ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{D}$はＤ組全員のテスト結果を母集団とする母平均です。
+ここで、$\mu_\text{A}$はA組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{B}$はB組全員のテスト結果を母集団とする母平均です。
 
-なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchの$t$検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
+なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchの$t$検定）</a>では、A組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$とB組の標本平均$\overline{x}\_\text{B}$との差$\overline{x}\_\text{A} - \overline{x}\_\text{B}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
 
-* 帰無仮説H<sub>0</sub>：$\mu_\text{C} - \mu_\text{D} = 0$
-* 対立仮説H<sub>1</sub>：$\mu_\text{C} - \mu_\text{D} \ne 0$
+* 帰無仮説H<sub>0</sub>：$\mu_\text{A} - \mu_\text{B} = 0$
+* 対立仮説H<sub>1</sub>：$\mu_\text{A} - \mu_\text{B} \ne 0$
 
 と表すほうが理解しやすいかもしれません。
 
@@ -262,37 +293,37 @@ Studentの$t$検定の実行結果から、東京の母<a href="../01/#mean">平
 
 以下の数式で<a href="../02/#test_statistic">検定統計量</a>$t$値を求めます。
 
-$\displaystyle t_0=\frac{\overline{x}\_C-\overline{x}\_D}{\sqrt{\frac{V_C}{n_C}+\frac{V_D}{n_D}}}$
+$\displaystyle t_0=\frac{\overline{x}\_A-\overline{x}\_B}{\sqrt{\frac{V_A}{n_A}+\frac{V_B}{n_B}}}$
 
-<a href="#chapter4">等分散を仮定したとき</a>と同様に、Ｃ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{C}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{C}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｄ組の母集団が平均$\mu_\text{D}$、標準偏差$\sigma_\text{D}$の正規分布に従うとすると、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は、平均$\mu_\text{C} - \mu_\text{D}$、標準偏差
+<a href="#chapter4">等分散を仮定したとき</a>と同様に、A組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{A}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{A}$の<a href="../02/#normal_distribution">正規分布</a>に従い、B組の母集団が平均$\mu_\text{B}$、標準偏差$\sigma_\text{B}$の正規分布に従うとすると、A組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$とB組の標本平均$\overline{x}\_\text{B}$との差$\overline{x}\_\text{A} - \overline{x}\_\text{B}$は、平均$\mu_\text{A} - \mu_\text{B}$、標準偏差
 
-$\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$
+$\displaystyle \sqrt{\frac{\sigma_\text{A}^2}{N_\text{A}} + \frac{\sigma_\text{B}^2}{N_\text{B}}}$
 
-の正規分布に従うことがわかっています。ここで、<a href="../02/#null_hypothesis">帰無仮説</a>の下（$\mu_\text{C} - \mu_\text{D} = 0$）では、$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は平均0、標準偏差
+の正規分布に従うことがわかっています。ここで、<a href="../02/#null_hypothesis">帰無仮説</a>の下（$\mu_\text{A} - \mu_\text{B} = 0$）では、$\overline{x}\_\text{A} - \overline{x}\_\text{B}$は平均0、標準偏差
 
-$\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$
+$\displaystyle \sqrt{\frac{\sigma_\text{A}^2}{N_\text{A}} + \frac{\sigma_\text{B}^2}{N_\text{B}}}$
 
 の正規分布に従うことになり、検定にあたっては<a href="../02/#standardization">標準化</a>した
 
-$\displaystyle z=\frac{\overline{x}_C-\overline{x}_D}{\sqrt{\frac{\sigma_C^2}{N_C}+\frac{\sigma_D^2}{N_D}}}$
+$\displaystyle z=\frac{\overline{x}_A-\overline{x}_B}{\sqrt{\frac{\sigma_A^2}{N_A}+\frac{\sigma_B^2}{N_B}}}$
 
-を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{C}^2$、$\sigma_\text{D}^2$は未知なので、<a href="#t">上の
+を考えることになります。しかし、母<a href="../01/#variance">分散</a>$\sigma_\text{A}^2$、$\sigma_\text{B}^2$は未知なので、<a href="#t">上の
 $t$
-の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{C}$、$V_\text{D}$を用いています。なお、<a href="#welch_s_t-test">Welchの$t$検定</a>では、この検定統計量$t$が<a href="#chapter22"> 等価自由度$\phi^*$ </a>の<a href="../02/#student_s_t-distribution">$t$分布</a>に近似的に従うことがわかっています。
+の式</a>ではそれぞれ<a href="../01/#variance">不偏分散</a>$V_\text{A}$、$V_\text{B}$を用いています。なお、<a href="#welch_s_t-test">Welchの$t$検定</a>では、この検定統計量$t$が<a href="#chapter22"> 等価自由度$\phi^*$ </a>の<a href="../02/#student_s_t-distribution">$t$分布</a>に近似的に従うことがわかっています。
 
 ### 等価自由度$\phi^*$の算出
 
 以下の数式で、等価自由度$\phi^*$を求めます。
 
-$\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{C}}{N_\text{C}} + \frac{V_\text{D}}{N_\text{D}} \right)}^2}{\displaystyle \frac{V_\text{C}}{N_\text{C}^2} \frac{V_\text{C}}{\phi_\text{C}} + \frac{V_\text{D}}{N_\text{D}^2} \frac{V_\text{D}}{\phi_\text{D}}}$
+$\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{A}}{N_\text{A}} + \frac{V_\text{B}}{N_\text{B}} \right)}^2}{\displaystyle \frac{V_\text{A}}{N_\text{A}^2} \frac{V_\text{A}}{\phi_\text{A}} + \frac{V_\text{B}}{N_\text{B}^2} \frac{V_\text{B}}{\phi_\text{B}}}$
 
 
-* $V_\text{C}$：Ｃ組の<a href="../01/#variance">不偏分散</a>
-* $V_\text{D}$：Ｄ組の不偏分散
-* $N_\text{C}$：Ｃ組の<a href="../01/#sample_size">標本の大きさ</a>
-* $N_\text{D}$：Ｄ組の標本の大きさ
-* $\phi_\text{C} = N_\text{C} - 1$：Ｃ組の不偏分散の自由度
-* $\phi_\text{D} = N_\text{D} - 1$：Ｄ組の不偏分散の自由度
+* $V_\text{A}$：A組の<a href="../01/#variance">不偏分散</a>
+* $V_\text{B}$：B組の不偏分散
+* $N_\text{A}$：A組の<a href="../01/#sample_size">標本の大きさ</a>
+* $N_\text{B}$：B組の標本の大きさ
+* $\phi_\text{A} = N_\text{A} - 1$：A組の不偏分散の自由度
+* $\phi_\text{B} = N_\text{B} - 1$：B組の不偏分散の自由度
 
 
 ### $p$値の算出
@@ -314,16 +345,16 @@ $\displaystyle \phi^* = \frac{\displaystyle {\left( \frac{V_\text{C}}{N_\text{C}
 
 Rを使って、<a href="#chapter18">練習問題2</a>に取り掛かりましょう。
 
-&#9312; Ｃ組のテスト結果とＤ組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。
+&#9312; A組のテスト結果とB組のテスト結果との間には<a href="#chapter2">対応がない</a>ので、まず<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行います。<a href="../levene_s_test/">ここ</a>を参照して等分散性の検定を行ってください。
 
 ##### コード
 
 <pre class="Rcode">
 # データの読み込み
-C<-c(27,98,48,74,91,8,88,78,93,30,72)
-D<-c(32,62,29,45,42,56,21,24,32)
+A<-c(27,98,48,74,91,8,88,78,93,30,72)
+B<-c(32,62,29,45,42,56,21,24,32)
 # 等分散かどうか
-var.test(C,D)
+var.test(A,B)
 </pre>
 
 ##### 結果
@@ -331,7 +362,7 @@ var.test(C,D)
 <pre class="Rres">
 F test to compare two variances
 
-data:  C and D
+data:  A and B
 F = 4.7805, num df = 10, denom df = 8, p-value = 0.03648
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:
@@ -348,7 +379,7 @@ ratio of variances
 
 <pre class="Rcode">
 # Welchの t 検定
-t.test(C, D,var=F)
+t.test(A, B,var=F)
 </pre>
 
 ##### 結果
@@ -356,7 +387,7 @@ t.test(C, D,var=F)
 <pre class="Rres">
 Welch Two Sample t-test
 
-data:  C and D
+data:  A and B
 t = 2.502, df = 14.576, p-value = 0.0248
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
@@ -369,7 +400,7 @@ mean of x mean of y
 
 #### 結果
 
-<a href="#p_of_t">$p$値</a> = 0.0248が求まりました。 よって、$p$値 = 0.0248 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、Ｃ組とＤ組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
+<a href="#p_of_t">$p$値</a> = 0.0248が求まりました。 よって、$p$値 = 0.0248 &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、A組とB組では点数の母<a href="../01/#mean">平均</a>に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
 ![$t$値を用いた$p$値の図示](./pic/03_practice2_t.png)
 
@@ -383,7 +414,65 @@ mean of x mean of y
 
 次のデータは、あるパーソナルジムにおける、受講生15人の入会前と入会後（入会から１年後）の体重を示したものです。入会後の体重は、入会前の体重よりも減っていると考えられるでしょうか。
 
-{% screenshot 04_practice3_data.png "表3：パーソナルジムに通う前後の体重（kg）" %}
+<br />
+表3：パーソナルジムに通う前後の体重（kg）
+<table>
+ <tr>
+    <th></th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th> 5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+    <th>11</th>
+    <th>12</th>
+    <th>13</th>
+    <th>14</th>
+    <th>15</th>
+  </tr>
+  <tr>
+    <td>入会前</td>
+    <td>68</td>
+    <td>77</td>
+    <td>54</td>
+    <td>80</td>
+    <td>118</td>
+    <td>84</td>
+    <td>82</td>
+    <td>69</td>
+    <td>97</td>
+    <td>76</td>
+    <td>94</td>
+    <td>50</td>
+    <td>81</td>
+    <td>98</td>
+    <td>66</td>
+  </tr>
+  <tr>
+    <td>入会後</td>
+    <td>64</td>
+    <td>64</td>
+    <td>41</td>
+    <td>74</td>
+    <td>112</td>
+    <td>71</td>
+    <td>70</td>
+    <td>66</td>
+    <td>80</td>
+    <td>72</td>
+    <td>90</td>
+    <td>44</td>
+    <td>72</td>
+    <td>91</td>
+    <td>47</td>
+  </tr>
+</table>
+
 
 ### 仮説の設定
 
@@ -492,10 +581,7 @@ mean difference
 
 ![標本平均を用いた$p$値の図示](./pic/03_practice3_score.png)
 
-よって、$p$値 = 7.362 x 10<sup>-6</sup> &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。入会前の体重と入会後の体重の母平均とには有意差があることがわかり、
-
-
-また、入会前の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{A}$ = 62.58333で入会後の標本平均$\overline{x}\_\text{B}$ = 68.75であることから、後期試験の成績（Ｂ）は、前期試験の成績（Ａ）よりも向上していると判断できます。
+よって、$p$値 = 7.362 x 10<sup>-6</sup> &lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05であるので、<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。入会前の体重と入会後の体重の母平均とには有意差があることが分かりました。
 
 
 ### 2つの母平均の差の推定（対応のあるデータ）
@@ -508,7 +594,7 @@ $\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \m
 
 #### 結果
 
-$t$検定の実行結果から、入会前の母<a href="../01/#mean">平均</a>と入会後の母平均との差$\mu_\text{B} - \mu_\text{A}$の95%<a href="../02/#confidence_interval">信頼区間</a>は6.247064 &lt; $\mu_\text{B} - \mu_\text{A}$ &lt; 11.886269と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は6.247064、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は11.886269で、下図の塗りつぶされた領域が全体の95%になっています。
+練習問題3の$t$検定の実行結果から、入会前の母<a href="../01/#mean">平均</a>と入会後の母平均との差$\mu_\text{B} - \mu_\text{A}$の95%<a href="../02/#confidence_interval">信頼区間</a>は6.247064 &lt; $\mu_\text{B} - \mu_\text{A}$ &lt; 11.886269と求まりました。<a href="../02/#lower_confidence_limit">下側信頼限界</a>は6.247064、<a href="../02/#upper_confidence_limit">上側信頼限界</a>は11.886269で、下図の塗りつぶされた領域が全体の95%になっています。
 
 ![$t$値を用いた信頼係数の図示](./pic/03_practice3_t_interval.png)
 
@@ -518,11 +604,12 @@ $t$検定の実行結果から、入会前の母<a href="../01/#mean">平均</a>
 課題1
 -------
 
-Ａ、Ｂの両地方で収穫した同種の大豆のタンパク質の含有率を調べたところ、次の結果が得られました。 含有率の正規性を仮定して、地方差が認められるか、<a href="../04/#chapter1">有意水準</a>5％で検定してください。
+Rにデフォルトで入っているモルモットの歯のデータセット（ToothGrowth）を使って、以下の検定をしてみましょう。
 
-<span id="table4">表4：Ａ、Ｂ地方の大豆のタンパク質含有率（％）</span>
+ToothGrowthデータセットはモルモットにビタミンCを投与した時の歯の長さのデータです。  
+「len：歯牙細胞（歯の成長を担う細胞）の長さ」「supp：ビタミンCの投与方法、OJはオレンジジュース、VCアスコルビン酸（ビタミンC）」「dose：ビタミンCの投与量（単位はmg/day）」
 
-![表4：Ａ、Ｂ地方の大豆のタンパク質含有率（％）](./pic/03_41Q.png)
+0.5mg/日でビタミンCを投与した場合、ビタミンCの接種方法（VC/OJ）によって歯の成長レベルに差があるといえるでしょうか。有意水準5％で検定してください。
 
 
 課題2
@@ -530,9 +617,31 @@ $t$検定の実行結果から、入会前の母<a href="../01/#mean">平均</a>
 
 次のデータはＡ市内のあるレストランとＢ市内のあるレストランのアルバイトの時給を示しています。2地域のレストランのアルバイトの時給に差はあるでしょうか。<a href="../04/#chapter1">有意水準</a>5％で検定してください。
 
-<span id="table5">表5：Ａ市、Ｂ市のあるレストランのアルバイトの時給（円）</span>
-
-![表5：Ａ市、Ｂ市のあるレストランのアルバイトの時給（円）](./pic/03_42Q.png)
+<br />
+表5：Ａ市、Ｂ市のあるレストランのアルバイトの時給（円）
+<table>
+  <tr>
+    <td>A市内レストラン（円）</td>
+    <td>750</td>
+    <td>880</td>
+    <td>770</td>
+    <td>850</td>
+    <td>900</td>
+    <td>800</td>
+    <td>950</td>
+    <td>780</td>
+  </tr>
+  <tr>
+    <td>B市内レストラン（円）</td>
+    <td>990</td>
+    <td>1100</td>
+    <td>1250</td>
+    <td>1200</td>
+    <td>850</td>
+    <td>800</td>
+    <td>900</td>
+  </tr>
+</table>
 
 
 課題3
@@ -540,6 +649,37 @@ $t$検定の実行結果から、入会前の母<a href="../01/#mean">平均</a>
 
 次のデータは7人があるダイエット法によりダイエットを行った前後の体重を表しています。このダイエット法で体重の変化は見られたと言って良いでしょうか。<a href="../04/#chapter1">有意水準</a>5％で検定してください。また、2つの母<a href="../01/#mean">平均</a>の差を<a href="../02/#confidence_coefficient">信頼係数</a>95％で<a href="../02/#section4.1">区間推定</a>してください。
 
-<span id="table6">表6：あるダイエット法の前後の体重(kg)</span>
-
-![表6：あるダイエット法の前後の体重(kg)](./pic/03_43Q.png)
+<br />
+表6：あるダイエット法の前後の体重(kg)
+<table>
+ <tr>
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <th>F</th>
+    <th>G</th>
+  </tr>
+  <tr>
+    <td>ダイエット前の体重（kg）</td>
+    <td>53.1</td>
+    <td>50.3</td>
+    <td>59.5</td>
+    <td>62.0</td>
+    <td>58.6</td>
+    <td>56.5</td>
+    <td>53.5</td>
+  </tr>
+  <tr>
+    <td>ダイエット後の体重（kg）</td>
+    <td>53.4</td>
+    <td>48.8</td>
+    <td>53.6</td>
+    <td>58.2</td>
+    <td>57.8</td>
+    <td>53.0</td>
+    <td>54.4</td>
+  </tr>
+</table>

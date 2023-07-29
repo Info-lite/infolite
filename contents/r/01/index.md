@@ -289,6 +289,26 @@ sd(prac) # 標準偏差
 summary(prac) # 最大値、四分位数、最小値を一括で計算
 </pre>
 
+##### 結果
+
+<pre class="Rres">
+> sum(prac) # 合計値
+[1] 25
+> mean(prac) # 平均値
+[1] 5
+> max(prac) # 最大値
+[1] 9
+> min(prac) # 最小値
+[1] 1
+> var(prac) # 分散
+[1] 10
+> sd(prac) # 標準偏差
+[1] 3.162278
+> summary(prac) # 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       3       5       5       7       9 
+</pre>
+
 <br />
 
 課題
