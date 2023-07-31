@@ -12,7 +12,7 @@ purposes:
 今回使うファイルです。必要に応じてご利用ください。文字コードはUTF-8です。
 
 <ul>
-<li><a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a></li>
+<li><a href="07.csv" download>[練習問題]ジェラート屋の1日の売上(07.csv)</a></li>
 </ul>
 </div>
 </div>
@@ -69,7 +69,7 @@ $ \displaystyle \sum_{i = 1}^N Q_i^2$
 次のデータは、あるジェラート屋の1日の売上高と客数、気温のデータです。客数（$ x$）から売上高（$ y$）を予測してください。
 
 データ  
-<a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
+<a href="07.csv" download>[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
 
 <br />
 
@@ -109,7 +109,6 @@ Coefficients:
 (Intercept)        kyaku  
    -42014.6        827.2  
 </pre>
-<br />
 
 回帰式$ y$ = 827.2 - 42014.6$ x$が求まりました。
 
@@ -125,12 +124,10 @@ plot(kyaku,uriage)
 abline(lm(uriage ~ kyaku, data<-data07))
 </pre>
 
-##### 結果
+実行すると、以下のようなグラフが出力されます。
 
-<pre class="Rres">
 {% screenshot 07_practice_result1.png " " %}
-</pre>
-<br />
+
 
 ### 回帰式の吟味
 
@@ -142,9 +139,9 @@ abline(lm(uriage ~ kyaku, data<-data07))
 * <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：回帰係数$ b$は予測に役立っている（$ b$ ≠ 0）
 
 
-#### 有意水準αの設定
+#### 有意水準$\alpha$の設定
 
-<a href="../04/#chapter1">有意水準</a>α = 0.05とします。
+<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
 
 <span id="section2.4.3"></span>
 #### 検定統計量$ F$値の算出
@@ -224,7 +221,7 @@ F-statistic:  57.9 on 1 and 27 DF,  p-value: 3.483e-08
 
 ![$p$値の図示](./pic/07_practice2_f.png)
 
-$p$値 = 3.483 × 10<sup>-08 </sup>&lt; <a href="../04/#chapter1">有意水準</a>α = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、<a href="#regression_equation">回帰式</a>は統計的に有意であると分かります。
+$p$値 = 3.483 × 10<sup>-08 </sup>&lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、<a href="#regression_equation">回帰式</a>は統計的に有意であると分かります。
 
 
 ### 決定係数
@@ -261,12 +258,21 @@ $ R^2$ = 0.682であると分かりました。
 重回帰分析
 ----------
 
+重回帰分析では、1つの目的変数を、単一の説明変数だけでなく、複数の説明変数から予測します。  
+予測する側の複数の変数（説明変数$ x$）から予測される側の変数（目的変数$ y$）に当て
+はまる式を立てると、次のようになります。  
+$ y = a$<sub>1</sub>$ x$<sub>1</sub>$  +  a$<sub>2</sub>$ x$<sub>2</sub>$  +  a$<sub>3</sub>$ x$<sub>3</sub>$  +  ... +  b$
+
+$ a$<sub>1</sub>,$ a$<sub>2</sub>,$ a$<sub>3</sub>のことを偏回帰係数、$ b$を定数項といいます。  
+$ x$や$ y$には観測変数の他、ダミー変数（ex.男0 女1）なども使われます。
+
+
 ### 練習問題2
 
 次のデータは、あるジェラート屋の1日の売上高と客数、気温のデータです。<a href="#chapter5">練習問題1</a>と同じデータです。今度は、客数（$ x$<sub>1</sub>）と気温（$ x$<sub>2</sub>）から売上高（$ y$）を予測してください。
 
 データ  
-<a href="07.csv">[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
+<a href="07.csv" download>[練習問題]ジェラート屋の1日の売上(07.csv)</a>　
 <br />
 
 ### Rの操作
@@ -327,12 +333,31 @@ F-statistic: 39.72 on 2 and 26 DF,  p-value: 1.247e-08
 
 ### 共線性の確認
 
+説明変数$ x$は独立していることが前提となるため、変数間の関係を確認する必要があります。モデル内の説明変数$ x$間に線形関係がある場合、共線性があると言います。多重共線性は、VIFで確認します。
 
+VIF(variance inflation factor) = 1 / (1-R)
+
+VIFが10以上になる場合は共線性を疑います。
+
+
+##### コード
+
+<pre class="Rcode">
+library(car)
+vif(data07.lm)
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+   kyaku     kion 
+2.318511 2.318511 
+</pre>
 
 
 ### 結果
 
-
+$p$値 = 1.247 × 10<sup>-08 </sup>&lt; <a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05 なので<a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、<a href="#regression_equation">回帰式</a>は統計的に有意であると分かります。
 
 
 
