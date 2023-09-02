@@ -130,6 +130,18 @@ $p$値 = 0.7872 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<s
 
 <br />
 
+### データ型の変換
+
+チーム名のデータ型をfactor型に変換しておきます。
+
+##### コード
+
+<pre class="Rcode">
+#チーム名をfactor型に変換
+team <- as.factor(data08$チーム)
+</pre>
+<br />
+
 ### 等分散性の確認
 
 正規性の検定より、チームA、B、Cのデータは全て正規分布に従うことが分かりました。次に、データの等分散性を確認します。２群の等分散性は`var()`で確認しましたが、３群以上の場合はバートレット検定`bartlett()`を用います。
@@ -158,7 +170,7 @@ $p$値 = 0.7872 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<s
 
 <pre class="Rcode">
 #等分散の検定（バートレットの等分散の検定）
-bartlett.test(data08$シュート数~data08$チーム)
+bartlett.test(data08$シュート数~team)
 </pre>
 
 ##### 結果
@@ -166,8 +178,9 @@ bartlett.test(data08$シュート数~data08$チーム)
 <pre class="Rres">
 	Bartlett test of homogeneity of variances
 
-data:  data08$シュート数 by data08$チーム
+data:  data08$シュート数 by team
 Bartlett's K-squared = 1.6029, df = 2, p-value = 0.4487
+
 </pre>
 
 $p$値 = 0.4487 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、データは等分散を仮定できると分かりました。
@@ -202,16 +215,16 @@ $p$値 = 0.4487 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<s
 
 <pre class="Rcode">
 #分散分析
-result08 <- data08$シュート数~data08$チーム
+result08 <- data08$シュート数~team
 summary (aov (result08))
 </pre>
 
 ##### 結果
 
 <pre class="Rres">
-              Df Sum Sq Mean Sq F value   Pr(>F)    
-data08$チーム   2  404.4   202.2   11.36 2.73e-05 ***
-Residuals     137 2439.2    17.8                     
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+team          2  404.4   202.2   11.36 2.73e-05 ***
+Residuals   137 2439.2    17.8                     
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 </pre>
@@ -230,18 +243,18 @@ $p$値 = 2.73 × 10<sup>-05</sup> &lt; 有意水準$\alpha$ = 0.05 なので、�
 
 <pre class="Rcode">
 #多重比較（チューキーとクレマーの方法）
-TukeyHSD(aov (result08)
+TukeyHSD(aov (result08))
 </pre>
 
 ##### 結果
 
 <pre class="Rres">
-Tukey multiple comparisons of means
+ Tukey multiple comparisons of means
     95% family-wise confidence level
 
 Fit: aov(formula = result08)
 
-$`data08$チーム`
+$team
           diff       lwr       upr     p adj
 B-A -4.0333333 -6.178392 -1.888275 0.0000511
 C-A -0.7031447 -2.729797  1.323508 0.6900033
@@ -258,8 +271,10 @@ C-B  3.3301887  1.264763  5.395615 0.0005868
 課題
 ----
 
+Rにデフォルトで入っているモルモットの歯のデータセット（ToothGrowth）を使って、以下の検定をしてみましょう。  
+ToothGrowthデータセットはモルモットにビタミンCを投与した時の歯の長さのデータです。  
+「len：歯牙細胞（歯の成長を担う細胞）の長さ」「supp：ビタミンCの投与方法、OJはオレンジジュース、VCアスコルビン酸（ビタミンC）」「dose：ビタミンCの投与量（単位はmg/day）」
 
-
-
+オレンジジュース(OJ)でビタミンCを投与した場合、歯牙細胞の長さは、投与量（1.0, 2.0, 3.0 (mg/day)）によって差があると言えるでしょうか。
 
 
