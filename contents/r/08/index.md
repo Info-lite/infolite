@@ -1,0 +1,280 @@
+---
+layout: page
+title: 分散分析（ANOVA）
+date: 2020-09-20 15:00:00 +0900
+purposes:
+    -Rを用いて、３つ以上のグループの母平均に有意な差があるかどうか検定する
+---
+
+<div class="panel panel-info">
+<div class="panel-body">
+今回使うファイルです。必要に応じてご利用ください。文字コードはUTF-8です。 
+<ul>
+<li><a href="08.csv" download>[練習問題]あるサッカーチームの1試合でのシュート数(08.csv)</a></li>
+</ul>
+</div>
+</div>
+
+一元配置分散分析
+------------------
+
+分散分析は、３群以上の平均値の差を検定するために用います。  
+２群の平均値の差の検定は$t$検定で検定しますが、３群に$t$検定を適用すると、有意水準が下がっていってしまい（0.95 × 0.95 × 0.95 = 0.86）第一種の過誤（偽陽性）を起こす可能性が高まります。そこで、３群間以上の平均値を比較する場合には$t$検定での多重検定は行わず、分散分析を用います。
+
+
+### 練習問題
+
+次のデータは、2022年度に行われたサッカーの試合において、あるチーム（A、B、C）の、1試合でのシュート回数を示したものです。サッカーチーム（A、B、C）の1試合でのシュート回数は、3チームで差があると言えるでしょうか。
+
+データ  
+<a href="08.csv" download>[練習問題]あるサッカーチームの1試合でのシュート数(08.csv)</a>
+
+
+### Rの操作
+
+Rを用いて<a href="#chapter5">練習問題</a>に取り掛かりましょう。
+
+### 正規性の確認
+
+分散分析（ANOVA）は、データに正規性があることを前提としているため、まずシャピロ・ウィルク検定を行い、データの正規性を確認します。
+
+#### 仮説の設定
+
+* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：データが正規分布に従う
+* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：データが正規分布に従わない
+
+#### 有意水準$\alpha$の設定
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+
+#### 判定
+
+<dl>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
+ 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 &gt; 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+
+#### Rの操作
+
+&#9312; データをRに入力します。
+
+##### コード
+
+<pre class="Rcode">
+# データの読み込み
+data08 <- read.csv("08.csv")
+</pre>
+<br />
+
+&#9313; 3つチームA、B、Cそれぞれについて、シャピロ・ウィルク検定を行い、正規性を確認します。
+
+##### コード
+
+<pre class="Rcode">
+# チームAについて、正規性の検定（シャピロ・ウィルク検定）
+shapiro.test(data08[1:45,2]) 
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+	Shapiro-Wilk normality test
+
+data:  data08[1:45, 2]
+W = 0.96708, p-value = 0.2262
+</pre>
+
+$p$値 = 0.2262 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、チームAはデータが正規分布に従うと分かります。
+
+<br />
+
+##### コード
+
+<pre class="Rcode">
+# チームBについて、正規性の検定（シャピロ・ウィルク検定）
+shapiro.test(data08[46:87,2])
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+	Shapiro-Wilk normality test
+
+data:  data08[46:87, 2]
+W = 0.9735, p-value = 0.4296
+</pre>
+
+$p$値 = 0.4296 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、チームBはデータが正規分布に従うと分かります。
+
+<br />
+
+##### コード
+
+<pre class="Rcode">
+# チームCについて、正規性の検定（シャピロ・ウィルク検定）
+shapiro.test(data08[88:140,2])
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+	Shapiro-Wilk normality test
+
+data:  data08[88:140, 2]
+W = 0.98601, p-value = 0.7872
+</pre>
+
+$p$値 = 0.7872 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、チームCはデータが正規分布に従うと分かります。
+
+<br />
+
+### データ型の変換
+
+チーム名のデータ型をfactor型に変換しておきます。
+
+##### コード
+
+<pre class="Rcode">
+#チーム名をfactor型に変換
+team <- as.factor(data08$チーム)
+</pre>
+<br />
+
+### 等分散性の確認
+
+正規性の検定より、チームA、B、Cのデータは全て正規分布に従うことが分かりました。次に、データの等分散性を確認します。２群の等分散性は`var()`で確認しましたが、３群以上の場合はバートレット検定`bartlett()`を用います。
+
+#### 仮説の設定
+
+* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：3群以上の母集団に等分散性がある（分散に差がない）
+* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：3群以上の母集団に等分散性がない（分散に差がある）
+
+#### 有意水準$\alpha$の設定
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+
+#### 判定
+
+<dl>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
+ 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 &gt; 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+
+#### Rの操作
+
+##### コード
+
+<pre class="Rcode">
+#等分散の検定（バートレットの等分散の検定）
+bartlett.test(data08$シュート数~team)
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+	Bartlett test of homogeneity of variances
+
+data:  data08$シュート数 by team
+Bartlett's K-squared = 1.6029, df = 2, p-value = 0.4487
+
+</pre>
+
+$p$値 = 0.4487 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、データは等分散を仮定できると分かりました。
+
+<br />
+
+### 分散分析
+
+データの正規性、等分散性を確認した後、分散分析（ANOVA）を行います。
+
+#### 仮説の設定
+
+* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：3群以上の母平均が全て同じである
+* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：3群以上の平均に異なる値が含まれている
+
+#### 有意水準$\alpha$の設定
+
+<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+
+#### 判定
+
+<dl>
+ 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
+ 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 &gt; 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
+</dl>
+
+#### Rの操作
+
+##### コード
+
+<pre class="Rcode">
+#分散分析
+result08 <- data08$シュート数~team
+summary (aov (result08))
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+team          2  404.4   202.2   11.36 2.73e-05 ***
+Residuals   137 2439.2    17.8                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+</pre>
+
+$p$値 = 2.73 × 10<sup>-05</sup> &lt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<sub>0</sub>は棄却されます。したがって、チームA、B、Cのシュート数の平均には、異なる値が含まれていると分かります。
+
+<br />
+
+### 多重比較
+
+分散分析（ANOVA）だけではどこかに差があることはわかりますが、どの要素間に差があるのかがわかりません。そこで、分散分析（ANOVA）の後に多重比較を行います。多重比較には様々な方法がありますが、今回はチューキーとクレマーの方法によって行います。
+
+#### Rの操作
+
+##### コード
+
+<pre class="Rcode">
+#多重比較（チューキーとクレマーの方法）
+TukeyHSD(aov (result08))
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+ Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = result08)
+
+$team
+          diff       lwr       upr     p adj
+B-A -4.0333333 -6.178392 -1.888275 0.0000511
+C-A -0.7031447 -2.729797  1.323508 0.6900033
+C-B  3.3301887  1.264763  5.395615 0.0005868
+</pre>
+
+
+### 結果
+
+多重比較からA-B間、B-C間には差があることがわかりました。一方、A-C間は差がありませんでした。
+
+
+
+課題
+----
+
+Rにデフォルトで入っているモルモットの歯のデータセット（ToothGrowth）を使って、以下の検定をしてみましょう。  
+ToothGrowthデータセットはモルモットにビタミンCを投与した時の歯の長さのデータです。  
+「len：歯牙細胞（歯の成長を担う細胞）の長さ」「supp：ビタミンCの投与方法、OJはオレンジジュース、VCアスコルビン酸（ビタミンC）」「dose：ビタミンCの投与量（単位はmg/day）」
+
+オレンジジュース(OJ)でビタミンCを投与した場合、歯牙細胞の長さは、投与量（1.0, 2.0, 3.0 (mg/day)）によって差があると言えるでしょうか。
+
+

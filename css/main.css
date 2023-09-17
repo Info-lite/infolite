@@ -151,3 +151,15 @@ div.container > div.thumbnail {
 #page-top:hover{ 
     background: rgba(0,0,0,.8);
 }
+
+.Rcode{
+    background-color: lightcyan;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+.Rres{
+    background-color: white;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+}
