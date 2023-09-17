@@ -226,13 +226,15 @@ mean of x
 
 <a href="#test_statistic">検定統計量</a>$t$は以下の数式で求まります。
 
-$ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
+\begin{align}
+  t = \frac{\bar{x}-\mu_0}{\frac{\hat{\sigma}}{\sqrt{n}}}
+\end{align}
 
-ここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$s$は<a href="#sample">標本</a>の<a href="../01/#standard_deviation">標準偏差</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
+$\bar{x}$は標本平均、$\mu_0$ は母平均、$\hat{\sigma}$ は標準偏差（不偏）、$n$ は標本の大きさ（サンプルサイズ）です。
 
-今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。
+今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$\hat{\sigma}$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。
 
-<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
+<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$n$を用いて$\phi&nbsp;= n - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
 
 
 ### $p$値の算出
