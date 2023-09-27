@@ -43,13 +43,16 @@ cat("Hello World!")
 Hello World!
 </pre>
 
-Hello World!と表示されれば成功です。
-
+cat()は与えられた文字列を画面に出力する関数です。  
+文字列は<code>" "</code>で囲みます。  
+  
+Hello World!と表示されれば成功です。  
+  
 Rコンソールでプログラムを書くこともできますが、本授業ではR言語の統合開発環境（IDE）であるR Studioを利用します。R Studioでは”プロジェクト”として関数、変数、作成したグラフのデータなどを一括で管理することができます。
 
 R Studioを起動して、本授業用の新規プロジェクトファイルを作成しましましょう。
 
-【注意】プロジェクトは必ずHドライブに保存してください。詳細は<a href="">こちら</a>
+【注意】プロジェクトは必ずHドライブに保存してください。
 
 {% screenshot 02_01data.png "R Studioの画面構成" %}
 
@@ -69,6 +72,8 @@ cat(1+1)
 <pre class="Rres">
 2
 </pre>
+  
+<code>1 + 1</code>の計算結果である<code>2</code>が出力されました。
 
 <br />
 
@@ -83,13 +88,15 @@ cat("1+1")
 <pre class="Rres">
 1+1
 </pre>
-
+  
+文字列として<code>1+1</code>が出力されました。
+  
 <br />
 
 ##### コード
 
 <pre class="Rcode">
-num = 1+1  
+num <- 1+1  
 cat(num)
 </pre>
 
@@ -98,7 +105,10 @@ cat(num)
 <pre class="Rres">
 2
 </pre>
-
+  
+1つ目のコードは一度変数に格納してから、出力することもできます。  
+変数への代入は<code><-</code>もしくは<code>=</code>を用います。
+  
 <br />
 
 ##### コード
@@ -113,6 +123,10 @@ cat(vec)
 <pre class="Rres">
 1 6 9 4 3
 </pre>
+  
+`c()`は「Combine Values into a Vector or List」という関数で、ベクトルを作成することができます。  
+この例では`1, 6, 9, 4, 3`というベクトルを、`vec`という変数に代入しています。  
+
 
 <br />
     
