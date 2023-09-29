@@ -54,7 +54,7 @@ R Studioを起動して、本授業用の新規プロジェクトファイルを
 
 【注意】プロジェクトは必ずHドライブに保存してください。
 
-{% screenshot 02_01data.png "R Studioの画面構成" %}
+{% screenshot rstudio.png "R Studioの画面構成" %}
 
 
 以下のプログラムを実行してみましょう。
