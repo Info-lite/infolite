@@ -65,7 +65,7 @@ CSVファイルからデータを読み込む
 
 少ないデータ量であれば1つずつ手で入力することもできますが、データ量が膨大な場合はCSVからデータを読み込むこともできます。  
 2020年10月1日〜2022年9月30日までの2年間の「新型コロナウイルス感染症 新規陽性者数」のデータを取得して、Rで読み込んでみましょう。  
-[newly_confirmed_cases_daily.csv](covid.csv)　【厚生労働省オープンデータを加工】  
+<a href="newly_confirmed_cases_daily.csv" download>newly_confirmed_cases_daily.csv</a>　【厚生労働省オープンデータを加工】  
 （データ出典：[厚生労働省オープンデータ https://www.mhlw.go.jp/stf/covid-19/open-data.html](https://www.mhlw.go.jp/stf/covid-19/open-data.html)）  
 
 このファイルには日付と都道府県ごとの新規陽性者数が格納されています。

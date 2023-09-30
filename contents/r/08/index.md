@@ -32,7 +32,7 @@ purposes:
 
 ### Rの操作
 
-Rを用いて<a href="#chapter5">練習問題</a>に取り掛かりましょう。
+Rを用いて練習問題に取り掛かりましょう。
 
 ### 正規性の確認
 
@@ -40,18 +40,18 @@ Rを用いて<a href="#chapter5">練習問題</a>に取り掛かりましょう�
 
 #### 仮説の設定
 
-* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：データが正規分布に従う
-* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：データが正規分布に従わない
+* 帰無仮説H<sub>0</sub>：データが正規分布に従う
+* 対立仮説H<sub>1</sub>：データが正規分布に従わない
 
 #### 有意水準$\alpha$の設定
 
-<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+有意水準$\alpha$ = 0.05とします。
 
 #### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
- 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 ≦ 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
  	<dt>$p$値 &gt; 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
@@ -148,18 +148,18 @@ team <- as.factor(data08$チーム)
 
 #### 仮説の設定
 
-* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：3群以上の母集団に等分散性がある（分散に差がない）
-* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：3群以上の母集団に等分散性がない（分散に差がある）
+* 帰無仮説H<sub>0</sub>：3群以上の母集団に等分散性がある（分散に差がない）
+* 対立仮説H<sub>1</sub>：3群以上の母集団に等分散性がない（分散に差がある）
 
 #### 有意水準$\alpha$の設定
 
-<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+有意水準$\alpha$ = 0.05とします。
 
 #### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
- 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 ≦ 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
  	<dt>$p$値 &gt; 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
@@ -193,18 +193,18 @@ $p$値 = 0.4487 &gt; 有意水準$\alpha$ = 0.05 なので、帰無仮説</a>H<s
 
 #### 仮説の設定
 
-* <a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>：3群以上の母平均が全て同じである
-* <a href="../02/#alternative_hypothesis">対立仮説</a>H<sub>1</sub>：3群以上の平均に異なる値が含まれている
+* 帰無仮説H<sub>0</sub>：3群以上の母平均が全て同じである
+* 対立仮説H<sub>1</sub>：3群以上の平均に異なる値が含まれている
 
 #### 有意水準$\alpha$の設定
 
-<a href="../04/#chapter1">有意水準</a>$\alpha$ = 0.05とします。
+有意水準$\alpha$ = 0.05とします。
 
 #### 判定
 
 <dl>
- 	<dt><a href="#p_of_t">$p$値</a> ≦ <a href="../04/#chapter1">有意水準</a>α</dt>
- 	<dd><a href="../02/#null_hypothesis">帰無仮説</a>H<sub>0</sub>を棄却する</dd>
+ 	<dt>$p$値 ≦ 有意水準α</dt>
+ 	<dd>帰無仮説H<sub>0</sub>を棄却する</dd>
  	<dt>$p$値 &gt; 有意水準α</dt>
  	<dd>帰無仮説H<sub>0</sub>を受容する</dd>
 </dl>
