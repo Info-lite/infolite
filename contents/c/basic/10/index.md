@@ -31,7 +31,7 @@ purposes:
 
     これはmyprintの実行結果です。
 
-複雑な命令を単純化させたい場合や、複数の命令をまとめた名前を付けたい場合、繰り返し同じ処理を実行させたい場合、関数を使うと便利です。
+複雑な命令を単純化させたい場合や、複数の命令をまとめて名前を付けた処理にしたい場合、繰り返し同じ処理を実行させたい場合、関数を使うと便利です。
 
 
 関数の定義
@@ -50,48 +50,31 @@ purposes:
 
     int kaijou(int n){
         int i;
-        int sum = 0;
+        int sum = 1;
         for(i=1;i<=n;i++){
-          sum = sum + i;
+          sum = sum * i;
         }
-        return sum
+        return sum;
     }
 
-    void comb(int m, int n){
+    int comb(int m, int n){
         int v1 = kaijou(m);
         int v2 = kaijou(n);
         int v3 = kaijou(m-n);
         return v1 / (v2*v3);
     }
 
-もし最初のの例の`myprint`のように、関数の実行結果を利用しない場合、返戻値の型のところには`void`と書き、関数の最後の`return`は省略します。
+    main(){ 
+        int x; 
+        x = comb(10, 5); 
+        printf("10個の中から5個を並べる組み合わせは%d通りです。", x); 
+    } 
+
+もし最初の*Function.c*の例の`myprint`のように、関数の実行結果を利用しない場合、返戻値の型のところには`void`と書き、関数の最後の`return`は省略します。
 
 ### 引数の書き方
 
 引数は、定義している関数を実行する際に必要なものを記載します。例えば、階乗(`n!`)を計算する関数`kaijou`を定義するためにはint型の数値`n`が必要なので、この関数の引数として`int n`を書きます。引数は0個でも2個以上でも良く、配列・構造体・ポインタも使えます。
-
-
-### いろいろな引数の書き方
-
-*Argument.c*<br>
-
-    #include<stdio.h>
-
-    int add3(int n){
-      return n+3;
-    }
-
-    float ave(float m, float n){
-      return (m+n)/2.0;
-    }
-
-    int sum5(int a[5]){
-      return a[0]+a[1]+a[2]+a[3]+a[4];
-    }
-
-    int* pnt(int* p){
-      return p+1;
-    }
 
 
 ### プロトタイプ宣言
