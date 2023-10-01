@@ -49,7 +49,9 @@ C言語でプログラミングを行う場合、OSがWindowsのパソコンを�
 [このサイト](https://webkaru.net/clang/mingw-gcc-install/)を参考に、GCCのインストールを行ってください。
 
 
+<dl>
 <dt>パスの設定</dt>
+</dl>
 
 インストールしたMinGWを実行するためには**パス**の設定を行う必要があります。
 
