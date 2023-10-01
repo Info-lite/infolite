@@ -48,7 +48,7 @@ purposes:
 
 ![](./pic/while.png)
 
-[比較演算子](../04/index.html)
+[比較演算子](../04/index.html#chapter3)
 
 ### break文
 
