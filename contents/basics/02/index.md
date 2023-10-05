@@ -13,7 +13,7 @@ purposes:
 ------------------------
 
 <div class="alert alert-danger" role="alert">
-<p><strong>本学のコンピュータ・ネットワークシステム（教育研究用情報システム）を利用するためには、<a href="https://youtu.be/Krs2PHPCuEU" target="_blank">情報倫理講習</a>を受講する必要があります。</strong></p>
+<p><strong>本学のコンピュータ・ネットワークシステム（教育研究用情報システム）を利用するためには、<a href="https://youtu.be/Es5zyhpHgB8" target="_blank">情報倫理講習</a>を受講する必要があります。</strong></p>
 <p><strong>情報倫理講習が未受講かつ前回の授業に欠席した人は、大学の教育研究用情報システムを利用できません。教員またはチューターに申し出て、受講してください。</strong></p>
 </div>
 
