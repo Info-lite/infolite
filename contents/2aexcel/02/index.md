@@ -171,9 +171,12 @@ $z$は以下の数式で求まります。
 
 <a href="#test_statistic">検定統計量</a>$t$は以下の数式で求まります。
 
-$ \displaystyle t = \frac{\overline{x} - \mu_0}{\frac{s}{\sqrt{N}}}$
 
-ここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$s$は<a href="#sample">標本</a>の<a href="../01/#standard_deviation">標準偏差</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
+\begin{align}
+  t = \frac{\bar{x}-\mu_0}{\frac{\hat{\sigma}}{\sqrt{n}}}
+\end{align}
+
+sここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$\hat{\sigma}$ は<a href="../01/#standard_deviation">標準偏差（不偏）</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
 
 今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
 
@@ -247,9 +250,11 @@ Excelを使って、<a href="#chapter13">練習問題2</a>に取り掛かりま�
 
 母平均$\mu$の(1 - $\alpha$) ×&nbsp;100%信頼区間：
 
-$\overline{x} - t_\phi (\alpha) \frac{s}{\sqrt{N}} &lt; \mu &lt; \overline{x} + t_\phi (\alpha) \frac{s}{\sqrt{N}}$
+\begin{align}
+  \overline{x} - t_\phi (\alpha) \frac{\hat{\sigma}}{\sqrt{N}} &lt; \mu &lt; \overline{x} + t_\phi (\alpha) \frac{\hat{\sigma}}{\sqrt{N}}
+\end{align}
 
-ここで、$\overline{x}$は<a href="#sample_mean">標本平均</a>、$s$は標本の<a href="../01/#standard_deviation">標準偏差</a>、$\phi = N - 1$は<a href="#dof_t">自由度</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>、$t_\phi (\alpha)$は自由度$\phi$の<a href="#student_s_t-distribution">$t$分布</a>において$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和が$\alpha$となるような$t$を表します。なお、(1 - $\alpha$) ×&nbsp;100%を<span id="confidence_coefficient">信頼係数</span>（confidence coefficient）と呼び、$t_\phi (\alpha)$を自由度$\phi$の$t$分布における両側確率$\alpha$の$t$の<span id="critical_value">臨界値</span>（critical value）と呼びます。また、$\overline{x} - t_\phi (\alpha) s / \sqrt{N}$を<span id="lower_confidence_limit">下側信頼限界</span>（lower confidence limit）、$\overline{x} + t_\phi (\alpha) s / \sqrt{N}$を<span id="upper_confidence_limit">上側信頼限界</span>（upper confidence limit）と呼び、下側信頼限界から上側信頼限界までの区間を<span id="confidence_interval">信頼区間</span>（confidence interval）と呼びます。
+ここで、$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\hat{\sigma}$は標本の<a href="../01/#standard_deviation">標準偏差</a>、$\phi = N - 1$は<a href="#dof_t">自由度</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>、$t_\phi (\alpha)$は自由度$\phi$の<a href="#student_s_t-distribution">$t$分布</a>において$-t$未満の値が発生する確率と$t$より大きい値が発生する確率との和が$\alpha$となるような$t$を表します。なお、(1 - $\alpha$) ×&nbsp;100%を<span id="confidence_coefficient">信頼係数</span>（confidence coefficient）と呼び、$t_\phi (\alpha)$を自由度$\phi$の$t$分布における両側確率$\alpha$の$t$の<span id="critical_value">臨界値</span>（critical value）と呼びます。また、$\overline{x} - t_\phi (\alpha) s / \sqrt{N}$を<span id="lower_confidence_limit">下側信頼限界</span>（lower confidence limit）、$\overline{x} + t_\phi (\alpha) s / \sqrt{N}$を<span id="upper_confidence_limit">上側信頼限界</span>（upper confidence limit）と呼び、下側信頼限界から上側信頼限界までの区間を<span id="confidence_interval">信頼区間</span>（confidence interval）と呼びます。
 
 
 ### 練習問題3
