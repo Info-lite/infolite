@@ -143,7 +143,8 @@ $z$は以下の数式で求まります。
 
 <pre class="Rcode">
 # データの読み込み
-time 信頼区間</a>  
+time 信頼区間
+</pre>
 * mean of X : 標本平均 $ \overline{x}$ 
 
 ### 結果
@@ -246,7 +247,8 @@ Rを使って、練習問題2に取り掛かりましょう。
 
 <pre class="Rcode">
 # データの読み込み
-height 信頼区間</a>  
+height 信頼区間
+</pre>
 * mean of X : 標本平均 $ \overline{x}$  
 
 ### 結果
@@ -271,7 +273,7 @@ $p$値 = 0.016469 < 有意水準$\alpha$ = 0.05となり、
 
 <span id="interval_estimation">区間推定</span>（interval estimation）は、母平均や母分散などの<span id="parameter">母数</span>（parameter）を1つの値として推定（点推定）するのではなく区間として推定します。すなわち、推定したい母平均や母分散などを含んでいる範囲はどこからどこまでなのかを考えます。例えば、次式は、体重の母平均の取り得る範囲（信頼区間）を示しています。
 
-57 kg ≤ $\mu$ ≤ 67 kg （信頼係数95%） → この式が成立する確率は95%です。
+57 kg ≤ $\mu$ ≤ 67 kg （信頼係数95%）
 
 母平均$\mu$の(1 - $\alpha$) ×&nbsp;100%信頼区間：
 
@@ -297,6 +299,8 @@ $\overline{x} - t_\phi (\alpha) \frac{s}{\sqrt{N}} &lt; \mu &lt; \overline{x} + 
 ![$t$値を用いた信頼係数の図示](./pic/02_practice3_t.png)
 
 ![身長を用いた信頼係数の図示](./pic/02_practice3_height.png)
+
+したがって、ある地域の6歳男児身長の簿平均の取り得る範囲については、117.017cmと119.3955cmの間にあると考えても95%の確率で正しいであろうといえます。
 
 
 課題1
