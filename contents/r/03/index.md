@@ -143,9 +143,40 @@ $z$は以下の数式で求まります。
 
 <pre class="Rcode">
 # データの読み込み
-time 信頼区間
+time <- c(64, 61, 67, 57, 62, 53, 69, 49, 73, 59, 67, 50, 58, 62, 56, 61)
 </pre>
-* mean of X : 標本平均 $ \overline{x}$ 
+<br />
+
+&#9313; 検定を行います。
+
+##### コード
+
+<pre class="Rcode">
+# T検定
+t.test(time, mu=60)
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+  One Sample t-test
+
+data:  time
+t = 0.29925, df = 15, p-value = 0.7689
+alternative hypothesis: true mean is not equal to 60
+95 percent confidence interval:
+ 56.93871 64.06129
+sample estimates:
+mean of x 
+     60.5 
+</pre>
+
+* t : $t$値  
+* df : <a href="#dof_t">自由度</a>$\phi$  
+* p-value : <a href="#p_of_t">$p$値</a>  
+* 95 percent confidence interval : 95%<a href="#confidence_interval">信頼区間</a>  
+* mean of X : <a href="#sample_mean">標本平均</a> $ \overline{x}$ 
+
 
 ### 結果
 
@@ -247,9 +278,41 @@ Rを使って、練習問題2に取り掛かりましょう。
 
 <pre class="Rcode">
 # データの読み込み
-height 信頼区間
+height <- c(116.4, 117.2, 119.4, 115.7, 116.4, 118.8, 121.7, 115.9, 115.0, 118.8, 118.3, 121.1, 116.3, 118.6, 122.4, 119.3)
 </pre>
-* mean of X : 標本平均 $ \overline{x}$  
+
+<br />
+
+&#9313; 検定を行います。
+
+##### コード
+
+<pre class="Rcode">
+# t検定
+t.test(height, mu=116.7)
+</pre>
+
+##### 結果
+
+<pre class="Rres">
+  One Sample t-test
+
+data:  height
+t = 2.6997, df = 15, p-value = 0.01647
+alternative hypothesis: true mean is not equal to 116.7
+95 percent confidence interval:
+ 117.0170 119.3955
+sample estimates:
+mean of x 
+ 118.2062 
+</pre>
+
+* t : $t$値  
+* df : <a href="#dof_t">自由度</a>$\phi$  
+* p-value : <a href="#p_of_t">$p$値</a>  
+* 95 percent confidence interval : 95%<a href="#confidence_interval">信頼区間</a>  
+* mean of X : <a href="#sample_mean">標本平均</a> $ \overline{x}$  
+
 
 ### 結果
 
