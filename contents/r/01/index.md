@@ -176,7 +176,7 @@ cat(vec)
 測定値が得られていない項目がある場合、有効でないことが明らかな値を入力します。Excelでは空白のままにしたり、ハイフン（-）を入力したりすることが多いようです。
 
 
-#### <span id="sample_size">標本の大きさ（sample size）$N$</span>
+#### <span id="sample_size">標本の大きさ（sample size）</span>
 
 欠損値以外の測定値の数です。
 

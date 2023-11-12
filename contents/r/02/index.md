@@ -189,7 +189,8 @@ y_tk_peek7th <- cov$Tokyo[620:730]  #東京都
 y_kanagawa_peek7th <- cov$Kanagawa[620:730]  #神奈川県
 y_saitama_peek7th <- cov$Saitama[620:730]  #埼玉県
 
-boxplot(list(y_tk_peek7th, y_kanagawa_peek7th, y_saitama_peek7th), names=c("Tokyo", "Kanagawa", "Saitama") , ylab="newly confirmed cases (number)",  col="white")
+boxplot(list(y_tk_peek7th, y_kanagawa_peek7th, y_saitama_peek7th), names=c("Tokyo", "Kanagawa", "Saitama") 
+, ylab="newly confirmed cases (number)",  col="white")
 </pre>
 {% screenshot 02_boxplot02.jpg "第７波での新規陽性者数の箱ひげ図" %}
 
@@ -268,7 +269,8 @@ plot(1:length(y_all), y_all, type="o", pch=16, cex=0.5, xlab="日数（日目）
 ------
 
 「[男女100名の身長と体重のデータ](kadai02.csv)」をダウンロードして以下の可視化を行ってみましょう。  
-データ：[男女100名の身長と体重のデータ](kadai02.csv)  
+データ： <a href="kadai02.csv" download>男女100名の身長と体重のデータ(kadai02.csv)</a>
+
 <br />
 １）男女間での身長のばらつきを可視化する。  
 ２）身長と体重の関係を可視化する。
