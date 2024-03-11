@@ -27,7 +27,7 @@ purposes:
 
 `frame.html` を適当なブラウザで表示させると、以下のようになります。
 
-{% screenshot frame_ps001.png "" %}
+{% screenshot frame_ps001_NEW.png "" %}
 
 ここで、それぞれのファイルの役割について説明しましょう。
 まず、`frame.html` によって、フレームの配置や大きさ等が指定されています。
