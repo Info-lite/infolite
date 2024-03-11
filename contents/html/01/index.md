@@ -34,7 +34,7 @@ HTMLの書き方（１）
 
 それでは、今作成したファイルを適当なブラウザで開いてみましょう。
 
-{% screenshot myhomepage001.png "" %}
+{% screenshot myhomepage001_NEW.png "" %}
 
 HTMLは、**タグ**と呼ばれる目印で文章を構成していきます。
 例えば、`<html>` や `<title>` などがタグです。
