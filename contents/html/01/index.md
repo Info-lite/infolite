@@ -186,6 +186,5 @@ HTMLを用いて、自己紹介のページを作成してみましょう。
 ### 学内サイト
 
 -   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
-<!--
-    -   [個人用ホームページ（学内向け）](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/system/www/make001.html)
--->
+    -   [個人用ホームページ（学内向け）](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/system/www.html)
+        学生のみの利用はできませんので、利用する場合は、担当教員から申請を出してください。
