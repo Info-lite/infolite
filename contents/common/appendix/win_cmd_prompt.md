@@ -4,7 +4,7 @@ title: コマンドプロンプトの使い方
 date: 2015-03-23 16:14:50 +0900
 ---
 
-ここでは、Windowsのコマンドプロンプトについて説明します。Mac OSXの場合は、[ターミナルの使い方](./mac_terminal.html)を参考にしてください。
+ここでは、Windowsのコマンドプロンプトについて説明します。MacOSの場合は、[ターミナルの使い方]（./mac_terminal.html）を参考にしてください。
 
 コマンドプロンプトの概要
 ------------------------
@@ -21,7 +21,7 @@ date: 2015-03-23 16:14:50 +0900
 
 ここに様々なコマンドを入力し、実行させます。
 
-よく似た機能として、<img src="pic/command_powershell.webp" />ターミナル(Windows PowerShell)も存在します。
+よく似た機能として、<img src="pic/command_powershell.webp" />ターミナル（Windows PowerShell）も存在します。
 <br>こちらはコマンドプロンプトより高度で、できる操作も多いですが、やや重いです。
 
 
