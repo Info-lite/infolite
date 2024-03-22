@@ -18,8 +18,8 @@ purposes:
 -   原則、情報倫理講習の未受講者は、本学の教育研究用情報システムを利用できません。
 -   上記の通りのやり方で受講するか、次回の授業前までに、開放利用中の情報処理教室において、チューターに申し出た上で「情報倫理講習」を受講してください。また、チェックテストに回答してください。
 -   初回の授業では、各クラスで担当教員が情報倫理講習について、（補足の）説明をする場合があります。
--   [情報倫理講習スライド資料(日本語版)](/lit/infoethics/information_ethics_ja.pdf)
--   [情報倫理講習スライド資料(英語版(English))](/lit/infoethics/information_ethics_en.pdf)
+-   [情報倫理講習スライド資料（日本語版）](/lit/infoethics/information_ethics_ja.pdf)
+-   [情報倫理講習スライド資料（英語版(English)）](/lit/infoethics/information_ethics_en.pdf)
 
 授業ガイダンス
 --------------
@@ -304,7 +304,7 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 
 ### 学外サイト
 
--   [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
+-   [秀まるおのホームページ（サイトー企画）](http://hide.maruo.co.jp/)
 -   [P検　無料タイピング練習［インターネット版］](https://www.pken.com/tool/typing.html)
 -   [FUJITSU 実践！タッチタイピング](https://azby.fmworld.net/usage/lesson/keyboard/typing/)
 -   [e-typing](https://www.e-typing.ne.jp/)
