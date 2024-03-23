@@ -342,7 +342,7 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 ### 学内サイト
 
 -   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
-    -   [情報処理教室](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/)
+    -   [情報処理教室](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc.html)
     -   [ハードウェア構成](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei.html)
     -   [ソフトウェア構成(Win)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-win.html)
     -   [ソフトウェア構成(Mac)](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/kousei-mac.html)
