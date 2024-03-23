@@ -255,7 +255,7 @@ ipconfigは、IPアドレスなどネットワークインターフェイスに�
 
     nslookup www.tmu.ac.jp
 
-{% screenshot nslookup.png "nslookup" %}
+{% screenshot ns.png "nslookup" %}
 
 ここで表示されているのはwww.tmu.ac.jp、つまり東京都立大学のWebサイトのIPアドレスです。複数のIPアドレスがあるのは、本学ウェブサイトへの集中したアクセスがあった際の対応として、各サーバに負荷を分散しているからです。
 
@@ -264,7 +264,7 @@ nslookupでは、逆にIPアドレスからドメインネームを得ること�
 
     nslookup 49.212.138.160
 
-{% screenshot nslookup_rev.png "nslookup による逆引き" %}
+{% screenshot ns_rev.png "nslookup による逆引き" %}
 
 
 情報検索
