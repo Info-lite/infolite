@@ -31,7 +31,7 @@ flowplayer_conf:
 <div class="modal-body">
 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
 <video>
-<source type="video/mp4" src="../../../../../mov/st03_test.mp4">
+<source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/st03_test.mp4">
 </video>
 </div>
 </div>
@@ -120,7 +120,7 @@ A組とB組ではクラスの平均点に差があるといえるでしょうか
 共通分散 $V$ は以下の数式で求めることができます。
 
 \begin{align}
-  V=\frac{S_A+S_B}{\phi_A+\phi_B}
+  V=\frac{S_A+S_B}{\varphi_A+\varphi_B}
 \end{align}
 
 $S_A,\ S_B$ = 各グループの平方和、
@@ -221,7 +221,7 @@ C組とD組ではクラスの平均点に差があるといえるでしょうか
 以下の数式で、等価自由度 $\varphi^*$ を求めます。
 
 \begin{align}
-  \phi^*=\frac{(\frac{V_A}{n_A}+\frac{V_B}{n_B})^2}{(\frac{V_A}{n_A})^2\frac{1}{n_A-1}+(\frac{V_B}{n_B})^2\frac{1}{n_B-1}}
+  \varphi^*=\frac{(\frac{V_A}{n_A}+\frac{V_B}{n_B})^2}{(\frac{V_A}{n_A})^2\frac{1}{n_A-1}+(\frac{V_B}{n_B})^2\frac{1}{n_B-1}}
 \end{align}
 
 ### $p$ 値の算出
@@ -255,7 +255,9 @@ Excelを用いて、練習問題2 に取り掛かりましょう。
 {% screenshot ttest05.png "t検定 : 分散が等しくないと仮定した2標本による検定の出力結果" %}
 
 $p$ 値 = 0.024411 が求まりました。
-よって、$p$ 値 = 0.024411 $<$ 有意水準 $\alpha$ = 0.05 であるので、C組とD組では点数の母平均に違いがあると判断されたことになります。
+設定した有意水準 $\alpha$ は 0.05 です。
+よって、$p$ 値 = 0.024411 $<$ 有意水準 $\alpha$ = 0.05 であるので、帰無仮説$H_0$ は棄却されます。
+C組とD組では点数の母平均に違いがあると判断されたことになります。
 
 
 2つの母平均の差の検定（対応のあるデータ）

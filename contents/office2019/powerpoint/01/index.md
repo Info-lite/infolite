@@ -10,7 +10,7 @@ purposes:
     <div class="panel panel-info">
     <div class="panel-heading">本講に関する学習動画</div>
         <div class="panel-body">
-            <p>本講の授業内容に関する【説明動画】が2つあります。これらの動画に加えて、本講で作成するファイルを完成させるために必要なExcelの機能について詳細に説明している【操作動画】もあります。操作動画は、その機能について説明している箇所で視聴できます。</p>
+            <p>本講の授業内容に関する【説明動画】と【PDF資料】があります。</p>
             <p><font color="red">注意：大人数が一斉に動画を再生すると動画が再生されないことがあります。時間をずらして視聴してください。</font></p>
 
             <div id="class_movie"></div>
@@ -28,7 +28,7 @@ purposes:
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
                                     <video>
-                                        <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/ppt1.mp4">
+                                        <source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/ppt1.mp4">
                                     </video>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ purposes:
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
                                     <video>
-                                        <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/ppt2.mp4">
+                                        <source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/ppt2.mp4">
                                     </video>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ purposes:
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
                                     <video>
-                                        <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/ppt3.mp4">
+                                        <source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/ppt3.mp4">
                                     </video>
                                 </div>
                             </div>
@@ -86,16 +86,16 @@ purposes:
                     </div>
                 </div>
             <br /><br /><br />
-            <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt1.pdf">1. 定義、意義・目的、PowerPointの概要 PDF資料</a>
+            <button type="button" class="btn btn-info pull-right" data-target="#third" style="color:#ffffff;">
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="ppt1.pdf" target="_blank">1. 定義、意義・目的、PowerPointの概要 PDF資料</a>
             </button>
             <br /><br />
-            <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt2.pdf">2. 内容と構成、準備の3段階 PDF資料</a>
+            <button type="button" class="btn btn-info pull-right"  data-target="#third" style="color:#ffffff;">
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="ppt2.pdf" target="_blank">2. 内容と構成、準備の3段階 PDF資料</a>
             </button>
             <br /><br />
-            <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#third" style="color:#ffffff;">
-              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="https://infolit.uec.tmu.ac.jp/mov/ppt3.pdf">3. スライドのデザイン、テーマと諸機能の活用 PDF資料</a>
+            <button type="button" class="btn btn-info pull-right"  data-target="#third" style="color:#ffffff;">
+              <i></i>&nbsp;<a id="third" style="color:#ffffff;" href="ppt3.pdf" target="_blank">3. スライドのデザイン、テーマと諸機能の活用 PDF資料</a>
             </button>
             </p>
         </div>
@@ -117,6 +117,7 @@ HTML を用いたプレゼンテーションでは、ウェブ上の資料を用
 
 授業では、プレゼンテーション資料の作成に広く用いられているソフトウェア PowerPoint を扱います。
 そして今回と次回を使ってスライドを作り、最終回にプレゼンテーション実演の時間を設けます。
+
 
 ここに、PowerPoint を使って「わたしの好きなWebページ」というテーマでプレゼンテーションを作成した例があります。
 プレゼンテーションについて、さらに PowerPoint はプレゼンテーションにおいてどのように利用できるのか考えてみましょう。
@@ -374,7 +375,7 @@ PowerPointの機能の紹介
 
 PowerPointでは、プレゼンテーションでの視覚的な効果をより強めるために、さまざまな機能を使うことができます。
 
-ここでは、冒頭に紹介した「わたしの好きなWebページ」というプレゼンテーションの中で使っている「アニメーション」「ハイパーリンク」「クリップアート」という3つの視覚効果の使い方を見ていきましょう。
+ここでは、冒頭に紹介した [わたしの好きなWebページ](sample.pptx)というプレゼンテーションの中で使っている「アニメーション」「ハイパーリンク」「クリップアート」という3つの視覚効果の使い方を見ていきましょう。
 
 ### アニメーション
 

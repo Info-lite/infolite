@@ -31,7 +31,7 @@ flowplayer_conf:
 <div class="modal-body">
 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
 <video>
-<source type="video/mp4" src="../../../../../mov/st01_statistics.mp4">
+<source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/st01_statistics.mp4">
 </video>
 </div>
 </div>
@@ -75,7 +75,7 @@ flowplayer_conf:
 基本統計量の意味
 ----------------
 
-<a href="#nominal_scale">名義尺度</a>・<a href="#ordinal_scale">順序尺度</a>の場合に求められる統計量には、各<a href="#category">カテゴリー</a>あるいは階級（class）のデータ数（<span id="frequency">度数</span>、frequency）とその度数が全体のデータ数（総度数）に占める割合（<span id="relative_frequency">相対度数</span>、relative frequency）とがあります。<a href="#continuous_scale">連続尺度</a>の場合に求められる主要な<a href="#summary_statistics">要約統計量</a>には、<a href="#quantile">分位数</a>、<a href="#mean">平均値</a>、<a href="#median">中央値</a>、<a href="#mode">最頻値</a>、<a href="#range">範囲</a>、<a href="#variance">分散</a>、<a href="#standard_deviation">標準偏差</a>、<a href="#skewness">歪度</a>、<a href="#kurtosis">尖度</a>などがあります。
+<a href="#nominal_scale">名義尺度</a>・<a href="#ordinal_scale">順序尺度</a>の場合に求められる統計量には、各<a href="#category">カテゴリー</a>あるいは階級（class）のデータ数（<span id="frequency">**度数**</span>、frequency）とその度数が全体のデータ数（総度数）に占める割合（<span id="relative_frequency">相対度数</span>、relative frequency）とがあります。<a href="#continuous_scale">連続尺度</a>の場合に求められる主要な要約統計量には、<a href="#quantile">分位数</a>、<a href="#mean">平均値</a>、<a href="#median">中央値</a>、<a href="#mode">最頻値</a>、<a href="#range">範囲</a>、<a href="#variance">分散</a>、<a href="#standard_deviation">標準偏差</a>、<a href="#skewness">歪度</a>、<a href="#kurtosis">尖度</a>などがあります。
 
 それぞれの統計量の意味は以下のとおりです。
 
@@ -142,7 +142,7 @@ $N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目
 
 #### <span id="variance">分散（variance）</span>
 
-Excelでは不偏分散（unbiased variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations））を$n - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
+Excelでは不偏分散（unbiased variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">**偏差**</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations））を$n - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
 
 $\displaystyle V = \frac{ \sum_{i = 1}^N {\left( x_i - \bar{x} \right)}^2 }{n - 1}$
 
