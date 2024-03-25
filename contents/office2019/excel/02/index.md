@@ -32,7 +32,7 @@ flowplayer_conf:
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
                                     <video>
-                                        <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/xl01_basic2.mp4">
+                                        <source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/xl01_basic2.mp4">
                                     </video>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ flowplayer_conf:
                             <div class="modal-body">
                                 <div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
                                     <video>
-                                        <source type="video/mp4" src="https://infolit.uec.tmu.ac.jp/mov/xl02_graph.mp4">
+                                        <source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/xl02_graph.mp4">
                                     </video>
                                 </div>
                             </div>
