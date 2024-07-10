@@ -263,9 +263,8 @@ sample estimates:
 
 $p$値 = 2.294 × 10<sup>-14</sup>が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![$t$値による$p$値の図示](./pic/06_practice3_t.png)
-
-![rによる$p$値の図示](./pic/06_practice3_r.png)
+{% screenshot 06_practice3_t.png " " %}
+{% screenshot 06_practice3_r.png " " %}
 
 $p$値 = 2.294 × 10<sup>-14</sup> &lt; 有意水準α = 0.05 なので帰無仮説H<sub>0</sub>は棄却されます。
 

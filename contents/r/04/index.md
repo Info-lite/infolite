@@ -202,8 +202,8 @@ mean of x mean of y
 
 $p$値 = 0.006507が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![$t$値を用いた$p$値の図示](./pic/03_practice1_t.png )
-![標本平均を用いた$p$値の図示](./pic/03_practice1_score.png)
+{% screenshot 03_practice1_t.png " " %}
+{% screenshot 03_practice1_score.png " " %}
 
 設定した有意水準$\alpha$は0.05であるので、$p$値 = 0.006507 &lt; 有意水準$\alpha$ = 0.05となり、帰無仮説H<sub>0</sub>は棄却されます。したがって、東京と愛媛でみかんの価格の母平均には差があると判断します。
 <br />
@@ -214,15 +214,14 @@ $p$値 = 0.006507が求まりました。下図の塗りつぶされた領域が
 
 $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}<\mu_A-\mu_B<(\overline{x}_A-\overline{x}_B)+t(\phi,\alpha)\sqrt{V(\frac{1}{n_A}+\frac{1}{n_B})}$
 
-
 練習問題1の東京の母平均と愛媛の母平均との差$\mu_\text{A} - \mu_\text{B}$が取り得る範囲について、95%信頼区間で考えてみましょう。
 
 #### 結果
 
 Studentの$t$検定の実行結果から、東京の母平均と愛媛の母平均との差$\mu_\text{A} - \mu_\text{B}$の95%信頼区間は-2035.6907 &lt; $\mu_\text{A} - \mu_\text{B}$ &lt; -355.0093と求まりました。下側信頼限界は-2035.6907、上側信頼限界は-355.0093で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![$t$値を用いた信頼係数の図示](./pic/03_practice1_t_interval.png)
-![点数を用いた信頼係数の図示](./pic/03_practice1_score_interval.png)
+{% screenshot 03_practice1_t_interval.png " " %}
+{% screenshot 03_practice1_score_interval.png " " %}
 
 
 等分散を仮定しないときの2つの母平均の差の検定・推定（対応のないデータ）
@@ -402,10 +401,8 @@ mean of x mean of y
 
 $p$値 = 0.0248が求まりました。 よって、$p$値 = 0.0248 &lt; 有意水準$\alpha$ = 0.05であるので、A組とB組では点数の母平均に違いがあると判断されたことになります。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![$t$値を用いた$p$値の図示](./pic/03_practice2_t.png)
-
-![標本平均を用いた$p$値の図示](./pic/03_practice2_score.png)
-
+{% screenshot 03_practice2_t.png " " %}
+{% screenshot 03_practice2_score.png " " %}
 
 2つの母平均の差の検定（対応のあるデータ）
 -----------------------------------------
@@ -577,9 +574,8 @@ $p$値 = 7.362 x 10<sup>-6</sup>が求まりました。
 
 下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![$t$値を用いた$p$値の図示](./pic/03_practice3_t.png)
-
-![標本平均を用いた$p$値の図示](./pic/03_practice3_score.png)
+{% screenshot 03_practice3_t.png " " %}
+{% screenshot 03_practice3_score.png " " %}
 
 よって、$p$値 = 7.362 x 10<sup>-6</sup> &lt; 有意水準$\alpha$ = 0.05であるので、帰無仮説H<sub>0</sub>は棄却されます。入会前の体重と入会後の体重の母平均とには有意差があることが分かりました。
 
@@ -596,9 +592,8 @@ $\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \m
 
 練習問題3の$t$検定の実行結果から、入会前の母平均と入会後の母平均との差$\mu_\text{B} - \mu_\text{A}$の95%信頼区間は6.247064 &lt; $\mu_\text{B} - \mu_\text{A}$ &lt; 11.886269と求まりました。下側信頼限界は6.247064、上側信頼限界は11.886269で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![$t$値を用いた信頼係数の図示](./pic/03_practice3_t_interval.png)
-
-![点数を用いた信頼係数の図示](./pic/03_practice3_score_interval.png)
+{% screenshot 03_practice3_t_interval.png " " %}
+{% screenshot 03_practice3_score_interval.png " " %}
 
 
 課題1

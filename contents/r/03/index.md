@@ -182,9 +182,8 @@ mean of x
 
 $p$値 = 0.7689が求まりました。下図の塗りつぶされた領域が全体に対してpの割合になっています。
 
-![z値を用いた$p$値の図示](./pic/02_practice1_z1.png)
-
-![標本平均を用いた$p$値の図示](./pic/02_practice1_time2.png)
+{% screenshot 02_practice1_z1.png " " %}
+{% screenshot 02_practice1_time2.png " " %}
 
 設定した有意水準$\alpha$は0.05です。$p$値 = 0.7689 &gt; 有意水準$\alpha$ = 0.05であるので、帰無仮説H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母平均は60ではないとは言えません。
 
@@ -359,9 +358,8 @@ $\overline{x} - t_\phi (\alpha) \frac{s}{\sqrt{N}} &lt; \mu &lt; \overline{x} + 
 
 母平均$\mu$の95%信頼区間は117.017 &lt; $\mu$ &lt; 119.3955と求まりました。下側信頼限界$\mu_{\text L}$ = 117.017、上側信頼限界$\mu_{\text U}$ = 119.3955で、下図の塗りつぶされた領域が全体の95%になっています。
 
-![$t$値を用いた信頼係数の図示](./pic/02_practice3_t.png)
-
-![身長を用いた信頼係数の図示](./pic/02_practice3_height.png)
+{% screenshot 02_practice3_t.png " " %}
+{% screenshot 02_practice3_height.png " " %}
 
 したがって、ある地域の6歳男児身長の簿平均の取り得る範囲については、117.017cmと119.3955cmの間にあると考えても95%の確率で正しいであろうといえます。
 
