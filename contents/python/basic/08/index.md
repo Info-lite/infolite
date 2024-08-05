@@ -52,7 +52,7 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
             self.name = '都立大'
             self.age = 20
             print('名前は、', self.name, 'です。')
-            print('年齢は、', self.name, '歳です。')
+            print('年齢は、', str(self.age), '歳です。')
 
     p1 = Person()
     p1.main()
@@ -108,7 +108,7 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 
         def show(self):
             print('名前は、', self.name, 'です。')
-            print('年齢は、', self.name, '歳です。')
+            print('年齢は、', str(self.age), '歳です。')
 
     p1 = Person()
     p1.main()
@@ -190,7 +190,7 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 
         def show(self):
             print('名前は、', self.name, 'です。')
-            print('年齢は、', self.name, '歳です。')
+            print('年齢は、', str(self.age), '歳です。')
 
         def getage(self):
             return self.age
@@ -224,7 +224,7 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 
         def show(self):
             print('名前は、', self.name, 'です。')
-            print('年齢は、', self.name, '歳です。')
+            print('年齢は、', str(self.age), '歳です。')
 
         def getage(self):
             return self.age
@@ -240,7 +240,8 @@ Pythonはスクリプト言語でありながら **オブジェクト指向プ�
 
 *実行結果*
 
-    年齢は20歳です。
+    名前は、都立大です。
+    年齢は、20歳です。
     5年後の年齢は、25歳です。
 
 ![](./pic/Hito05_python.png)
