@@ -11,6 +11,8 @@ purposes:
 ### 最も基本的な条件分岐
 まず、以下のソースコードを入力し、コンパイルして実行してみましょう。その際、入力する値をいろいろ試してみましょう。
 
+*ForkSample_01.py*<br>
+
     import sys
     print('数字を入力してください。 ')
     a0 = input()
@@ -117,6 +119,8 @@ purposes:
 ### else
 では、前のソースコードに少し付け加えてみましょう。
 
+*ForkSample_02.py*<br>
+
     import sys
     print('数字を入力してください。')
     a0 = input()
@@ -168,6 +172,8 @@ elseを使うと、if文の条件に合わなかった場合に実行する内�
 
 ### elif
 さらに複数の分岐をさせてみましょう。
+
+*ForkSample_03.py*<br>
 
     import sys
     print('数字を入力してください。')
