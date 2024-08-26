@@ -16,7 +16,7 @@ purposes:
 まず、以下のソースコードを打ち込み、コンパイルして実行してみましょう。
 
 *WhileLoopSample.java*<br>
-![](./pic/WhileLoopSample.java.png)
+![](./pic/WhileLoopSample1.png)
 
 実行すると、以下のように表示されます。
 
@@ -39,16 +39,16 @@ while文
     	x = x + 1;
     }
 
-![](./pic/while.png)
+![](./pic/explain_while.png)
 
-[比較演算子](../04/index.html)
+[比較演算子の一覧](../04/index.html#chapter3)
 
 ### break文
 
 では、次のように改良してみましょう。
 
 *WhileLoopSample.java*<br>
-![](./pic/WhileLoopSample.java.Mod1.png)
+![](./pic/WhileLoopSample2.png)
 
 実行すると、以下のようになります。
 
@@ -58,11 +58,9 @@ while文
     x = 1
     x = 2
 
-前のプログラムと実行結果は同じですが、
-少し動作が違います。とくに、`while` 文を見てみましょう。
-`while` 文の反復条件が `true` となっています。
-そのため、永遠に反復し続けます。
-いわゆる無限ループと呼ばれる状態です。
+前のプログラムと実行結果は同じですが、少し動作が違います。<br>
+とくに、`while` 文を見てみましょう。`while` 文の反復条件が `true` となっています。<br>
+そのため、永遠に反復し続けます。いわゆる無限ループと呼ばれる状態です。<br>
 しかし、結果を見れば明らかなように、きちんと3回で止まっています。
 これは、`break` 文によるものです。
 
@@ -94,7 +92,7 @@ break文
 まず、以下のソースコードを打ち込み、コンパイルしてみましょう。
 
 *ForLoopSample.java*<br>
-![](./pic/ForLoopSample.java.png)
+![](./pic/ForLoopSample1.png)
 
 実行すると、以下のようになります。
 
@@ -117,14 +115,14 @@ for文
     	System.out.println((i + 1) + "回目");
     }
 
-![](./pic/for.png)
+![](./pic/explain_for.png)
 
 ### プログラムの改良
 
 では、次のようにプログラムを改良してみましょう。
 
 *ForLoopSample.java*<br>
-![](./pic/ForLoopSample.java.Mod1.png)
+![](./pic/ForLoopSample2.png)
 
 まず、`for` 文の中のみで使う変数は、上のように宣言することができます。
 また、インクリメント演算子というものもあります。

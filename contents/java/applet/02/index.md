@@ -15,45 +15,36 @@ purposes:
 次のようなプログラムを実行してみましょう。
 
 *ClickCountApplet.java*<br>
-![](./pic/ClickCountApplet.java.png)
+![](./pic/ClickCountApplet.png)
+
+**※Eclipseの場合**、最後まで書ききるまではエラーが表示され続けます。
+
+以下はhtmlファイルの内容です。
 
 *click_count.html*<br>
-![](./pic/click_count.html.png)
+![](./pic/click_countHtml.png)
 
 ボタンを押した回数を表示するだけのプログラムです。
 
 では、プログラムを少し細かく見ていきましょう。
 
-まず、5行目を見てみましょう。
+![](./pic/ClickCountApplet_explain1.png)
 
-    public class ClickCountApplet extends Applet implements ActionListener
-
-これは、インタフェースの実装と呼ばれるものです。
-`ActionListener` は、ボタンが押された等のイベントを監視するものです。
-
-次に、クラス `ClickCountApplet` にあるメソッドを見てきましょう。
-
-    public void init() {
-    	bt = new Button("ボタン");		//ボタンクラスのインスタンスの生成
-    	this.add(bt);				    //アプレットにボタンを追加する
-    	bt.addActionListener(this);		//ボタンをリスナーに追加
-    }
-
-このメソッド `init()` は、初期化のためのメソッドです。ライフタイムの1つです。
-この他に、`stop()`, `start()`, `destroy()` 等があります。すべてオーバーライドして用います。
-
-次に、19行目以降を見てみましょう。
-
-    public void actionPerformed(ActionEvent ae) {
-    	i++;
-    	repaint();	//paint()を呼び出して再描画する
-    }
-
-`ActionListener` を実装したら、必ずこのメソッドを作成します。
+これは、インタフェースの実装と呼ばれるものです。<br>
+`ActionListener` を実装したら、必ず `actionPerformed()` メソッドを作成します。
 これは、イベントが起きた場合に実行されるメソッドです。この場合、ボタンがクリックされた時にあたります。
 
-`repaint()` は、もう一度paint()を呼び出し再描画するコマンドです。
+他のメソッドを見ていきましょう。
+
+メソッド `init()` は、アプレットにおける初期化のためのメソッドです。<br>
+今回は、この `init()` においてボタンの作成などを記述しています。
+
+![](./pic/ClickCountApplet_explain2.png)
+
+`repaint()` は、もう一度 `paint()` を呼び出し再描画するコマンドです。
 （正確には、`update()` が呼ばれ、その過程で `paint()` が呼ばれます）
+
+アプレット特有のメソッドとしては、今回登場した `init()` や `paint()` の他に、`stop()`, `start()`, `destroy()` 等があります。
 
 ### 複数のボタンを使う
 
@@ -61,9 +52,12 @@ purposes:
 htmlファイルは上の例を参考に自分で作成してみましょう。
 
 *ChangeColorApplet.java*<br>
-![](./pic/ChangeColorApplet.java.png)
+![](./pic/ChangeColorApplet.png)
 
-ボタンが複数ある場合、`getSource()` を用いて、どのボタンが押されたかを認識します。
+`actionPerformed()` には、引数として `ActionEvent` というクラスのデータが**自動的に**渡されます。<br>
+このデータは、何をクリックしたのか、またクリック時のマウスカーソルの座標など、便利な情報をたくさん持っています。
+
+今回は、その `ActionEvent` 型データの変数を `ae` と名付け、`ae.getSource()` というメソッドを用いてどのボタンをクリックしたかの情報を取得しています。
 
 
 練習問題

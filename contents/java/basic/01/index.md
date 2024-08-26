@@ -38,78 +38,101 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 ### ソフトウェアのインストール
 1. EclipseをPleiadesのサイトからダウンロード
 
-    PleiadesのWebサイト[https://mergedoc.osdn.jp/](https://mergedoc.osdn.jp/)にアクセスし、最新版の「Eclipse 2020」を選択します。
+    PleiadesのWebサイト[https://willbrains.jp/](https://willbrains.jp/)にアクセスし、「Eclipse 2023」を選択します。
 
-    {% screenshot Java_1.png "Eclipseのインストール" %}
+    {% screenshot Java_1.webp "Eclipseのインストール" %}
 
-    次に使用しているOSを確かめ、 Java列にある Full Edition をダウンロードします。
+    次に使用しているOSを確かめ、 Java列のダウンロードボタンをクリックします。
+    <br>※ファイルサイズは約1GBで、ダウンロードに10分程度かかります。
 
-    {% screenshot Java_2_Win.png "Eclipseのインストール" %}
+    {% screenshot Java_2.webp "Eclipseのインストール" %}
 
-    ダウンロードしたzipファイルになります。このファイルを展開するためには、[7-Zip](https://sevenzip.osdn.jp/)や[Lhaplus](https://forest.watch.impress.co.jp/library/software/lhaplus/)といった解凍ソフトを利用します。以降は7-Zipを利用した場合を用いて説明しますので、もし他の解凍ソフトを利用して解凍する場合はそのソフトの利用方法を自身で調べてください。
+    次に、ダウンロードしたファイル![pleiades-2023-12-java-win-64bit-jre_20240218.exe](pic/eclipse_downloaded.png)をダブルクリックします。
+    <br>少し待つと、以下のようなウィンドウが表示されます。
 
-    まず7-Zipを利用するためにはWebサイト[https://sevenzip.osdn.jp/](https://sevenzip.osdn.jp/)にアクセスし、自身のパソコンに適したものをダウンロードします。
+    {% screenshot Java_3.webp "Eclipseのインストール" %}
 
-    {% screenshot Java_5_Win.png "7-Zipのインストール" %}
+    解凍する場所を変えたい場合のみ [参照] から編集します。ショートカットなどは作成されないため、必要であれば場所を覚えておきましょう。
+    <br>準備ができたら [解凍] をクリックします。
+    <br>※解凍には数分かかります。
 
-    次に、解凍するzipファイルを右クリックで選択し、「7-Zip」「ここに展開」を選択するとファイルが解凍されます。
+    解凍が終わったら、解凍されたフォルダを開き、 [eclipse] フォルダ内に![eclipse.exe](./pic/eclipse_unzipped.png)があることを確認します。
+    <br>初期設定では`C:\pleiades\2023-12\eclipse`にあります。
+
 
 2. Eclipseの起動
 
-    先ほど展開したpleiadesフォルダ内にあるeclipseフォルダを開き、eclipse.exeを起動します。
+    ![eclipse.exe](./pic/eclipse_unzipped.png)をダブルクリック、または検索バー<img src="./pic/eclipse_search.png" height="30" alt="検索バー">を使い、eclipse.exeを起動します。
 
-    Eclipseを起動すると次のようなワークスペース選択画面が表示されます。ワークスペースはEclipseの設定フォルダや、その設定を用いた複数のプロジェクト（プログラム）をまとめたものです。参照からユーザーホーム内の適切なフォルダを指定し、ワークスペースを配置します。
+    **自宅のPC**の場合は、最初に次のような画面が表示されます。
 
-    {% screenshot Java_18_Win.png "ワークスペース選択画面" %}
+    {% screenshot Java_4.webp "ワークスペース選択画面" %}
 
-    ワークスペースを指定したら、Eclipseを起動します。
+    ワークスペースとは、Eclipseの設定に関するファイルや、今後みなさんが作成するjavaファイルが収納される場所のことです。
+    <br>初期設定の`../workspace`では  [eclipse] フォルダの隣となっています。分かりにくければ変更しても良いでしょう。
+
+    ※**学内PC**の場合は`H:\eclipse2023-12\workspace`に自動で作成されます。**誤って削除しないよう注意しましょう。**
+
+    ワークスペースを指定したら、 [起動] をクリックします。
 
     Eclipseが起動すると次の画面が表示されます。
 
-    {% screenshot Java_6_Win.png "Eclipseの画面" %}
+    {% screenshot Java_5_Win.webp "Eclipseの画面" %}
 
 3. Eclipseの画面構成
 
-    Eclipseの画面は「ビュー」と「エディタ領域」から構成されています。表示されているタブのことをビュー、白紙の領域をエディタ領域といいます。これらの配置などをまとめてパースペクティブと呼びます。
-    パースペクティブをJavaプログラミングに適したものにします。
-    ウインドウ右上にある ![perspective_1](./pic/Java_11_Win.png)をクリックし、「パースペクティブを開く」ダイアログからJavaを選択し、開くをクリックするとパースペクティブが切り替わります。
+    Eclipseの画面は「ビュー」と「エディタ領域」から構成されています。表示されているタブのことをビュー、白紙の領域をエディタ領域といいます。
 
-    {% screenshot Java_8_Win.png "パースペクティブを開く" %}
+    これらの配置などをまとめて**パースペクティブ**と呼びます。
+
+    {% screenshot Java_6_Win.webp "パースペクティブ" %}
+
+    パースペクティブをJavaプログラミングに適したものにします。
+    <br>ウインドウ右上にある ![perspective_1](./pic/Java_11_Win.webp)をクリックし、「パースペクティブを開く」ダイアログからJavaを選択し、開くをクリックするとパースペクティブが切り替わります。
+
+    {% screenshot Java_8_Win.webp "パースペクティブを開く" %}
 
     ビューを追加する場合は、ウィンドウ > ビューの表示 から追加したいビューをクリックします。
-    削除する場合はそれぞれの削除したいビュータブの上にある×をクリックします。
+    <br>削除する場合はそれぞれの削除したいビュータブの上にある×をクリックします。
 
-    {% screenshot Java_10_Win.png "ビューの追加" %}
+    {% screenshot Java_10_Win.webp "ビューの追加" %}
 
 ### プロジェクトファイルの作成と実行
 1. プロジェクトの作成
 
-    プロジェクトファイルを作成します。ファイル > 新規 > Javaプロジェクト の順にクリックすると新規Javaプロジェクトのダイアログが表示されます。
+    プロジェクトファイルを作成します。ファイル > 新規 > Javaプロジェクト の順にクリックします。
 
-    {% screenshot Java_12_Win.png "プロジェクトの作成" %}
+    {% screenshot Java_12_Win.webp "プロジェクトの作成" %}
 
-    プロジェクト名に任意の名前を入力して次へをクリックします。「module-info.javaファイルの作成」のチェックを外し、完了をクリックします。
+    新規Javaプロジェクトのダイアログが表示されます。
+    <br>「プロジェクト名」に任意の名前を入力し、「module-info.java ファイルの作成」のチェックが外れていることを確認し、 [完了] をクリックします。
 
-    {% screenshot Java_13_Win.png "プロジェクトの作成" %}
-
-    {% screenshot Java_14_Win.png "プロジェクトの作成" %}
+    {% screenshot Java_13_Win.webp "プロジェクトの作成" %}
 
     「パッケージ・エクスプローラー」ビューに作成したプロジェクトが表示されます。
 
 2. クラスファイルの作成
 
-    作成したプロジェクトファイル内にあるsrcフォルダにJavaのソースコードを作成します。Javaのソースコードはクラスファイルという形式です。srcフォルダを右クリックし、新規 > クラス を選択すると「新規Javaクラス」ダイアログが表示されます。「名前」の部分に任意のクラス名を入力して完了をクリックするとソースコードが入力できるようになります。
+    Javaのソースコードを作成します。Javaのソースコードはクラスファイルという形式です。
+    <br>先ほど作成したプロジェクトフォルダを右クリックし、新規 > クラス を選択します。
 
-    {% screenshot Java_15_Win.png "クラスファイルの作成" %}
+    {% screenshot Java_14_Win.webp "クラスファイルの作成" %}
+    
+    「新規Javaクラス」ダイアログが表示されます。
+    <br>「名前」の部分に任意のクラス名を入力して [完了] をクリックします。
 
-    {% screenshot Java_16_Win.png "クラスファイルの作成" %}
+    {% screenshot Java_15_Win.webp "クラスファイルの作成" %}
+
+    画面左のビューで、プロジェクトフォルダ > src > プロジェクト名のパッケージ > javaファイル という階層ができていることを確認します。
+    <br>これで準備完了です。画面右のエディタにソースコードを入力していきます。
+
+    {% screenshot Java_16_Win.webp "クラスファイルの作成" %}
 
 3. クラスファイルの実行
 
-    ソースコードの入力が完了したら、プログラムを実行します。
-    エディタ領域の空白部分かパッケージ・エクスプローラーの実行したいファイル上で右クリックをします。実行 > Javaアプリケーション の順に選択するとコンソールビューに標準出力の結果が表示されます。
+    ソースコードの入力が完了したら、ウィンドウ左上の![実行](./pic/Java_17_Win.webp)をクリックしてプログラムを実行できます。
+    <br>コンソールビューに標準出力の結果が表示されます。
 
-    {% screenshot Java_17_Win.png "クラスファイルの実行" %}
 
 ### 参考サイト
   - [Eclipse、はじめの一歩 - インストールから便利な日本語化プラグインの導入まで](https://employment.en-japan.com/engineerhub/entry/2020/03/19/103000)
@@ -121,6 +144,8 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
 ### Hello.java
 
+上記の通り、JavaのコードはEclipseで実行することができますが、実はコマンドプロンプト（ターミナル）でも実行することができます。ここではその方法を紹介します。
+
 以下のソースコードを、適当なエディタを用いて入力してみましょう。すべて**半角英数で入力**してください。
 
 
@@ -128,34 +153,39 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
     public class Hello {
     	public static void main(String[] args) {
-    		System.out.println("Hello");
+    		System.out.println("Hello!");
     	}
     }
 
 ファイル名は、**Hello.java**とし、**マイドキュメント**に保存してください。
-次に、コマンドプロンプト（ターミナル）を起動しましょう。そして、次のように入力します。
+<br>次に、コマンドプロンプト（ターミナル）を起動しましょう。そして、次のように入力します。
 
     javac Hello.java
 
+うまくいくと、自動的に改行され、再度コマンド入力ができるようになります。
+
 {% screenshot hello01.png "javac Hello.java の入力" %}
 
-うまくできたら、次は以下のように入力します。
+次は以下のように入力します。
 
     java Hello
 
-{% screenshot hello02.png "java Hello の入力" %}
-
 うまくいくと、以下のように表示されます。
 
-    Hello
+    Hello!
+    
+{% screenshot hello02.png "java Hello の入力と出力" %}
 
-{% screenshot hello03.png "Hello の出力" %}
+文字化けする場合、以下を参照してください。
+
+<span class="label label-info">参考資料</span> [コンパイルと実行 文字化けする場合](../../appendix/win_javac.html#chapter4)
 
 コマンドプロンプト・ターミナルの詳しい使い方は以下を参照してください。
 
 <span class="label label-info">参考資料</span> [コマンドプロンプトの使い方](../../../common/appendix/win_cmd_prompt.html)
 
 <span class="label label-info">参考資料</span> [ターミナルの使い方](../../../common/appendix/mac_terminal.html)
+
 
 
 Java言語の基本
@@ -167,8 +197,6 @@ Javaは、サン・マイクロシステムズによって開発された、プ�
 オブジェクト指向プログラミング言語の一種であり、プラットフォームに依存しないという特徴を持っています。
 アプリケーションはもちろん、Webサービスや携帯電話等でも使われています。
 サン・マイクロシステムズは、2010年1月27日にオラクルジャパンにより買収されました。
-
-- [オラクル ジャパン](http://www.oracle.com/jp/index.html)
 
 ### Java言語の簡単な仕組み
 
@@ -218,24 +246,35 @@ Hello.javaの解説 - ソースコード
 
 ### class
 
-さて、先ほど作成した `Hello.java` を見てみましょう。１行目に `public class Hello` と書かれています。
-これは、**クラス**と呼ばれるものです。
-詳しくはプログラムに慣れてから説明しますが、ひとまず**プログラムの大きなかたまり**と考えてください。
+さて、先ほど作成した `Hello.java` を見てみましょう。
+
+![class](./pic/hello_explain01.png)
+
+１行目の `public class Hello` は、**クラス**と呼ばれるものです。ひとまず**プログラムの大きなかたまり**だと考えてください。
+
 クラス名は**ファイル名と同じ**ものにしましょう。この理由も後々わかるかと思います。
+
 また、習慣として**クラス名の頭文字は大文字**にしています。
 
 ### main()
 
+![class](./pic/hello_explain02.png)
+
 ２行目は、`public static void main(String[] args)` となっています。
 この**main**と書かれた部分が**メインメソッド**と呼ばれる部分です。
+
 プログラムを実行すると、この後の中括弧 `{ }` の中に書かれていることが**必ず実行**されます。
+
 Javaプログラミングでは、このメインメソッドが**必要**です。プログラムの最も大事な部分になります。
 
 ### System.out.println()
 
-３行目は、`System.out.println("Hello")` となっています。
-これは、「ターミナルに文字を出力せよ」という命令です。ですから `java` コマンドで実行すると、ターミナルに "Hello." と表示されます。
-よく使うので覚えておきましょう。
+![class](./pic/hello_explain03.png)
+
+３行目の`System.out.println("Hello")` は、「ターミナルに文字を出力せよ」という命令です。
+
+ですから `java` コマンドで実行すると、ターミナルに "Hello." と表示されます。よく使うので覚えておきましょう。
+
 `ln` を除くと（つまり、`System.out.println()` を `System.out.print()` とすると）改行をしません。
 `ln` を除いたものも実行してみましょう。
 

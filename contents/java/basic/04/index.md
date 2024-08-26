@@ -16,7 +16,12 @@ purposes:
 まず、以下のソースコードを入力し、コンパイルして実行してみましょう。その際、入力する値をいろいろ試してみましょう。
 
 *ForkSample.java*<br>
-![](./pic/ForkSample.java.png)
+![](./pic/ForkSample1.png)
+
+<br>
+
+**※Eclipseを使っている場合、例によって、ソースコード文頭が変化することがあります。**
+
 
 実行結果は、以下のどちらかになります。
 
@@ -47,7 +52,8 @@ if文（１）
 
 ### 比較演算子
 
-比較演算子には、以下のようなものがあります。
+比較演算子には、以下のようなものがあります。<br>
+プログラム言語によって僅かに異なる部分があるので注意しましょう。
 
 <table class="table">
 <thead>
@@ -120,7 +126,7 @@ if文（１）
 では、前のソースコードに少し付け加えてみましょう。
 
 *ForkSample.java*<br>
-![](./pic/ForkSample.java.Mod1.png)
+![](./pic/ForkSample2.png)
 
 実行結果は、以下のどちらかになります。
 
@@ -159,7 +165,7 @@ if文（２）
 さらに複数の分岐をさせてみましょう。
 
 *ForkSample.java*<br>
-![](./pic/ForkSample.java.Mod2.png)
+![](./pic/ForkSample3.png)
 
 `1`, `2`, `3` を入力した場合はその値が表示され、それ以外の場合は1,2,3ではないと表示されます。
 `else if` を使うと、さらに分岐を増やすことができます。
@@ -194,7 +200,7 @@ if文（３）
 上のソースコードを、以下のように書き直して見ましょう。
 
 *SwitchSample.java*<br>
-![](./pic/SwitchSample.java.png)
+![](./pic/SwitchSample.png)
 
 前のプログラムと同じ動作をしているはずです。
 

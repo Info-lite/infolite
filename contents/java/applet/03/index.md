@@ -14,10 +14,10 @@ purposes:
 ### テキストボックスとラベル
 
 前回と同様に、ソースコードを打ち込み、実行してみましょう。
-htmlファイルは自分で作成してください。
+htmlファイルは省略します。
 
 *CalcApplet.java*<br>
-![](./pic/CalcApplet.java.png)
+![](./pic/CalcApplet.png)
 
 左の2つのテキストボックスに数字を入力しボタンをクリックすると、その和が表示されます。
 
@@ -28,11 +28,12 @@ htmlファイルは自分で作成してください。
 以下のソースコードを入力・実行し、マウスをいろいろと操作してみましょう。
 
 *MouseApplet.java*<br>
-![](./pic/MouseApplet.java.png)
+![](./pic/MouseApplet.png)
 
-このように、マウスの動きを捉えるリスナーもあります。
+`mouseClicked` や `mousePressed` など、特定の名前のメソッドを記述することで、このような柔軟な対応が可能になります。
 
-awtには他にもいろいろなものが用意されています。
+また、`(MouseEvent e)` というのは、マウス系のメソッドに**自動的に**渡される引数です。これはMouseEventクラスの変数で、今回は `e` と名付けているという意味です。<br>
+この引数は、クリックした座標などの便利なデータを持っています。
 
 
 アニメーション
@@ -43,7 +44,14 @@ awtには他にもいろいろなものが用意されています。
 ソースコードを打ち込み、実行してみましょう。
 
 *CountUpApplet.java*<br>
-![](./pic/CountUpApplet.java.png)
+![](./pic/CountUpApplet.png)
+
+Threadを利用することで、`run()` メソッドが高速で繰り返されるようになります。
+
+Threadでは、処理を途中で止めて少し待つなどといった動作が容易です。<br>
+`Thread.sleep(1000)` で1000ミリ秒間＝1秒間 動きを止めています。
+
+※ `try{}catch(){}` は、tryの中身の実行に挑戦し、もし失敗したらcatchの中身に移動するという構文です。
 
 
 課題
@@ -59,8 +67,8 @@ awtには他にもいろいろなものが用意されています。
 上の問題１のプログラムを、クリックした場所を中心とする円を描くプログラムになるように改良しましょう。
 クラス名は、`DrawCircleWithClickApplet`とします。
 
-#### ヒント
-
-座標は、`MouseEvent` のインスタンス・メソッド `getX()`, `getY()` で得ることができます。
+**ヒント**<br>
+座標は、`MouseEvent` のインスタンス・メソッド `getX()`, `getY()` で得ることができます。<br>
+例として、引数に(MouseEvent e)と記述した場合、 `e.getX()` がマウスカーソルのX座標になります。
 
 <span class="label label-info">参考資料</span> [MouseEvent (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/java/awt/event/MouseEvent.html)

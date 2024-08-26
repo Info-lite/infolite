@@ -15,20 +15,23 @@ date: 2015-03-23 16:14:50 +0900
 
     import java.io.*;
 
-既存のパッケージのクラスを利用するときに書く文です。
+既存のパッケージのクラスを利用するときに書く文です。<br>
+Javaでは、既存のクラスを利用することで、様々な機能を使えるようになります。<br>
 ここでは、システム入出力等に用いられる `java.io` パッケージを読み込んでいます。
 
 ### 4行目
 
     throws IOException
 
-例外処理についての記述です。
+例外処理についての記述です。<br>
+のちに登場する`readLine()`は、基本的にエラー時の処理が必要になるのですが、それを記載せず無視したいとき、この文を書きます。
 
 ### 5行目
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-`BufferedReader` クラスのインスタンス `br` を作成しています。
+`BufferedReader` クラスのインスタンス `br` を作成しています。<br>
+クラスとは、ざっくりと例えるとintのようなもので、インスタンスとは変数のようなものです。
 
 ### 8行目
 
@@ -45,4 +48,5 @@ date: 2015-03-23 16:14:50 +0900
 
 さらに詳しく知りたい場合は、以下を参照してください。
 
-<span class="label label-info">参考資料</span> [Overview (Java Platform SE 8)](https://docs.oracle.com/javase/jp/8/docs/api/index.html)
+[Java® Platform, Standard Edition & Java Development Kit
+バージョン21 API仕様](https://docs.oracle.com/javase/jp/21/docs/api/index.html)
