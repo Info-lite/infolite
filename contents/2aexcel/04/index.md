@@ -88,11 +88,11 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 {% screenshot 04_08input.png "データの入力" %}
 
-&#9313; [挿入]タブをクリックし、「<a href="https://www.microsoft.com/ja-jp/office/2013/tips/excel/excel09.aspx">おすすめピボットテーブル</a>」をクリックします。
+&#9313; [挿入]タブをクリックし、「<a href="https://www.microsoft.com/ja-jp/biz/smb/column-excel-pivot-table">おすすめピボットテーブル</a>」をクリックします。
 
 {% screenshot 04_09analysis.png "おすすめピボットテーブル" %}
 
-&#9314; 「おすすめピボットテーブル」ウィンドウで「データの個数 / No」が選択されていることを確認して[OK]ボタンをクリックします。
+&#9314; 「おすすめピボットテーブル」ウィンドウで「個数 / No」が選択されていることを確認して[OK]ボタンをクリックします。
 
 {% screenshot 04_10analysis.png "ピボットテーブル選択" %}
 

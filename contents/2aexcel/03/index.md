@@ -49,8 +49,8 @@ purposes:
 
 この対応のあるデータの場合は、<a href="#homogeneity_of_variance_test">等分散性の検定</a>を行わず、最初から母<a href="../01/#mean">平均</a>に関する検定と推定とを行うことができます。
 
-- ２つの母平均の差に関する検定
-- ２つの母平均の差の推定
+- 2つの母平均の差に関する検定
+- 2つの母平均の差の推定
 
 
 等分散を仮定したときの2つの母平均の差の検定（対応のないデータ）
@@ -170,7 +170,7 @@ Excelを使って、<a href="#chapter5">練習問題1</a>に取り掛かりま�
 
 {% screenshot 03_22result.png "検定用のデータ" %}
 
-なお、<code>DEVSQ</code>関数は、与えられたデータの平均とそれぞれのデータとの差を二乗して合計した値、すなわち、<a href="../01/#sum_of_squared_deviations">偏差平方和</a>を求めます（<a href="https://support.office.com/ja-jp/article/DEVSQ-関数-8b739616-8376-4df5-8bd0-cfe0a6caf444"><code>DEVSQ</code>関数</a>）。また、<code>T.DIST.2T</code>関数に与える$t$値は非負数（$t$ ≧ 0）である必要があります。<code>N3</code>セルで差を求めているため、<code>N3</code>セルが負数になる可能性があり、その場合<code>N8</code>セルも負数になる可能性があるので、<code>N11</code>セルの<code>T.DIST.2T</code>関数では<code>ABS(N8)</code>としています。
+なお、<code>DEVSQ</code>関数は、与えられたデータの平均とそれぞれのデータとの差を二乗して合計した値、すなわち、<a href="../01/#sum_of_squared_deviations">偏差平方和</a>を求めます（<a href="https://support.office.com/ja-jp/article/DEVSQ-関数-8b739616-8376-4df5-8bd0-cfe0a6caf444"><code>DEVSQ</code>関数</a>）。また、<code>T.DIST.2T</code>関数に与える$t$値は非負数（$t$ ≧ 0）である必要があります。<code>N3</code>セルで差を求めているため、<code>N3</code>セルが負数になる可能性があり、その場合<code>N8</code>セルも負数になる可能性があるので、<code>N10</code>セルの<code>T.DIST.2T</code>関数では<code>ABS(N8)</code>としています。
 
 
 #### 結果
@@ -236,7 +236,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 
 ここで、$\mu_\text{C}$はＣ組全員のテスト結果を<a href="../02/#population">母集団</a>とする母平均、$\mu_\text{D}$はＤ組全員のテスト結果を母集団とする母平均です。
 
-なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchの$t$検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
+なお、<a href="#chapter4">等分散を仮定したとき</a>と同様に、<a href="#chapter21">検定統計量$t$値の算出（Welchの$t$検定）</a>では、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{D}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$を扱います。同様に、<a href="#chapter6">2つの母平均を扱うのではなく、差を1つの値として扱う</a>ので、ここでも
 
 * 帰無仮説H<sub>0</sub>：$\mu_\text{C} - \mu_\text{D} = 0$
 * 対立仮説H<sub>1</sub>：$\mu_\text{C} - \mu_\text{D} \ne 0$
@@ -255,7 +255,7 @@ $\displaystyle (\overline{x}_A-\overline{x}_B)-t(\phi,\alpha)\sqrt{V(\frac{1}{n_
 
 $\displaystyle t_0=\frac{\overline{x}\_C-\overline{x}\_D}{\sqrt{\frac{V_C}{n_C}+\frac{V_D}{n_D}}}$
 
-<a href="#chapter4">等分散を仮定したとき</a>と同様に、Ｃ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{C}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{C}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｄ組の母集団が平均$\mu_\text{D}$、標準偏差$\sigma_\text{D}$の正規分布に従うとすると、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{C}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は、平均$\mu_\text{C} - \mu_\text{D}$、標準偏差
+<a href="#chapter4">等分散を仮定したとき</a>と同様に、Ｃ組の<a href="../02/#population">母集団</a>が<a href="../01/#mean">平均</a>$\mu_\text{C}$、<a href="../01/#standard_deviation">標準偏差</a>$\sigma_\text{C}$の<a href="../02/#normal_distribution">正規分布</a>に従い、Ｄ組の母集団が平均$\mu_\text{D}$、標準偏差$\sigma_\text{D}$の正規分布に従うとすると、Ｃ組の<a href="../02/#sample_mean">標本平均</a>$\overline{x}\_\text{C}$とＤ組の標本平均$\overline{x}\_\text{D}$との差$\overline{x}\_\text{C} - \overline{x}\_\text{D}$は、平均$\mu_\text{C} - \mu_\text{D}$、標準偏差
 
 $\displaystyle \sqrt{\frac{\sigma_\text{C}^2}{N_\text{C}} + \frac{\sigma_\text{D}^2}{N_\text{D}}}$
 
@@ -460,7 +460,7 @@ Excelを使って、<a href="#chapter28">練習問題3</a>に取り掛かりま�
 2つの母平均の差の推定（対応のあるデータ）
 -----------------------------------------
 
-母<a href="../01/#mean">平均</a>の差$\mu_\text{B} - \mu_\text{A}$について<a href="../02/#interval_estimation">区間推定</a>する場合、母平均の差$\mu_\text{A} - \mu_\text{B}$の(1 - $\alpha$) 100%<a href="../02/#confidence_interval">信頼区間</a>は以下の式で与えられます。
+母<a href="../01/#mean">平均</a>の差$\mu_\text{B} - \mu_\text{A}$について<a href="../02/#interval_estimation">区間推定</a>する場合、母平均の差$\mu_\text{B} - \mu_\text{A}$の(1 - $\alpha$) 100%<a href="../02/#confidence_interval">信頼区間</a>は以下の式で与えられます。
 
 $\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \mu_\text{B} - \mu_\text{A} &lt; \overline{d} + t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}}$
 
@@ -478,6 +478,8 @@ $\displaystyle \overline{d} - t_{\phi_d}(\alpha) \sqrt{ \frac{V_d}{N_d}} &lt; \m
 * "J3"：<code>=T.INV.2T((1-J2),G8)</code>（<a href="../02/#critical_value">臨界値</a>）
 * "J4"：<code>=G4-J3*G6</code>（<a href="../02/#lower_confidence_limit">下側信頼限界</a>）
 * "J5"：<code>=G4+J3*G6</code>（<a href="../02/#upper_confidence_limit">上側信頼限界</a>）
+
+{% screenshot 03_39result.png "推定用のデータ" %}
 
 ### 結果
 

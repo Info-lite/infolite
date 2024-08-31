@@ -142,7 +142,7 @@ $z$は以下の数式で求まります。
 
 ![標本平均を用いた$p$値の図示](./pic/02_practice1_time2.png)
 
-設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05です。$p$値 = 0.8415 &gt; 有意水準$\alpha$ = 0.05であるので、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母<a href="../01/#mean">平均</a>は60ではないとは言えません。
+設定した<a href="../04/#chapter1">有意水準</a>$\alpha$は0.05です。$p$値 = 0.841481 &gt; 有意水準$\alpha$ = 0.05であるので、<a href="#null_hypothesis">帰無仮説</a>H<sub>0</sub>は棄却されません。したがって、新入店員の商品提供時間の母<a href="../01/#mean">平均</a>は60ではないとは言えません。
 
 
 1つの母平均に関する検定（母標準偏差が未知のとき）
@@ -176,7 +176,7 @@ $z$は以下の数式で求まります。
   t = \frac{\bar{x}-\mu_0}{\frac{\hat{\sigma}}{\sqrt{n}}}
 \end{align}
 
-sここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$\hat{\sigma}$ は<a href="../01/#standard_deviation">標準偏差（不偏）</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
+ここで$\overline{x}$は<a href="#sample_mean">標本平均</a>、$\mu_0$は6歳男児の全国<a href="../01/#mean">平均</a>身長、$\hat{\sigma}$ は<a href="../01/#standard_deviation">標準偏差（不偏）</a>、$N$は<a href="../01/#sample_size">標本の大きさ</a>です。
 
 今回は、<a href="#chapter3">練習問題1</a>と違って母標準偏差が未知です。このような場合は、母標準偏差を標本の標準偏差$s$で代用して$\overline{x}$を<a href="#standardization">標準化</a>するため、標準化された値（<span id="standard_score">標準得点</span>、standard score）は<a href="#standard_normal_distribution">標準正規分布</a>ではなく$t$分布に従います。<span id="student_s_t-distribution">$t$分布</span>（Student's t-distribution）は、標準正規分布同様の釣鐘型をしていますが、<span id="dof_t">自由度</span>$\phi$（ファイ）によって形状が変わります。なお、この検定において$t$分布における自由度は標本の大きさ$N$を用いて$\phi&nbsp;= N - 1$で与えられ、$\phi$が30以上で標準正規分布とほぼ同一の形となります。
 
