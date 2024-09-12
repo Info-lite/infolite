@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        {% include script.html %}
+        {% if page.flowplayer_conf %}
+        <script>
+            flowplayer.conf = {{ page.flowplayer_conf | jsonify }};
+        </script>
+        {% endif %}
+        {% if page.deprecated %}
+        <div class="alert alert-danger" role="alert">
+            <strong>This content is for older software versions and will not be updated in the future. </strong>Please use the content for the latest version.
+        </div>
+        {% endif %}
+        {{ content }}
+        {% include footer_en.html %}
+    </body>
+</html>
