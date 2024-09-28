@@ -7,7 +7,7 @@ permalink: /1_en/
 ## Classroom Contents
 
 -   [How to use the Information Processing Classroom](../contents/basics/01/index_en.html)
--   [コンピュータの仕組みと基本操作](../contents/basics/02/index_en.html)
+-   [Computer systems and basic operation](../contents/basics/02/index_en.html)
 -   [表計算ソフトによるデータ処理（１）](../contents/office2019/excel/01/index_en.html)
 -   [表計算ソフトによるデータ処理（２）](../contents/office2019/excel/02/index_en.html)
 -   [表計算ソフトによるデータ処理（３）](../contents/office2019/excel/03/index_en.html)
