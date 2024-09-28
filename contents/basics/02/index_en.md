@@ -70,7 +70,7 @@ Recently, we have seen operating systems (OSs) such as Windows 32-bit and Window
 <br />
 Of course, a 64-bit CPU has a faster processing speed; however, without an OS that processes at that speed, performance cannot be achieved. For example, if a 64-bit CPU is used with a 32-bit OS, the computer will function properly. However, the full performance of the 64-bit CPU cannot be demonstrated. However, if a 32-bit CPU and 64-bit OS are used in combination, the computer will not operate in the first place. 
 
-{%screenshot os_cpu.jpg "Combination between OS and CPU for their performance "%}
+{% screenshot os_cpu.jpg "Combination between OS and CPU for their performance " %}
 
 The processing speed (bit number) of the OS must be less than the processing speed (bit number) of the CPU; however, to get the most efficient performance out of the CPU, an OS optimized for that CPU’s processing speed (bit number) must be used. A 32-bit OS must be used on a 32-bit CPU, while 64-bit CPUs must be used with a 64-bit OS. 
 <br />
@@ -418,7 +418,7 @@ There are three ways to transport files between the university and home.
 The capacity of the Home [Resources] is 1 GB. You can check your capacity using the following steps: 
 
 1. Click [Check Quota].
-{% screenshot en/kibaco_myDocument_1.png "Check [Check Quota] in Home [Resources]  %}
+{% screenshot en/kibaco_myDocument_1.png "Check [Check Quota] in Home [Resources]"  %}
 In this way, the capacity in use is shown.
 {% screenshot en/kibaco_myDocument_2.png "Checking quota " %}
 
@@ -465,7 +465,7 @@ The GUI was first introduced in 1984 with MacOS and 1986 with Windows.
 <br />
 The GUI is a graphical computer screen that you use today. Since then, computers have been used for various purposes, such as advanced image editing and video, as their capabilities have improved, and their prices have decreased. 
 
-{%screenshot cui_gui.webp "Command Prompt 			Explorer  "%}
+{% screenshot cui_gui.webp "Command Prompt 			Explorer  " %}
 
 However, the CUI has not disappeared; its most important feature is that it does not overload computers. 
 <br />
