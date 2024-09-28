@@ -112,7 +112,7 @@ When using a classroom computer, students must first sign in. This section descr
 
 &#9314; After signing in to Windows, you will see a screen (desktop) that looks like this: Double-click the My Documents icon in the upper-left corner to open it.
 
-{% appendix ../appendix/mouse.html "Reference Material: How to operate the computer mouse" %}
+{% appendix_en ../appendix/mouse.html "Reference Material: How to operate the computer mouse" %}
 
 {% screenshot desktop_2.png "Desktop" %}
 
@@ -165,7 +165,7 @@ Printing
 
 The Computer Room is equipped with a monochrome laser printer. During open-access hours, each student is permitted to print up to **20 pages** of documents and assignments per day.
 
-{% appendix ../appendix/print.html "Reference Materials: Printing Precautions" %}
+{% appendix_en ../appendix/print.html "Reference Materials: Printing Precautions" %}
 
 How to refer to teaching and reference materials
 ------------------------
@@ -184,7 +184,7 @@ Typing practice
 
 When using computers, there are numerous opportunities to type, including in Japanese. Here, you can practice typing. Please refer to the following page for more information on how to type in Japanese.
 
-{% appendix ../appendix/japanese.html "Reference Materials: About Japanese input" %}
+{% appendix_en ../appendix/japanese.html "Reference Materials: About Japanese input" %}
 
 ### Selecting a text editor
 
