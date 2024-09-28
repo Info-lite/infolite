@@ -102,7 +102,7 @@ When using a classroom computer, students must first sign in. This section descr
 
 &#9312; Make sure the computer is turned on. Press any key to display the sign-in screen on the monitor, as shown in the following image:
 
-{% screenshot signin_2.jpg "Sign-in screen" %}
+{% screenshot signin_en.png "Sign-in screen" %}
 
 &#9313; Enter your username and password, then click [→].
 
@@ -112,15 +112,15 @@ When using a classroom computer, students must first sign in. This section descr
 
 &#9314; After signing in to Windows, you will see a screen (desktop) that looks like this: Double-click the My Documents icon in the upper-left corner to open it.
 
-{% appendix_en ../appendix/mouse.html "Reference Material: How to operate the computer mouse" %}
+{% appendix_en ../appendix/mouse.html "How to operate the computer mouse" %}
 
-{% screenshot desktop_2.png "Desktop" %}
+{% screenshot desktop_en.png "Desktop" %}
 
 The folder My Documents contains the data you created with your computer. In the Minami-Osawa campus environment, including the Information Technology Classroom, each student is allowed to use up to 5 GB of data. If this capacity is exceeded, the computers may no longer function properly. Please delete unnecessary files after backing them up to a USB memory stick or other similar device.
 
 &#9315; After completing the necessary tasks, click the Windows logo button at the bottom of the screen to display the menu, then click the human-shaped icon and select “Sign Out.”
 
-{% screenshot signout_2.png "Sign out" %}
+{% screenshot signout_en.png "Sign out" %}
 
 Before you begin using the computer, it will be signed out and returned to its default screen. Make sure to sign out after using the computer in the classroom.
 
@@ -146,7 +146,7 @@ Starting and exiting applications
 
 An application is a type of software that is designed to serve a specific purpose when working with computers. This section describes how to launch and exit applications in Windows 11. In this case, we will use “Notepad” as an example. To open the menu, click the Windows logo at the bottom of the screen, then “All Apps,” scroll down to the “n” section, and select “Notepad.”
 
-{% screenshot notepad_2.png "Launch Notepad" %}
+{% screenshot notepad_en.png "Launch Notepad" %}
 
 When an application is installed on a computer, it is added to a menu. Therefore, when you want to use an application, you can do so from a menu.
 
@@ -165,7 +165,7 @@ Printing
 
 The Computer Room is equipped with a monochrome laser printer. During open-access hours, each student is permitted to print up to **20 pages** of documents and assignments per day.
 
-{% appendix_en ../appendix/print.html "Reference Materials: Printing Precautions" %}
+{% appendix_en ../appendix/print.html "Printing Precautions" %}
 
 How to refer to teaching and reference materials
 ------------------------
@@ -184,7 +184,7 @@ Typing practice
 
 When using computers, there are numerous opportunities to type, including in Japanese. Here, you can practice typing. Please refer to the following page for more information on how to type in Japanese.
 
-{% appendix_en ../appendix/japanese.html "Reference Materials: About Japanese input" %}
+{% appendix_en ../appendix/japanese.html "About Japanese input" %}
 
 ### Selecting a text editor
 
