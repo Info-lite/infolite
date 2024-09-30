@@ -29,6 +29,6 @@ eラーニング
     * [日本語版](./infoethics/information_ethics_ja.pdf)
     * [英語版(English)](./infoethics/information_ethics_en.pdf)
 * 情報倫理講習会ビデオ
-    * [日本語版](https://youtu.be/Es5zyhpHgB8)
-    * [英語版(English)](https://youtu.be/hsgkQ6Le39I)
+    * [日本語版](https://youtu.be/62d1KlCk7Cg)
+    * [英語版(English)](https://youtu.be/vtEs4QJWJv0)
 
