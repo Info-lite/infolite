@@ -1,5 +1,5 @@
 ---
-layout: appendix
+layout: appendix_en
 title: Printing Precautions
 date: 2016-03-11 09:52:08 +0900
 ---

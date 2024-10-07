@@ -1,5 +1,5 @@
 ---
-layout: appendix
+layout: appendix_en
 title: About Japanese input 
 date: 2016-03-16 14:55:09 +0900
 ---

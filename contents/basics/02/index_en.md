@@ -84,7 +84,7 @@ A computer is composed of several pieces of hardware (devices), and the software
 <br />
 The following links will explain how to use the OS, using “Windows” as an example. For Macs, the screen structure and names are different; thus, operating instructions can be found at the following links. 
 
--   [Mac user's guide](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html) (in TMUNER)
+-   [(Japanese) Mac user's guide](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html) (in TMUNER)
 
 Proceed with the instructions in a Windows environment. First, ensure that you are signed in and ready to use your computer. (We explained how to sign in in the previous lecture; if you have forgotten how to sign in, please refer to the previous document.) 
 
@@ -98,7 +98,7 @@ Input devices, such as a mouse or keyboard, are used to communicate instructions
 
 The OS allows the mouse to operate and move the cursor freely on the screen, allowing users to perform operations visually. For more information on how to operate the mouse, refer to the pages from the link below. 
 
-{% appendix_en ../appendix/mouse.html " How to operate the computer mouse" %}
+{% appendix_en ../appendix/mouse_en.html " How to operate the computer mouse" %}
 
 ### Keyboard operation
 
@@ -106,7 +106,7 @@ Text input, for example, is performed using the keyboard rather than the mouse. 
 <br />
 For detailed information on key operations and input methods, see the reference material. 
 
-{% appendix_en ../appendix/keyboard.html "How to operate the keyboard " %}
+{% appendix_en ../appendix/keyboard.html "(Japanese) How to operate the keyboard " %}
 
 
 Names and operations of each component on a screen 
@@ -114,7 +114,7 @@ Names and operations of each component on a screen
 
 The following pages provide an overview of the names of the desktops, windows, etc. Have a look at them. 
 
-{% appendix_en ../appendix/desktop_window.html "画面各部の名称と操作" %}
+{% appendix_en ../appendix/desktop_window.html "(Japanese) 画面各部の名称と操作" %}
 
 
 Files and folders 
@@ -349,7 +349,9 @@ Avoid using Japanese names for files and folders whenever possible. The universi
 <br />
 According to Windows specifications, files erased from locations other than the hard disk (e.g., a USB memory stick) are not placed in the Recycle Bin and are permanently deleted. If files are dragged from these locations to the Recycle Bin for erasure, a confirmation dialogue for deletion is displayed. If you select [OK] here, the file will be permanently deleted rather than being placed in the Recycle Bin. Take care not to accidentally delete important files. 
 <br />
-In Information Processing Classroom devices, data saved on the desktop are deleted when the user logs off. Make sure you save your data in My Documents. </div>
+In Information Processing Classroom devices, data saved on the desktop are deleted when the user logs off. Make sure you save your data in My Documents. 
+</div>
+<br />
 
 ### Using My Documents and carrying data around 
 
@@ -475,9 +477,9 @@ Because programs are essentially command lines, there are many cases where they 
 <br />
 The following reference material describes how to use the Command Prompt and Terminal, so you may want to learn them. 
 
-{% appendix_en ../../common/appendix/win_cmd_prompt.html "How to use the Command Prompt" %}
+{% appendix_en ../../common/appendix/win_cmd_prompt_en.html "How to use the Command Prompt" %}
 
-{% appendix_en ../../common/appendix/mac_terminal.html "How to use the Terminal" %}
+{% appendix_en ../../common/appendix/mac_terminal_en.html "How to use the Terminal" %}
 
 
 
@@ -488,7 +490,7 @@ The university has a webmail system that allows university e-mails to be viewed 
 <br />
 For instructions on how to use the system, check the PDF file below. 
 
--    [How to use e-mail](./o365.pdf)
+-    [(Japanese) How to use e-mail](./o365.pdf)
 
 
 Notes on using e-mail 
@@ -522,7 +524,7 @@ An addressee and signature will also help the recipient realize that the e-mail 
 
 As you can see, there are numerous advantages to having an addressee and signature, so make it a habit to write in the body of all e-mails sent from (sender’s signature) to (addressee). 
 
-{% appendix_en ../appendix/office365.html#chapter1 "Add one's signature" %}
+{% appendix_en ../appendix/office365_en.html#chapter1 "Add one's signature" %}
 
 #### Be mindful of using a subject line that clearly indicates the content 
 
@@ -536,7 +538,7 @@ Files can be attached to an e-mail and sent along with the text. However, large 
 
 For these reasons, avoid attaching more attachments than necessary. Before attaching or sending large files (data in megabytes), ask the other party if it is acceptable to send them as an attachment to an e-mail. 
 
-{% appendix_en ../appendix/office365.html#chapter2 "How to attach files" %}
+{% appendix_en ../appendix/office365_en.html#chapter2 "How to attach files" %}
 
 There is also a type of e-mail known as “HTML e-mail,” which is frequently found in e-newsletters and direct mail and includes backgrounds and images. HTML e-mails may appear glamorous, but they can vex the recipient because of the additional data they contain. Additionally, in the case of HTML e-mails, the recipient may be infected with an attached computer virus as soon as they open the email. Therefore, it is necessary to avoid sending more HTML e-mails than required. 
 
@@ -599,6 +601,6 @@ Assignments
 
 ### TMU-hosting website 
 
--   [TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
-    -   [Windows利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/windows.html)
-    -   [Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html)
+-   [(Japanese) TMUNER](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/)
+    -   [(Japanese) Windows利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/windows.html)
+    -   [(Japanese) Mac利用ガイド](https://tmuner.cpark.tmu.ac.jp/tmuner/ja/study/pc/mac.html)

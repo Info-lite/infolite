@@ -1,5 +1,5 @@
 ---
-layout: appendix
+layout: appendix_en
 title: How to operate the computer mouse 
 date: 2016-03-11 09:00:43 +0900
 ---
