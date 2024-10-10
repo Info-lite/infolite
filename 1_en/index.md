@@ -9,9 +9,9 @@ permalink: /1_en/
 
 -   [How to use the Information Processing Classroom](../contents/basics/01/index_en.html)
 -   [Computer systems and basic operation](../contents/basics/02/index_en.html)
--   Course3
--   Course4
--   Course5
+-   [Data processing using spreadsheet software (1)](../contents/office2019/excel/01/index_en.html)
+-   [Data Processing using Spreadsheet Software (2)](../contents/office2019/excel/02/index_en.html)
+-   [Data Processing using Spreadsheet Software (3)](../contents/office2019/excel/03/index_en.html)
 -   Course6
 -   Course7
 -   Course8
