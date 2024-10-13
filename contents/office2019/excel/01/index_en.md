@@ -274,7 +274,7 @@ There is a way to move from cell to cell in the table and make data entry quicke
 </tbody>
 </table>
 
-{% appendix_en ../../appendix/shortcuts.html "Main Shortcut Keys List (Japanese)" %}
+{% appendix_en ../../appendix/shortcuts_en.html "Main Shortcut Keys List" %}
 
 #### Selecting and editing multiple cells
 
@@ -371,7 +371,7 @@ The main arithmetic operators used in Excel are as follows:
 
 The precedence of the operations is essentially the same as usual; however, the parentheses () can also be used. Additionally, many other operations with functions are possible.
 
-{% appendix_en ../../appendix/enzanshi.html "Supplementary Information on Operators (Japanese)" %}
+{% appendix_en ../../appendix/enzanshi_en.html "Supplementary Information on Operators" %}
 
 ### Automatic repetitive calculations with auto-fill
 
@@ -399,7 +399,7 @@ The sum will automatically be placed in "C13.” The same is true for the female
 
 {% screenshot en/populationfinal.png "Result of auto SUM" %}
 
-{% appendix_en ../../appendix/function.html "functions Available in Microsoft Excel (Japanese)" %}
+{% appendix_en ../../appendix/function_en.html "functions Available in Microsoft Excel" %}
 
 ### Saving and closing
 
