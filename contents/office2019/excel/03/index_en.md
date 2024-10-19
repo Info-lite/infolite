@@ -76,7 +76,7 @@ First, select the appropriate cell in the table and click on the [Home] ribbon -
 
 {% screenshot filter1_en.png "Select Filter" %}
 
-{% screenshot _en_.png "Filter status" %}
+{% screenshot filter2_en.png "Filter status" %}
 
 This filter can be removed by pressing [Home] ribbon - [Edit] group - [Sort & Filter] - [Filter] again.
 
