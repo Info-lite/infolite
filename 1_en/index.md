@@ -9,13 +9,13 @@ permalink: /1_en/
 
 -   [How to use the Information Processing Classroom](../contents/basics/01/index_en.html)
 -   [Computer systems and basic operation](../contents/basics/02/index_en.html)
--   [Data processing using spreadsheet software (1)](../contents/office2019/excel/01/index_en.html)
+-   [Data Processing using Spreadsheet Software (1)](../contents/office2019/excel/01/index_en.html)
 -   [Data Processing using Spreadsheet Software (2)](../contents/office2019/excel/02/index_en.html)
 -   [Data Processing using Spreadsheet Software (3)](../contents/office2019/excel/03/index_en.html)
--   Course6
--   Course7
--   Course8
--   Course9
+-   Basic Knowledge of Statistics
+-   [Population and sample: normal distribution and t-distribution](../contents/office2019/statistics/02/index_en.html)
+-   [T-test of means for two groups (2 sample t-tests)](../contents/office2019/statistics/03/index_en.html)
+-   Correlation analysis
 -   Course10
 -   Course11
 -   Course12
