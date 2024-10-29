@@ -15,7 +15,7 @@ permalink: /1_en/
 -   Basic Knowledge of Statistics
 -   [Population and sample: normal distribution and t-distribution](../contents/office2019/statistics/02/index_en.html)
 -   [T-test of means for two groups (2 sample t-tests)](../contents/office2019/statistics/03/index_en.html)
--   Correlation analysis
+-   [Correlation analysis](../contents/office2019/statistics/03/index_en.html)
 -   Course10
 -   Course11
 -   Course12
