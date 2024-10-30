@@ -10,37 +10,6 @@ flowplayer_conf:
     - ratio: 0.75
 ---
 
-<div>
-    <div class="panel panel-info">
-    <div class="panel-heading">Study videos related to this course</div>
-        <div class="panel-body">
-            <p>One [Explanatory video] regarding the class content of this course is available.</p>
-            <p><font color="red">Note: The video may not be played if many people are playing it simultaneously. Please watch the video at different times.</font></p>
-
-<div id="class_movie"></div>
-<p><button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#overviewModal">
-<!--<p><button type="button" class="btn btn-info" data-toggle="modal" data-target="#overviewModal">-->
-<i class="fa fa-play-circle-o fa-lg"></i>&nbsp;Explanatory Video
-</button>
-<div class="modal fade" id="overviewModal" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel" aria-hidden="true">
-<div class="modal-dialog"><div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<span class="modal-title" id="overviewModalLabel">Explanatory Video</span>
-</div>
-<div class="modal-body">
-<div class="flowplayer is-splash color-light img-responsive" style="max-width:854px;">
-<video>
-<source type="video/mp4" src="https://lit.fpark.tmu.ac.jp/mov/st02_sample.mp4">
-</video>
-</div>
-</div>
-</div></div>
-</div></p>
-        </div>
-    </div>
-</div>
-
 Population and Sample Description
 --------------------
 
