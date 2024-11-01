@@ -176,9 +176,8 @@ $s$ is the standard deviation and $\bar{x}$ the mean.
 
 #### <span id="standard_error">Standard error</span>
 
-<a href="#standard_deviation">標準偏差</a>を<a href="#sample_size">標本の大きさ</a>$N$の平方根で割った値で、平均に関する検定や推定で用いられます。<a href="#mean">平均</a>の標準誤差とも呼ばれます。\
 
-The standard deviation is divided by the square root of the sample size $N$. The standard error is used in tests and estimations related to the mean and is also called the standard error of the mean.
+The <a href="#standard_deviation">standard deviation</a> is divided by the square root of the <a href="#sample_size"sample size</a> $N$. The standard error is used in tests and estimations related to the <a href="#mean">mean</a> and is also called the standard error of the <a href="#mean">mean</a>.
 
 $s / \sqrt{N}$
 
