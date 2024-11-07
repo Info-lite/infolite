@@ -402,7 +402,7 @@ Output result
 {% screenshot 06_42no_en.png "Test of no correlation" %}
 
 The $p$-value is 0.095784.
-Because the $p$-value is 0.095784, which is less than the significance level $\alpha$ = 0.05, the null hypothesis $H_0$ is not rejected.
+Because the $p$-value is 0.095784, which is more than the significance level $\alpha$ = 0.05, the null hypothesis $H_0$ is not rejected.
 Hence, the correlation coefficient between height and foot size for women obtained earlier is not significant.
 
 Thus, we can assume that in the present data, some women were tall but had small feet, or that the result was not significant because of data variations.
