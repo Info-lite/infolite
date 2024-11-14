@@ -17,7 +17,6 @@ permalink: /1_en/
 -   [T-test of means for two groups (2 sample t-tests)](../contents/office2019/statistics/03/index_en.html)
 -   [Correlation analysis](../contents/office2019/statistics/04/index_en.html)
 -   [VBA Programming (1)](../contents/office2019/vba/01/index_en.html)
--   Course11
--   Course12
--   Course13
-
+-   [VBA Programming (2)](../contents/office2019/vba/02/index_en.html)
+-   [VBA Programming (3)](../contents/office2019/vba/03/index_en.html)
+-   [VBA Programming (4)](../contents/office2019/vba/04/index_en.html)
