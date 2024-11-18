@@ -143,9 +143,9 @@ Sub HelloVBA()
 End Sub
 ```
 
-&#9314; Click![上書き保存](pic/Save.png)
+&#9314; Click![Save as](pic/Save.png)
 
-&#9315; Click![Sub/ユーザーフォームの実行](pic/Start.png)
+&#9315; Click![Run](pic/Start.png)
 
 {% screenshot en/VBE_Start.png "How to Execute Macros" %}
 
@@ -213,7 +213,7 @@ Macro programs can be created by writing statements based on the VBA in this man
 
 The VBA running on Excel can perform data processing using Excel tables. As Excel often processes data entered into  tables, understanding the structure of Excel tables is essential. The structure of Excel tables is covered in the following lecture:
 
-* [表作成の基礎知識](../../excel/01/index.html#chapter11)
+* [Table creation Basics](../../excel/01/index_en.html#chapter11)
 
 The Excel file body is known as a **book**. Within it are **sheets**, and each sheet contains one table. A book can contain more than one sheet; therefore, it can contain more than one table. The part of each table on a sheet that allows data entry is known as a **cell**
 
