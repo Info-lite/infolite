@@ -11,7 +11,7 @@ Main Data Types
 
 The main **basic data types** in VBA include the following:
 
-{% screenshot Table_DataType.png "Main Data Types" %}
+{% screenshot Table_DataType_en.png "Main Data Types" %}
 
 
 Integer and Floating-Point Number Types

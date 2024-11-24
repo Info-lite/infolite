@@ -127,7 +127,7 @@ Furthermore, values can be assigned to cells using Cells() or Range() to specify
 
 The **main data types** in VBA include the following.
 
-{% screenshot Table_DataType.png "Main Data Types" %}
+{% screenshot Table_DataType_en.png "Main Data Types" %}
 
 Notably, the content and range of the values that can be handled differ depending on the data type. For variable declarations, the best data type is selected and written.
 
