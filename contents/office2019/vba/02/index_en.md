@@ -78,7 +78,7 @@ Rather than performing calculations using Range(“cell name”), a more efficie
 When PerformanceTable3 is run, the results are the same as those of PerformanceTable2 as shown below.
 
 
-{% screenshot PerformanceTable3_Result.png "Execution Results of PerformanceTable3" %}
+{% screenshot PerformanceTable3_Result_en.png "Execution Results of PerformanceTable3" %}
 
 
 
@@ -96,7 +96,7 @@ Creating a variable is called a **variable declaration**. Variables are declared
     Dim variable name As data type
 
 
-Declare variables by specifying the variable name after <span style="color: red;">“Dim</span>.” Variables can be named according to the following rules:
+Declare variables by specifying the variable name after “<span style="color: red;">Dim</span>.” Variables can be named according to the following rules:
 
 * Numbers are allowed, but not at the beginning of variable names.
 * Underbars are allowed, but not at the beginning of variable names.
@@ -159,7 +159,7 @@ Let us create a macro that performs the following calculations and displays the 
 
 {% screenshot Test02_1_Result_en.png "Results of Exercise 1 Execution" %}
 
-### 課Exercise 2
+### Exercise 2
 
 Let us create a macro that performs the following calculations and displays the results in order in a dialog box, as shown in the following image.
 
