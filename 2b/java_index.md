@@ -12,9 +12,9 @@ permalink: /2b/java/
 -   [配列](/lit/contents/java/basic/06/index.html)
 -   [課題提出のための実習時間](/lit/contents/java/basic/07/index.html)
 -   [クラスとメソッド](/lit/contents/java/basic/08/index.html)
--   [アプレット（１）](/lit/contents/java/applet/01/index.html)
--   [アプレット（２）](/lit/contents/java/applet/02/index.html)
--   [アプレット（３）](/lit/contents/java/applet/03/index.html)
+-   [GUIプログラミング（１）](/lit/contents/java/applet/01/index.html)
+-   [GUIプログラミング（２）](/lit/contents/java/applet/02/index.html)
+-   [GUIプログラミング（３）](/lit/contents/java/applet/03/index.html)
 -   [課題提出のための実習時間](/lit/contents/java/applet/04/index.html)
 -   [課題提出のための実習時間](/lit/contents/java/basic/09/index.html)
 
