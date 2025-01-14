@@ -1,7 +1,7 @@
 ---
 layout: page
-title: アプレット（３）
-date: 2016-09-30 10:02:01 +0900
+title: GUIプログラミング（３）
+date: 2025-01-10 10:00:00 +0900
 purposes:
     - 様々な部品やリスナーの使い方の理解
     - スレッドを用いたアニメーションの理解
@@ -14,10 +14,9 @@ purposes:
 ### テキストボックスとラベル
 
 前回と同様に、ソースコードを打ち込み、実行してみましょう。
-htmlファイルは省略します。
 
-*CalcApplet.java*<br>
-![](./pic/CalcApplet.png)
+*CalcGUI.java*<br>
+![](./pic/CalcGUI.png)
 
 左の2つのテキストボックスに数字を入力しボタンをクリックすると、その和が表示されます。
 
@@ -27,8 +26,8 @@ htmlファイルは省略します。
 
 以下のソースコードを入力・実行し、マウスをいろいろと操作してみましょう。
 
-*MouseApplet.java*<br>
-![](./pic/MouseApplet.png)
+*MouseGUI.java*<br>
+![](./pic/MouseGUI.png)
 
 `mouseClicked` や `mousePressed` など、特定の名前のメソッドを記述することで、このような柔軟な対応が可能になります。
 
@@ -43,8 +42,8 @@ htmlファイルは省略します。
 
 ソースコードを打ち込み、実行してみましょう。
 
-*CountUpApplet.java*<br>
-![](./pic/CountUpApplet.png)
+*CountUpGUI.java*<br>
+![](./pic/CountUpGUI.png)
 
 Threadを利用することで、`run()` メソッドが高速で繰り返されるようになります。
 
@@ -60,12 +59,12 @@ Threadでは、処理を途中で止めて少し待つなどといった動作�
 ### 課題 １
 
 半径を入力すると、その大きさの円を書くプログラムを書きましょう。
-クラス名は、`DrawCircleApplet` とします。
+クラス名は、`DrawCircleGUI` とします。
 
 ### 課題 ２
 
 上の問題１のプログラムを、クリックした場所を中心とする円を描くプログラムになるように改良しましょう。
-クラス名は、`DrawCircleWithClickApplet`とします。
+クラス名は、`DrawCircleWithClickGUI`とします。
 
 **ヒント**<br>
 座標は、`MouseEvent` のインスタンス・メソッド `getX()`, `getY()` で得ることができます。<br>
