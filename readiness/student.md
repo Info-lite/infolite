@@ -6,18 +6,21 @@ title: レディネス調査回答マニュアル（学生用）
 
 ## kibacoにログインする
 
-&#9312; [kibaco](https://kibaco.tmu.ac.jp/) にログインします。
+&#9312; [kibaco](https://kibaco-d.tmu.ac.jp/) にログインします。
 
-{% screenshot kibaco_login.png "教員・学生を選択" %}
-{% screenshot kibaco_login2.png "ユーザID・パスワードを入力" %}
+{% screenshot kibaco_login1.png "ログインを選択" %}
+{% screenshot kibaco_login2.png "ユーザIDを入力" %}
+{% screenshot kibaco_login3.png "パスワードを入力" %}
+{% screenshot kibaco_login4.png "二段階認証を実行（図は Microsoft Authenticator を用いる場合の例）" %}
 
 <div class="alert alert-danger" role="alert">
 <p>kibaco のログインに利用するユーザID・パスワードは<strong>教育研究システムアカウント</strong>です。初期パスワードは、入学時に申請した教育研究システムのパスワードが設定されています。</p>
 </div>
 
-&#9313; マイページの上部または、時間割に表示されている授業名を選択します。
+&#9313; 時間割に表示されている授業名を選択します。
 
-{% screenshot kibaco_top.png "授業コースを選択" %}
+{% screenshot kibaco_top1.png "時間割を選択" %}
+{% screenshot kibaco_top2.png "授業コースを選択" %}
 
 
 ## 調査に回答する <small>所要時間 約25分</small>
