@@ -14,12 +14,15 @@ title: レディネス調査回答マニュアル（学生用）
 {% screenshot kibaco_login4.png "二段階認証を実行（図は Microsoft Authenticator を用いる場合の例）" %}
 
 <div class="alert alert-danger" role="alert">
-<p>kibaco のログインに利用するユーザID・パスワードは<strong>教育研究システムアカウント</strong>です。初期パスワードは、入学時に申請した教育研究システムのパスワードが設定されています。</p>
+<p>kibaco のログインに利用するユーザID・パスワードは<strong>TMU IDとそのパスワード</strong>です。初期パスワードは、入学時に申請したパスワードが設定されています。</p>
 </div>
 
-&#9313; 時間割に表示されている授業名を選択します。
+&#9313; 左部のメニューの "時間割" を押して、時間割画面に移ります。
 
 {% screenshot kibaco_top1.png "時間割を選択" %}
+
+&#9314; 時間割に表示されている "情報リテラシー実践Ⅰ" を押して、授業のコース画面に移ります。
+
 {% screenshot kibaco_top2.png "授業コースを選択" %}
 
 
