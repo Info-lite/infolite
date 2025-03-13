@@ -23,15 +23,15 @@ purposes:
 
 ### PerformanceTable2
 
-成績表に合計点と平均点を追加して、計算してみます。以下のPerformanceTable2のマクロを作成してみましょう。
-
-{% screenshot PerformanceTable2_Pre.png "成績表として入力する表" %}
+成績表に合計点と平均点を追加して計算し、PerformanceTable2を作成してみましょう。
 
 *PerformanceTable2のソースコード*
 
     Sub PerformanceTable2()
         
-        Range(“E3”) = Range(“B3”) + Range(“C3”) + Range(“D3”)
+        Range("E2") = "合計点"
+        Range("F2") = "平均点"
+        Range(“E3”) = Range(“B3”) + Range(“C3”) + 2Range(“D3”)
         Range(“F3”) = (Range(“B3”) + Range(“C3”) + Range(“D3”)) / 3
         
     End Sub
