@@ -23,9 +23,7 @@ purposes:
 
 ### PerformanceTable2
 
-成績表に合計点と平均点を追加して計算し、PerformanceTable2を作成してみましょう。
-
-まず、"合計点"と"平均点"の項目を追加します。マクロを作成して入力することができます。
+前回作成した成績表に対して、セル"E2"に"合計点"とセル"F2"に"平均点"を追加して以下の画像のようにします。PerformanceTable2を作成して、Aさんの合計点と平均点を計算してみましょう。
 
 {% screenshot PerformanceTable2_Pre.png "成績表として入力する表" %}
 
@@ -33,15 +31,11 @@ purposes:
 
     Sub PerformanceTable2()
         
-        Range("E2") = "合計点"
-        Range("F2") = "平均点"
         Range(“E3”) = Range(“B3”) + Range(“C3”) + 2Range(“D3”)
         Range(“F3”) = (Range(“B3”) + Range(“C3”) + Range(“D3”)) / 3
         
     End Sub
 
-
-セル”E2”とセル”F2”にそれぞれ”合計点”と”平均点”が入りました。
 セル”E3”とセル”F3”には、Aさんの各教科の得点を踏まえて、合計点と平均点が計算されました。もちろん、数字を直接入れて計算することもできますが、Excelを用いたVBAのプログラミングでは、PerformanceTable2のように表にデータを入れておき、その値を用いて計算することがよく行われます。
 
 {% screenshot PerformanceTable2_Result.png "PerformanceTable2の実行結果" %}
