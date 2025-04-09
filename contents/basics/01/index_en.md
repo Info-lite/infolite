@@ -265,6 +265,6 @@ Reference links
 ### Off-campus sites
 
 -   [秀まるおのホームページ（サイトー企画）](http://hide.maruo.co.jp/)
--   [P検　無料タイピング練習［インターネット版］](https://www.pken.com/tool/typing.html)
+-   [無料タイピング教材（マナビジョン）](https://manabi.benesse.ne.jp/gakushu/typing/)
 -   [FUJITSU 実践！タッチタイピング](https://azby.fmworld.net/usage/lesson/keyboard/typing/)
 -   [e-typing](https://www.e-typing.ne.jp/)
