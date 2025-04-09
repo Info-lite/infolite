@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 情報処理教室の使い方
-date: 2017-04-17 13:26:56 +0900
+date: 2025-04-09 21:00:00 +0900
 purposes:
     - 情報倫理講習の内容を理解する
     - 情報処理教室の使い方を理解する
@@ -245,7 +245,7 @@ Windowsに標準で付属するテキストエディタ。notepad と呼ばれ�
 <a name="jump-there"></a>
 無料で利用できるWebサイトを活用して、タイピング練習をしてみましょう。
 
-* [P検　無料タイピング練習［インターネット版］](https://www.pken.com/tool/typing.html)
+* [無料タイピング教材（マナビジョン）](https://manabi.benesse.ne.jp/gakushu/typing/)
   - 正確な指使いを覚えるためのホームポジション、日本語入力、英語入力などを簡単に練習することができます。所要時間は、それぞれ1～5分程度です。
 　
 * [FUJITSU 実践！タッチタイピング](https://azby.fmworld.net/usage/lesson/keyboard/typing/)
