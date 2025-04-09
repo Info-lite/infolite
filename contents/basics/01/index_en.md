@@ -221,7 +221,7 @@ A text editor with more advanced functions than Notepad.
 <a name="jump-there"></a>
 Take advantage of free websites to practice typing.
 
-* [P検　無料タイピング練習［インターネット版］](https://www.pken.com/tool/typing.html)
+* [無料タイピング教材（マナビジョン）](https://manabi.benesse.ne.jp/gakushu/typing/)
   - You can easily practice home positioning, Japanese input, and English input to learn accurate fingering. Each takes approximately 1–5 minutes.
 　
 * [FUJITSU 実践！タッチタイピング](https://azby.fmworld.net/usage/lesson/keyboard/typing/)
