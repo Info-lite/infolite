@@ -31,7 +31,7 @@ purposes:
 
     Sub PerformanceTable2()
         
-        Range(“E3”) = Range(“B3”) + Range(“C3”) + 2Range(“D3”)
+        Range(“E3”) = Range(“B3”) + Range(“C3”) + Range(“D3”)
         Range(“F3”) = (Range(“B3”) + Range(“C3”) + Range(“D3”)) / 3
         
     End Sub
