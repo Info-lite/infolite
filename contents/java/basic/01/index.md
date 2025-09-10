@@ -40,7 +40,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
     PleiadesのWebサイト[https://willbrains.jp/](https://willbrains.jp/)にアクセスし、「Eclipse 2023」を選択します。
 
-    {% screenshot Java_1.webp "Eclipseのインストール" %}
+    {% screenshot Java_1.png "Eclipseのインストール" %}
 
     次に使用しているOSを確かめ、 Java列のダウンロードボタンをクリックします。
     <br>※ファイルサイズは約1GBで、ダウンロードに10分程度かかります。
@@ -135,7 +135,7 @@ Javaでプログラミングを行う場合、OSがWindowsのパソコンを利�
 
 
 ### 参考サイト
-  - [Eclipse、はじめの一歩 - インストールから便利な日本語化プラグインの導入まで](https://employment.en-japan.com/engineerhub/entry/2020/03/19/103000)
+  - [Eclipse、はじめの一歩 - インストールから便利な日本語化プラグインの導入まで](https://en-ambi.com/itcontents/entry/2020/03/19/103000/)
 
 
 
