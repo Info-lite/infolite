@@ -16,6 +16,8 @@ purposes:
 *Structure.c*<br>
 ![](./pic/Structure.png)
 
+    #include <stdio.h>
+    
     struct oden{
         int num;
         char name[10];
