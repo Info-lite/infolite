@@ -42,11 +42,18 @@ C言語でプログラミングを行う場合、OSがWindowsのパソコンを�
 
 #### ①MinGWのインストール
 
-以下のファイルをダウンロードし、**マイドキュメント**に保存してください。  
+##### インストール
 
--   [MinGWインストールファイル](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/)
+1.[https://www.mingw-w64.org/downloads/](https://www.mingw-w64.org/downloads/) のページに移動し、[MinGW-W64-builds]を選択してください。
 
-[このサイト](https://webkaru.net/clang/mingw-gcc-install/)を参考に、GCCのインストールを行ってください。
+2.MinGW-W64-builds
+Installation: GitHub　をクリックし、[GitHubのページ](https://github.com/niXman/mingw-builds-binaries/releases)に移動します。
+
+
+3.[x86_64-14.2.0-release-win32-seh-msvcrt-rt_v12-rev1.7z]
+をクリックしファイルをダウンロードします。
+
+4.ファイルを解凍し、任意の場所に保存してください。
 
 
 ##### パスの設定
