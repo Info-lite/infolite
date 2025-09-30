@@ -386,7 +386,7 @@ We performed the same type of calculation for `B5` to `B13`. To do this, the mou
 
 In this manner, you can skip typing. This function is called **AutoFill**.
 
--   [Relative and absolute cell references](../02/index.html)
+-   [Relative and absolute cell references](../02/index_en.html)
 
 
 ### Sum calculations

@@ -46,9 +46,9 @@ In addition, the following applications will be used. Although operating systems
 #### Windows environment: Building No. 1, Rooms 320, 330, 340, and 350
 
 -   Windows 11 (OS)
--   Microsoft Word 2019 (word processing software)
--   Microsoft Excel 2019 (spreadsheet software)
--   Microsoft PowerPoint 2019 (presentation software)
+-   Microsoft Word 2024 (word processing software)
+-   Microsoft Excel 2024 (spreadsheet software)
+-   Microsoft PowerPoint 2024 (presentation software)
 -   Microsoft Edge (browser)
 -   Notepad (text editor)
 
@@ -56,9 +56,9 @@ In addition, the following applications will be used. Although operating systems
 #### Mac environment: Building No. 1, Room 320
 
 -   MacOS High Sierra (OS)
--   Microsoft Word 2019 (word processing software)
--   Microsoft Excel 2019 (spreadsheet software)
--   Microsoft PowerPoint 2019 (presentation software)
+-   Microsoft Word 2024 (word processing software)
+-   Microsoft Excel 2024 (spreadsheet software)
+-   Microsoft PowerPoint 2024 (presentation software)
 -   Safari (browser)
 -   mi (text editor)
 
@@ -72,7 +72,7 @@ The four classrooms on the third floor of Building No. 1 (Rooms 320, 330, 340, a
 
 Room 320 is a Mac environment. The PC installed in Room 320 is a Mac mini, which runs macOS. Please check the following page for information on how to switch between Mac and Windows environments in Room 320.
 
--   [How to switch between Mac and Windows](https://tmuner.cpark.tmu.ac.jp/tmuner/en/study/pc/mac/mac-riyou7.html)
+-   [How to switch between Mac and Window](https://tmuner.cpark.tmu.ac.jp/ja/study/pc/mac/mac-riyou7.html)
 
 Rooms 330, 340, and 350, as well as Room 115 and rental laptops have Windows environment.
 
@@ -112,7 +112,7 @@ When using a classroom computer, students must first sign in. This section descr
 
 &#9314; After signing in to Windows, you will see a screen (desktop) that looks like this: Double-click the My Documents icon in the upper-left corner to open it.
 
-{% appendix_en ../appendix/mouse.html "How to operate the computer mouse" %}
+{% appendix_en ../appendix/mouse_en.html "How to operate the computer mouse" %}
 
 {% screenshot desktop_en.png "Desktop" %}
 
@@ -165,7 +165,7 @@ Printing
 
 The Computer Room is equipped with a monochrome laser printer. During open-access hours, each student is permitted to print up to **20 pages** of documents and assignments per day.
 
-{% appendix_en ../appendix/print.html "Printing Precautions" %}
+{% appendix_en ../appendix/print_en.html "Printing Precautions" %}
 
 How to refer to teaching and reference materials
 ------------------------
@@ -184,7 +184,7 @@ Typing practice
 
 When using computers, there are numerous opportunities to type, including in Japanese. Here, you can practice typing. Please refer to the following page for more information on how to type in Japanese.
 
-{% appendix_en ../appendix/japanese.html "About Japanese input" %}
+{% appendix_en ../appendix/japanese_en.html "About Japanese input" %}
 
 ### Selecting a text editor
 

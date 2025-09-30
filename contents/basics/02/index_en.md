@@ -114,7 +114,7 @@ Names and operations of each component on a screen
 
 The following pages provide an overview of the names of the desktops, windows, etc. Have a look at them. 
 
-{% appendix_en ../appendix/desktop_window.html "(Japanese) 画面各部の名称と操作" %}
+{% appendix_en ../appendix/desktop_window.html "(Japanese) Names and Operations of Windows Screen Components" %}
 
 
 Files and folders 
@@ -574,17 +574,9 @@ You will then be able to handle information safely and improve your skills to ma
 
 ### Information security training
 
-TMU provides information security training using the following materials and mini-test. 
-<br />
-Please review the information security training materials and complete the mini-test. The deadline is not yet determined. 
+TMU provides information security training using the training materials and mini-test.
 
-*Authentication with a TMU ID is required to access the materials and mini-test. 
-
-*The mini-test must be taken as many times as possible until a score of 100 is achieved. 
-
-*The materials and mini-test are available in English.  
-
-- [AY2024 TMU Information Security Training for 1st Grade.pdf ](https://jmjtmu.sharepoint.com/:f:/s/for_tmuner/Etofrrgg1J5IkX9XBqcQaucBys2b5Wz8tdg1MNkqKRO6MQ?e=BHV2wF)
+When you receive a notification, please review the training materials and take the mini-test in accordance with the instructions provided in the notification.
 
 
 Assignments 

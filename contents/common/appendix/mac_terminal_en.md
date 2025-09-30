@@ -126,7 +126,7 @@ Now rename the file `aaa.txt` that you have just copied.
 
 The command is of the syntax of `mv [original filename] [changed filename]`. If the changed filename is the directory name, the file is moved.
 
-### ファイルのDeleting files削除
+### Deleting files
 
 Delete `test2.txt`, which you have just renamed.
 

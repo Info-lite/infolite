@@ -15,8 +15,8 @@ When you use a personal computer, you probably have numerous opportunities to in
 
 The mouse and keyboard operations previously described are important. If you have forgotten them, please check them. 
 
-{% appendix ../appendix/keyboard.html "(Japanese) キーボードの操作方法" %}
-{% appendix ../appendix/mouse_en.html "マウスの操作方法" %}
+{% appendix ../appendix/keyboard.html "(Japanese) How to operate the keyboard" %}
+{% appendix ../appendix/mouse_en.html "How to operate the computer mouse" %}
 
 
 First, please launch Notepad. If you have forgotten how to start Notepad, please review the first lesson. 
