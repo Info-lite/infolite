@@ -8,7 +8,7 @@ purposes:
 
 Excel also functions as a database. This section describes sorting and filtering.
 
-In the following, we will use a [statistical table](./population.xlsx) . The original data were obtained from the national census in 2015.
+In the following, we will use a [statistical table](./population_en.xlsx) . The original data were obtained from the national census in 2015.
 
 -   [Table 1 Population, Population Change (2010-2015), Area and Population Density](http://www.e-stat.go.jp/SG1/estat/GL08020103.do?_csvDownload_&fileId=000007591144&releaseCount=2)
 
@@ -17,7 +17,7 @@ In the following, we will use a [statistical table](./population.xlsx) . The ori
 Note) The areas of the following islands, which were excluded from the survey based on the Census Decree (Government Ordinance No. 98 of 1980), are excluded from the calculations.
 <ul>
 <li>Habomai Islands(99.94km<sup>2</sup>)</li>
-<li>Shikotan Island(253.33km<sup>2</sup>),Kunashiri Island(1498.83km<sup>2</sup>),and Etorofu Island(3184.04km<sup>2</sup>) (including the associated islands)</li>
+<li>Shikotan Island(253.33km<sup>2</sup>), Kunashiri Island(1498.83km<sup>2</sup>), and Etorofu Island(3184.04km<sup>2</sup>) (including the associated islands)</li>
 <li>Takeshima Island(0.23km<sup>2</sup>)</li>
 </ul>
 As the boundaries of some of the islands have not yet been determined, they were estimated by the Statistics Bureau of the Ministry of Internal Affairs and Communications.
