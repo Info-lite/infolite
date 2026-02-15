@@ -146,7 +146,6 @@ purposes:
 アイデアはアイデアの上に成り立ちます。1つのアイデアが他のアイデアを刺激することがブレストの目的であり、結果的には大きな利益を生むこともあります。ブレストはまさに無限の可能性を秘めているのかもしれません。
 
 *   [本講義を用いたブレインストーミングの流れとテーマ例](./BS.pdf)
-*   [TALL（305及び306室）説明資料](tall.pdf)
 
 
 情報とモラル
@@ -403,7 +402,7 @@ Dさんが配信した番組をみたインタビュー回答者は、自分が�
 -   [google](http://www.google.co.jp/)
 -   [All About](http://allabout.co.jp/)
 -   [Bing](http://www.bing.com/)
--   [国民のための情報セキュリティサイト](http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/)（総務省）
+-   [国民のためのサイバーセキュリティサイト](https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/index.html)（総務省）
 -   [社団法人 著作権情報センター](http://www.cric.or.jp/index.html)
 
 

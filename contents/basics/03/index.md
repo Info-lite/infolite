@@ -498,7 +498,6 @@ WWWでの情報検索
 -   [Bing](http://www.bing.com/)
 -   [CiNii Books](http://ci.nii.ac.jp/books/)
 -   [NDL-OPAC](http://opac.ndl.go.jp/)
--   [Webcat plus](http://webcatplus.nii.ac.jp/)
 -   [国立国会図書館デジタルコレクション](http://kindai.ndl.go.jp/)
 -   [青空文庫](http://www.aozora.gr.jp/)
 
