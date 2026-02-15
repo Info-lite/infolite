@@ -52,18 +52,18 @@ purposes:
 #### Windows環境： １号館320・330・340・350教室
 
 -   Windows11 （オペレーティングシステム）
--   Microsoft Word 2019 （ワープロソフト）
--   Microsoft Excel 2019 （表計算ソフト）
--   Microsoft PowerPoint 2019 （プレゼンテーションソフト）
+-   Microsoft Word 2024 （ワープロソフト）
+-   Microsoft Excel 2024 （表計算ソフト）
+-   Microsoft PowerPoint 2024 （プレゼンテーションソフト）
 -   Microsoft Edge （ブラウザ）
 -   メモ帳 （テキストエディタ）
 
 #### Mac環境： １号館320教室
 
 -   macOS High Sierra （オペレーティングシステム）
--   Microsoft Word 2019 （ワープロソフト）
--   Microsoft Excel 2019 （表計算ソフト）
--   Microsoft PowerPoint 2019 （プレゼンテーションソフト）
+-   Microsoft Word 2024 （ワープロソフト）
+-   Microsoft Excel 2024 （表計算ソフト）
+-   Microsoft PowerPoint 2024 （プレゼンテーションソフト）
 -   Safari （ブラウザ）
 -   mi （テキストエディタ）
 
