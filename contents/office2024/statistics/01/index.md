@@ -87,6 +87,9 @@ flowplayer_conf:
 #### <span id="sample_size">標本の大きさ（sample size）$N$</span>
 
 欠損値以外の測定値の数です。<a href="https://support.office.com/ja-jp/article/COUNTA-関数-7dc98875-d5c1-46f1-9a82-53f3219e2509"><code>COUNTA</code>関数</a>を用いることで、求められます。
+測定値が数値データのみの場合には<a href="https://support.microsoft.com/ja-jp/office/count-関数-a59cd7fc-b623-4d93-87a4-d23bf411294c"><code>COUNT</code>関数</a>を用いることでも求められます。
+数値データを数える<code>COUNT</code>関数では測定値が文字列の場合などは数えらませんが、空白セル以外の数を求める<code>COUNTA</code>関数では数式のエラーや空白の文字列（<code>""</code>）、ハイフンなども数えてしまいますので、対象の計測値の尺度に応じて適切な関数を使用します。
+
 
 #### <span id="summation">合計（summation）</span>
 
@@ -245,18 +248,18 @@ Excelの関数を利用して基本統計量を求めてみましょう。
 
 &#9313; 同様に，以下のように入力します。
 
--   "F3" : `=STDEV(A2:A21)/SQRT(COUNT(A2:A21))` （標準誤差）
+-   "F3" : `=STDEV.S(A2:A21)/SQRT(COUNTA(A2:A21))` （標準誤差）
 -   "F4" : `=MEDIAN(A2:A21)` （中央値）
--   "F5" : `=MODE(A2:A21)` （最頻値）
--   "F6" : `=STDEV(A2:A21)` （標準偏差）
--   "F7" : `=VAR(A2:A21)` （分散）
+-   "F5" : `=MODE.SNGL(A2:A21)` （最頻値）
+-   "F6" : `=STDEV.S(A2:A21)` （標準偏差）
+-   "F7" : `=VAR.S(A2:A21)` （分散）
 -   "F8" : `=KURT(A2:A21)` （尖度）
 -   "F9" : `=SKEW(A2:A21)` （歪度）
 -   "F10" : `=MAX(A2:A21)-MIN(A2:A21)` （範囲）
 -   "F11" : `=MIN(A2:A21)` （最小値）
 -   "F12" : `=MAX(A2:A21)` （最大値）
 -   "F13" : `=SUM(A2:A21)` （合計）
--   "F14" : `=COUNT(A2:A21)` （標本数）
+-   "F14" : `=COUNTA(A2:A21)` （標本数）
 
 {% screenshot 01_13table07.png "基本統計量の手計算" %}
 
