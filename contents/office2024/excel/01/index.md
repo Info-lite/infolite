@@ -101,7 +101,7 @@ Microsoft Excelの起動
 1.  [閉じる] をクリックします
 
 
-Microsoft Excel 2019の概要
+Microsoft Excel 2024の概要
 --------------------------
 
 ### このアプリケーションで何ができるか?
@@ -154,7 +154,7 @@ Microsoft Excel 2019の概要
 
 ページのレイアウト、見やすさを設定します。
 
-{% screenshot ribbon3.png "リボン ページ レイアウト" %}
+{% screenshot ribbon3.png "リボン ページレイアウト" %}
 
 #### 数式
 
