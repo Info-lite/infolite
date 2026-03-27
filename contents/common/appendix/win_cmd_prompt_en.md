@@ -17,7 +17,7 @@ Type ‘cmd’ in the search bar at the bottom of the screen and press Enter to 
 
 The following screen will appear.
 
-{% screenshot command_boot.webp "Screen immediately after launching the Command Prompt" %}
+{% screenshot command_boot.png "Screen immediately after launching the Command Prompt" %}
 
 Various commands can be entered and executed here.
 The Terminal (Windows PowerShell) <img src="pic/command_powershell.webp" /> is a similar functionality.
