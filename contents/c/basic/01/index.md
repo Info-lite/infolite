@@ -49,7 +49,7 @@ C言語でプログラミングを行う場合、OSがWindowsのパソコンを�
 2. MinGW-W64-builds
 Installation: GitHub　をクリックし、[GitHubのページ](https://github.com/niXman/mingw-builds-binaries/releases)に移動します。
 
-3. [x86_64-15.2.0-release-win32-seh-msvcrt-rt_v13-rev0.7z
+3. [x86_64-16.2.0-release-win32-seh-msvcrt-rt_v14-rev1.7z 
 ]
 をクリックし、ファイルをダウンロードします。
 
