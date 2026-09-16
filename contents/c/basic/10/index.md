@@ -64,7 +64,7 @@ purposes:
         return v1 / (v2*v3);
     }
 
-    main(){ 
+    int main(){ 
         int x; 
         x = comb(10, 5); 
         printf("10個の中から5個を並べる組み合わせは%d通りです。", x); 
