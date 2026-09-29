@@ -17,7 +17,7 @@ purposes:
 
 コンパイルの方法は、以下を参考にしましょう。
 
-[プロジェクトファイルの作成と実行（Eclipse）](../01/index.html#chapter5)
+<span class="label label-info">参考資料</span> [プロジェクトファイルの作成と実行（Eclipse）](../01/index.html#chapter5)
 
 <span class="label label-info">参考資料</span> [コンパイルと実行（Windows コマンドプロンプト）](../../appendix/win_javac.html)
 

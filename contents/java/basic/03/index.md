@@ -35,6 +35,10 @@ purposes:
 
 <br>
 
+文字化けする場合、以下を参照してください。
+
+<span class="label label-info">参考資料</span> [コンパイルと実行 文字化けする場合](../../appendix/win_javac.html#chapter4)
+
 実行すると、以下のように表示されます。
 
     名前を入力してください。
