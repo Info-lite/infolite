@@ -84,7 +84,7 @@ purposes:
         a.append(y)
 
     for i in range(x):
-        print(i+1, '番目のデータは、', a[i], 'です。')
+        print(i+1, '個目のデータは、', a[i], 'です。')
 
 <!--![](./pic/Arrangement2.png)-->
 

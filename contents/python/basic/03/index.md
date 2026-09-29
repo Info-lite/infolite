@@ -89,10 +89,10 @@ purposes:
 
 <dl>
 <dt>3行目 a0 = input() </dt>
-<dd>キーボードから入力されたものを、文字列（<font color="red">String</font> ）として取得。</dd>
+<dd>キーボードから入力されたものを、文字列（<font color="red">String</font>）として取得。</dd>
 <dt>4行目 a = int(a0)</dt>
-<dd>文字列を、整数（<font color="red">int</font> ）に変換。</dd>
-<dt>10行目 str(a+b)</dt>
+<dd>文字列を、整数（<font color="red">int</font>）に変換。</dd>
+<dt>11行目 str(ans)</dt>
 <dd>整数を、文字列に変換。</dd>
 </dl>
 
