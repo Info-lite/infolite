@@ -9,7 +9,7 @@ permalink: /1_en/
 
 -   [How to use the Information Processing Classroom](../contents/basics/01/index_en.html)
 -   [Computer systems and basic operation](../contents/basics/02/index_en.html)
--   [Modern Society and AI](../contents/ai/01/index_en.html)
+-   [Modern Society and AI](../contents/ai/index_en.html)
 -   [Data Processing using Spreadsheet Software (1)](../contents/office2024/excel/01/index_en.html)
 -   [Data Processing using Spreadsheet Software (2)](../contents/office2024/excel/02/index_en.html)
 -   [Data Processing using Spreadsheet Software (3)](../contents/office2024/excel/03/index_en.html)
