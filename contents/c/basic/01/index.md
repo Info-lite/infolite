@@ -124,7 +124,7 @@ MinGWを利用する場合は、コマンドプロンプト（ターミナル）
 
 #### ③Visual Studio または Visual Studio Communityを用いる場合
 
-Visual Studio または Visual Studio Communityを用いる場合は開発者コマンドプロンプト(または、Developer Coommand Prompt for VS)を起動しましょう。
+Visual Studio または Visual Studio Communityを用いる場合は開発者コマンドプロンプト(または、Developer Command Prompt for VS)を起動しましょう。
 
 Hello.cを保存したフォルダへ移動し、次のように入力し、[Enter]キーを押します。
 
