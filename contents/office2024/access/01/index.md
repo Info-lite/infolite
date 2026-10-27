@@ -105,7 +105,7 @@ Microsoft Accessの基本操作
 
 ### Microsoft Accessの起動
 
-[スタート] - [すべてのプログラム] - [Microsoft Office] - [Access 2016]をクリックします。
+[スタート] - [すべてのプログラム] - [Microsoft Office] - [Access]をクリックします。
 
 {% screenshot home.png "起動画面" %}
 
@@ -116,12 +116,13 @@ Microsoft Accessの基本操作
 
 {% screenshot open1.png "開く" %}
 
-{% screenshot open2.png "セキュリティの警告表示" %}
-
 &#9313; セキュリティの警告が出ているので解除します。[コンテンツの有効化]をクリックします。
 
 {% screenshot security1.png "セキュリティの警告表示 コンテンツの有効化" %}
 
+&#9314; セキュリティの警告がでるので、[はい]をクリックします。
+
+{% screenshot security2.png "セキュリティの警告表示 信頼済みドキュメント" %}
 
 ### ナビゲーションウィンドウの操作
 
