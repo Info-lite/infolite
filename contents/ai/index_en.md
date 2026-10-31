@@ -125,13 +125,18 @@ Let's think about the advantages, disadvantages, and precautions of utilizing ge
 
 Links
 ----
-
-* [国立研究開発法人科学技術振興機構　研究開発戦略センター（CRDS）人工知能研究の新潮流2025 ～基盤モデル・生成AIのインパクトと課題～](https://www.jst.go.jp/crds/report/CRDS-FY2024-RR-07.html)
-
-
 * [Japan Science and Technology Agency (JST) Center for Research and Development Strategy (CRDS): New Trends in Artificial Intelligence Research 2025 ~Impact and Issues of Foundation Models and Generative AI~](https://www.jst.go.jp/crds/report/CRDS-FY2024-RR-07.html)
 
 Below are links to typical generative AI tools. Please ensure you fully understand each service's terms of use, privacy policy, etc., before using them. Some services require user registration.
+
+* [OpenAI ChatGPT](https://chatgpt.com)
+
+* [Microsoft copilot](https://copilot.microsoft.com/)
+
+* [Google DeepMind Gemini](https://gemini.google.com/)
+
+* [Google Notebook LM](https://notebooklm.google.com/)
+
 
 * ChatGPT was used when discussing the structure of this educational material.
 * The generative AI services listed in this material are not officially recommended or endorsed by the university.
