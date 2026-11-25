@@ -93,7 +93,7 @@ $\displaystyle \sqrt{\frac{\sigma_\text{A}^2}{N_\text{A}} + \frac{\sigma_\text{B
 ここで、等分散性が成立し（$\sigma_\text{A}^2 = \sigma_\text{B}^2$）、
 かつ、<a href="../02/#null_hypothesis">帰無仮説</a>（$\mu_\text{A} - \mu_\text{B} = 0$）の下では、
 $\displaystyle \overline{x}\_\text{A} - \overline{x}\_\text{B}$
-は平均0、分散
+は平均0、標準偏差
 $\displaystyle \sqrt{\sigma^2 \left( \frac{1}{N_\text{A}} + \frac{1}{N_\text{B}} \right)}$
 の正規分布に従うことになります。
 
