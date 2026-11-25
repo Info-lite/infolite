@@ -248,7 +248,7 @@ $N$は<a href="#sample_size">標本の大きさ</a>、$x_i$は標本の$i$番目
 
 #### <span id="variance">分散（variance）</span>
 
-Excelでは不偏分散（unbiaded variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations）$S$）を$N - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
+Excelでは不偏分散（unbiased variance）を指し、各測定値と<a href="#mean">平均</a>との差である<span id="deviation">偏差</span>（deviation）を2乗することで符号を消し、その合計（<span id="sum_of_squared_deviations">偏差平方和</span>（sum of squared deviations）$S$）を$N - 1$で割ったものです。平均値からのデータの散らばり具合を把握するのに用います。
 
 $\displaystyle V = \frac{S}{N - 1}$
 
